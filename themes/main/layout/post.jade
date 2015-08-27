@@ -2,5 +2,22 @@ extends base
 
 block content
   article(itemscope="NewsArticle")
-    span.hat(itemprop="about")= page.attributes
+    header
+      span.hat(itemprop="about")= page.hat
+      h2(itemprop="headline")= page.title
+      h3(itemprop="description")= page.description
+      figure
+        img(itemprop="image", alt="Foto capa da noticia", src=page.cover['url'] )
+        caption= page.cover['subtitle']
+      section.place-and-time
+        span
+          = "Por "
+          span(rel="author", itemprop="author")= page.author
+          = ", "
+          span(rel="place", itemprop="contentLocation")= page.place
+          time(datetime=page.date)= page.date
+
+    section.content
+     != page.content
+
 
