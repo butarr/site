@@ -10,6 +10,6 @@ gulp.task('default',function(cb){
 });
 
 gulp.task('build',function(cb){
-  spawn('gulp', ['--cwd', 'themes/main/', 'build'], { stdio: 'inherit' }).on('exit', cb);
+  spawn('gulp', ['--cwd', 'themes/main/', 'build'], { stdio: 'inherit' });
   shell.task(['node_modules/hexo/bin/hexo generate'])
 });

@@ -8,14 +8,7 @@
   "dependencies": {
     "gulp": "^3.9.0",
     "hexo": "^3.1.0",
-    "hexo-generator-archive": "^0.1.2",
-    "hexo-generator-category": "^0.1.2",
     "hexo-generator-index": "^0.1.2",
-    "hexo-generator-tag": "^0.1.1",
-    "hexo-renderer-ejs": "^0.1.0",
-    "hexo-renderer-jade": "^0.1.0",
-    "hexo-renderer-marked": "^0.2.4",
-    "hexo-renderer-stylus": "^0.2.0",
     "hexo-server": "^0.1.2"
   },
   "devDependencies": {
@@ -26,8 +19,10 @@
     "gulp-sass": "^2.0.4",
     "gulp-shell": "^0.4.2",
     "gulp-uglify": "^1.0.2",
+    "hexo-front-matter": "^0.2.2",
     "imagemin-jpegtran": "^4.3.0",
     "imagemin-optipng": "^4.3.0",
+    "jade": "^1.11.0",
     "node-bourbon": "^4.2.3"
   }
 }

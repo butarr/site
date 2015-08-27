@@ -1,0 +1,13 @@
+doctype html
+block vars
+  - var bodyclass = null;
+html(lang='pt-BR')
+  head
+    include _partial/head
+  body(class=bodyclass)
+    header#page-header
+      block header
+    main#content
+      block content
+    footer#page-footer
+      include _partial/footer
