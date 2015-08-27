@@ -8,14 +8,13 @@ block content
       h3(itemprop="description")= page.description
       figure
         img(itemprop="image", alt="Foto capa da noticia", src=page.cover['url'] )
-        caption= page.cover['subtitle']
+        figcaption= page.cover['subtitle']
       section.place-and-time
-        span
-          = "Por "
-          span(rel="author", itemprop="author")= page.author
-          = ", "
-          span(rel="place", itemprop="contentLocation")= page.place
-          time(datetime=page.date)= page.date
+        = "Por "
+        span(rel="author", itemprop="author")= page.author
+        = ", "
+        span(rel="place", itemprop="contentLocation")= page.place
+        time(datetime=page.date)= page.date
 
     section.content
      != page.content
