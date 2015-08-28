@@ -3,6 +3,54 @@
 
 main article{
   padding: 50px;
+
+
+  footer, aside {
+    h1{
+      font-weight: bold;
+      font-size: 2em;
+      color: $red;
+      border-bottom: 8px solid #992727;
+      padding-bottom: 15px;
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        padding-left: 20px;
+        font-weight: 400;
+        font-size: 3em;
+        width: 50%;
+        line-height: 1.5em;
+        color: $black;
+      }
+
+      img {
+        width: 50%;
+        border-radius: 10px;
+      }
+
+      & + section {
+        margin-top: 50px;
+        padding-top: 50px;
+
+        border-top-color: $red;
+        border-top-width: 3px;
+        border-top-style: dashed;
+      }
+    }
+  }
+
+  footer {
+    section h2 {
+      color: $gray;
+    }
+  }
+
+
   header {
     .hat {
       color: $red;
@@ -10,18 +58,18 @@ main article{
       font-size: 2.5em;
     }
 
-    h2, h3{
+    h1, h2{
       font-weight: lighter;
     }
 
-    h2 {
+    h1 {
       color: $black;
       font-size: 5.5em;
       margin: 5px 0;
       line-height: 1.3em;
     }
 
-    h3 {
+    h2 {
       color: $black-light;
       font-style: italic;
       font-size: 2em;
@@ -45,7 +93,7 @@ main article{
 
     .place-and-time{
       color: $gray-light;
-      line-height: 4em;
+      line-height: 3em;
       padding: 10px 0;
       border-top: 2px solid $gray-lighter;
       border-bottom: 2px solid $gray-lighter;
@@ -63,7 +111,7 @@ main article{
   .content{
     color: $black-dark;
     font-size: 2.2em;
-    line-height: 1.6em;
+    line-height: 2em;
     font-weight: 300;
     word-spacing: 2px;
 

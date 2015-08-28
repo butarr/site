@@ -4,8 +4,8 @@ block content
   article(itemscope="NewsArticle")
     header
       span.hat(itemprop="about")= page.hat
-      h2(itemprop="headline")= page.title
-      h3(itemprop="description")= page.description
+      h1(itemprop="headline")= page.title
+      h2(itemprop="description")= page.description
       figure
         img(itemprop="image", alt="Foto capa da noticia", src=page.cover['url'] )
         figcaption= page.cover['subtitle']
@@ -14,9 +14,33 @@ block content
         span(rel="author", itemprop="author")= page.author
         = ", "
         span(rel="place", itemprop="contentLocation")= page.place
-        time(datetime=page.date)= page.date
+        time(datetime=page.date)= page.date.locale('pt-br').format('LLLL')
 
     section.content
      != page.content
+    aside
+      h1 Mais Informações
+      section
+        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
+        h2 PME não garante aumento de recursos e diminui igualdade
+      section
+        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
+        h2 PME não garante aumento de recursos e diminui igualdade
+      section
+        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
+        h2 PME não garante aumento de recursos e diminui igualdade
+    footer
+      h1 Últimas Notícias
+      section
+        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
+        h2 15 partidos apresentam documento com propostas para superação da crise
+      section
+        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
+        h2 Doleiro Alberto Yousseff afirma que Aécio Neves recebeu propina de Furnas
+      section
+        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
+        h2 Pistoleiros atacam acampamentos do MST no MA e PR
+
+
 
 

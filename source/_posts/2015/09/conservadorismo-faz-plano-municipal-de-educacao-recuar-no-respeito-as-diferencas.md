@@ -4,6 +4,7 @@ hat: "Educação"
 description: "Projeto de Lei contraria reivindicações da sociedade civil e deve ser aprovado ignorando medidas de combate à discriminação e desigualdade de gênero"
 cover:
   url: "http://farm6.staticflickr.com/5736/20898086726_eebae3719e_b.jpg"
+  small: "http://farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg"
   subtitle: "Foto: Reprodução"
 author: "Gabriel Maia Salgado"
 place: "São Paulo"
