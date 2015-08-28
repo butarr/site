@@ -1,6 +1,29 @@
+@import '_includes/variables';
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,700,300);
 
 
 * {
   font-family: 'Lato', sans-serif;
+}
+
+
+body {
+  margin: 0;
+
+
+  & > footer {
+    color: white;
+    background-color: $red;
+
+    p {
+      text-align: center;
+      font-weight: 200;
+      font-size: 1.2em;
+      margin: 0;
+    }
+
+    .love {
+      margin-left: 20px;
+    }
+  }
 }

@@ -52,6 +52,16 @@ main article{
     section h2 {
       color: $gray;
     }
+
+    .more-news {
+      width: 100%;
+      font-size: 1em;
+      text-align: right;
+      display: block;
+      color: $red;
+      font-weight: bold;
+      margin-top: 50px;
+    }
   }
 
 
