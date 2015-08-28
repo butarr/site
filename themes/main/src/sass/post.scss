@@ -6,6 +6,11 @@ main article{
 
 
   footer, aside {
+    a {
+      text-decoration: none;
+      width: 50%;
+    }
+
     h1{
       font-weight: bold;
       font-size: 2em;
@@ -23,13 +28,12 @@ main article{
         padding-left: 20px;
         font-weight: 400;
         font-size: 3em;
-        width: 50%;
         line-height: 1.5em;
         color: $black;
       }
 
       img {
-        width: 50%;
+        width: 100%;
         border-radius: 10px;
       }
 
