@@ -1,31 +1,42 @@
 @import '_includes/variables';
 
 #newsletter {
-  margin: 0 auto;
-  width: 100%;
-  background-color: $gray-medium;
-  box-shadow: inset 0px 0px 10px 2px rgba(22, 21, 21, 0.75);
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 1px solid #e1e1e1;
+  background-color: #f5f5f5;
 
+  h1, h2{
+    padding-left: 10px;
+    border: 0;
+    margin: 0;
+    text-align: start;
+  }
 
   h1 {
-    border: 0;
-    text-align: start;
-    font-size: 1em;
     padding-top: 10px;
-    padding-left: 10px;
-    font-weight: 500;
-    margin: 0;
-    color: $black;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: $red;
+  }
+
+  h2 {
+    font-size: 0.6em;
+    color: lighten($black-dark, 20%);
+    font-weight: 400;
   }
 
 
-  label {
-    color: black;
-    font-size: 1.2em;
+  .form{
+    padding: 5px 10px;
   }
 
   input {
-    font-size: 1em;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 0.8em;
+    width: 98%;
   }
 
   button {
