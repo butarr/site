@@ -8,8 +8,8 @@
   transition:  right 0.4s ease-in-out;
 }
 
-#page-header .menu {
-  width: 40px;
+#page-header .menu-options{
+  width: 30px;
   right: 0;
   top: 10px;
   cursor: pointer;
@@ -18,7 +18,7 @@
   padding: 10px;
   border-radius: 10px 0 0 10px;
   background: #FFF;
-  box-shadow: 0 0 9px black;
+  box-shadow: -3px 0 3px 0 rgba(0,0,0,0.42);
   @include transition-right();
 
   .fa {
@@ -29,5 +29,30 @@
   &.open{
     right: 240px;
   }
+}
 
+#page-header .menu{
+  right: -240px;
+  width: 240px;
+  box-sizing: border-box;
+  @include transition-right();
+
+  &.open {
+    right: 0;
+  }
+}
+
+#page-header .menu{
+  padding-top: 5px;
+  background: white;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.42);
+  box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.42);
+  color: #555;
+  display: table;
+  float: right;
+  position: fixed;
+  table-layout: fixed;
 }

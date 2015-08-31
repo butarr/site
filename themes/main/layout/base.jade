@@ -6,11 +6,17 @@ html(lang='pt-BR')
     include _partial/head
   body(class=bodyclass)
     header#page-header
-      .menu
+      .menu-options(data-toggle="nav.menu")
         i.fa.fa-bars
+      nav.menu
+        ul
+          li
+            a(href="#")= "Menu"
+
       block header
     main#content
       block content
     block after-content
     footer#page-footer
       include _partial/footer
+  include _partial/after_footer
