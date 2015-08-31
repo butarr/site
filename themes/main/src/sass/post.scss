@@ -2,7 +2,7 @@
 
 
 main article{
-  padding: 50px;
+  padding: 15px;
 
 
   footer, aside {
@@ -13,10 +13,10 @@ main article{
 
     h1{
       font-weight: bold;
-      font-size: 2em;
+      font-size: 1em;
       color: $red;
-      border-bottom: 8px solid #992727;
-      padding-bottom: 15px;
+      border-bottom: 2px solid #992727;
+      padding-bottom: 7px;
     }
 
     section {
@@ -25,24 +25,24 @@ main article{
       align-items: center;
 
       h2 {
-        padding-left: 20px;
+        padding-left: 10px;
         font-weight: 400;
-        font-size: 3em;
-        line-height: 1.5em;
+        font-size: 1.1em;
+        line-height: 1em;
         color: $black;
       }
 
       img {
         width: 100%;
-        border-radius: 10px;
+        border-radius: 5px;
       }
 
       & + section {
-        margin-top: 50px;
-        padding-top: 50px;
+        margin-top: 25px;
+        padding-top: 25px;
 
         border-top-color: $red;
-        border-top-width: 3px;
+        border-top-width: 1px;
         border-top-style: dashed;
       }
     }
@@ -69,7 +69,7 @@ main article{
     .hat {
       color: $red;
       font-weight: bold;
-      font-size: 2.5em;
+      font-size: 1.5em;
     }
 
     h1, h2{
@@ -78,7 +78,7 @@ main article{
 
     h1 {
       color: $black;
-      font-size: 5.5em;
+      font-size: 2em;
       margin: 5px 0;
       line-height: 1.3em;
     }
@@ -86,13 +86,13 @@ main article{
     h2 {
       color: $black-light;
       font-style: italic;
-      font-size: 2em;
+      font-size: 1em;
       line-height: 1.2em;
-      margin-top: 50px;
+      margin-top: 25px;
     }
 
     figure {
-      margin: 50px 0;
+      margin: 25px 0;
 
       img{
         width: 100%;
@@ -107,13 +107,11 @@ main article{
 
     .place-and-time{
       color: $gray-light;
-      line-height: 3em;
-      padding: 10px 0;
+      line-height: 1.5em;
+      padding: 5px 0;
       border-top: 2px solid $gray-lighter;
       border-bottom: 2px solid $gray-lighter;
       font-weight: 300;
-
-
 
       time {
         display: block;
@@ -124,19 +122,16 @@ main article{
 
   .content{
     color: $black-dark;
-    font-size: 2.2em;
+    font-size: 1em;
     line-height: 2em;
     font-weight: 300;
     word-spacing: 2px;
+    padding-top: 10px;
 
     &::first-letter{
       font-size: 4em;
       font-weight: bold;
       color: black;
     }
-
-
-
   }
-
 }

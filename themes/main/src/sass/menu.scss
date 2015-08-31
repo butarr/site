@@ -1,0 +1,33 @@
+@import '_includes/variables';
+
+@mixin transition-right(){
+  -webkit-transition:  right 0.4s ease-in-out;
+  -moz-transition:  right 0.4s ease-in-out;
+  -ms-transition:  right 0.4s ease-in-out;
+  -o-transition:  right 0.4s ease-in-out;
+  transition:  right 0.4s ease-in-out;
+}
+
+#page-header .menu {
+  width: 40px;
+  right: 0;
+  top: 10px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 1000;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  background: #FFF;
+  box-shadow: 0 0 9px black;
+  @include transition-right();
+
+  .fa {
+    font-size: 2em;
+    color: $red;
+  }
+
+  &.open{
+    right: 240px;
+  }
+
+}

@@ -10,9 +10,9 @@
   h1 {
     border: 0;
     text-align: start;
-    font-size: 2em;
-    padding-top: 20px;
-    padding-left: 20px;
+    font-size: 1em;
+    padding-top: 10px;
+    padding-left: 10px;
     font-weight: 500;
     margin: 0;
     color: $black;
@@ -21,18 +21,18 @@
 
   label {
     color: black;
-    font-size: 3em;
+    font-size: 1.2em;
   }
 
   input {
-    font-size: 3em;
+    font-size: 1em;
   }
 
   button {
     display: block;
     background-color: $red;
     color: white;
-    font-size: 3em;
+    font-size: 1.2em;
     font-weight: 300;
   }
 }
