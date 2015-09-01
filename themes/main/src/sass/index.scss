@@ -1,0 +1,38 @@
+@import '_includes/variables';
+
+
+#home {
+  padding: 15px;
+
+  h1 {
+    color: $bdf-red;
+    border-bottom: 1px solid $bdf-red;
+    font-weight: 400;
+  }
+
+  .new {
+    figure {
+      figcaption {
+        color: $gray;
+        font-size: 0.4em;
+        text-align: right;
+      }
+      img {
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+
+    .title {
+      color: $black;
+      font-size: 1em;
+      margin: 5px 0;
+      text-decoration: underline;
+    }
+
+    .description {
+      color: $black-light;
+      font-size: 0.7em;
+    }
+  }
+}
