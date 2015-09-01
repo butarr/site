@@ -1,3 +1,25 @@
+#home {
+  padding: 15px; }
+  #home h1 {
+    color: #880606;
+    border-bottom: 1px solid #880606;
+    font-weight: 400; }
+  #home .new figure figcaption {
+    color: #7e7e7e;
+    font-size: 0.4em;
+    text-align: right; }
+  #home .new figure img {
+    width: 100%;
+    cursor: pointer; }
+  #home .new .title {
+    color: #33362c;
+    font-size: 1em;
+    margin: 5px 0;
+    text-decoration: underline; }
+  #home .new .description {
+    color: #131313;
+    font-size: 0.7em; }
+
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,700,300);
 * {
   font-family: 'Lato', sans-serif; }
@@ -105,90 +127,95 @@ body {
     font-size: 1.2em;
     font-weight: 300; }
 
-main article {
+#post {
   padding: 15px; }
-  main article footer a, main article aside a {
-    text-decoration: none;
-    width: 50%; }
-  main article footer h1, main article aside h1 {
-    font-weight: bold;
-    font-size: 1em;
-    color: #992727;
-    border-bottom: 2px solid #992727;
-    padding-bottom: 7px; }
-  main article footer section, main article aside section {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    main article footer section h2, main article aside section h2 {
-      padding-left: 10px;
-      font-weight: 400;
-      font-size: 1.1em;
-      line-height: 1em;
-      color: #33362c; }
-    main article footer section img, main article aside section img {
-      width: 100%;
-      border-radius: 5px; }
-    main article footer section + section, main article aside section + section {
-      margin-top: 25px;
-      padding-top: 25px;
-      border-top-color: #992727;
-      border-top-width: 1px;
-      border-top-style: dashed; }
-  main article footer section h2 {
-    color: #7e7e7e; }
-  main article footer .more-news {
-    width: 100%;
-    font-size: 1em;
-    text-align: right;
-    display: block;
-    color: #992727;
-    font-weight: bold;
-    margin-top: 50px; }
-  main article header .hat {
+  #post header .hat {
     color: #992727;
     font-weight: bold;
     font-size: 1.1em; }
-  main article header h1, main article header h2 {
+  #post header h1, #post header h2 {
     font-weight: lighter; }
-  main article header h1 {
+  #post header h1 {
     color: #33362c;
     font-size: 2em;
     margin: 5px 0;
     line-height: 1.1em; }
-  main article header h2 {
+  #post header h2 {
     color: #131313;
     font-style: italic;
     font-size: 1em;
     line-height: 1.2em;
     margin-top: 25px; }
-  main article header figure {
+  #post header figure {
     margin: 25px 0; }
-    main article header figure img {
+    #post header figure img {
       width: 100%; }
-    main article header figure figcaption {
+    #post header figure figcaption {
       color: #7e7e7e;
       font-size: 0.7em;
       text-align: right; }
-  main article header .place-and-time {
+  #post header .place-and-time {
     color: darkgray;
     line-height: 1.5em;
     padding: 5px 0;
     border-top: 2px solid #dfdfdf;
     border-bottom: 2px solid #dfdfdf;
     font-weight: 300; }
-    main article header .place-and-time time {
+    #post header .place-and-time time {
       display: block;
       font-style: italic; }
-  main article .content {
+  #post .content {
     color: #414141;
     font-size: 1em;
     line-height: 1.7em;
     font-weight: 300;
     word-spacing: 2px;
     padding-top: 10px; }
-    main article .content::first-letter {
+    #post .content::first-letter {
       font-size: 4em;
       font-weight: bold;
       color: black; }
+
+#post footer a, #post aside a {
+  text-decoration: none;
+  width: 50%; }
+
+#post footer h1, #post aside h1 {
+  font-weight: bold;
+  font-size: 1em;
+  color: #880606;
+  border-bottom: 2px solid #992727;
+  padding-bottom: 7px; }
+
+#post footer section, #post aside section {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #post footer section h2, #post aside section h2 {
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1em;
+    color: #33362c; }
+  #post footer section img, #post aside section img {
+    width: 100%;
+    border-radius: 5px; }
+  #post footer section + section, #post aside section + section {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top-color: #992727;
+    border-top-width: 1px;
+    border-top-style: dashed; }
+
+#post footer section h2 {
+  color: #7e7e7e; }
+
+#post footer .more-news {
+  width: 100%;
+  font-size: 1em;
+  text-align: right;
+  display: block;
+  color: #992727;
+  font-weight: bold;
+  margin-top: 50px; }
 
