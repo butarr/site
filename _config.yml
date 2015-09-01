@@ -12,8 +12,8 @@ timezone:
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: brasildefato.com.br
-root: /
-baseurl: ''
+root: /site
+baseurl: '/site'
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -68,4 +68,6 @@ theme: main
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:brasil-de-fato/site.git
+  branch: gh-pages
