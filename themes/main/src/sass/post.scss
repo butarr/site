@@ -1,69 +1,7 @@
 @import '_includes/variables';
 
-
-main article{
+#post {
   padding: 15px;
-
-
-  footer, aside {
-    a {
-      text-decoration: none;
-      width: 50%;
-    }
-
-    h1{
-      font-weight: bold;
-      font-size: 1em;
-      color: $bdf-red;
-      border-bottom: 2px solid #992727;
-      padding-bottom: 7px;
-    }
-
-    section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      h2 {
-        padding-left: 10px;
-        font-weight: 400;
-        font-size: 1.1em;
-        line-height: 1em;
-        color: $black;
-      }
-
-      img {
-        width: 100%;
-        border-radius: 5px;
-      }
-
-      & + section {
-        margin-top: 25px;
-        padding-top: 25px;
-
-        border-top-color: $red;
-        border-top-width: 1px;
-        border-top-style: dashed;
-      }
-    }
-  }
-
-  footer {
-    section h2 {
-      color: $gray;
-    }
-
-    .more-news {
-      width: 100%;
-      font-size: 1em;
-      text-align: right;
-      display: block;
-      color: $red;
-      font-weight: bold;
-      margin-top: 50px;
-    }
-  }
-
 
   header {
     .hat {
@@ -132,6 +70,68 @@ main article{
       font-size: 4em;
       font-weight: bold;
       color: black;
+    }
+  }
+}
+
+
+#post {
+  footer, aside {
+    a {
+      text-decoration: none;
+      width: 50%;
+    }
+
+    h1{
+      font-weight: bold;
+      font-size: 1em;
+      color: $bdf-red;
+      border-bottom: 2px solid #992727;
+      padding-bottom: 7px;
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        padding-left: 10px;
+        font-weight: 400;
+        font-size: 1.1em;
+        line-height: 1em;
+        color: $black;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      & + section {
+        margin-top: 25px;
+        padding-top: 25px;
+
+        border-top-color: $red;
+        border-top-width: 1px;
+        border-top-style: dashed;
+      }
+    }
+  }
+
+  footer {
+    section h2 {
+      color: $gray;
+    }
+
+    .more-news {
+      width: 100%;
+      font-size: 1em;
+      text-align: right;
+      display: block;
+      color: $red;
+      font-weight: bold;
+      margin-top: 50px;
     }
   }
 }
