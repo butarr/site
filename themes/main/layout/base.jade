@@ -7,7 +7,7 @@ html(lang='pt-BR')
   body(class=bodyclass)
     header#page-header
       .banner
-        a(href="/", title="Link para a página principal")
+        a(href="#{ url_for('/') }", title="Link para a página principal")
           img(src="//farm1.staticflickr.com/769/20854928129_d843611317_b.jpg", alt="imagem banner")
       .menu-options(data-toggle="nav.menu")
         i.fa.fa-bars
