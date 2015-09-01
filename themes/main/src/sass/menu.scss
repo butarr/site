@@ -11,7 +11,7 @@
 #page-header .menu-options{
   width: 30px;
   right: 0;
-  top: 10px;
+  top: 0;
   cursor: pointer;
   position: fixed;
   z-index: 1000;
@@ -22,7 +22,7 @@
   @include transition-right();
 
   .fa {
-    font-size: 2em;
+    font-size: 1.9em;
     color: $red;
   }
 
@@ -34,6 +34,7 @@
 #page-header .menu{
   right: -240px;
   width: 240px;
+  top: 0;
   box-sizing: border-box;
   @include transition-right();
 
@@ -56,3 +57,14 @@
   position: fixed;
   table-layout: fixed;
 }
+
+#page-header .banner{
+  height: 50px;
+  background-color: rgba(136,6,6,1);
+
+  img {
+    width: auto;
+    height: 50px;
+  }
+}
+
