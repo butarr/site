@@ -1,4 +1,5 @@
 @import '_includes/variables';
+@import '_includes/query';
 
 @mixin transition-right(){
   -webkit-transition:  right 0.4s ease-in-out;
@@ -9,9 +10,9 @@
 }
 
 #page-header .menu-options{
-  width: 30px;
+  width: 20px;
   right: 0;
-  top: 0;
+  top: 5px;
   cursor: pointer;
   position: fixed;
   z-index: 1000;
@@ -29,7 +30,12 @@
   &.open{
     right: 240px;
   }
+
+  @include media-query(MEDIUM) {
+    display: none;
+  }
 }
+
 
 #page-header .menu{
   right: -240px;
@@ -56,15 +62,73 @@
   float: right;
   position: fixed;
   table-layout: fixed;
+
+  @include media-query(MEDIUM) {
+    display: block;
+    float: none;
+    width: 100%;
+    min-height: 40px;
+    height: 40px;
+    margin-top: 2px;
+    box-shadow: none;
+    position: inherit;
+    background-color: $bdf-red;
+    padding:  0 60px;
+
+    ul {
+      margin: 0;
+      list-style: none;
+      height: 100%;
+      width: 50%;
+      padding: 0;
+      display: flex;
+      justify-content: start;
+
+      li {
+        margin: auto;
+        align-self: center;
+      }
+
+      a {
+        text-decoration:  none;
+        color: white;
+        font-size: 1.3em;
+        font-weight: 400;
+
+        &.active {
+          font-weight: bold;
+
+        }
+      }
+    }
+  }
 }
 
 #page-header .banner{
-  height: 50px;
+  height: 60px;
   background-color: $bdf-red;
+  display: flex;
+
+  a {
+    display: flex;
+  }
 
   img {
     width: auto;
     height: 50px;
+    align-self: center;
+  }
+
+  @include media-query(MEDIUM) {
+    height: 130px;
+    padding-left: 75px;
+    display: flex;
+    align-self: center;
+    justify-content: start;
+
+    img {
+      height: 130px;
+    }
   }
 }
 

@@ -2,78 +2,78 @@
 
 #post {
   padding: 15px;
+}
 
-  header {
-    .hat {
-      color: $red;
-      font-weight: bold;
-      font-size: 1.1em;
+
+#post header {
+  .hat {
+    color: $red;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .title, .description {
+    font-weight: lighter;
+  }
+
+  .title {
+    color: $black;
+    font-size: 2em;
+    margin: 5px 0;
+    line-height: 1.1em;
+  }
+
+  .description {
+    color: $black-light;
+    font-style: italic;
+    font-size: 1em;
+    line-height: 1.2em;
+    margin-top: 25px;
+  }
+
+  figure {
+    margin: 25px 0;
+
+    img{
+      width: 100%;
     }
 
-    .title, .description {
-      font-weight: lighter;
-    }
-
-    .title {
-      color: $black;
-      font-size: 2em;
-      margin: 5px 0;
-      line-height: 1.1em;
-    }
-
-    .description {
-      color: $black-light;
-      font-style: italic;
-      font-size: 1em;
-      line-height: 1.2em;
-      margin-top: 25px;
-    }
-
-    figure {
-      margin: 25px 0;
-
-      img{
-        width: 100%;
-      }
-
-      figcaption{
-        color: $gray;
-        font-size: 0.7em;
-        text-align: right;
-      }
-    }
-
-    .place-and-time{
-      color: $gray-light;
-      line-height: 1.5em;
-      padding: 5px 0;
-      border-top: 2px solid $gray-lighter;
-      border-bottom: 2px solid $gray-lighter;
-      font-weight: 300;
-
-      time {
-        display: block;
-        font-style: italic;
-      }
+    figcaption{
+      color: $gray;
+      font-size: 0.7em;
+      text-align: right;
     }
   }
 
-  .content{
-    color: $black-dark;
-    font-size: 1em;
-    line-height: 1.7em;
+  .place-and-time{
+    color: $gray-light;
+    line-height: 1.5em;
+    padding: 5px 0;
+    border-top: 2px solid $gray-lighter;
+    border-bottom: 2px solid $gray-lighter;
     font-weight: 300;
-    word-spacing: 2px;
-    padding-top: 10px;
 
-    &::first-letter{
-      font-size: 4em;
-      font-weight: bold;
-      color: black;
+    time {
+      display: block;
+      font-style: italic;
     }
   }
 }
 
+#post .content{
+  color: $black-dark;
+  font-size: 1em;
+  line-height: 1.7em;
+  font-weight: 300;
+  word-spacing: 2px;
+  padding-top: 10px;
+
+  &::first-letter{
+    font-size: 4em;
+    font-weight: bold;
+    color: black;
+  }
+}
 
 #post {
   footer, aside {
