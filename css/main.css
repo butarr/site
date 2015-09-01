@@ -1,0 +1,194 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,700,300);
+* {
+  font-family: 'Lato', sans-serif; }
+
+body {
+  margin: 0; }
+  body > footer {
+    color: white;
+    background-color: #992727; }
+    body > footer p {
+      text-align: center;
+      font-weight: 200;
+      font-size: 0.9em;
+      margin: 0; }
+    body > footer .love {
+      margin-left: 5px; }
+
+#page-header .menu-options {
+  width: 30px;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  position: fixed;
+  z-index: 1000;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  background: #FFF;
+  box-shadow: -3px 0 3px 0 rgba(0, 0, 0, 0.42);
+  -webkit-transition: right 0.4s ease-in-out;
+  -moz-transition: right 0.4s ease-in-out;
+  -ms-transition: right 0.4s ease-in-out;
+  -o-transition: right 0.4s ease-in-out;
+  transition: right 0.4s ease-in-out; }
+  #page-header .menu-options .fa {
+    font-size: 1.9em;
+    color: #992727; }
+  #page-header .menu-options.open {
+    right: 240px; }
+
+#page-header .menu {
+  right: -240px;
+  width: 240px;
+  top: 0;
+  box-sizing: border-box;
+  -webkit-transition: right 0.4s ease-in-out;
+  -moz-transition: right 0.4s ease-in-out;
+  -ms-transition: right 0.4s ease-in-out;
+  -o-transition: right 0.4s ease-in-out;
+  transition: right 0.4s ease-in-out; }
+  #page-header .menu.open {
+    right: 0; }
+
+#page-header .menu {
+  padding-top: 5px;
+  background: white;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.42);
+  box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.42);
+  color: #555;
+  display: table;
+  float: right;
+  position: fixed;
+  table-layout: fixed; }
+
+#page-header .banner {
+  height: 50px;
+  background-color: #880606; }
+  #page-header .banner img {
+    width: auto;
+    height: 50px; }
+
+#newsletter {
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 1px solid #e1e1e1;
+  background-color: #f5f5f5; }
+  #newsletter h1, #newsletter h2 {
+    padding-left: 10px;
+    border: 0;
+    margin: 0;
+    text-align: start; }
+  #newsletter h1 {
+    padding-top: 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #992727; }
+  #newsletter h2 {
+    font-size: 0.6em;
+    color: #747474;
+    font-weight: 400; }
+  #newsletter .form {
+    padding: 5px 10px; }
+  #newsletter input {
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 0.8em;
+    width: 98%; }
+  #newsletter button {
+    display: block;
+    background-color: #992727;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 300; }
+
+main article {
+  padding: 15px; }
+  main article footer a, main article aside a {
+    text-decoration: none;
+    width: 50%; }
+  main article footer h1, main article aside h1 {
+    font-weight: bold;
+    font-size: 1em;
+    color: #992727;
+    border-bottom: 2px solid #992727;
+    padding-bottom: 7px; }
+  main article footer section, main article aside section {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main article footer section h2, main article aside section h2 {
+      padding-left: 10px;
+      font-weight: 400;
+      font-size: 1.1em;
+      line-height: 1em;
+      color: #33362c; }
+    main article footer section img, main article aside section img {
+      width: 100%;
+      border-radius: 5px; }
+    main article footer section + section, main article aside section + section {
+      margin-top: 25px;
+      padding-top: 25px;
+      border-top-color: #992727;
+      border-top-width: 1px;
+      border-top-style: dashed; }
+  main article footer section h2 {
+    color: #7e7e7e; }
+  main article footer .more-news {
+    width: 100%;
+    font-size: 1em;
+    text-align: right;
+    display: block;
+    color: #992727;
+    font-weight: bold;
+    margin-top: 50px; }
+  main article header .hat {
+    color: #992727;
+    font-weight: bold;
+    font-size: 1.1em; }
+  main article header h1, main article header h2 {
+    font-weight: lighter; }
+  main article header h1 {
+    color: #33362c;
+    font-size: 2em;
+    margin: 5px 0;
+    line-height: 1.1em; }
+  main article header h2 {
+    color: #131313;
+    font-style: italic;
+    font-size: 1em;
+    line-height: 1.2em;
+    margin-top: 25px; }
+  main article header figure {
+    margin: 25px 0; }
+    main article header figure img {
+      width: 100%; }
+    main article header figure figcaption {
+      color: #7e7e7e;
+      font-size: 0.7em;
+      text-align: right; }
+  main article header .place-and-time {
+    color: darkgray;
+    line-height: 1.5em;
+    padding: 5px 0;
+    border-top: 2px solid #dfdfdf;
+    border-bottom: 2px solid #dfdfdf;
+    font-weight: 300; }
+    main article header .place-and-time time {
+      display: block;
+      font-style: italic; }
+  main article .content {
+    color: #414141;
+    font-size: 1em;
+    line-height: 1.7em;
+    font-weight: 300;
+    word-spacing: 2px;
+    padding-top: 10px; }
+    main article .content::first-letter {
+      font-size: 4em;
+      font-weight: bold;
+      color: black; }
+
