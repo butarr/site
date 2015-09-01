@@ -7,3 +7,4 @@ public/
 .deploy*/db.json
 node_modules
 themes/**/source/
+.deploy_git/
