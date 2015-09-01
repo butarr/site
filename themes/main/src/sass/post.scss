@@ -10,18 +10,18 @@
       font-size: 1.1em;
     }
 
-    h1, h2{
+    .title, .description {
       font-weight: lighter;
     }
 
-    h1 {
+    .title {
       color: $black;
       font-size: 2em;
       margin: 5px 0;
       line-height: 1.1em;
     }
 
-    h2 {
+    .description {
       color: $black-light;
       font-style: italic;
       font-size: 1em;

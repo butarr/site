@@ -4,8 +4,8 @@ block content
   article#post(itemscope="NewsArticle")
     header
       span.hat(itemprop="about")= page.hat
-      h1(itemprop="headline")= page.title
-      h2(itemprop="description")= page.description
+      h1.title(itemprop="headline")= page.title
+      h2.description(itemprop="description")= page.description
       figure
         img(itemprop="image", alt="Foto capa da noticia", src=page.cover['url'] )
         figcaption= page.cover['subtitle']
