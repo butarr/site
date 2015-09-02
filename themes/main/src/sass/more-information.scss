@@ -27,22 +27,13 @@
       padding-right: 10px;
       border-top: 2px solid rgba(230,230,230, 0.7);
 
-      h2 {
+      .description {
         &::before {
           content: "\f111";
           font: normal normal normal 14px/1 FontAwesome;
           font-size: 0.6em;
           padding-right: 5px;
           color: lighten($gray, 20%);
-        }
-
-        .tag {
-          font-size: 0.7em;
-          font-weight: bold;
-          background-color: lighten($gray, 40%);
-          color: $black-dark;
-          padding: 5px;
-          letter-spacing: 1px;
         }
 
         font-size: 0.9em;
@@ -58,7 +49,7 @@
       }
     }
 
-    .news .thumbail-link {
+    .news .thumbnail-link {
       display: none;
     }
 
