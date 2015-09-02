@@ -135,7 +135,7 @@
 }
 
 #post {
-  footer, aside {
+  .more-information, .last-news {
     a {
       text-decoration: none;
       width: 50%;
@@ -149,7 +149,7 @@
       padding-bottom: 7px;
     }
 
-    section {
+    .news {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -167,7 +167,7 @@
         border-radius: 5px;
       }
 
-      & + section {
+      & + .news {
         margin-top: 25px;
         padding-top: 25px;
 
@@ -178,8 +178,8 @@
     }
   }
 
-  footer {
-    section h2 {
+  .last-news {
+    .news h2 {
       color: $gray;
     }
 
