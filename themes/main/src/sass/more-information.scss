@@ -36,6 +36,15 @@
           color: lighten($gray, 20%);
         }
 
+        .tag {
+          font-size: 0.7em;
+          font-weight: bold;
+          background-color: lighten($gray, 40%);
+          color: $black-dark;
+          padding: 5px;
+          letter-spacing: 1px;
+        }
+
         font-size: 0.9em;
         font-weight: 400;
         color: $gray;
