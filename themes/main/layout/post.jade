@@ -16,46 +16,48 @@ block content
 
     section.content
      != page.content
-    section.more-information
-      h1 Mais Informações
-      section.news
-        a(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
-          img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
-        a(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
-          h2 PME não garante aumento de recursos e diminui igualdade
-      section.news
-        a(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
-          img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
-        a(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
-          h2 PME não garante aumento de recursos e diminui igualdade
-      section.news
-        a(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
-          img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
-        a(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
-          h2 PME não garante aumento de recursos e diminui igualdade
-    section.last-news
-      h1 Últimas Notícias
-      section.news
-        a(title="Link para notícia recente", href="//www.brasildefato.com.br")
-          img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
-        a(title="Link para notícia recente", href="//www.brasildefato.com.br")
-          h2 15 partidos apresentam documento com propostas para superação da crise
-      section.news
-        a(title="Link para notícia recente", href="//www.brasildefato.com.br")
-          img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
-        a(title="Link para notícia recente", href="//www.brasildefato.com.br")
-          h2 Doleiro Alberto Yousseff afirma que Aécio Neves recebeu propina de Furnas
-      section.news
-        a(title="Link para notícia recente", href="//www.brasildefato.com.br")
-          img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
-        a(title="Link para notícia recente", href="//www.brasildefato.com.br")
-          h2 Pistoleiros atacam acampamentos do MST no MA e PR
-      a.more-news(title="Link para todas as notícias", href="//www.brasildefato.com.br")
-        = "Mais notícias..."
 
 block after-content
-    #newsletter
-      h1 Gostou do que leu?
+  section#more-information
+    h1 Mais Informações
+    section.news
+      a(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
+        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
+      a(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
+        h2 PME não garante aumento de recursos e diminui igualdade
+    section.news
+      a(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
+        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
+      a(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
+        h2 PME não garante aumento de recursos e diminui igualdade
+    section.news
+      a(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
+        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
+      a(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
+        h2 PME não garante aumento de recursos e diminui igualdade
+  section#last-news
+    h1 Últimas Notícias
+    section.news
+      a(title="Link para notícia recente", href="//www.brasildefato.com.br")
+        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
+      a(title="Link para notícia recente", href="//www.brasildefato.com.br")
+        h2 15 partidos apresentam documento com propostas para superação da crise
+    section.news
+      a(title="Link para notícia recente", href="//www.brasildefato.com.br")
+        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
+      a(title="Link para notícia recente", href="//www.brasildefato.com.br")
+        h2 Doleiro Alberto Yousseff afirma que Aécio Neves recebeu propina de Furnas
+    section.news
+      a(title="Link para notícia recente", href="//www.brasildefato.com.br")
+        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
+      a(title="Link para notícia recente", href="//www.brasildefato.com.br")
+        h2 Pistoleiros atacam acampamentos do MST no MA e PR
+    a.more-news(title="Link para todas as notícias", href="//www.brasildefato.com.br")
+      = "Mais notícias..."
+
+append after-content
+  #newsletter
+    h1 Gostou do que leu?
       h2 Receba nossas matérias por email
       .form
         input(name="email", type="email",placeholder="seu@email.com", required="true")
