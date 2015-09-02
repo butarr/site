@@ -10,8 +10,7 @@
 }
 
 #post {
-  padding: 15px;
-  width: 100%;
+  padding: 10px 15px;
 
   @include media-query(MEDIUM) {
     padding: 60px 0 0 10%;
