@@ -10,7 +10,7 @@
 }
 
 #page-header .menu-options{
-  width: 20px;
+  width: 50px;
   right: 0;
   top: 5px;
   cursor: pointer;
@@ -68,12 +68,12 @@
     float: none;
     width: 100%;
     min-height: 40px;
-    height: 40px;
+    height: 60px;
     margin-top: 2px;
-    box-shadow: none;
+    box-shadow: 0px 6px 10px -2px rgba(0, 0, 0, 0.42);
     position: inherit;
     background-color: $bdf-red;
-    padding:  0 60px;
+    padding:  0 8.5%;
 
     ul {
       margin: 0;
@@ -121,13 +121,13 @@
 
   @include media-query(MEDIUM) {
     height: 130px;
-    padding-left: 75px;
+    padding-left: 9.2%;
     display: flex;
     align-self: center;
     justify-content: start;
 
     img {
-      height: 130px;
+      height: 90px;
     }
   }
 }

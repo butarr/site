@@ -10,10 +10,8 @@ block content
         img(itemprop="image", alt="Foto capa da noticia", src=page.cover['url'] )
         figcaption= page.cover['subtitle']
       section.place-and-time
-        = "Por "
-        span(rel="author", itemprop="author")= page.author
-        = ", "
-        span(rel="place", itemprop="contentLocation")= page.place
+        span.author(rel="author", itemprop="author")= page.author
+        span.place(rel="place", itemprop="contentLocation")= page.place
         time(datetime=page.date)= page.date.locale('pt-br').format('LLLL')
 
     section.content

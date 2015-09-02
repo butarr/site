@@ -1,7 +1,22 @@
+@import '_includes/query';
 @import '_includes/variables';
+
+@mixin get-font-size($size) {
+  font-size: $size + em;
+
+  @include media-query(MEDIUM) {
+    font-size: ( $size + 0.4 ) + em;
+  }
+}
 
 #post {
   padding: 15px;
+  width: 100%;
+
+  @include media-query(MEDIUM) {
+    padding: 60px 0 0 10%;
+    width: 55%;
+  }
 }
 
 
@@ -9,7 +24,7 @@
   .hat {
     color: $red;
     font-weight: bold;
-    font-size: 1.1em;
+    @include get-font-size(1.1);
   }
 
   .title, .description {
@@ -18,17 +33,24 @@
 
   .title {
     color: $black;
-    font-size: 2em;
     margin: 5px 0;
     line-height: 1.1em;
+    @include get-font-size(2);
+
+    @include media-query(MEDIUM) {
+      font-weight: bold;
+    }
   }
 
   .description {
     color: $black-light;
     font-style: italic;
-    font-size: 1em;
     line-height: 1.2em;
     margin-top: 25px;
+    @include get-font-size(1);
+    @include media-query(MEDIUM) {
+      margin-top: 10px;
+    }
   }
 
   figure {
@@ -40,8 +62,8 @@
 
     figcaption{
       color: $gray;
-      font-size: 0.7em;
       text-align: right;
+      @include get-font-size(0.7);
     }
   }
 
@@ -52,27 +74,65 @@
     border-top: 2px solid $gray-lighter;
     border-bottom: 2px solid $gray-lighter;
     font-weight: 300;
+    @include get-font-size(0.6);
 
     time {
       display: block;
       font-style: italic;
+    }
+
+    .author {
+      &::before {
+        content: 'por ';
+      }
+      &::after {
+        content: ', ';
+      }
+    }
+
+    @include media-query(MEDIUM) {
+      border-top: none;
+      border-bottom: none;
+      color: $black;
+
+      .author, .place {
+        font-weight: bold;
+
+        &::before{
+          font-weight: 300;
+        }
+      }
+
+      .author::after {
+        content: '';
+      }
+
+      .place {
+        &::before {
+          content: 'de ';
+        }
+        display: block;
+      }
+
+    }
+  }
+
+  @include media-query(MEDIUM) {
+    figure {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 600px;
     }
   }
 }
 
 #post .content{
   color: $black-dark;
-  font-size: 1em;
   line-height: 1.7em;
   font-weight: 300;
   word-spacing: 2px;
   padding-top: 10px;
-
-  &::first-letter{
-    font-size: 4em;
-    font-weight: bold;
-    color: black;
-  }
+  @include get-font-size(1);
 }
 
 #post {
