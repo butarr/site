@@ -6,6 +6,11 @@
   font-family: 'Lato', sans-serif;
 }
 
+// Hack to IE10
+@-ms-viewport{
+  width: device-width;
+}
+
 
 body {
   margin: 0;
