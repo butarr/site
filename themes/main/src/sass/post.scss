@@ -63,7 +63,7 @@
     figcaption{
       color: $gray;
       text-align: right;
-      @include get-font-size(0.7);
+      @include get-font-size(0.5);
     }
   }
 
@@ -121,7 +121,7 @@
     figure {
       margin-left: auto;
       margin-right: auto;
-      max-width: 600px;
+      max-width: 100%;
     }
   }
 }
