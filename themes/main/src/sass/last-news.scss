@@ -1,0 +1,21 @@
+@import '_includes/query';
+@import '_includes/variables';
+@import '_includes/mixins';
+
+#last-news {
+  @include list-news-on-mobile();
+
+  .news h2 {
+    color: $gray;
+  }
+
+  .more-news {
+    width: 100%;
+    font-size: 1em;
+    text-align: right;
+    display: block;
+    color: $red;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+}

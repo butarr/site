@@ -1,0 +1,7 @@
+@import '_includes/query';
+@import '_includes/variables';
+@import '_includes/mixins';
+
+#more-information{
+  @include list-news-on-mobile();
+}
