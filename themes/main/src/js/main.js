@@ -15,10 +15,8 @@ $(document).ready(function() {
       return parseInt($newsletter.offset().top) <= parseInt($window.scrollTop() + $window.height() * 1.3);
     }
     $window.scroll(function(){
-      if ($window.scrollTop() > 300 && newsletterIsVisible() ) {
-        marginTop = '-412px';
-      } else if( $window.scrollTop() > 300 ) {
-        marginTop = '-180px';
+      if( $window.scrollTop() > 300 ) {
+        marginTop = '-100px';
       } else {
         marginTop = '90px';
       }
