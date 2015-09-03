@@ -1,7 +1,6 @@
 extends base
 
 append content
-
   nav.social-network
     ol
       li(itemtype="#")
@@ -28,7 +27,8 @@ append content
       li(itemtype="#")
         a(href="#", itemprop="url")
           span.breadcrumb-item(itemprop="title")= " + "
-          
+
+append content
   nav.breadcrumb
     ol
       li(itemtype="#")
@@ -44,6 +44,8 @@ append content
       li(itemtype="#")
         a(href="#", itemprop="url", class="active")
           span.breadcrumb-item(itemprop="title", class="active")= "Mais admimiradas"
+
+append content
   article#post(itemscope="NewsArticle")
     header
       span.hat(itemprop="about")= page.hat
