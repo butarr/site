@@ -1,0 +1,38 @@
+@import '_includes/query';
+@import '_includes/variables';
+
+.breadcrumb {
+  margin-left: 7%;
+  margin-top: 20px;
+  ol{
+    display: none;
+    width: 55%;
+    float: left;
+    @include media-query(MEDIUM) {
+      list-style: none;
+      display: inline-flex;
+      font-weight: 600;
+      li {
+        margin-right: 5px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        .breadcrumb-item{
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+      .active {
+        color: $bdf-red;
+      }
+    }
+  }
+
+  + #post {
+    padding-top: 0;
+  }
+
+}

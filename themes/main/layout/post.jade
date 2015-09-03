@@ -1,6 +1,21 @@
 extends base
 
 append content
+  nav.breadcrumb
+    ol
+      li(itemtype="#")
+        span="Você está aqui:"
+      li(itemtype="#")
+        a(href="#", itemprop="url")
+          span.breadcrumb-item(itemprop="title")= "Página Inicial"
+          span=" / "
+      li(itemtype="#")
+        a(href="#", itemprop="url")
+          span.breadcrumb-item(itemprop="title")= "Editora"
+          span=" / "
+      li(itemtype="#")
+        a(href="#", itemprop="url", class="active")
+          span.breadcrumb-item(itemprop="title", class="active")= "Mais admimiradas"
   article#post(itemscope="NewsArticle")
     header
       span.hat(itemprop="about")= page.hat
