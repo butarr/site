@@ -3,19 +3,54 @@
 @import '_includes/variables';
 
 .social-network {
-  display: none;
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  ol{
+    list-style: none;
+    background-color: $bdf-red;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    height: 40px;
+    padding: 0;
+
+    li{
+      margin: auto;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5em;
+        cursor: pointer;
+      }
+
+      &.print {
+        display: none;
+      }
+
+      &.whatsapp {
+        display: block;
+      }
+    }
+  }
 
   @include media-query(MEDIUM) {
     display: block;
     margin-top: 90px;
-    position: fixed;
+    bottom: initial;
 
     ol{
-      width: 55%;
+      background-color: white;
+      height: auto;
       float: left;
-      list-style: none;
       font-weight: 600;
       display: block;
+      padding-left: 40px;
 
       li {
         margin-right: 5px;
@@ -29,19 +64,24 @@
         &:last-child{
           border-bottom: 2px solid #eaeaea;
         }
-      }
 
-      a {
-        text-decoration: none;
-        color: $black;
-        font-size: 1.5em;
-        cursor: pointer;
-        transition: color 0.5s ease;
-        transition: font-size 0.5s ease;
+        a {
+          color: $black;
+          transition: color 0.5s ease;
+          transition: font-size 0.5s ease;
 
-        &:hover{
-          color: $bdf-red;
-          font-size: 2em;
+          &:hover{
+            color: $bdf-red;
+            font-size: 2em;
+          }
+        }
+
+        &.whatsapp {
+          display: none;
+        }
+
+        &.print {
+          display: block;
         }
       }
     }
