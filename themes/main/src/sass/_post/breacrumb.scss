@@ -1,7 +1,7 @@
 @import '_includes/query';
 @import '_includes/variables';
 
-.breadcrumb {
+#breadcrumb {
   display: none;
 
   @include media-query(MEDIUM) {
