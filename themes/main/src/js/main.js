@@ -6,15 +6,33 @@ $(document).ready(function() {
   });
 
   if ($('.social-network')[0]) {
-    $(window).scroll(function(){
-      if( $(window).scrollTop() > 40) {
-        $('.social-network').css('margin-top', '-180px');
+    var $window = $(window);
+    var $socialNetwork = $('.social-network');
+    var $newsletter = $('#newsletter');
+    var marginTop = '';
+
+    var newsletterIsVisible = function() {
+      return parseInt($newsletter.offset().top) <= parseInt($window.scrollTop() + $window.height() * 1.3);
+    }
+    $window.scroll(function(){
+      if ($window.scrollTop() > 300 && newsletterIsVisible() ) {
+        marginTop = '-412px';
+      } else if( $window.scrollTop() > 300 ) {
+        marginTop = '-180px';
       } else {
-        $('.social-network').css('margin-top', '90px');
+        marginTop = '90px';
       }
+
+      console.log(marginTop);
+      if (marginTop !== $socialNetwork.css('margin-top')) {
+        $socialNetwork.css({
+          'margin-top': marginTop
+        });
+      }
+
     });
-    
-    $(window).trigger('scroll');
+
+    $window.trigger('scroll');
   }
 
 });

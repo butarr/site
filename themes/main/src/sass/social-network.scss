@@ -1,10 +1,10 @@
 @import '_includes/query';
 @import '_includes/variables';
 
-.social-network {
+@mixin social-network-for-non-mobile-device() {
+
   margin-top: 90px;
   position: fixed;
-
   ol{
     width: 55%;
     float: left;
@@ -13,11 +13,15 @@
     display: block;
     li {
       margin-right: 5px;
+      background: #FFF;
       width: 40px;
       height: 60px;
       line-height: 60px;
       text-align: center;
       border-top: 2px solid #eaeaea;
+      &:last-child{
+        border-bottom: 2px solid #eaeaea;
+      }
     }
     a {
       text-decoration: none;
@@ -32,7 +36,20 @@
     .active {
       color: $bdf-red;
     }
+  }
+}
 
+.social-network {
+  display: none;
+
+  @include media-query(LARGE) {
+    display: block;
+    @include social-network-for-non-mobile-device();
+  }
+
+  @include media-query(MEDIUM) {
+    display: block;
+    @include social-network-for-non-mobile-device();
   }
 
 }
