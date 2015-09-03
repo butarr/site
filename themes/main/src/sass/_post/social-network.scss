@@ -1,5 +1,7 @@
 @import '_includes/query';
+@import '_includes/mixins';
 @import '_includes/variables';
+
 .social-network {
   display: none;
 
@@ -31,18 +33,16 @@
 
       a {
         text-decoration: none;
-        color: black;
+        color: $black;
+        font-size: 1.5em;
         cursor: pointer;
+        transition: color 0.5s ease;
+        transition: font-size 0.5s ease;
 
-        .breadcrumb-item{
-          &:hover{
-            text-decoration: underline;
-          }
+        &:hover{
+          color: $bdf-red;
+          font-size: 2em;
         }
-      }
-
-      .active {
-        color: $bdf-red;
       }
     }
   }
