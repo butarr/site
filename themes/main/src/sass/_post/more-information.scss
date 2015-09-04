@@ -5,10 +5,6 @@
 #more-information{
   @include list-news-on-mobile();
 
-  @include media-query(LARGE) {
-    margin: 60px 50px !important;
-  }
-
   @include media-query(MEDIUM) {
     float: left;
     width: 300px;
@@ -64,4 +60,9 @@
       border-top: 2px solid rgba(230, 230, 230, 0.7);
     }
   }
+
+  @include media-query(LARGE) {
+    margin: 60px 50px;
+  }
+
 }
