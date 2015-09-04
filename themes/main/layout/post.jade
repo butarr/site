@@ -1,38 +1,10 @@
 extends base
 
 append content
-  nav.social-network
-    ol
-      li(itemtype="#")
-        a(href="#", itemprop="url")
-          i.fa.fa-facebook.breadcrum-item(itemprop="title")
-      li(itemtype="#")
-        a(href="#", itemprop="url")
-          i.fa.fa-twitter.breadcrum-item(itemprop="title")
-      li.print(itemtype="#")
-        a(href="#", itemprop="url")
-          i.fa.fa-print.breadcrum-item(itemprop="title")
-      li(itemtype="#")
-        a(href="#", itemprop="url")
-          i.fa.fa-envelope-o.breadcrum-item(itemprop="title")
-      li.whatsapp(itemtype="#")
-        a(href="#", itemprop="url")
-          i.fa.fa-whatsapp.breadcrum-item(itemprop="title")
+  include _partial/post/social_network
 
 append content
-  nav#breadcrumb
-    ol
-      li(itemtype="#")
-        a(href="#", itemprop="url")
-          span.breadcrumb-item(itemprop="title")= "Página Inicial"
-          span=" / "
-      li(itemtype="#")
-        a(href="#", itemprop="url")
-          span.breadcrumb-item(itemprop="title")= "Editora"
-          span=" / "
-      li(itemtype="#")
-        a(href="#", itemprop="url", class="active")
-          span.breadcrumb-item(itemprop="title", class="active")= "Mais admimiradas"
+  include _partial/post/breadcrumb
 
 append content
   article#post(itemscope="NewsArticle")
@@ -52,76 +24,9 @@ append content
      != page.content
 
 append content
-  section#most-reads
-    h1 Mais lidas
-    nav
-      ol
-        li.title
-          a(href="#")
-            span=" \"Veja\" pede desculpas a Romârio por documento falso e será processada"
-        li.title
-          a(href="#")
-            span= "Noites paulistanas"
-        li.title
-          a(href="#")
-            span= "Os homens sórdidos e o temporal que se avizinha"
-        li.title
-          a(href="#")
-            span= "Uma fortuna de 200 bilhões protegida do IR da pessoa fisica"
-        li.title
-          a(href="#")
-            span= "No facebook, fraude estimula ato anti-Dilma"
-
-  section#more-information
-    h1 Mais Informações
-    section.news
-      a.thumbnail-link(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
-        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
-      a.lead-link(title="Link para notícia recente", href="//www.brasildefato.com.br")
-        h2.description Após protestos, Governo se diz otimista enquanto FHC pede renúncia
-    section.news
-      a.thumbnail-link(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
-        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
-      a.lead-link(title="Link para notícia recente", href="//www.brasildefato.com.br")
-        h2.description
-          span.tag VÍDEO
-          = " os gritos de 'fora dilma'"
-    section.news
-      a.thumbnail-link(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
-        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
-      a.lead-link(title="Link para notícia recente", href="//www.brasildefato.com.br")
-        h2.description Quem são os manifestantes de São Paulo, Rio de Janeiro e Brasilia
-    section.news
-      a.thumbnail-link(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
-        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
-      a.lead-link(title="Link para notícia recente", href="//www.brasildefato.com.br")
-        h2.description Em manifestação anti-dilma, Moro vira héroi e Renan é vaiado nas ruas
-  section#last-news
-    h1 Últimas Notícias
-    section.news
-      a.thumbnail-link(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
-        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
-      a.lead-link(title="Link para notícia recente", href="//www.brasildefato.com.br")
-        span.hat Congresso
-        h2.description 15 partidos apresentam documento com propostas para superação da crise
-    section.news
-      a.thumbnail-link(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
-        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
-      a.lead-link(title="Link para notícia recente", href="//www.brasildefato.com.br")
-        span.hat Lava Jato
-        h2.description Doleiro Alberto Yousseff afirma que Aécio Neves recebeu propina de Furnas
-    section.news
-      a.thumbnail-link(title="Link para noticia relacionada", href="//www.brasildefato.com.br")
-        img(src="//farm6.staticflickr.com/5736/20898086726_eebae3719e_z.jpg", alt="Foto capa da noticia relacionada")
-      a.lead-link(title="Link para notícia recente", href="//www.brasildefato.com.br")
-        span.hat Reforma Agrária
-        h2.description Pistoleiros atacam acampamentos do MST no MA e PR
-    a.more-news(title="Link para todas as notícias", href="//www.brasildefato.com.br")
-      = "Mais notícias..."
+  include _partial/post/most_reads
+  include _partial/post/more_information
+  include _partial/post/last_news
 
 append after-content
-  #newsletter
-    h1 Gostou do que leu?
-      h2 Receba nossas matérias por email
-      .form
-        input(name="email", type="email",placeholder="seu@email.com", required="true")
+  include _partial/post/newsletter
