@@ -7,7 +7,6 @@ var jsonFiles = function(locals){
     })
     .slice(0, 10 )
     .map(function(element){
-      console.log(element.path);
       return {
         title: element.title,
         hat:   element.hat,

@@ -2,7 +2,6 @@ $(document).ready(function() {
 
   var loadLastNews = function(data){
     var posts  = data || [{}];
-
     var html = '';
 
     posts.forEach(function(post){
