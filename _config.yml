@@ -14,8 +14,8 @@ timezone:
 url: brasildefato.com.br
 root: /site
 baseurl: '/site'
-permalink: :year/:month/:day/:title/
 permalink_defaults:
+permalink: :year/:month/:day/:post_title/
 
 # Directory
 source_dir: source
