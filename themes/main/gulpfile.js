@@ -13,6 +13,5 @@ TASKS.forEach(function(name) {
     gulp.task(name, require(__dirname + '/.gulp/' + name)(baseDir));
 });;
 
-gulp.task('default', ['javascript']);
 gulp.task('default', ['javascript', 'sass', 'imagemin', 'watch']);
 gulp.task('build', ['javascript', 'sass', 'imagemin']);
