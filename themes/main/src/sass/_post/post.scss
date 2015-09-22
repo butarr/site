@@ -67,6 +67,14 @@
     }
   }
 
+  .desktop.place-and-time{
+    display: none;
+
+    @include media-query(MEDIUM) {
+      display: block;
+    }
+  }
+
   .place-and-time{
     color: $gray-light;
     line-height: 1.5em;
@@ -95,6 +103,10 @@
       border-bottom: none;
       color: $black;
 
+      &:not(.desktop) time {
+        display: none;
+      }
+
       .author, .place {
         font-weight: bold;
 
@@ -112,7 +124,6 @@
           content: ' ';
         }
       }
-
     }
   }
 
