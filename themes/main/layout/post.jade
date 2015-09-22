@@ -16,10 +16,8 @@ append content
         img(itemprop="image", alt="Foto capa da noticia", src=page.cover['url'] )
         figcaption= page.cover['subtitle']
       section.place-and-time
-        span.pre-author= page.pre_author
         span.author(rel="author", itemprop="author")= page.author
         br
-        span.pre-place= page.pre_place
         span.place(rel="place", itemprop="contentLocation")= page.place
         time(datetime=page.date)= page.date.locale('pt-br').format('LLLL')
 
