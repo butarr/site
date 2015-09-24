@@ -21,7 +21,6 @@ $(document).ready(function() {
         marginTop = '90px';
       }
 
-      console.log(marginTop);
       if (marginTop !== $socialNetwork.css('margin-top')) {
         $socialNetwork.css({
           'margin-top': marginTop

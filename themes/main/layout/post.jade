@@ -10,13 +10,13 @@ append content
   article#post(itemscope="NewsArticle")
     header
       span.hat(itemprop="about")= page.hat
-      h1.title(itemprop="headline")= page.title
+        h1.title(itemprop="headline")= page.newTitle
       h2.description(itemprop="description")= page.description
       section.desktop.place-and-time
         time(datetime=page.date)= page.date.locale('pt-br').format('LLLL')
       figure
         img(itemprop="image", alt="Foto capa da noticia", src=page.cover['url'] )
-        figcaption= page.cover['subtitle']
+        figcaption= page.cover.subtitle
       section.place-and-time
         span.author(rel="author", itemprop="author")= page.author
         br

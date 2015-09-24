@@ -7,8 +7,8 @@ block content
       section.new
         figure
           a(href="#{ url_for(post.path) }", title="Link para a notícia")
-            img(alt="Imagem Capa", src="#{ post.cover['url'] } ")
+            img(alt=post.cover.subtitle, src="#{ post.cover.url } ")
           figcaption= "Foto: Reprodução"
         a(href="#{ url_for(post.path) }", title="Link para a notícia")
-          h2.title= post.title
+          h2.title= post.newTitle
         p.description= post.description
