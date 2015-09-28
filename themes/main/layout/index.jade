@@ -8,7 +8,11 @@ block content
         figure
           a(href="#{ url_for(post.path) }", title="Link para a notícia")
             img(alt=post.cover.subtitle, src="#{ post.cover.url } ")
-          figcaption= "Foto: Reprodução"
-        a(href="#{ url_for(post.path) }", title="Link para a notícia")
-          h2.title= post.newTitle
-        p.description= post.description
+          figcaption="Foto: Reprodução"
+        div.new-content
+          p.hat=post.hat
+          a(href="#{ url_for(post.path) }", title="Link para a notícia")
+            h2.title= post.newTitle
+          p.description= post.description
+
+      

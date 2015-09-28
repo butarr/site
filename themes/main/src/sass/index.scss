@@ -1,38 +1,86 @@
 @import '_includes/variables';
+@import '_includes/query';
 
 
-#home {
-  padding: 15px;
+h1 {
+  color: $bdf-red;
+  border-bottom: 1px solid $bdf-red;
+  font-weight: 400;
+}
 
-  h1 {
-    color: $bdf-red;
-    border-bottom: 1px solid $bdf-red;
-    font-weight: 400;
-  }
+.description {
+  
+  color: $black-light;
+  font-size: 0.7em;
+}
 
-  .new {
-    figure {
-      figcaption {
+figcaption {
+      color: $gray;
+      font-size: 0.4em;
+      text-align: right;
+}
+
+@include media-query(SMALL) {
+
+  #home {
+    padding: 15px;
+
+    h1, .description{
+      display: none;
+    }
+
+
+    .new {
+      &:first-child{
+
+      }
+      clear: both;
+      display: block;
+      margin: 0.1%;
+      min-height: 85px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      width: 100%;
+      border-bottom: 1px dotted $gray;
+
+      .new-content {
+        float:left;
+        width: 65%;
+        .hat {
+          color: $bdf-red;
+          margin-top: 0;
+          font-weight: bold;
+          font-size: .8em;
+        }
+      }
+
+      figure {
+        float: left;
+        margin: 0 10px 0 0;
+        width: 30%;
+        figcaption {
+          display: none;
+        }
+        img {
+          width: 100%;
+          cursor: pointer;
+        }
+      }
+
+      .title {
         color: $gray;
-        font-size: 0.4em;
-        text-align: right;
+        font-size: 1em;
+        margin: 5px 0;
+        font-weight: 500;
       }
-      img {
-        width: 100%;
-        cursor: pointer;
+      a{
+
+        text-decoration: none;
       }
+
+
     }
 
-    .title {
-      color: $black;
-      font-size: 1em;
-      margin: 5px 0;
-      text-decoration: underline;
-    }
-
-    .description {
-      color: $black-light;
-      font-size: 0.7em;
-    }
   }
 }
