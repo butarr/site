@@ -1,18 +1,39 @@
 extends base
 
-block content
+append content
+  include _partial/post/social_network
+
+append content
+  include _partial/post/breadcrumb
+
+append content
   section#home
     h1 Notícias
-    - each post in page.posts.toArray()
-      section.new
+    - each post, index in page.posts.toArray()
+      article.new
+        - if (index === 0) {
+          
+        div.new-content.desktop
+          p.hat=post.hat
+          a(href="#{ url_for(post.path) }", title="Link para a notícia")
+            h2.title= post.newTitle
+          p.description= post.description
+        - }
         figure
           a(href="#{ url_for(post.path) }", title="Link para a notícia")
             img(alt=post.cover.subtitle, src="#{ post.cover.url } ")
           figcaption="Foto: Reprodução"
+        - if (index > 0) {
         div.new-content
           p.hat=post.hat
           a(href="#{ url_for(post.path) }", title="Link para a notícia")
             h2.title= post.newTitle
           p.description= post.description
-
+        - }
+        
+        - if (index === 0) {
+        div.new-content.mobile
+          a(href="#{ url_for(post.path) }", title="Link para a notícia")
+            h2.title= post.newTitle
+        - }
       

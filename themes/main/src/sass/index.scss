@@ -1,41 +1,77 @@
 @import '_includes/variables';
 @import '_includes/query';
+@import '_includes/mixins';
+
+#home {
+
+  padding: 0 0 0 10%;
+  width: 70%;
+  float: left;
 
 
-h1 {
-  color: $bdf-red;
-  border-bottom: 1px solid $bdf-red;
-  font-weight: 400;
-}
+  @include media-query-range(SMALL) {
+    width: 80%;
+    padding: 20px 0 0 10%;
+  }
 
-.description {
-  
-  color: $black-light;
-  font-size: 0.7em;
-}
+  h1 {
+    color: $bdf-red;
+    border-bottom: 10px solid $bdf-red;
+    font-size: 2.4em;
+    font-weight: bold;
+    line-height: 1.1em;
+    margin-bottom: -20px;
+  }
 
-figcaption {
-      color: $gray;
-      font-size: 0.4em;
-      text-align: right;
-}
+  .description {
+    color: $black-light;
+    font-size: 0.7em;
+  }
 
-@include media-query(SMALL) {
+  figcaption {
+    color: $gray;
+    font-size: 0.4em;
+    text-align: right;
+  }
 
-  #home {
-    padding: 15px;
 
+  @include media-query-range(LARGE) {
+    h1, .description{
+      display: inherit !important;
+    }
+    .description {
+      font-size: 1.4em;
+    }
+  }
+
+  @include media-query-range(MEDIUM) {
+    h1 {
+      margin: 5px 0;
+      line-height: 1.1em;
+      font-size: 2.4em;
+      font-weight: bold;
+    }
+    h1, .description{
+      display: inherit !important;
+    }
+  }
+
+
+  @include media-query-range(SMALL) {
     h1, .description{
       display: none;
     }
+  }
 
+  .new {
 
-    .new {
-      &:first-child{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px dotted $bdf-red;
+    @include clearfix();
 
-      }
+    @include media-query-range(SMALL) {
       clear: both;
-      display: block;
       margin: 0.1%;
       min-height: 85px;
       padding-top: 15px;
@@ -43,10 +79,142 @@ figcaption {
 
       width: 100%;
       border-bottom: 1px dotted $gray;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:nth-of-type(1) {
+
+      .title, .description {
+        font-weight: lighter;
+      }
+
+      .title {
+        color: $black;
+        margin: 5px 0;
+        line-height: 1.1em;
+        font-size: 1.4em;
+        font-weight: bold;
+
+        @include media-query-range(SMALL) {
+          font-size: 1.4em;
+          font-weight: lighter;
+        }
+      }
+
+      .description {
+        color: $black-light;
+        font-style: italic;
+        line-height: 1.2em;
+        font-size: .6em;
+        margin-top: 10px;
+      }
+
+      figure {
+        margin-bottom: 20px;
+        width: 100%;
+        @include clearfix();
+
+        @include media-query-range(MEDIUM) {
+          margin-left: 0;
+        }
+        @include media-query-range(LARGE) {
+          margin-left: 0;
+          float: left;
+        }
+
+        figcaption {
+          font-size: 1.1em;
+          text-align: right;
+          @include media-query-range(SMALL) {
+            display: none;
+          }
+        }
+
+        img {
+          width: 100%;
+          cursor: pointer;
+        }
+      }
 
       .new-content {
+
+        @include media-query-range(LARGE) {
+          &.mobile {
+            display: none;
+          }
+          &.desktop {
+            display: block;
+          }
+        }
+        @include media-query-range(MEDIUM) {
+          &.mobile {
+            display: none;
+          }
+          &.desktop {
+            display: block;
+          }
+        }
+
+        @include media-query-range(SMALL) {
+          float:none;
+          width: 100%;
+          @include clearfix();
+
+          &.mobile {
+            display: block;
+          }
+          &.desktop {
+            display: none;
+          }
+        }
+
+        @include media-query-range(LARGE) {
+          color: $black-light;
+          font-weight: bold;
+          font-size: 2.4em;
+
+        }
+
+        .hat {
+          display: block;
+          margin-top: 1em;
+          font-size: 1.1em;
+          color: $bdf-red;
+          font-weight: bold;
+          margin-top: 1em;
+          font-size: 0.6em;
+          line-height: .6em;
+
+          @include media-query-range(SMALL) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .title {
+      @include media-query-range(SMALL) {
+        font-size: .8em;
+        font-weight: lighter;
+      }
+    }
+
+    .hat {
+      color: $bdf-red;
+      margin-top: 0;
+      font-weight: bold;
+      font-size: 1.1em;
+      line-height: .6em;
+    }
+
+    @include media-query-range(SMALL) {
+      .new-content {
         float:left;
-        width: 65%;
+        width: 60%;
+
         .hat {
           color: $bdf-red;
           margin-top: 0;
@@ -54,32 +222,30 @@ figcaption {
           font-size: .8em;
         }
       }
+    }
 
-      figure {
-        float: left;
-        margin: 0 10px 0 0;
-        width: 30%;
-        figcaption {
+    figure {
+      float: left;
+      margin: 0 30px 0 0;
+      width: 30%;
+
+      figcaption {
+        color: $gray;
+        font-size: 0.4em;
+        text-align: right;
+        @include media-query-range(SMALL) {
           display: none;
         }
-        img {
-          width: 100%;
-          cursor: pointer;
-        }
       }
-
-      .title {
-        color: $gray;
-        font-size: 1em;
-        margin: 5px 0;
-        font-weight: 500;
+      img {
+        width: 100%;
+        cursor: pointer;
       }
-      a{
+    }
 
-        text-decoration: none;
-      }
-
-
+    a {
+      text-decoration: none;
+      color: $black-light;
     }
 
   }
