@@ -4,6 +4,12 @@ $(document).ready(function() {
     var posts  = data || [{}];
     var html = '';
 
+    var title = document.getElementsByClassName('title')[0].innerText || '';
+
+    var posts = posts.filter(function(post) {
+      return post.title.toLowerCase() !== title.toLowerCase();
+    });
+
     posts.forEach(function(post){
       var section = '<section class="news">' +
                       '<a href="//'+post.url+'" class="thumbnail-link" title="Link para a noticia recente" >'+
