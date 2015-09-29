@@ -17,7 +17,7 @@ $(document).ready(function() {
                       '</a>'+
                       '<a href="//'+post.url+'" class="lead-link" title="Link para a noticia recente">'+
                         '<span class="hat">'+post.hat+'</span>'+
-                        '<h2 class="description">'+post.newTitle+'</h2>'+
+                        '<h2 class="description">'+post.title+'</h2>'+
                       '</a>'+
                     '</section>';
 
