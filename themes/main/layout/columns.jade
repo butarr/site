@@ -1,0 +1,29 @@
+extends base
+
+append content
+  include _partial/columns/social_network
+
+append content
+  include _partial/columns/breadcrumb
+
+append content
+  article#column(itemscope="NewsArticle")
+    header
+      span.hat(itemprop="about")="Coluna"
+      figure
+        img(itemprop="image", alt="Colunista", src="http://lorempixel.com/200/200/people/3/" )
+      h1.title(itemprop="headline")="Bruna Silveira"
+      h2.description(itemprop="description")="Integrante da rede de médicos e médicas populares"
+      p.email="brunasilveira@brasildefato.com.br"
+    h1.column-title="As empresas mais admiradas do Brasil"
+    section.content
+      div.cite="O objetivo do evento é celebrar as empresas mais bem vistas no país e os homens que as conduzem"
+      != page.content
+
+append content
+  include _partial/columns/other_columns
+  include _partial/columns/last_articles
+  include _partial/columns/last_news
+
+append after-content
+  include _partial/columns/newsletter

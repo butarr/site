@@ -1,0 +1,111 @@
+@import '_includes/query';
+@import '_includes/variables';
+@import '_includes/mixins';
+
+@mixin get-font-size($size) {
+  font-size: $size + em;
+
+  @include media-query(MEDIUM) {
+    font-size: ( $size + 0.4 ) + em;
+  }
+}
+
+#column {
+  padding: 10px 15px;
+
+  @include media-query(MEDIUM) {
+    padding: 60px 0 0 10%;
+    width: 55%;
+    float: left;
+  }
+
+  .column-title {
+    font-size: 2.3em;
+    line-height: 2.3em;
+    margin: 10px 0 0 0;
+  }
+}
+
+
+#column header {
+  border-bottom: 3px solid $bdf-red;
+
+  @include clearfix();
+
+  .hat {
+    color: $red;
+    font-weight: bold;
+    @include get-font-size(1.1);
+    width: 100%;
+    display: block;
+    border-bottom: 10px solid $bdf-red;
+  }
+
+  .title, .description {
+    font-weight: lighter;
+  }
+
+  .title {
+    color: $bdf-red;
+    margin: 5px 0;
+    line-height: 1.1em;
+    font-weight: bold;
+    margin-top: 3%;
+    color: #992727;
+    @include get-font-size(1);
+
+    @include media-query(MEDIUM) {
+      font-weight: bold;
+    }
+  }
+
+  .description,
+  .email {
+    color: $black-light;
+    line-height: 1.4em;
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  figure {
+    margin: 10px auto 5px auto;
+    float: left;
+    width: 15%;
+    max-width: 100%;
+    padding-right: 2%;
+    img{
+      width: 100%;
+      border-radius: 50%;
+      padding-right: 5%;
+    }
+
+  }
+
+  @include media-query(MEDIUM) {
+    figure {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+    }
+  }
+}
+
+#column .content{
+  color: $black-dark;
+  line-height: 1.7em;
+  font-weight: 300;
+  word-spacing: 2px;
+  padding-top: 0;
+  @include get-font-size(0.8);
+
+  .cite {
+    width: 40%;
+    float: right;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    font-size: 1.6em;
+    margin-top: 20px;
+    line-height: 1.3em;
+  }
+}
