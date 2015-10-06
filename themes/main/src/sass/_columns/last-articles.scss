@@ -5,6 +5,12 @@
 #last-articles {
   @include list-news-on-mobile();
 
+  @include media-query-range(SMALL) {
+    width: 90%;
+    margin: 0;
+
+  }
+
   .articles h2 {
     color: $gray;
   }
@@ -27,33 +33,32 @@
     margin-bottom: -40px;
   }
 
-  @include media-query(MEDIUM) {
-    clear: both;
-    width: 55%;
-    padding-top: 40px;
-    margin-left: 8.7%;
+  clear: both;
+  width: 55%;
+  padding-top: 40px;
+  margin-left: 8.7%;
 
-    h1 {
-      font-size: 1.5em;
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .articles {
+    justify-content: flex-start;
+
+    ul.last {
+      list-style: none;
+      padding-left: 0;
     }
 
-    .articles {
-      justify-content: flex-start;
-
-      ul {
-        list-style: none;
-        padding-left: 0;
-      }
-
-      .lead-link {
-        width: 60%;
-        align-self: flex-start;
-        .description {
-          color: $black;
-          font-size: 1.1em;
-          margin-top: 5px;
-        }
+    .lead-link {
+      width: 60%;
+      align-self: flex-start;
+      .description {
+        color: $black;
+        font-size: 1.1em;
+        margin-top: 5px;
       }
     }
+    
   }
 }
