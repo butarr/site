@@ -18,6 +18,7 @@
 }
 
 #column header {
+  @include clearfix();
   padding-bottom: 10px;
   border-bottom: 1px solid $bdf-red;
 
@@ -25,6 +26,8 @@
     padding-bottom: 5px;
     border-bottom: 3px solid $bdf-red;
     @include get-font-size(1.3);
+    width: 100%;
+    display: block;
   }
 
   .person {
@@ -96,122 +99,12 @@
 }
 
 
-
-// Codigo Antigo ---------------- //
 #column {
   padding: 10px 15px;
-
-  @include media-query(MEDIUM) {
-    padding: 60px 0 0 10%;
-    width: 55%;
-    float: left;
-  }
-
-  .column-title {
-    font-size: 2.3em;
-    line-height: 1.5em;
-    @include media-query(SMALL) {
-      font-size: 1.6em;
-      line-height: 1.3em;
-    }
-
-  }
-
 }
 
 
-#column header {
-
-  @include clearfix();
-
-  .hat {
-    color: $red;
-    font-weight: bold;
-    @include get-font-size(1.1);
-    width: 100%;
-    display: block;
-    border-bottom: 10px solid $bdf-red;
-     @include media-query(SMALL) {
-      border-bottom: 4px solid $bdf-red;
-     }
-  }
-
-  .title, .description {
-    font-weight: lighter;
-  }
-
-  .title {
-    color: $bdf-red;
-    margin: 5px 0;
-    line-height: 1.1em;
-    font-weight: bold;
-    margin-top: 3%;
-    color: #992727;
-    @include get-font-size(1);
-    font-size: 1.1em;
-
-    @include media-query-range(SMALL) {
-      color: $black-light;
-    }
-  }
-
-  .description,
-  .email {
-    color: $black-light;
-    line-height: 1.4em;
-    margin: 0;
-    font-size: 1em;
-    font-weight: bold;
-
-    @include media-query-range(SMALL) {
-      font-size: 1em;
-      font-weight: lighter;
-    }
-  }
-
-  figure {
-    margin: 10px auto 5px auto;
-    float: left;
-    width: 15%;
-    max-width: 100%;
-    padding-right: 2%;
-    min-width: 90px;
-    img{
-      width: 100%;
-      padding-right: 5%;
-    }
-
-  }
-
-  @include media-query(MEDIUM) {
-    figure {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 100%;
-    }
-  }
-}
-
-#column .content{
 
 
-  .cite {
-    width: 40%;
-    float: right;
-    padding-left: 5%;
-    padding-bottom: 5%;
-    font-size: 1.6em;
-    margin-top: 20px;
-    line-height: 1.3em;
-    @include media-query-range(SMALL) {
-      width: 100%;
-      float: none;
-      font-size: 1.4em;
-      margin-top: 20px;
-      line-height: 1.3em;
-      padding: 0 0 5% 0;
-    }
-  }
-}
 
 
