@@ -1,13 +1,13 @@
 extends base
 
 append content
-  include _partial/columns/social_network
+  include _partial/opinion/social_network
 
 append content
-  include _partial/columns/breadcrumb
+  include _partial/opinion/breadcrumb
 
 append content
-  article#column(itemscope, itemtype="NewsArticle")
+  article#opinion(itemscope, itemtype="NewsArticle")
     header
       span.hat Colunista
       section.person(itemscope, itemtype="http://schema.org/Person")
@@ -20,9 +20,9 @@ append content
       != page.content
 
 append content
-  include _partial/columns/other_columns
-  include _partial/columns/last_articles
-  include _partial/columns/last_news
+  include _partial/opinion/other_opinions
+  include _partial/opinion/last_articles
+  include _partial/opinion/last_news
 
 append after-content
-  include _partial/columns/newsletter
+  include _partial/opinion/newsletter
