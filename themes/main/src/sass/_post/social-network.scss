@@ -6,7 +6,7 @@
   display: inline-block;
   position: fixed;
   bottom: 0;
-  width: 10%;
+  width: 100%;
 
   ol{
     list-style: none;
@@ -44,6 +44,7 @@
     display: block;
     margin-top: 90px;
     bottom: initial;
+    width: 10%;
 
     ol{
       background-color: white;
