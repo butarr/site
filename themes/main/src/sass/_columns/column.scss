@@ -71,6 +71,21 @@
   word-spacing: 5px;
 }
 
+#column .description{
+  padding: 0 10px;
+  color: lighten($black-light, 15%);
+  font-style: italic;
+  @include get-font-size(1.5);
+  line-height: 1.3;
+
+  &::after{
+    content: " ”";
+  }
+
+  &::before{
+    content: "“ " ;
+  }
+}
 
 #column {
   padding: 10px 15px;

@@ -15,8 +15,8 @@ append content
         h1.name(itemprop="name")="Bruna Silveira"
         h2.job-title(itemprop="jobTitle")="Integrante da rede de médicos e médicas populares"
     h1.title(itemprop="about")= page.title
+    p.description(itemprop="description")= page.description
     section.content
-      p.description(itemprop="description")= page.description
       != page.content
 
 append content
