@@ -7,17 +7,17 @@ append content
   include _partial/columns/breadcrumb
 
 append content
-  article#column(itemscope="NewsArticle")
-    header
-      span.hat(itemprop="about")="Coluna"
-      figure
-        img(itemprop="image", alt="Colunista", src="http://lorempixel.com/200/200/people/3/" )
-      h1.title(itemprop="headline")="Bruna Silveira"
-      h2.description(itemprop="description")="Integrante da rede de médicos e médicas populares"
-      p.email="brunasilveira@brasildefato.com.br"
-    h1.column-title="As empresas mais admiradas do Brasil"
+  article#column(itemscope, itemtype="NewsArticle")
+    header#me-apague
+      span.hat Colunista
+      section.person(itemscope, itemtype="http://schema.org/Person")
+        img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src="//lorempixel.com/200/200/people/3/" )
+        h1.name(itemprop="name")="Bruna Silveira"
+        h2.job-title(itemprop="jobTitle")="Integrante da rede de médicos e médicas populares"
+        p.email(itemprop="email")="brunasilveira@brasildefato.com.br"
+    h1.title(itemprop="about")= page.title
     section.content
-      div.cite="O objetivo do evento é celebrar as empresas mais bem vistas no país e os homens que as conduzem"
+      p.description(itemprop="description")= page.description
       != page.content
 
 append content
