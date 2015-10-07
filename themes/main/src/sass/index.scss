@@ -37,7 +37,7 @@
 
   @include media-query-range(LARGE) {
     h1, .description{
-      display: inherit !important;
+      display: inherit;
     }
     .description {
       font-size: 1.4em;
@@ -52,7 +52,7 @@
       font-weight: bold;
     }
     h1, .description{
-      display: inherit !important;
+      display: inherit;
     }
   }
 
