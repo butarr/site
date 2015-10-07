@@ -15,12 +15,20 @@
 
 #opinion {
   padding: 10px 15px;
+  display: inline-block;  
+
+  @include media-query(MEDIUM) {
+    padding: 60px 0 0 10%; 
+    float: left;
+    width: 50%;
+  }
 }
 
 #opinion header {
   @include clearfix();
   padding-bottom: 10px;
   border-bottom: 1px solid $bdf-red;
+
 
   .hat {
     padding-bottom: 5px;
@@ -63,6 +71,19 @@
       line-height: 1.6;
       color: $black-dark;
       font-style: italic;
+    }
+  }
+
+  @include media-query(MEDIUM) {
+    .hat{
+      color: $bdf-red;
+      border-bottom-width: 8px; 
+    }
+    .person{
+      .name{
+        color: $bdf-red;
+        word-spacing: initial;
+      }
     }
   }
 }
