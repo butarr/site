@@ -11,10 +11,10 @@
 }
 
 
-@include media-query-range(SMALL) {
-  #breadcrumb, #other-columns, .email{
-    display: none;
-  }
+
+
+#column {
+  padding: 10px 15px;
 }
 
 #column header {
@@ -99,9 +99,6 @@
 }
 
 
-#column {
-  padding: 10px 15px;
-}
 
 
 
