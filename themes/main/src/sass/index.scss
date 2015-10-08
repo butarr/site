@@ -4,14 +4,13 @@
 
 #home {
 
-  padding: 0 0 0 10%;
-  width: 70%;
   float: left;
+  width: 80%;
+  padding: 20px 0 0 10%;
 
-
-  @include media-query-range(SMALL) {
-    width: 80%;
-    padding: 20px 0 0 10%;
+  @include media-query(MEDIUM) {
+    padding: 0 0 0 10%;
+    width: 70%;
   }
 
   h1 {
@@ -21,46 +20,41 @@
     font-weight: bold;
     line-height: 1.1em;
     margin-bottom: -20px;
+
+    @include media-query-range(MEDIUM) {
+      h1 {
+        margin: 5px 0;
+        line-height: 1.1em;
+        font-size: 2.4em;
+        font-weight: bold;
+      }
+    }
   }
 
   .description {
     color: $black-light;
     font-size: 0.7em;
+
+    @include media-query(MEDIUM) {
+      font-size: 1em;
+    }
+    @include media-query(LARGE) {
+      font-size: 1.4em;
+    }
+  }
+
+  h1, .description{
+    display: none;
+
+    @include media-query(MEDIUM) {
+      display: inherit;
+    }
   }
 
   figcaption {
     color: $gray;
     font-size: 0.4em;
     text-align: right;
-  }
-
-
-  @include media-query-range(LARGE) {
-    h1, .description{
-      display: inherit;
-    }
-    .description {
-      font-size: 1.4em;
-    }
-  }
-
-  @include media-query-range(MEDIUM) {
-    h1 {
-      margin: 5px 0;
-      line-height: 1.1em;
-      font-size: 2.4em;
-      font-weight: bold;
-    }
-    h1, .description{
-      display: inherit;
-    }
-  }
-
-
-  @include media-query-range(SMALL) {
-    h1, .description{
-      display: none;
-    }
   }
 
   .new {
@@ -96,11 +90,10 @@
         margin: 5px 0;
         line-height: 1.1em;
         font-size: 1.4em;
-        font-weight: bold;
+        font-weight: lighter;
 
-        @include media-query-range(SMALL) {
-          font-size: 1.4em;
-          font-weight: lighter;
+        @include media-query(MEDIUM) {
+          font-weight: bold;
         }
       }
 
@@ -128,8 +121,9 @@
         figcaption {
           font-size: 1.1em;
           text-align: right;
-          @include media-query-range(SMALL) {
-            display: none;
+          display: none;
+          @include media-query(MEDIUM) {
+            display: block;
           }
         }
 
@@ -141,66 +135,58 @@
 
       .new-content {
 
-        @include media-query-range(LARGE) {
-          &.mobile {
-            display: none;
-          }
-          &.desktop {
-            display: block;
-          }
-        }
-        @include media-query-range(MEDIUM) {
-          &.mobile {
-            display: none;
-          }
-          &.desktop {
-            display: block;
-          }
-        }
-
-        @include media-query-range(SMALL) {
-          float:none;
-          width: 100%;
-          @include clearfix();
-
-          &.mobile {
-            display: block;
-          }
-          &.desktop {
-            display: none;
-          }
-        }
+        float:none;
+        width: 100%;
+        float:left;
+        @include clearfix();
 
         @include media-query-range(LARGE) {
           color: $black-light;
           font-weight: bold;
           font-size: 2.4em;
+        }
 
+        &.mobile {
+          display: block;
+        }
+        &.desktop {
+          display: none;
+        }
+
+        @include media-query(MEDIUM) {
+          &.mobile {
+            display: none;
+          }
+          &.desktop {
+            display: block;
+          }
         }
 
         .hat {
-          display: block;
+          display: none;
           margin-top: 1em;
           font-size: 1.1em;
           color: $bdf-red;
           font-weight: bold;
           margin-top: 1em;
-          font-size: 0.6em;
           line-height: .6em;
+          margin-top: 0;
+          font-weight: bold;
+          font-size: .8em;
 
-          @include media-query-range(SMALL) {
-            display: none;
+          @include media-query(MEDIUM) {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 1em;
+          }
+          
+          @include media-query(LARGE) {
+            font-size: .6em;
           }
         }
       }
     }
 
-    .title {
-      @include media-query-range(SMALL) {
-        font-size: .8em;
-        font-weight: lighter;
-      }
-    }
 
     .hat {
       color: $bdf-red;
@@ -210,19 +196,15 @@
       line-height: .6em;
     }
 
-    @include media-query-range(SMALL) {
-      .new-content {
-        float:left;
-        width: 60%;
-
-        .hat {
-          color: $bdf-red;
-          margin-top: 0;
-          font-weight: bold;
-          font-size: .8em;
-        }
+    .title {
+      font-size: .8em;
+      font-weight: lighter;
+      @include media-query(MEDIUM) {
+        font-size: 1.5em;
+        font-weight: bold;
       }
     }
+
 
     figure {
       float: left;
@@ -237,8 +219,9 @@
         color: $gray;
         font-size: 0.4em;
         text-align: right;
-        @include media-query-range(SMALL) {
-          display: none;
+        display: none;
+        @include media-query(MEDIUM) {
+          display: block;
         }
       }
       img {
