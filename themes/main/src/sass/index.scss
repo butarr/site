@@ -58,21 +58,19 @@
   }
 
   .new {
-
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-bottom: 2px dotted $bdf-red;
     @include clearfix();
 
-    @include media-query-range(SMALL) {
-      clear: both;
-      margin: 0.1%;
-      min-height: 85px;
-      padding-top: 15px;
-      padding-bottom: 15px;
+    clear: both;
+    margin: 0.1%;
+    min-height: 85px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
-      width: 100%;
-      border-bottom: 1px dotted $gray;
+    width: 100%;
+    border-bottom: 1px dotted $gray;
+
+    @include media-query(MEDIUM) {
+      border-bottom: 2px dotted $bdf-red;
     }
 
     &:last-child {
@@ -103,6 +101,12 @@
         line-height: 1.2em;
         font-size: .6em;
         margin-top: 10px;
+        @include media-query(MEDIUM) {
+          font-size: 1em;
+        }
+        @include media-query(LARGE) {
+          font-size: .6em;
+        }
       }
 
       figure {
@@ -179,7 +183,7 @@
             font-size: 1.1em;
             margin-top: 1em;
           }
-          
+
           @include media-query(LARGE) {
             font-size: .6em;
           }
