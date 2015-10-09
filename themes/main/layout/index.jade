@@ -7,33 +7,33 @@ append content
   include _partial/post/breadcrumb
 
 append content
-  section#home
+  section#home(itemtype="http://schema.org/ItemList")
     h1 Notícias
     - each post, index in page.posts.toArray()
-      article.new
+      article.new(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
         - if (index === 0) {
           
         div.new-content.desktop
           p.hat=post.hat
-          a(href="#{ url_for(post.path) }", title=post.newTitle)
-            h2.title= post.newTitle
-          p.description= post.description
+          a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
+            h2.title(itemprop="name")= post.newTitle
+          p.description(itemprop="description")= post.description
         - }
         figure
-          a(href="#{ url_for(post.path) }", title=post.newTitle)
-            img(alt=post.reference, src="#{ post.cover.url } ")
+          a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
+            img(alt=post.reference, src="#{ post.cover.url } ",  itemprop="image")
           figcaption=post.reference
         - if (index > 0) {
         div.new-content
           p.hat=post.hat
-          a(href="#{ url_for(post.path) }", title=post.newTitle)
-            h2.title= post.newTitle
-          p.description= post.description
+          a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
+            h2.title(itemprop="name")= post.newTitle
+          p.description(itemprop="description")= post.description
         - }
         
         - if (index === 0) {
         div.new-content.mobile
-          a(href="#{ url_for(post.path) }", title=post.newTitle)
-            h2.title= post.newTitle
+          a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
+            h2.title(itemprop="name")= post.newTitle
         - }
       
