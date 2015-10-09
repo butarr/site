@@ -11,20 +11,20 @@ html(lang='pt-BR')
           img(src="#{ url_for('img/logo.png') }", alt="imagem banner")
       .menu-options(data-toggle="nav.menu")
         i.fa.fa-bars
-      nav.menu
+      nav.menu(itemscope, itemtype="http://schema.org/SiteNavigationElement")
         ul
           li
-            a.active(href="#")= "Economia"
+            a.active(itemprop="url", href="#")= "Economia"
           li
-            a(href="#")= "Cultura"
+            a(itemprop="url", href="#")= "Cultura"
           li
-            a(href="#")= "Política"
+            a(itemprop="url", href="#")= "Política"
           li
-            a(href="#")= "Saúde"
+            a(itemprop="url", href="#")= "Saúde"
           li
-            a(href="#")= "Brasil"
+            a(itemprop="url", href="#")= "Brasil"
           li
-            a(href="#")= "Mundo"
+            a(itemprop="url", href="#")= "Mundo"
 
       block header
     main#content
