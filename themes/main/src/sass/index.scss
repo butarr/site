@@ -21,7 +21,7 @@
     line-height: 1.1em;
     margin-bottom: -20px;
 
-    @include media-query-range(MEDIUM) {
+    @include media-query(MEDIUM) {
       h1 {
         margin: 5px 0;
         line-height: 1.1em;
@@ -114,10 +114,10 @@
         width: 100%;
         @include clearfix();
 
-        @include media-query-range(MEDIUM) {
+        @include media-query(MEDIUM) {
           margin-left: 0;
         }
-        @include media-query-range(LARGE) {
+        @include media-query(LARGE) {
           margin-left: 0;
           float: left;
         }
@@ -144,7 +144,7 @@
         float:left;
         @include clearfix();
 
-        @include media-query-range(LARGE) {
+        @include media-query(LARGE) {
           color: $black-light;
           font-weight: bold;
           font-size: 2.4em;
