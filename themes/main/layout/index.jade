@@ -13,7 +13,7 @@ append content
       article.new(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
         - if (index === 0) {
           
-        div.new-content.desktop
+        header.new-content.desktop
           p.hat=post.hat
           a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
             h2.title(itemprop="name")= post.newTitle
@@ -24,7 +24,7 @@ append content
             img(alt=post.reference, src="#{ post.cover.url } ",  itemprop="image")
           figcaption=post.reference
         - if (index > 0) {
-        div.new-content
+        header.new-content
           p.hat=post.hat
           a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
             h2.title(itemprop="name")= post.newTitle
@@ -32,7 +32,7 @@ append content
         - }
         
         - if (index === 0) {
-        div.new-content.mobile
+        header.new-content.mobile
           a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
             h2.title(itemprop="name")= post.newTitle
         - }
