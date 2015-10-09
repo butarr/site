@@ -1,13 +1,16 @@
 nav#breadcrumb
-  ol
-    li(itemtype="#")
-      a(href="#", itemprop="url")
-        span.breadcrumb-item(itemprop="title")= "Página Inicial"
+  ol(itemscope, itemtype="http://schema.org/BreadcrumbList")
+    li(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
+      a(href="#", itemprop="item")
+        span.breadcrumb-item(itemprop="name")= "Página Inicial"
+        meta(itemprop="position", content="1")
         span=" / "
-    li(itemtype="#")
-      a(href="#", itemprop="url")
-        span.breadcrumb-item(itemprop="title")= "Editoria"
+    li(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
+      a(href="#", itemprop="item")
+        span.breadcrumb-item(itemprop="name")= "Editoria"
+        meta(itemprop="position", content="2")
         span=" / "
-    li(itemtype="#")
-      a(href="#", itemprop="url", class="active")
-        span.breadcrumb-item(itemprop="title", class="active")= "Título da notícia"
+    li(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
+      a(href="#", itemprop="item", class="active")
+        span.breadcrumb-item(itemprop="name", class="active")= "Título da notícia"
+        meta(itemprop="position", content="3")
