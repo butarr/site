@@ -15,14 +15,4 @@ $large_screen:     1170px;
   }
 }
 
-@mixin media-query-range($canvas) {
-  @if $canvas == SMALL {
-   @media only screen and (min-width: $small_screen) and (max-width: $medium_screen) { @content; }
-  }
-  @else if $canvas == MEDIUM {
-   @media only screen and (min-width: $medium_screen) and (max-width: $large_screen) { @content; }
-  }
-  @else if $canvas == LARGE {
-   @media only screen and (min-width: $large_screen) { @content; }
-  }
-}
+
