@@ -4,32 +4,32 @@ block vars
 html(lang='pt-BR')
   head
     include _partial/head
-  body(class=bodyclass)
-    header#page-header
+  body(class=bodyclass, itemscope, itemtype="http://schema.org/WebPage")
+    header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
       .banner
         a(href="#{ url_for('index.html') }", title="Link para a página principal")
           img(src="#{ url_for('img/logo.png') }", alt="imagem banner")
       .menu-options(data-toggle="nav.menu")
         i.fa.fa-bars
-      nav.menu
+      nav.menu(itemscope, itemtype="http://schema.org/SiteNavigationElement")
         ul
-          li
-            a.active(href="#")= "Economia"
-          li
-            a(href="#")= "Cultura"
-          li
-            a(href="#")= "Política"
-          li
-            a(href="#")= "Saúde"
-          li
-            a(href="#")= "Brasil"
-          li
-            a(href="#")= "Mundo"
+          li(itemprop="url")
+            a.active(itemprop="name", href="#")= "Economia"
+          li(itemprop="url")
+            a(itemprop="name", href="#")= "Cultura"
+          li(itemprop="url")
+            a(itemprop="name", href="#")= "Política"
+          li(itemprop="url")
+            a(itemprop="name", href="#")= "Saúde"
+          li(itemprop="url")
+            a(itemprop="name", href="#")= "Brasil"
+          li(itemprop="url")
+            a(itemprop="name", href="#")= "Mundo"
 
       block header
     main#content
       block content
     block after-content
-    footer#page-footer
+    footer#page-footer(itemscope, itemtype="http://schema.org/WPFooter")
       include _partial/footer
   include _partial/after_footer
