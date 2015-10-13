@@ -49,7 +49,7 @@
   }
   @include media-query(MEDIUM) {
     display: inline-block;
-    float: right;
+    float: left;
     width: 28%;
     max-width: 300px;
     padding: 0;

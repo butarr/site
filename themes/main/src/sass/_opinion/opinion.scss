@@ -2,16 +2,6 @@
 @import '_includes/variables';
 @import '_includes/mixins';
 
-@mixin get-font-size($size) {
-  font-size: $size + em;
-
-  @include media-query(MEDIUM) {
-    font-size: ( $size + 0.4 ) + em;
-  }
-}
-
-
-
 
 #opinion {
   padding: 10px 15px;
@@ -45,7 +35,7 @@
     width: 100%;
     padding: 10px 0;
     .profile-image {
-      width: 150px;
+      width: 130px;
       float: left;
       border-radius: 50%;
       box-shadow: 0 0 0 4px rgba(30, 30, 30, 0.1), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
@@ -92,10 +82,14 @@
 }
 
 #opinion .title{
-  color: $black-light;
+  color: $black;
   @include get-font-size(2);
   margin-bottom: 5px;
   word-spacing: 5px;
+  font-weight: bold;
+  @include media-query(MEDIUM) {
+    @include get-font-size(2.3);
+  }
 }
 
 #opinion .description{
@@ -128,11 +122,11 @@
 }
 
 #opinion .content{
-  @include get-font-size(1);
+  @include get-font-size(0.9);
   color: $black;
-  line-height: 1.3;
   font-weight: 300;
   word-spacing: 2px;
+  line-height: 1.7em;
 }
 
 

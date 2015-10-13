@@ -24,6 +24,14 @@
   }
 }
 
+@mixin get-font-size($size) {
+  font-size: $size + em;
+
+  @include media-query(MEDIUM) {
+    font-size: ( $size + 0.3 ) + em;
+  }
+}
+
 @mixin list-news-on-mobile(){
   padding: 10px 15px;
   a {
