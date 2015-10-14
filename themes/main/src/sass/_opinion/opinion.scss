@@ -2,23 +2,14 @@
 @import '_includes/variables';
 @import '_includes/mixins';
 
-@mixin get-font-size($size) {
-  font-size: $size + em;
-
-  @include media-query(MEDIUM) {
-    font-size: ( $size + 0.4 ) + em;
-  }
-}
-
-
 
 
 #opinion {
   padding: 10px 15px;
-  display: inline-block;  
+  display: inline-block;
 
   @include media-query(MEDIUM) {
-    padding: 15px 0 0 10%; 
+    padding: 15px 0 0 10%;
     float: left;
     width: 60%;
   }
@@ -42,45 +33,13 @@
   }
 
   .person {
-    width: 100%;
-    padding: 10px 0;
-    .profile-image {
-      width: 150px;
-      float: left;
-      border-radius: 50%;
-      box-shadow: 0 0 0 4px rgba(30, 30, 30, 0.1), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-    }
-
-    .name, .job-title{
-      margin: 0;
-      padding-left: 15px;
-      float: left;
-      width: 50%;
-    }
-
-    .name {
-      font-weight: 700;
-      word-spacing: 9999999px;
-      line-height: 1.2;
-      @include get-font-size(1.6);
-      margin-bottom: 10px;
-      color: $black-light;
-
-    }
-
-    .job-title {
-      @include get-font-size(0.8);
-      font-weight: 400;
-      line-height: 1.6;
-      color: $black-dark;
-      font-style: italic;
-    }
+    @include person;
   }
 
   @include media-query(MEDIUM) {
     .hat{
       color: $bdf-red;
-      border-bottom-width: 8px; 
+      border-bottom-width: 8px;
     }
     .person{
       .name{
