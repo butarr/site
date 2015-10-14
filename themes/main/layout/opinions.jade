@@ -12,9 +12,9 @@ append content
     - each post, index in site.posts.find({'layout': 'opinion'}).toArray()
       article.opinion(itemscope, itemtype="NewsArticle", itemprop="itemListElement")
         section.person(itemscope, itemtype="http://schema.org/Person")
-          img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src="//lorempixel.com/200/200/people/3/" )
-          h1.name(itemprop="name")="Bruna Silveira"
-          h2.job-title(itemprop="jobTitle")="Integrante da rede de médicos e médicas populares"
+          img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=site.data.columnists[post.columnist].photo )
+          h1.name(itemprop="name")= site.data.columnists[post.columnist].name
+          h2.job-title(itemprop="jobTitle")= site.data.columnists[post.columnist].description
         h1.title(itemprop="about")
           a(href="#{ url_for(post.path) }")
             time.date-published= post.date.format('DD/MM/YYYY')
