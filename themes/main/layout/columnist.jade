@@ -1,0 +1,7 @@
+extends base
+
+append content
+	h1= page.columnist.name
+
+	- each post in page.posts
+		= post

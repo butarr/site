@@ -20,12 +20,14 @@
     "hexo-generator-index": "^0.1.2",
     "hexo-renderer-marked": "^0.2.5",
     "hexo-server": "^0.1.2",
+    "hexo-util": "^0.1.7",
     "imagemin-jpegtran": "^4.3.0",
     "imagemin-optipng": "^4.3.0",
     "jade": "^1.11.0",
-    "node-bourbon": "^4.2.3"
+    "node-bourbon": "^4.2.3",
+    "underscore": "^1.8.3"
   },
   "scripts": {
-    "start":"gulp"
+    "start": "gulp"
   }
 }
