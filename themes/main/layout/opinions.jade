@@ -19,3 +19,7 @@ append content
           a(href="#{ url_for(post.path) }")
             time.date-published= post.date.format('DD/MM/YYYY')
             = post.title
+
+append content
+  aside#opinions-aside
+    include _partial/post/most_reads
