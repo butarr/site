@@ -1,0 +1,57 @@
+@import '_includes/query';
+@import '_includes/variables';
+@import '_includes/mixins';
+
+
+#opinions .hat {
+  padding: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 10px;
+  border-bottom: 3px solid $bdf-red;
+  color: $bdf-red;
+}
+
+#opinions .opinion + .opinion {
+  margin: 10px 10px;
+  padding: 10px 10px;
+  border-top: 2px dashed $black;
+}
+#opinions .opinion {
+  padding: 0 10px;
+
+
+  .person {
+    @include person;
+    display: inline-block;
+
+    .name {
+      color: $bdf-red;
+      word-spacing: 0;
+      margin-bottom: 0;
+      font-size: 1em;
+      width: 65%;
+    }
+
+    .job-title {
+      color: $gray;
+      width: 65%;
+    }
+
+    .profile-image {
+      max-width: 90px;
+      width: 30%;
+    }
+  }
+
+  .date-published {
+    &::after{
+      content: ' - ';
+    }
+  }
+
+
+  .title {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,20 @@
+extends base
+
+append content
+  include _partial/opinion/social_network
+
+append content
+  include _partial/opinion/breadcrumb
+
+append content
+  section#opinions(itemscope, itemtype="http://schema.org/ItemList")
+    h1.hat Colunistas
+    - each post, index in site.posts.find({'layout': 'opinion'}).toArray()
+      article.opinion(itemscope, itemtype="NewsArticle", itemprop="itemListElement")
+        section.person(itemscope, itemtype="http://schema.org/Person")
+          img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src="//lorempixel.com/200/200/people/3/" )
+          h1.name(itemprop="name")="Bruna Silveira"
+          h2.job-title(itemprop="jobTitle")="Integrante da rede de médicos e médicas populares"
+        h1.title(itemprop="about")
+          time.date-published= post.date.format('DD/MM/YYYY')
+          = post.title

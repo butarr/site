@@ -73,12 +73,12 @@
   }
   &:before, &:after{
     @include media-query(MEDIUM) {
-      @include get-font-size(2.5); 
-      line-height: 0; 
+      @include get-font-size(2.5);
+      line-height: 0;
       vertical-align: -0.45em;
     }
   }
- 
+
   @include media-query(MEDIUM) {
     float: right;
     width: 45%;
