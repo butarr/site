@@ -1,7 +1,25 @@
 extends base
 
 append content
-	h1= page.columnist.name
+  include _partial/opinion/social_network
 
-	- each post in page.posts
-		= post
+append content
+  include _partial/opinion/breadcrumb
+
+append content
+  section#columnist(itemscope, itemtype="NewsArticle")
+    header
+      span.hat Colunista
+      section.person(itemscope, itemtype="http://schema.org/Person")
+        img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=page.columnist.photo )
+        h1.name(itemprop="name")=page.columnist.name
+        h2.job-title(itemprop="jobTitle")=page.columnist.description
+    h1.title(itemprop="about")= page.title
+    section.content
+      != page.content
+
+append content
+  include _partial/opinion/last_news
+
+append after-content
+  include _partial/opinion/newsletter
