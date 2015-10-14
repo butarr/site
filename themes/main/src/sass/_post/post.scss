@@ -1,13 +1,7 @@
 @import '_includes/query';
 @import '_includes/variables';
+@import '_includes/mixins';
 
-@mixin get-font-size($size) {
-  font-size: $size + em;
-
-  @include media-query(MEDIUM) {
-    font-size: ( $size + 0.4 ) + em;
-  }
-}
 
 #post {
   padding: 10px 15px;
@@ -35,7 +29,7 @@
     color: $black;
     margin: 5px 0;
     line-height: 1.1em;
-    @include get-font-size(2);
+    @include get-font-size(1.7);
 
     @include media-query(MEDIUM) {
       font-weight: bold;
@@ -142,5 +136,5 @@
   font-weight: 300;
   word-spacing: 2px;
   padding-top: 10px;
-  @include get-font-size(0.8);
+  @include get-font-size(0.9);
 }

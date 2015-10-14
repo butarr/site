@@ -24,7 +24,6 @@
   }
 }
 
-
 @mixin get-font-size($size) {
   font-size: $size + em;
 
@@ -62,11 +61,11 @@
   }
 
   .job-title {
-    @include get-font-size(0.8);
     font-weight: 400;
     line-height: 1.6;
     color: $black-dark;
     font-style: italic;
+    font-size: ( $size + 0.3 ) + em;
   }
 }
 
