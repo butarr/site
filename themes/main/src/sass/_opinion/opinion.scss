@@ -47,6 +47,11 @@
       }
     }
   }
+  @include media-query(LARGE) {
+    .person .name {
+      width: 60%;
+    }
+  }
 }
 
 #opinion .title{

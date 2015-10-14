@@ -1,23 +1,24 @@
+
 section#other-opinions
   h1 Outras colunas
   nav
     ul
       li
         a.thumbnail-link(title="Link para coluna", href="#")
-          img(src="http://lorempixel.com/200/200/people/3/", alt="Foto do colunista")
+          img(src=site.data.columnists[page.columnist].photo, alt="Foto do colunista")
         a.lead-link(title="Link para notícia recente", href="#")
-          h2.author Maria Luiza
+          h2.author= site.data.columnists[page.columnist].name
           p.title As empresas Mais Admiradas do Brasil
       li
         a.thumbnail-link(title="Link para coluna", href="#")
-          img(src="http://lorempixel.com/200/200/people/3/", alt="Foto do colunista")
+          img(src=site.data.columnists[page.columnist].photo, alt="Foto do colunista")
         a.lead-link(title="Link para notícia recente", href="#")
-          h2.author Maria Luiza
+          h2.author= site.data.columnists[page.columnist].name
           p.title As empresas Mais Admiradas do Brasil
       li
         a.thumbnail-link(title="Link para coluna", href="#")
-          img(src="http://lorempixel.com/200/200/people/3/", alt="Foto do colunista")
+          img(src=site.data.columnists[page.columnist].photo, alt="Foto do colunista")
         a.lead-link(title="Link para notícia recente", href="#")
-          h2.author Maria Luiza
+          h2.author= site.data.columnists[page.columnist].name
           p.title As empresas Mais Admiradas do Brasil
   

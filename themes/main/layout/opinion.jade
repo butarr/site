@@ -11,9 +11,9 @@ append content
     header
       span.hat Colunista
       section.person(itemscope, itemtype="http://schema.org/Person")
-        img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src="//lorempixel.com/200/200/people/3/" )
-        h1.name(itemprop="name")="Bruna Silveira"
-        h2.job-title(itemprop="jobTitle")="Integrante da rede de médicos e médicas populares"
+        img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=site.data.columnists[page.columnist].photo )
+        h1.name(itemprop="name")=site.data.columnists[page.columnist].name
+        h2.job-title(itemprop="jobTitle")=site.data.columnists[page.columnist].description
     h1.title(itemprop="about")= page.title
     p.description(itemprop="description")= page.description
     section.content
