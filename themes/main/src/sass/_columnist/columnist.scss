@@ -1,0 +1,25 @@
+@import '_includes/query';
+@import '_includes/variables';
+@import '_includes/mixins';
+
+#columnist {
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+#columnist #last-news {
+  display: none;
+}
+
+#columnist #newsletter {
+  display: none;
+}
+
+#columnist .hat {
+  @include columnist-hat;
+}
+
+#columnist .person {
+  @include person;
+  display: inline-block;
+}

@@ -23,6 +23,14 @@
     clear: both;
   }
 }
+@mixin get-font-size-query($size_mobile, $size_large_screen) {
+  font-size: $size_mobile + em;
+
+  @include media-query(MEDIUM) {
+    font-size:  $size_large_screen + em;
+  }
+
+}
 
 @mixin get-font-size($size) {
   font-size: $size + em;
@@ -32,15 +40,29 @@
   }
 }
 
+@mixin columnist-hat(){
+  padding-bottom: 8px;
+  border-bottom: 3px solid $bdf-red;
+  @include get-font-size(1.3);
+  width: 100%;
+  display: block;
+  @include media-query(MEDIUM) {
+    font-weight: bold;
+  }
+}
 
 @mixin person(){
   width: 100%;
   padding: 10px 0;
   .profile-image {
-    width: 150px;
+    width: 100px;
     float: left;
     border-radius: 50%;
     box-shadow: 0 0 0 4px rgba(30, 30, 30, 0.1), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+
+    @include media-query(MEDIUM) {
+      width: 150px;
+    }
   }
 
   .name, .job-title{
@@ -52,9 +74,8 @@
 
   .name {
     font-weight: 700;
-    word-spacing: 9999999px;
     line-height: 1.2;
-    @include get-font-size(1.6);
+    @include get-font-size-query(1.2, 1.8);
     margin-bottom: 10px;
     color: $black-light;
 
