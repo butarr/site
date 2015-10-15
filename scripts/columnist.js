@@ -1,9 +1,6 @@
 'use strict';
 
 var _ = require('underscore');
-var util = require('hexo-util');
-var slugize = util.slugize;
-
 
 var columnists =  function(locals){
   var allColumnists = locals.data.columnists || [];
@@ -19,7 +16,7 @@ var columnists =  function(locals){
     _.each(columnists, function(element, index){
       result.push({
           layout: 'columnist',
-          path: slugize(element.name, {transform: 1})+'/',
+          path: element.path+'/',
           data: {
             columnist: element,
             posts: getPostsByColumnist(index)
