@@ -17,6 +17,7 @@ append content
         img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=page.columnist.photo )
         h1.name(itemprop="name")=page.columnist.name
         h2.job-title(itemprop="jobTitle")=page.columnist.description
+    h1.hat-articles Artigos
     section.list-of-articles.js-masonry(itemscope, itemtype="http://schema.org/ItemList", data-masonry-options='{ "itemSelector": ".opinion", "columnWidth": ".opinion", "percentPosition": "true", "gutter": 15 }')
       article.opinion(itemprop="itemListElement", itemscope, itemtype="http://schema.org/Article")
         a(href="#", itemprop="url")
