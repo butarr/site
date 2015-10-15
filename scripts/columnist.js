@@ -15,7 +15,6 @@ var columnists =  function(locals){
 
   function generate(columnists){
     _.each(columnists, function(element){
-      console.log();
       result.push({
           layout: 'columnist',
           path: slugize(element.name, {transform: 1})+'/',
