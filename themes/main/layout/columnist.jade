@@ -7,19 +7,36 @@ append content
   include _partial/opinion/breadcrumb
 
 append content
-  section#columnist(itemscope, itemtype="NewsArticle")
+  section#columnist(itemscope, itemtype="http://schema.org/CollectionPage")
     header
       span.hat Colunista
       section.person(itemscope, itemtype="http://schema.org/Person")
         img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=page.columnist.photo )
         h1.name(itemprop="name")=page.columnist.name
         h2.job-title(itemprop="jobTitle")=page.columnist.description
-    h1.title(itemprop="about")= page.title
-    section.content
-      != page.content
+    section.list-of-articles(itemscope, itemtype="http://schema.org/ItemList")
+      article.opnion(itemprop="itemListElement", itemscope, itemtype="http://schema.org/Article")
+        a(href="#", itemprop="url")
+          h1.title(itemprop="headline")= "Segundo Titulo Aqui"
+        time.date-time(itemprop="datePublished", datetime="2016-04-21T20:00")= "18 de Junho de 2015"
+        p.description(itemprop="about")= "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium."
+        meta(itemprop="position", content="1")
+        meta(itemprop="image", content="http:"+page.columnist.photo)
+      article.opnion(itemprop="itemListElement", itemscope, itemtype="http://schema.org/Article")
+        a(href="#", itemprop="url")
+          h1.title(itemprop="headline")= "Primeiro Titulo Aqui"
+        time.date-time(itemprop="datePublished", datetime="2016-04-21T20:00")= "25 de Fevereiro de 2015"
+        p.description(itemprop="about")= "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium."
+        meta(itemprop="position", content="2")
+        meta(itemprop="image", content="http:"+page.columnist.photo)
+      article.opnion(itemprop="itemListElement", itemscope, itemtype="http://schema.org/Article")
+        a(href="#", itemprop="url")
+          h1.title(itemprop="headline")= "Terceiro Titulo Aqui"
+        time.date-time(itemprop="datePublished", datetime="2016-04-21T20:00")= "01 de Agosto de 2015"
+        p.description(itemprop="about")= "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium."
+        meta(itemprop="position", content="2")
+        meta(itemprop="image", content="http:"+page.columnist.photo)
 
-append content
-  include _partial/opinion/last_news
-
-append after-content
-  include _partial/opinion/newsletter
+    aside
+      include _partial/opinion/last_news
+      include _partial/opinion/newsletter
