@@ -10,10 +10,12 @@ append content
   article#opinion(itemscope, itemtype="NewsArticle")
     header
       span.hat Colunista
+      - var columnist = site.data.columnists[page.columnist]
       section.person(itemscope, itemtype="http://schema.org/Person")
-        img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=site.data.columnists[page.columnist].photo )
-        h1.name(itemprop="name")=site.data.columnists[page.columnist].name
-        h2.job-title(itemprop="jobTitle")=site.data.columnists[page.columnist].description
+        a(href="#{ url_for( columnist.path ) }", title="Link para o perfil do colunista")
+          img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=columnist.photo )
+        h1.name(itemprop="name")=columnist.name
+        h2.job-title(itemprop="jobTitle")=columnist.description
     h1.title(itemprop="about")= page.title
     p.description(itemprop="description")= page.description
     section.content
