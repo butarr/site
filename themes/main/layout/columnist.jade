@@ -1,5 +1,8 @@
 extends base
 
+append footer
+  script(type="text/javascript",src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js")
+
 append content
   include _partial/opinion/social_network
 
@@ -14,26 +17,40 @@ append content
         img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=page.columnist.photo )
         h1.name(itemprop="name")=page.columnist.name
         h2.job-title(itemprop="jobTitle")=page.columnist.description
-    section.list-of-articles(itemscope, itemtype="http://schema.org/ItemList")
-      article.opnion(itemprop="itemListElement", itemscope, itemtype="http://schema.org/Article")
+    section.list-of-articles.js-masonry(itemscope, itemtype="http://schema.org/ItemList", data-masonry-options='{ "itemSelector": ".opinion", "columnWidth": ".opinion", "percentPosition": "true", "gutter": 15 }')
+      article.opinion(itemprop="itemListElement", itemscope, itemtype="http://schema.org/Article")
         a(href="#", itemprop="url")
           h1.title(itemprop="headline")= "Segundo Titulo Aqui"
         time.date-time(itemprop="datePublished", datetime="2016-04-21T20:00")= "18 de Junho de 2015"
         p.description(itemprop="about")= "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium."
         meta(itemprop="position", content="1")
         meta(itemprop="image", content="http:"+page.columnist.photo)
-      article.opnion(itemprop="itemListElement", itemscope, itemtype="http://schema.org/Article")
+      article.opinion(itemprop="itemListElement", itemscope, itemtype="http://schema.org/Article")
         a(href="#", itemprop="url")
           h1.title(itemprop="headline")= "Primeiro Titulo Aqui"
         time.date-time(itemprop="datePublished", datetime="2016-04-21T20:00")= "25 de Fevereiro de 2015"
         p.description(itemprop="about")= "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium."
         meta(itemprop="position", content="2")
         meta(itemprop="image", content="http:"+page.columnist.photo)
-      article.opnion(itemprop="itemListElement", itemscope, itemtype="http://schema.org/Article")
+      article.opinion(itemprop="itemListElement", itemscope, itemtype="http://schema.org/Article")
         a(href="#", itemprop="url")
           h1.title(itemprop="headline")= "Terceiro Titulo Aqui"
         time.date-time(itemprop="datePublished", datetime="2016-04-21T20:00")= "01 de Agosto de 2015"
         p.description(itemprop="about")= "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium."
+        meta(itemprop="position", content="2")
+        meta(itemprop="image", content="http:"+page.columnist.photo)
+      article.opinion(itemprop="itemListElement", itemscope, itemtype="http://schema.org/Article")
+        a(href="#", itemprop="url")
+          h1.title(itemprop="headline")= "Quarto Titulo Aqui"
+        time.date-time(itemprop="datePublished", datetime="2016-04-21T20:00")= "01 de Agosto de 2015"
+        p.description(itemprop="about")= "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium."
+        meta(itemprop="position", content="2")
+        meta(itemprop="image", content="http:"+page.columnist.photo)
+      article.opinion(itemprop="itemListElement", itemscope, itemtype="http://schema.org/Article")
+        a(href="#", itemprop="url")
+          h1.title(itemprop="headline")= "Quinto Titulo Aqui"
+        time.date-time(itemprop="datePublished", datetime="2016-04-21T20:00")= "01 de Agosto de 2015"
+        p.description(itemprop="about")= "Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium."
         meta(itemprop="position", content="2")
         meta(itemprop="image", content="http:"+page.columnist.photo)
 
