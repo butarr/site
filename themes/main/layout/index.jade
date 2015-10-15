@@ -9,31 +9,31 @@ append content
 append content
   section#home(itemtype="http://schema.org/ItemList")
     h1 Notícias
-    - each post, index in page.posts.toArray()
+    - var post = page.posts.toArray()[0]
       article.new(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
-        - if (index === 0) {
-          
         header.new-content.desktop
           p.hat=post.hat
           a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
             h2.title(itemprop="name")= post.newTitle
           p.description(itemprop="description")= post.description
-        - }
         figure
-          a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
-            img(alt=post.cover.subtitle, src="#{ post.cover.url } ",  itemprop="image")
-          figcaption=post.cover.subtitle
-        - if (index > 0) {
+          - if (!!post.cover) {
+            a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
+              img(alt=post.cover.subtitle, src="#{ post.cover.url } ",  itemprop="image")
+            figcaption=post.cover.subtitle
+          - }
+
+    - each post, index in page.posts.toArray().slice(1, -1)
+      article.new(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
+        figure
+          - if (!!post.cover) {
+            a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
+              img(alt=post.cover.subtitle, src="#{ post.cover.url } ",  itemprop="image")
+            figcaption=post.cover.subtitle
+          - }
         header.new-content
           p.hat=post.hat
           a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
             h2.title(itemprop="name")= post.newTitle
           p.description(itemprop="description")= post.description
-        - }
-        
-        - if (index === 0) {
-        header.new-content.mobile
-          a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
-            h2.title(itemprop="name")= post.newTitle
-        - }
-      
+
