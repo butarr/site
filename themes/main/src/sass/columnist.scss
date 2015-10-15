@@ -1,0 +1,83 @@
+@import '_includes/query';
+@import '_includes/variables';
+@import '_includes/mixins';
+
+
+#columnist {
+  padding: 10px 15px;
+  display: inline-block;
+
+  @include media-query(MEDIUM) {
+    padding: 15px 0 0 10%;
+    float: left;
+    width: 60%;
+  }
+}
+
+#columnist header {
+  @include clearfix();
+  padding-bottom: 10px;
+  border-bottom: 1px solid $bdf-red;
+
+
+  .hat {
+    padding-bottom: 8px;
+    border-bottom: 3px solid $bdf-red;
+    @include get-font-size(1.3);
+    width: 100%;
+    display: block;
+    @include media-query(MEDIUM) {
+      font-weight: bold;
+    }
+  }
+
+  .person {
+    @include person;
+  }
+
+  @include media-query(MEDIUM) {
+    .hat{
+      color: $bdf-red;
+      border-bottom-width: 8px;
+    }
+    .person{
+      .name{
+        color: $bdf-red;
+        word-spacing: initial;
+      }
+    }
+  }
+  @include media-query(LARGE) {
+    .person .name {
+      width: 60%;
+    }
+  }
+}
+
+#columnist .title{
+  color: $black;
+  @include get-font-size(2);
+  margin-bottom: 5px;
+  word-spacing: 5px;
+  font-weight: bold;
+  @include media-query(MEDIUM) {
+    @include get-font-size(2.3);
+  }
+}
+
+
+#columnist .description{
+  @include get-font-size(0.8);
+  color: $black;
+  font-weight: 300;
+  word-spacing: 2px;
+  line-height: 1.7em;
+}
+
+
+
+
+
+
+
+
