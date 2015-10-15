@@ -13,7 +13,7 @@ append content
         h1.title(itemprop="headline")= page.newTitle
       h2.description(itemprop="description")= page.description
       section.desktop.place-and-time
-        time(datetime=page.date)= page.date.locale('pt-br').format('LLLL')
+        time(datetime=page.date)= page.date.locale('pt-br').format('dddd, DD [de] MMMM [de] YYYY, [às] HH:mm')
       figure
         img(itemprop="image", alt="Foto capa da noticia", src=page.cover['url'] )
         figcaption= page.cover.subtitle
