@@ -1,0 +1,94 @@
+@import '_includes/query';
+@import '_includes/variables';
+@import '_includes/mixins';
+
+#opinions {
+  display: inline-block;
+
+
+  @include media-query(MEDIUM) {
+    margin-left: 7%;
+    padding: 0;
+    padding-left: 30px;
+  }
+
+  @include media-query(LARGE) {
+    display: inline-block;
+    float: left;
+    width: 60%;
+  }
+}
+
+#opinions-aside {
+  display: none;
+
+  @include media-query(LARGE) {
+    display: inline-block;
+    float: right;
+    width: 30%;
+    max-width: 400px;
+
+    #most-reads {
+      margin: 0;
+    }
+  }
+}
+
+#opinions .hat {
+  padding: 0 0 5px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 10px;
+  border-bottom: 3px solid $bdf-red;
+  color: $bdf-red;
+}
+
+#opinions .opinion + .opinion {
+  margin: 10px 10px;
+  padding: 10px 0;
+  border-top: 2px dotted #7d0004;
+}
+#opinions .opinion {
+  padding: 0 10px;
+
+  a {
+    text-decoration: none;
+    color: $black-light;
+  }
+
+
+  .person {
+    @include person;
+    display: inline-block;
+
+    .name {
+      color: $bdf-red;
+      word-spacing: 0;
+      margin-bottom: 0;
+      font-size: 1em;
+      width: 65%;
+    }
+
+    .job-title {
+      color: $gray;
+      width: 65%;
+    }
+
+    .profile-image {
+      max-width: 90px;
+      width: 30%;
+    }
+  }
+
+  .date-published {
+    &::after{
+      content: ' - ';
+    }
+  }
+
+
+  .title {
+    margin-top: 0;
+    display: inline-block;
+  }
+}

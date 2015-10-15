@@ -1,0 +1,76 @@
+@import '_includes/query';
+@import '_includes/variables';
+@import '_includes/mixins';
+
+#columnist {
+  padding: 10px 15px;
+  display: block;
+  clear: both;
+
+  @include media-query(MEDIUM) {
+    padding: 15px 0 0 10%;
+    float: left;
+    width: 60%;
+  }
+}
+
+#columnist #last-news {
+  display: none;
+}
+
+#columnist #newsletter {
+  display: none;
+}
+
+#columnist .hat {
+  @include columnist-hat;
+}
+
+#columnist .person {
+  @include person;
+  display: inline-block;
+}
+#columnist .list-of-articles {
+  margin-top: 20px;
+}
+
+#columnist .list-of-articles .opinion {
+  box-shadow: 0px 0px 10px 0px rgba(34,25,25,0.4);
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 10px;
+  padding-bottom: 5px;
+  border-radius: 3px;
+  width: 95%;
+
+  a {
+    text-decoration: none;
+  }
+
+  .title {
+    margin: 0;
+    margin-bottom: 10px;
+    color: $red;
+    line-height: 1.2em;
+    @include get-font-size-query(1.2, 1.5);
+  }
+
+  .date-time {
+    color: $gray-light;
+    font-weight: 500;
+    @include get-font-size-query(0.6, 0.8);
+  }
+
+  .description {
+    color: $black;
+    line-height: 1.2;
+  }
+
+  @include media-query(MEDIUM) {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  @include media-query(LARGE) {
+    width: 28%;
+  }
+}

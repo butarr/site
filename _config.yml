@@ -1,3 +1,15 @@
+#
+#
+# WARNING: THIS FILE IS REPLACED BY ANOTHER VERSION IN PRODUCTION.
+#
+# IF YOU ARE MAKING CHANGES TO THIS FILE THAT ARE INTENDED TO BE REFLECTED IN PRODUCTION,
+# MAKE SURE YOU ALSO CHANGE THE VERSION USED THERE.
+# PRODUCTION'S CONFIGURATION FILE CAN BE FOUND ON THIS GITHUB REPO: https://github.com/brasil-de-fato/puppet
+# UNDER modules/frida/files/site/_config.yml
+#
+
+#
+#
 # Hexo Configuration
 ## Docs: http://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
