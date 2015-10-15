@@ -21,8 +21,8 @@ append content
         - }
         figure
           a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
-            img(alt=post.reference, src="#{ post.cover.url } ",  itemprop="image")
-          figcaption=post.reference
+            img(alt=post.cover.subtitle, src="#{ post.cover.url } ",  itemprop="image")
+          figcaption=post.cover.subtitle
         - if (index > 0) {
         header.new-content
           p.hat=post.hat
