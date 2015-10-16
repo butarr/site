@@ -1,6 +1,6 @@
 ---
-title: "Segundo Titulo Aqui"
-newTitle: "Segundo Titulo Aqui"
+title: "Primeiro Titulo Aqui"
+newTitle: "Primeiro Titulo Aqui"
 description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium."
 cover:
   url: "http://farm6.staticflickr.com/5736/20898086726_eebae3719e_b.jpg"
@@ -9,7 +9,7 @@ cover:
 pre_author: " "
 author: "Gabriel Maia Salgado"
 pre_place: " "
-date: 2015-10-24T15:55:00-03:00
+date: 2015-10-25T15:55:00-03:00
 columnist: rodrigovieira18@gmail.com
 layout: opinion
 ---
