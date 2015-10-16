@@ -62,8 +62,15 @@
   }
 
   .description {
+    @include get-font-size-query(1, 1.1);
     color: $black;
-    line-height: 1.2;
+    font-weight: 300;
+    word-spacing: 2px;
+    line-height: 1.7em;
+
+    @include media-query(MEDIUM) {
+      line-height: 1.3em;
+    }
   }
 
   @include media-query(MEDIUM) {
