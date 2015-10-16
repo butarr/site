@@ -1,6 +1,6 @@
 ---
-title: "Primeiro Titulo Aqui"
-newTitle: "Primeiro Titulo Aqui"
+title: "Segundo Titulo Aqui"
+newTitle: "Segundo Titulo Aqui"
 description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
 cover:
   url: "http://farm6.staticflickr.com/5736/20898086726_eebae3719e_b.jpg"

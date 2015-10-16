@@ -9,7 +9,7 @@ var columnists =  function(locals){
   if (_.size(allColumnists) === 0) return;
 
   function getPostsByColumnist(columnist){
-    return locals.posts.find({'columnist': columnist});
+    return locals.posts.find({'columnist': columnist}).sort('-date');
   }
 
   function generate(columnists){

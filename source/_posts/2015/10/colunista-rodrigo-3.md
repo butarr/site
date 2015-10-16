@@ -1,5 +1,5 @@
 ---
-title: "Quinto Titulo Aqui"
+title: "Quarto Titulo Aqui"
 newTitle: "Consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
 description: "Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium."
 cover:
@@ -9,7 +9,7 @@ cover:
 pre_author: " "
 author: "Gabriel Maia Salgado"
 pre_place: " "
-date: 2015-10-24T15:55:00-03:00
+date: 2015-10-23T15:55:00-03:00
 columnist: rodrigovieira18@gmail.com
 layout: opinion
 ---
