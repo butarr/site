@@ -9,7 +9,7 @@ cover:
 pre_author: " "
 author: "Gabriel Maia Salgado"
 pre_place: " "
-date: 2015-10-24T15:55:00-03:00
+date: 2015-10-04T15:55:00-03:00
 columnist: wandecleya@gmail.com
 layout: opinion
 ---
