@@ -7,10 +7,10 @@ append content
   include _partial/post/breadcrumb
 
 append content
-  article#post(itemscope="NewsArticle")
+  article#post(itemtype="http://schema.org/NewsArticle", itemscope)
     header
       span.hat(itemprop="about")= page.hat
-        h1.title(itemprop="headline")= page.newTitle
+      h1.title(itemprop="headline")= page.newTitle
       h2.description(itemprop="description")= page.description
       section.desktop.place-and-time
         time(datetime=page.date)= page.date.locale('pt-br').format('LLLL')
@@ -21,7 +21,7 @@ append content
         span.author(rel="author", itemprop="author")= page.author
         br
         span.place(rel="place", itemprop="contentLocation")= page.place
-        time(datetime=page.date)= page.date.locale('pt-br').format('LLLL')
+        time(datetime=page.date, itemprop="datePublished")= page.date.locale('pt-br').format('LLLL')
 
     section.content
      != page.content

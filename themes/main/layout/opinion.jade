@@ -7,17 +7,20 @@ append content
   include _partial/opinion/breadcrumb
 
 append content
-  article#opinion(itemscope, itemtype="NewsArticle")
+  - var columnist = site.data.columnists[page.columnist]
+  article#opinion(itemscope, itemtype="http://schema.org/BlogPosting")
     header
       span.hat Colunista
-      - var columnist = site.data.columnists[page.columnist]
       section.person(itemscope, itemtype="http://schema.org/Person")
-        a(href="#{ url_for( columnist.path ) }", title="Link para o perfil do colunista")
+        a(href=url_for( columnist.path ), title="Link para o perfil do colunista")
           img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=columnist.photo )
-        h1.name(itemprop="name")=columnist.name
+        a(href=url_for( columnist.path ), title="Link para o perfil do colunista")
+          h1.name(itemprop="name")=columnist.name
         h2.job-title(itemprop="jobTitle")=columnist.description
-    h1.title(itemprop="about")= page.title
+    h1.title(itemprop="headline")= page.title
     p.description(itemprop="description")= page.description
+    meta(itemprop="datePublished", content=page.date)
+    meta(itemprop="image", content='http:'+columnist.photo)
     section.content
       != page.content
 

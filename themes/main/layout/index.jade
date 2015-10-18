@@ -7,10 +7,11 @@ append content
   include _partial/post/breadcrumb
 
 append content
-  section#home(itemtype="http://schema.org/ItemList")
+  section#home(itemscope, itemtype="http://schema.org/ItemList")
     h1 Notícias
     - var post = page.posts.toArray()[0]
       article.new(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
+        meta(itemprop="position", content="0")
         header.new-content.desktop
           p.hat=post.hat
           a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
@@ -25,6 +26,7 @@ append content
 
     - each post, index in page.posts.toArray().slice(1, -1)
       article.new(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
+        meta(itemprop="position", content=index+1)
         figure
           - if (!!post.cover) {
             a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")

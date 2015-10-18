@@ -10,14 +10,19 @@ append content
   section#opinions(itemscope, itemtype="http://schema.org/ItemList")
     h1.hat Colunistas
     - each post, index in site.posts.find({'layout': 'opinion'}).toArray()
-      article.opinion(itemscope, itemtype="NewsArticle", itemprop="itemListElement")
+      article.opinion(itemscope, itemtype="http://schema.org/BlogPosting", itemprop="itemListElement")
+        - var columnist = site.data.columnists[post.columnist];
         section.person(itemscope, itemtype="http://schema.org/Person")
-          img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=site.data.columnists[post.columnist].photo )
-          h1.name(itemprop="name")= site.data.columnists[post.columnist].name
-          h2.job-title(itemprop="jobTitle")= site.data.columnists[post.columnist].description
-        h1.title(itemprop="about")
-          a(href="#{ url_for(post.path) }")
-            time.date-published= post.date.format('DD/MM/YYYY')
+          a(href=url_for(columnist.path), title="link para a pagina do colunista")
+            img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=columnist.photo )
+          a(href=url_for(columnist.path), title="link para a pagina do colunista")
+            h1.name(itemprop="name")= columnist.name
+          h2.job-title(itemprop="jobTitle")= columnist.description
+        meta(itemprop="image", content='http:'+columnist.photo)
+        meta(itemprop="position", content=index)
+        h1.title(itemprop="headline")
+          a(href="#{ url_for(post.path) }", itemprop="url")
+            time.date-published(datetime=post.date, itemprop="datePublished")= post.date.format('DD/MM/YYYY')
             = post.title
 
 append content

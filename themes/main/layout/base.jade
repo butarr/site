@@ -13,18 +13,24 @@ html(lang='pt-BR')
         i.fa.fa-bars
       nav.menu(itemscope, itemtype="http://schema.org/SiteNavigationElement")
         ul
-          li(itemprop="url")
-            a.active(itemprop="name", href="#")= "Economia"
-          li(itemprop="url")
-            a(itemprop="name", href="#")= "Cultura"
-          li(itemprop="url")
-            a(itemprop="name", href="#")= "Política"
-          li(itemprop="url")
-            a(itemprop="name", href="#")= "Saúde"
-          li(itemprop="url")
-            a(itemprop="name", href="#")= "Brasil"
-          li(itemprop="url")
-            a(itemprop="name", href="#")= "Mundo"
+          li
+            a.active(itemprop="url", href="#")= "Economia"
+            meta(itemprop="name",content="string")
+          li
+            a(itemprop="url", href="#")= "Cultura"
+            meta(itemprop="name",content="string")
+          li
+            a(itemprop="url", href="#")= "Política"
+            meta(itemprop="name",content="string")
+          li
+            a(itemprop="url", href="#")= "Saúde"
+            meta(itemprop="name",content="string")
+          li
+            a(itemprop="url", href="#")= "Brasil"
+            meta(itemprop="name",content="string")
+          li
+            a(itemprop="url", href="#")= "Mundo"
+            meta(itemprop="name",content="string")
 
       block header
     main#content
