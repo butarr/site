@@ -4,7 +4,7 @@
 
 ## How to install
 
-1 - Install nodejs based in your OS;
+1 - Install nodejs based on your OS;
 2 - Install gulp;
 3 - Run `npm install` in project folder;
 4 - Run the local server using `gulp` or `npm start` commands;
@@ -59,12 +59,12 @@
 
 
 
-Dicas:
-- More than one property?
-> You can use <meta> tag or add inline property: itemprop="name headline"
+Tips:
+- Do you have more than one property?
+> You can use <meta> tag or add an inline property: itemprop="name headline"
 
 - Where can I check my schemas?
 > (google)[https://developers.google.com/structured-data/testing-tool/]
 
 - Problems with mainEntityOfPage?
-> Stay easy. The comunity still talk about this one if you have curiosity take a look on (that)[https://github.com/schemaorg/schemaorg/issues/301]
+> Don't worry. The community still talk about this one, if you have curiosity, take a look on (that)[https://github.com/schemaorg/schemaorg/issues/301]
