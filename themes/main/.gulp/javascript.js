@@ -1,7 +1,6 @@
-var gulp      = require('gulp'),
+var gulp        = require('gulp'),
 	plumber     = require('gulp-plumber'),
 	uglify      = require('gulp-uglify'),
-	gzip        = require('gulp-gzip'),
 	concat      = require('gulp-concat');
 
 module.exports = function(baseDir){
@@ -10,7 +9,6 @@ module.exports = function(baseDir){
 			.pipe(plumber())
 			.pipe(concat('main.js'))
 			.pipe(uglify())
-			.pipe(gzip())
 			.pipe(gulp.dest(baseDir+'/js/'));
 	}
 };

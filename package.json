@@ -29,8 +29,5 @@
   },
   "scripts": {
     "start": "gulp"
-  },
-  "devDependencies": {
-    "gulp-gzip": "^1.2.0"
   }
 }
