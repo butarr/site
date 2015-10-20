@@ -2,7 +2,6 @@ var gulp      = require('gulp'),
 	plumber     = require('gulp-plumber'),
   sass        = require('gulp-sass'),
 	concat      = require('gulp-concat'),
-	gzip 				= require('gulp-gzip'),
   bourbon     = require('node-bourbon').includePaths;
 
 module.exports =  function (baseDir) {
@@ -13,7 +12,6 @@ module.exports =  function (baseDir) {
 	        includePaths: ['styles'].concat(bourbon)
 	    }).on('error', sass.logError))
 			.pipe(concat('main.css'))
-			.pipe(gzip())
 			.pipe(gulp.dest(baseDir+'/css/'));
 	}
 };
