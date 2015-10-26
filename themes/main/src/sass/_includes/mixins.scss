@@ -1,3 +1,4 @@
+@import 'fonts';
 @import 'query';
 @import 'variables';
 
@@ -13,7 +14,6 @@
 //
 // Source: http://nicolasgallagher.com/micro-clearfix-hack/
 
-@import '_includes/fonts';
 
 @mixin clearfix() {
   &:before,
@@ -52,6 +52,7 @@
 }
 
 @mixin person(){
+  @include get-font(PERSON);
   width: 100%;
   padding: 10px 0;
   .profile-image {

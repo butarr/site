@@ -79,6 +79,17 @@ a { text-decoration:  none; }
 }
 
 
+@mixin __person(){
+  .name {
+    font-size: 1.6em;
+  }
+
+
+  .job-title {
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
 
 @mixin get-font($type){
 
@@ -93,6 +104,9 @@ a { text-decoration:  none; }
   }
   @else if( $type == MOST_READS ){
     @include __most_reads();
+  }
+  @else if( $type == PERSON ){
+    @include __person();
   }
 
 }

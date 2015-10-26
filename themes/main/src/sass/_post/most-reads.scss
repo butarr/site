@@ -25,7 +25,6 @@
       height: 25px;
       border-bottom: 1px solid $bdf-red;
       padding-left: 10px;
-      @include get-font(MOST_READS);
     }
 
     .title {
