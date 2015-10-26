@@ -4,9 +4,11 @@
 
 #last-articles {
   @include list-news-on-mobile();
-
+  @include get-font(LAST_ARTICLES);
+  display: inline-block;
   width: 90%;
   padding: 10px 15px;
+  margin-bottom: 30px;
 
   h2 {
     color: $gray;
@@ -22,11 +24,10 @@
   .lead-link {
     width: 60%;
     align-self: flex-start;
-    .description {
+    .title {
       color: $black;
       margin-top: 5px;
-
-      @include get-font(LAST_ARTICLES_DESCRIPTION);
+      padding: 5px 0px;
     }
   }
 
@@ -35,24 +36,15 @@
     text-align: right;
     display: block;
     margin-top: 50px;
-
-    @include get-font(LINK_MORE_LAST_ARTICLES);
   }
 
 
 
   @include media-query(MEDIUM) {
     clear: both;
-    margin-bottom: -40px;
     width: 55%;
     padding-top: 40px;
     margin-left: 8.7%;
-  }
-
-  h1 {
-    @include media-query(MEDIUM) {
-      @include get-font(LAST_ARTICLES_HEADLINE);
-    }
   }
 }
 
