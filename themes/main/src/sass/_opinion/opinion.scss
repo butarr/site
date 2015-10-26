@@ -6,6 +6,7 @@
 #opinion {
   padding: 10px 15px;
   display: inline-block;
+  @include get-font(OPINION);
 
   @include media-query(MEDIUM) {
     padding: 15px 0 0 10%;
@@ -51,13 +52,12 @@
   color: $black;
   margin-bottom: 5px;
   word-spacing: 5px;
-  @include get-font(TITLE);
 }
 
 #opinion .description{
   padding: 0 10px;
+  line-height: 1.4;
   color: lighten($black-light, 15%);
-  @include get-font(DESCRIPTION);
 
   &:before{
     content: "“ " ;
@@ -70,7 +70,6 @@
     @include media-query(MEDIUM) {
       line-height: 0;
       vertical-align: -0.45em;
-      @include get-font(OPINION_QUOTES);
     }
   }
 
@@ -82,10 +81,9 @@
 }
 
 #opinion .content{
-  @include get-font(OPINION_CONTENT);
   color: $black;
   word-spacing: 2px;
-  line-height: 1.7em;
+  line-height: 1.7;
 }
 
 

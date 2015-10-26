@@ -91,6 +91,35 @@ a { text-decoration:  none; }
   }
 }
 
+@mixin __opinion(){
+
+  .hat{
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .title {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+
+  .content p{
+    font-size: 1.1em;
+  }
+
+  .description {
+    font-size: 1.8em;
+    line-height: 1.4;
+    font-weight: bold;
+
+    &::after, &::before{
+      font-size: 3.6em;
+    }
+  }
+
+}
+
+
 @mixin get-font($type){
 
   @if( $type == POST ){
@@ -107,6 +136,9 @@ a { text-decoration:  none; }
   }
   @else if( $type == PERSON ){
     @include __person();
+  }
+  @else if( $type == OPINION ){
+    @include __opinion();
   }
 
 }
