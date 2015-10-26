@@ -1,5 +1,19 @@
 $(document).ready(function() {
 
+  var getLead = function(post){
+    var lead = '<a href="//'+post.url+'" class="lead-link" title="Link para a noticia recente">';
+
+    if(!!post.hat){
+      '<span class="hat">'+post.hat+'</span>';
+    }
+
+    lead += '<h2 class="title">'+post.title+'</h2>';
+    lead += '<h3 class="description">'+post.description+'</h3>';
+
+    lead += '</a>';
+    return lead;
+  };
+
   var loadLastNews = function(data){
     var posts  = data || [{}];
     var html = '';
@@ -11,16 +25,15 @@ $(document).ready(function() {
     });
 
     posts.forEach(function(post){
-      var section = '<section class="news">' +
-                      '<a href="//'+post.url+'" class="thumbnail-link" title="Link para a noticia recente" >'+
-                        '<img src="'+post.cover['small']+'" alt="'+post.cover['subtitle']+'"/>'+
-                      '</a>'+
-                      '<a href="//'+post.url+'" class="lead-link" title="Link para a noticia recente">'+
-                        '<span class="hat">'+post.hat+'</span>'+
-                        '<h2 class="description">'+post.title+'</h2>'+
-                      '</a>'+
-                    '</section>';
+      var image = '<a href="//'+post.url+'" class="thumbnail-link" title="Link para a noticia recente" >'+
+        '<img src="'+post.cover['small']+'" alt="'+post.cover['subtitle']+'"/>'+
+        '</a>';
 
+
+      var section = '<section class="news">' +
+        image+
+        getLead(post)+
+        '</section>';
 
       html += section;
     });

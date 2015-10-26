@@ -1,4 +1,5 @@
 @import '_includes/variables';
+@import '_includes/mixins';
 @import '_includes/query';
 
 #newsletter {
@@ -17,16 +18,13 @@
 
   h1 {
     padding-top: 10px;
-    font-size: 1.2em;
-    font-weight: bold;
     color: $red;
+    @include get-font(NEWSLETTER_HEADLINE);
   }
 
   h2 {
     color: lighten($black-dark, 20%);
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 2em;
+    @include get-font(NEWSLETTER_SUBHEADLINE);
   }
 
   .form{
@@ -40,13 +38,11 @@
     margin-bottom: 5px;
     height: 46px;
     padding: 10px 16px;
-    font-size: 18px;
     line-height: 1.3333333;
     border-radius: 6px;
     display: block;
     height: 34px;
     padding: 0.8% 1%;
-    font-size: 14px;
     line-height: 1.42857143;
     color: #555;
     background-color: #fff;
@@ -58,6 +54,7 @@
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    @include get-font(NEWSLETTER_INPUT);
   }
 
   @include media-query(MEDIUM) {

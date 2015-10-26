@@ -5,6 +5,8 @@
 
 #post {
   padding: 10px 15px;
+  margin-top: 25px;
+  @include get-font(POST);
 
   @include media-query(MEDIUM) {
     padding: 60px 0 0 10%;
@@ -17,34 +19,17 @@
 #post header {
   .hat {
     color: $red;
-    font-weight: bold;
-    @include get-font-size(1.1);
-  }
-
-  .title, .description {
-    font-weight: lighter;
   }
 
   .title {
     color: $black;
     margin: 5px 0;
     line-height: 1.1em;
-    @include get-font-size(1.7);
-
-    @include media-query(MEDIUM) {
-      font-weight: bold;
-    }
   }
 
   .description {
     color: $black-light;
-    font-style: italic;
-    line-height: 1.2em;
-    margin-top: 25px;
-    @include get-font-size(1);
-    @include media-query(MEDIUM) {
-      margin-top: 10px;
-    }
+    margin: 25px 0;
   }
 
   figure {
@@ -57,7 +42,6 @@
     figcaption{
       color: $gray;
       text-align: right;
-      @include get-font-size(0.5);
     }
   }
 
@@ -75,8 +59,6 @@
     padding: 5px 0;
     border-top: 2px solid $gray-lighter;
     border-bottom: 2px solid $gray-lighter;
-    font-weight: 300;
-    @include get-font-size(0.6);
 
     time {
       display: block;
@@ -133,8 +115,5 @@
 #post .content{
   color: $black-dark;
   line-height: 1.7em;
-  font-weight: 300;
-  word-spacing: 2px;
   padding-top: 10px;
-  @include get-font-size(0.9);
 }

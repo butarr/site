@@ -36,11 +36,11 @@
 
 #opinions .hat {
   padding: 0 0 5px 0;
-  font-size: 1.2em;
-  font-weight: bold;
   margin: 10px 10px;
   border-bottom: 3px solid $bdf-red;
   color: $bdf-red;
+
+  @include get-font(OPINIONS_HAT);
 }
 
 #opinions .opinion + .opinion {
@@ -65,8 +65,9 @@
       color: $bdf-red;
       word-spacing: 0;
       margin-bottom: 0;
-      font-size: 1em;
       width: 65%;
+
+      @include get-font(OPINIONS_NAME);
     }
 
     .job-title {

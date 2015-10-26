@@ -1,9 +1,11 @@
 @import '_includes/query';
 @import '_includes/variables';
 @import '_includes/mixins';
+@import '_includes/fonts';
 
 #most-reads{
   display: none;
+  @include get-font(MOST_READS);
 
   @include media-query(MEDIUM) {
     display: inline-block;
@@ -20,15 +22,12 @@
     h1 {
       color: $bdf-red;
       border: none;
-      text-transform: uppercase;
-      font-size: 0.8em;
       height: 25px;
       border-bottom: 1px solid $bdf-red;
       padding-left: 10px;
+      @include get-font(MOST_READS);
     }
-    a {
-      text-decoration: none;
-    }
+
     .title {
       padding: 10px;
       color: $bdf-red;

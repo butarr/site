@@ -4,6 +4,11 @@
 
 #last-news {
   @include list-news-on-mobile();
+  @include get-font(LAST_NEWS);
+
+  & > h1 {
+    margin-bottom: 20px;
+  }
 
   .news h2 {
     color: $gray;
@@ -11,11 +16,9 @@
 
   .more-news {
     width: 100%;
-    font-size: 1em;
     text-align: right;
     display: block;
     color: $red;
-    font-weight: bold;
     margin-top: 50px;
   }
 
@@ -25,12 +28,9 @@
     padding-top: 40px;
     margin-left: 8.7%;
 
-    h1 {
-      font-size: 1.5em;
-    }
-
     .news {
       justify-content: flex-start;
+      flex-direction: row;
     }
 
     .news .thumbnail-link {
@@ -50,14 +50,13 @@
       align-self: flex-start;
       font-weight: bold;
 
-      .hat {
-        font-size: 1em;
-      }
       .description {
-        font-weight: bold;
         color: $black;
-        font-size: 1.3em;
         margin-top: 5px;
+      }
+
+      .title, .description {
+        padding-left: 10px;
       }
     }
   }

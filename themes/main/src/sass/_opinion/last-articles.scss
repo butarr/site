@@ -24,18 +24,19 @@
     align-self: flex-start;
     .description {
       color: $black;
-      font-size: 1.1em;
       margin-top: 5px;
+
+      @include get-font(LAST_ARTICLES_DESCRIPTION);
     }
   }
 
   .more-articles {
     width: 100%;
-    font-size: .8em;
     text-align: right;
     display: block;
-    font-weight: bold;
     margin-top: 50px;
+
+    @include get-font(LINK_MORE_LAST_ARTICLES);
   }
 
 
@@ -50,11 +51,11 @@
 
   h1 {
     @include media-query(MEDIUM) {
-      font-size: 1.5em;
+      @include get-font(LAST_ARTICLES_HEADLINE);
     }
   }
 }
 
-  
+
 
 

@@ -1,0 +1,99 @@
+// Reset base font sizes
+h1,h2,h3,h4,h5,h6,p,ul,ol { margin-bottom: 0; }
+h1 { font-size: 1.4em; }
+h2 { font-size: 1.1em; }
+h3, h4, h5, h6, p { font-size: 0.9em; }
+a { text-decoration:  none; }
+
+
+@mixin __post(){
+  .title {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .hat {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+  .content p {
+    font-size: 1.1em;
+  }
+
+  .description {
+    font-size: 1.6em;
+    font-weight: lighter;
+  }
+}
+
+@mixin __last_news(){
+  & > h1 {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  .hat {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+  .title {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .description {
+    font-size: 0.9em;
+    line-height: 1.2em;
+    font-weight: 400;
+  }
+}
+
+@mixin __more_information(){
+  & > h1 {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .title {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+}
+
+@mixin __most_reads(){
+  & > h1 {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .title {
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+
+
+
+@mixin get-font($type){
+
+  @if( $type == POST ){
+    @include __post();
+  }
+  @else if( $type == LAST_NEWS ){
+    @include __last_news();
+  }
+  @else if( $type == MORE_INFORMATION ){
+    @include __more_information();
+  }
+  @else if( $type == MOST_READS ){
+    @include __most_reads();
+  }
+
+}
+

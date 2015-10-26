@@ -1,6 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,700,300);
 @import '_includes/variables';
 @import '_includes/mixins';
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,700,300);
 
 
 * {
@@ -33,9 +33,9 @@ body {
 
     p {
       text-align: center;
-      font-weight: 200;
-      font-size: 0.9em;
       margin: 0;
+
+      @include get-font(FOOTER);
     }
 
     .love {
