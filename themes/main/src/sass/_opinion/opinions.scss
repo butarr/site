@@ -39,8 +39,6 @@
   margin: 10px 10px;
   border-bottom: 3px solid $bdf-red;
   color: $bdf-red;
-
-  @include get-font(OPINIONS_HAT);
 }
 
 #opinions .opinion + .opinion {
@@ -66,8 +64,6 @@
       word-spacing: 0;
       margin-bottom: 0;
       width: 65%;
-
-      @include get-font(OPINIONS_NAME);
     }
 
     .job-title {

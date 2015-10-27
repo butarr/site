@@ -3,6 +3,7 @@
 @import '_includes/mixins';
 
 #columnist {
+  @include get-font(COLUMNIST);
   padding: 10px 15px;
   display: block;
   clear: both;

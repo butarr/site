@@ -48,8 +48,6 @@
   border-bottom: 3px solid $bdf-red;
   width: 100%;
   display: block;
-
-  @include get-font(HAT);
 }
 
 @mixin person(){
@@ -85,12 +83,10 @@
 
   .name {
     margin-bottom: 10px;
-    @include get-font(NAME);
   }
 
   .job-title {
     color: $black-dark;
-    @include get-font(JOB_TITLE);
   }
 }
 

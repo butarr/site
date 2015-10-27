@@ -19,12 +19,10 @@
   h1 {
     padding-top: 10px;
     color: $red;
-    @include get-font(NEWSLETTER_HEADLINE);
   }
 
   h2 {
     color: lighten($black-dark, 20%);
-    @include get-font(NEWSLETTER_SUBHEADLINE);
   }
 
   .form{
@@ -54,7 +52,6 @@
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    @include get-font(NEWSLETTER_INPUT);
   }
 
   @include media-query(MEDIUM) {
