@@ -4,6 +4,7 @@
 @import '_includes/mixins';
 
 #other-opinions{
+  @include get-font(OTHER_OPINIONS);
   display: none;
   nav {
     ul {
@@ -38,10 +39,10 @@
         float: left;
         padding-left: 5%;
         padding-right: 5%;
+        margin: 10px 0;
         width: 55%;
-        .author{
+        .name {
           color: $bdf-red;
-          @include get-font(OTHER_OPINION_AUTHOR);
         }
       }
     }
@@ -62,15 +63,14 @@
       border-bottom: 1px solid $bdf-red;
       padding-left: 10px;
       margin-bottom: 0;
+    }
 
-      @include get-font(OTHER_OPINION_HEADLINE);
+    .name {
+      margin-top: 0;
     }
-    a {
-      text-decoration: none;
-    }
+
     .title {
       color: $black-dark;
-      @include get-font(OTHER_OPINION_TITLE);
       span {
         color: $black-dark;
       }

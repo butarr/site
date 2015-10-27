@@ -3,22 +3,12 @@ section#other-opinions
   h1 Outras colunas
   nav
     ul
-      li
-        a.thumbnail-link(title="Link para coluna", href="#")
-          img(src=site.data.columnists['rodrigovieira18@gmail.com'].photo, alt="Foto do colunista")
-        a.lead-link(title="Link para notícia recente", href="#")
-          h2.author= site.data.columnists['rodrigovieira18@gmail.com'].name
-          p.title As empresas Mais Admiradas do Brasil
-      li
-        a.thumbnail-link(title="Link para coluna", href="#")
-          img(src=site.data.columnists['wandecleya@gmail.com'].photo, alt="Foto do colunista")
-        a.lead-link(title="Link para notícia recente", href="#")
-          h2.author= site.data.columnists['wandecleya@gmail.com'].name
-          p.title As empresas Mais Admiradas do Brasil
-      li
-        a.thumbnail-link(title="Link para coluna", href="#")
-          img(src=site.data.columnists['rodrigovieira18@gmail.com'].photo, alt="Foto do colunista")
-        a.lead-link(title="Link para notícia recente", href="#")
-          h2.author= site.data.columnists['rodrigovieira18@gmail.com'].name
-          p.title As empresas Mais Admiradas do Brasil
+      - each post, index in site.posts.find({'layout': 'opinion'}).toArray().slice(0, 4)
 
+        - var columnist = site.data.columnists[post.columnist]
+        li
+          a.thumbnail-link(href=url_for( columnist.path ), title="Link para o perfil do colunista")
+            img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=columnist.photo )
+          a.lead-link(title="Link para notícia recente", href="#")
+            h2.name(itemprop="name")=columnist.name
+            p.title= post.title
