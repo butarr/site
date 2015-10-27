@@ -10,7 +10,8 @@ append content
   - var columnist = site.data.columnists[page.columnist]
   article#opinion(itemscope, itemtype="http://schema.org/BlogPosting")
     header
-      span.hat Colunista
+      a(href=url_for( columnist.path ), title="Link para o perfil do colunista")
+        span.hat Colunista
       section.person(itemscope, itemtype="http://schema.org/Person")
         a(href=url_for( columnist.path ), title="Link para o perfil do colunista")
           img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=columnist.photo )

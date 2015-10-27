@@ -81,13 +81,21 @@ a { text-decoration:  none; }
 
 @mixin __person(){
   .name {
-    font-size: 1.6em;
+    font-size: 1em;
+
+    @include media-query(MEDIUM) {
+      font-size: 1.6em;
+    }
   }
 
 
   .job-title {
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: bold;
+
+    @include media-query(MEDIUM) {
+      font-size: 1em;
+    }
   }
 }
 
@@ -108,11 +116,20 @@ a { text-decoration:  none; }
   }
 
   .description {
-    font-size: 1.8em;
+    font-size: 1.1em;
     font-weight: bold;
 
     &::after, &::before{
-      font-size: 3.6em;
+      font-size: 1.5em;
+    }
+
+    @include media-query(MEDIUM) {
+      font-size: 1.8em;
+      font-weight: bold;
+
+      &::after, &::before{
+        font-size: 3.6em;
+      }
     }
   }
 }
