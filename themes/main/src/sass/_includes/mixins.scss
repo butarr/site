@@ -26,23 +26,6 @@
   }
 }
 
-@mixin get-font-size-query($size_mobile, $size_large_screen) {
-  font-size: $size_mobile + em;
-
-  @include media-query(MEDIUM) {
-    font-size:  $size_large_screen + em;
-  }
-
-}
-
-@mixin get-font-size($size) {
-  font-size: $size + em;
-
-  @include media-query(MEDIUM) {
-    font-size: ( $size + 0.4 ) + em;
-  }
-}
-
 @mixin columnist-hat(){
   padding-bottom: 8px;
   border-bottom: 3px solid $bdf-red;
