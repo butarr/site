@@ -39,8 +39,15 @@
         float: left;
         padding-left: 5%;
         padding-right: 5%;
-        margin: 10px 0;
+        margin: 10px 0 0 0;
         width: 55%;
+
+        & + .lead-link {
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+
+
         .name {
           color: $bdf-red;
         }
