@@ -14,9 +14,9 @@ append content
       h2.description(itemprop="description")= page.description
       section.desktop.place-and-time
         time(datetime=page.date)= page.date.locale('pt-br').format('dddd, DD [de] MMMM [de] YYYY, [às] HH:mm')
-      figure
-        img(itemprop="image", alt="Foto capa da noticia", src=page.cover['url'] )
-        figcaption= page.cover.subtitle
+      figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
+        img(itemprop="thumbnail", alt="Foto capa da noticia", src=page.cover['url'] )
+        figcaption(itemprop="caption")= page.cover.subtitle
       section.place-and-time
         span.author(rel="author", itemprop="author")= page.author
         br
