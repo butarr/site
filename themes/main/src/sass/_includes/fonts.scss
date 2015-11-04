@@ -45,24 +45,6 @@
   }
 }
 
-@mixin __more_information(){
-  & > h1 {
-    font-size: 1em;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  .title {
-    font-size: 0.9em;
-    font-weight: bold;
-  }
-
-  .tag {
-    font-size: 0.7em;
-    font-weight: bold;
-  }
-}
-
 @mixin __person(){
   .name {
     font-size: 1em;
@@ -158,9 +140,6 @@
   }
   @else if( $type == LAST_NEWS ){
     @include __last_news();
-  }
-  @else if( $type == MORE_INFORMATION ){
-    @include __more_information();
   }
   @else if( $type == PERSON ){
     @include __person();
