@@ -63,20 +63,6 @@
   }
 }
 
-@mixin __most_reads(){
-  & > h1 {
-    font-size: 1em;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  .title {
-    font-size: 1em;
-    font-weight: bold;
-  }
-}
-
-
 @mixin __person(){
   .name {
     font-size: 1em;
@@ -175,9 +161,6 @@
   }
   @else if( $type == MORE_INFORMATION ){
     @include __more_information();
-  }
-  @else if( $type == MOST_READS ){
-    @include __most_reads();
   }
   @else if( $type == PERSON ){
     @include __person();
