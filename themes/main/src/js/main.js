@@ -8,12 +8,8 @@ $(document).ready(function() {
   if ($('.social-network')[0]) {
     var $window = $(window);
     var $socialNetwork = $('.social-network');
-    var $newsletter = $('#newsletter');
     var marginTop = '';
 
-    var newsletterIsVisible = function() {
-      return parseInt($newsletter.offset().top) <= parseInt($window.scrollTop() + $window.height() * 1.3);
-    }
     $window.scroll(function(){
       if( $window.scrollTop() > 300 ) {
         marginTop = '-100px';
