@@ -27,6 +27,8 @@ var columnists =  function(locals){
 
   generate(allColumnists);
 
+  result.push({ layout: 'opinions', path: 'opinioes/'  });
+
 
   return result;
 };

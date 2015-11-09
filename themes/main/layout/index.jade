@@ -9,7 +9,7 @@ append content
 append content
   section#home(itemscope, itemtype="http://schema.org/ItemList")
     h1 Notícias
-    - var post = page.posts.toArray()[0]
+    - var post = site.posts.find({'layout': 'post'}).toArray()[0]
       article.new(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
         meta(itemprop="position", content="0")
         header.new-content.desktop
@@ -24,7 +24,7 @@ append content
             figcaption=post.cover.subtitle
           - }
 
-    - each post, index in page.posts.toArray().slice(1, -1)
+    - each post, index in site.posts.find({'layout': 'post'}).toArray().slice(1, 10)
       article.new(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
         meta(itemprop="position", content=index+1)
         figure
