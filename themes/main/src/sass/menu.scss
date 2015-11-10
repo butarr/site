@@ -108,11 +108,16 @@
   }
 }
 
+
+
 #page-header .banner{
   height: 60px;
   background-color: $bdf-red;
   display: flex;
   padding-left: 50px;
+  position: fixed;
+  width: 100%;
+
 
   a {
     display: flex;
@@ -124,12 +129,14 @@
     align-self: center;
   }
 
+
   @include media-query(MEDIUM) {
     height: 130px;
     padding-left: 9.2%;
     display: flex;
     align-self: center;
     justify-content: start;
+    position: static;
 
     img {
       height: 90px;
