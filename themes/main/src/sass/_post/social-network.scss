@@ -3,10 +3,7 @@
 @import '_includes/variables';
 
 .social-network {
-  display: inline-block;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  display: none;
 
   ol{
     list-style: none;
