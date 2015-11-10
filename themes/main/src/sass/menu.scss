@@ -9,7 +9,7 @@
   transition:  right 0.4s ease-in-out;
 }
 
-#page-header .menu-options{
+.menu-options{
   width: 25px;
   left: 0;
   top: 5px;
@@ -20,6 +20,7 @@
   border-radius: 0 10px 10px 0;
   background: #FFF;
   box-shadow: -3px 0 3px 0 rgba(0,0,0,0.42);
+  transition: all 0.4s ease;
   @include transition-right();
 
   .fa {
@@ -37,7 +38,7 @@
 }
 
 
-#page-header .menu{
+.menu-nav{
   left: -240px;
   width: 240px;
   top: 0;
@@ -51,7 +52,7 @@
   }
 }
 
-#page-header .menu{
+.menu-nav{
   padding-top: 5px;
   background: white;
   padding: 0;
@@ -132,14 +133,14 @@
 
 
 
-#page-header .banner{
+.banner-header{
   height: 60px;
   background-color: $bdf-red;
   display: flex;
   padding-left: 50px;
   position: fixed;
   width: 100%;
-
+  transition: all 0.4s ease;
 
   a {
     display: flex;
@@ -159,6 +160,7 @@
     align-self: center;
     justify-content: start;
     position: static;
+    width: auto;
 
     img {
       height: 90px;
@@ -166,6 +168,29 @@
   }
 }
 
-.smaller{
-  height: 10px;
+.smaller-banner{
+  height: 40px;
+  img {
+    height: 30px;
+  }
+  @include media-query(MEDIUM) {
+    height: 80px;
+    img{
+      height: 70px;
+    }
+  }
+}
+
+.smaller-menu{
+  top: 0;
+  padding: 5px;
+  width: 27px;
+
+}
+
+.smaller-nav{
+  &.open{
+    top: 0;
+  }
+  
 }
