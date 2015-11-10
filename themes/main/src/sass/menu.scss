@@ -46,6 +46,8 @@
 
   &.open {
     left: 0;
+    top: 4px;
+
   }
 }
 
@@ -65,7 +67,27 @@
 
   ul{
     list-style: none;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+
   }
+
+  li {
+    position: relative;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 1px solid $bdf-red;
+    border-top: 1px solid $red;
+    padding: 15px;
+
+    a {
+      text-decoration: none;
+      color: $bdf-red; 
+    }
+}
+
+
 
   @include media-query(MEDIUM) {
     display: block;
@@ -144,3 +166,6 @@
   }
 }
 
+.smaller{
+  height: 10px;
+}
