@@ -1,12 +1,12 @@
 @import '_includes/variables';
 @import '_includes/query';
 
-@mixin transition-right(){
-  -webkit-transition:  right 0.4s ease-in-out;
-  -moz-transition:  right 0.4s ease-in-out;
-  -ms-transition:  right 0.4s ease-in-out;
-  -o-transition:  right 0.4s ease-in-out;
-  transition:  right 0.4s ease-in-out;
+@mixin transition-left(){
+  -webkit-transition:  left 0.4s ease-in-out;
+  -moz-transition:  left 0.4s ease-in-out;
+  -ms-transition:  left 0.4s ease-in-out;
+  -o-transition:  left 0.4s ease-in-out;
+  transition:  left 0.4s ease-in-out;
 }
 
 .menu-options{
@@ -21,7 +21,7 @@
   background: #FFF;
   box-shadow: -3px 0 3px 0 rgba(0,0,0,0.42);
   transition: all 0.4s ease;
-  @include transition-right();
+  @include transition-left();
 
   .fa {
     font-size: 1.9em;
@@ -43,7 +43,7 @@
   width: 240px;
   top: 0;
   box-sizing: border-box;
-  @include transition-right();
+  @include transition-left();
 
   &.open {
     left: 0;
@@ -168,27 +168,27 @@
   }
 }
 
-.smaller-banner{
+.banner-header.smaller{
   height: 40px;
   img {
     height: 30px;
   }
   @include media-query(MEDIUM) {
-    height: 80px;
+    height: 60px;
     img{
-      height: 70px;
+      height: 40px;
     }
   }
 }
 
-.smaller-menu{
+.menu-options.smaller{
   top: 0;
   padding: 5px;
   width: 27px;
 
 }
 
-.smaller-nav{
+.menu-nav.smaller{
   &.open{
     top: 0;
   }

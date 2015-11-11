@@ -2,16 +2,8 @@ $(document).ready(function() {
 
   $(window).scroll(function(){
     var top = $(this).scrollTop();
-    if ( top > 120 ){
-      $('.banner-header').addClass('smaller-banner');
-      $('.menu-options').addClass('smaller-menu');
-      $('.menu-nav').addClass('smaller-nav');
-    }
-    else{
-      $('.banner-header').removeClass('smaller-banner');
-      $('.menu-options').removeClass('smaller-menu');
-      $('.menu-nav').removeClass('smaller-nav');
-    }
+    var disapeared = ( top > 120 );
+    $('.menu-nav, .menu-options, .banner-header').toggleClass('smaller', disapeared);  
   });
 
   $('.menu-options').click(function() {
