@@ -38,7 +38,7 @@
   }
 
   @include media-query(MEDIUM) {
-    display: block;
+    display: none;
     margin-top: 90px;
     bottom: initial;
     width: 10%;
