@@ -9,7 +9,7 @@
   @include get-font(POST);
 
   @include media-query(MEDIUM) {
-  margin-top: 200px;
+    margin-top: 200px;
     padding: 50px 0 0 10%;
     width: 55%;
     float: left;
