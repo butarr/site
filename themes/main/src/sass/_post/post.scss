@@ -5,11 +5,12 @@
 
 #post {
   padding: 10px 15px;
-  margin-top: 25px;
+  margin-top: 70px;
   @include get-font(POST);
 
   @include media-query(MEDIUM) {
-    padding: 60px 0 0 10%;
+  margin-top: 200px;
+    padding: 50px 0 0 10%;
     width: 55%;
     float: left;
   }
