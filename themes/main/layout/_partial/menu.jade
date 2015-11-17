@@ -1,0 +1,23 @@
+header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
+  figure.banner-header
+    a(href="#{ url_for('index.html') }", title="Link para a página principal")
+      img(src="#{ url_for('img/logo.png') }", alt="imagem banner")
+  figure.menu-options(data-toggle="nav.menu-nav")
+    i.fa.fa-bars
+  nav.menu-nav(itemscope, itemtype="http://schema.org/SiteNavigationElement")
+    ul
+      li
+        a.active(itemprop="url", href="#")= "Nacional"
+        meta(itemprop="name",content="string")
+      li
+        a(itemprop="url", href="#")= "Bem Viver"
+        meta(itemprop="name",content="string")
+      li
+        a(itemprop="url", href="#")= "Direitos Humanos"
+        meta(itemprop="name",content="string")
+      li
+        a(itemprop="url", href="#")= "Internacional"
+        meta(itemprop="name",content="string")
+      li
+        a(itemprop="url", href="#")= "Cultura"
+        meta(itemprop="name",content="string")
