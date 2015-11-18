@@ -33,6 +33,7 @@
   .fa {
     font-size: 1.9em;
     color: $red;
+
   }
 
   &.open{
@@ -129,7 +130,7 @@
       font-weight: 400;
     }
     a.active {
-      font-weight: bold;
+      font-weight: 700;
     }
   }
 }
