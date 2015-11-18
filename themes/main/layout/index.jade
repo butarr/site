@@ -20,7 +20,7 @@ append content
         figure
           - if (!!post.cover) {
             a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
-              img(alt=post.cover.subtitle, src="#{ post.cover.url } ",  itemprop="image")
+              img(alt=post.cover.subtitle, src="#{ post.cover.medium } ",  itemprop="image")
             figcaption=post.cover.subtitle
           - }
 
@@ -30,7 +30,7 @@ append content
         figure
           - if (!!post.cover) {
             a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
-              img(alt=post.cover.subtitle, src="#{ post.cover.url } ",  itemprop="image")
+              img(alt=post.cover.subtitle, src="#{ post.cover.small } ",  itemprop="image")
             figcaption=post.cover.subtitle
           - }
         header.new-content
