@@ -14,12 +14,12 @@ append content
         meta(itemprop="position", content="0")
         header.new-content.desktop
           p.hat=post.hat
-          a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
-            h2.title(itemprop="name")= post.newTitle
+          a(href="#{ url_for(post.path) }", title=post.title, itemprop="url")
+            h2.title(itemprop="name")= post.title
           p.description(itemprop="description")= post.description
         figure
           - if (!!post.cover) {
-            a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
+            a(href="#{ url_for(post.path) }", title=post.title, itemprop="url")
               img(alt=post.cover.subtitle, src="#{ post.cover.medium } ",  itemprop="image")
             figcaption=post.cover.subtitle
           - }
@@ -29,13 +29,13 @@ append content
         meta(itemprop="position", content=index+1)
         figure
           - if (!!post.cover) {
-            a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
+            a(href="#{ url_for(post.path) }", title=post.title, itemprop="url")
               img(alt=post.cover.subtitle, src="#{ post.cover.small } ",  itemprop="image")
             figcaption=post.cover.subtitle
           - }
         header.new-content
           p.hat=post.hat
-          a(href="#{ url_for(post.path) }", title=post.newTitle, itemprop="url")
-            h2.title(itemprop="name")= post.newTitle
+          a(href="#{ url_for(post.path) }", title=post.title, itemprop="url")
+            h2.title(itemprop="name")= post.title
           p.description(itemprop="description")= post.description
 
