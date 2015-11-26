@@ -1,6 +1,5 @@
 ---
 title: "Segundo Titulo Aqui"
-newTitle: "Segundo Titulo Aqui"
 description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
 cover:
   url: "http://farm6.staticflickr.com/5736/20898086726_eebae3719e_b.jpg"
@@ -12,6 +11,7 @@ pre_place: " "
 date: 2015-10-24T15:55:00-03:00
 columnist: rodrigovieira18@gmail.com
 layout: opinion
+url: 2015/10/20/segundo/
 ---
 <p align="justify">
 Lorem ipsum dolor sit amet, etiam pellentesque ligula vel, tellus consectetuer ut fermentum, phasellus sem libero justo. Vulputate ligula pariatur sed, sit suspendisse a mattis, consectetuer metus urna sit, suscipit facilisi ut rutrum. Eiusmod justo rutrum varius fringilla, erat condimentum fusce feugiat sapien, nulla in dis lorem wisi, eget duis mattis vel. Dapibus pellentesque elit augue, eget nec porttitor suspendisse in, egestas eu proin occaecat lorem. Quam quis integer cum dolor, tempor integer ipsum pede consectetuer. Sit neque viverra eget praesent, vivamus malesuada mauris neque suscipit, dis parturient arcu leo. Libero mi quis orci, commodo vehicula pellentesque magna. Consequat eu nulla tincidunt, mauris nullam purus nulla suspendisse.</p>
