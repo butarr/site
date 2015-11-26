@@ -1,0 +1,10 @@
+- menu_item: Nacional
+  link: nacional
+- menu_item: Bem Viver
+  link: bem_viver
+- menu_item: Direitos Humanos
+  link: direitos_humanos
+- menu_item: Internacional
+  link: internacional
+- menu_item: Cultura
+  link: cultura
