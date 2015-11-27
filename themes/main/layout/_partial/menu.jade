@@ -6,8 +6,18 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
     i.fa.fa-bars
   nav.menu-nav(itemscope, itemtype="http://schema.org/SiteNavigationElement")
     ul
-      - each item in site.data.menu_national
-          li
-            a.active(itemprop="url", href="#{item.link}")= item.menu_item
-            meta(itemprop="name",content="string")
- 
+      li
+        a.active(itemprop="url", href="#")= "Nacional"
+        meta(itemprop="name",content="string")
+      li
+        a(itemprop="url", href="#")= "Bem Viver"
+        meta(itemprop="name",content="string")
+      li
+        a(itemprop="url", href="#")= "Direitos Humanos"
+        meta(itemprop="name",content="string")
+      li
+        a(itemprop="url", href="#")= "Internacional"
+        meta(itemprop="name",content="string")
+      li
+        a(itemprop="url", href="#")= "Cultura"
+        meta(itemprop="name",content="string")
