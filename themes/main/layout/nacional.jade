@@ -1,3 +1,58 @@
-strong Nacional
-- each post, index in page.sections.culture
-  = post.title
+extend base
+
+append content
+	section#home
+		section.featured(itemscope, itemtype="http://schema.org/ItemList")
+			h1.section-name(itemprop="name") Últimas Notícias
+			meta(itemprop="itemListOrder", content="http://schema.org/ItemListOrderDescending")
+			- each post in page.featured
+				article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
+					img(src=post.cover, alt="Descrição", title="Referências", itemprop="image")
+					h1.title(itemprop="headline")= post.title
+					p.description= post.description
+					meta(itemprop="datePublished", content=post.date)
+
+			article.first(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
+				img(src="//farm1.staticflickr.com/766/23127916899_d04e64d446_b.jpg", alt="Descrição", title="Creditos", itemprop="image")
+				h1.title(itemprop="headline")
+				meta(itemprop="datePublished", content="2015-12-02T13:47:40-03:00")
+			article.second(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
+				img(src="//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg", alt="Descrição", title="Creditos", itemprop="image")
+				h1.title(itemprop="headline")
+				p.description Deputados comprometidos com o setor não estão levando a sério
+				meta(itemprop="datePublished", content="2015-12-02T13:47:40-03:00")
+			article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
+				h1.title(itemprop="headline")
+				p.description A Vale, uma das proprietárias da Samarco, empresa responsável pelas barragens que se romperam em Mariana (MG). Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun 
+				meta(itemprop="datePublished", content="2015-12-02T13:47:40-03:00")
+				meta(itemprop="image", content="http://farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg")
+			article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
+				h1.title(itemprop="headline")
+				meta(itemprop="datePublished", content="2015-12-02T13:47:40-03:00")
+				meta(itemprop="image", content="http://farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg")
+		section.secundary(itemscope, itemtype="http://schema.org/ItemList")
+			meta(itemprop="itemListOrder", content="http://schema.org/ItemListUnordered")
+			article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
+				span.hat(itemprop="about") Preconceito
+				img(src="//farm6.staticflickr.com/5782/23469650266_f05c73b5e0_n.jpg", alt="Descrição", title="Créditos", itemprop="image")
+				h1.title(itemprop="headline") Mulheres Negras organizam marcha nacional
+				meta(itemprop="datePublished", content="2015-12-02T13:47:40-03:00")
+			article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
+				span.hat(itemprop="about") Agressão
+				img(src="//farm1.staticflickr.com/775/22867505634_e0ce2b20c7_n.jpg", alt="Descrição", title="Créditos", itemprop="image")
+				h1.title(itemprop="headline") Artistas agredidos por seguranças vão processar MetrôRio
+				meta(itemprop="datePublished", content="2015-12-02T13:47:40-03:00")
+			article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
+				span.hat(itemprop="about") Homenagem
+				img(src="//farm1.staticflickr.com/760/22867514814_a2ca24ab80_n.jpg", alt="Descrição", title="Créditos", itemprop="image")
+				h1.title(itemprop="headline") Morre aos 90 anos líder guerrilheira Zilda Xavier da Silva
+				meta(itemprop="datePublished", content="2015-12-02T13:47:40-03:00")
+			article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
+				span.hat(itemprop="about") #OcupaEscola
+				img(src="//farm6.staticflickr.com/5817/23495844275_35efde962c_n.jpg", alt="Descrição", title="Créditos", itemprop="image")
+				h1.title(itemprop="headline") 'Podemos, com desobediência civil, participar das decisões'
+				meta(itemprop="datePublished", content="2015-12-02T13:47:40-03:00")
+
+
+
+			
