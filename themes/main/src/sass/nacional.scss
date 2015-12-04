@@ -105,4 +105,56 @@
 
 }
 
+#home .opinions{
+  width: 95%;
+  display: inline-block;
 
+  .section-name {
+    border-bottom: 1px solid red;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    color: $gray;
+    text-transform: uppercase;
+  }
+
+  img{
+    border-radius: 50%;
+    max-width: 100px;
+    width: 28%;
+    float: left;
+    height: 100px;
+    align-self: center;
+    box-shadow: 0 0 0 4px rgba(30, 30, 30, 0.1), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .columnist {
+    display: flex;
+  }
+
+  .opinion {
+    float: left;
+    width: 70%;
+    padding-left: 10px;
+  }
+
+}
+
+#home .picture{
+    background-color: rgba(241,242,243,1);
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    padding: 5px;
+
+    img {
+      width: 100%;
+    }
+
+    .title {
+      color: white;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      margin-left: 10px;
+    }
+}

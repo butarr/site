@@ -18,27 +18,31 @@ append content
 
     section.secundary(itemscope, itemtype="http://schema.org/ItemList")
       meta(itemprop="itemListOrder", content="http://schema.org/ItemListUnordered")
-      article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
-        span.hat(itemprop="about") Preconceito
-        img(src="//farm6.staticflickr.com/5782/23469650266_f05c73b5e0_n.jpg", alt="Descrição", title="Créditos", itemprop="image")
-        h1.title(itemprop="headline") Mulheres Negras organizam marcha nacional
-        meta(itemprop="datePublished", content="2015-12-02T13:47:40-03:00")
-      article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
-        span.hat(itemprop="about") Agressão
-        img(src="//farm1.staticflickr.com/775/22867505634_e0ce2b20c7_n.jpg", alt="Descrição", title="Créditos", itemprop="image")
-        h1.title(itemprop="headline") Artistas agredidos por seguranças vão processar MetrôRio
-        meta(itemprop="datePublished", content="2015-12-02T13:47:40-03:00")
-      article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
-        span.hat(itemprop="about") Homenagem
-        img(src="//farm1.staticflickr.com/760/22867514814_a2ca24ab80_n.jpg", alt="Descrição", title="Créditos", itemprop="image")
-        h1.title(itemprop="headline") Morre aos 90 anos líder guerrilheira Zilda Xavier da Silva
-        meta(itemprop="datePublished", content="2015-12-02T13:47:40-03:00")
-      article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
-        span.hat(itemprop="about") #OcupaEscola
-        img(src="//farm6.staticflickr.com/5817/23495844275_35efde962c_n.jpg", alt="Descrição", title="Créditos", itemprop="image")
-        h1.title(itemprop="headline") 'Podemos, com desobediência civil, participar das decisões'
-        meta(itemprop="datePublished", content="2015-12-02T13:47:40-03:00")
-
-
+      each post in page.secondary
+        - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+        article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
+          span.hat(itemprop="about")= post.hat
+          img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
+          h1.title(itemprop="headline")= post.title
+          meta(itemprop="datePublished", content= post.date)
+        
+    section.opinions(itemscope, itemtype="http://schema.org/ItemList")
+      h1.section-name Colunistas
+      each opinion in page.opinions
+        - var columnist = site.data.columnists[opinion.columnist]
+        article.columnist(itemscope, itemtype="http://schema.org/BlogPosting", itemprop="itemListElement")
+          img(src= columnist.photo, alt="Descrição", title="descrição", itemtype="https://schema.org/Person", itemprop="image")
+          section.opinion
+            h1.name(itemtype="https://schema.org/Person", itemprop="name")= columnist.name
+            h2.title(itemprop="headline")= opinion.title
+            date(datetime=opinion.date)= moment(opinion.date).format('L')
+            meta(content=opinion.date, itemprop="datePublished")
+    
+    section.picture
+      figure(itemscope, itemtype="http://schema.org/ImageObject")
+        img(src="//www.tramp.com.br/wp-content/uploads/2014/09/grafite_os_g%C3%AAmeos_canad%C3%A1_tramp-10.jpg")
+        meta(itemprop="contentUrl")
+        figcaption
+          h1.title(itemprop="caption") Graffiti dos gêmeos no Canadá
 
 

@@ -1,4 +1,5 @@
 ---
+layout: nacional
 featured:
   -
     cover:
@@ -36,23 +37,55 @@ featured:
     date: "2015-12-02T13:47:40-03:00"
     description: ~
     title: "\"Se os deputados não têm coragem de tirar Cunha, nós temos\", diz jovem em protesto"
-layout: nacional
+
 secondary:
   -
     hat: Preconceito
-    img: //farm6.staticflickr.com/5782/23469650266_f05c73b5e0_n.jpg
+    cover: 
+      url: "//farm6.staticflickr.com/5782/23469650266_f05c73b5e0_b.jpg"
+      small: "//farm6.staticflickr.com/5782/23469650266_f05c73b5e0_n.jpg"
+      subtitle: "Legenda"
+      credits: "Fotografo"
+    date: "2015-12-02T13:47:40-03:00"
     title: "Mulheres Negras organizam marcha nacional"
   -
     hat: Agressão
-    img: //farm1.staticflickr.com/775/22867505634_e0ce2b20c7_n.jpg
+    cover: 
+      url: "//farm1.staticflickr.com/775/22867505634_e0ce2b20c7_b.jpg" 
+      small: "//farm1.staticflickr.com/775/22867505634_e0ce2b20c7_n.jpg"
+      subtitle: "Legenda"
+      credits: "Fotografo"
+    date: "2015-12-02T13:47:40-03:00"
     title: "Artistas agredidos por seguranças vão processar MetrôRio"
   -
     hat: Homenagem
-    img: //farm1.staticflickr.com/760/22867514814_a2ca24ab80_n.jpg
+    cover: 
+      url: "//farm1.staticflickr.com/760/22867514814_a2ca24ab80_b.jpg"
+      small: "//farm1.staticflickr.com/760/22867514814_a2ca24ab80_n.jpg"
+      subtitle: "Legenda"
+      credits: "Fotografo"
+    date: "2015-12-02T13:47:40-03:00"
     title: "Morre aos 90 anos líder guerrilheira Zilda Xavier da Silva"
   -
-    hat: ~
-    img: //farm6.staticflickr.com/5817/23495844275_35efde962c_n.jpg
+    hat: Ocupe
+    cover: 
+      url: "//farm6.staticflickr.com/5817/23495844275_35efde962c_b.jpg"
+      small: "//farm6.staticflickr.com/5817/23495844275_35efde962c_n.jpg"
+      subtitle: "Legenda"
+      credits: "Fotografo"
+    date: "2015-12-02T13:47:40-03:00"
     title: "Podemos, com desobediência civil, participar das decisões"
-
+opinions:
+  -
+    columnist: "rodrigovieira18@gmail.com"
+    title: "Direitos minerários x direitos sociais: que as mineradoras paguem o justo"
+    date: '2015-12-02T13:47:40-03:00'
+  -
+    columnist: "wandecleya@gmail.com"
+    title: "O funk e o fim da música popular brasileira"
+    date: '2015-12-02T13:47:40-03:00'
+  -
+    columnist: "snowden@gmail.com"
+    title: "Movimento negro: esboço de um caminho que não lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    date: '2015-12-02T13:47:40-03:00'
 ---
