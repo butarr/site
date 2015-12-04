@@ -20,7 +20,7 @@
     color: $gray;
     text-transform: uppercase;
   }
-  
+
   article + article {
     border-top: 2px solid gray;
     padding-top: 15px;
@@ -29,6 +29,7 @@
 
   .first {
     position: relative;
+    z-index: -1;
 
     img {
       width: 100%;
