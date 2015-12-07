@@ -179,12 +179,6 @@
 
 
 #page-header .banner-header.smaller{
-  height: 40px;
-
-  img {
-    height: 30px;
-  }
-
   @include media-query(MEDIUM) {
     height: 60px;
 
@@ -198,9 +192,11 @@
 }
 
 #page-header .menu-options.smaller{
-  top: 0;
-  padding: 5px;
-  width: 27px;
+  @include media-query(MEDIUM) {
+    top: 0;
+    padding: 5px;
+    width: 27px;
+  }
 }
 
 #page-header .menu-nav.smaller{

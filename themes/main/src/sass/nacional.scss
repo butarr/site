@@ -1,0 +1,202 @@
+@import '_includes/variables';
+@import '_includes/query';
+@import '_includes/mixins';
+
+@mixin section-name(){
+  color: $black-dark;
+  text-transform: uppercase;
+  border-bottom: 3px solid $red;
+}
+
+#home {
+  width: 100%;
+  padding: 10px;
+  display: inline-block;
+  margin-top: 40px;
+
+  h1, h2 {
+    margin-top: 0;
+  }
+
+  @include get-font(NACIONAL);
+}
+
+#home figure {
+  margin: 0;
+}
+
+#home .featured {
+  width: 95%;
+  display: inline-block;
+  margin-top: 10px;
+
+  .section-name {
+    @include section-name();
+    width: 95%;
+    margin: 15px auto 10px auto;
+  }
+
+  article + article {
+    border-top: 2px solid $gray-lighter;
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+
+  .description{
+    color: $black-dark;
+    margin-top: 10px;
+  }
+}
+
+#home .featured .first {
+  figure {
+    position: relative;
+    z-index: -1;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 10px;
+    padding: 0 10px;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 5px 5px 2px 2px;
+  }
+
+  .title {
+    color: white;
+    width: 100%;
+  }
+
+  .description{
+    display: none;
+  }
+}
+
+#home .featured .second{
+  figure {
+    display: flex;
+  }
+
+  figcaption {
+    margin-left: 15px;
+    align-self: center;
+  }
+
+  img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 5px;
+  }
+}
+
+#home section + section {
+  margin-top: 10px;
+}
+
+#home .secundary {
+  background-color: $gray-medium;
+  border-top: 1px solid $gray-light;
+  border-bottom: 1px solid $gray-light;
+  flex-flow: row wrap;
+  display: flex;
+  padding: 20px 0;
+
+  article{
+    width: 45%;
+    padding: 5px;
+  }
+
+  .hat{
+    display: block;
+    margin-bottom: 10px;
+    @include section-name();
+  }
+
+  img{
+    border-radius: 5px;
+    width: 100%;
+  }
+
+}
+
+#home .opinions{
+  width: 95%;
+  display: inline-block;
+
+  .section-name {
+    @include section-name();
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+
+  img{
+    border-radius: 50%;
+    max-width: 100px;
+    height: 100px;
+    align-self: center;
+    box-shadow: 0 0 0 4px rgba(30, 30, 30, 0.1), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .columnist + .columnist {
+    margin-top: 30px;
+  }
+
+  .opinion {
+    margin-left: 10px;
+  }
+
+  .title {
+    color: $black-dark;
+    margin-top: 5px;
+  }
+
+  date::before {
+    content: 'em '
+  }
+
+}
+
+#home .opinions .columnist {
+    display: flex;
+    margin-top: 20px;
+
+    &.first img {
+      height: 130px;
+      max-width: 130px;
+    }
+
+    figure {
+      flex: 0 0 130px;
+      display: flex;
+      flex-grow: 0;
+      justify-content: center;
+      padding-left: 10px;
+    }
+
+    .opinion {
+      flex-grow: 1;
+    }
+}
+
+#home .picture {
+    background-color: rgba(241,242,243,1);
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    padding: 5px;
+
+    img {
+      width: 100%;
+    }
+
+    .title {
+      color: white;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      margin-left: 10px;
+    }
+}

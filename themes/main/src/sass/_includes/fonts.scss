@@ -1,4 +1,39 @@
 
+@mixin __nacional(){
+  h1, h2, span, p {
+    font-family: 'Merriweather Sans', serif;
+  }
+
+  .title, .opinion > .name {
+    font-size: 1.3em;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+  }
+
+  .opinion > .name {
+    font-size: 1.1em;
+  }
+
+  .first figcaption > .title {
+    font-size: 1.2em;
+  }
+  .section-name, .hat {
+    font-size: 1.1em;
+    font-weight: 900;
+  }
+
+  .description, .opinion > .title, .opinion > date {
+    font-size: 1.1em;
+    font-weight: 400;
+    font-family: 'Merriweather Sans', serif;
+  }
+
+  .secundary .title {
+    font-size: 1.1em;
+  }
+
+}
+
 @mixin __post(){
   .title {
     font-size: 2em;
@@ -156,5 +191,7 @@
   @else if( $type == COLUMNIST ){
     @include __columnist();
   }
+  @else if( $type == NACIONAL ){
+    @include __nacional();
+  }
 }
-

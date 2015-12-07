@@ -1,3 +1,51 @@
-strong Nacional
-- each post, index in page.sections.culture
-  = post.title
+extend base
+
+append content
+  section#home
+    section.featured(itemscope, itemtype="http://schema.org/ItemList")
+      h1.section-name(itemprop="name") Últimas Notícias
+      meta(itemprop="itemListOrder", content="http://schema.org/ItemListOrderDescending")
+      each post, index in page.featured
+        - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+        - var position = { 0: 'first', 1: 'second' }
+        article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class=position[index])
+          if position[index]
+            figure
+              img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
+              figcaption
+                h1.title(itemprop="headline")= post.title
+          else
+            h1.title(itemprop="headline")= post.title
+          p.description= post.description
+          meta(itemprop="datePublished", content=post.date)
+
+    section.secundary(itemscope, itemtype="http://schema.org/ItemList")
+      meta(itemprop="itemListOrder", content="http://schema.org/ItemListUnordered")
+      each post in page.secondary
+        - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+        article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
+          span.hat(itemprop="about")= post.hat
+          img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
+          h1.title(itemprop="headline")= post.title
+          meta(itemprop="datePublished", content= post.date)
+
+    section.opinions(itemscope, itemtype="http://schema.org/ItemList")
+      h1.section-name Colunistas
+      each opinion, index in page.opinions
+        - var columnist = site.data.columnists[opinion.columnist]
+        - var position = { 0: 'first'}
+        article.columnist(itemscope, itemtype="http://schema.org/BlogPosting", itemprop="itemListElement", class=position[index])
+          figure
+            img(src= columnist.photo, alt="Imagem de perfil do colunista", title="Imagem de perfil do colunista", itemtype="https://schema.org/Person", itemprop="image")
+          section.opinion
+            h1.name(itemtype="https://schema.org/Person", itemprop="name")= columnist.name
+            h2.title(itemprop="headline")= opinion.title
+            date(datetime=opinion.date)= moment(opinion.date).format('L')
+            meta(content=opinion.date, itemprop="datePublished")
+
+    section.picture
+      figure(itemscope, itemtype="http://schema.org/ImageObject")
+        img(src="//www.tramp.com.br/wp-content/uploads/2014/09/grafite_os_g%C3%AAmeos_canad%C3%A1_tramp-10.jpg")
+        meta(itemprop="contentUrl")
+        figcaption
+          h1.title(itemprop="caption") Graffiti dos gêmeos no Canadá

@@ -15,12 +15,16 @@ $(document).ready(function() {
   };
 
   var loadLastNews = function(data){
-    var posts  = data || [{}];
     var html = '';
+    var posts  = data;
+    if(!!posts){
+      return false;
+    }
 
     var title = document.getElementsByClassName('title')[0].innerText || '';
 
     var posts = posts.filter(function(post) {
+      post.title = post.title || '';
       return post.title.toLowerCase() !== title.toLowerCase();
     });
 
