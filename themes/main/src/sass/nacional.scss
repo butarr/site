@@ -14,6 +14,10 @@
   display: inline-block;
   margin-top: 40px;
 
+  h1, h2 {
+    margin-top: 0;
+  }
+
   @include get-font(NACIONAL);
 }
 
@@ -36,10 +40,6 @@
     border-top: 2px solid $gray-lighter;
     padding-top: 15px;
     margin-top: 15px;
-  }
-
-  .title{
-    margin-top: 0;
   }
 
   .description{
@@ -93,7 +93,7 @@
 }
 
 #home section + section {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 #home .secundary {
@@ -120,10 +120,6 @@
     width: 100%;
   }
 
-  .title{
-    margin-top: 0;
-  }
-
 }
 
 #home .opinions{
@@ -131,36 +127,61 @@
   display: inline-block;
 
   .section-name {
-    border-bottom: 1px solid red;
+    @include section-name();
     margin-bottom: 5px;
     margin-left: 10px;
-    color: $gray;
-    text-transform: uppercase;
   }
 
   img{
     border-radius: 50%;
     max-width: 100px;
-    width: 28%;
-    float: left;
     height: 100px;
     align-self: center;
     box-shadow: 0 0 0 4px rgba(30, 30, 30, 0.1), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
   }
 
-  .columnist {
-    display: flex;
+  .columnist + .columnist {
+    margin-top: 30px;
   }
 
   .opinion {
-    float: left;
-    width: 70%;
-    padding-left: 10px;
+    margin-left: 10px;
+  }
+
+  .title {
+    color: $black-dark;
+    margin-top: 5px;
+  }
+
+  date::before {
+    content: 'em '
   }
 
 }
 
-#home .picture{
+#home .opinions .columnist {
+    display: flex;
+    margin-top: 20px;
+
+    &.first img {
+      height: 130px;
+      max-width: 130px;
+    }
+
+    figure {
+      flex: 0 0 130px;
+      display: flex;
+      flex-grow: 0;
+      justify-content: center;
+      padding-left: 10px;
+    }
+
+    .opinion {
+      flex-grow: 1;
+    }
+}
+
+#home .picture {
     background-color: rgba(241,242,243,1);
     position: relative;
     z-index: -1;

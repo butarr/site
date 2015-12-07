@@ -31,10 +31,12 @@ append content
 
     section.opinions(itemscope, itemtype="http://schema.org/ItemList")
       h1.section-name Colunistas
-      each opinion in page.opinions
+      each opinion, index in page.opinions
         - var columnist = site.data.columnists[opinion.columnist]
-        article.columnist(itemscope, itemtype="http://schema.org/BlogPosting", itemprop="itemListElement")
-          img(src= columnist.photo, alt="Descrição", title="descrição", itemtype="https://schema.org/Person", itemprop="image")
+        - var position = { 0: 'first'}
+        article.columnist(itemscope, itemtype="http://schema.org/BlogPosting", itemprop="itemListElement", class=position[index])
+          figure
+            img(src= columnist.photo, alt="Imagem de perfil do colunista", title="Imagem de perfil do colunista", itemtype="https://schema.org/Person", itemprop="image")
           section.opinion
             h1.name(itemtype="https://schema.org/Person", itemprop="name")= columnist.name
             h2.title(itemprop="headline")= opinion.title
@@ -47,5 +49,3 @@ append content
         meta(itemprop="contentUrl")
         figcaption
           h1.title(itemprop="caption") Graffiti dos gêmeos no Canadá
-
-

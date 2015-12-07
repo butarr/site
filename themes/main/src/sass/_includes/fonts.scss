@@ -4,10 +4,14 @@
     font-family: 'Merriweather Sans', serif;
   }
 
-  .title {
+  .title, .opinion > .name {
     font-size: 1.3em;
     font-weight: 700;
     font-family: 'Merriweather', serif;
+  }
+
+  .opinion > .name {
+    font-size: 1.1em;
   }
 
   .first figcaption > .title {
@@ -18,9 +22,10 @@
     font-weight: 900;
   }
 
-  .description{
+  .description, .opinion > .title, .opinion > date {
     font-size: 1.1em;
     font-weight: 400;
+    font-family: 'Merriweather Sans', serif;
   }
 
   .secundary .title {
@@ -190,4 +195,3 @@
     @include __nacional();
   }
 }
-
