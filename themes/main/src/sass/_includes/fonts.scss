@@ -1,4 +1,26 @@
 
+@mixin __nacional(){
+  h1, h2, span, p {
+    font-family: 'Merriweather Sans', serif;
+  }
+
+  figcaption > .title {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+
+  .section-name {
+    font-size: 1.1em;
+    font-weight: 900;
+  }
+
+  .title {
+    font-size: 1.1em;
+  }
+
+}
+
 @mixin __post(){
   .title {
     font-size: 2em;
@@ -155,6 +177,9 @@
   }
   @else if( $type == COLUMNIST ){
     @include __columnist();
+  }
+  @else if( $type == NACIONAL ){
+    @include __nacional();
   }
 }
 

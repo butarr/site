@@ -9,10 +9,13 @@ append content
         - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
         - var position = { 0: 'first', 1: 'second' }
         article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class=position[index])
-
           if position[index]
-            img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
-          h1.title(itemprop="headline")= post.title
+            figure
+              img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
+              figcaption
+                h1.title(itemprop="headline")= post.title
+          else
+            h1.title(itemprop="headline")= post.title
           p.description= post.description
           meta(itemprop="datePublished", content=post.date)
 
@@ -25,7 +28,7 @@ append content
           img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
           h1.title(itemprop="headline")= post.title
           meta(itemprop="datePublished", content= post.date)
-        
+
     section.opinions(itemscope, itemtype="http://schema.org/ItemList")
       h1.section-name Colunistas
       each opinion in page.opinions
@@ -37,7 +40,7 @@ append content
             h2.title(itemprop="headline")= opinion.title
             date(datetime=opinion.date)= moment(opinion.date).format('L')
             meta(content=opinion.date, itemprop="datePublished")
-    
+
     section.picture
       figure(itemscope, itemtype="http://schema.org/ImageObject")
         img(src="//www.tramp.com.br/wp-content/uploads/2014/09/grafite_os_g%C3%AAmeos_canad%C3%A1_tramp-10.jpg")

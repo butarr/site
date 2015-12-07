@@ -7,18 +7,25 @@
   padding: 10px;
   display: inline-block;
   margin-top: 40px;
+
+  @include get-font(NACIONAL);
+}
+
+#home figure {
+  margin: 0;
 }
 
 #home .featured {
   width: 95%;
   display: inline-block;
+  margin-top: 10px;
 
   .section-name {
-    border-bottom: 1px solid red;
-    margin-bottom: 5px;
-    margin-left: 10px;
-    color: $gray;
+    border-bottom: 3px solid $red;
+    width: 95%;
+    color: $black-dark;
     text-transform: uppercase;
+    margin: 15px auto 10px auto;
   }
 
   article + article {
@@ -26,47 +33,56 @@
     padding-top: 15px;
     margin-top: 15px;
   }
+}
 
-  .first {
-    position: relative;
-    z-index: -1;
-
-    img {
-      width: 100%;
-      border-radius: 5px;
-    }
-
-    .title {
-      color: white;
-      position: absolute;
-      bottom: 10px;
-      width: 100%;
-      margin-left: 10px;
-    }
-
-    .description{
-      display: none;
-    }
+#home .featured .second{
+  figure {
+    display: flex;
   }
 
-  .second{
-    display: flex;
-    flex-wrap: wrap;
-    img {
-      width: 50%;
-      max-height: 200px;
-      border-radius: 5px;
-      margin-right: 15px;
-    }
+  figcaption {
+    margin-left: 15px;
+  }
 
-    .title{
-      width: 45%;
-      margin-top: 0;
-    }
+  img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 5px;
+  }
 
-    .description{
+  .title{
+    margin-top: 0;
+  }
 
-    }
+  .description{
+
+  }
+}
+
+#home .featured .first {
+  figure {
+    position: relative;
+    z-index: -1;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 10px;
+    padding: 0 10px;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 5px 5px 2px 2px;
+  }
+
+  .title {
+    color: white;
+    width: 100%;
+  }
+
+  .description{
+    display: none;
   }
 }
 
