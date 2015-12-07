@@ -2,6 +2,12 @@
 @import '_includes/query';
 @import '_includes/mixins';
 
+@mixin section-name(){
+  color: $black-dark;
+  text-transform: uppercase;
+  border-bottom: 3px solid $red;
+}
+
 #home {
   width: 100%;
   padding: 10px;
@@ -21,10 +27,8 @@
   margin-top: 10px;
 
   .section-name {
-    border-bottom: 3px solid $red;
+    @include section-name();
     width: 95%;
-    color: $black-dark;
-    text-transform: uppercase;
     margin: 15px auto 10px auto;
   }
 
@@ -105,11 +109,9 @@
   }
 
   .hat{
-    border-bottom: 1px solid red;
-    color: $gray;
-    text-transform: uppercase;
-    margin-bottom: 5px;
     display: block;
+    margin-bottom: 10px;
+    @include section-name();
   }
 
   img{

@@ -13,7 +13,7 @@
   .first figcaption > .title {
     font-size: 1.2em;
   }
-  .section-name {
+  .section-name, .hat {
     font-size: 1.1em;
     font-weight: 900;
   }
@@ -21,6 +21,10 @@
   .description{
     font-size: 1.1em;
     font-weight: 400;
+  }
+
+  .secundary .title {
+    font-size: 1.1em;
   }
 
 }
