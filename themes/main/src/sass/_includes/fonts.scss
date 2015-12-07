@@ -4,19 +4,23 @@
     font-family: 'Merriweather Sans', serif;
   }
 
-  figcaption > .title {
+  .title {
+    font-size: 1.3em;
+    font-weight: 700;
     font-family: 'Merriweather', serif;
-    font-size: 1.2em;
-    font-weight: 400;
   }
 
+  .first figcaption > .title {
+    font-size: 1.2em;
+  }
   .section-name {
     font-size: 1.1em;
     font-weight: 900;
   }
 
-  .title {
+  .description{
     font-size: 1.1em;
+    font-weight: 400;
   }
 
 }

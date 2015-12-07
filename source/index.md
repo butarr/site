@@ -9,7 +9,7 @@ featured:
       credits: "Fulano de tal"
     date: "2015-12-02T13:47:40-03:00"
     description: ~
-    title: "Em SP, seminnário debate meios de comunicação"
+    title: "Em SP, seminário debate meios de comunicação"
   -
     cover:
       url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"

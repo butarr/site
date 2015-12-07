@@ -29,25 +29,9 @@
   }
 
   article + article {
-    border-top: 2px solid gray;
+    border-top: 2px solid $gray-lighter;
     padding-top: 15px;
     margin-top: 15px;
-  }
-}
-
-#home .featured .second{
-  figure {
-    display: flex;
-  }
-
-  figcaption {
-    margin-left: 15px;
-  }
-
-  img {
-    max-width: 150px;
-    max-height: 150px;
-    border-radius: 5px;
   }
 
   .title{
@@ -55,7 +39,8 @@
   }
 
   .description{
-
+    color: $black-dark;
+    margin-top: 10px;
   }
 }
 
@@ -83,6 +68,23 @@
 
   .description{
     display: none;
+  }
+}
+
+#home .featured .second{
+  figure {
+    display: flex;
+  }
+
+  figcaption {
+    margin-left: 15px;
+    align-self: center;
+  }
+
+  img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 5px;
   }
 }
 
