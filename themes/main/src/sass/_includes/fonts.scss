@@ -5,18 +5,19 @@
   }
 
   .title, .opinion > .name {
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 700;
     font-family: 'Merriweather', serif;
-  }
-
-  .opinion > .name {
-    font-size: 1.1em;
   }
 
   .first figcaption > .title {
     font-size: 1.2em;
   }
+
+  .second figcaption > .description {
+    font-size: 0.8em;
+  }
+
   .section-name, .hat {
     font-size: 1.1em;
     font-weight: 900;
@@ -26,10 +27,6 @@
     font-size: 1.1em;
     font-weight: 400;
     font-family: 'Merriweather Sans', serif;
-  }
-
-  .secundary .title {
-    font-size: 1.1em;
   }
 
   .picture figcaption .title {

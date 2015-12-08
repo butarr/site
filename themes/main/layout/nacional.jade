@@ -14,9 +14,10 @@ append content
               img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
               figcaption
                 h1.title(itemprop="headline")= post.title
+                p.description= post.description
           else
             h1.title(itemprop="headline")= post.title
-          p.description= post.description
+            p.description= post.description
           meta(itemprop="datePublished", content=post.date)
 
     section.secundary(itemscope, itemtype="http://schema.org/ItemList")
