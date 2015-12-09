@@ -29,11 +29,11 @@
     font-family: 'Merriweather Sans', serif;
   }
 
-  .picture figcaption .title {
+  .picture figcaption .title, .gallery-images figcaption .credits{
     font-size: 0.9em;
   }
 
-  .picture figcaption .credits {
+  .picture figcaption .credits, .gallery-images figcaption .credits {
     font-size: 0.8em;
     font-weight: 400;
   }

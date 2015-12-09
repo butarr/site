@@ -46,8 +46,22 @@ append content
 
     section.picture
       figure(itemscope, itemtype="http://schema.org/ImageObject")
-        img(src="//www.tramp.com.br/wp-content/uploads/2014/09/grafite_os_g%C3%AAmeos_canad%C3%A1_tramp-10.jpg")
-        meta(itemprop="contentUrl")
+        img(src="//farm1.staticflickr.com/700/23615980955_9f9a68eae8_n.jpg")
+        meta(itemprop="contentUrl", content="//farm1.staticflickr.com/700/23615980955_9f9a68eae8_n.jpg")
         figcaption
           h1.title(itemprop="caption") O Graffiti como arte urbana
           h2.credits(itemprop="creator") Gêmeos
+    section.gallery-images
+      h1.section-name Galeria
+      figure(itemscope, itemtype="http://schema.org/ImageObject")
+        img(src="//farm1.staticflickr.com/661/23333817780_407b7c07d8_n.jpg")
+        meta(itemprop="contentUrl", content="//farm1.staticflickr.com/700/23615980955_9f9a68eae8_n.jpg")
+        figcaption
+          h1.title(itemprop="caption") O Graffiti como arte urbana
+          h2.credits(itemprop="creator") Gêmeos
+      section.images
+        - var attributes = {'data-large-image': '//farm1.staticflickr.com/661/23333817780_407b7c07d8_n.jpg', 'data-credits': 'José Ninguém João da Silva', 'data-subtitle': 'Foto tirada de lá de longe', 'atl': 'Alt da image', 'title': 'Imagem por João Ninguém'};
+        img.active(src="//farm1.staticflickr.com/661/23333817780_407b7c07d8_t.jpg")&attributes(attributes)
+        img(src="//farm1.staticflickr.com/700/23615980955_9f9a68eae8_t.jpg")&attributes(attributes)
+        img(src="//farm1.staticflickr.com/700/23615980955_9f9a68eae8_t.jpg")&attributes(attributes)
+        img(src="//farm1.staticflickr.com/700/23615980955_9f9a68eae8_t.jpg")&attributes(attributes)
