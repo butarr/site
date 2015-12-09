@@ -193,13 +193,17 @@
 
   figcaption {
     position: absolute;
-    bottom: 5px;
+    bottom: 0px;
     color: white;
     text-shadow: 1px 1px 0px #000, 0 0 0 #fff, 1px 1px 0px #000;
     width: 100%;
     padding-bottom: 20px;
     padding-top: 5px;
     background: linear-gradient(to top, rgba(16, 16, 16, 0.6) 0%, rgba(16,16,16,0.20 ) 100%);
+
+    .title, .credits {
+      margin-left: 10px;
+    }
   }
 }
 
@@ -211,15 +215,17 @@
     padding: 20px 0;
     width: 100%;
     @include picture-with-caption();
-    .title, .credits {
-      margin-left: 10px;
-    }
 }
 
 #home .gallery-images{
   max-width: 360px;
   width: 100%;
   @include picture-with-caption();
+
+  figure {
+    max-height: 230px;
+    overflow: hidden;
+  }
 
   figure, .images {
     width: 95%;

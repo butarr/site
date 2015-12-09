@@ -41,7 +41,7 @@ featured:
 secondary:
   -
     hat: Preconceito
-    cover: 
+    cover:
       url: "//farm6.staticflickr.com/5782/23469650266_f05c73b5e0_b.jpg"
       small: "//farm6.staticflickr.com/5782/23469650266_f05c73b5e0_n.jpg"
       subtitle: "Legenda"
@@ -50,8 +50,8 @@ secondary:
     title: "Mulheres Negras organizam marcha nacional"
   -
     hat: Agressão
-    cover: 
-      url: "//farm1.staticflickr.com/775/22867505634_e0ce2b20c7_b.jpg" 
+    cover:
+      url: "//farm1.staticflickr.com/775/22867505634_e0ce2b20c7_b.jpg"
       small: "//farm1.staticflickr.com/775/22867505634_e0ce2b20c7_n.jpg"
       subtitle: "Legenda"
       credits: "Fotografo"
@@ -59,7 +59,7 @@ secondary:
     title: "Artistas agredidos por seguranças vão processar MetrôRio"
   -
     hat: Homenagem
-    cover: 
+    cover:
       url: "//farm1.staticflickr.com/760/22867514814_a2ca24ab80_b.jpg"
       small: "//farm1.staticflickr.com/760/22867514814_a2ca24ab80_n.jpg"
       subtitle: "Legenda"
@@ -68,7 +68,7 @@ secondary:
     title: "Morre aos 90 anos líder guerrilheira Zilda Xavier da Silva"
   -
     hat: Ocupe
-    cover: 
+    cover:
       url: "//farm6.staticflickr.com/5817/23495844275_35efde962c_b.jpg"
       small: "//farm6.staticflickr.com/5817/23495844275_35efde962c_n.jpg"
       subtitle: "Legenda"
@@ -88,4 +88,59 @@ opinions:
     columnist: "snowden@gmail.com"
     title: "Movimento negro: esboço de um caminho que não lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
     date: '2015-12-02T13:47:40-03:00'
+gallery:
+  - cover:
+      url: //farm6.staticflickr.com/5759/23528037712_0051ac6681_b.jpg
+      thumbnail: //farm6.staticflickr.com/5759/23528037712_0051ac6681_t.jpg
+      medium: //farm6.staticflickr.com/5759/23528037712_0051ac6681_z.jpg
+      small: //farm6.staticflickr.com/5759/23528037712_0051ac6681_n.jpg
+      subtitle: "Gilberto Gil ex-ministro da cultura"
+      credits: "Paulo Coelho"
+
+  - cover:
+      url: //farm6.staticflickr.com/5802/23340914960_7860b5e8de_b.jpg
+      thumbnail: //farm6.staticflickr.com/5802/23340914960_7860b5e8de_t.jpg
+      medium: //farm6.staticflickr.com/5802/23340914960_7860b5e8de_z.jpg
+      small: //farm6.staticflickr.com/5802/23340914960_7860b5e8de_n.jpg
+      subtitle: "Diga não ao Golpe"
+      credits: "Raul Seixas"
+
+  - cover:
+      url: //farm1.staticflickr.com/691/23610515606_7e6cdd568b_b.jpg
+      thumbnail: //farm1.staticflickr.com/691/23610515606_7e6cdd568b_t.jpg
+      medium: //farm1.staticflickr.com/691/23610515606_7e6cdd568b_z.jpg
+      small: //farm1.staticflickr.com/691/23610515606_7e6cdd568b_n.jpg
+      subtitle: "Fachin tava facim no facim"
+      credits: "Ricardo"
+
+  - cover:
+      url: //farm1.staticflickr.com/570/23554190861_7a0fbed354_b.jpg
+      thumbnail: //farm1.staticflickr.com/570/23554190861_7a0fbed354_t.jpg
+      medium: //farm1.staticflickr.com/570/23554190861_7a0fbed354_z.jpg
+      small: //farm1.staticflickr.com/570/23554190861_7a0fbed354_n.jpg
+      subtitle: "Paulinho volta pra ir pra frente"
+      credits: "Nero"
+
+  - cover:
+      url: //farm1.staticflickr.com/604/23610515716_5bd3ff83d2_b.jpg
+      thumbnail: //farm1.staticflickr.com/604/23610515716_5bd3ff83d2_t.jpg
+      medium: //farm1.staticflickr.com/604/23610515716_5bd3ff83d2_z.jpg
+      small: //farm1.staticflickr.com/604/23610515716_5bd3ff83d2_n.jpg
+      subtitle: "Filme mostra a divulgação"
+      credits: "Alexandre, o Grande"
+
+  - cover:
+      url: //farm1.staticflickr.com/593/23268671719_af0e7fff63_b.jpg
+      thumbnail: //farm1.staticflickr.com/593/23268671719_af0e7fff63_t.jpg
+      medium: //farm1.staticflickr.com/593/23268671719_af0e7fff63_z.jpg
+      small: //farm1.staticflickr.com/593/23268671719_af0e7fff63_n.jpg
+      subtitle: "Josiene mais você"
+      credits: "Raphael"
+
+  - cover:
+      url: "//farm6.staticflickr.com/5817/23495844275_35efde962c_b.jpg"
+      small: "//farm6.staticflickr.com/5817/23495844275_35efde962c_n.jpg"
+      thumbnail: "//farm6.staticflickr.com/5817/23495844275_35efde962c_t.jpg"
+      subtitle: "Legendado esse filme"
+      credits: "Felipe"
 ---
