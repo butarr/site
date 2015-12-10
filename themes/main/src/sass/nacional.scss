@@ -220,6 +220,7 @@
 #home .gallery-images{
   max-width: 360px;
   width: 100%;
+  margin: 0 auto;
   @include picture-with-caption();
 
   figure {
@@ -233,50 +234,72 @@
     background-color: rgba(50,50,50,1);
   }
 
-  .images {
-    padding: 0 15px;
-    height: 100px;
-    overflow-y: scroll;
-    display: flex;
+  .section-name {
+    @include section-name();
+    margin-bottom: 15px;
+  }
+}
 
-    img {
-      max-height: 70px;
-      align-self: center;
-      border-radius: 5px;
+#home .gallery-images .images {
+  display: flex;
+}
 
-      -webkit-transform: translateZ(0);
-      transform: translateZ(0);
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-transition-duration: 0.1s;
-      transition-duration: 0.1s;
-      -webkit-transition-property: border;
-      transition-property: border;
-      -webkit-transition-timing-function: ease;
-      transition-timing-function: ease;
-      border: none;
+#home .gallery-images .images .slider {
+  padding: 0 15px;
+  height: 100px;
+  overflow-y: scroll;
+  display: flex;
 
-      &:hover {
-        cursor: pointer;
-        border: 3px solid $gray-lighter;
-      }
-    }
+  img {
+    max-height: 70px;
+    align-self: center;
+    border-radius: 5px;
 
-    img + img {
-      margin-left: 10px;
-    }
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: border;
+    transition-property: border;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    border: none;
 
-    .active {
+    &:hover {
+      cursor: pointer;
       border: 3px solid $gray-lighter;
     }
   }
 
+  img + img {
+    margin-left: 10px;
+  }
 
+  .active {
+    border: 3px solid $gray-lighter;
+  }
+}
 
+#home .gallery-images .images .arrow{
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Merriweather Sans', serif;
+  display: flex;
+  height: 100px;
 
-  .section-name {
-    @include section-name();
-    margin-bottom: 15px;
+  span {
+    align-self: center;
+  }
+
+  &.left {
+    background: linear-gradient(to left, rgba(16, 16, 16, 0.4) 0%, rgba(16, 16, 16, 0.1) 100%);
+  }
+
+  &.right {
+    background: linear-gradient(to right, rgba(16, 16, 16, 0.4) 0%, rgba(16, 16, 16, 0.1) 100%);
   }
 }

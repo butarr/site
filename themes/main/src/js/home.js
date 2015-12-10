@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
-  $('#home .gallery-images .images img').click(function(){
+  var activeImage = function(imageElement){
     $('#home .gallery-images .images img').removeClass('active');
-    $(this).addClass('active');
+    $(imageElement).addClass('active');
 
-    var credits = $(this).data('credits');
-    var title = $(this).data('title');
-    var largeImageURL = $(this).data('large-image');
+    var credits = $(imageElement).data('credits');
+    var title = $(imageElement).data('title');
+    var largeImageURL = $(imageElement).data('large-image');
 
 
     $('#home .gallery-images > figure > img')
@@ -20,6 +20,31 @@ $(document).ready(function() {
 
     $('#home .gallery-images > figure > figcaption .credits')
       .text(credits);
+  };
 
+  var navigationOnImages = function(direction){
+    var active = $('#home .gallery-images .images .slider img.active');
+
+    var toSelect = active.prev()[0];
+    if(direction > 0 )
+        toSelect = active.next()[0];
+
+
+    if(!!toSelect){
+      activeImage(toSelect);
+      toSelect.scrollIntoView();
+    }
+  };
+
+  $('#home .gallery-images .images img').click(function(){
+    activeImage(this);
+  });
+
+  $('#home .gallery-images .images .arrow.left').click(function(){
+    navigationOnImages(-1);
+  });
+
+  $('#home .gallery-images .images .arrow.right').click(function(){
+    navigationOnImages(1);
   });
 });
