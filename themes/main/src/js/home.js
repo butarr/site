@@ -22,13 +22,23 @@ $(document).ready(function() {
       .text(credits);
   };
 
+  var disableArrows = function(toSelect, direction){
+    $('#home .gallery-images .images').removeClass('disable-left-arrow','disable-right-arrow')
+
+    if(direction > 0){
+      $('#home .gallery-images .images').addClass('disable-left-arrow');
+    }else {
+      $('#home .gallery-images .images').addClass('disable-right-arrow');
+    }
+  };
+
   var navigationOnImages = function(direction){
     var active = $('#home .gallery-images .images .slider img.active');
 
     var toSelect = active.prev()[0];
-    if(direction > 0 )
+    if(direction > 0 ){
         toSelect = active.next()[0];
-
+    }
 
     if(!!toSelect){
       activeImage(toSelect);
@@ -40,11 +50,22 @@ $(document).ready(function() {
     activeImage(this);
   });
 
-  $('#home .gallery-images .images .arrow.left').click(function(){
-    navigationOnImages(-1);
-  });
+  $('#home .gallery-images .images').click(function(event){
+    if (event.target !== this){
+      return;
+    }
+    var POSITION_START_RIGHT_PSEUDO_ARROW = 300;
+    var POSITION_END_LEFT_PSEUDO_ARROW    = 40;
 
-  $('#home .gallery-images .images .arrow.right').click(function(){
-    navigationOnImages(1);
+    var posX = $(this).position().left,
+        posY = $(this).position().top;
+
+    var mousePositionRelativeToSectionX = (event.pageX - posX);
+
+    if( mousePositionRelativeToSectionX > POSITION_START_RIGHT_PSEUDO_ARROW){
+      navigationOnImages(1);
+    }else if( mousePositionRelativeToSectionX < POSITION_END_LEFT_PSEUDO_ARROW ){
+      navigationOnImages(-1);
+    }
   });
 });

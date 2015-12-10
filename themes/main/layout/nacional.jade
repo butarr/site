@@ -61,12 +61,8 @@ append content
           h1.title(itemprop="caption")= firstImage.cover.subtitle
           h2.credits(itemprop="creator")= firstImage.cover.credits
       section.images
-        a.arrow.left
-          span= "<"
         section.slider
           each image, index in page.gallery
             - var attributes = {'data-large-image': image.cover['small'], 'data-credits': image.cover['credits'], 'data-title': image.cover['subtitle'], 'alt': image.cover['subtitle'], 'title': image.cover['subtitle']};
             - var active = (index === 0) ? 'active' : '';
             img(src=image.cover['thumbnail'], class=active)&attributes(attributes)
-        a.arrow.right
-          span= ">"
