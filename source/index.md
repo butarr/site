@@ -10,7 +10,7 @@ featured:
     date: "2015-12-02T13:47:40-03:00"
     description: ~
     title: "Em SP, seminário debate meios de comunicação"
-    url: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
   -
     cover:
       url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
@@ -20,7 +20,7 @@ featured:
     date: "2015-12-02T13:47:40-03:00"
     description: "Deputados comprometidos com o setor não estão levando a sério"
     title: "Cunha quer vota em urgência marco regulatório da mineração"
-    url: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
   -
     cover:
       url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
@@ -30,7 +30,7 @@ featured:
     date: "2015-12-02T13:47:40-03:00"
     description: "A Vale, uma das proprietárias da Samarco, empresa responsável pelas barragens que se romperam em Mariana (MG). Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun"
     title: "A pior empresa do mundo"
-    url: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
   -
     cover:
       url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
@@ -40,7 +40,7 @@ featured:
     date: "2015-12-02T13:47:40-03:00"
     description: ~
     title: "\"Se os deputados não têm coragem de tirar Cunha, nós temos\", diz jovem em protesto"
-    url: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 
 secondary:
   -
@@ -52,7 +52,7 @@ secondary:
       credits: "Fotografo"
     date: "2015-12-02T13:47:40-03:00"
     title: "Mulheres Negras organizam marcha nacional"
-    url: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
   -
     hat: Agressão
     cover:
@@ -62,7 +62,7 @@ secondary:
       credits: "Fotografo"
     date: "2015-12-02T13:47:40-03:00"
     title: "Artistas agredidos por seguranças vão processar MetrôRio"
-    url: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
   -
     hat: Homenagem
     cover:
@@ -72,7 +72,7 @@ secondary:
       credits: "Fotografo"
     date: "2015-12-02T13:47:40-03:00"
     title: "Morre aos 90 anos líder guerrilheira Zilda Xavier da Silva"
-    url: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
   -
     hat: Ocupe
     cover:
@@ -82,7 +82,7 @@ secondary:
       credits: "Fotografo"
     date: "2015-12-02T13:47:40-03:00"
     title: "Podemos, com desobediência civil, participar das decisões"
-    url: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 opinions:
   -
     columnist: "rodrigovieira18@gmail.com"

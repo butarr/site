@@ -13,10 +13,10 @@ append content
             figure
               img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
               figcaption
-                a.h1.title(href=post.url, itemprop="headline")= post.title
+                a.h1.title(href=post.path, itemprop="headline")= post.title
                 p.description= post.description
           else
-            a.h1.title(href=post.url, itemprop="headline")= post.title
+            a.h1.title(href=post.path, itemprop="headline")= post.title
             p.description= post.description
           meta(itemprop="datePublished", content=post.date)
 
@@ -27,7 +27,7 @@ append content
         article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
           span.hat(itemprop="about")= post.hat
           img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
-          a.h1.title(href=post.url, itemprop="headline")= post.title
+          a.h1.title(href=post.path, itemprop="headline")= post.title
           meta(itemprop="datePublished", content= post.date)
 
     section.opinions(itemscope, itemtype="http://schema.org/ItemList")
