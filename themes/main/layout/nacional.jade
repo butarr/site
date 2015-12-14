@@ -22,7 +22,7 @@ append content
             meta(itemprop="datePublished", content=post.date)
 
     if page.secondary
-      section.secundary(itemscope, itemtype="http://schema.org/ItemList")
+      section.secondary(itemscope, itemtype="http://schema.org/ItemList")
         meta(itemprop="itemListOrder", content="http://schema.org/ItemListUnordered")
         each post in page.secondary
           - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
