@@ -104,11 +104,12 @@
   display: flex;
   -webkit-justify-content:         space-around;
   justify-content:         space-around;
-  padding: 20px 0px;
+  padding-top: 20px;
 
   article{
     width: 45%;
     max-width: 250px;
+    margin-bottom: 20px;
   }
 
   .hat{
