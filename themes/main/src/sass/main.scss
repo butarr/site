@@ -29,6 +29,18 @@ html * {
 body {
   margin: 0;
 
+  a {
+    color: $link;
+
+    &:hover {
+      color: $link-hover;
+    }
+
+    &:visited {
+      color: $link-visited;
+    }
+  }
+
   & > main {
     width: 100%;
     @include clearfix();
