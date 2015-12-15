@@ -9,3 +9,4 @@ node_modules
 themes/**/source/
 .deploy_git/
 .idea/
+*swp
