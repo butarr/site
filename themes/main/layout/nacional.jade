@@ -12,13 +12,18 @@ append content
           article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class=position[index])
             if position[index]
               figure
-                img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
+                a(href=post.path)
+                  img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
                 figcaption
-                  a.h1.title(href=post.path, itemprop="headline")= post.title
-                  p.description= post.description
+                  a(href=post.path)
+                    h1.title(itemprop="headline")= post.title
+                  a(href=post.path)
+                   p.description= post.description
             else
-              a.h1.title(href=post.path, itemprop="headline")= post.title
-              p.description= post.description
+              a(href=post.path)
+                h1.title(itemprop="headline")= post.title
+              a(href=post.path)
+                p.description= post.description
             meta(itemprop="datePublished", content=post.date)
 
     if page.secondary
@@ -28,8 +33,10 @@ append content
           - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
           article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
             span.hat(itemprop="about")= post.hat
-            img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
-            a.h1.title(href=post.path, itemprop="headline")= post.title
+            a(href=post.path)
+              img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
+            a(href=post.path)
+              h1.title(itemprop="headline")= post.title
             meta(itemprop="datePublished", content= post.date)
 
     if page.opinions
