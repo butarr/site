@@ -8,12 +8,13 @@ append content
         meta(itemprop="itemListOrder", content="http://schema.org/ItemListOrderDescending")
         each post, index in page.featured
           - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-          - var position = { 0: 'first', 1: 'second' }
+          - var position = { 0: 'first', 1: 'second', 2: 'third', 3: 'forth' }
+
           article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class=position[index])
-            if position[index]
+            if ((position[index] == 'first') || (position[index] == 'second'))
               figure
                 a(href=post.path)
-                  img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
+                  img(src=post.cover.url, alt=imageDescription, title=imageDescription, itemprop="image")
                 figcaption
                   a(href=post.path)
                     h1.title(itemprop="headline")= post.title

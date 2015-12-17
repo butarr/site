@@ -57,6 +57,13 @@
     color: $black-dark;
     margin-top: 10px;
   }
+
+  @include media-query(MEDIUM) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 70%;
+  }
 }
 
 #home .featured .first {
@@ -83,6 +90,13 @@
   .description{
     display: none;
   }
+
+  
+
+  @include media-query(MEDIUM) {
+    margin-top: 10px;
+  }
+
 }
 
 #home .featured .second{
@@ -99,6 +113,20 @@
     max-width: 150px;
     max-height: 150px;
     border-radius: 5px;
+  }
+
+
+}
+
+#home .first, .third {
+  @include media-query(MEDIUM) {
+    width: 65%;
+  }
+}
+
+#home .second, .forth {
+  @include media-query(MEDIUM) {
+    width: 30%;
   }
 }
 
