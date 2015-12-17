@@ -34,6 +34,13 @@
 
   .section-name {
     @include section-name();
+
+    
+    @include media-query(MEDIUM) {
+      display: none;
+
+    }
+  
   }
 
   article + article {
