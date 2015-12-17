@@ -22,6 +22,11 @@
   }
 
   @include get-font(NACIONAL);
+
+  @include media-query(MEDIUM) {
+    margin: 15% 5% 0 5%; /*margin-top being used to fix menu overlaping*/
+    width: 90%;
+  }
 }
 
 #home figure {
@@ -38,9 +43,8 @@
     
     @include media-query(MEDIUM) {
       display: none;
-
     }
-  
+
   }
 
   article + article {
