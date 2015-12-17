@@ -14,7 +14,7 @@ append content
             if ((position[index] == 'first') || (position[index] == 'second'))
               figure
                 a(href=post.path)
-                  img(src=post.cover.url, alt=imageDescription, title=imageDescription, itemprop="image")
+                  img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
                 figcaption
                   a(href=post.path)
                     h1.title(itemprop="headline")= post.title
