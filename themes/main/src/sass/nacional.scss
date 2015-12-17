@@ -24,7 +24,7 @@
   @include get-font(NACIONAL);
 
   @include media-query(MEDIUM) {
-    margin: 15% 5% 0 5%; /*margin-top being used to fix menu overlaping*/
+    margin: 20% 5% 0 5%; 
     width: 90%;
   }
 }
@@ -105,20 +105,30 @@
 #home .featured .second{
   figure {
     display: flex;
+    @include media-query(MEDIUM) {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  img {
+    max-width: 150px;
+    width: 100%;
+    border-radius: 5px;
+    @include media-query(MEDIUM) {
+      max-width: 100%;
+    }
   }
 
   figcaption {
     margin-left: 15px;
     align-self: baseline;
+    width: 50%;
+    @include media-query(MEDIUM) {
+      width: 100%;
+      margin-left: 0;
+    }
   }
-
-  img {
-    max-width: 150px;
-    max-height: 150px;
-    border-radius: 5px;
-  }
-
-
 }
 
 #home .first, .third {
