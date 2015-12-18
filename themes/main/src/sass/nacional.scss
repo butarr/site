@@ -56,9 +56,6 @@
   .description{
     color: $black-dark;
     margin-top: 10px;
-    @include media-query(MEDIUM) {
-      display: none;
-    }
   }
 
   @include media-query(MEDIUM) {
@@ -127,6 +124,12 @@
     @include media-query(MEDIUM) {
       width: 100%;
       margin-left: 0;
+    }
+  }
+
+  .description{
+    @include media-query(MEDIUM) {
+      display: none;
     }
   }
 }
