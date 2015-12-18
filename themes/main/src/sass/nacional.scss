@@ -51,6 +51,10 @@
     border-top: 2px solid $gray-lighter;
     padding-top: 15px;
     margin-top: 15px;
+    @include media-query(MEDIUM) {
+      border-top: 0;
+      margin-top: 0;
+    }
   }
 
   .description{
