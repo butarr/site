@@ -146,6 +146,16 @@
   }
 }
 
+#home .second, .third, .forth{
+  .title {
+    @include media-query(MEDIUM) {
+      border-left: 3px solid $gray-lighter;
+      padding-left: 10px;
+      margin-top: 10px;
+    }
+  }
+}
+
 #home section + section {
   margin-top: 10px;
 }
