@@ -3,8 +3,8 @@ layout: nacional
 featured:
   -
     cover:
-      url: "//farm1.staticflickr.com/766/23127916899_d04e64d446_b.jpg"
-      small: "//farm1.staticflickr.com/766/23127916899_d04e64d446_n.jpg"
+      url: "//farm1.staticflickr.com/664/23266252363_e39193d140_b.jpg"
+      small: "//farm1.staticflickr.com/664/23266252363_e39193d140_n.jpg"
       subtitle: "Legenda aqui"
       credits: "Fulano de tal"
     date: "2015-12-02T13:47:40-03:00"
@@ -13,8 +13,8 @@ featured:
     path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
   -
     cover:
-      url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
-      small: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg"
+      url: "//farm6.staticflickr.com/5768/23597648530_5a929635c8_b.jpg"
+      small: "//farm6.staticflickr.com/5768/23597648530_5a929635c8_n.jpg"
       subtitle: "Legenda aqui"
       credits: "Fulano de tal"
     date: "2015-12-02T13:47:40-03:00"
