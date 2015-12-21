@@ -156,6 +156,12 @@
   }
 }
 
+#home .featured .forth {
+  .description{
+    display: none;
+  }
+}
+
 #home section + section {
   margin-top: 10px;
 }
