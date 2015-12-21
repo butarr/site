@@ -71,7 +71,9 @@
   }
 
   article{
-    margin-bottom: 40px;
+    @include media-query(MEDIUM) {
+      margin-bottom: 40px;
+    }
   }
 }
 
