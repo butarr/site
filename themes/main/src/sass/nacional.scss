@@ -134,19 +134,19 @@
   }
 }
 
-#home .first, .third {
+#home .featured .first, .third {
   @include media-query(MEDIUM) {
     width: 65%;
   }
 }
 
-#home .second, .forth {
+#home .featured .second, .forth {
   @include media-query(MEDIUM) {
     width: 30%;
   }
 }
 
-#home .second, .third, .forth{
+#home .featured .second, .third, .forth{
   .title {
     @include media-query(MEDIUM) {
       border-left: 3px solid $gray-lighter;
