@@ -182,10 +182,22 @@
   justify-content:         space-around;
   padding-top: 20px;
 
+  @include media-query(MEDIUM) {
+    width: 75%;
+    background-color: white;
+    border: 0;
+    padding-top: 0;
+  }
+
   article{
     width: 45%;
     max-width: 250px;
     margin-bottom: 20px;
+    @include media-query(MEDIUM) {
+      &:last-of-type {
+        display: none;
+      }
+    }
   }
 
   .hat{
