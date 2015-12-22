@@ -83,6 +83,28 @@ secondary:
     date: "2015-12-02T13:47:40-03:00"
     title: "Podemos, com desobediência civil, participar das decisões"
     path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+tertiary:
+  -
+    cover:
+      url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
+      small: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg"
+      subtitle: "Legenda aqui"
+      credits: "Fulano de tal"
+    date: "2015-12-02T13:47:40-03:00"
+    description: "No Dia Internacional do Combate à Violência Contra a Mulher, em 25 de novembro, agressões físicas t psicológicas na hora do parto também são lembrados"
+    title: "Violência contra a mulher: uma em cada quatro já sofreu agressões no parto"
+    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  -
+    cover:
+      url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
+      small: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg"
+      subtitle: "Legenda aqui"
+      credits: "Fulano de tal"
+    date: "2015-12-02T13:47:40-03:00"
+    description: "Segundo especialistas a flexibilização do código de mineradores e falta do Marco Regulatório podem contribuir para novos acidentes"
+    title: "Lobby de mineradoras está entre causas da trag´dias em Mariana"
+    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+
 opinions:
   -
     columnist: "rodrigovieira18@gmail.com"
