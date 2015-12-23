@@ -188,9 +188,10 @@
     border: 0;
     padding-top: 0;
     justify-content: space-between;
+    flex-wrap: nowrap;
   }
 
-  article{
+  article {
     width: 45%;
     max-width: 250px;
     margin-bottom: 20px;
@@ -198,6 +199,12 @@
       &:last-of-type {
         display: none;
       }
+    }
+  }
+
+  article + article {
+    @include media-query(MEDIUM) {
+      margin-left: 10px;
     }
   }
 
