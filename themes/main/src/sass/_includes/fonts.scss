@@ -11,14 +11,6 @@
     line-height: 1.2em;
   }
 
-  .first figcaption > .title {
-    font-size: 1.2em;
-  }
-
-  .second figcaption > .description {
-    font-size: 0.8em;
-  }
-
   .section-name, .hat {
     font-size: 1.1em;
     font-weight: 900;
@@ -31,15 +23,14 @@
     line-height: 1.2em;
   }
 
-  .picture figcaption .title, .gallery-images figcaption .credits{
-    font-size: 0.9em;
+  figcaption .title {
+    font-size: 1.2em;
   }
 
-  .picture figcaption .credits, .gallery-images figcaption .credits {
+  figcaption .credits {
     font-size: 0.8em;
     font-weight: 400;
   }
-
 }
 
 @mixin __post(){
