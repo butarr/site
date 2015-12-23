@@ -55,24 +55,26 @@ append content
               date(datetime=opinion.date)= moment(opinion.date).format('L')
               meta(content=opinion.date, itemprop="datePublished")
 
-    if page.tertiary
-      section.tertiary(itemscope, itemtype="http://schema.org/ItemList")
-        meta(itemprop="itemListOrder", content="http://schema.org/ItemListUnordered")
-        each post in page.tertiary
-          article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
-            a(href=post.path)
-              h1.title(itemprop="headline")= post.title
-            a(href=post.path)
-              p.description= post.description
-            meta(itemprop="datePublished", content=post.date)
+    section.container-tertiary
 
-    if section.picture
-      figure(itemscope, itemtype="http://schema.org/ImageObject")
-        img(src="//farm1.staticflickr.com/700/23615980955_9f9a68eae8_n.jpg")
-        meta(itemprop="contentUrl", content="//farm1.staticflickr.com/700/23615980955_9f9a68eae8_n.jpg")
-        figcaption
-          h1.title(itemprop="caption") O Graffiti como arte urbana
-          h2.credits(itemprop="creator") Gêmeos
+      if page.tertiary
+        section.tertiary(itemscope, itemtype="http://schema.org/ItemList")
+          meta(itemprop="itemListOrder", content="http://schema.org/ItemListUnordered")
+          each post in page.tertiary
+            article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
+              a(href=post.path)
+                h1.title(itemprop="headline")= post.title
+              a(href=post.path)
+                p.description= post.description
+              meta(itemprop="datePublished", content=post.date)
+
+        section.picture
+          figure(itemscope, itemtype="http://schema.org/ImageObject")
+            img(src="//farm6.staticflickr.com/5737/23562577379_271b5567ca_b.jpg")
+            meta(itemprop="contentUrl", content="http://farm6.staticflickr.com/5737/23562577379_271b5567ca_b.jpg")
+            figcaption
+              h1.title(itemprop="caption") O Graffiti como arte urbana
+              h2.credits(itemprop="creator") Gêmeos
 
     if page.gallery
       section.gallery-images
