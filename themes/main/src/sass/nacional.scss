@@ -223,7 +223,7 @@
 #home .tertiary {
   display: none;
   @include media-query(MEDIUM) {
-    display: block;
+    display: inline-block;
     width: 50%;
     article{
       margin-bottom: 40px;
@@ -330,6 +330,13 @@
     padding: 20px 0;
     width: 100%;
     @include picture-with-caption();
+    @include media-query(MEDIUM) {
+      background-color: white;
+      border-top: 0;
+      border-bottom: 0;
+      width: 50%;
+      display: inline-block;
+    }
 }
 
 #home .gallery-images{

@@ -102,7 +102,7 @@ tertiary:
       credits: "Fulano de tal"
     date: "2015-12-02T13:47:40-03:00"
     description: "Segundo especialistas a flexibilização do código de mineradores e falta do Marco Regulatório podem contribuir para novos acidentes"
-    title: "Lobby de mineradoras está entre causas da trag´dias em Mariana"
+    title: "Lobby de mineradoras está entre causas da tragédias em Mariana"
     path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 
 opinions:

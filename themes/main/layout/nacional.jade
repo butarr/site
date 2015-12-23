@@ -40,17 +40,6 @@ append content
               h1.title(itemprop="headline")= post.title
             meta(itemprop="datePublished", content= post.date)
 
-    if page.tertiary
-      section.tertiary(itemscope, itemtype="http://schema.org/ItemList")
-        meta(itemprop="itemListOrder", content="http://schema.org/ItemListUnordered")
-        each post in page.tertiary
-          article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
-            a(href=post.path)
-              h1.title(itemprop="headline")= post.title
-            a(href=post.path)
-              p.description= post.description
-            meta(itemprop="datePublished", content=post.date)
-
     if page.opinions
       section.opinions(itemscope, itemtype="http://schema.org/ItemList")
         h1.section-name Colunistas
@@ -66,7 +55,18 @@ append content
               date(datetime=opinion.date)= moment(opinion.date).format('L')
               meta(content=opinion.date, itemprop="datePublished")
 
-    section.picture
+    if page.tertiary
+      section.tertiary(itemscope, itemtype="http://schema.org/ItemList")
+        meta(itemprop="itemListOrder", content="http://schema.org/ItemListUnordered")
+        each post in page.tertiary
+          article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
+            a(href=post.path)
+              h1.title(itemprop="headline")= post.title
+            a(href=post.path)
+              p.description= post.description
+            meta(itemprop="datePublished", content=post.date)
+
+    if section.picture
       figure(itemscope, itemtype="http://schema.org/ImageObject")
         img(src="//farm1.staticflickr.com/700/23615980955_9f9a68eae8_n.jpg")
         meta(itemprop="contentUrl", content="//farm1.staticflickr.com/700/23615980955_9f9a68eae8_n.jpg")
