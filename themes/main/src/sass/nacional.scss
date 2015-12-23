@@ -114,7 +114,7 @@
 
 #home .featured .second{
   figure {
-    display: flex;
+    display: inline-block;
     @include media-query(MEDIUM) {
       display: block;
       width: 100%;
@@ -130,11 +130,13 @@
     }
   }
 
-  figcaption {
-    margin-left: 15px;
-    align-self: baseline;
+  .title {
+    display: inline-block;
     width: 50%;
+    margin-left: 10px;
+    position: absolute;
     @include media-query(MEDIUM) {
+      position: relative;
       width: 100%;
       margin-left: 0;
     }

@@ -11,13 +11,21 @@ append content
           - var position = { 0: 'first', 1: 'second', 2: 'third', 3: 'forth' }
 
           article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class=position[index])
-            if ((position[index] == 'first') || (position[index] == 'second'))
+            if (position[index] == 'first')
               figure
                 a(href=post.path)
                   img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
                 figcaption
                   a(href=post.path)
                     h1.title(itemprop="headline")= post.title
+              a(href=post.path)
+                p.description= post.description
+            else if (position[index] == 'second')
+              figure
+                a(href=post.path)
+                  img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
+              a(href=post.path)
+                h1.title(itemprop="headline")= post.title
               a(href=post.path)
                 p.description= post.description
             else
