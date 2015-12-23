@@ -181,6 +181,8 @@
   -webkit-justify-content:         space-around;
   justify-content:         space-around;
   padding-top: 20px;
+  margin: 0 -10px;
+
 
   @include media-query(MEDIUM) {
     width: 75%;
@@ -328,7 +330,8 @@
     border-top: 1px solid $gray-light;
     border-bottom: 1px solid $gray-light;
     padding: 20px 0;
-    width: 100%;
+    width: 110%;
+    margin-left: -10px;
     @include picture-with-caption();
     @include media-query(MEDIUM) {
       background-color: white;
