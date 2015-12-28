@@ -12,7 +12,7 @@
 
 #home {
   width: 100%;
-  display: inline-block;
+  display: block;
   margin-top: 70px;
   padding: 0 10px;
   padding-bottom: 20px;
@@ -24,8 +24,9 @@
   @include get-font(NACIONAL);
 
   @include media-query(MEDIUM) {
-    margin: 220px 5% 0 5%; 
-    width: 90%;
+    margin: 220px auto 0 auto; 
+    max-width: 940px;
+    padding: 0 50px;
   }
 }
 
@@ -210,7 +211,7 @@
   article {
     width: 45%;
     max-width: 250px;
-    margin-bottom: 20px;
+    margin: 0 10px 20px 10px;
     @include media-query(MEDIUM) {
       &:last-of-type {
         display: none;
