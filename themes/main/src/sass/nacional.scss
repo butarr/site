@@ -25,8 +25,8 @@
 
   @include media-query(MEDIUM) {
     margin: 220px auto 0 auto; 
-    max-width: 940px;
-    padding: 0 50px;
+    max-width: 1060px;
+    padding: 0 60px;
   }
 }
 
@@ -237,13 +237,24 @@
 
 }
 
+#home .container-tertiary {
+  @include media-query(MEDIUM) {
+    display: block;
+    width: 940px;
+  }
+}
+
 #home .tertiary {
   display: none;
   @include media-query(MEDIUM) {
     display: inline-block;
-    width: 50%;
+    width: 48%;
+    margin-right: 4%;
     article{
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+    }
+    .description{
+      margin-top: 20px;
     }
   }
 }
@@ -315,8 +326,12 @@
   figure {
     margin: 0 auto;
     width: 90%;
-    max-width: 360px;
+    max-width: 460px;
     position: relative;
+
+    @include media-query(MEDIUM) {
+      width: 460px;
+    }
 
     img {
       width: 100%;
@@ -350,8 +365,12 @@
       background-color: white;
       border-top: 0;
       border-bottom: 0;
-      width: 50%;
+      
       display: inline-block;
+      padding: 0;
+      width: 48%;
+      margin: 0;
+    
     }
 }
 
