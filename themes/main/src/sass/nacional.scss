@@ -310,15 +310,28 @@
     font-weight: 700;
   }
 
+  @include media-query(MEDIUM) {
+    width: 30%;
+  }
+
 }
 
 #home .opinions .columnist {
     display: flex;
     margin-top: 20px;
 
-    &.first img {
-      height: 130px;
-      max-width: 130px;
+    &.first{
+      flex-direction: column;
+
+      img {
+        height: 130px;
+        max-width: 130px;
+      }
+
+      .opinion {
+        margin-top: 20px;
+        text-align: center;
+      }
     }
 
     figure {
