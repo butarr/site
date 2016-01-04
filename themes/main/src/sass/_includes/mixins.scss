@@ -41,7 +41,6 @@
     width: 100px;
     float: left;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(30, 30, 30, 0.1), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 
     @include media-query(MEDIUM) {
       width: 150px;
