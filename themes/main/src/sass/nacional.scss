@@ -341,7 +341,7 @@
   }
 
   .title {
-    color: #787878;
+    color: $black-dark;;
     margin-top: 5px;
   }
 
@@ -357,6 +357,7 @@
 
   @include media-query(MEDIUM) {
     width: 220px;
+    padding-bottom: 25px;
   }
 
 }
@@ -376,6 +377,7 @@
     img {
       max-width: 60px;
       max-height: 60px;
+      align-self: flex-start;
     }
 
     &.first{
