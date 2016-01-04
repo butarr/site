@@ -116,7 +116,7 @@ opinions:
     date: '2015-12-02T13:47:40-03:00'
   -
     columnist: "snowden@gmail.com"
-    title: "Movimento negro: esboço de um caminho que não lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    title: "Movimento negro: esboço de um caminho que não..."
     date: '2015-12-02T13:47:40-03:00'
 gallery:
   - cover:
