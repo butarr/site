@@ -12,7 +12,9 @@
 
 #home {
   width: 100%;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   margin-top: 70px;
   padding: 0 10px;
   padding-bottom: 20px;
@@ -77,7 +79,6 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    max-width: 70%;
   }
 
   article{
@@ -170,6 +171,7 @@
 #home .featured .first, .third {
   @include media-query(MEDIUM) {
     width: 65%;
+    margin-right: 20px;
   }
 }
 
@@ -197,6 +199,25 @@
 
 #home section + section {
   margin-top: 10px;
+}
+
+#home .main {
+  align-self: flex-start;
+  width: 700px;
+  margin: 0;
+  padding: 0;
+}
+#home .sidebar {
+  align-self: flex-start;
+  width: 220px;
+  margin-left: 20px;
+  margin-top: 0;
+
+  .advertisement {
+    background-color: red;
+    height: 200px;
+    margin-bottom: 20px;
+  }
 }
 
 #home .secondary {
@@ -310,15 +331,28 @@
     font-weight: 700;
   }
 
+  @include media-query(MEDIUM) {
+    width: 30%;
+  }
+
 }
 
 #home .opinions .columnist {
     display: flex;
     margin-top: 20px;
 
-    &.first img {
-      height: 130px;
-      max-width: 130px;
+    &.first{
+      flex-direction: column;
+
+      img {
+        height: 130px;
+        max-width: 130px;
+      }
+
+      .opinion {
+        margin-top: 20px;
+        text-align: center;
+      }
     }
 
     figure {

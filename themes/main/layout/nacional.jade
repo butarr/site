@@ -2,66 +2,69 @@ extend base
 
 append content
   section#home
-    if page.featured
-      section.featured(itemscope, itemtype="http://schema.org/ItemList")
-        h1.section-name(itemprop="name") Últimas Notícias
-        meta(itemprop="itemListOrder", content="http://schema.org/ItemListOrderDescending")
-        each post, index in page.featured
-          - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-          - var position = { 0: 'first', 1: 'second', 2: 'third', 3: 'forth' }
+    div.main
+      if page.featured
+        section.featured(itemscope, itemtype="http://schema.org/ItemList")
+          h1.section-name(itemprop="name") Últimas Notícias
+          meta(itemprop="itemListOrder", content="http://schema.org/ItemListOrderDescending")
+          each post, index in page.featured
+            - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+            - var position = { 0: 'first', 1: 'second', 2: 'third', 3: 'forth' }
 
-          article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class=position[index])
-            if (position[index] == 'first')
-              figure
-                a(href=post.path)
-                  img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
-                figcaption
+            article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class=position[index])
+              if (position[index] == 'first')
+                figure
                   a(href=post.path)
-                    h1.title(itemprop="headline")= post.title
-              a(href=post.path)
-                p.description= post.description
-            else if (position[index] == 'second')
-              figure
+                    img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
+                  figcaption
+                    a(href=post.path)
+                      h1.title(itemprop="headline")= post.title
                 a(href=post.path)
-                  img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
+                  p.description= post.description
+              else if (position[index] == 'second')
+                figure
+                  a(href=post.path)
+                    img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
+                a(href=post.path)
+                  h1.title(itemprop="headline")= post.title
+                a(href=post.path)
+                  p.description= post.description
+              else
+                a(href=post.path)
+                  h1.title(itemprop="headline")= post.title
+                a(href=post.path)
+                  p.description= post.description
+              meta(itemprop="datePublished", content=post.date)
+
+      if page.secondary
+        section.secondary(itemscope, itemtype="http://schema.org/ItemList")
+          meta(itemprop="itemListOrder", content="http://schema.org/ItemListUnordered")
+          each post in page.secondary
+            - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+            article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
+              span.hat(itemprop="about")= post.hat
+              a(href=post.path)
+                img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
               a(href=post.path)
                 h1.title(itemprop="headline")= post.title
-              a(href=post.path)
-                p.description= post.description
-            else
-              a(href=post.path)
-                h1.title(itemprop="headline")= post.title
-              a(href=post.path)
-                p.description= post.description
-            meta(itemprop="datePublished", content=post.date)
+              meta(itemprop="datePublished", content= post.date)
 
-    if page.secondary
-      section.secondary(itemscope, itemtype="http://schema.org/ItemList")
-        meta(itemprop="itemListOrder", content="http://schema.org/ItemListUnordered")
-        each post in page.secondary
-          - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-          article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
-            span.hat(itemprop="about")= post.hat
-            a(href=post.path)
-              img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
-            a(href=post.path)
-              h1.title(itemprop="headline")= post.title
-            meta(itemprop="datePublished", content= post.date)
-
-    if page.opinions
-      section.opinions(itemscope, itemtype="http://schema.org/ItemList")
-        h1.section-name Colunistas
-        each opinion, index in page.opinions
-          - var columnist = site.data.columnists[opinion.columnist]
-          - var position = { 0: 'first'}
-          article.columnist(itemscope, itemtype="http://schema.org/BlogPosting", itemprop="itemListElement", class=position[index])
-            figure
-              img(src= columnist.photo, alt="Imagem de perfil do colunista", title="Imagem de perfil do colunista", itemtype="https://schema.org/Person", itemprop="image")
-            section.opinion
-              h1.name(itemtype="https://schema.org/Person", itemprop="name")= columnist.name
-              h2.title(itemprop="headline")= opinion.title
-              date(datetime=opinion.date)= moment(opinion.date).format('L')
-              meta(content=opinion.date, itemprop="datePublished")
+    div.sidebar
+      article.advertisement
+      if page.opinions
+        section.opinions(itemscope, itemtype="http://schema.org/ItemList")
+          h1.section-name Colunistas
+          each opinion, index in page.opinions
+            - var columnist = site.data.columnists[opinion.columnist]
+            - var position = { 0: 'first'}
+            article.columnist(itemscope, itemtype="http://schema.org/BlogPosting", itemprop="itemListElement", class=position[index])
+              figure
+                img(src= columnist.photo, alt="Imagem de perfil do colunista", title="Imagem de perfil do colunista", itemtype="https://schema.org/Person", itemprop="image")
+              section.opinion
+                h1.name(itemtype="https://schema.org/Person", itemprop="name")= columnist.name
+                h2.title(itemprop="headline")= opinion.title
+                date(datetime=opinion.date)= moment(opinion.date).format('L')
+                meta(content=opinion.date, itemprop="datePublished")
 
     section.container-tertiary
 
