@@ -215,7 +215,7 @@
 
   .advertisement {
     background-color: red;
-    height: 200px;
+    height: 220px;
     margin-bottom: 20px;
   }
 }
@@ -271,7 +271,7 @@
 
 #home .container-tertiary {
   @include media-query(MEDIUM) {
-    display: block;
+    display: flex;
     width: 940px;
   }
 }
@@ -280,13 +280,13 @@
   display: none;
   @include media-query(MEDIUM) {
     display: inline-block;
-    width: 48%;
-    margin-right: 4%;
+    width: 460px;
+    margin-right: 20px;
     article{
       margin-bottom: 30px;
     }
     .description{
-      margin-top: 20px;
+      margin-top: 10px;
     }
   }
 }
@@ -413,7 +413,7 @@
       
       display: inline-block;
       padding: 0;
-      width: 48%;
+      width: 460px;
       margin: 0;
     
     }
