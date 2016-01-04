@@ -357,7 +357,7 @@
   }
 
   @include media-query(MEDIUM) {
-    width: 30%;
+    width: 220px;
   }
 
 }
@@ -366,26 +366,35 @@
     display: flex;
     margin-top: 20px;
 
+    figure {
+      flex: 0 0 60px;
+      display: flex;
+      flex-grow: 0;
+      justify-content: center;
+      padding-left: 10px;
+    }
+
+    img {
+      max-width: 60px;
+      max-height: 60px;
+    }
+
     &.first{
       flex-direction: column;
 
+      figure {
+        flex: 0 0 100px;
+      }
+
       img {
-        height: 130px;
-        max-width: 130px;
+        max-width: 100px;
+        max-height: 100px;
       }
 
       .opinion {
         margin-top: 20px;
         text-align: center;
       }
-    }
-
-    figure {
-      flex: 0 0 130px;
-      display: flex;
-      flex-grow: 0;
-      justify-content: center;
-      padding-left: 10px;
     }
 
     .opinion {
