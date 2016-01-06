@@ -239,9 +239,11 @@
   margin-top: 0;
 
   .advertisement {
-    background-color: red;
-    height: 220px;
-    margin-bottom: 20px;
+    @include media-query(MEDIUM) {
+      background-color: red;
+      height: 220px;
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -325,6 +327,7 @@
 #home .opinions{
   width: 100%;
   display: inline-block;
+  margin-top: 20px;
 
   .section-name {
     @include section-name();
