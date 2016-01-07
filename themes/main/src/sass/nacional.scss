@@ -234,9 +234,12 @@
 }
 #home .sidebar {
   align-self: flex-start;
-  width: 220px;
+  width: 100%;
   margin-left: 20px;
   margin-top: 0;
+  @include media-query(MEDIUM) {
+    width: 220px;
+  }
 
   .advertisement {
     @include media-query(MEDIUM) {
@@ -327,7 +330,7 @@
 #home .opinions{
   width: 100%;
   display: inline-block;
-  margin-top: 20px;
+  padding-bottom: 25px;
 
   .section-name {
     @include section-name();
@@ -365,7 +368,6 @@
 
   @include media-query(MEDIUM) {
     width: 220px;
-    padding-bottom: 25px;
   }
 
 }
