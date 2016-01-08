@@ -330,7 +330,11 @@
 #home .opinions{
   width: 100%;
   display: inline-block;
-  padding-bottom: 25px;
+  padding: 20px 0;
+
+  @include media-query(MEDIUM) {
+    padding-top: 0;
+  }
 
   .section-name {
     @include section-name();
@@ -341,6 +345,11 @@
     max-width: 100px;
     height: 100px;
     align-self: center;
+
+    @include media-query(MEDIUM) {
+      height: 60px;
+      max-width: 60px;
+    }
   }
 
   .columnist + .columnist {
@@ -376,35 +385,37 @@
     display: flex;
     margin-top: 20px;
 
+    &.first {
+      @include media-query(MEDIUM) {
+        flex-direction: column;
+
+        .opinion {
+          margin-top: 20px;
+          text-align: center;
+        }
+      }
+
+      img {
+        height: 130px;
+        max-width: 130px;
+
+        @include media-query(MEDIUM) {
+          max-width: 100px;
+          height: 100px;
+
+        }
+      }
+    }
+
     figure {
-      flex: 0 0 60px;
+      flex: 0 0 130px;
       display: flex;
       flex-grow: 0;
       justify-content: center;
       padding-left: 10px;
-    }
 
-    img {
-      max-width: 60px;
-      max-height: 60px;
-      align-self: flex-start;
-    }
-
-    &.first{
-      flex-direction: column;
-
-      figure {
-        flex: 0 0 100px;
-      }
-
-      img {
-        max-width: 100px;
-        max-height: 100px;
-      }
-
-      .opinion {
-        margin-top: 20px;
-        text-align: center;
+      @include media-query(MEDIUM) {
+        flex: 0 0 80px;
       }
     }
 
