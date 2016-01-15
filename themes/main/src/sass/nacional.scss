@@ -447,19 +447,19 @@
 }
 
 #home .gallery-images{
-  max-width: 360px;
+  max-width: 460px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   @include picture-with-caption();
 
   figure {
-    max-height: 230px;
+    max-height: 285px;
     overflow: hidden;
   }
 
   figure, .images {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     background-color: rgba(50,50,50,1);
   }
@@ -475,7 +475,7 @@
 }
 
 #home .gallery-images .images .slider {
-  padding: 0 15px;
+  padding: 0 10px;
   height: 100px;
   overflow-y: scroll;
   display: flex;
@@ -526,41 +526,40 @@
   &::after {
     content: ">";
     color: white;
-    font-size: 1.2em;
+    font-size: 2.5em;
     z-index: 10;
-    font-weight: bold;
     font-family: 'Merriweather Sans', serif;
     padding-top: 25px;
-    padding-right: 10px;
+    padding-right: 5px;
     padding-left: 5px;
     right: 18px;
     height: 75px;
     background: rgba(19,19,19,0);
-    background: -moz-linear-gradient(top, rgba(19,19,19,0) 0%, rgba(0,0,0,1) 85%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(19,19,19,0)), color-stop(85%, rgba(0,0,0,1)));
-    background: -webkit-linear-gradient(top, rgba(19,19,19,0) 0%, rgba(0,0,0,1) 85%);
-    background: -o-linear-gradient(top, rgba(19,19,19,0) 0%, rgba(0,0,0,1) 85%);
-    background: -ms-linear-gradient(top, rgba(19,19,19,0) 0%, rgba(0,0,0,1) 85%);
-    background: linear-gradient(to bottom, rgba(19,19,19,0) 0%, rgba(0,0,0,1) 85%);
+    background: -moz-linear-gradient(left, rgba(19,19,19,0) 0%, rgba(0,0,0,1) 25%);
+    background: -webkit-gradient(left, color-stop(0%, rgba(19,19,19,0)), color-stop(25%, rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(left, rgba(19,19,19,0) 0%, rgba(0,0,0,1) 25%);
+    background: -o-linear-gradient(left, rgba(19,19,19,0) 0%, rgba(0,0,0,1) 25%);
+    background: -ms-linear-gradient(left, rgba(19,19,19,0) 0%, rgba(0,0,0,1) 25%);
+    background: linear-gradient(to right, rgba(19,19,19,0), rgba(0,0,0,1));
   }
 
   &::before {
     content: "<";
     color: white;
-    font-size: 1.2em;
+    font-size: 2.5em;
     z-index: 10;
-    font-weight: bold;
     font-family: 'Merriweather Sans', serif;
     padding-top: 25px;
-    padding-left: 10px;
+    padding-left: 5px;
     padding-right: 5px;
     left: 19px;
     height: 75px;
-    background: linear-gradient(
-            to right,
-            rgba(16, 16, 16, 1),
-            rgba(16, 16, 16, 0.2) 55%,
-            transparent
-            );
+    background: rgba(19,19,19,0);
+    background: -moz-linear-gradient(to left, rgba(19,19,19,0), rgba(0,0,0,1));
+    background: -webkit-gradient(to left, rgba(19,19,19,0), rgba(0,0,0,1));
+    background: -webkit-linear-gradient(to left, rgba(19,19,19,0), rgba(0,0,0,1));
+    background: -o-linear-gradient(to left, rgba(19,19,19,0), rgba(0,0,0,1));
+    background: -ms-linear-gradient(to left, rgba(19,19,19,0), rgba(0,0,0,1));
+    background: linear-gradient(to left, rgba(19,19,19,0), rgba(0,0,0,1));
   }
 }
