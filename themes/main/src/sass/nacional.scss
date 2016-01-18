@@ -300,6 +300,7 @@
 }
 
 #home .container-tertiary {
+  width: 100%;
   @include media-query(MEDIUM) {
     display: flex;
     width: 940px;
