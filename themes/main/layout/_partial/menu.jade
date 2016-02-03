@@ -1,23 +1,29 @@
 header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
-  figure.banner-header
-    a(href="#{ url_for('index.html') }", title="Link para a página principal")
-      img(src="#{ url_for('img/logo.png') }", alt="imagem banner")
+  div.banner-header
+    figure#hamburguer.menu-options(data-toggle="nav.menu-nav")
+      img(src="#{ url_for('img/hamburguer-menu.svg') }", alt="imagem banner")
+      nav.menu-nav(itemscope, itemtype="http://schema.org/SiteNavigationElement")
+        ul
+          li
+            a.active(itemprop="url", href="nacional")= "Nacional"
+            meta(itemprop="name",content="string")
+          li
+            a(itemprop="url", href="bem_viver")= "Bem Viver"
+            meta(itemprop="name",content="string")
+          li
+            a(itemprop="url", href="direitos_humanos")= "Direitos Humanos"
+            meta(itemprop="name",content="string")
+          li
+            a(itemprop="url", href="internacional")= "Internacional"
+            meta(itemprop="name",content="string")
+          li
+            a(itemprop="url", href="cultura")= "Cultura"
+            meta(itemprop="name",content="string")
+    figure
+      a(href="#{ url_for('index.html') }", title="Link para a página principal")
+        img#logo(src="#{ url_for('img/logo.png') }", alt="imagem banner")
+    figure
+      a(href="#{ url_for('index.html') }", title="Link para a página principal")
+        img#search(src="#{ url_for('img/search-icon.svg') }", alt="imagem banner")
   figure.menu-options(data-toggle="nav.menu-nav")
-    i.fa.fa-bars
-  nav.menu-nav(itemscope, itemtype="http://schema.org/SiteNavigationElement")
-    ul
-      li
-        a.active(itemprop="url", href="nacional")= "Nacional"
-        meta(itemprop="name",content="string")
-      li
-        a(itemprop="url", href="bem_viver")= "Bem Viver"
-        meta(itemprop="name",content="string")
-      li
-        a(itemprop="url", href="direitos_humanos")= "Direitos Humanos"
-        meta(itemprop="name",content="string")
-      li
-        a(itemprop="url", href="internacional")= "Internacional"
-        meta(itemprop="name",content="string")
-      li
-        a(itemprop="url", href="cultura")= "Cultura"
-        meta(itemprop="name",content="string")
+    

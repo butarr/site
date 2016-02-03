@@ -9,24 +9,8 @@
   transition:  left 0.4s ease-in-out;
 }
 
-#page-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: #FFF;
-  z-index: 1;
-}
-
 #page-header .menu-options{
-  width: 25px;
-  left: 0;
-  top: 5px;
-  cursor: pointer;
-  position: fixed;
-  padding: 10px;
-  border-radius: 0 10px 10px 0;
-  background: #FFF;
-  box-shadow: -3px 0 3px 0 rgba(0,0,0,0.42);
+
   transition: all 0.4s ease;
   @include transition-left();
 
@@ -85,9 +69,7 @@
   }
 }
 
-#page-header figure{
-  margin: 0;
-}
+
 
 #page-header .menu-nav ul{
   list-style: none;
@@ -137,24 +119,7 @@
 
 
 #page-header .banner-header{
-  height: 60px;
-  background-color: $bdf-red;
-  display: flex;
-  padding-left: 50px;
-  position: fixed;
-  width: 100%;
   transition: all 0.4s ease;
-
-  a {
-    display: flex;
-  }
-
-  img {
-    width: auto;
-    height: 50px;
-    align-self: center;
-  }
-
 
   @include media-query(MEDIUM) {
     height: 130px;
@@ -204,3 +169,4 @@
     top: 0;
   }
 }
+
