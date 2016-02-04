@@ -14,11 +14,7 @@
   transition: all 0.4s ease;
   @include transition-left();
 
-  .fa {
-    font-size: 1.9em;
-    color: $red;
 
-  }
 
   &.open{
     left: 240px;

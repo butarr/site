@@ -1,0 +1,45 @@
+@import '_includes/colors';
+  
+$lateral-margin: 20px;
+
+@mixin shadow{
+  -webkit-filter: drop-shadow( 1px 1px 1px #000 );
+          filter: drop-shadow( 1px 1px 1px #000 );
+}
+
+#page-header .banner-header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: $bdf-red;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include shadow;
+  
+  figure {
+    margin: 0;
+  }
+
+  img#hamburguer {
+    margin-left: $lateral-margin;
+    margin-top: 5px;
+    height: 24px;
+    @include shadow;
+  }
+
+  img#search {
+    height: 28px;
+    margin-right: $lateral-margin;
+    @include shadow;
+  }
+
+  img#logo {
+    width: 240px;
+    @include shadow;
+  }
+}
+
+

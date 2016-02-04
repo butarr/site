@@ -1,7 +1,7 @@
 header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
   div.banner-header
-    figure#hamburguer.menu-options(data-toggle="nav.menu-nav")
-      img(src="#{ url_for('img/hamburguer-menu.svg') }", alt="imagem banner")
+    figure.menu-options(data-toggle="nav.menu-nav")
+      img#hamburguer(src="#{ url_for('img/hamburguer-menu.svg') }", alt="imagem menu")
       nav.menu-nav(itemscope, itemtype="http://schema.org/SiteNavigationElement")
         ul
           li
@@ -21,9 +21,9 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
             meta(itemprop="name",content="string")
     figure
       a(href="#{ url_for('index.html') }", title="Link para a página principal")
-        img#logo(src="#{ url_for('img/logo.png') }", alt="imagem banner")
+        img#logo(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
     figure
       a(href="#{ url_for('index.html') }", title="Link para a página principal")
-        img#search(src="#{ url_for('img/search-icon.svg') }", alt="imagem banner")
+        img#search(src="#{ url_for('img/search-icon.svg') }", alt="imagem lupa")
   figure.menu-options(data-toggle="nav.menu-nav")
     
