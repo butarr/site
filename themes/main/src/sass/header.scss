@@ -3,8 +3,8 @@
 $lateral-margin: 20px;
 
 @mixin shadow{
-  -webkit-filter: drop-shadow( 1px 1px 1px #000 );
-          filter: drop-shadow( 1px 1px 1px #000 );
+  -webkit-filter: drop-shadow( 1px 1px 2px #000 );
+          filter: drop-shadow( 1px 1px 2px #000 );
 }
 
 #page-header .banner-header {
