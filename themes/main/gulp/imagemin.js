@@ -6,7 +6,7 @@ var gulp        = require('gulp'),
 
 module.exports = function(baseDir) {
 	return function() {
-		return gulp.src('src/img/**/*.{jpg,png,gif,ico}')
+		return gulp.src('src/img/**/*.{jpg,png,gif,ico,svg}')
 			.pipe(plumber())
 	    .pipe(imagemin({
 	      progressive: true,
