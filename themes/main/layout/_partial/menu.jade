@@ -19,9 +19,10 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
           li
             a(itemprop="url", href="cultura")= "Cultura"
             meta(itemprop="name",content="string")
-    figure
+    figure#logo_bdf
       a(href="#{ url_for('index.html') }", title="Link para a página principal")
-        img#logo(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
+        img.mobile#logo(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
+        img.desktop#logo(src="#{ url_for('img/logo-tagline.svg') }", alt="imagem brasil de fato")
     figure
       a(href="#{ url_for('') }", title="Lupa de Pesquisa")
         img#search(src="#{ url_for('img/search-icon.svg') }", alt="imagem lupa")  
