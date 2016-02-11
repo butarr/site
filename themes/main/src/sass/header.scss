@@ -1,7 +1,7 @@
 @import '_includes/colors';
 @import '_includes/query';
   
-$lateral-margin: 20px;
+$lateral-margin: 10px;
 
 @mixin shadow{
   -webkit-filter: drop-shadow( 1px 1px 2px #000 );
@@ -9,32 +9,47 @@ $lateral-margin: 20px;
 }
 
 #page-header .banner-header {
+  transition: all 0.4s ease;
   position: fixed;
   top: 0;
   z-index: 1;
   background-color: $bdf-red;
   width: 100%;
-  height: 70px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   @include shadow;
-  
+  @include media-query(MEDIUM){
+      height: 120px;
+      justify-content: center;
+  }
+
   figure {
-    margin: 0;
+    margin:0px;
   }
 
   img#hamburguer {
     margin-left: $lateral-margin;
     margin-top: 5px;
-    height: 24px;
+    height: 25px;
     @include shadow;
   }
 
   img#search {
-    height: 28px;
+    height: 25px;
     margin-right: $lateral-margin;
     @include shadow;
+  }
+
+  img#social-media {
+    display:none;
+    @include media-query(MEDIUM){
+      display:flex;
+      height: 25px;
+      margin-right: $lateral-margin;
+      @include shadow;
+    }
   }
 
   img#logo {
@@ -45,7 +60,7 @@ $lateral-margin: 20px;
     display:none;
     @include media-query(MEDIUM){
       display: inline-block;
-      width: 400px;
+      height: 83px;
     }
   }
 
@@ -58,11 +73,21 @@ $lateral-margin: 20px;
 
   #logo_bdf {
     @include media-query(MEDIUM){
+      flex-grow: 2;
       display: inline-block;
-      margin: auto;
+      margin-left: 28%;
     }
   }
-  
+
+  #icons {
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+    @include media-query(MEDIUM){
+      margin-right: 7.5%;
+    }
+
+  }
 }
 
 

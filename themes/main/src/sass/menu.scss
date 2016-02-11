@@ -118,8 +118,6 @@
   transition: all 0.4s ease;
 
   @include media-query(MEDIUM) {
-    height: 130px;
-    padding-left: 9.2%;
     display: flex;
     align-self: center;
     justify-content: start;

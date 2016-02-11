@@ -19,10 +19,22 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
           li
             a(itemprop="url", href="cultura")= "Cultura"
             meta(itemprop="name",content="string")
+            
     figure#logo_bdf
       a(href="#{ url_for('index.html') }", title="Link para a página principal")
         img.mobile#logo(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
         img.desktop#logo(src="#{ url_for('img/logo-tagline.svg') }", alt="imagem brasil de fato")
-    figure
-      a(href="#{ url_for('') }", title="Lupa de Pesquisa")
-        img#search(src="#{ url_for('img/search-icon.svg') }", alt="imagem lupa")  
+  
+    div#icons
+      figure
+        a(href="#{ url_for('http://www.facebook.com/brasildefato') }", title="Facebook do Brasil de Fato")
+          img#social-media(src="#{ url_for('img/social-media/facebook.svg') }", alt="imagem facebook") 
+      figure
+        a(href="#{ url_for('http://twitter.com/Brasil_de_Fato') }", title="Twitter do Brasil de Fato")
+          img#social-media(src="#{ url_for('img/social-media/twitter.svg') }", alt="imagem twitter")
+      figure
+        a(href="#{ url_for('http://www.youtube.com/user/brasildefato') }", title="Youtube do Brasil de Fato")
+          img#social-media(src="#{ url_for('img/social-media/youtube.svg') }", alt="imagem youtube")
+      figure 
+        a(href="#{ url_for('') }", title="Lupa de Pesquisa")
+          img#search(src="#{ url_for('img/search-icon.svg') }", alt="imagem lupa")
