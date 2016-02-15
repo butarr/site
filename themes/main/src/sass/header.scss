@@ -20,9 +20,9 @@ $lateral-margin: 10px;
   justify-content: space-between;
   align-items: center;
   @include shadow;
-  @include media-query(MEDIUM){
+  @include media-query(MEDIUM) {
       height: 120px;
-      justify-content: center;
+      justify-content: space-around;
   }
 
   figure {
@@ -44,8 +44,8 @@ $lateral-margin: 10px;
 
   img#social-media {
     display:none;
-    @include media-query(MEDIUM){
-      display:flex;
+    @include media-query(MEDIUM) {
+      display: flex;
       height: 25px;
       margin-right: $lateral-margin;
       @include shadow;
@@ -57,8 +57,8 @@ $lateral-margin: 10px;
   }
 
   .desktop {    
-    display:none;
-    @include media-query(MEDIUM){
+    display: none;
+    @include media-query(MEDIUM) {
       display: inline-block;
       height: 83px;
     }
@@ -66,27 +66,35 @@ $lateral-margin: 10px;
 
   .mobile {
     width: 240px;
-    @include media-query(MEDIUM){
+    @include media-query(MEDIUM) {
       display: none;
     }
   }
 
   #logo_bdf {
-    @include media-query(MEDIUM){
+    @include media-query(MEDIUM){ 
       flex-grow: 2;
-      display: inline-block;
-      margin-left: 28%;
+      display: flex;
+      justify-content: center;
+      width: 50%;
     }
   }
 
   #icons {
-    display:flex;
-    align-items:center;
-    flex-direction:row;
-    @include media-query(MEDIUM){
-      margin-right: 7.5%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    @include media-query(MEDIUM) {
+      width: 25%;
     }
+  }
 
+  .empty-div{
+    display: none;
+    @include media-query(MEDIUM){
+      display: inline-block;
+      width: 25%;
+    }
   }
 }
 
