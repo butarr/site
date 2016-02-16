@@ -3,7 +3,7 @@ $(document).ready(function() {
   $(window).scroll(function(){
     var top = $(this).scrollTop();
     var disapeared = ( top > 120 );
-    $('.menu-nav, .menu-options, .banner-header').toggleClass('smaller', disapeared);  
+    $('.menu-nav, .menu-options, .banner-header').toggleClass('contracted', disapeared);  
   });
 
   $('.menu-options').click(function() {

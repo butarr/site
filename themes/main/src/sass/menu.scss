@@ -24,7 +24,7 @@
   }
 
   @include media-query(MEDIUM){
-    display:none;
+    
   }
 
 }
@@ -54,7 +54,7 @@
   }
 
   @include media-query(MEDIUM) {
-    display: inline-block;
+    display: none;
     float: none;
     width: 100%;
     min-height: 30px;

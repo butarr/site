@@ -8,6 +8,7 @@ $lateral-margin: 10px;
           filter: drop-shadow( 1px 1px 2px #000 );
 }
 
+
 #page-header .banner-header {
   transition: all 0.4s ease;
   position: fixed;
@@ -28,6 +29,8 @@ $lateral-margin: 10px;
   figure {
     margin: 0;
   }
+
+ 
 
   .banner-elements {
     display: flex;
@@ -87,6 +90,10 @@ $lateral-margin: 10px;
     }
   }
 
+  #bdf-contracted {
+    display: none;
+    
+  }
 
 
   #icons {
@@ -99,7 +106,39 @@ $lateral-margin: 10px;
     }
   }
 
-
 }
 
+ #page-header .banner-header.contracted {
+    height: 60px;
+    display:flex;
+
+    
+    img.mobile, img.desktop {
+      display: none;
+    }
+    
+    img#bdf-contracted {
+      display: inline-block;
+      height: 30px;
+      @include shadow;
+    }
+
+    img#social-media {
+      display: none;
+    }
+
+    img#hamburguer {
+      display: inline-block;
+    }
+
+    #icons {
+      width: 50px;
+    }
+
+    .banner-elements {
+      justify-content: space-between;
+      width: 100%;
+    }
+
+  }
 
