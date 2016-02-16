@@ -17,7 +17,6 @@ $lateral-margin: 10px;
   width: 100%;
   height: 60px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   @include shadow;
   @include media-query(MEDIUM) {
@@ -28,6 +27,19 @@ $lateral-margin: 10px;
 
   figure {
     margin: 0;
+  }
+
+  .banner-elements {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    @include media-query(MEDIUM) {
+      width: 890px;
+      margin: auto;
+      justify-content: flex-end;
+    }
   }
 
   img#hamburguer {
@@ -64,7 +76,7 @@ $lateral-margin: 10px;
     display: none;
     @include media-query(MEDIUM) {
       display: inline-block;
-      height: 83px;
+      width: 450px;
     }
   }
 
@@ -75,32 +87,19 @@ $lateral-margin: 10px;
     }
   }
 
-  #logo_bdf {
-    @include media-query(MEDIUM){ 
-      flex-grow: 2;
-      display: flex;
-      justify-content: center;
-      width: 42%;
-    }
-  }
+
 
   #icons {
     display: flex;
     align-items: center;
     flex-direction: row;
     @include media-query(MEDIUM) {
-      padding-left: 5%;
-      width: 27.5%;
+      width: 200px;
+      justify-content: flex-end;
     }
   }
 
-  .empty-div{
-    display: none;
-    @include media-query(MEDIUM){
-      display: inline-block;
-      width: 27.5%;
-    }
-  }
+
 }
 
 
