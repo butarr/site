@@ -23,8 +23,10 @@
     left: 240px;
   }
 
-  @include media-query (MEDIUM){
-    display: none;
+  @include media-query(MEDIUM){
+    position: absolute;
+    width: 100%;
+    top: 119px;
   }
 
 }
@@ -107,11 +109,11 @@
     a {
       text-decoration:  none;
       color: white;
-      font-size: 1.3em;
-      font-weight: 400;
+      font-size: 1.1em;
+      font-weight: 800;
     }
     a.active {
-      font-weight: 700;
+      font-weight: 1000;
     }
   }
 }
