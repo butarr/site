@@ -9,22 +9,25 @@
   transition:  left 0.4s ease-in-out;
 }
 
-#page-header .menu-options{
+#page-header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
 
+#page-header .menu-options{
   transition: all 0.4s ease;
   @include transition-left();
-
-
 
   &.open{
     left: 240px;
   }
 
-  @include media-query(MEDIUM) {
+  @include media-query (MEDIUM){
     display: none;
   }
-}
 
+}
 
 #page-header .menu-nav{
   left: -240px;
