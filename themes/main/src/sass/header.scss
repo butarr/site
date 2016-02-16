@@ -84,7 +84,7 @@ $lateral-margin: 10px;
   }
 
   .mobile {
-    width: 240px;
+    height: 46px;
     @include media-query(MEDIUM) {
       display: none;
     }
@@ -114,14 +114,12 @@ $lateral-margin: 10px;
       display:flex;
 
       
-      img.mobile, img.desktop {
+      img.desktop {
         display: none;
       }
       
-      img#bdf-contracted {
+      img.mobile {
         display: inline-block;
-        height: 30px;
-        @include shadow;
       }
 
       img#social-media {
