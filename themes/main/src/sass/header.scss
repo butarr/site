@@ -109,36 +109,37 @@ $lateral-margin: 10px;
 }
 
  #page-header .banner-header.contracted {
-    height: 60px;
-    display:flex;
+    @include media-query(MEDIUM) {
+      height: 60px;
+      display:flex;
 
-    
-    img.mobile, img.desktop {
-      display: none;
-    }
-    
-    img#bdf-contracted {
-      display: inline-block;
-      height: 30px;
-      @include shadow;
-    }
+      
+      img.mobile, img.desktop {
+        display: none;
+      }
+      
+      img#bdf-contracted {
+        display: inline-block;
+        height: 30px;
+        @include shadow;
+      }
 
-    img#social-media {
-      display: none;
-    }
+      img#social-media {
+        display: none;
+      }
 
-    img#hamburguer {
-      display: inline-block;
-    }
+      img#hamburguer {
+        display: inline-block;
+      }
 
-    #icons {
-      width: 50px;
-    }
+      #icons {
+        width: 50px;
+      }
 
-    .banner-elements {
-      justify-content: space-between;
-      width: 100%;
+      .banner-elements {
+        justify-content: space-between;
+        width: 100%;
+      }
     }
-
   }
 
