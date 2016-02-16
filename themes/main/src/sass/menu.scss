@@ -24,9 +24,7 @@
   }
 
   @include media-query(MEDIUM){
-    position: absolute;
-    width: 100%;
-    top: 119px;
+    display:none;
   }
 
 }
