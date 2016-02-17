@@ -7,26 +7,32 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
           ul
             li
               a.active(itemprop="url", href="home")= "Home"
-              meta(itemprop="name",content="string")
+              meta(itemprop="name",content="string") 
+            hr
             li
               a(itemprop="url", href="tabloides")= "Tablóides"
               meta(itemprop="name",content="string")
+            hr
             li
               a(itemprop="url", href="nacional")= "Nacional"
               meta(itemprop="name",content="string")
+            hr
             li
               a(itemprop="url", href="internacional")= "Internacional"
               meta(itemprop="name",content="string")
+            hr
             li
               a(itemprop="url", href="cultura")= "Cultura"
               meta(itemprop="name",content="string")
+            hr
             li
               a(itemprop="url", href="direitos_humanos")= "Direitos Humanos"
               meta(itemprop="name",content="string")
+            hr
             li
               a(itemprop="url", href="bem_viver")= "Bem Viver"
               meta(itemprop="name",content="string")
-                      
+            hr         
       figure#logo_bdf
         a(href="#{ url_for('index.html') }", title="Link para a página principal")
           img.mobile#logo(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
