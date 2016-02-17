@@ -45,10 +45,10 @@
   @include transition-left();
   z-index: 3;
   padding: 0 20px;
+  top: 4px;
 
   &.open {
     left: 0;
-    top: 4px;
   }
 
   @include media-query(MEDIUM) {
