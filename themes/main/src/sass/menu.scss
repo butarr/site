@@ -75,6 +75,19 @@
   margin: 0 7px;
 }
 
+#page-header .menu-nav .menu-logos {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 7px 0px 7px; 
+
+  img#social-media-mobile {
+    height: 25px;
+    margin: 0 15px;
+  }
+}
+
 #close-bttn {
   height: 27px;
 }
