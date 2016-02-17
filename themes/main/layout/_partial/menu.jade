@@ -10,10 +10,6 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
               meta(itemprop="name",content="string") 
             hr
             li
-              a(itemprop="url", href="tabloides")= "Tablóides"
-              meta(itemprop="name",content="string")
-            hr
-            li
               a(itemprop="url", href="nacional")= "Nacional"
               meta(itemprop="name",content="string")
             hr
@@ -32,7 +28,23 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
             li
               a(itemprop="url", href="bem_viver")= "Bem Viver"
               meta(itemprop="name",content="string")
-            hr         
+            hr
+            li
+              a(itemprop="url", href="expediente")= "Expediente"
+              meta(itemprop="name",content="string")
+            hr
+            li
+              a(itemprop="url", href="parceiros")= "Parceiros"
+              meta(itemprop="name",content="string")
+            hr 
+            li
+              a(itemprop="url", href="publicidade")= "Publicidade"
+              meta(itemprop="name",content="string")
+            hr 
+            li
+              a(itemprop="url", href="contato")= "Contato"
+              meta(itemprop="name",content="string")
+            hr          
       figure#logo_bdf
         a(href="#{ url_for('index.html') }", title="Link para a página principal")
           img.mobile#logo(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
