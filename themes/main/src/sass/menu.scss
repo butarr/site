@@ -43,6 +43,8 @@
   position: fixed;
   table-layout: fixed;
   @include transition-left();
+  z-index: 3;
+  padding: 0 20px;
 
   &.open {
     left: 0;
@@ -62,6 +64,26 @@
     background-color: $bdf-red;
     padding:  0 8.5%;
   }
+}
+
+
+#page-header .menu-nav .menu-header {
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 7px;
+}
+
+#close-bttn {
+  height: 27px;
+}
+
+#open-bdf {
+  height: 40px;
+    @include media-query(MEDIUM) {
+      display: none;
+    }
 }
 
 #page-header .menu-nav ul{
@@ -110,8 +132,6 @@
 
 hr {
   display: block;
-  margin-right: 20px;
-  margin-left: 20px;
   border: 1px solid $bdf-red;
 }
 
@@ -165,4 +185,5 @@ hr {
     top: 0;
   }
 }
+
 

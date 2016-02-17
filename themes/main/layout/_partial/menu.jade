@@ -4,9 +4,10 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
       figure.menu-options(data-toggle="nav.menu-nav")
         img#hamburguer(src="#{ url_for('img/hamburguer-menu.svg') }", alt="imagem menu")
         nav.menu-nav(itemscope, itemtype="http://schema.org/SiteNavigationElement")
-          ul
-            li
-              img.mobile#logo(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
+          div.menu-header
+            img#close-bttn(src="#{ url_for('img/close-bttn.svg') }", alt="imagem botao fechar")
+            img#open-bdf(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
+          ul  
             hr
             li
               a.active(itemprop="url", href="home")= "Home"
