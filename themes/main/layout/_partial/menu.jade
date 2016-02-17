@@ -6,6 +6,9 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
         nav.menu-nav(itemscope, itemtype="http://schema.org/SiteNavigationElement")
           ul
             li
+              img.mobile#logo(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
+            hr
+            li
               a.active(itemprop="url", href="home")= "Home"
               meta(itemprop="name",content="string") 
             hr
