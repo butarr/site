@@ -9,42 +9,23 @@
   transition:  left 0.1s ease-in-out;
 }
 
-#page-header {
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-
 #page-header .menu-options{
   @include transition-left();
-
-  &.open{
-    left: 240px;
-  }
-
 }
 
 #page-header .menu-nav{
   left: -310px;
   width: 310px;
-  top: 0;
+  top: 5px;
   box-sizing: border-box;
-  padding-top: 5px;
   background: $bdf-redlight;
-  padding: 0;
-  min-height: 100vh;
   -webkit-box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.42);
   -moz-box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.42);
   box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.42);
-  color: #555;
-  display: table;
-  float: right;
   position: fixed;
-  table-layout: fixed;
   @include transition-left();
   z-index: 3;
   padding: 0 20px;
-  top: 4px;
 
   &.open {
     left: 0;
@@ -71,7 +52,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 7px;
+  margin: 0 13px;
 }
 
 #page-header .menu-nav .menu-logos {
@@ -79,7 +60,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 25px 7px 0px 7px; 
+  margin: 0px 7px 10px 7px; 
 
   img#social-media-mobile {
     height: 25px;
@@ -88,11 +69,11 @@
 }
 
 #close-bttn {
-  height: 27px;
+  height: 25px;
 }
 
 #open-bdf {
-  height: 40px;
+  height: 37px;
     @include media-query(MEDIUM) {
       display: none;
     }
@@ -116,7 +97,7 @@
 
 #page-header .menu-nav li{
   position: relative;
-  font-size: 1.2em;
+  font-size: 1.1em;
   padding: 0px;
   display: flex;
   justify-content: center;
