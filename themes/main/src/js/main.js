@@ -10,6 +10,7 @@ $(document).ready(function() {
     var toggle_el = $(this).data('toggle');
     $(toggle_el).toggleClass('open');
     $(this).toggleClass('open');
+    $('#home').toggleClass('mobile-menu-open');
   });
 
   if ($('.social-network')[0]) {

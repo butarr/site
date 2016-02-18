@@ -134,7 +134,7 @@ hr {
 }
 
 
-#page-header .banner-header{
+#page-header .banner-header {
   transition: all 0.4s ease;
 
   @include media-query(MEDIUM) {
@@ -150,10 +150,8 @@ hr {
   }
 }
 
-#page-header .banner-header img{
-  -webkit-transition: -webkit-transform 0.4s ease;
-  -moz-transition: -moz-transform 0.4s ease;
-  transition: transform 0.4s ease;
+.mobile-menu-open {
+  position: fixed;
 }
 
 
