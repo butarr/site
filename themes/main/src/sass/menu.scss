@@ -2,11 +2,11 @@
 @import '_includes/query';
 
 @mixin transition-left(){
-  -webkit-transition:  left 0.4s ease-in-out;
-  -moz-transition:  left 0.4s ease-in-out;
-  -ms-transition:  left 0.4s ease-in-out;
-  -o-transition:  left 0.4s ease-in-out;
-  transition:  left 0.4s ease-in-out;
+  -webkit-transition:  left 0.1s ease-in-out;
+  -moz-transition:  left 0.1s ease-in-out;
+  -ms-transition:  left 0.1s ease-in-out;
+  -o-transition:  left 0.1s ease-in-out;
+  transition:  left 0.1s ease-in-out;
 }
 
 #page-header {
@@ -16,7 +16,6 @@
 }
 
 #page-header .menu-options{
-  transition: all 0.4s ease;
   @include transition-left();
 
   &.open{
@@ -117,7 +116,7 @@
 
 #page-header .menu-nav li{
   position: relative;
-  font-size: 1.3em;
+  font-size: 1.2em;
   padding: 0px;
   display: flex;
   justify-content: center;
