@@ -8,10 +8,14 @@ $lateral-margin: 10px;
           filter: drop-shadow( 1px 1px 2px #000 );
 }
 
+#page-header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
 
 #page-header .banner-header {
   transition: all 0.4s ease;
-  position: fixed;
   top: 0;
   z-index: 1;
   background-color: $bdf-red;
@@ -84,7 +88,7 @@ $lateral-margin: 10px;
   }
 
   .mobile {
-    height: 46px;
+    height: 2.5em;
     @include media-query(MEDIUM) {
       display: none;
     }
