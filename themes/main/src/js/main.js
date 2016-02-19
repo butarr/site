@@ -6,11 +6,18 @@ $(document).ready(function() {
     $('.menu-nav, .menu-options, .banner-header').toggleClass('contracted', disapeared);  
   });
 
-  $('.menu-options').click(function() {
-    var toggle_el = $(this).data('toggle');
-    $(toggle_el).toggleClass('open');
-    $(this).toggleClass('open');
-    $('#home').toggleClass('mobile-menu-open');
+  $('#hamburguer').click(function() {
+    var toggle_el = $('.menu-options').data('toggle');
+    $(toggle_el).addClass('open');
+    $(this).addClass('open');
+    $('#home').addClass('mobile-menu-open');
+  });
+
+  $('#close-bttn').click(function() {
+    var toggle_el = $('.menu-options').data('toggle');
+    $(toggle_el).removeClass('open');
+    $(this).removeClass('open');
+    $('#home').removeClass('mobile-menu-open');
   });
 
   if ($('.social-network')[0]) {

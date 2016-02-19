@@ -89,6 +89,7 @@ $lateral-margin: 10px;
 
   .mobile {
     height: 2.5em;
+    padding: 0 10px;
     @include media-query(MEDIUM) {
       display: none;
     }
