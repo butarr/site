@@ -26,7 +26,6 @@
   position: absolute;
   @include transition-left();
   z-index: 3;
-  padding: 0 20px;
 
   &.open {
     left: 0;
@@ -53,7 +52,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 2px;
+  padding: 0 20px;
 }
 
 #page-header .menu-nav .menu-scrollable {
@@ -90,7 +89,7 @@
   list-style: none;
   margin: 0;
   width: 100%;
-  padding: 0;
+  padding: 0 20px;
 
   @include media-query(MEDIUM) {
     margin: 0;
