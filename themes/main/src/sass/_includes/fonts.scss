@@ -167,6 +167,14 @@
   }
 }
 
+@mixin __footer(){
+  font-family: 'Merriweather Sans', serif;
+
+  a {
+    font-family: 'Merriweather Sans', serif;
+  }
+}
+
 @mixin get-font($type){
 
   @if( $type == POST ){
@@ -192,5 +200,8 @@
   }
   @else if( $type == NACIONAL ){
     @include __nacional();
+  }
+  @else if( $type == FOOTER ){
+    @include __footer();
   }
 }

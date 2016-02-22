@@ -1,9 +1,11 @@
 @import '_includes/query';
+@import '_includes/fonts';
 
 #bdf-footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	@include get-font(FOOTER);
 
 	.mobile {
 		margin-top: 25px;
@@ -40,10 +42,15 @@
 
 	ul {
 			list-style: none;
+			margin: 0;
 	}
 
 	a {
 		color: white;
+	}
+
+	li {
+		padding: 2px 0;
 	}
 
 	.footer-items {
