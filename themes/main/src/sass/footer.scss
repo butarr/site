@@ -7,13 +7,60 @@
 	align-items: center;
 	@include get-font(FOOTER);
 
-	.mobile {
-		margin-top: 25px;
-		height: 2.4em;		
+	@include media-query(MEDIUM) {
+		width: 1060px;
+		padding: 0 60px 60px 60px;
+		align-items: flex-start;
+		margin: auto;
 	}
 
-	figure {
-		margin: 0 10px;
+	figure#bdf-logo-footer {
+		margin: 0;
+		padding-bottom: 10px;
+	}
+
+	.mobile {
+		margin-top: 25px;
+		height: 2.4em;	
+
+		@include media-query(MEDIUM) {
+			margin-top: 10px;
+		}
+
+	}
+
+	ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+	}
+
+	li {
+		padding: 2px 0;
+	}
+
+	a {
+		color: white;
+	}
+
+	.footer-items {
+		@include media-query(MEDIUM) {
+			display:flex;
+		}
+	}
+
+	.desktop-icons {
+		@include media-query(MEDIUM) {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			margin-left: 95px;
+
+			p {
+				margin-left: 10px;
+				padding-top: 2px;
+			}
+		}
 	}
 
 	#icons {
@@ -22,6 +69,10 @@
 		align-items: center;
  		margin-bottom: 20px;
     margin-top: 5px;
+
+    figure {
+			margin: 0 10px;
+		}
 
 		.social-media {
 			height: 30px;
@@ -37,37 +88,6 @@
 
 		@include media-query(MEDIUM) {
 				height: 25px;
-		}
-	}
-
-	ul {
-			list-style: none;
-			margin: 0;
-	}
-
-	a {
-		color: white;
-	}
-
-	li {
-		padding: 2px 0;
-	}
-
-	.footer-items {
-		@include media-query(MEDIUM) {
-			display:flex;
-		}
-	}
-
-	.desktop-icons {
-		@include media-query(MEDIUM) {
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-
-			p {
-				margin-left: 10px;
-			}
 		}
 	}
 }
