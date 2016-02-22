@@ -2,6 +2,21 @@ footer#bdf-footer
   figure#logo-bdf
     a(href="#{ url_for('index.html') }", title="Link para a página principal")
       img.mobile#logo(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
+  nav
+    ul
+      li
+        a.active(itemprop="url", href="expediente")= "Expediente"
+        meta(itemprop="name",content="string") 
+      li
+        a.active(itemprop="url", href="parceiros")= "Parceiros"
+        meta(itemprop="name",content="string") 
+      li
+        a.active(itemprop="url", href="publicidade")= "Publicidade"
+        meta(itemprop="name",content="string") 
+      li
+        a.active(itemprop="url", href="contato")= "Contato"
+        meta(itemprop="name",content="string") 
+  p Social:
   div#icons
     figure
       a(target="_blank", href="#{ url_for('http://www.facebook.com/brasildefato') }", title="Facebook do Brasil de Fato")
