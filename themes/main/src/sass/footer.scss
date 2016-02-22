@@ -1,0 +1,30 @@
+#bdf-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.mobile {
+		margin-top: 25px;
+		height: 2.4em;		
+	}
+
+	figure {
+		margin: 0 15px;
+	}
+
+	#icons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+ 		margin-bottom: 20px;
+    margin-top: 10px;
+
+		.social-media {
+			height: 30px;
+		}
+	}
+
+	#youtube {
+		height: 40px;
+	}
+}
