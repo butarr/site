@@ -2,7 +2,7 @@ extend base
 
 append content
   section#home
-    div.main
+    section.main
       if page.featured
         section.featured(itemscope, itemtype="http://schema.org/ItemList")
           h1.section-name(itemprop="name") Últimas Notícias
@@ -49,7 +49,7 @@ append content
                 h1.title(itemprop="headline")= post.title
               meta(itemprop="datePublished", content= post.date)
 
-    div.sidebar
+    aside.sidebar
       article.advertisement
       if page.opinions
         section.opinions(itemscope, itemtype="http://schema.org/ItemList")
