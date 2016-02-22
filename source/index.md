@@ -41,7 +41,26 @@ featured:
     description: "A Vale, uma das proprietárias da Samarco, empresa responsável pelas barragens que se romperam em Mariana (MG). Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun"
     title: "\"Se os deputados não têm coragem de tirar Cunha, nós temos\", diz jovem em protesto"
     path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
-
+  -
+    cover:
+      url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
+      small: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg"
+      subtitle: "Legenda aqui"
+      credits: "Fulano de tal"
+    date: "2015-12-02T13:47:40-03:00"
+    description: "A Vale, uma das proprietárias da Samarco, empresa responsável pelas barragens que se romperam em Mariana (MG). Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun"
+    title: "A pior empresa do mundo"
+    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  -
+    cover:
+      url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
+      small: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg"
+      subtitle: "Legenda aqui"
+      credits: "Fulano de tal"
+    date: "2015-12-02T13:47:40-03:00"
+    description: "A Vale, uma das proprietárias da Samarco, empresa responsável pelas barragens que se romperam em Mariana (MG). Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun"
+    title: "\"Se os deputados não têm coragem de tirar Cunha, nós temos\", diz jovem em protesto"
+    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 secondary:
   -
     hat: Preconceito

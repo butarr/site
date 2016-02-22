@@ -9,7 +9,7 @@ append content
           meta(itemprop="itemListOrder", content="http://schema.org/ItemListOrderDescending")
           each post, index in page.featured
             - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-            - var position = { 0: 'first', 1: 'second', 2: 'third', 3: 'forth' }
+            - var position = { 0: 'first', 1: 'second', 2: 'third', 3: 'forth', 4: 'third', 5: 'forth' }
 
             article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class=position[index])
               if (position[index] == 'first')
