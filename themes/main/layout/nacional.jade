@@ -56,15 +56,12 @@ append content
           h1.section-name Colunistas
           each opinion, index in page.opinions
             - var columnist = site.data.columnists[opinion.columnist]
-            - var position = { 0: 'first'}
-            article.columnist(itemscope, itemtype="http://schema.org/BlogPosting", itemprop="itemListElement", class=position[index])
+            article.columnist(itemscope, itemtype="http://schema.org/BlogPosting", itemprop="itemListElement")
               figure
                 img(src= columnist.photo, alt="Imagem de perfil do colunista", title="Imagem de perfil do colunista", itemtype="https://schema.org/Person", itemprop="image")
               section.opinion
                 h1.name(itemtype="https://schema.org/Person", itemprop="name")= columnist.name
                 h2.title(itemprop="headline")= opinion.title
-                date(datetime=opinion.date)= moment(opinion.date).format('L')
-                meta(content=opinion.date, itemprop="datePublished")
 
     section.container-tertiary
 
