@@ -203,7 +203,7 @@
   }
 }
 
-#home .featured .second, .third, .forth{
+#home .featured .second, .third{
   .title {
     @include media-query(MEDIUM) {
       border-left: 3px solid $gray-lighter;
@@ -214,11 +214,13 @@
 }
 
 #home .featured .forth {
+  background-color: $gray-background;
+  border-top: 3px solid $red;
+  padding: 10px;
+
   .description{
     display: none;
   }
-
-  background-color: $gray-background;
 }
 
 #home section + section {
