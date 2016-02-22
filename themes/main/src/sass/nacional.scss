@@ -217,6 +217,8 @@
   .description{
     display: none;
   }
+
+  background-color: $gray-background;
 }
 
 #home section + section {
@@ -248,7 +250,7 @@
 }
 
 #home .secondary {
-  background-color: $gray-medium;
+  background-color: $gray-background;
   border-top: 1px solid $gray-light;
   border-bottom: 1px solid $gray-light;
   flex-flow: row wrap;
@@ -401,7 +403,7 @@
 }
 
 #home .picture {
-    background-color: $gray-medium;
+    background-color: $gray-background;
     border-top: 1px solid $gray-light;
     border-bottom: 1px solid $gray-light;
     padding: 20px 0;
