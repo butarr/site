@@ -1,32 +1,38 @@
 @import '_includes/query';
 @import '_includes/fonts';
+@import '_includes/colors';
+
+$text-padding: 2px;
+$social-margin: 10px;
 
 #bdf-footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	@include get-font(FOOTER);
+	width: 100%;
+	margin: 20px 0 0 0;
+	padding: 20px 0;
 
-	@include media-query(MEDIUM) {
-		width: 1060px;
-		padding: 0 60px 60px 60px;
-		align-items: flex-start;
-		margin: 20px auto 0 auto;
+	#container {
+		
+		@include media-query(MEDIUM) {
+			width: 1060px;
+			padding: 20px 60px 20px 60px;
+			align-items: flex-start;
+			margin: 0 auto;
+		}
 	}
 
 	figure#bdf-logo-footer {
-		margin: 0;
-		padding-bottom: 10px;
+		margin: 0 0 10px 0;
 	}
 
-	.mobile {
-		margin-top: 25px;
-		height: 2.4em;	
-
+	#logo {
+		height: 2.4em;
 		@include media-query(MEDIUM) {
-			margin-top: 10px;
-		}
-
+			height: 2.9em;
+		}	
 	}
 
 	ul {
@@ -36,7 +42,7 @@
 	}
 
 	li {
-		padding: 2px 0;
+		padding: $text-padding;
 	}
 
 	a {
@@ -56,13 +62,13 @@
 		}
 	}
 
-	.desktop-icons {
+	.social-block {
 		p {
 			display: none;
 			@include media-query(MEDIUM) {
 				display: inline-block;
-				margin-left: 10px;
-				padding-top: 2px;
+				margin-left: $social-margin;
+				padding-top: $text-padding;
 			}
 		}
 
@@ -70,7 +76,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-			margin-left: 95px;
+			margin-left: 120px;
 		}
 	}
 
@@ -82,7 +88,7 @@
     margin-top: 5px;
 
     figure {
-			margin: 0 10px;
+			margin: 0 $social-margin;
 		}
 
 		.social-media {
@@ -92,13 +98,13 @@
 				height: 20px;
 			}
 		}
-	}
 
-	#youtube {
+		#youtube {
 		height: 40px;
 
-		@include media-query(MEDIUM) {
-				height: 25px;
+			@include media-query(MEDIUM) {
+					height: 25px;
+			}
 		}
 	}
 }
