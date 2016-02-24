@@ -10,14 +10,12 @@ $(document).ready(function() {
     var toggle_el = $('.menu-options').data('toggle');
     $(toggle_el).addClass('open');
     $(this).addClass('open');
-    $('#home').addClass('mobile-menu-open');
   });
 
   $('#close-bttn').click(function() {
     var toggle_el = $('.menu-options').data('toggle');
     $(toggle_el).removeClass('open');
     $(this).removeClass('open');
-    $('#home').removeClass('mobile-menu-open');
   });
 
   if ($('.social-network')[0]) {
