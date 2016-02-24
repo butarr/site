@@ -36,18 +36,7 @@ append content
                   p.description= post.description
               meta(itemprop="datePublished", content=post.date)
 
-      if page.secondary
-        section.secondary(itemscope, itemtype="http://schema.org/ItemList")
-          meta(itemprop="itemListOrder", content="http://schema.org/ItemListUnordered")
-          each post in page.secondary
-            - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-            article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
-              span.hat(itemprop="about")= post.hat
-              a(href=post.path)
-                img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
-              a(href=post.path)
-                h1.title(itemprop="headline")= post.title
-              meta(itemprop="datePublished", content= post.date)
+
 
     aside.sidebar
       article.advertisement
@@ -84,19 +73,4 @@ append content
               h1.title(itemprop="caption") O Graffiti como arte urbana
               h2.credits(itemprop="creator") Gêmeos
 
-    if page.gallery
-      section.gallery-images
-        h1.section-name Galeria
-        - var firstImage = page.gallery[0]
-        figure(itemscope, itemtype="http://schema.org/ImageObject")
-          img(src=firstImage.cover['small'])
-          meta(itemprop="contentUrl", content=firstImage.cover['small'])
-          figcaption
-            h1.title(itemprop="caption")= firstImage.cover.subtitle
-            h2.credits(itemprop="creator")= firstImage.cover.credits
-        section.images
-          section.slider
-            each image, index in page.gallery
-              - var attributes = {'data-large-image': image.cover['small'], 'data-credits': image.cover['credits'], 'data-title': image.cover['subtitle'], 'alt': image.cover['subtitle'], 'title': image.cover['subtitle']};
-              - var active = (index === 0) ? 'active' : '';
-              img(src=image.cover['thumbnail'], class=active)&attributes(attributes)
+

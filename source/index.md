@@ -61,69 +61,6 @@ featured:
     description: "A Vale, uma das proprietárias da Samarco, empresa responsável pelas barragens que se romperam em Mariana (MG). Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun"
     title: "\"Se os deputados não têm coragem de tirar Cunha, nós temos\", diz jovem em protesto"
     path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
-secondary:
-  -
-    hat: Preconceito
-    cover:
-      url: "//farm6.staticflickr.com/5782/23469650266_f05c73b5e0_b.jpg"
-      small: "//farm6.staticflickr.com/5782/23469650266_f05c73b5e0_n.jpg"
-      subtitle: "Legenda"
-      credits: "Fotografo"
-    date: "2015-12-02T13:47:40-03:00"
-    title: "Mulheres Negras organizam marcha nacional"
-    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
-  -
-    hat: Agressão
-    cover:
-      url: "//farm1.staticflickr.com/775/22867505634_e0ce2b20c7_b.jpg"
-      small: "//farm1.staticflickr.com/775/22867505634_e0ce2b20c7_n.jpg"
-      subtitle: "Legenda"
-      credits: "Fotografo"
-    date: "2015-12-02T13:47:40-03:00"
-    title: "Artistas agredidos por seguranças vão processar MetrôRio"
-    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
-  -
-    hat: Homenagem
-    cover:
-      url: "//farm1.staticflickr.com/760/22867514814_a2ca24ab80_b.jpg"
-      small: "//farm1.staticflickr.com/760/22867514814_a2ca24ab80_n.jpg"
-      subtitle: "Legenda"
-      credits: "Fotografo"
-    date: "2015-12-02T13:47:40-03:00"
-    title: "Morre aos 90 anos líder guerrilheira Zilda Xavier da Silva"
-    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
-  -
-    hat: Ocupe
-    cover:
-      url: "//farm6.staticflickr.com/5817/23495844275_35efde962c_b.jpg"
-      small: "//farm6.staticflickr.com/5817/23495844275_35efde962c_n.jpg"
-      subtitle: "Legenda"
-      credits: "Fotografo"
-    date: "2015-12-02T13:47:40-03:00"
-    title: "Podemos, com desobediência civil, participar das decisões"
-    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
-tertiary:
-  -
-    cover:
-      url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
-      small: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg"
-      subtitle: "Legenda aqui"
-      credits: "Fulano de tal"
-    date: "2015-12-02T13:47:40-03:00"
-    description: "No Dia Internacional do Combate à Violência Contra a Mulher, em 25 de novembro, agressões físicas t psicológicas na hora do parto também são lembrados"
-    title: "Violência contra a mulher: uma em cada quatro já sofreu agressões no parto"
-    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
-  -
-    cover:
-      url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
-      small: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg"
-      subtitle: "Legenda aqui"
-      credits: "Fulano de tal"
-    date: "2015-12-02T13:47:40-03:00"
-    description: "Segundo especialistas a flexibilização do código de mineradores e falta do Marco Regulatório podem contribuir para novos acidentes"
-    title: "Lobby de mineradoras está entre causas da tragédias em Mariana"
-    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
-
 opinions:
   -
     columnist: "rodrigovieira18@gmail.com"
@@ -192,4 +129,45 @@ gallery:
       thumbnail: "//farm6.staticflickr.com/5817/23495844275_35efde962c_t.jpg"
       subtitle: "Legendado esse filme"
       credits: "Felipe"
+secondary:
+  -
+    hat: Preconceito
+    cover:
+      url: "//farm6.staticflickr.com/5782/23469650266_f05c73b5e0_b.jpg"
+      small: "//farm6.staticflickr.com/5782/23469650266_f05c73b5e0_n.jpg"
+      subtitle: "Legenda"
+      credits: "Fotografo"
+    date: "2015-12-02T13:47:40-03:00"
+    title: "Mulheres Negras organizam marcha nacional"
+    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  -
+    hat: Agressão
+    cover:
+      url: "//farm1.staticflickr.com/775/22867505634_e0ce2b20c7_b.jpg"
+      small: "//farm1.staticflickr.com/775/22867505634_e0ce2b20c7_n.jpg"
+      subtitle: "Legenda"
+      credits: "Fotografo"
+    date: "2015-12-02T13:47:40-03:00"
+    title: "Artistas agredidos por seguranças vão processar MetrôRio"
+    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  -
+    hat: Homenagem
+    cover:
+      url: "//farm1.staticflickr.com/760/22867514814_a2ca24ab80_b.jpg"
+      small: "//farm1.staticflickr.com/760/22867514814_a2ca24ab80_n.jpg"
+      subtitle: "Legenda"
+      credits: "Fotografo"
+    date: "2015-12-02T13:47:40-03:00"
+    title: "Morre aos 90 anos líder guerrilheira Zilda Xavier da Silva"
+    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  -
+    hat: Ocupe
+    cover:
+      url: "//farm6.staticflickr.com/5817/23495844275_35efde962c_b.jpg"
+      small: "//farm6.staticflickr.com/5817/23495844275_35efde962c_n.jpg"
+      subtitle: "Legenda"
+      credits: "Fotografo"
+    date: "2015-12-02T13:47:40-03:00"
+    title: "Podemos, com desobediência civil, participar das decisões"
+    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 ---

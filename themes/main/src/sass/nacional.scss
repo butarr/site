@@ -257,8 +257,8 @@
   border-bottom: 1px solid $gray-light;
   flex-flow: row wrap;
   display: flex;
-  -webkit-justify-content:         space-around;
-  justify-content:         space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
   padding-top: 20px;
   margin: 0 -10px;
 
@@ -402,6 +402,14 @@
     .opinion {
       flex-grow: 1;
     }
+}
+
+#home .galleries {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 
 #home .picture {
