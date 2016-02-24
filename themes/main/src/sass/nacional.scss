@@ -40,12 +40,12 @@
 
 #home {
   width: 100%;
+  max-width: 460px;
+  margin: 80px auto 20px auto;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin-top: 80px;
   padding: 0 10px;
-  padding-bottom: 20px;
 
   h1, h2 {
     margin-top: 0;
@@ -55,6 +55,7 @@
 
   @include media-query(MEDIUM) {
     margin: 150px auto 0 auto;
+    max-width: 1060px;
     width: 1060px;
     padding: 0 60px;
   }
