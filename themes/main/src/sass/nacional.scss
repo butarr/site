@@ -45,7 +45,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  padding: 0 10px;
+
 
   h1, h2 {
     margin-top: 0;
@@ -55,9 +55,8 @@
 
   @include media-query(MEDIUM) {
     margin: 150px auto 0 auto;
-    max-width: 1060px;
-    width: 1060px;
-    padding: 0 60px;
+    max-width: 1160px;
+    width: 1160px;
   }
 
   a {
@@ -66,9 +65,7 @@
     &:hover {
       color: $link-hover;
     }
-
   }
-
 }
 
 #home figure {
@@ -106,7 +103,7 @@
   @include media-query(MEDIUM) {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: flex-end;
   }
 
   article{
@@ -194,13 +191,13 @@
 #home .featured .first, .third {
   @include media-query(MEDIUM) {
     width: 65%;
-    margin-right: 20px;
   }
 }
 
 #home .featured .second, .forth {
   @include media-query(MEDIUM) {
     width: 30%;
+    margin-left: 10px;
   }
 }
 
@@ -238,8 +235,9 @@
   align-self: flex-start;
   width: 100%;
   margin-top: 0;
+  
   @include media-query(MEDIUM) {
-    margin-left: 20px;
+    margin-left: 10px;
     width: 220px;
   }
 
@@ -247,8 +245,22 @@
     @include media-query(MEDIUM) {
       background-color: red;
       height: 220px;
+      width: 220px;
       margin-bottom: 20px;
     }
+  }
+}
+
+#home .contextual-sidebar {
+  align-self: flex-start;
+  background-color: red;
+  height: 220px;
+  margin-bottom: 20px;
+  width: 100%;
+
+  @include media-query(MEDIUM) {
+    margin-left: 10px;
+    width: 220px;
   }
 }
 

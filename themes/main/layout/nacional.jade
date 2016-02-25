@@ -36,8 +36,6 @@ append content
                   p.description= post.description
               meta(itemprop="datePublished", content=post.date)
 
-
-
     aside.sidebar
       article.advertisement
       if page.opinions
@@ -51,6 +49,7 @@ append content
               section.opinion
                 h1.name(itemtype="https://schema.org/Person", itemprop="name")= columnist.name
                 h2.title(itemprop="headline")= opinion.title
+    aside.contextual-sidebar
 
     if page.gallery
       section.galleries
@@ -106,5 +105,3 @@ append content
             figcaption
               h1.title(itemprop="caption") O Graffiti como arte urbana
               h2.credits(itemprop="creator") Gêmeos
-
-
