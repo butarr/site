@@ -22,11 +22,11 @@ $lateral-margin: 10px;
   height: 60px;
   display: flex;
   align-items: center;
-  @include shadow;
   @include media-query(MEDIUM) {
       height: 120px;
       flex-wrap: wrap;
       justify-content: space-around;
+      border-bottom: 1px solid $red-dark;
   }
 
   figure {

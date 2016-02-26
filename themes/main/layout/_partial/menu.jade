@@ -74,3 +74,24 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
         figure 
           a(href="#{ url_for('') }", title="Lupa de Pesquisa")
             img#search(src="#{ url_for('img/search-icon.svg') }", alt="imagem lupa")
+  div.banner-options
+    ul
+      li
+        a(itemprop="url", href="nacional")= "Nacional"
+        meta(itemprop="name",content="string")
+      hr
+      li
+        a(itemprop="url", href="internacional")= "Internacional"
+        meta(itemprop="name",content="string")
+      hr
+      li
+        a(itemprop="url", href="cultura")= "Cultura"
+        meta(itemprop="name",content="string")
+      hr
+      li
+        a(itemprop="url", href="direitos_humanos")= "Direitos Humanos"
+        meta(itemprop="name",content="string")
+      hr
+      li
+        a(itemprop="url", href="bem_viver")= "Bem Viver"
+        meta(itemprop="name",content="string")

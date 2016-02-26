@@ -151,6 +151,44 @@ hr {
   }
 }
 
+#page-header .banner-options { 
+  display: none;
+
+  @include media-query(MEDIUM) {
+    display: block;
+  }
+
+  background: $bdf-red;
+
+  ul {
+    height: 40px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  
+    li {
+      display: inline-block;
+
+      a {
+        color: white;
+        font-family: 'Merriweather', serif;
+        font-size: 1em;
+        font-weight: bold;
+      }
+    }
+
+    hr {
+      height: 20px;
+      margin: 0 20px;
+      border: 1px solid $red-dark;
+    }
+  }
+}
+
+
+
 
 
 
