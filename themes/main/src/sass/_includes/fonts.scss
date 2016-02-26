@@ -177,6 +177,14 @@
   }
 }
 
+@mixin __menu(){
+  a {
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+
 @mixin get-font($type){
 
   @if( $type == POST ){
@@ -205,5 +213,8 @@
   }
   @else if( $type == FOOTER ){
     @include __footer();
+  }
+  @else if( $type == MENU ){
+    @include __menu();
   }
 }

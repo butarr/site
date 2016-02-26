@@ -1,5 +1,6 @@
 @import '_includes/colors';
 @import '_includes/query';
+@import '_includes/fonts';
 
 @mixin transition-left(){
   -webkit-transition:  left 0.1s ease-in-out;
@@ -170,12 +171,10 @@ hr {
   
     li {
       display: inline-block;
+      @include get-font(MENU);
 
       a {
         color: white;
-        font-family: 'Merriweather', serif;
-        font-size: 1em;
-        font-weight: bold;
       }
     }
 
