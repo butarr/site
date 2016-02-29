@@ -9,11 +9,7 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
             a(href="#{ url_for('/') }")
               img#open-bdf(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
           div.menu-scrollable
-            ul  
-              hr
-              li
-                a.active(itemprop="url", href="home")= "Home"
-                meta(itemprop="name",content="string") 
+            ul
               hr
               li
                 a(itemprop="url", href="nacional")= "Nacional"
