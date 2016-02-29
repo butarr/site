@@ -3,53 +3,100 @@ extend base
 append content
   section#home
     section.main
-      if page.featured
-        section.featured(itemscope, itemtype="http://schema.org/ItemList")
-          h1.section-name(itemprop="name") Últimas Notícias
-          meta(itemprop="itemListOrder", content="http://schema.org/ItemListOrderDescending")
-          each post, index in page.featured
+      section.featured(itemscope, itemtype="http://schema.org/ItemList")
+        h1.section-name(itemprop="name") Últimas Notícias
+        meta(itemprop="itemListOrder", content="http://schema.org/ItemListOrderDescending")
+        if page.featured_big_picture
+          each post in page.featured_big_picture
             - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-            - var position = { 0: 'first', 1: 'second', 2: 'third', 3: 'forth', 4: 'third', 5: 'forth' }
-
-            article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class=position[index])
-              if (position[index] == 'first')
-                figure
-                  a(href=post.path)
-                    img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
-                  figcaption
-                    a(href=post.path)
-                      h1.title(itemprop="headline")= post.title
+            article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class="featured_big_picture")
+              figure
                 a(href=post.path)
-                  p.description= post.description
-              else if (position[index] == 'second')
-                figure
+                  img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
+                figcaption
+                  a(href=post.path)
+                    h1.title(itemprop="headline")= post.title
+              a(href=post.path)
+                p.description= post.description
+       
+        if page.featured_small_picture_1
+          each post in page.featured_small_picture_1
+            - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+            article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class="featured_small_picture")
+              figure
                   a(href=post.path)
                     img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
                 a(href=post.path)
                   h1.title(itemprop="headline")= post.title
                 a(href=post.path)
                   p.description= post.description
-              else
+        if page.featured_small_picture_2
+          each post in page.featured_small_picture_2
+            - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+            article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class="featured_small_picture")
+              figure
+                  a(href=post.path)
+                    img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
                 a(href=post.path)
                   h1.title(itemprop="headline")= post.title
                 a(href=post.path)
                   p.description= post.description
+        if page.featured_text
+          each post in page.featured_text
+            article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class="featured_text")
+              a(href=post.path)
+                h1.title(itemprop="headline")= post.title
+              a(href=post.path)
+                p.description= post.description
+              meta(itemprop="datePublished", content=post.date)
+        if page.featured_text_box_1
+          each post in page.featured_text_box_1
+            article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class="featured_text_box")
+              a(href=post.path)
+                h1.title(itemprop="headline")= post.title
+              a(href=post.path)
+                p.description= post.description
+              meta(itemprop="datePublished", content=post.date)
+        if page.featured_text_box_2
+          each post in page.featured_text_box_2
+            article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class="featured_text_box")
+              a(href=post.path)
+                h1.title(itemprop="headline")= post.title
+              a(href=post.path)
+                p.description= post.description
               meta(itemprop="datePublished", content=post.date)
 
     aside.sidebar
       article.advertisement
-      if page.opinions
-        section.opinions(itemscope, itemtype="http://schema.org/ItemList")
-          h1.section-name Colunistas
-          each opinion, index in page.opinions
-            - var columnist = site.data.columnists[opinion.columnist]
+      section.columns(itemscope, itemtype="http://schema.org/ItemList")
+        h1.section-name Colunistas
+        if page.column_1
+          each column in page.column_1
+            - var columnist = site.data.columnists[column.columnist]
             article.columnist(itemscope, itemtype="http://schema.org/BlogPosting", itemprop="itemListElement")
               figure
                 img(src= columnist.photo, alt="Imagem de perfil do colunista", title="Imagem de perfil do colunista", itemtype="https://schema.org/Person", itemprop="image")
-              section.opinion
+              section.column
                 h1.name(itemtype="https://schema.org/Person", itemprop="name")= columnist.name
-                h2.title(itemprop="headline")= opinion.title
-    aside.contextual-sidebar
+                h2.title(itemprop="headline")= column.title
+        if page.column_2
+          each column in page.column_2
+            - var columnist = site.data.columnists[column.columnist]
+            article.columnist(itemscope, itemtype="http://schema.org/BlogPosting", itemprop="itemListElement")
+              figure
+                img(src= columnist.photo, alt="Imagem de perfil do colunista", title="Imagem de perfil do colunista", itemtype="https://schema.org/Person", itemprop="image")
+              section.column
+                h1.name(itemtype="https://schema.org/Person", itemprop="name")= columnist.name
+                h2.title(itemprop="headline")= column.title
+        if page.column_3
+          each column in page.column_3
+            - var columnist = site.data.columnists[column.columnist]
+            article.columnist(itemscope, itemtype="http://schema.org/BlogPosting", itemprop="itemListElement")
+              figure
+                img(src= columnist.photo, alt="Imagem de perfil do colunista", title="Imagem de perfil do colunista", itemtype="https://schema.org/Person", itemprop="image")
+              section.column
+                h1.name(itemtype="https://schema.org/Person", itemprop="name")= columnist.name
+                h2.title(itemprop="headline")= column.title
 
     if page.gallery
       section.galleries
@@ -84,24 +131,35 @@ append content
                 - var active = (index === 0) ? 'active' : '';
                 img(src=image.cover['thumbnail'], class=active)&attributes(attributes)
 
-      if page.secondary
-        section.secondary(itemscope, itemtype="http://schema.org/ItemList")
-          meta(itemprop="itemListOrder", content="http://schema.org/ItemListUnordered")
-          each post, index in page.secondary
-            - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-            - var position = { 0: '', 1: '', 2: 'hidden-article', 3: 'hidden-article'}
-            article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class=position[index])
-              span.hat(itemprop="about")= post.hat
-              a(href=post.path)
-                img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
-              a(href=post.path)
+    section.secondary(itemscope, itemtype="http://schema.org/ItemList")  
+      meta(itemprop="itemListOrder", content="http://schema.org/ItemListUnordered")
+      if page.article_footer_1
+        each post in page.article_footer_1
+          - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+          article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
+            span.hat(itemprop="about")= post.hat
+                a(href=post.path)
+                  img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
+                a(href=post.path)
+                  h1.title(itemprop="headline")= post.title
+                meta(itemprop="datePublished", content= post.date)
+      if page.article_footer_2
+        each post in page.article_footer_2
+          - var imageDescription = post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+          article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement")
+            span.hat(itemprop="about")= post.hat
+                a(href=post.path)
+                  img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
+                a(href=post.path)
+                  h1.title(itemprop="headline")= post.title
+                meta(itemprop="datePublished", content= post.date)
+      if page.photo_caption
+        section.photo_caption
+          each post in page.photo_caption
+            figure(itemscope, itemtype="http://schema.org/ImageObject")
+              img(src=post.cover.small, alt=imageDescription, title=imageDescription, itemprop="image")
+              meta(itemprop="contentUrl", content=post.cover.small)
+              figcaption
                 h1.title(itemprop="headline")= post.title
-              meta(itemprop="datePublished", content= post.date)
-
-        section.picture
-          figure(itemscope, itemtype="http://schema.org/ImageObject")
-            img(src="//farm6.staticflickr.com/5737/23562577379_271b5567ca_b.jpg")
-            meta(itemprop="contentUrl", content="http://farm6.staticflickr.com/5737/23562577379_271b5567ca_b.jpg")
-            figcaption
-              h1.title(itemprop="caption") O Graffiti como arte urbana
-              h2.credits(itemprop="creator") Gêmeos
+                h2.credits(itemprop="creator")= post.cover.credits
+       

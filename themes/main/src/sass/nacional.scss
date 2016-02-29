@@ -1,6 +1,7 @@
 @import '_includes/colors';
 @import '_includes/query';
 @import '_includes/mixins';
+@import '_includes/constants';
 
 @mixin section-name(){
   display: block;
@@ -55,8 +56,8 @@
 
   @include media-query(MEDIUM) {
     margin: 180px auto 0 auto;
-    max-width: 1160px;
-    width: 1160px;
+    max-width: $desktop-width-site;
+    width: $desktop-width-site;
   }
 
   a {
@@ -128,7 +129,7 @@
     border-radius: 5px;
 }
 
-#home .featured .first {
+#home .featured .featured_big_picture {
   @include picture-with-caption();
 
   figure {
@@ -151,7 +152,7 @@
 
 }
 
-#home .featured .second{
+#home .featured .featured_small_picture{
   figure {
     display: inline-block;
     @include media-query(MEDIUM) {
@@ -188,20 +189,20 @@
   }
 }
 
-#home .featured .first, .third {
+#home .featured .featured_big_picture, .featured_text {
   @include media-query(MEDIUM) {
     width: 65%;
   }
 }
 
-#home .featured .second, .forth {
+#home .featured .featured_small_picture, .featured_text_box {
   @include media-query(MEDIUM) {
     width: 30%;
     margin-left: 10px;
   }
 }
 
-#home .featured .second, .third{
+#home .featured .featured_small_picture, .featured_text{
   .title {
     @include media-query(MEDIUM) {
       border-left: 3px solid $gray-lighter;
@@ -211,7 +212,7 @@
   }
 }
 
-#home .featured .forth {
+#home .featured .featured_text_box {
   background-color: $gray-background;
   border-top: 3px solid $red;
   padding: 10px;
@@ -251,19 +252,6 @@
   }
 }
 
-#home .contextual-sidebar {
-  align-self: flex-start;
-  background-color: red;
-  height: 220px;
-  margin-bottom: 20px;
-  width: 100%;
-
-  @include media-query(MEDIUM) {
-    margin-left: 10px;
-    width: 220px;
-  }
-}
-
 #home .secondary {
   background-color: $gray-background;
   border-top: 1px solid $gray-light;
@@ -288,11 +276,6 @@
     width: 45%;
     max-width: 250px;
     margin: 0 10px 20px 10px;
-    @include media-query(MEDIUM) {
-      &:last-of-type {
-        display: none;
-      }
-    }
   }
 
   article + article {
@@ -342,7 +325,7 @@
   }
 }
 
-#home .opinions{
+#home .columns{
   width: 100%;
   display: inline-block;
   padding: 20px 0;
@@ -371,7 +354,7 @@
     margin-top: 20px;
   }
 
-  .opinion {
+  .column {
     margin-left: 10px;
   }
 
@@ -396,7 +379,7 @@
 
 }
 
-#home .opinions .columnist {
+#home .columns .columnist {
     display: flex;
     margin-top: 20px;
 
@@ -412,7 +395,7 @@
       }
     }
 
-    .opinion {
+    .column {
       flex-grow: 1;
     }
 }
@@ -426,7 +409,7 @@
   flex-wrap: wrap;
 }
 
-#home .picture {
+#home .photo_caption {
     background-color: $gray-background;
     border-top: 1px solid $gray-light;
     border-bottom: 1px solid $gray-light;
