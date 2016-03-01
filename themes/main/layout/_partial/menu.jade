@@ -6,13 +6,10 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
         nav.menu-nav(itemscope, itemtype="http://schema.org/SiteNavigationElement")
           div.menu-header
             img#close-bttn(src="#{ url_for('img/close-bttn.svg') }", alt="imagem botao fechar")
-            img#open-bdf(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
+            a(href="#{ url_for('/') }")
+              img#open-bdf(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
           div.menu-scrollable
-            ul  
-              hr
-              li
-                a.active(itemprop="url", href="home")= "Home"
-                meta(itemprop="name",content="string") 
+            ul
               hr
               li
                 a(itemprop="url", href="nacional")= "Nacional"
@@ -52,9 +49,9 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
               hr  
             div.menu-logos
               a(target="_blank", href="#{ url_for('http://www.facebook.com/brasildefato') }", title="Facebook do Brasil de Fato")
-                img#social-media-mobile(src="#{ url_for('img/social-media/facebook.svg') }", alt="imagem facebook") 
-              a(target="_blank", href="#{ url_for('http://www.facebook.com/brasildefato') }", title="Facebook do Brasil de Fato")
-                img#social-media-mobile(src="#{ url_for('img/social-media/twitter.svg') }", alt="imagem twitter") 
+                img#social-media-mobile(src="#{ url_for('img/social-media/facebook.svg') }", alt="imagem facebook")
+              a(target="_blank", href="#{ url_for('https://twitter.com/brasil_de_fato') }", title="Twitter do Brasil de Fato")
+                img#social-media-mobile(src="#{ url_for('img/social-media/twitter.svg') }", alt="imagem twitter")
               a(target="_blank", href="#{ url_for('http://www.youtube.com/c/AgênciaBrasildeFato') }", title="Youtube do Brasil de Fato")
                 img#social-media-mobile(src="#{ url_for('img/social-media/youtube.svg') }", alt="imagem youtube")      
       figure#logo_bdf
@@ -74,7 +71,7 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
         figure 
           a(href="#{ url_for('') }", title="Lupa de Pesquisa")
             img#search(src="#{ url_for('img/search-icon.svg') }", alt="imagem lupa")
-  div.banner-options
+  nav.banner-options
     ul
       li
         a(itemprop="url", href="nacional")= "Nacional"
