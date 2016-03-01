@@ -1,6 +1,7 @@
 $small_screen:     320px;
 $medium_screen:     768px;
 $large_screen:     1170px;
+$five_screen: 1150px;
 
 
 @mixin media-query($canvas) {
@@ -12,6 +13,9 @@ $large_screen:     1170px;
   }
   @else if $canvas == LARGE {
    @media only screen and (min-width: $large_screen) { @content; }
+  }
+  @else if $canvas == FIVE {
+   @media only screen and (min-width: $five_screen) { @content; }
   }
 }
 

@@ -4,7 +4,7 @@
     font-family: 'Merriweather Sans', serif;
   }
 
-  .title, .opinion > .name {
+  .title, .column > .name {
     font-size: 1.2em;
     font-weight: 700;
     font-family: 'Merriweather', serif;
@@ -16,7 +16,7 @@
     font-weight: 900;
   }
 
-  .description, .opinion > .title, .opinion > date {
+  .description, .column > .title, .opinion > date {
     font-size: 1em;
     font-weight: 400;
     font-family: 'Merriweather Sans', serif;
@@ -100,7 +100,6 @@
 }
 
 @mixin __opinion(){
-
   .hat{
     font-size: 1.2em;
     font-weight: bold;

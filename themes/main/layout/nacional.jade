@@ -50,19 +50,88 @@ append content
             meta(itemprop="datePublished" content=post.date)
         if page.featured_text_box_1
           - var post=page.featured_text_box_1
-          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
-            a(href=post.path)
-              h1.title(itemprop="headline")= post.title
-            meta(itemprop="datePublished" content=post.date)
+          .text_box
+            article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
+              a(href=post.path)
+                h1.title(itemprop="headline")= post.title
+              meta(itemprop="datePublished" content=post.date)
         if page.featured_text_box_2
           - var post=page.featured_text_box_2
-          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
+          .text_box
+            article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
+              a(href=post.path)
+                h1.title(itemprop="headline")= post.title
+              meta(itemprop="datePublished" content=post.date)
+
+      if page.gallery
+        section.galleries
+          section.gallery-videos
+            h1.section-name Vídeos
+            - var firstImage = page.gallery[0]
+            figure(itemscope itemtype="http://schema.org/ImageObject")
+              img(src=firstImage.cover['small'])
+              meta(itemprop="contentUrl" content=firstImage.cover['small'])
+              figcaption
+                h1.title(itemprop="caption")= firstImage.cover.subtitle
+                h2.credits(itemprop="creator")= firstImage.cover.credits
+            section.images
+              section.slider
+                each image, index in page.gallery
+                  - var attributes = {'data-large-image': image.cover['small'], 'data-credits': image.cover['credits'], 'data-title': image.cover['subtitle'], 'alt': image.cover['subtitle'], 'title': image.cover['subtitle']};
+                  - var active = (index === 0) ? 'active' : '';
+                  img(src=image.cover['thumbnail'] class=active)&attributes(attributes)
+          section.gallery-images
+            h1.section-name Galeria
+            - var firstImage = page.gallery[0]
+            figure(itemscope itemtype="http://schema.org/ImageObject")
+              img(src=firstImage.cover['small'])
+              meta(itemprop="contentUrl" content=firstImage.cover['small'])
+              figcaption
+                h1.title(itemprop="caption")= firstImage.cover.subtitle
+                h2.credits(itemprop="creator")= firstImage.cover.credits
+            section.images
+              section.slider
+                each image, index in page.gallery
+                  - var attributes = {'data-large-image': image.cover['small'], 'data-credits': image.cover['credits'], 'data-title': image.cover['subtitle'], 'alt': image.cover['subtitle'], 'title': image.cover['subtitle']};
+                  - var active = (index === 0) ? 'active' : '';
+                  img(src=image.cover['thumbnail'], class=active)&attributes(attributes)
+
+      section.secondary(itemscope itemtype="http://schema.org/ItemList")  
+        meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
+        if page.article_footer_1
+          - var post=page.article_footer_1
+          - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer")
+            span.hat(itemprop="about")= post.hat
+            a(href=post.path)
+              img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
             a(href=post.path)
               h1.title(itemprop="headline")= post.title
-            meta(itemprop="datePublished" content=post.date)
+            meta(itemprop="datePublished" content= post.date)
+        if page.article_footer_2
+          - var post=page.article_footer_2
+          - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer")
+            span.hat(itemprop="about")= post.hat
+            a(href=post.path)
+              img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
+            a(href=post.path)
+              h1.title(itemprop="headline")= post.title
+            meta(itemprop="datePublished" content= post.date)
+        if page.photo_caption
+          section.photo_caption
+            - var post=page.photo_caption
+            figure(itemscope itemtype="http://schema.org/ImageObject")
+              img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
+              meta(itemprop="contentUrl" content=post.cover.small)
+              figcaption
+                h1.title(itemprop="headline")= post.title
+                h2.credits(itemprop="creator")= post.cover.credits
 
     aside.sidebar
-      article.advertisement
+      figure
+        a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Radar dos Movimentos")
+          img(src="#{ url_for('img/radar.png') }", alt="imagem radar dos movimentos")
       section.columns(itemscope itemtype="http://schema.org/ItemList")
         h1.section-name Colunistas
         if page.column_1
@@ -92,69 +161,4 @@ append content
             section.column
               h1.name(itemtype="https://schema.org/Person" itemprop="name")= columnist.name
               h2.title(itemprop="headline")= column.title
-
-    if page.gallery
-      section.galleries
-        section.gallery-images
-          h1.section-name Vídeos
-          - var firstImage = page.gallery[0]
-          figure(itemscope itemtype="http://schema.org/ImageObject")
-            img(src=firstImage.cover['small'])
-            meta(itemprop="contentUrl" content=firstImage.cover['small'])
-            figcaption
-              h1.title(itemprop="caption")= firstImage.cover.subtitle
-              h2.credits(itemprop="creator")= firstImage.cover.credits
-          section.images
-            section.slider
-              each image, index in page.gallery
-                - var attributes = {'data-large-image': image.cover['small'], 'data-credits': image.cover['credits'], 'data-title': image.cover['subtitle'], 'alt': image.cover['subtitle'], 'title': image.cover['subtitle']};
-                - var active = (index === 0) ? 'active' : '';
-                img(src=image.cover['thumbnail'] class=active)&attributes(attributes)
-        section.gallery-images
-          h1.section-name Galeria
-          - var firstImage = page.gallery[0]
-          figure(itemscope itemtype="http://schema.org/ImageObject")
-            img(src=firstImage.cover['small'])
-            meta(itemprop="contentUrl" content=firstImage.cover['small'])
-            figcaption
-              h1.title(itemprop="caption")= firstImage.cover.subtitle
-              h2.credits(itemprop="creator")= firstImage.cover.credits
-          section.images
-            section.slider
-              each image, index in page.gallery
-                - var attributes = {'data-large-image': image.cover['small'], 'data-credits': image.cover['credits'], 'data-title': image.cover['subtitle'], 'alt': image.cover['subtitle'], 'title': image.cover['subtitle']};
-                - var active = (index === 0) ? 'active' : '';
-                img(src=image.cover['thumbnail'], class=active)&attributes(attributes)
-
-    section.secondary(itemscope itemtype="http://schema.org/ItemList")  
-      meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
-      if page.article_footer_1
-        - var post=page.article_footer_1
-        - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement")
-          span.hat(itemprop="about")= post.hat
-              a(href=post.path)
-                img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
-              a(href=post.path)
-                h1.title(itemprop="headline")= post.title
-              meta(itemprop="datePublished" content= post.date)
-      if page.article_footer_2
-        - var post=page.article_footer_2
-        - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement")
-          span.hat(itemprop="about")= post.hat
-              a(href=post.path)
-                img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
-              a(href=post.path)
-                h1.title(itemprop="headline")= post.title
-              meta(itemprop="datePublished" content= post.date)
-      if page.photo_caption
-        section.photo_caption
-          - var post=page.photo_caption
-          figure(itemscope itemtype="http://schema.org/ImageObject")
-            img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
-            meta(itemprop="contentUrl" content=post.cover.small)
-            figcaption
-              h1.title(itemprop="headline")= post.title
-              h2.credits(itemprop="creator")= post.cover.credits
        
