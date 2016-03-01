@@ -1,86 +1,87 @@
 ---
 layout: nacional
+
 featured_big_picture:
-  -
-    cover:
-      url: "//farm1.staticflickr.com/664/23266252363_e39193d140_b.jpg"
-      small: "//farm1.staticflickr.com/664/23266252363_e39193d140_n.jpg"
-      subtitle: "Legenda aqui"
-      credits: "Fulano de tal"
-    date: "2015-12-02T13:47:40-03:00"
-    description: ~
-    title: "Em SP, seminário debate meios de comunicação"
-    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  cover:
+    url: "//farm1.staticflickr.com/664/23266252363_e39193d140_b.jpg"
+    small: "//farm1.staticflickr.com/664/23266252363_e39193d140_n.jpg"
+    subtitle: "Legenda aqui"
+    credits: "Fulano de tal"
+  date: "2015-12-02T13:47:40-03:00"
+  description: ~
+  title: "Em SP, seminário debate meios de comunicação"
+  path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+
 featured_small_picture_1:
-  -
-    cover:
-      url: "//farm6.staticflickr.com/5768/23597648530_5a929635c8_b.jpg"
-      small: "//farm6.staticflickr.com/5768/23597648530_5a929635c8_n.jpg"
-      subtitle: "Legenda aqui"
-      credits: "Fulano de tal"
-    date: "2015-12-02T13:47:40-03:00"
-    description: "Deputados comprometidos com o setor não estão levando a sério"
-    title: "Cunha quer vota em urgência marco regulatório da mineração"
-    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  cover:
+    url: "//farm6.staticflickr.com/5768/23597648530_5a929635c8_b.jpg"
+    small: "//farm6.staticflickr.com/5768/23597648530_5a929635c8_n.jpg"
+    subtitle: "Legenda aqui"
+    credits: "Fulano de tal"
+  date: "2015-12-02T13:47:40-03:00"
+  description: "Deputados comprometidos com o setor não estão levando a sério"
+  title: "Cunha quer vota em urgência marco regulatório da mineração"
+  path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+
 featured_small_picture_2:
-  -
-    cover:
-      url: "//farm6.staticflickr.com/5768/23597648530_5a929635c8_b.jpg"
-      small: "//farm6.staticflickr.com/5768/23597648530_5a929635c8_n.jpg"
-      subtitle: "Legenda aqui"
-      credits: "Fulano de tal"
-    date: "2015-12-02T13:47:40-03:00"
-    description: "Deputados comprometidos com o setor não estão levando a sério"
-    title: "Cunha quer vota em urgência marco regulatório da mineração"
-    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  cover:
+    url: "//farm6.staticflickr.com/5768/23597648530_5a929635c8_b.jpg"
+    small: "//farm6.staticflickr.com/5768/23597648530_5a929635c8_n.jpg"
+    subtitle: "Legenda aqui"
+    credits: "Fulano de tal"
+  date: "2015-12-02T13:47:40-03:00"
+  description: "Deputados comprometidos com o setor não estão levando a sério"
+  title: "Cunha quer vota em urgência marco regulatório da mineração"
+  path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+
 featured_text:
-  -
-    cover:
-      url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
-      small: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg"
-      subtitle: "Legenda aqui"
-      credits: "Fulano de tal"
-    date: "2015-12-02T13:47:40-03:00"
-    description: "A Vale, uma das proprietárias da Samarco, empresa responsável pelas barragens que se romperam em Mariana (MG). Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun"
-    title: "A pior empresa do mundo"
-    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  cover:
+    url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
+    small: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg"
+    subtitle: "Legenda aqui"
+    credits: "Fulano de tal"
+  date: "2015-12-02T13:47:40-03:00"
+  description: "A Vale, uma das proprietárias da Samarco, empresa responsável pelas barragens que se romperam em Mariana (MG). Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun"
+  title: "A pior empresa do mundo"
+  path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+
 featured_text_box_1:
-  -
-    cover:
-      url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
-      small: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg"
-      subtitle: "Legenda aqui"
-      credits: "Fulano de tal"
-    date: "2015-12-02T13:47:40-03:00"
-    description: "A Vale, uma das proprietárias da Samarco, empresa responsável pelas barragens que se romperam em Mariana (MG). Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun"
-    title: "\"Se os deputados não têm coragem de tirar Cunha, nós temos\", diz jovem em protesto"
-    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  cover:
+    url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
+    small: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg"
+    subtitle: "Legenda aqui"
+    credits: "Fulano de tal"
+  date: "2015-12-02T13:47:40-03:00"
+  description: "A Vale, uma das proprietárias da Samarco, empresa responsável pelas barragens que se romperam em Mariana (MG). Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun"
+  title: "\"Se os deputados não têm coragem de tirar Cunha, nós temos\", diz jovem em protesto"
+  path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+
 featured_text_box_2:
-  -
-    cover:
-      url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
-      small: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg"
-      subtitle: "Legenda aqui"
-      credits: "Fulano de tal"
-    date: "2015-12-02T13:47:40-03:00"
-    description: "A Vale, uma das proprietárias da Samarco, empresa responsável pelas barragens que se romperam em Mariana (MG). Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun"
-    title: "\"Se os deputados não têm coragem de tirar Cunha, nós temos\", diz jovem em protesto"
-    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  cover:
+    url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
+    small: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg"
+    subtitle: "Legenda aqui"
+    credits: "Fulano de tal"
+  date: "2015-12-02T13:47:40-03:00"
+  description: "A Vale, uma das proprietárias da Samarco, empresa responsável pelas barragens que se romperam em Mariana (MG). Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun"
+  title: "\"Se os deputados não têm coragem de tirar Cunha, nós temos\", diz jovem em protesto"
+  path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+
 column_1:
-  -
-    columnist: "rodrigovieira18@gmail.com"
-    title: "Direitos minerários x direitos sociais: que as mineradoras paguem o justo"
-    date: '2015-12-02T13:47:40-03:00'
+  columnist: "rodrigovieira18@gmail.com"
+  title: "Direitos minerários x direitos sociais: que as mineradoras paguem o justo"
+  date: '2015-12-02T13:47:40-03:00'
+
 column_2:    
-  -
-    columnist: "wandecleya@gmail.com"
-    title: "O funk e o fim da música popular brasileira"
-    date: '2015-12-02T13:47:40-03:00'
+  columnist: "wandecleya@gmail.com"
+  title: "O funk e o fim da música popular brasileira"
+  date: '2015-12-02T13:47:40-03:00'
+
 column_3:
-  -
-    columnist: "snowden@gmail.com"
-    title: "Movimento negro: esboço de um caminho que não..."
-    date: '2015-12-02T13:47:40-03:00'
+  columnist: "snowden@gmail.com"
+  title: "Movimento negro: esboço de um caminho que não..."
+  date: '2015-12-02T13:47:40-03:00'
+
 gallery:
   - cover:
       url: //farm6.staticflickr.com/5759/23528037712_0051ac6681_b.jpg
@@ -136,36 +137,36 @@ gallery:
       thumbnail: "//farm6.staticflickr.com/5817/23495844275_35efde962c_t.jpg"
       subtitle: "Legendado esse filme"
       credits: "Felipe"
+
 article_footer_1:
-  -
-    hat: Preconceito
-    cover:
-      url: "//farm6.staticflickr.com/5782/23469650266_f05c73b5e0_b.jpg"
-      small: "//farm6.staticflickr.com/5782/23469650266_f05c73b5e0_n.jpg"
-      subtitle: "Legenda"
-      credits: "Fotografo"
-    date: "2015-12-02T13:47:40-03:00"
-    title: "Mulheres Negras organizam marcha nacional"
-    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  hat: Preconceito
+  cover:
+    url: "//farm6.staticflickr.com/5782/23469650266_f05c73b5e0_b.jpg"
+    small: "//farm6.staticflickr.com/5782/23469650266_f05c73b5e0_n.jpg"
+    subtitle: "Legenda"
+    credits: "Fotografo"
+  date: "2015-12-02T13:47:40-03:00"
+  title: "Mulheres Negras organizam marcha nacional"
+  path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+
 article_footer_2:
-  -
-    hat: Agressão
-    cover:
-      url: "//farm1.staticflickr.com/775/22867505634_e0ce2b20c7_b.jpg"
-      small: "//farm1.staticflickr.com/775/22867505634_e0ce2b20c7_n.jpg"
-      subtitle: "Legenda"
-      credits: "Fotografo"
-    date: "2015-12-02T13:47:40-03:00"
-    title: "Artistas agredidos por seguranças vão processar MetrôRio"
-    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  hat: Agressão
+  cover:
+    url: "//farm1.staticflickr.com/775/22867505634_e0ce2b20c7_b.jpg"
+    small: "//farm1.staticflickr.com/775/22867505634_e0ce2b20c7_n.jpg"
+    subtitle: "Legenda"
+    credits: "Fotografo"
+  date: "2015-12-02T13:47:40-03:00"
+  title: "Artistas agredidos por seguranças vão processar MetrôRio"
+  path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+
 photo_caption:
-  -
-    cover:
-      url: "//farm6.staticflickr.com/5737/23562577379_271b5567ca_b.jpg"
-      small: "//farm6.staticflickr.com/5737/23562577379_271b5567ca_b.jpg"
-      subtitle: "Legenda"
-      credits: "Gêmeos"
-    date: "2015-12-02T13:47:40-03:00"
-    title: "O Graffiti como arte urbana"
-    path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  cover:
+    url: "//farm6.staticflickr.com/5737/23562577379_271b5567ca_b.jpg"
+    small: "//farm6.staticflickr.com/5737/23562577379_271b5567ca_b.jpg"
+    subtitle: "Legenda"
+    credits: "Gêmeos"
+  date: "2015-12-02T13:47:40-03:00"
+  title: "O Graffiti como arte urbana"
+  path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 ---
