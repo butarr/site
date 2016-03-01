@@ -53,16 +53,12 @@ append content
           article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class="featured_text_box")
             a(href=post.path)
               h1.title(itemprop="headline")= post.title
-            a(href=post.path)
-              p.description= post.description
             meta(itemprop="datePublished", content=post.date)
         if page.featured_text_box_2
           - var post=page.featured_text_box_2
           article(itemscope, itemtype="https://schema.org/NewsArticle", itemprop="itemListElement", class="featured_text_box")
             a(href=post.path)
               h1.title(itemprop="headline")= post.title
-            a(href=post.path)
-              p.description= post.description
             meta(itemprop="datePublished", content=post.date)
 
     aside.sidebar
