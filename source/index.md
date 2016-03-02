@@ -196,4 +196,36 @@ most_read:
       description: "Deputados"
       title: "Inspirada em exilado político da ditadura de Pinochet, animação dá primeiro Oscar a Chile"
       path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+
+last_news:
+  - news:
+      date: "2015-12-02T13:47:40-03:00"
+      description: "Deputados"
+      title: "Inspirada em exilado político da ditadura de Pinochet, animação dá primeiro Oscar a Chile"
+      path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  - news:
+      date: "2015-12-02T13:47:40-03:00"
+      description: "Deputados"
+      title: "\"Se os deputados não têm coragem de tirar Cunha, nós temos\", diz jovem em protesto"
+      path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  - news:
+      date: "2015-12-02T13:47:40-03:00"
+      description: "Deputados"
+      title: "Movimentos participam de atividade preparatória para encontro da ONU sobre cidades"
+      path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  - news:
+      date: "2015-12-02T13:47:40-03:00"
+      description: "Deputados"
+      title: "Goiás: ação civil pede suspensão de edital de organizações sociais na educação"
+      path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  - news:
+      date: "2015-12-02T13:47:40-03:00"
+      description: "Deputados"
+      title: "Governos e Samarco firmam hoje acordo para recuperação da Bacia do Rio Doce"
+      path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+  - news:
+      date: "2015-12-02T13:47:40-03:00"
+      description: "Deputados"
+      title: "Governos e Samarco firmam hoje acordo para recuperação da Bacia do Rio Doce"
+      path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 ---

@@ -170,4 +170,13 @@ append content
             section.column
               h1.name(itemtype="https://schema.org/Person" itemprop="name")= columnist.name
               h2.title(itemprop="headline")= column.title
+      section.last_news
+        meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
+        h1.section-name Últimas notícias
+        if page.last_news
+          ol
+            each post in page.last_news
+              li
+                a.title(itemprop="url", href=post.news.path)=post.news.title
+                meta(itemprop="datePublished" content=post.date)
        

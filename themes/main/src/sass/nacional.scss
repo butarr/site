@@ -346,6 +346,27 @@
   }
 }
 
+#home .last_news {
+  padding: 0 5px;
+
+  .section-name {
+    @include section-name();
+  }
+
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+
+  ol > li {
+    list-style: none;
+    line-height: 1.2em;
+    padding : 5px 0 5px 8px;
+    border-left: 3px solid $gray-border;
+    margin-top: 10px;
+  }
+}
+
 #home .columns {
   width: 100%;
   display: inline-block;
