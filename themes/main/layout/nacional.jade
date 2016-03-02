@@ -127,7 +127,16 @@ append content
               figcaption
                 h1.title(itemprop="headline")= post.title
                 h2.credits(itemprop="creator")= post.cover.credits
-
+       
+      section.most_read
+        meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
+        h1.section-name Mais lidas
+        if page.most_read
+          ol
+            each post in page.most_read
+              li
+                a.title(itemprop="url", href=post.news.path)=post.news.title
+                meta(itemprop="datePublished" content=post.date)
     aside.sidebar
       figure
         a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Radar dos Movimentos")
