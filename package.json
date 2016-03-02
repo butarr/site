@@ -24,6 +24,7 @@
     "imagemin-optipng": "^4.3.0",
     "jade": "^1.11.0",
     "node-bourbon": "^4.2.3",
+    "node-reset-scss": "^1.0.1",
     "underscore": "^1.8.3"
   },
   "scripts": {
