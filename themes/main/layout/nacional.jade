@@ -22,24 +22,18 @@ append content
           - var post=page.featured_small_picture_1
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
           article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_small_picture")
-            figure
-                a(href=post.path)
-                  img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
-              a(href=post.path)
-                h1.title(itemprop="headline")= post.title
-              a(href=post.path)
-                p.description= post.description
+            a(href=post.path)
+              figure(style='background-image: url(' + post.cover.small + ');' aria-label=imageDescription title=imageDescription itemprop="image")
+              h1.title(itemprop="headline")= post.title
+              p.description= post.description
         if page.featured_small_picture_2
           - var post=page.featured_small_picture_2
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
           article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_small_picture")
-            figure
-                a(href=post.path)
-                  img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
-              a(href=post.path)
-                h1.title(itemprop="headline")= post.title
-              a(href=post.path)
-                p.description= post.description
+            a(href=post.path)
+              figure(style='background-image: url(' + post.cover.small + ');' aria-label=imageDescription title=imageDescription itemprop="image")
+              h1.title(itemprop="headline")= post.title
+              p.description= post.description
         if page.featured_text
           - var post=page.featured_text
           article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text")
@@ -179,4 +173,3 @@ append content
               li
                 a.title(itemprop="url", href=post.news.path)=post.news.title
                 meta(itemprop="datePublished" content=post.date)
-       

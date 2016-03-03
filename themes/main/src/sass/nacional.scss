@@ -172,20 +172,13 @@
 
 #home .featured .featured_small_picture{
   figure {
+    @include background-cover-rounded(auto, 150px);
+
     display: inline-block;
     @include media-query(MEDIUM) {
       display: block;
       width: $COLUMN_WIDTH;
       padding: 0 5px;
-    }
-  }
-
-  img {
-    max-width: 150px;
-    width: 100%;
-    border-radius: 5px;
-    @include media-query(MEDIUM) {
-      max-width: 100%;
     }
   }
 
@@ -243,7 +236,7 @@
   align-self: flex-start;
   width: $COLUMN_WIDTH;
   margin-top: 0;
-  
+
   @include media-query(MEDIUM) {
     padding: 0 5px;
     width: 20%;
@@ -507,7 +500,7 @@
 }
 
 #home .gallery-images, .gallery-videos {
-  .images .slider {  
+  .images .slider {
     padding: 0 10px;
     height: 100px;
     overflow-y: scroll;
