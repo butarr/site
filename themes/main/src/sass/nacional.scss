@@ -128,6 +128,12 @@
     border-radius: 5px;
 }
 
+#home .picture img {
+  @include media-query(MEDIUM) {
+    border-radius: 5px;
+  }
+}
+
 /* Sets elements with two columns */
 #home #featured_1, #featured_4 {
   @include media-query(FOUR) {
@@ -251,10 +257,6 @@
   #featured_6 {
     @include media-query(FOUR){
       order: -1;
-      width: $COLUMN_WIDTH;
-    }
-    @include media-query(FIVE){
-
     }
   }
 }
@@ -271,20 +273,7 @@
   }
 }
 
-#home .sidebar {
-  align-self: flex-start;
-  width: 100%;
 
-  @include media-query(FOUR) {
-    width: $COLUMN_WIDTH;
-    padding: 0 5px;
-    width: 20%;
-  }
-
-  figure {
-    padding: 0 5px;
-  }
-}
 
 #home .secondary {
   background-color: $gray-background;
@@ -338,11 +327,6 @@
 
 }
 
-#home .picture img {
-  @include media-query(MEDIUM) {
-    border-radius: 5px;
-  }
-}
 
 #home .most_read {
   width: 100%;
@@ -375,7 +359,21 @@
   }
 }
 
-#home .last_news {
+#home .sidebar {
+  align-self: flex-start;
+  width: 100%;
+
+  @include media-query(FOUR) {
+    width: $COLUMN_WIDTH;
+    padding: 0 5px;
+  }
+
+  section + section {
+    margin-top: 20px;
+  }
+}
+
+#home .sidebar .last_news {
   padding: 0 5px;
 
   .section-name {
@@ -396,10 +394,9 @@
   }
 }
 
-#home .columns {
+#home .sidebar .columns {
   width: 100%;
   display: inline-block;
-  padding: 20px 0;
 
   @include media-query(MEDIUM) {
     padding-top: 0;
@@ -430,7 +427,7 @@
   }
 
   .title {
-    color: $black-dark;;
+    color: $black-dark;
     margin-top: 5px;
   }
 

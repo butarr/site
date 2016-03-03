@@ -132,9 +132,10 @@ append content
                 a.title(itemprop="url", href=post.news.path)=post.news.title
                 meta(itemprop="datePublished" content=post.date)
     aside.sidebar
-      figure
-        a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Radar dos Movimentos")
-          img(src="#{ url_for('img/radar.png') }", alt="imagem radar dos movimentos")
+      section.radar
+        figure
+          a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Radar dos Movimentos")
+            img(src="#{ url_for('img/radar.png') }", alt="imagem radar dos movimentos")
       section.columns(itemscope itemtype="http://schema.org/ItemList")
         h1.section-name Colunistas
         if page.column_1
