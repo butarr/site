@@ -172,13 +172,12 @@
 
 #home .featured .featured_small_picture{
   figure {
-    @include background-cover-rounded(auto, 150px);
+    @include background-cover-rounded($COLUMN_WIDTH, 150px);
 
     display: inline-block;
     @include media-query(MEDIUM) {
       display: block;
-      width: $COLUMN_WIDTH;
-      padding: 0 5px;
+      width: auto;
     }
   }
 
@@ -316,11 +315,11 @@
   .section-name {
     @include section-name();
   }
-  
+
   ol {
     counter-reset: li;
   }
-  
+
   ol > li {
     list-style: none;
     line-height: 1.2em;
