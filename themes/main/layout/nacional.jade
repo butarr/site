@@ -23,7 +23,7 @@ append content
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
           article#featured_2(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_small_picture")
             a(href=post.path)
-              figure(style='background-image: url(' + post.cover.small + ');' aria-label=imageDescription title=imageDescription itemprop="image")
+              figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
               h1.title(itemprop="headline")= post.title
               p.description= post.description
         if page.featured_small_picture_2
@@ -31,7 +31,7 @@ append content
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
           article#featured_3(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_small_picture")
             a(href=post.path)
-              figure(style='background-image: url(' + post.cover.small + ');' aria-label=imageDescription title=imageDescription itemprop="image")
+              figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
               h1.title(itemprop="headline")= post.title
               p.description= post.description
         if page.featured_text
