@@ -119,6 +119,14 @@
   }
 }
 
+@mixin background-cover-rounded($width, $height) {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  width: $width;
+  height: $height;
+}
 
 @mixin transform($that) {
   -webkit-transform: $that;
