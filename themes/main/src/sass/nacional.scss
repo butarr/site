@@ -52,13 +52,15 @@
 
   @include get-font(NACIONAL);
 
-  @include media-query(FIVE) {
+  @include media-query (FOUR){
     flex-wrap: nowrap;
-  }
-
-  @include media-query(MEDIUM) {
+    width: 4 * $COLUMN_WIDTH;
     margin: 180px auto 0 auto;
     max-width: $DESKTOP_WIDTH_SITE;
+  }
+
+  @include media-query(FIVE) {
+    width: 5 * $COLUMN_WIDTH;
   }
 
   a {
@@ -224,11 +226,75 @@
   margin-top: 10px;
 }
 
+#home {
+  #featured_1 {
+    @include media-query(FOUR){
+      order: -6;
+      width: 2 * $COLUMN_WIDTH;
+    }
+    @include media-query(FIVE){
+
+    }
+  }
+  #featured_2 {
+    @include media-query(FOUR){
+      order: -5;
+      width: $COLUMN_WIDTH;
+    }
+    @include media-query(FIVE){
+
+    }
+  }
+  #featured_3 {
+    @include media-query(FOUR){
+      order: -3;
+      width: $COLUMN_WIDTH;
+    }
+    @include media-query(FIVE){
+      order: -4;
+    }
+  }
+  #featured_4 {
+    @include media-query(FOUR){
+      order: -4;
+      width: 2 * $COLUMN_WIDTH;
+    }
+    @include media-query(FIVE){
+      order: -3;
+    }
+  }
+  #featured_5 {
+    @include media-query(FOUR){
+      order: -2;
+      width: $COLUMN_WIDTH;
+    }
+    @include media-query(FIVE){
+
+    }
+  }
+  #featured_6 {
+    @include media-query(FOUR){
+      order: -1;
+      width: $COLUMN_WIDTH;
+    }
+    @include media-query(FIVE){
+
+    }
+  }
+}
+
 #home .main {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+
+  @include media-query (FOUR){
+    width: 3 * $COLUMN_WIDTH;
+  }
+  @include media-query (FIVE){
+    width: 4 * $COLUMN_WIDTH;
+  }
 }
 
 #home .sidebar {

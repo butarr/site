@@ -9,7 +9,7 @@ append content
         if page.featured_big_picture
           - var post=page.featured_big_picture
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_big_picture")
+          article#featured_1(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_big_picture")
             figure
               a(href=post.path)
                 img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
@@ -21,7 +21,7 @@ append content
         if page.featured_small_picture_1
           - var post=page.featured_small_picture_1
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_small_picture")
+          article#featured_2(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_small_picture")
             a(href=post.path)
               figure(style='background-image: url(' + post.cover.small + ');' aria-label=imageDescription title=imageDescription itemprop="image")
               h1.title(itemprop="headline")= post.title
@@ -29,14 +29,14 @@ append content
         if page.featured_small_picture_2
           - var post=page.featured_small_picture_2
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_small_picture")
+          article#featured_3(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_small_picture")
             a(href=post.path)
               figure(style='background-image: url(' + post.cover.small + ');' aria-label=imageDescription title=imageDescription itemprop="image")
               h1.title(itemprop="headline")= post.title
               p.description= post.description
         if page.featured_text
           - var post=page.featured_text
-          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text")
+          article#featured_4(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text")
             a(href=post.path)
               h1.title(itemprop="headline")= post.title
             a(href=post.path)
@@ -45,14 +45,14 @@ append content
         if page.featured_text_box_1
           - var post=page.featured_text_box_1
           .text_box
-            article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
+            article#featured_5(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
               a(href=post.path)
                 h1.title(itemprop="headline")= post.title
               meta(itemprop="datePublished" content=post.date)
         if page.featured_text_box_2
           - var post=page.featured_text_box_2
           .text_box
-            article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
+            article#featured_6(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
               a(href=post.path)
                 h1.title(itemprop="headline")= post.title
               meta(itemprop="datePublished" content=post.date)
