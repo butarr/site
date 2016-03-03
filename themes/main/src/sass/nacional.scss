@@ -46,10 +46,6 @@
   display: flex;
   flex-wrap: wrap;
 
-  h1, h2 {
-    margin-top: 0;
-  }
-
   @include get-font(NACIONAL);
 
   @include media-query (FOUR){
@@ -70,18 +66,17 @@
       color: $link-hover;
     }
   }
-}
 
-#home figure {
-  margin: 0;
+  section + section {
+    margin-top: 10px;
+  }
 }
 
 #home .featured {
+
   @include media-query(FIVE) {
     width: 4 * $COLUMN_WIDTH;
-    align-content: flex-start;
   }
-  display: inline-block;
 
   .section-name {
     @include section-name();
@@ -89,15 +84,14 @@
     @include media-query(MEDIUM) {
       display: none;
     }
-
   }
 
   article + article {
     border-top: 1px solid $gray-lighter;
     padding-top: 15px;
-    @include media-query(MEDIUM) {
+
+    @include media-query(FOUR){
       border-top: 0;
-      margin-top: 0;
       padding-top: 0;
     }
   }
@@ -112,7 +106,7 @@
     flex-flow: row wrap;
   }
 
-  article{
+  article {
     margin-bottom: 15px;
     @include media-query(MEDIUM) {
       margin-bottom: 15px;
@@ -134,10 +128,18 @@
     border-radius: 5px;
 }
 
-
-#home .featured .featured_big_picture, .featured_text {
-  @include media-query(FIVE) {
+/* Sets elements with two columns */
+#home #featured_1, #featured_4 {
+  @include media-query(FOUR) {
     width: 2 * $COLUMN_WIDTH;
+    padding: 0 5px;
+  }
+}
+
+/* Sets elements with one column */
+#home #featured_2, #featured_3, #featured_5, #featured_6 {
+  @include media-query(FOUR){
+    width: $COLUMN_WIDTH;
     padding: 0 5px;
   }
 }
@@ -162,22 +164,13 @@
   .description{
     display: none;
   }
-
-}
-
-#home .featured .featured_small_picture, .text_box {
-  @include media-query(FIVE){
-    width: $COLUMN_WIDTH;
-    padding: 0 5px;
-  }
 }
 
 #home .featured .featured_small_picture{
   figure {
     @include background-cover-rounded($COLUMN_WIDTH, 150px);
-
     display: inline-block;
-    @include media-query(MEDIUM) {
+    @include media-query(FOUR) {
       display: block;
       width: auto;
     }
@@ -188,7 +181,7 @@
     max-width: 280px;
     margin-left: 10px;
     position: absolute;
-    @include media-query(MEDIUM) {
+    @include media-query(FOUR) {
       position: relative;
       width: 100%;
       margin-left: 0;
@@ -196,7 +189,7 @@
   }
 
   .description{
-    @include media-query(MEDIUM) {
+    @include media-query(FOUR) {
       display: none;
     }
   }
@@ -204,7 +197,7 @@
 
 #home .featured .featured_small_picture, .featured_text{
   .title {
-    @include media-query(MEDIUM) {
+    @include media-query(FOUR) {
       border-left: 3px solid $gray-lighter;
       padding-left: 10px;
       margin-top: 10px;
@@ -217,38 +210,26 @@
   border-top: 3px solid $red;
   padding: 10px;
 
-  .description{
+  .description {
     display: none;
   }
 }
 
-#home section + section {
-  margin-top: 10px;
-}
-
+/* Sets order of featured elements */
 #home {
   #featured_1 {
     @include media-query(FOUR){
       order: -6;
-      width: 2 * $COLUMN_WIDTH;
-    }
-    @include media-query(FIVE){
-
     }
   }
   #featured_2 {
     @include media-query(FOUR){
       order: -5;
-      width: $COLUMN_WIDTH;
-    }
-    @include media-query(FIVE){
-
     }
   }
   #featured_3 {
     @include media-query(FOUR){
       order: -3;
-      width: $COLUMN_WIDTH;
     }
     @include media-query(FIVE){
       order: -4;
@@ -257,7 +238,6 @@
   #featured_4 {
     @include media-query(FOUR){
       order: -4;
-      width: 2 * $COLUMN_WIDTH;
     }
     @include media-query(FIVE){
       order: -3;
@@ -266,10 +246,6 @@
   #featured_5 {
     @include media-query(FOUR){
       order: -2;
-      width: $COLUMN_WIDTH;
-    }
-    @include media-query(FIVE){
-
     }
   }
   #featured_6 {
@@ -286,8 +262,6 @@
 #home .main {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 
   @include media-query (FOUR){
     width: 3 * $COLUMN_WIDTH;
@@ -299,10 +273,10 @@
 
 #home .sidebar {
   align-self: flex-start;
-  width: $COLUMN_WIDTH;
-  margin-top: 0;
+  width: 100%;
 
-  @include media-query(MEDIUM) {
+  @include media-query(FOUR) {
+    width: $COLUMN_WIDTH;
     padding: 0 5px;
     width: 20%;
   }

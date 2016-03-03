@@ -44,15 +44,15 @@ append content
             meta(itemprop="datePublished" content=post.date)
         if page.featured_text_box_1
           - var post=page.featured_text_box_1
-          .text_box
-            article#featured_5(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
+          #featured_5
+            article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
               a(href=post.path)
                 h1.title(itemprop="headline")= post.title
               meta(itemprop="datePublished" content=post.date)
         if page.featured_text_box_2
           - var post=page.featured_text_box_2
-          .text_box
-            article#featured_6(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
+          #featured_6
+            article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
               a(href=post.path)
                 h1.title(itemprop="headline")= post.title
               meta(itemprop="datePublished" content=post.date)
