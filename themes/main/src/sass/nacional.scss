@@ -509,13 +509,10 @@
 }
 
 #home .photo_caption {
-    background-color: $gray-background;
-    border-top: 1px solid $gray-light;
-    border-bottom: 1px solid $gray-light;
     padding: 20px 0;
     @include picture-with-caption();
-    @include background-cover-rounded(70%, 70%);
-
+    @include background-cover-rounded(100%, 100%);
+    
     @include media-query(THREE) {
       width: 2 * $COLUMN_WIDTH;
       background-color: white;
