@@ -25,7 +25,6 @@ append content
             a(href=post.path)
               figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
               h1.title(itemprop="headline")= post.title
-              p.description= post.description
         if page.featured_small_picture_2
           - var post=page.featured_small_picture_2
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
@@ -33,7 +32,6 @@ append content
             a(href=post.path)
               figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
               h1.title(itemprop="headline")= post.title
-              p.description= post.description
         #featured_text_container
           if page.featured_text
             - var post=page.featured_text

@@ -89,7 +89,7 @@
     border-top: 1px solid $gray-lighter;
     padding-top: 15px;
 
-    @include media-query(FOUR){
+    @include media-query(THREE){
       border-top: 0;
       padding-top: 0;
     }
@@ -143,13 +143,8 @@
 
 /* Sets elements with one column */
 #home #featured_2, #featured_3 {
-  @include media-query(THREE){
-    width: 2 * $COLUMN_WIDTH;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
 
-  @include media-query(FOUR){
+  @include media-query(THREE){
     width: $COLUMN_WIDTH;
     padding: 0 5px;
   }
@@ -203,27 +198,18 @@
     position: absolute;
     padding-right: 10px;
     padding-left: 10px;
-    @include media-query(THREE) {
-      max-width: $COLUMN_WIDTH;
-    }
 
-    @include media-query(FOUR) {
+    @include media-query(THREE) {
       position: relative;
       width: 100%;
       margin-left: 0;
-    }
-  }
-
-  .description{
-    @include media-query(FOUR) {
-      display: none;
     }
   }
 }
 
 #home .featured .featured_small_picture, .featured_text{
   .title {
-    @include media-query(FOUR) {
+    @include media-query(THREE) {
       border-left: 3px solid $gray-lighter;
       padding-left: 10px;
       margin-top: 10px;
