@@ -19,8 +19,8 @@ featured_small_picture_1:
     subtitle: "Legenda aqui"
     credits: "Fulano de tal"
   date: "2015-12-02T13:47:40-03:00"
-  description: "Deputados comprometidos com o setor não estão levando a sério"
-  title: "Cunha quer vota em urgência marco regulatório da mineração"
+  description: "A população do Araripe que já tem um histórico de luta desde a época das Ligas Camponesas hoje convive com a necessidade"
+  title: "Em caravana no Semiárido, agricultores discutem conflitos, resistência e agroecologia"
   path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 
 featured_small_picture_2:

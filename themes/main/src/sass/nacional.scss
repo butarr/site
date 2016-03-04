@@ -185,9 +185,12 @@
   }
 }
 
-#home .featured .featured_small_picture{
+#home .featured .featured_small_picture {
+  display: flex;
+  flex-wrap: wrap;
+
   figure {
-    @include background-cover-rounded(220px, 150px);
+    @include background-cover-rounded(220px, 220px);
     display: inline-block;
     @include media-query(FOUR) {
       display: block;
@@ -197,9 +200,9 @@
 
   .title {
     display: inline-block;
-    max-width: 280px;
-    margin-left: 10px;
     position: absolute;
+    padding-right: 10px;
+    padding-left: 10px;
     @include media-query(THREE) {
       max-width: $COLUMN_WIDTH;
     }
@@ -246,6 +249,7 @@
     }
   }
   #featured_2 {
+
     @include media-query(FOUR){
       order: -5;
     }
