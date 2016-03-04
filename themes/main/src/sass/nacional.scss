@@ -3,9 +3,9 @@
 @import '_includes/mixins';
 @import '_includes/constants';
 
-@mixin padding-mobile(){
-  padding-left: 10px;
-  padding-right: 10px;
+@mixin space-between-columns(){
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 @mixin section-name(){
@@ -43,7 +43,8 @@
   width: 100%;
   max-width: 460px;
   margin: 70px auto 20px auto;
-  @include padding-mobile();
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   flex-wrap: wrap;
 
