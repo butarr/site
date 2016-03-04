@@ -43,11 +43,15 @@
 
   @include get-font(NACIONAL);
 
-  @include media-query (FOUR){
+  @include media-query (THREE){
     flex-wrap: nowrap;
-    width: 4 * $COLUMN_WIDTH;
+    width: 3 * $COLUMN_WIDTH;
     margin: 180px auto 0 auto;
     max-width: $DESKTOP_WIDTH_SITE;
+  }
+
+  @include media-query (FOUR){
+    width: 4 * $COLUMN_WIDTH;
   }
 
   @include media-query(FIVE) {
@@ -131,15 +135,28 @@
 
 /* Sets elements with two columns */
 #home #featured_1, #featured_4 {
-  @include media-query(FOUR) {
+  @include media-query(THREE) {
     width: 2 * $COLUMN_WIDTH;
     padding: 0 5px;
   }
 }
 
 /* Sets elements with one column */
-#home #featured_2, #featured_3, #featured_5, #featured_6 {
+#home #featured_2, #featured_3 {
+  @include media-query(THREE){
+    width: 2 * $COLUMN_WIDTH;
+    padding: 0 5px;
+  }
+
   @include media-query(FOUR){
+    width: $COLUMN_WIDTH;
+    padding: 0 5px;
+  }
+}
+
+/* Sets elements with one column */
+#home #featured_5, #featured_6 {
+  @include media-query(THREE){
     width: $COLUMN_WIDTH;
     padding: 0 5px;
   }
@@ -169,7 +186,7 @@
 
 #home .featured .featured_small_picture{
   figure {
-    @include background-cover-rounded($COLUMN_WIDTH, 150px);
+    @include background-cover-rounded(220px, 150px);
     display: inline-block;
     @include media-query(FOUR) {
       display: block;
@@ -182,6 +199,10 @@
     max-width: 280px;
     margin-left: 10px;
     position: absolute;
+    @include media-query(THREE) {
+      max-width: $COLUMN_WIDTH;
+    }
+
     @include media-query(FOUR) {
       position: relative;
       width: 100%;
@@ -257,6 +278,9 @@
   display: flex;
   flex-wrap: wrap;
 
+  @include media-query (THREE){
+    width: 2 * $COLUMN_WIDTH;
+  }
   @include media-query (FOUR){
     width: 3 * $COLUMN_WIDTH;
   }
@@ -361,7 +385,7 @@
   align-self: flex-start;
   width: 100%;
 
-  @include media-query(FOUR) {
+  @include media-query(THREE) {
     width: $COLUMN_WIDTH;
     padding: 0 5px;
   }
@@ -498,6 +522,7 @@
       border-top: 0;
       border-bottom: 0;
       display: inline-block;
+      padding: 0 5px;
     }
 
     @include media-query(FOUR) {
@@ -505,7 +530,6 @@
     }
 
     @include media-query(FIVE){
-      padding: 0 5px;
       width: 2 * $COLUMN_WIDTH;
     }
 }
