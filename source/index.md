@@ -162,12 +162,12 @@ article_footer_2:
 
 photo_caption:
   cover:
-    url: "//farm6.staticflickr.com/5737/23562577379_271b5567ca_b.jpg"
-    small: "//farm6.staticflickr.com/5737/23562577379_271b5567ca_b.jpg"
+    url: "//jornalismob.com/wp-content/uploads/Hugo-Chavez.jpg"
+    small: "//jornalismob.com/wp-content/uploads/Hugo-Chavez.jpg"
     subtitle: "Legenda"
-    credits: "Gêmeos"
+    credits: "Chavez"
   date: "2015-12-02T13:47:40-03:00"
-  title: "O Graffiti como arte urbana"
+  title: "Hugo Chavez planta a revolução"
   path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 
 most_read:

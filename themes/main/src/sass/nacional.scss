@@ -14,8 +14,7 @@
 @mixin picture-with-caption(){
   figure {
     margin: 0 auto;
-    width: 90%;
-    max-width: 460px;
+    max-width: 100%;
     position: relative;
 
     img {
@@ -481,6 +480,7 @@
 
   @include media-query(FIVE){
     width: 4 * $COLUMN_WIDTH;
+    flex-wrap: nowrap;
   }
 
 }
@@ -491,15 +491,7 @@
     border-bottom: 1px solid $gray-light;
     padding: 20px 0;
     @include picture-with-caption();
-
-    @include media-query(FIVE){
-      padding: 0 5px;
-      width: 2 * $COLUMN_WIDTH;
-    }
-
-    @include media-query(FOUR) {
-      width: 3 * $COLUMN_WIDTH;
-    }
+    @include background-cover-rounded(70%, 70%);
 
     @include media-query(THREE) {
       width: 2 * $COLUMN_WIDTH;
@@ -507,6 +499,15 @@
       border-top: 0;
       border-bottom: 0;
       display: inline-block;
+    }
+
+    @include media-query(FOUR) {
+      width: 3 * $COLUMN_WIDTH;
+    }
+
+    @include media-query(FIVE){
+      padding: 0 5px;
+      width: 2 * $COLUMN_WIDTH;
     }
 }
 
