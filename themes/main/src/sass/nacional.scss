@@ -18,10 +18,6 @@
     max-width: 460px;
     position: relative;
 
-    @include media-query(MEDIUM) {
-      width: 450px;
-    }
-
     img {
       width: 100%;
     }
@@ -81,7 +77,7 @@
   .section-name {
     @include section-name();
 
-    @include media-query(MEDIUM) {
+    @include media-query(THREE) {
       display: none;
     }
   }
@@ -101,14 +97,14 @@
     margin-top: 5px;
   }
 
-  @include media-query(MEDIUM) {
+  @include media-query(THREE) {
     display: flex;
     flex-flow: row wrap;
   }
 
   article {
     margin-bottom: 15px;
-    @include media-query(MEDIUM) {
+    @include media-query(THREE) {
       margin-bottom: 15px;
     }
   }
@@ -129,7 +125,7 @@
 }
 
 #home .picture img {
-  @include media-query(MEDIUM) {
+  @include media-query(THREE) {
     border-radius: 5px;
   }
 }
@@ -289,7 +285,7 @@
     width: 4 * $COLUMN_WIDTH;
   }
 
-  @include media-query(MEDIUM) {
+  @include media-query(THREE) {
     background-color: white;
     border: 0;
     padding-top: 0;
@@ -310,7 +306,7 @@
   }
 
   article + article {
-    @include media-query(MEDIUM) {
+    @include media-query(THREE) {
       margin-left: 10px;
     }
   }
@@ -398,7 +394,7 @@
   width: 100%;
   display: inline-block;
 
-  @include media-query(MEDIUM) {
+  @include media-query(THREE) {
     padding-top: 0;
   }
 
@@ -412,7 +408,7 @@
     height: 100px;
     align-self: center;
 
-    @include media-query(MEDIUM) {
+    @include media-query(THREE) {
       height: 60px;
       max-width: 60px;
     }
@@ -441,7 +437,7 @@
     font-weight: 700;
   }
 
-  @include media-query(MEDIUM) {
+  @include media-query(THREE) {
     width: 220px;
   }
 
@@ -458,7 +454,7 @@
       justify-content: center;
       padding-left: 10px;
 
-      @include media-query(MEDIUM) {
+      @include media-query(THREE) {
         flex: 0 0 80px;
       }
     }
@@ -493,7 +489,7 @@
       width: 2 * $COLUMN_WIDTH;
     }
 
-    @include media-query(MEDIUM) {
+    @include media-query(THREE) {
       background-color: white;
       border-top: 0;
       border-bottom: 0;

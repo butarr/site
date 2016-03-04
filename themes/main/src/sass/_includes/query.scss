@@ -1,19 +1,21 @@
-$small_screen:     320px;
+@import '_includes/constants';
+
 $medium_screen:     768px;
-$large_screen:     1170px;
-$four_columns: 920px;
-$five_columns: 1150px;
+$two_columns: 2 * $COLUMN_WIDTH;
+$three_columns: 3 * $COLUMN_WIDTH;
+$four_columns: 4 * $COLUMN_WIDTH;
+$five_columns: 5 * $COLUMN_WIDTH;
 
 
 @mixin media-query($canvas) {
-  @if $canvas == SMALL {
-   @media only screen and (min-width: $small_screen) { @content; }
-  }
-  @else if $canvas == MEDIUM {
+  @if $canvas == MEDIUM {
    @media only screen and (min-width: $medium_screen) { @content; }
   }
-  @else if $canvas == LARGE {
-   @media only screen and (min-width: $large_screen) { @content; }
+  @else if $canvas == TWO {
+   @media only screen and (min-width: $two_columns) { @content; }
+  }
+  @else if $canvas == THREE {
+   @media only screen and (min-width: $three_columns) { @content; }
   }
   @else if $canvas == FOUR {
    @media only screen and (min-width: $four_columns) { @content; }
@@ -22,5 +24,3 @@ $five_columns: 1150px;
    @media only screen and (min-width: $five_columns) { @content; }
   }
 }
-
-
