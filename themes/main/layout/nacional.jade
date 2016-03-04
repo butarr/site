@@ -113,15 +113,16 @@ append content
             a(href=post.path)
               h1.title(itemprop="headline")= post.title
             meta(itemprop="datePublished" content= post.date)
-        if page.photo_caption
-          section.photo_caption
-            - var post=page.photo_caption
-            figure(itemscope itemtype="http://schema.org/ImageObject")
-              img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
-              meta(itemprop="contentUrl" content=post.cover.small)
-              figcaption
-                h1.title(itemprop="headline")= post.title
-                h2.credits(itemprop="creator")= post.cover.credits
+      
+      if page.photo_caption
+        section.photo_caption
+          - var post=page.photo_caption
+          figure(itemscope itemtype="http://schema.org/ImageObject")
+            img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
+            meta(itemprop="contentUrl" content=post.cover.small)
+            figcaption
+              h1.title(itemprop="headline")= post.title
+              h2.credits(itemprop="creator")= post.cover.credits
        
       section.most_read
         meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")

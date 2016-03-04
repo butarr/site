@@ -278,11 +278,8 @@
   justify-content: space-around;
   padding-top: 20px;
 
-  @include media-query(FIVE) {
-    width: 4 * $COLUMN_WIDTH;
-  }
-
   @include media-query(THREE) {
+    width: 2 * $COLUMN_WIDTH;
     background-color: white;
     border: 0;
     padding-top: 0;
@@ -290,13 +287,22 @@
     flex-wrap: nowrap;
   }
 
+  @include media-query(FOUR) {
+    width: $COLUMN_WIDTH;
+    flex-wrap: wrap;
+  }
+
+  @include media-query(FIVE) {
+    width: 2 * $COLUMN_WIDTH;
+  }
+
   article.article_footer {
     width: 45%;
     max-width: 250px;
     margin: 0 10px 20px 10px;
 
-    @include media-query (FIVE){
-      width: 25%;
+    @include media-query (THREE){
+      width: $COLUMN_WIDTH;
       padding: 0 5px;
       margin: 0;
     }
@@ -468,6 +474,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  @include media-query(THREE) {
+    width: 2 * $COLUMN_WIDTH;
+    padding: 0 5px;
+  }
+
   @include media-query(FIVE){
     width: 4 * $COLUMN_WIDTH;
   }
@@ -486,7 +497,12 @@
       width: 2 * $COLUMN_WIDTH;
     }
 
+    @include media-query(FOUR) {
+      width: 3 * $COLUMN_WIDTH;
+    }
+
     @include media-query(THREE) {
+      width: 2 * $COLUMN_WIDTH;
       background-color: white;
       border-top: 0;
       border-bottom: 0;
