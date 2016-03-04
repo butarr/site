@@ -413,6 +413,7 @@
   }
 
     img#radar_mobile {
+      width: 100%;
     @include media-query(THREE) {
       display: none;
     }
