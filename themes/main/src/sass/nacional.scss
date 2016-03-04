@@ -50,6 +50,8 @@
   @include get-font(NACIONAL);
 
   @include media-query (THREE){
+    padding-left: 0;
+    padding-right: 0;
     flex-wrap: nowrap;
     width: 3 * $COLUMN_WIDTH;
     margin: 180px auto 0 auto;
