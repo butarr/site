@@ -94,7 +94,7 @@ append content
         if page.article_footer_1
           - var post=page.article_footer_1
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer")
+          article#footer_1(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer")
             span.hat(itemprop="about")= post.hat
             a(href=post.path)
               img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
@@ -104,7 +104,7 @@ append content
         if page.article_footer_2
           - var post=page.article_footer_2
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer")
+          article#footer_2(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer")
             span.hat(itemprop="about")= post.hat
             a(href=post.path)
               img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
