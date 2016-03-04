@@ -1,3 +1,4 @@
+@import '_includes/query';
 
 @mixin __nacional(){
   h1, h2, span, p {
@@ -191,7 +192,12 @@
   a {
     font-family: 'Merriweather', serif;
     font-size: 1em;
-    font-weight: bold;
+
+    @include media-query(THREE) {
+      font-family: 'Merriweather', serif;
+      font-size: 1em;
+      font-weight: bold;
+    }
   }
 }
 
