@@ -10,7 +10,7 @@
 
 @mixin section-name(){
   display: block;
-  color: $black-dark;
+  color: $title-color;
   text-transform: uppercase;
   border-bottom: 3px solid $red;
   margin-bottom: 5px;
@@ -104,7 +104,7 @@
   }
 
   .description{
-    color: $black-dark;
+    color: $title-color;
     margin-top: 5px;
   }
 
@@ -474,7 +474,7 @@
   }
 
   .title {
-    color: $black-dark;
+    color: $title-color;
     margin-top: 5px;
   }
 
