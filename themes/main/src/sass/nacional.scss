@@ -315,7 +315,7 @@
 
   .hat{
     @include section-name();
-    color: #6b6b6b;
+
   }
 
   img{
@@ -482,7 +482,6 @@
     width: 4 * $COLUMN_WIDTH;
     flex-wrap: nowrap;
   }
-
 }
 
 #home .photo_caption {
