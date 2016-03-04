@@ -172,16 +172,27 @@ hr {
     li {
       display: inline-block;
       @include get-font(MENU);
+      padding: 0 20px;
 
       a {
         color: white;
       }
     }
 
+    li:hover {
+      background-color: #b12028;
+      display: block;
+      padding: 10px 20px;
+
+    }
+
     hr {
       height: 20px;
-      margin: 0 20px;
+      margin: 0 0px;
       border: 1px solid $red-border;
     }
   }
+
+
+
 }
