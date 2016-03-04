@@ -3,6 +3,11 @@
 @import '_includes/mixins';
 @import '_includes/constants';
 
+@mixin padding-mobile(){
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 @mixin section-name(){
   display: block;
   color: $black-dark;
@@ -38,6 +43,7 @@
   width: 100%;
   max-width: 460px;
   margin: 80px auto 20px auto;
+  @include padding-mobile();
   display: flex;
   flex-wrap: wrap;
 
@@ -135,6 +141,7 @@
 
 /* Sets elements with two columns */
 #home #featured_1, #featured_4 {
+  width: 100%;
   @include media-query(THREE) {
     width: 2 * $COLUMN_WIDTH;
     padding: 0 5px;
@@ -143,7 +150,6 @@
 
 /* Sets elements with one column */
 #home #featured_2, #featured_3 {
-
   @include media-query(THREE){
     width: $COLUMN_WIDTH;
     padding: 0 5px;
@@ -159,6 +165,7 @@
 }
 
 #home .featured .featured_big_picture {
+  width: 100%;
   @include picture-with-caption();
 
   figure {
@@ -185,9 +192,11 @@
   flex-wrap: wrap;
 
   figure {
-    @include background-cover-rounded(220px, 220px);
+    @include background-cover-rounded(150px, 150px);
     display: inline-block;
-    @include media-query(FOUR) {
+
+    @include media-query(THREE) {
+      @include background-cover-rounded(220px, 220px);
       display: block;
       width: auto;
     }
@@ -268,6 +277,7 @@
 #home .main {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 
   @include media-query (THREE){
     width: 2 * $COLUMN_WIDTH;
@@ -283,9 +293,6 @@
 
 
 #home .secondary {
-  background-color: $gray-background;
-  border-top: 1px solid $gray-light;
-  border-bottom: 1px solid $gray-light;
   flex-flow: row wrap;
   display: flex;
   -webkit-justify-content: space-around;
