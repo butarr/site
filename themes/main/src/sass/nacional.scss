@@ -145,7 +145,8 @@
 #home #featured_2, #featured_3 {
   @include media-query(THREE){
     width: 2 * $COLUMN_WIDTH;
-    padding: 0 5px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   @include media-query(FOUR){
