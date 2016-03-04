@@ -135,7 +135,8 @@ append content
       section.radar
         figure
           a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Radar dos Movimentos")
-            img(src="#{ url_for('img/radar.png') }", alt="imagem radar dos movimentos")
+            img#radar_desktop(src="#{ url_for('img/radar.png') }", alt="imagem radar dos movimentos")
+            img#radar_mobile(src="#{ url_for('img/radar_mobile.png') }", alt="imagem radar dos movimentos")
       section.columns(itemscope itemtype="http://schema.org/ItemList")
         h1.section-name Colunistas
         if page.column_1

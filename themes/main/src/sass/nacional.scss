@@ -404,6 +404,21 @@
   }
 }
 
+#home .sidebar .radar {
+  img#radar_desktop {
+    display: none;
+    @include media-query(THREE) {
+      display: inline-block;
+    }
+  }
+
+    img#radar_mobile {
+    @include media-query(THREE) {
+      display: none;
+    }
+  }
+}
+
 #home .sidebar .last_news {
   padding: 0 5px;
 
