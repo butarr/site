@@ -34,28 +34,29 @@ append content
               figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
               h1.title(itemprop="headline")= post.title
               p.description= post.description
-        if page.featured_text
-          - var post=page.featured_text
-          article#featured_4(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text")
-            a(href=post.path)
-              h1.title(itemprop="headline")= post.title
-            a(href=post.path)
-              p.description= post.description
-            meta(itemprop="datePublished" content=post.date)
-        if page.featured_text_box_1
-          - var post=page.featured_text_box_1
-          #featured_5
-            article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
+        #featured_text_container
+          if page.featured_text
+            - var post=page.featured_text
+            article#featured_4(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text")
               a(href=post.path)
                 h1.title(itemprop="headline")= post.title
-              meta(itemprop="datePublished" content=post.date)
-        if page.featured_text_box_2
-          - var post=page.featured_text_box_2
-          #featured_6
-            article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
               a(href=post.path)
-                h1.title(itemprop="headline")= post.title
+                p.description= post.description
               meta(itemprop="datePublished" content=post.date)
+          if page.featured_text_box_1
+            - var post=page.featured_text_box_1
+            #featured_5
+              article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
+                a(href=post.path)
+                  h1.title(itemprop="headline")= post.title
+                meta(itemprop="datePublished" content=post.date)
+          if page.featured_text_box_2
+            - var post=page.featured_text_box_2
+            #featured_6
+              article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
+                a(href=post.path)
+                  h1.title(itemprop="headline")= post.title
+                meta(itemprop="datePublished" content=post.date)
 
       if page.gallery
         section.galleries

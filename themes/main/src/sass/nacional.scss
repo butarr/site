@@ -237,22 +237,19 @@
       order: -4;
     }
   }
-  #featured_4 {
+
+  #featured_text_container {
+    display: flex;
+    flex-wrap: wrap;
+
     @include media-query(FOUR){
+      width: 2 * $COLUMN_WIDTH;
       order: -4;
     }
+
     @include media-query(FIVE){
+      width: 4 * $COLUMN_WIDTH;
       order: -3;
-    }
-  }
-  #featured_5 {
-    @include media-query(FOUR){
-      order: -2;
-    }
-  }
-  #featured_6 {
-    @include media-query(FOUR){
-      order: -1;
     }
   }
 }
