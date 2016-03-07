@@ -195,11 +195,11 @@
   flex-wrap: wrap;
 
   figure {
-    @include background-cover-rounded(150px, 150px);
+    @include image-rounded(150px, 150px);
     display: inline-block;
 
     @include media-query(THREE) {
-      @include background-cover-rounded(220px, 220px);
+      @include image-rounded(220px, 220px);
       display: block;
       width: auto;
     }
@@ -537,7 +537,7 @@
 #home .photo_caption {
     padding: 20px 0;
     @include picture-with-caption();
-    @include background-cover-rounded(100%, 100%);
+    @include image-rounded(100%, 100%);
     
     @include media-query(THREE) {
       width: 2 * $COLUMN_WIDTH;

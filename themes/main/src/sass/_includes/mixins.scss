@@ -119,7 +119,7 @@
   }
 }
 
-@mixin background-cover-rounded($width, $height) {
+@mixin image-rounded($width, $height) {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
