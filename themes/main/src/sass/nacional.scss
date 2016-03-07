@@ -59,7 +59,7 @@
   }
 
   .divisor + .divisor {
-    border-top: 1px solid $gray-lighter;
+    border-top: 1px solid $vertical-line;
     padding-top: 10px;
 
     @include media-query(THREE){
@@ -154,10 +154,18 @@
 #home .featured_small_picture, .featured_text{
   .title {
     @include media-query(THREE) {
-      border-left: 3px solid $gray-lighter;
+      border-left: 3px solid $vertical-line;
       padding-left: 10px;
       margin-top: 10px;
     }
+  }
+}
+
+#home .featured_text{
+  .title {
+    border-left: 3px solid $vertical-line;
+    padding-left: 10px;
+    margin-top: 10px;
   }
 }
 
@@ -353,7 +361,7 @@
     list-style: none;
     line-height: 1.2em;
     padding : 5px 0 5px 8px;
-    border-left: 3px solid $gray-border;
+    border-left: 3px solid $vertical-line;
     margin-top: 10px;
   }
 }
