@@ -87,14 +87,6 @@
 }
 
 /* Sets elements with one column */
-#home #featured_2, #featured_3 {
-  @include media-query(THREE){
-    width: $COLUMN-WIDTH;
-    padding: 0 5px;
-  }
-}
-
-/* Sets elements with one column */
 #home #featured_5, #featured_6 {
   @include media-query(THREE){
     width: $COLUMN-WIDTH;
@@ -121,6 +113,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  @include space-between-columns();
 
   @include media-query(THREE) {
     width: $COLUMN-WIDTH;
@@ -133,7 +126,6 @@
     @include media-query(THREE) {
       @include image-rounded(220px, 220px);
       display: block;
-      width: auto;
     }
   }
 
@@ -148,14 +140,6 @@
     @include media-query(THREE) {
       position: relative;
       width: 100%;
-      margin-left: 0;
-    }
-  }
-}
-
-#home .featured_small_picture, .featured_text{
-  .title {
-    @include media-query(THREE) {
       border-left: 3px solid $vertical-line;
       padding-left: 10px;
       margin-top: 10px;
