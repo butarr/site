@@ -78,7 +78,7 @@
 }
 
 /* Sets elements with two columns */
-#home #featured_1, #featured_4 {
+#home #featured_4 {
   width: 100%;
   @include media-query(THREE) {
     width: 2 * $COLUMN-WIDTH;
@@ -103,14 +103,16 @@
 }
 
 #home .featured_big_picture { 
+  width: 100%;
   @include picture-with-caption();
 
+  @include media-query(THREE) {
+    width: 2 * $COLUMN-WIDTH;
+    @include space-between-columns();
+  }
+  
   figure {
     @include image-rounded(450px, 330px);
-    width: 100%;
-  }
-  .title {
-    color: white;
     width: 100%;
   }
 }
