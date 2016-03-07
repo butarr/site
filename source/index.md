@@ -3,8 +3,8 @@ layout: nacional
 
 featured_big_picture:
   cover:
-    url: "//farm1.staticflickr.com/664/23266252363_e39193d140_b.jpg"
-    small: "//farm1.staticflickr.com/664/23266252363_e39193d140_n.jpg"
+    url: "//www.biblioteca.presidencia.gov.br/ex-presidentes/luiz-inacio-lula-da-silva/retrato.jpg/"
+    small: "//www.biblioteca.presidencia.gov.br/ex-presidentes/luiz-inacio-lula-da-silva/retrato.jpg/"
     subtitle: "Legenda aqui"
     credits: "Fulano de tal"
   date: "2015-12-02T13:47:40-03:00"

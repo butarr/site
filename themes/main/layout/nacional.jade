@@ -7,14 +7,10 @@ append content
         - var post=page.featured_big_picture
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
         article#featured_1(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_big_picture" class="divisor")
-          figure
-            a(href=post.path)
-              img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
-            figcaption
-              a(href=post.path)
-                h1.title(itemprop="headline")= post.title
           a(href=post.path)
-            p.description= post.description
+            figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
+              figcaption
+                h1.title(itemprop="headline")= post.title
       if page.featured_small_picture_1
         - var post=page.featured_small_picture_1
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits

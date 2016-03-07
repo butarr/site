@@ -77,12 +77,6 @@
   }
 }
 
-#home .picture img {
-  @include media-query(THREE) {
-    border-radius: 5px;
-  }
-}
-
 /* Sets elements with two columns */
 #home #featured_1, #featured_4 {
   width: 100%;
@@ -108,26 +102,16 @@
   }
 }
 
-#home .featured_big_picture {
-  width: 100%;
+#home .featured_big_picture { 
   @include picture-with-caption();
 
   figure {
+    @include image-rounded(450px, 330px);
     width: 100%;
-    margin: 0 auto;
   }
-
-  img {
-    border-radius: 5px 5px 5px 5px;
-  }
-
   .title {
     color: white;
     width: 100%;
-  }
-
-  .description{
-    display: none;
   }
 }
 
