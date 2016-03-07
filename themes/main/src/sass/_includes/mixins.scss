@@ -34,12 +34,16 @@
   transform: $that;
 }
 
-@mixin space-between-columns(){
+@mixin space-between-columns() {
   padding-left: 5px;
   padding-right: 5px;
 }
 
-@mixin picture-with-caption(){
+@mixin margin-site($header-height) {
+  margin: ($header-height + 10px) auto 0 auto;
+}
+
+@mixin picture-with-caption() {
   figure {
     position: relative;
 

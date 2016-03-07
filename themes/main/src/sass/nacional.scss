@@ -9,18 +9,13 @@
   margin: 70px auto 20px auto;
   padding-left: 10px;
   padding-right: 10px;
-  display: flex;
-  flex-wrap: wrap;
-
+  @include margin-site($HEADER-HEIGHT-CONTRACTED);
   @include get-font(NACIONAL);
 
   @include media-query (THREE){
     padding-left: 0;
     padding-right: 0;
-    flex-wrap: nowrap;
-    width: 3 * $COLUMN_WIDTH;
-    margin: 180px auto 0 auto;
-    max-width: $DESKTOP_WIDTH_SITE;
+    @include margin-site($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP); 
   }
 
   @include media-query (FOUR){

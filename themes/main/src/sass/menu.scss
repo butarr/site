@@ -1,6 +1,7 @@
 @import '_includes/colors';
 @import '_includes/query';
 @import '_includes/fonts';
+@import '_includes/constants';
 
 @mixin transition-left(){
   -webkit-transition:  left 0.1s ease-in-out;
@@ -37,7 +38,7 @@
     float: none;
     width: 100%;
     min-height: 30px;
-    height: 40px;
+    height: $HEADER-HEIGHT-MENU;
     margin-top: 2px;
     box-shadow: 0px 6px 10px -2px rgba(0, 0, 0, 0.42);
     position: relative;

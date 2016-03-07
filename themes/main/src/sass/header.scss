@@ -1,5 +1,6 @@
 @import '_includes/colors';
 @import '_includes/query';
+@import '_includes/contants';
 
 $lateral-margin: 10px;
 
@@ -19,11 +20,11 @@ $lateral-margin: 10px;
   top: 0;
   background-color: $bdf-red;
   width: 100%;
-  height: 60px;
+  height: $HEADER-HEIGHT-CONTRACTED;
   display: flex;
   align-items: center;
   @include media-query(THREE) {
-      height: 120px;
+      height: $HEADER-HEIGHT-DESKTOP;
       flex-wrap: wrap;
       justify-content: space-around;
       border-bottom: 2px solid $red-border;
@@ -106,7 +107,7 @@ $lateral-margin: 10px;
 
  #page-header .banner-header.contracted {
     @include media-query(THREE) {
-      height: 60px;
+      height: $HEADER-HEIGHT-CONTRACTED;
       display:flex;
 
 
