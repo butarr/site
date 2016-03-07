@@ -42,23 +42,25 @@
   }
 }
 
-#home .featured {
+#home .main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 
-  @include media-query(FIVE) {
+  @include media-query (THREE){
+    width: 2 * $COLUMN-WIDTH;
+    flex-flow: row wrap;
+  }
+  @include media-query (FOUR){
+    width: 3 * $COLUMN-WIDTH;
+  }
+  @include media-query (FIVE){
     width: 4 * $COLUMN-WIDTH;
   }
 
-  .section-name {
-    @include section-name();
-
-    @include media-query(THREE) {
-      display: none;
-    }
-  }
-
-  article + article {
+  .divisor + .divisor {
     border-top: 1px solid $gray-lighter;
-    padding-top: 15px;
+    padding-top: 10px;
 
     @include media-query(THREE){
       border-top: 0;
@@ -67,20 +69,11 @@
   }
 
   .description{
-    color: $title-color;
-    margin-top: 5px;
-  }
-
-  @include media-query(THREE) {
-    display: flex;
-    flex-flow: row wrap;
+    margin-top: 10px;
   }
 
   article {
-    margin-bottom: 15px;
-    @include media-query(THREE) {
-      margin-bottom: 15px;
-    }
+    margin-bottom: 10px;
   }
 }
 
@@ -129,7 +122,7 @@
   }
 }
 
-#home .featured .featured_big_picture {
+#home .featured_big_picture {
   width: 100%;
   @include picture-with-caption();
 
@@ -152,9 +145,14 @@
   }
 }
 
-#home .featured .featured_small_picture {
+#home .featured_small_picture {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+
+  @include media-query(THREE) {
+    width: $COLUMN-WIDTH;
+  }
 
   figure {
     @include image-rounded(150px, 150px);
@@ -183,7 +181,7 @@
   }
 }
 
-#home .featured .featured_small_picture, .featured_text{
+#home .featured_small_picture, .featured_text{
   .title {
     @include media-query(THREE) {
       border-left: 3px solid $gray-lighter;
@@ -193,7 +191,7 @@
   }
 }
 
-#home .featured .featured_text_box {
+#home .featured_text_box {
   background-color: $gray-background;
   border-top: 3px solid $horizontal-line;
   padding: 10px;
@@ -241,21 +239,7 @@
   }
 }
 
-#home .main {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
 
-  @include media-query (THREE){
-    width: 2 * $COLUMN-WIDTH;
-  }
-  @include media-query (FOUR){
-    width: 3 * $COLUMN-WIDTH;
-  }
-  @include media-query (FIVE){
-    width: 4 * $COLUMN-WIDTH;
-  }
-}
 
 
 

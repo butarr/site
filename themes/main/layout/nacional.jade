@@ -3,57 +3,55 @@ extend base
 append content
   section#home
     section.main
-      section.featured(itemscope itemtype="http://schema.org/ItemList")
-        meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderDescending")
-        if page.featured_big_picture
-          - var post=page.featured_big_picture
-          - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-          article#featured_1(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_big_picture")
-            figure
-              a(href=post.path)
-                img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
-              figcaption
-                a(href=post.path)
-                  h1.title(itemprop="headline")= post.title
+      if page.featured_big_picture
+        - var post=page.featured_big_picture
+        - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+        article#featured_1(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_big_picture" class="divisor")
+          figure
             a(href=post.path)
-              p.description= post.description
-        if page.featured_small_picture_1
-          - var post=page.featured_small_picture_1
-          - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-          article#featured_2(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_small_picture")
-            a(href=post.path)
-              figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-              h1.title(itemprop="headline")= post.title
-        if page.featured_small_picture_2
-          - var post=page.featured_small_picture_2
-          - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-          article#featured_3(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_small_picture")
-            a(href=post.path)
-              figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-              h1.title(itemprop="headline")= post.title
-        #featured_text_container
-          if page.featured_text
-            - var post=page.featured_text
-            article#featured_4(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text")
+              img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
+            figcaption
               a(href=post.path)
                 h1.title(itemprop="headline")= post.title
+          a(href=post.path)
+            p.description= post.description
+      if page.featured_small_picture_1
+        - var post=page.featured_small_picture_1
+        - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+        article#featured_2(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_small_picture" class="divisor")
+          a(href=post.path)
+            figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
+            h1.title(itemprop="headline")= post.title
+      if page.featured_small_picture_2
+        - var post=page.featured_small_picture_2
+        - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+        article#featured_3(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_small_picture" class="divisor")
+          a(href=post.path)
+            figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
+            h1.title(itemprop="headline")= post.title
+      #featured_text_container(class="divisor")
+        if page.featured_text
+          - var post=page.featured_text
+          article#featured_4(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text")
+            a(href=post.path)
+              h1.title(itemprop="headline")= post.title
+            a(href=post.path)
+              p.description= post.description
+            meta(itemprop="datePublished" content=post.date)
+        if page.featured_text_box_1
+          - var post=page.featured_text_box_1
+          #featured_5
+            article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
               a(href=post.path)
-                p.description= post.description
+                h1.title(itemprop="headline")= post.title
               meta(itemprop="datePublished" content=post.date)
-          if page.featured_text_box_1
-            - var post=page.featured_text_box_1
-            #featured_5
-              article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
-                a(href=post.path)
-                  h1.title(itemprop="headline")= post.title
-                meta(itemprop="datePublished" content=post.date)
-          if page.featured_text_box_2
-            - var post=page.featured_text_box_2
-            #featured_6
-              article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
-                a(href=post.path)
-                  h1.title(itemprop="headline")= post.title
-                meta(itemprop="datePublished" content=post.date)
+        if page.featured_text_box_2
+          - var post=page.featured_text_box_2
+          #featured_6
+            article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
+              a(href=post.path)
+                h1.title(itemprop="headline")= post.title
+              meta(itemprop="datePublished" content=post.date)
 
       if page.gallery
         section.galleries
