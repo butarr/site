@@ -4,26 +4,29 @@
 @import '_includes/constants';
 
 #home {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  max-width: 460px;
-  margin: 70px auto 20px auto;
+  max-width: 2 * $COLUMN-WIDTH;
   padding-left: 10px;
   padding-right: 10px;
   @include margin-site($HEADER-HEIGHT-CONTRACTED);
   @include get-font(NACIONAL);
 
   @include media-query (THREE){
+    flex-wrap: nowrap;
+    max-width: 3 * $COLUMN-WIDTH;
     padding-left: 0;
     padding-right: 0;
     @include margin-site($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP); 
   }
 
   @include media-query (FOUR){
-    width: 4 * $COLUMN_WIDTH;
+    max-width: 4 * $COLUMN-WIDTH;
   }
 
   @include media-query(FIVE) {
-    width: 5 * $COLUMN_WIDTH;
+    max-width: 5 * $COLUMN-WIDTH;
   }
 
   a {
@@ -42,7 +45,7 @@
 #home .featured {
 
   @include media-query(FIVE) {
-    width: 4 * $COLUMN_WIDTH;
+    width: 4 * $COLUMN-WIDTH;
   }
 
   .section-name {
@@ -105,7 +108,7 @@
 #home #featured_1, #featured_4 {
   width: 100%;
   @include media-query(THREE) {
-    width: 2 * $COLUMN_WIDTH;
+    width: 2 * $COLUMN-WIDTH;
     padding: 0 5px;
   }
 }
@@ -113,7 +116,7 @@
 /* Sets elements with one column */
 #home #featured_2, #featured_3 {
   @include media-query(THREE){
-    width: $COLUMN_WIDTH;
+    width: $COLUMN-WIDTH;
     padding: 0 5px;
   }
 }
@@ -121,7 +124,7 @@
 /* Sets elements with one column */
 #home #featured_5, #featured_6 {
   @include media-query(THREE){
-    width: $COLUMN_WIDTH;
+    width: $COLUMN-WIDTH;
     padding: 0 5px;
   }
 }
@@ -227,12 +230,12 @@
     flex-wrap: wrap;
 
     @include media-query(FOUR){
-      width: 2 * $COLUMN_WIDTH;
+      width: 2 * $COLUMN-WIDTH;
       order: -4;
     }
 
     @include media-query(FIVE){
-      width: 4 * $COLUMN_WIDTH;
+      width: 4 * $COLUMN-WIDTH;
       order: -3;
     }
   }
@@ -244,13 +247,13 @@
   width: 100%;
 
   @include media-query (THREE){
-    width: 2 * $COLUMN_WIDTH;
+    width: 2 * $COLUMN-WIDTH;
   }
   @include media-query (FOUR){
-    width: 3 * $COLUMN_WIDTH;
+    width: 3 * $COLUMN-WIDTH;
   }
   @include media-query (FIVE){
-    width: 4 * $COLUMN_WIDTH;
+    width: 4 * $COLUMN-WIDTH;
   }
 }
 
@@ -264,7 +267,7 @@
   padding-top: 20px;
 
   @include media-query(THREE) {
-    width: 2 * $COLUMN_WIDTH;
+    width: 2 * $COLUMN-WIDTH;
     background-color: white;
     border: 0;
     padding-top: 0;
@@ -273,12 +276,12 @@
   }
 
   @include media-query(FOUR) {
-    width: $COLUMN_WIDTH;
+    width: $COLUMN-WIDTH;
     flex-wrap: wrap;
   }
 
   @include media-query(FIVE) {
-    width: 2 * $COLUMN_WIDTH;
+    width: 2 * $COLUMN-WIDTH;
   }
 
   article#footer_1 {
@@ -294,7 +297,7 @@
     max-width: 250px;
 
     @include media-query (THREE){
-      width: $COLUMN_WIDTH;
+      width: $COLUMN-WIDTH;
       padding: 0 5px;
       margin: 0;
     }
@@ -324,7 +327,7 @@
 
   @include media-query(FIVE){
     padding: 0 5px;
-    width: 4 * $COLUMN_WIDTH;
+    width: 4 * $COLUMN-WIDTH;
   }
 
   .section-name {
@@ -355,7 +358,7 @@
   width: 100%;
 
   @include media-query(THREE) {
-    width: $COLUMN_WIDTH;
+    width: $COLUMN-WIDTH;
     padding: 0 5px;
   }
 
@@ -483,12 +486,12 @@
   flex-wrap: wrap;
 
   @include media-query(THREE) {
-    width: 2 * $COLUMN_WIDTH;
+    width: 2 * $COLUMN-WIDTH;
     padding: 0 5px;
   }
 
   @include media-query(FIVE){
-    width: 4 * $COLUMN_WIDTH;
+    width: 4 * $COLUMN-WIDTH;
     flex-wrap: nowrap;
   }
 }
@@ -499,7 +502,7 @@
     @include image-rounded(100%, 100%);
     
     @include media-query(THREE) {
-      width: 2 * $COLUMN_WIDTH;
+      width: 2 * $COLUMN-WIDTH;
       background-color: white;
       border-top: 0;
       border-bottom: 0;
@@ -508,11 +511,11 @@
     }
 
     @include media-query(FOUR) {
-      width: 3 * $COLUMN_WIDTH;
+      width: 3 * $COLUMN-WIDTH;
     }
 
     @include media-query(FIVE){
-      width: 2 * $COLUMN_WIDTH;
+      width: 2 * $COLUMN-WIDTH;
     }
 }
 
@@ -525,7 +528,7 @@
 
   @include media-query(FIVE) {
     padding: 0 5px;
-    width: 2 * $COLUMN_WIDTH;
+    width: 2 * $COLUMN-WIDTH;
   }
 
   figure {

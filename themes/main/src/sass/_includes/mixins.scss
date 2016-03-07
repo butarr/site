@@ -70,7 +70,7 @@
   height: $height;
 }
 
-@mixin section-name(){
+@mixin section-name() {
   display: block;
   color: $title-color;
   text-transform: uppercase;
@@ -78,14 +78,14 @@
   margin-bottom: 5px;
 }
 
-@mixin columnist-hat(){
+@mixin columnist-hat() {
   padding-bottom: 8px;
   border-bottom: 3px solid $bdf-red;
   width: 100%;
   display: block;
 }
 
-@mixin person(){
+@mixin person() {
   @include get-font(PERSON);
   width: 100%;
   padding: 10px 0;
@@ -99,7 +99,7 @@
     }
   }
 
-  .name, .job-title{
+  .name, .job-title {
     margin: 0;
     padding-left: 15px;
     float: left;
@@ -124,13 +124,13 @@
   }
 }
 
-@mixin list-news-on-mobile(){
+@mixin list-news-on-mobile() {
   padding: 10px 15px;
   a {
     text-decoration: none;
   }
 
-  h1{
+  h1 {
     font-weight: bold;
     font-size: 1em;
     color: $bdf-red;
