@@ -12,7 +12,7 @@
   display: block;
   color: $title-color;
   text-transform: uppercase;
-  border-bottom: 3px solid $red;
+  border-bottom: 3px solid $horizontal-line;
   margin-bottom: 5px;
 }
 
@@ -233,7 +233,7 @@
 
 #home .featured .featured_text_box {
   background-color: $gray-background;
-  border-top: 3px solid $red;
+  border-top: 3px solid $horizontal-line;
   padding: 10px;
 
   .description {
