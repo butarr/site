@@ -113,7 +113,7 @@
 
   article {
     margin-bottom: $VERTICAL-SPACE;
-  } 
+  }
 
   .radar, .columns, .last_news {
       width: 100%;
@@ -232,7 +232,7 @@
     @include space-between-columns();
 
     @include media-query (THREE){
-      width: $COLUMN-WIDTH; 
+      width: $COLUMN-WIDTH;
     }
   }
 
@@ -251,6 +251,7 @@
   flex-wrap: wrap;
   width: 2 * $COLUMN-WIDTH;
   align-items: baseline;
+  margin-bottom: 30px;
 
   @include media-query(FIVE){
     width: 4 * $COLUMN-WIDTH;
@@ -258,7 +259,7 @@
   }
 
   .gallery-images, .gallery-videos{
-    height: 300px;
+    height: 250px;
     max-width: 2 * $COLUMN_WIDTH;
     width: 100%;
     @include space-between-columns();
@@ -267,12 +268,12 @@
       @include section-name();
     }
 
-    .videos, .photos{
-      height: 90%;
+    iframe{
+      height: 100%;
       width: 100%;
     }
   }
-} 
+}
 
 #home .photo_caption {
   @include picture-with-caption();
@@ -399,4 +400,3 @@
     margin-top: 10px;
   }
 }
-

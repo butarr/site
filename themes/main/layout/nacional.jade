@@ -93,10 +93,12 @@ append content
       section.galleries
         section.gallery-videos
           h1.section-name Vídeos
-          iframe.videos(src="//www.youtube.com/embed/zZrbJmAP8W8?list=PLytfbsQYLZpB5uDo8LRdjf9X9RfOlFw4d" allowfullscreen)
+          iframe(src="//www.youtube.com/embed/zZrbJmAP8W8?list=PLytfbsQYLZpB5uDo8LRdjf9X9RfOlFw4d" allowfullscreen target="_blank")
         section.gallery-images
-          h1.section-name Galeria        
-          iframe.photos(src="//www.flickr.com/photos/brasildefato/player" allowfullscreen)
+          h1.section-name Galeria     
+          div#TC36RNAS5P
+          script(async='', src='//flickrit.com/embed.js.php?id=TC36RNAS5P', charset='utf-8')
+
 
       section.secondary(itemscope itemtype="http://schema.org/ItemList")  
         meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
