@@ -124,8 +124,6 @@
 
 }
 
-
-
 #home .box_container {
   @include media-query(THREE){
     width: $COLUMN-WIDTH;
@@ -313,14 +311,9 @@
   }
 }
 
-
 #home .most_read {
   width: 100%;
-
-  @include media-query(FIVE){
-    padding: 0 5px;
-    width: 4 * $COLUMN-WIDTH;
-  }
+  @include space-between-columns();
 
   .section-name {
     @include section-name();
@@ -328,7 +321,7 @@
 
   ol {
     counter-reset: li;
-    margin: 15px 0 0 34px;
+    margin: 15px 0 0 35px;
   }
 
   ol > li {
@@ -340,21 +333,16 @@
   ol > li:before{
     content: counter(li) ".";
     counter-increment: li;
-    margin: 0 10px 0 -34px;
-    color: $bdf-red;
+    margin: 0 10px 0 -35px;
+    color: $red-base;
   }
 }
 
 #home .last_news {
-  padding: 0 5px;
+  @include space-between-columns();
 
   .section-name {
     @include section-name();
-  }
-
-  ol {
-    margin: 0;
-    padding: 0;
   }
 
   ol > li {
@@ -365,10 +353,6 @@
     margin-top: 10px;
   }
 }
-
-
-
-
 
 #home .galleries{
   width: 2 * $COLUMN-WIDTH;
@@ -405,24 +389,6 @@
 }
 
 #home .photo_caption {
-    padding: 20px 0;
-    @include picture-with-caption();
-    @include image-rounded(100%, 100%);
-
-    @include media-query(THREE) {
-      width: 2 * $COLUMN-WIDTH;
-      background-color: white;
-      border-top: 0;
-      border-bottom: 0;
-      display: inline-block;
-      padding: 0 5px;
-    }
-
-    @include media-query(FOUR) {
-      width: 3 * $COLUMN-WIDTH;
-    }
-
-    @include media-query(FIVE){
-      width: 2 * $COLUMN-WIDTH;
-    }
+  @include picture-with-caption();
+  @include space-between-columns();
 }
