@@ -38,7 +38,7 @@
   }
 
   section + section {
-    margin-top: 10px;
+    margin-top: $VERTICAL-SPACE;
   }
 }
 
@@ -99,7 +99,7 @@
 
   .divisor + .divisor {
     border-top: 1px solid $vertical-line;
-    padding-top: 10px;
+    padding-top: $VERTICAL-SPACE;
 
     @include media-query(THREE){
       border-top: 0;
@@ -112,7 +112,7 @@
   }
 
   article {
-    margin-bottom: 10px;
+    margin-bottom: $VERTICAL-SPACE;
   } 
 
   .radar, .columns, .last_news {
@@ -178,7 +178,7 @@
       width: 100%;
       border-left: 3px solid $vertical-line;
       padding-left: 10px;
-      margin-top: 10px;
+      margin-top: $VERTICAL-SPACE;
     }
   }
 }
@@ -194,7 +194,7 @@
   .title {
     border-left: 3px solid $vertical-line;
     padding-left: 10px;
-    margin-top: 10px;
+    margin-top: $VERTICAL-SPACE;
   }
 }
 
@@ -329,7 +329,7 @@
   }
 
   section + section {
-    margin-top: 10px;
+    margin-top: $VERTICAL-SPACE;
   }
 }
 
