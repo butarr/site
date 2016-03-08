@@ -92,37 +92,13 @@ append content
               h2.title(itemprop="headline")= column.title
               
       if page.gallery
-        section.galleries
-          section.gallery-videos
-            h1.section-name Vídeos
-            - var firstImage = page.gallery[0]
-            figure(itemscope itemtype="http://schema.org/ImageObject")
-              img(src=firstImage.cover['small'])
-              meta(itemprop="contentUrl" content=firstImage.cover['small'])
-              figcaption
-                h1.title(itemprop="caption")= firstImage.cover.subtitle
-                h2.credits(itemprop="creator")= firstImage.cover.credits
-            section.images
-              section.slider
-                each image, index in page.gallery
-                  - var attributes = {'data-large-image': image.cover['small'], 'data-credits': image.cover['credits'], 'data-title': image.cover['subtitle'], 'alt': image.cover['subtitle'], 'title': image.cover['subtitle']};
-                  - var active = (index === 0) ? 'active' : '';
-                  img(src=image.cover['thumbnail'] class=active)&attributes(attributes)
-          section.gallery-images
-            h1.section-name Galeria
-            - var firstImage = page.gallery[0]
-            figure(itemscope itemtype="http://schema.org/ImageObject")
-              img(src=firstImage.cover['small'])
-              meta(itemprop="contentUrl" content=firstImage.cover['small'])
-              figcaption
-                h1.title(itemprop="caption")= firstImage.cover.subtitle
-                h2.credits(itemprop="creator")= firstImage.cover.credits
-            section.images
-              section.slider
-                each image, index in page.gallery
-                  - var attributes = {'data-large-image': image.cover['small'], 'data-credits': image.cover['credits'], 'data-title': image.cover['subtitle'], 'alt': image.cover['subtitle'], 'title': image.cover['subtitle']};
-                  - var active = (index === 0) ? 'active' : '';
-                  img(src=image.cover['thumbnail'], class=active)&attributes(attributes)
+              section.galleries
+                section.gallery-videos
+                  h1.section-name Vídeos
+                  iframe.videos(src="//www.youtube.com/embed/zZrbJmAP8W8?list=PLytfbsQYLZpB5uDo8LRdjf9X9RfOlFw4d" allowfullscreen)
+                section.gallery-images
+                  h1.section-name Galeria        
+                  iframe.photos(src="//www.flickr.com/photos/brasildefato/player" allowfullscreen)
 
       section.secondary(itemscope itemtype="http://schema.org/ItemList")  
         meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
