@@ -31,7 +31,7 @@ append content
       #featured_text_container(class="divisor")
         if page.featured_text_and_title
           - var post=page.featured_text_and_title
-          article#featured_4(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text")
+          article#featured_4(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_and_title")
             a(href=post.path)
               h1.title(itemprop="headline")= post.title
             a(href=post.path)
@@ -40,7 +40,7 @@ append content
 
         if page.featured_text_box_1
           - var post=page.featured_text_box_1
-          #featured_5.box_container
+          .box_container
             article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
               a(href=post.path)
                 h1.title(itemprop="headline")= post.title
@@ -48,7 +48,7 @@ append content
 
         if page.featured_text_box_2
           - var post=page.featured_text_box_2
-          #featured_6.box_container
+          .box_container
             article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
               a(href=post.path)
                 h1.title(itemprop="headline")= post.title
@@ -90,39 +90,37 @@ append content
             section.column
               h1.name(itemtype="https://schema.org/Person" itemprop="name")= columnist.name
               h2.title(itemprop="headline")= column.title
-              
+
       if page.gallery
-              section.galleries
-                section.gallery-videos
-                  h1.section-name Vídeos
-                  iframe.videos(src="//www.youtube.com/embed/zZrbJmAP8W8?list=PLytfbsQYLZpB5uDo8LRdjf9X9RfOlFw4d" allowfullscreen)
-                section.gallery-images
-                  h1.section-name Galeria        
-                  iframe.photos(src="//www.flickr.com/photos/brasildefato/player" allowfullscreen)
+        section.galleries
+          section.gallery-videos
+            h1.section-name Vídeos
+            iframe.videos(src="//www.youtube.com/embed/zZrbJmAP8W8?list=PLytfbsQYLZpB5uDo8LRdjf9X9RfOlFw4d" allowfullscreen)
+          section.gallery-images
+            h1.section-name Galeria        
+            iframe.photos(src="//www.flickr.com/photos/brasildefato/player" allowfullscreen)
 
       section.secondary(itemscope itemtype="http://schema.org/ItemList")  
         meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
         if page.article_footer_1
           - var post=page.article_footer_1
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-          article#footer_1(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer")
+          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer" class="article_footer_1")
             span.hat(itemprop="about")= post.hat
             a(href=post.path)
               img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
             a(href=post.path)
               h1.title(itemprop="headline")= post.title
-            meta(itemprop="datePublished" content= post.date)
 
         if page.article_footer_2
           - var post=page.article_footer_2
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-          article#footer_2(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer")
+          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer" class="article_footer_2")
             span.hat(itemprop="about")= post.hat
             a(href=post.path)
               img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
             a(href=post.path)
               h1.title(itemprop="headline")= post.title
-            meta(itemprop="datePublished" content= post.date)
       
       if page.photo_caption
         section.photo_caption
