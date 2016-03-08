@@ -3,8 +3,8 @@ extend base
 append content
   section#home
     section.main
-      if page.featured_big_picture
-        - var post=page.featured_big_picture
+      if page.featured_01
+        - var post=page.featured_01
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
         article#featured_1(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_big_picture" class="divisor")
           a(href=post.path)
@@ -12,16 +12,16 @@ append content
               figcaption
                 h1.title(itemprop="headline")= post.title
 
-      if page.featured_small_picture_1
-        - var post=page.featured_small_picture_1
+      if page.featured_02
+        - var post=page.featured_02
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
         article#featured_2(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_small_picture" class="divisor")
           a(href=post.path)
             figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
             h1.title(itemprop="headline")= post.title
 
-      if page.featured_small_picture_2
-        - var post=page.featured_small_picture_2
+      if page.featured_03
+        - var post=page.featured_03
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
         article#featured_3(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_small_picture" class="divisor")
           a(href=post.path)
@@ -29,25 +29,24 @@ append content
             h1.title(itemprop="headline")= post.title
 
       #featured_text_container(class="divisor")
-        if page.featured_text_and_title
-          - var post=page.featured_text_and_title
-          article#featured_4(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_and_title")
+        if page.featured_04
+          - var post=page.featured_04
+          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_and_title")
             a(href=post.path)
               h1.title(itemprop="headline")= post.title
             a(href=post.path)
               p.description= post.description
-            meta(itemprop="datePublished" content=post.date)
 
-        if page.featured_text_box_1
-          - var post=page.featured_text_box_1
+        if page.featured_05
+          - var post=page.featured_05
           .box_container
             article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
               a(href=post.path)
                 h1.title(itemprop="headline")= post.title
               meta(itemprop="datePublished" content=post.date)
 
-        if page.featured_text_box_2
-          - var post=page.featured_text_box_2
+        if page.featured_06
+          - var post=page.featured_06
           .box_container
             article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
               a(href=post.path)
@@ -61,8 +60,8 @@ append content
 
       section.columns(itemscope itemtype="http://schema.org/ItemList")
         h1.section-name Colunistas
-        if page.column_1
-          - var column=page.column_1
+        if page.column_01
+          - var column=page.column_01
           - var columnist=site.data.columnists[column.columnist]
           article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
             figure
@@ -71,8 +70,8 @@ append content
               h1.name(itemtype="https://schema.org/Person" itemprop="name")= columnist.name
               h2.title(itemprop="headline")= column.title
 
-        if page.column_2
-          - var column=page.column_2
+        if page.column_02
+          - var column=page.column_02
           - var columnist=site.data.columnists[column.columnist]
           article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
             figure
@@ -81,8 +80,8 @@ append content
               h1.name(itemtype="https://schema.org/Person" itemprop="name")= columnist.name
               h2.title(itemprop="headline")= column.title
 
-        if page.column_3
-          - var column=page.column_3
+        if page.column_03
+          - var column=page.column_03
           - var columnist=site.data.columnists[column.columnist]
           article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
             figure
@@ -91,19 +90,18 @@ append content
               h1.name(itemtype="https://schema.org/Person" itemprop="name")= columnist.name
               h2.title(itemprop="headline")= column.title
 
-      if page.gallery
-        section.galleries
-          section.gallery-videos
-            h1.section-name Vídeos
-            iframe.videos(src="//www.youtube.com/embed/zZrbJmAP8W8?list=PLytfbsQYLZpB5uDo8LRdjf9X9RfOlFw4d" allowfullscreen)
-          section.gallery-images
-            h1.section-name Galeria        
-            iframe.photos(src="//www.flickr.com/photos/brasildefato/player" allowfullscreen)
+      section.galleries
+        section.gallery-videos
+          h1.section-name Vídeos
+          iframe.videos(src="//www.youtube.com/embed/zZrbJmAP8W8?list=PLytfbsQYLZpB5uDo8LRdjf9X9RfOlFw4d" allowfullscreen)
+        section.gallery-images
+          h1.section-name Galeria        
+          iframe.photos(src="//www.flickr.com/photos/brasildefato/player" allowfullscreen)
 
       section.secondary(itemscope itemtype="http://schema.org/ItemList")  
         meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
-        if page.article_footer_1
-          - var post=page.article_footer_1
+        if page.featured_07
+          - var post=page.featured_07
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
           article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer" class="article_footer_1")
             span.hat(itemprop="about")= post.hat
@@ -112,8 +110,8 @@ append content
             a(href=post.path)
               h1.title(itemprop="headline")= post.title
 
-        if page.article_footer_2
-          - var post=page.article_footer_2
+        if page.featured_08
+          - var post=page.featured_08
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
           article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer" class="article_footer_2")
             span.hat(itemprop="about")= post.hat
@@ -122,9 +120,9 @@ append content
             a(href=post.path)
               h1.title(itemprop="headline")= post.title
       
-      if page.photo_caption
+      if page.photo_caption_01
         section.photo_caption
-          - var post=page.photo_caption
+          - var post=page.photo_caption_01
           figure(itemscope itemtype="http://schema.org/ImageObject")
             img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
             meta(itemprop="contentUrl" content=post.cover.small)
@@ -132,25 +130,27 @@ append content
               h1.title(itemprop="headline")= post.title
               h2.credits(itemprop="creator")= post.cover.credits
        
-      section.last_news
-        meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
-        h1.section-name Últimas notícias
-        if page.last_news
-          ol
-            each post in page.last_news
-              li
-                a.title(itemprop="url", href=post.news.path)=post.news.title
-                meta(itemprop="datePublished" content=post.date)
+      if page.last_news
+        section.last_news
+          meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
+          h1.section-name Últimas notícias
+          if page.last_news
+            ol
+              each post in page.last_news
+                li
+                  a.title(itemprop="url", href=post.news.path)=post.news.title
+                  meta(itemprop="datePublished" content=post.date)
 
-      section.most_read
-        meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
-        h1.section-name Mais lidas
-        if page.most_read
-          ol
-            each post in page.most_read
-              li
-                a.title(itemprop="url", href=post.news.path)=post.news.title
-                meta(itemprop="datePublished" content=post.date)
+      if page.most_read
+        section.most_read
+          meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
+          h1.section-name Mais lidas
+          if page.most_read
+            ol
+              each post in page.most_read
+                li
+                  a.title(itemprop="url", href=post.news.path)=post.news.title
+                  meta(itemprop="datePublished" content=post.date)
 
     aside.sidebar
       section.radar
@@ -160,8 +160,8 @@ append content
 
       section.columns(itemscope itemtype="http://schema.org/ItemList")
         h1.section-name Colunistas
-        if page.column_1
-          - var column=page.column_1
+        if page.column_01
+          - var column=page.column_01
           - var columnist=site.data.columnists[column.columnist]
           article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
             figure
@@ -170,8 +170,8 @@ append content
               h1.name(itemtype="https://schema.org/Person" itemprop="name")= columnist.name
               h2.title(itemprop="headline")= column.title
 
-        if page.column_2
-          - var column=page.column_2
+        if page.column_02
+          - var column=page.column_02
           - var columnist=site.data.columnists[column.columnist]
           article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
             figure
@@ -180,8 +180,8 @@ append content
               h1.name(itemtype="https://schema.org/Person" itemprop="name")= columnist.name
               h2.title(itemprop="headline")= column.title
 
-        if page.column_3
-          - var column=page.column_3
+        if page.column_03
+          - var column=page.column_03
           - var columnist=site.data.columnists[column.columnist]
           article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
             figure
@@ -190,12 +190,13 @@ append content
               h1.name(itemtype="https://schema.org/Person" itemprop="name")= columnist.name
               h2.title(itemprop="headline")= column.title
 
-      section.last_news
-        meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
-        h1.section-name Últimas notícias
-        if page.last_news
-          ol
-            each post in page.last_news
-              li
-                a.title(itemprop="url", href=post.news.path)=post.news.title
-                meta(itemprop="datePublished" content=post.date)
+      if page.last_news
+        section.last_news
+          meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
+          h1.section-name Últimas notícias
+          if page.last_news
+            ol
+              each post in page.last_news
+                li
+                  a.title(itemprop="url", href=post.news.path)=post.news.title
+                  meta(itemprop="datePublished" content=post.date)

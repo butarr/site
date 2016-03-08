@@ -391,4 +391,16 @@
 #home .photo_caption {
   @include picture-with-caption();
   @include space-between-columns();
+
+  @include media-query(THREE) {
+    width: 2 * $COLUMN-WIDTH;
+  }
+
+  @include media-query(FOUR) {
+    width: 3 * $COLUMN-WIDTH;
+  }
+
+  @include media-query(FIVE){
+    width: 2 * $COLUMN-WIDTH;
+  }
 }

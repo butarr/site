@@ -1,7 +1,7 @@
 ---
 layout: nacional
 
-featured_big_picture:
+featured_01:
   cover:
     url: "//www.biblioteca.presidencia.gov.br/ex-presidentes/luiz-inacio-lula-da-silva/retrato.jpg/"
     small: "//www.biblioteca.presidencia.gov.br/ex-presidentes/luiz-inacio-lula-da-silva/retrato.jpg/"
@@ -12,7 +12,7 @@ featured_big_picture:
   title: "Em SP, seminário debate meios de comunicação"
   path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 
-featured_small_picture_1:
+featured_02:
   cover:
     url: "//farm6.staticflickr.com/5768/23597648530_5a929635c8_b.jpg"
     small: "//farm6.staticflickr.com/5768/23597648530_5a929635c8_n.jpg"
@@ -23,7 +23,7 @@ featured_small_picture_1:
   title: "Em caravana no Semiárido, agricultores discutem conflitos, resistência e agroecologia"
   path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 
-featured_small_picture_2:
+featured_03:
   cover:
     url: "//farm6.staticflickr.com/5768/23597648530_5a929635c8_b.jpg"
     small: "//farm6.staticflickr.com/5768/23597648530_5a929635c8_n.jpg"
@@ -34,7 +34,7 @@ featured_small_picture_2:
   title: "Cunha quer vota em urgência marco regulatório da mineração"
   path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 
-featured_text_and_title:
+featured_04:
   cover:
     url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
     small: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg"
@@ -45,7 +45,7 @@ featured_text_and_title:
   title: "A pior empresa do mundo"
   path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 
-featured_text_box_1:
+featured_05:
   cover:
     url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
     small: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg"
@@ -56,7 +56,7 @@ featured_text_box_1:
   title: "\"Se os deputados não têm coragem de tirar Cunha, nós temos\", diz jovem em protesto"
   path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 
-featured_text_box_2:
+featured_06:
   cover:
     url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
     small: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg"
@@ -67,78 +67,7 @@ featured_text_box_2:
   title: "\"Se os deputados não têm coragem de tirar Cunha, nós temos\", diz jovem em protesto"
   path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 
-column_1:
-  columnist: "rodrigovieira18@gmail.com"
-  title: "Direitos minerários x direitos sociais: que as mineradoras paguem o justo"
-  date: '2015-12-02T13:47:40-03:00'
-
-column_2:    
-  columnist: "wandecleya@gmail.com"
-  title: "O funk e o fim da música popular brasileira"
-  date: '2015-12-02T13:47:40-03:00'
-
-column_3:
-  columnist: "snowden@gmail.com"
-  title: "Movimento negro: esboço de um caminho que não..."
-  date: '2015-12-02T13:47:40-03:00'
-
-gallery:
-  - cover:
-      url: //farm6.staticflickr.com/5759/23528037712_0051ac6681_b.jpg
-      thumbnail: //farm6.staticflickr.com/5759/23528037712_0051ac6681_t.jpg
-      medium: //farm6.staticflickr.com/5759/23528037712_0051ac6681_z.jpg
-      small: //farm6.staticflickr.com/5759/23528037712_0051ac6681_n.jpg
-      subtitle: "Gilberto Gil ex-ministro da cultura"
-      credits: "Paulo Coelho"
-
-  - cover:
-      url: //farm6.staticflickr.com/5802/23340914960_7860b5e8de_b.jpg
-      thumbnail: //farm6.staticflickr.com/5802/23340914960_7860b5e8de_t.jpg
-      medium: //farm6.staticflickr.com/5802/23340914960_7860b5e8de_z.jpg
-      small: //farm6.staticflickr.com/5802/23340914960_7860b5e8de_n.jpg
-      subtitle: "Diga não ao Golpe"
-      credits: "Raul Seixas"
-
-  - cover:
-      url: //farm1.staticflickr.com/691/23610515606_7e6cdd568b_b.jpg
-      thumbnail: //farm1.staticflickr.com/691/23610515606_7e6cdd568b_t.jpg
-      medium: //farm1.staticflickr.com/691/23610515606_7e6cdd568b_z.jpg
-      small: //farm1.staticflickr.com/691/23610515606_7e6cdd568b_n.jpg
-      subtitle: "Fachin tava facim no facim"
-      credits: "Ricardo"
-
-  - cover:
-      url: //farm1.staticflickr.com/570/23554190861_7a0fbed354_b.jpg
-      thumbnail: //farm1.staticflickr.com/570/23554190861_7a0fbed354_t.jpg
-      medium: //farm1.staticflickr.com/570/23554190861_7a0fbed354_z.jpg
-      small: //farm1.staticflickr.com/570/23554190861_7a0fbed354_n.jpg
-      subtitle: "Paulinho volta pra ir pra frente"
-      credits: "Nero"
-
-  - cover:
-      url: //farm1.staticflickr.com/604/23610515716_5bd3ff83d2_b.jpg
-      thumbnail: //farm1.staticflickr.com/604/23610515716_5bd3ff83d2_t.jpg
-      medium: //farm1.staticflickr.com/604/23610515716_5bd3ff83d2_z.jpg
-      small: //farm1.staticflickr.com/604/23610515716_5bd3ff83d2_n.jpg
-      subtitle: "Filme mostra a divulgação"
-      credits: "Alexandre, o Grande"
-
-  - cover:
-      url: //farm1.staticflickr.com/593/23268671719_af0e7fff63_b.jpg
-      thumbnail: //farm1.staticflickr.com/593/23268671719_af0e7fff63_t.jpg
-      medium: //farm1.staticflickr.com/593/23268671719_af0e7fff63_z.jpg
-      small: //farm1.staticflickr.com/593/23268671719_af0e7fff63_n.jpg
-      subtitle: "Josiene mais você"
-      credits: "Raphael"
-
-  - cover:
-      url: "//farm6.staticflickr.com/5817/23495844275_35efde962c_b.jpg"
-      small: "//farm6.staticflickr.com/5817/23495844275_35efde962c_n.jpg"
-      thumbnail: "//farm6.staticflickr.com/5817/23495844275_35efde962c_t.jpg"
-      subtitle: "Legendado esse filme"
-      credits: "Felipe"
-
-article_footer_1:
+featured_07:
   hat: Preconceito
   cover:
     url: "//farm6.staticflickr.com/5782/23469650266_f05c73b5e0_b.jpg"
@@ -149,7 +78,7 @@ article_footer_1:
   title: "Mulheres Negras organizam marcha nacional"
   path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 
-article_footer_2:
+featured_08:
   hat: Agressão
   cover:
     url: "//farm1.staticflickr.com/775/22867505634_e0ce2b20c7_b.jpg"
@@ -160,7 +89,7 @@ article_footer_2:
   title: "Artistas agredidos por seguranças vão processar MetrôRio"
   path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 
-photo_caption:
+photo_caption_01:
   cover:
     url: "//jornalismob.com/wp-content/uploads/Hugo-Chavez.jpg"
     small: "//jornalismob.com/wp-content/uploads/Hugo-Chavez.jpg"
@@ -169,6 +98,21 @@ photo_caption:
   date: "2015-12-02T13:47:40-03:00"
   title: "Hugo Chavez planta a revolução"
   path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
+
+column_01:
+  columnist: "rodrigovieira18@gmail.com"
+  title: "Direitos minerários x direitos sociais: que as mineradoras paguem o justo"
+  date: '2015-12-02T13:47:40-03:00'
+
+column_02:    
+  columnist: "wandecleya@gmail.com"
+  title: "O funk e o fim da música popular brasileira"
+  date: '2015-12-02T13:47:40-03:00'
+
+column_03:
+  columnist: "snowden@gmail.com"
+  title: "Movimento negro: esboço de um caminho que não..."
+  date: '2015-12-02T13:47:40-03:00'
 
 most_read:
   - news:
