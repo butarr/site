@@ -34,7 +34,7 @@ featured_small_picture_2:
   title: "Cunha quer vota em urgência marco regulatório da mineração"
   path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 
-featured_text:
+featured_text_and_title:
   cover:
     url: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_b.jpg"
     small: "//farm1.staticflickr.com/666/23199925180_bf7c0b4f54_n.jpg"

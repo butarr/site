@@ -75,9 +75,19 @@
   article {
     margin-bottom: 10px;
   }
+
+  
+  .radar, .columns, .last_news {
+      width: 100%;
+      @include media-query(THREE) {
+        display: none;
+      }
+  }
+  
 }
 
-/* Sets elements with two columns */
+
+
 #home #featured_4 {
   width: 100%;
   @include media-query(THREE) {
@@ -86,11 +96,10 @@
   }
 }
 
-/* Sets elements with one column */
-#home #featured_5, #featured_6 {
+#home .box_container {
   @include media-query(THREE){
     width: $COLUMN-WIDTH;
-    padding: 0 5px;
+    @include space-between-columns();
   }
 }
 
@@ -159,10 +168,6 @@
   background-color: $gray-background;
   border-top: 3px solid $horizontal-line;
   padding: 10px;
-
-  .description {
-    display: none;
-  }
 }
 
 /* Sets order of featured elements */
@@ -302,16 +307,16 @@
 }
 
 #home .sidebar {
-  align-self: flex-start;
-  width: 100%;
+  display: none;
 
   @include media-query(THREE) {
+    display: inline-block;
     width: $COLUMN-WIDTH;
-    padding: 0 5px;
+    @include space-between-columns();
   }
 
   section + section {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
@@ -322,16 +327,9 @@
       display: inline-block;
     }
   }
-
-    img#radar_mobile {
-      width: 100%;
-    @include media-query(THREE) {
-      display: none;
-    }
-  }
 }
 
-#home .sidebar .last_news {
+#home .last_news {
   padding: 0 5px;
 
   .section-name {
@@ -352,7 +350,7 @@
   }
 }
 
-#home .sidebar .columns {
+#home .columns {
   width: 100%;
   display: inline-block;
 
