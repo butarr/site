@@ -251,18 +251,25 @@
   flex-wrap: wrap;
   width: 2 * $COLUMN-WIDTH;
   align-items: baseline;
-  margin-bottom: 30px;
 
   @include media-query(FIVE){
     width: 4 * $COLUMN-WIDTH;
     flex-wrap: nowrap;
   }
 
-  .gallery-images, .gallery-videos{
+  .gallery-videos {
     height: 250px;
+  }
+
+  .gallery-images {
+    height: 100%;
+  }
+
+  .gallery-videos, .gallery-images {
     max-width: 2 * $COLUMN_WIDTH;
     width: 100%;
     @include space-between-columns();
+    margin-bottom: 20px;
 
     .section-name {
       @include section-name();
