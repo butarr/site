@@ -105,8 +105,7 @@ append content
         article#featured_7(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer" class="article_footer_1")
           span.hat(itemprop="about")= post.hat
           a(href=post.path)
-            img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
-          a(href=post.path)
+            figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
             h1.title(itemprop="headline")= post.title
 
       if page.featured_08
@@ -115,19 +114,17 @@ append content
         article#featured_8(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer" class="article_footer_2")
           span.hat(itemprop="about")= post.hat
           a(href=post.path)
-            img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
-          a(href=post.path)
+            figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
             h1.title(itemprop="headline")= post.title
       
       if page.photo_caption_01
         section.photo_caption
           - var post=page.photo_caption_01
-          figure(itemscope itemtype="http://schema.org/ImageObject")
-            img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
-            meta(itemprop="contentUrl" content=post.cover.small)
-            figcaption
-              h1.title(itemprop="headline")= post.title
-              h2.credits(itemprop="creator")= post.cover.credits
+          a(href=post.path)
+            figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
+              figcaption
+                h1.title(itemprop="headline")= post.title
+                h2.credits(itemprop="creator")= post.cover.credits
        
       if page.last_news
         section.last_news

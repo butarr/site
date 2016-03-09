@@ -71,12 +71,14 @@
 }
 
 @mixin image-rounded($width, $height) {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  border-radius: 5px;
-  width: $width;
-  height: $height;
+  figure {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 5px;
+    width: $width;
+    height: $height;
+  }
 }
 
 @mixin section-name() {

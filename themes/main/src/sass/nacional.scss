@@ -164,15 +164,11 @@
 #home .featured_big_picture {
   width: 100%;
   @include picture-with-caption();
+  @include image-rounded(100%, 330px);
 
   @include media-query(THREE) {
     width: 2 * $COLUMN-WIDTH;
     @include space-between-columns();
-  }
-
-  figure {
-    @include image-rounded(450px, 330px);
-    width: 100%;
   }
 }
 
@@ -181,19 +177,11 @@
   flex-wrap: wrap;
   width: 100%;
   @include space-between-columns();
+  @include image-rounded(150px, 150px);
 
   @include media-query(THREE) {
     width: $COLUMN-WIDTH;
-  }
-
-  figure {
-    @include image-rounded(150px, 150px);
-    display: inline-block;
-
-    @include media-query(THREE) {
-      @include image-rounded(220px, 220px);
-      display: block;
-    }
+    @include image-rounded(220px, 180px);
   }
 
   .title {
@@ -245,6 +233,7 @@
 #home .article_footer {
   width: 50%;
   @include space-between-columns();
+  @include image-rounded(100%, 200px);
   margin-top: 10px;
 
   @include media-query (THREE){
@@ -285,6 +274,7 @@
 }
 
 #home .photo_caption {
+  @include image-rounded(100%, 300px);
   @include picture-with-caption();
   @include space-between-columns();
 
@@ -299,6 +289,10 @@
   @include media-query(FIVE){
     width: 2 * $COLUMN-WIDTH;
     padding-top: 35px;
+  }
+
+  figure {
+    width: 100%;
   }
 }
 
