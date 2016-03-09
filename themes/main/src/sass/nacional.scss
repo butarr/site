@@ -277,22 +277,17 @@
   @include image-rounded(100%, 300px);
   @include picture-with-caption();
   @include space-between-columns();
-
-  @include media-query(THREE) {
-    width: 2 * $COLUMN-WIDTH;
-  }
+  width: 100%;
 
   @include media-query(FOUR) {
     width: 3 * $COLUMN-WIDTH;
+    @include image-rounded(100%, 450px);
   }
 
   @include media-query(FIVE){
+    @include image-rounded(100%, 300px);
     width: 2 * $COLUMN-WIDTH;
     padding-top: 35px;
-  }
-
-  figure {
-    width: 100%;
   }
 }
 
