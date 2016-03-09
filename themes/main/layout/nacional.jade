@@ -90,37 +90,34 @@ append content
               h1.name(itemtype="https://schema.org/Person" itemprop="name")= columnist.name
               h2.title(itemprop="headline")= column.title
 
-      section.galleries
-        section.gallery-videos
-          h1.section-name Vídeos
-          iframe(src="//www.youtube.com/embed/zZrbJmAP8W8?list=PLytfbsQYLZpB5uDo8LRdjf9X9RfOlFw4d" allowfullscreen target="_blank")
-        section.gallery-images
-          h1.section-name Galeria     
-          div#TC36RNAS5P
-          script(async='', src='//flickrit.com/embed.js.php?id=TC36RNAS5P', charset='utf-8')
+      section#videos.gallery-videos
+        h1.section-name Vídeos
+        iframe(src="//www.youtube.com/embed/zZrbJmAP8W8?list=PLytfbsQYLZpB5uDo8LRdjf9X9RfOlFw4d" allowfullscreen target="_blank")
 
+      section#images.gallery-images
+        h1.section-name Galeria     
+        div#TC36RNAS5P
+        script(async='', src='//flickrit.com/embed.js.php?id=TC36RNAS5P', charset='utf-8')
 
-      section.secondary(itemscope itemtype="http://schema.org/ItemList")  
-        meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
-        if page.featured_07
-          - var post=page.featured_07
-          - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer" class="article_footer_1")
-            span.hat(itemprop="about")= post.hat
-            a(href=post.path)
-              img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
-            a(href=post.path)
-              h1.title(itemprop="headline")= post.title
+      if page.featured_07
+        - var post=page.featured_07
+        - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+        article#featured_7(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer" class="article_footer_1")
+          span.hat(itemprop="about")= post.hat
+          a(href=post.path)
+            img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
+          a(href=post.path)
+            h1.title(itemprop="headline")= post.title
 
-        if page.featured_08
-          - var post=page.featured_08
-          - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer" class="article_footer_2")
-            span.hat(itemprop="about")= post.hat
-            a(href=post.path)
-              img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
-            a(href=post.path)
-              h1.title(itemprop="headline")= post.title
+      if page.featured_08
+        - var post=page.featured_08
+        - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+        article#featured_8(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article_footer" class="article_footer_2")
+          span.hat(itemprop="about")= post.hat
+          a(href=post.path)
+            img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
+          a(href=post.path)
+            h1.title(itemprop="headline")= post.title
       
       if page.photo_caption_01
         section.photo_caption

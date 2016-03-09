@@ -45,23 +45,23 @@
 #home {
   #featured_1 {
     @include media-query(THREE){
-      order: -6;
+      order: -10;
     }
   }
 
   #featured_2 {
     @include media-query(THREE){
-      order: -5;
+      order: -9;
     }
   }
 
   #featured_3 {
     @include media-query(THREE){
-      order: -3;
+      order: -7;
     }
 
     @include media-query(FIVE){
-      order: -4;
+      order: -8;
     }
   }
 
@@ -71,13 +71,45 @@
 
     @include media-query(FOUR){
       width: 2 * $COLUMN-WIDTH;
-      order: -4;
+      order: -8;
     }
 
     @include media-query(FIVE){
       width: 4 * $COLUMN-WIDTH;
-      order: -3;
+      order: -7;
     }
+  }
+
+  #videos {
+    order: -6;
+  }
+
+  #images {
+    order: -5;
+
+    @include media-query(FOUR){
+      order: -4;
+    }
+
+    @include media-query(FIVE){
+      order: -5;
+    }
+  }
+
+  #featured_7 {
+    order: -4;
+
+    @include media-query(FOUR){
+      order: -5;
+    }
+
+    @include media-query(FIVE){
+      order: -4;
+    }
+  }
+
+  #featured_8 {
+    order: -3;
   }
 }
 
@@ -211,30 +243,14 @@
   }
 }
 
-#home .secondary {
-  display: flex;
-
-  @include media-query(THREE) {
-    width: 2 * $COLUMN-WIDTH;
-  }
-
-  @include media-query(FOUR) {
-    width: $COLUMN-WIDTH;
-    flex-wrap: wrap;
-  }
-
-  @include media-query(FIVE) {
-    width: 2 * $COLUMN-WIDTH;
-  }
-
-  .article_footer {
+#home .article_footer {
     width: 50%;
     @include space-between-columns();
+    margin-top: 10px;
 
     @include media-query (THREE){
       width: $COLUMN-WIDTH;
     }
-  }
 
   .hat{
     @include section-name();
@@ -246,22 +262,11 @@
   }
 }
 
-#home .galleries{
-  display: flex;
-  flex-wrap: wrap;
-  width: 2 * $COLUMN-WIDTH;
-  align-items: baseline;
-  margin-bottom: 30px;
-
-  @include media-query(FIVE){
-    width: 4 * $COLUMN-WIDTH;
-    flex-wrap: nowrap;
-  }
-
-  .gallery-images, .gallery-videos{
-    height: 250px;
+#home .gallery-images, .gallery-videos{
+    height: 320px;
     max-width: 2 * $COLUMN_WIDTH;
     width: 100%;
+    margin-bottom: 30px;
     @include space-between-columns();
 
     .section-name {
@@ -272,7 +277,6 @@
       height: 100%;
       width: 100%;
     }
-  }
 }
 
 #home .photo_caption {
@@ -289,7 +293,7 @@
 
   @include media-query(FIVE){
     width: 2 * $COLUMN-WIDTH;
-    padding-top: 25px;
+    padding-top: 35px;
   }
 }
 
@@ -335,6 +339,7 @@
 }
 
 #home .radar {
+  width: $COLUMN-WIDTH;
   img {
     width: 100%;
   }
@@ -348,10 +353,12 @@
   img{
     border-radius: 50%;
     height: 80px;
+    max-width: 80px;
     align-self: center;
 
     @include media-query(THREE) {
       height: 60px;
+      max-width: 60px;
     }
   }
 
