@@ -244,13 +244,19 @@
 }
 
 #home .article_footer {
-    width: 50%;
-    @include space-between-columns();
-    margin-top: 10px;
+  width: 50%;
+  @include space-between-columns();
+  margin-top: 10px;
 
-    @include media-query (THREE){
-      width: $COLUMN-WIDTH;
-    }
+  @include media-query (THREE){
+    width: $COLUMN-WIDTH;
+  }
+
+  .title {
+    border-left: 3px solid $vertical-bar;
+    padding-left: 10px;
+    margin-top: $VERTICAL-SPACE;
+  }
 
   .hat{
     @include section-name();
