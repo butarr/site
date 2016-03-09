@@ -164,7 +164,7 @@
 #home .featured_big_picture {
   width: 100%;
   @include picture-with-caption();
-  @include image-rounded(100%, 330px);
+  @include image-rounded(100%, 340px);
 
   @include media-query(THREE) {
     width: 2 * $COLUMN-WIDTH;
@@ -181,7 +181,7 @@
 
   @include media-query(THREE) {
     width: $COLUMN-WIDTH;
-    @include image-rounded(220px, 180px);
+    @include image-rounded(220px, 160px);
   }
 
   .title {
@@ -199,6 +199,10 @@
       padding-left: 10px;
       margin-top: $VERTICAL-SPACE;
     }
+  }
+
+  figure {
+    display: inline-block;
   }
 }
 
