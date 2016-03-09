@@ -83,13 +83,13 @@
   display: block;
   color: $title-color;
   text-transform: uppercase;
-  border-bottom: 3px solid $horizontal-line;
+  border-bottom: 3px solid $title-underline;
   margin-bottom: 5px;
 }
 
 @mixin columnist-hat() {
   padding-bottom: 8px;
-  border-bottom: 3px solid $bdf-red;
+  border-bottom: 3px solid $title-underline;
   width: 100%;
   display: block;
 }

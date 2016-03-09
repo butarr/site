@@ -98,7 +98,7 @@
   }
 
   .divisor + .divisor {
-    border-top: 1px solid $vertical-line;
+    border-top: 1px solid $vertical-bar;
     padding-top: $VERTICAL-SPACE;
 
     @include media-query(THREE){
@@ -176,7 +176,7 @@
     @include media-query(THREE) {
       position: relative;
       width: 100%;
-      border-left: 3px solid $vertical-line;
+      border-left: 3px solid $vertical-bar;
       padding-left: 10px;
       margin-top: $VERTICAL-SPACE;
     }
@@ -192,7 +192,7 @@
   }
 
   .title {
-    border-left: 3px solid $vertical-line;
+    border-left: 3px solid $vertical-bar;
     padding-left: 10px;
     margin-top: $VERTICAL-SPACE;
   }
@@ -205,8 +205,8 @@
   }
 
   .featured_text_box {
-    background-color: $gray-background;
-    border-top: 3px solid $horizontal-line;
+    background-color: $box-background;
+    border-top: 3px solid $box-boder;
     padding: 10px;
   }
 }
@@ -396,7 +396,7 @@
     list-style: none;
     line-height: 1.2em;
     padding : 5px 0 5px 8px;
-    border-left: 3px solid $vertical-line;
+    border-left: 3px solid $vertical-bar;
     margin-top: 10px;
   }
 }

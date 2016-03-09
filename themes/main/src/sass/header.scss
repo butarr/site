@@ -18,7 +18,7 @@ $lateral-margin: 10px;
 #page-header .banner-header {
   transition: all 0.4s ease;
   top: 0;
-  background-color: $red-base;
+  background-color: $header-background;
   width: 100%;
   height: $HEADER-HEIGHT-CONTRACTED;
   display: flex;
@@ -27,7 +27,7 @@ $lateral-margin: 10px;
       height: $HEADER-HEIGHT-DESKTOP;
       flex-wrap: wrap;
       justify-content: space-around;
-      border-bottom: 2px solid $red-border;
+      border-bottom: 2px solid $menu-divisor;
   }
 
   figure {
