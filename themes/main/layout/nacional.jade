@@ -8,7 +8,8 @@ append content
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
         article#featured_1(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured_big_picture" class="divisor")
           a(href=post.path)
-            figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
+            figure
+              img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
               figcaption
                 h1.title(itemprop="headline")= post.title
 
@@ -120,8 +121,8 @@ append content
       if page.photo_caption_01
         section.photo_caption
           - var post=page.photo_caption_01
-          a(href=post.path)
-            figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
+            figure
+              img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
               figcaption
                 h1.title(itemprop="headline")= post.title
                 h2.credits(itemprop="creator")= post.cover.credits

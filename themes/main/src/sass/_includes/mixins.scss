@@ -81,6 +81,14 @@
   }
 }
 
+@mixin image-rounded-responsive($max-height) {
+  figure {
+    max-height: $max-height;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+}
+
 @mixin section-name() {
   display: block;
   color: $title-color;
