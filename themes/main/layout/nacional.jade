@@ -89,16 +89,26 @@ append content
               img(src=columnist.photo alt="Imagem de perfil do colunista" title="Imagem de perfil do colunista" itemtype="https://schema.org/Person" itemprop="image")
             section.column
               h1.name(itemtype="https://schema.org/Person" itemprop="name")= columnist.name
-              h2.title(itemprop="headline")= column.title
+              h2.title(itemprop="headline")= column.title    
 
       section#videos.gallery-videos
         h1.section-name Vídeos
         iframe(src="//www.youtube.com/embed/zZrbJmAP8W8?list=PLytfbsQYLZpB5uDo8LRdjf9X9RfOlFw4d" allowfullscreen target="_blank")
 
       section#images.gallery-images
-        h1.section-name Galeria     
-        div#UL9X9YPZ3H
-        script(async='', src='//flickrit.com/embed.js.php?id=UL9X9YPZ3H', charset='utf-8')
+        h1.section-name Galeria    
+        .gallery-desktop
+          a(data-flickr-embed='true', href='//www.flickr.com/photos/brasildefato/albums/72157665304017756' title='Brasil de Fato')
+            img(src='//farm2.staticflickr.com/1555/25625164736_aa741c11ef.jpg', width='450' alt='Brasil de Fato')
+          script(async='' src='//embedr.flickr.com/assets/client-code.js' charset='utf-8')
+        .gallery-mobile
+          a(data-flickr-embed='true' href='//www.flickr.com/photos/brasildefato/albums/72157665304017756' title='Brasil de Fato')
+            img(src='//farm4.staticflickr.com/3679/11329756945_a5e569eb4c_n.jpg' width='350' alt='Brasil de Fato')
+          script(async='' src='//embedr.flickr.com/assets/client-code.js' charset='utf-8')
+        .gallery-mobile-smaller
+          a(data-flickr-embed='true' href='//www.flickr.com/photos/brasildefato/albums/72157665304017756' title='Brasil de Fato')
+            img(src='//farm4.staticflickr.com/3679/11329756945_a5e569eb4c_n.jpg' width='290' alt='Brasil de Fato')
+          script(async='' src='//embedr.flickr.com/assets/client-code.js' charset='utf-8')
 
       if page.featured_07
         - var post=page.featured_07
