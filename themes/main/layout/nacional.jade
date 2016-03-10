@@ -6,17 +6,17 @@ append content
       if page.featured_01
         - var post=page.featured_01
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured_1(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-big-picture" class="divisor")
+        article#featured-1(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-big-picture" class="divisor")
           a(href=post.path)
             figure
               img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
               figcaption
-                h1.title(itemprop="headline")= post.title
+                p.title(itemprop="headline")= post.title
 
       if page.featured_02
         - var post=page.featured_02
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured_2(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-small-picture" class="divisor")
+        article#featured-2(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-small-picture" class="divisor")
           a(href=post.path)
             figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
             h1.title(itemprop="headline")= post.title
@@ -24,12 +24,12 @@ append content
       if page.featured_03
         - var post=page.featured_03
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured_3(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-small-picture" class="divisor")
+        article#featured-3(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-small-picture" class="divisor")
           a(href=post.path)
             figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
             h1.title(itemprop="headline")= post.title
 
-      #featured_text_container(class="divisor")
+      #featured-text-container(class="divisor")
         if page.featured_04
           - var post=page.featured_04
           article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-text-and-title")
@@ -113,7 +113,7 @@ append content
       if page.featured_07
         - var post=page.featured_07
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured_7(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article-footer")
+        article#featured-7(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article-footer")
           span.hat(itemprop="about")= post.hat
           a(href=post.path)
             figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
@@ -122,7 +122,7 @@ append content
       if page.featured_08
         - var post=page.featured_08
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured_8(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article-footer")
+        article#featured-8(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article-footer")
           span.hat(itemprop="about")= post.hat
           a(href=post.path)
             figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
@@ -134,8 +134,8 @@ append content
             figure
               img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
               figcaption
-                h1.title(itemprop="headline")= post.title
-                h2.credits(itemprop="creator")= post.cover.credits
+                p.title(itemprop="headline")= post.title
+                p.credits(itemprop="creator")= post.cover.credits
        
       if page.last_news
         section.last-news

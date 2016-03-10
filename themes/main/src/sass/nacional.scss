@@ -43,15 +43,15 @@
 }
 
 #home {
-  #featured_1 {
+  #featured-1 {
     order: -10;
   }
 
-  #featured_2 {
+  #featured-2 {
     order: -9;
   }
 
-  #featured_3 {
+  #featured-3 {
     order: -8;
 
     @include media-query(FOUR){
@@ -63,7 +63,7 @@
     }
   }
 
-  #featured_text_container {
+  #featured-text-container {
     display: flex;
     flex-wrap: wrap;
     order: -7;
@@ -95,7 +95,7 @@
     }
   }
 
-  #featured_7 {
+  #featured-7 {
     order: -4;
 
     @include media-query(FOUR){
@@ -107,7 +107,7 @@
     }
   }
 
-  #featured_8 {
+  #featured-8 {
     order: -3;
   }
 }
@@ -154,21 +154,14 @@
   }
 }
 
-#home .box_container {
-  @include media-query(THREE){
-    width: $COLUMN-WIDTH;
-    @include space-between-columns();
-  }
-}
-
 #home .featured-big-picture {
   width: 100%;
   @include picture-with-caption();
   @include image-rounded-responsive(300px);
+  @include space-between-columns();
 
   @include media-query(THREE) {
     width: 2 * $COLUMN-WIDTH;
-    @include space-between-columns();
   }
 }
 
@@ -208,10 +201,10 @@
 
 #home .featured-text-and-title{
   width: 100%;
+  @include space-between-columns();
 
   @include media-query(THREE) {
     width: 2 * $COLUMN-WIDTH;
-    @include space-between-columns();
   }
 
   .title {
@@ -227,9 +220,10 @@
 }
 
 #home .box-container {
+  @include space-between-columns();
+
   @include media-query(THREE){
     width: $COLUMN-WIDTH;
-    @include space-between-columns();
   }
 
   .featured-text-box {
