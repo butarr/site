@@ -6,7 +6,7 @@ append content
       if page.featured_01
         - var post=page.featured_01
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured_1(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-big-picture" class="divisor")
+        article#featured_1(itemscope itemtype="//schema.org/NewsArticle" itemprop="itemListElement" class="featured_big_picture" class="divisor")
           a(href=post.path)
             figure
               img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
@@ -16,7 +16,7 @@ append content
       if page.featured_02
         - var post=page.featured_02
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured_2(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-small-picture" class="divisor")
+        article#featured_2(itemscope itemtype="//schema.org/NewsArticle" itemprop="itemListElement" class="featured_small_picture" class="divisor")
           a(href=post.path)
             figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
             h1.title(itemprop="headline")= post.title
@@ -24,7 +24,7 @@ append content
       if page.featured_03
         - var post=page.featured_03
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured_3(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-small-picture" class="divisor")
+        article#featured_3(itemscope itemtype="//schema.org/NewsArticle" itemprop="itemListElement" class="featured_small_picture" class="divisor")
           a(href=post.path)
             figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
             h1.title(itemprop="headline")= post.title
@@ -32,7 +32,7 @@ append content
       #featured_text_container(class="divisor")
         if page.featured_04
           - var post=page.featured_04
-          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-text-and-title")
+          article(itemscope itemtype="//schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_and_title")
             a(href=post.path)
               h1.title(itemprop="headline")= post.title
             a(href=post.path)
@@ -40,16 +40,16 @@ append content
 
         if page.featured_05
           - var post=page.featured_05
-          .box-container
-            article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-text-box")
+          .box_container
+            article(itemscope itemtype="//schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
               a(href=post.path)
                 h1.title(itemprop="headline")= post.title
               meta(itemprop="datePublished" content=post.date)
 
         if page.featured_06
           - var post=page.featured_06
-          .box-container
-            article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-text-box")
+          .box_container
+            article(itemscope itemtype="//schema.org/NewsArticle" itemprop="itemListElement" class="featured_text_box")
               a(href=post.path)
                 h1.title(itemprop="headline")= post.title
               meta(itemprop="datePublished" content=post.date)
@@ -59,36 +59,36 @@ append content
           a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Radar dos Movimentos")
             img#radar_mobile(src="#{ url_for('img/radar_mobile.png') }", alt="imagem radar dos movimentos")
 
-      section.columns(itemscope itemtype="http://schema.org/ItemList")
+      section.columns(itemscope itemtype="//schema.org/ItemList")
         h1.section-name Colunistas
         if page.column_01
           - var column=page.column_01
           - var columnist=site.data.columnists[column.columnist]
-          article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
+          article.columnist(itemscope itemtype="//schema.org/BlogPosting" itemprop="itemListElement")
             figure
               img(src=columnist.photo alt="Imagem de perfil do colunista" title="Imagem de perfil do colunista" itemtype="https://schema.org/Person" itemprop="image")
             section.column
-              h1.name(itemtype="https://schema.org/Person" itemprop="name")= columnist.name
+              h1.name(itemtype="//schema.org/Person" itemprop="name")= columnist.name
               h2.title(itemprop="headline")= column.title
 
         if page.column_02
           - var column=page.column_02
           - var columnist=site.data.columnists[column.columnist]
-          article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
+          article.columnist(itemscope itemtype="//schema.org/BlogPosting" itemprop="itemListElement")
             figure
               img(src= columnist.photo alt="Imagem de perfil do colunista" title="Imagem de perfil do colunista" itemtype="https://schema.org/Person" itemprop="image")
             section.column
-              h1.name(itemtype="https://schema.org/Person" itemprop="name")= columnist.name
+              h1.name(itemtype="//schema.org/Person" itemprop="name")= columnist.name
               h2.title(itemprop="headline")= column.title
 
         if page.column_03
           - var column=page.column_03
           - var columnist=site.data.columnists[column.columnist]
-          article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
+          article.columnist(itemscope itemtype="//schema.org/BlogPosting" itemprop="itemListElement")
             figure
               img(src=columnist.photo alt="Imagem de perfil do colunista" title="Imagem de perfil do colunista" itemtype="https://schema.org/Person" itemprop="image")
             section.column
-              h1.name(itemtype="https://schema.org/Person" itemprop="name")= columnist.name
+              h1.name(itemtype="//schema.org/Person" itemprop="name")= columnist.name
               h2.title(itemprop="headline")= column.title
 
       section#videos.gallery-videos
@@ -96,14 +96,24 @@ append content
         iframe(src="//www.youtube.com/embed/zZrbJmAP8W8?list=PLytfbsQYLZpB5uDo8LRdjf9X9RfOlFw4d" allowfullscreen target="_blank")
 
       section#images.gallery-images
-        h1.section-name Galeria     
-        div#UL9X9YPZ3H
-        script(async='', src='//flickrit.com/embed.js.php?id=UL9X9YPZ3H', charset='utf-8')
+        h1.section-name Galeria    
+        .gallery-desktop
+          a(data-flickr-embed='true', href='//www.flickr.com/photos/brasildefato/albums/72157665304017756' title='Brasil de Fato')
+            img(src='//farm2.staticflickr.com/1555/25625164736_aa741c11ef.jpg', width='450' alt='Brasil de Fato')
+          script(async='' src='//embedr.flickr.com/assets/client-code.js' charset='utf-8')
+        .gallery-mobile
+            a(data-flickr-embed='true' href='//www.flickr.com/photos/brasildefato/albums/72157665304017756' title='Brasil de Fato')
+              img(src='//farm4.staticflickr.com/3679/11329756945_a5e569eb4c_n.jpg' width='350' alt='Brasil de Fato')
+            script(async='' src='//embedr.flickr.com/assets/client-code.js' charset='utf-8')
+        .gallery-mobile-smaller
+          a(data-flickr-embed='true' href='//www.flickr.com/photos/brasildefato/albums/72157665304017756' title='Brasil de Fato')
+            img(src='//farm4.staticflickr.com/3679/11329756945_a5e569eb4c_n.jpg' width='290' alt='Brasil de Fato')
+          script(async='' src='//embedr.flickr.com/assets/client-code.js' charset='utf-8')
 
       if page.featured_07
         - var post=page.featured_07
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured_7(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article-footer")
+        article#featured_7(itemscope itemtype="//schema.org/NewsArticle" itemprop="itemListElement" class="article_footer" class="article_footer_1")
           span.hat(itemprop="about")= post.hat
           a(href=post.path)
             figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
@@ -112,7 +122,7 @@ append content
       if page.featured_08
         - var post=page.featured_08
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured_8(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article-footer")
+        article#featured_8(itemscope itemtype="//schema.org/NewsArticle" itemprop="itemListElement" class="article_footer" class="article_footer_2")
           span.hat(itemprop="about")= post.hat
           a(href=post.path)
             figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
@@ -128,8 +138,8 @@ append content
                 h2.credits(itemprop="creator")= post.cover.credits
        
       if page.last_news
-        section.last-news
-          meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
+        section.last_news
+          meta(itemprop="itemListOrder" content="//schema.org/ItemListUnordered")
           h1.section-name Últimas notícias
           if page.last_news
             ol
@@ -139,8 +149,8 @@ append content
                   meta(itemprop="datePublished" content=post.date)
 
       if page.most_read
-        section.most-read
-          meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
+        section.most_read
+          meta(itemprop="itemListOrder" content="//schema.org/ItemListOrderAscending")
           h1.section-name Mais lidas
           if page.most_read
             ol
@@ -155,41 +165,41 @@ append content
           a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Radar dos Movimentos")
             img#radar_desktop(src="#{ url_for('img/radar.png') }", alt="imagem radar dos movimentos")
 
-      section.columns(itemscope itemtype="http://schema.org/ItemList")
+      section.columns(itemscope itemtype="//schema.org/ItemList")
         h1.section-name Colunistas
         if page.column_01
           - var column=page.column_01
           - var columnist=site.data.columnists[column.columnist]
-          article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
+          article.columnist(itemscope itemtype="//schema.org/BlogPosting" itemprop="itemListElement")
             figure
               img(src=columnist.photo alt="Imagem de perfil do colunista" title="Imagem de perfil do colunista" itemtype="https://schema.org/Person" itemprop="image")
             section.column
-              h1.name(itemtype="https://schema.org/Person" itemprop="name")= columnist.name
+              h1.name(itemtype="//schema.org/Person" itemprop="name")= columnist.name
               h2.title(itemprop="headline")= column.title
 
         if page.column_02
           - var column=page.column_02
           - var columnist=site.data.columnists[column.columnist]
-          article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
+          article.columnist(itemscope itemtype="//schema.org/BlogPosting" itemprop="itemListElement")
             figure
               img(src= columnist.photo alt="Imagem de perfil do colunista" title="Imagem de perfil do colunista" itemtype="https://schema.org/Person" itemprop="image")
             section.column
-              h1.name(itemtype="https://schema.org/Person" itemprop="name")= columnist.name
+              h1.name(itemtype="//schema.org/Person" itemprop="name")= columnist.name
               h2.title(itemprop="headline")= column.title
 
         if page.column_03
           - var column=page.column_03
           - var columnist=site.data.columnists[column.columnist]
-          article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
+          article.columnist(itemscope itemtype="//schema.org/BlogPosting" itemprop="itemListElement")
             figure
               img(src=columnist.photo alt="Imagem de perfil do colunista" title="Imagem de perfil do colunista" itemtype="https://schema.org/Person" itemprop="image")
             section.column
-              h1.name(itemtype="https://schema.org/Person" itemprop="name")= columnist.name
+              h1.name(itemtype="//schema.org/Person" itemprop="name")= columnist.name
               h2.title(itemprop="headline")= column.title
 
       if page.last_news
-        section.last-news
-          meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
+        section.last_news
+          meta(itemprop="itemListOrder" content="//schema.org/ItemListUnordered")
           h1.section-name Últimas notícias
           if page.last_news
             ol
