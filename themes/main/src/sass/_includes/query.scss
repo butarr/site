@@ -3,10 +3,10 @@
 $medium_screen:     768px;
 $mobile_one: 320px;
 $mobile_two: 375px;
-$two_columns: 2 * $COLUMN_WIDTH;
-$three_columns: 3 * $COLUMN_WIDTH;
-$four_columns: 4 * $COLUMN_WIDTH;
-$five_columns: 5 * $COLUMN_WIDTH;
+$two_columns: (2 * $COLUMN_WIDTH) + 30px;
+$three_columns: (3 * $COLUMN_WIDTH) + 30px;
+$four_columns: (4 * $COLUMN_WIDTH) + 30px;
+$five_columns: (5 * $COLUMN_WIDTH) + 30px;
 
 
 @mixin media-query($canvas) {

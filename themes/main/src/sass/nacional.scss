@@ -54,7 +54,7 @@
   #featured_3 {
     order: -8;
 
-    @include media-query(THREE){
+    @include media-query(FOUR){
       order: -7;
     }
 
@@ -318,6 +318,7 @@
   @include space-between-columns();
   @include image-rounded-responsive(300px);
   width: 100%;
+  padding-top: $VERTICAL-SPACE;
 
   @include media-query(FOUR) {
     @include image-rounded-responsive(450px);
