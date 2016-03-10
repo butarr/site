@@ -5,13 +5,12 @@ html(lang='pt-BR')
   head
     include _partial/head
     include _partial/analytics
-  body(class=bodyclass, itemscope, itemtype="http://schema.org/WebPage")
-      include _partial/header
-      block header
+  body(class=bodyclass itemscope itemtype="http://schema.org/WebPage")
+    include _partial/header
     main#content
       block content
     block after-content
-    footer#bdf-footer(itemscope, itemtype="http://schema.org/WPFooter")
+    footer#bdf-footer(itemscope itemtype="http://schema.org/WPFooter")
       include _partial/footer
-  include _partial/after_footer
-  block footer
+    include _partial/after_footer
+
