@@ -56,7 +56,7 @@ $lateral-margin: 10px;
     margin-right: $lateral-margin;
   }
 
-  img#social-media {
+  img.social-media {
     display:none;
     @include media-query(THREE) {
       display: flex;
