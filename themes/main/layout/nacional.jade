@@ -29,7 +29,7 @@ append content
             figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
             h3.title(itemprop="headline")= post.title
 
-      #featured-text-container(class="divisor" class= "spacing" margin-top: 10px;)
+      #featured-text-container(class="divisor" class= "spacing")
         if page.featured_04
           - var post=page.featured_04
           article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-text-and-title" class= "spacing")
@@ -128,7 +128,7 @@ append content
             h2.title(itemprop="headline")= post.title
       
       if page.photo_caption
-        section.photo-caption(class= "spacing")
+        article.photo-caption(class= "spacing")
           - var post=page.photo_caption
             figure
               img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
