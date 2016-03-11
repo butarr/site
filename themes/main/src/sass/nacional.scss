@@ -36,10 +36,6 @@
       color: $link-hover;
     }
   }
-
-  section + section {
-    margin-top: $VERTICAL-SPACE;
-  }
 }
 
 #home {
@@ -112,6 +108,10 @@
   }
 }
 
+.spacing {
+  margin-bottom: $VERTICAL-SPACE;
+}
+
 #home .main {
   display: flex;
   flex-wrap: wrap;
@@ -140,10 +140,6 @@
 
   .description{
     margin-top: 10px;
-  }
-
-  article {
-    margin-bottom: $VERTICAL-SPACE;
   }
 
   .radar, .columns, .last-news {
@@ -236,7 +232,6 @@
 #home .article-footer {
   width: 50%;
   @include image-rounded(100%, 150px);
-  margin-top: 10px;
 
   @include media-query (THREE){
     width: $COLUMN-WIDTH;

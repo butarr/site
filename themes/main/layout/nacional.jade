@@ -6,7 +6,7 @@ append content
       if page.featured_01
         - var post=page.featured_01
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured-1(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-big-picture" class="divisor")
+        article#featured-1(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-big-picture" class="divisor" class="spacing")
           a(href=post.path)
             figure
               img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
@@ -16,7 +16,7 @@ append content
       if page.featured_02
         - var post=page.featured_02
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured-2(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-small-picture" class="divisor")
+        article#featured-2(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-small-picture" class="divisor" class="spacing")
           a(href=post.path)
             figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
             h3.title(itemprop="headline")= post.title
@@ -24,15 +24,15 @@ append content
       if page.featured_03
         - var post=page.featured_03
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured-3(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-small-picture" class="divisor")
+        article#featured-3(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-small-picture" class="divisor" class="spacing")
           a(href=post.path)
             figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
             h3.title(itemprop="headline")= post.title
 
-      #featured-text-container(class="divisor")
+      #featured-text-container(class="divisor" class= "spacing" margin-top: 10px;)
         if page.featured_04
           - var post=page.featured_04
-          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-text-and-title")
+          article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-text-and-title" class= "spacing")
             a(href=post.path)
               h3.title(itemprop="headline")= post.title
             a(href=post.path)
@@ -40,7 +40,7 @@ append content
 
         if page.featured_05
           - var post=page.featured_05
-          .box-container
+          .box-container(class= "spacing")
             article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-text-box")
               a(href=post.path)
                 h3.title(itemprop="headline")= post.title
@@ -48,18 +48,17 @@ append content
 
         if page.featured_06
           - var post=page.featured_06
-          .box-container
+          .box-container(class= "spacing")
             article(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="featured-text-box")
               a(href=post.path)
                 h3.title(itemprop="headline")= post.title
               meta(itemprop="datePublished" content=post.date)
 
-      section.radar
-        figure
-          a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Radar dos Movimentos")
-            img#radar_mobile(src="#{ url_for('img/radar_mobile.png') }", alt="imagem radar dos movimentos")
+      figure(class= "radar" class= "spacing")
+        a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Radar dos Movimentos")
+          img#radar_mobile(src="#{ url_for('img/radar_mobile.png') }", alt="imagem radar dos movimentos")
 
-      section.columns(itemscope itemtype="http://schema.org/ItemList")
+      section.columns(itemscope itemtype="http://schema.org/ItemList" class="spacing")
         h2.section-name Colunistas
         if page.column_01
           - var column=page.column_01
@@ -91,11 +90,11 @@ append content
               h3.name(itemscope itemtype="https://schema.org/Person" itemprop="name")= columnist.name
               p.title(itemprop="headline")= column.title    
 
-      section#videos.gallery-videos
+      section#videos(class="gallery-videos" class="spacing")
         h2.section-name Vídeos
         iframe(src="//www.youtube.com/embed/zZrbJmAP8W8?list=PLytfbsQYLZpB5uDo8LRdjf9X9RfOlFw4d" allowfullscreen target="_blank")
 
-      section#images.gallery-images
+      section#images(class= "gallery-images" class="spacing")
         h2.section-name Galeria    
         .gallery-desktop
           a(data-flickr-embed='true', href='//www.flickr.com/photos/brasildefato/albums/72157665304017756' title='Brasil de Fato')
@@ -113,7 +112,7 @@ append content
       if page.featured_07
         - var post=page.featured_07
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured-7(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article-footer")
+        article#featured-7(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article-footer" class="spacing")
           span.hat(itemprop="about")= post.hat
           a(href=post.path)
             figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
@@ -122,14 +121,14 @@ append content
       if page.featured_08
         - var post=page.featured_08
         - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured-8(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article-footer")
+        article#featured-8(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class="article-footer" class="spacing")
           span.hat(itemprop="about")= post.hat
           a(href=post.path)
             figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
             h2.title(itemprop="headline")= post.title
       
       if page.photo_caption
-        section.photo-caption
+        section.photo-caption(class= "spacing")
           - var post=page.photo_caption
             figure
               img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
@@ -138,7 +137,7 @@ append content
                 p.credits(itemprop="creator")= post.cover.credits
        
       if page.last_news
-        section.last-news
+        section.last-news(class="spacing")
           meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
           h2.section-name Últimas notícias
           if page.last_news
@@ -149,7 +148,7 @@ append content
                   meta(itemprop="datePublished" content=post.date)
 
       if page.most_read
-        section.most-read
+        section.most-read(class="spacing")
           meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
           h2.section-name Mais lidas
           if page.most_read
@@ -160,12 +159,11 @@ append content
                   meta(itemprop="datePublished" content=post.date)
 
     aside.sidebar
-      section.radar
-        figure
-          a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Radar dos Movimentos")
-            img#radar_desktop(src="#{ url_for('img/radar.png') }", alt="imagem radar dos movimentos")
+      figure(class= "radar" class= "spacing")
+        a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Radar dos Movimentos")
+          img#radar_desktop(src="#{ url_for('img/radar.png') }", alt="imagem radar dos movimentos")
 
-      section.columns(itemscope itemtype="http://schema.org/ItemList")
+      section(class= "columns" class="spacing" itemscope itemtype="http://schema.org/ItemList")
         h2.section-name Colunistas
         if page.column_01
           - var column=page.column_01
@@ -198,7 +196,7 @@ append content
               p.title(itemprop="headline")= column.title
 
       if page.last_news
-        section.last-news
+        section.last-news(class="spacing")
           meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
           h2.section-name Últimas notícias
           if page.last_news
