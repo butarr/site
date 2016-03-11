@@ -1,50 +1,40 @@
 figure.menu-options(data-toggle="nav.menu-nav")
   img#hamburguer(data-toggle="nav.menu-nav", src="#{ url_for('img/hamburguer-menu.svg') }", alt="imagem menu")
   nav.menu-nav(itemscope, itemtype="http://schema.org/SiteNavigationElement")
-    div.menu-header
+    header.menu-header
       img#close-bttn(src="#{ url_for('img/close-bttn.svg') }", alt="imagem botao fechar")
       a(href="#{ url_for('/') }")
         img#open-bdf(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
-    div.menu-scrollable
+    .menu-scrollable
       ul
-        hr
         li
           a(itemprop="url", href="nacional")= "Nacional"
           meta(itemprop="name",content="string")
-        hr
         li
           a(itemprop="url", href="internacional")= "Internacional"
           meta(itemprop="name",content="string")
-        hr
         li
           a(itemprop="url", href="cultura")= "Cultura"
           meta(itemprop="name",content="string")
-        hr
         li
           a(itemprop="url", href="direitos_humanos")= "Direitos Humanos"
           meta(itemprop="name",content="string")
-        hr
         li
           a(itemprop="url", href="bem_viver")= "Bem Viver"
           meta(itemprop="name",content="string")
-        hr
         li
           a(itemprop="url", href="expediente")= "Expediente"
           meta(itemprop="name",content="string")
-        hr
         li
           a(itemprop="url", href="parceiros")= "Parceiros"
           meta(itemprop="name",content="string")
-        hr 
         li
           a(itemprop="url", href="publicidade")= "Publicidade"
           meta(itemprop="name",content="string")
-        hr 
         li
           a(itemprop="url", href="contato")= "Contato"
           meta(itemprop="name",content="string")
-        hr  
-      div.menu-logos
+      .menu-logos
         a(target="_blank", href="#{ url_for('http://www.facebook.com/brasildefato') }", title="Facebook do Brasil de Fato")
           img#social-media-mobile(src="#{ url_for('img/social-media/facebook.svg') }", alt="imagem facebook")
         a(target="_blank", href="#{ url_for('https://twitter.com/brasil_de_fato') }", title="Twitter do Brasil de Fato")
