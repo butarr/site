@@ -101,10 +101,6 @@
     display: flex;
     justify-content: center;
   }
-
-  li {
-    
-  }
 }
 
 #page-header .menu-nav li{
@@ -139,12 +135,6 @@
       font-weight: 1000;
     }
   }
-}
-
-
-hr {
-  display: block;
-  border: 1px solid $menu-divisor-mobile;
 }
 
 
@@ -198,10 +188,8 @@ hr {
       cursor: pointer;
     }
 
-    hr {
-      height: 20px;
-      margin: 0 0px;
-      border: 1px solid $menu-divisor;
+    li + li {
+      border-left: 2px solid $menu-divisor;
     }
   }
 }
