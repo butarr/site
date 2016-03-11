@@ -3,8 +3,8 @@ layout: nacional
 
 featured_01:
   cover:
-    url: "//www.biblioteca.presidencia.gov.br/ex-presidentes/luiz-inacio-lula-da-silva/retrato.jpg/"
-    small: "//www.biblioteca.presidencia.gov.br/ex-presidentes/luiz-inacio-lula-da-silva/retrato.jpg/"
+    url: "//rogeografo.files.wordpress.com/2008/05/07ra_site.jpg"
+    small: "//rogeografo.files.wordpress.com/2008/05/07ra_site.jpg"
     subtitle: "Legenda aqui"
     credits: "Fulano de tal"
   date: "2015-12-02T13:47:40-03:00"
@@ -89,7 +89,7 @@ featured_08:
   title: "Artistas agredidos por seguranças vão processar MetrôRio"
   path: "2015/12/02/municipios-pedem-o-fim-da-reorganizacao-escolar/"
 
-photo_caption_01:
+photo_caption:
   cover:
     url: "//jornalismob.com/wp-content/uploads/Hugo-Chavez.jpg"
     small: "//jornalismob.com/wp-content/uploads/Hugo-Chavez.jpg"

@@ -128,9 +128,9 @@ append content
             figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
             h2.title(itemprop="headline")= post.title
       
-      if page.photo_caption_01
+      if page.photo_caption
         section.photo-caption
-          - var post=page.photo_caption_01
+          - var post=page.photo_caption
             figure
               img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
               figcaption
