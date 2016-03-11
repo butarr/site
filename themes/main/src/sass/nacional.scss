@@ -158,10 +158,10 @@
   width: 100%;
   @include picture-with-caption();
   @include image-rounded-responsive(300px);
-  @include space-between-columns();
 
   @include media-query(THREE) {
     width: 2 * $COLUMN-WIDTH;
+    @include space-between-columns();
   }
 }
 
@@ -169,12 +169,12 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  @include space-between-columns();
   @include image-rounded(150px, 150px);
 
   @include media-query(THREE) {
     width: $COLUMN-WIDTH;
     @include image-rounded(220px, 150px);
+    @include space-between-columns();
   }
 
   .title {
@@ -201,10 +201,10 @@
 
 #home .featured-text-and-title{
   width: 100%;
-  @include space-between-columns();
 
   @include media-query(THREE) {
     width: 2 * $COLUMN-WIDTH;
+    @include space-between-columns();
   }
 
   .title {
@@ -220,10 +220,10 @@
 }
 
 #home .box-container {
-  @include space-between-columns();
 
   @include media-query(THREE){
     width: $COLUMN-WIDTH;
+    @include space-between-columns();
   }
 
   .featured-text-box {
@@ -235,12 +235,12 @@
 
 #home .article-footer {
   width: 50%;
-  @include space-between-columns();
   @include image-rounded(100%, 150px);
   margin-top: 10px;
 
   @include media-query (THREE){
     width: $COLUMN-WIDTH;
+    @include space-between-columns();
   }
 
   .title {
@@ -257,6 +257,10 @@
     border-radius: 5px;
     width: 100%;
   }
+}
+
+.article-footer + .article-footer {
+  padding-left: 10px;
 }
 
 #home .gallery-images {
@@ -325,10 +329,13 @@
 
 #home .photo-caption {
   @include picture-with-caption();
-  @include space-between-columns();
   @include image-rounded-responsive(300px);
   width: 100%;
   padding-top: $VERTICAL-SPACE;
+
+  @include media-query(THREE) {
+    @include space-between-columns();
+  }
 
   @include media-query(FOUR) {
     @include image-rounded-responsive(450px);

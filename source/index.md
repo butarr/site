@@ -3,8 +3,8 @@ layout: nacional
 
 featured_01:
   cover:
-    url: "//rogeografo.files.wordpress.com/2008/05/07ra_site.jpg"
-    small: "//rogeografo.files.wordpress.com/2008/05/07ra_site.jpg"
+    url: "//upload.wikimedia.org/wikipedia/commons/a/a8/Limpia_tradicional_cereal.jpg"
+    small: "//upload.wikimedia.org/wikipedia/commons/a/a8/Limpia_tradicional_cereal.jpg"
     subtitle: "Legenda aqui"
     credits: "Fulano de tal"
   date: "2015-12-02T13:47:40-03:00"
