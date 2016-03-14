@@ -260,7 +260,8 @@
 }
 
 #home .gallery-images .gallery-mobile-smaller {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   @include media-query(MOBILE_TWO){
     display: none;
   }
@@ -269,16 +270,17 @@
 #home .gallery-images .gallery-mobile {
   display: none;
   @include media-query(MOBILE_TWO){
-    display: inline-block;
+    display: flex;
+    justify-content: center;
   }
-  @include media-query(TWO){
+  @include media-query(THREE){
     display: none;
   }
 }
 
 #home .gallery-images .gallery-desktop {
   display: none;
-  @include media-query(TWO){
+  @include media-query(THREE){
     display: inline-block;
   }
 }
