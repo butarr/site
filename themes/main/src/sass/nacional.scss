@@ -116,6 +116,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  align-content: flex-start;
 
   @include media-query (THREE){
     width: 2 * $COLUMN-WIDTH;
@@ -368,6 +369,12 @@
   }
   @include media-query(THREE) {
     margin-top: 0;
+  }
+}
+
+#home .printed-news {
+  .section-name {
+    @include section-name();
   }
 }
 

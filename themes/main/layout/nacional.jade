@@ -163,6 +163,16 @@ append content
         a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Radar dos Movimentos")
           img#radar_desktop(src="#{ url_for('img/radar.png') }", alt="imagem radar dos movimentos")
 
+      section.printed-news
+        h1.section-name Edições Impressas
+        figure
+          a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Brasil de Fato - Rio de Janeiro")
+            img#radar_desktop(src="#{ url_for('img/tabloide-mg.png') }", alt="imagem do tabloide")
+        figure
+          a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Brasil de Fato - Rio de Janeiro")
+            img#radar_desktop(src="#{ url_for('img/tabloide-rj.png') }", alt="imagem do tabloide")
+
+
       section(class= "columns" class="spacing" itemscope itemtype="http://schema.org/ItemList")
         h2.section-name Colunistas
         if page.column_01
