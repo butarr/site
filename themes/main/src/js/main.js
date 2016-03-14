@@ -3,7 +3,7 @@ $(document).ready(function() {
   $(window).scroll(function(){
     var top = $(this).scrollTop();
     var disapeared = ( top > 120 );
-    $('.menu-nav, .menu-options, .banner-header').toggleClass('contracted', disapeared);  
+    $('.menu-nav, .menu-options, .banner-header').toggleClass('contracted', disapeared);
   });
 
   $('#hamburguer').click(function() {
@@ -41,6 +41,24 @@ $(document).ready(function() {
     $window.trigger('scroll');
   }
 
+  var toggle = function() {
+    var element = $('.last-news#side li.active');
+
+    var next = element.next();
+    console.log(next, next.length)
+    if (next.length == 0) {
+      next = element.parent().children().first();
+    }
+
+    element.removeClass('active');
+    element.addClass('inactive');
+
+    next.removeClass('inactive');
+    next.addClass('active');
+  }
+
+  $('.last-news#side li:first').addClass('active').removeClass('inactive');
+  setInterval(toggle, 6000);
 });
 
 (function(d, s, id) {

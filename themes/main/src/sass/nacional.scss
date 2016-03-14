@@ -449,3 +449,13 @@
     margin-top: 10px;
   }
 }
+
+#home .last-news#side {
+  ol > li.inactive {
+    display: none;
+  }
+
+  ol > li.active {
+    display: inline-block;
+  }
+}

@@ -218,12 +218,12 @@ append content
                 | Brasil de Fato
 
       if page.last_news
-        section.last-news(class="spacing")
+        section#side.last-news(class="spacing")
           meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
           h2.section-name Últimas notícias
           if page.last_news
             ol
               each post in page.last_news
-                li
+                li.inactive
                   a.title(itemprop="url", href=post.path)=post.title
                   meta(itemprop="datePublished" content=post.date)
