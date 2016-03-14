@@ -262,14 +262,14 @@
 #home .gallery-images .gallery-mobile-smaller {
   display: flex;
   justify-content: center;
-  @include media-query(MOBILE_TWO){
+  @include media-query(MOBILE){
     display: none;
   }
 }
 
 #home .gallery-images .gallery-mobile {
   display: none;
-  @include media-query(MOBILE_TWO){
+  @include media-query(MOBILE){
     display: flex;
     justify-content: center;
   }
@@ -287,8 +287,16 @@
 
 #home .gallery-videos {
   iframe, img, a{
-    height: 337px;
+    height: 206px;
     width: 100%;
+
+    @include media-query(MOBILE){
+      height: 263px;
+    }
+
+    @include media-query(THREE){
+      height: 337px;
+    }  
   }
 }
 
