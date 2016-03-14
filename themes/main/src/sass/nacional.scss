@@ -302,7 +302,6 @@
 
 #home .gallery-images, .gallery-videos{
   width: 2 * $COLUMN_WIDTH;
-  height: 100%;
   @include space-between-columns();
 
   .section-name {
