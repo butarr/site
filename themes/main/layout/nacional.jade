@@ -133,7 +133,7 @@ append content
             figure
               img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
               figcaption
-                p.title(itemprop="headline")= post.title
+                h3.title(itemprop="headline")= post.title
                 p.credits(itemprop="creator")= post.cover.credits
        
       if page.last_news
