@@ -45,7 +45,6 @@ $(document).ready(function() {
     var element = $('.last-news#side li.active');
 
     var next = element.next();
-    console.log(next, next.length)
     if (next.length == 0) {
       next = element.parent().children().first();
     }
