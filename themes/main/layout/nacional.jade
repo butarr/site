@@ -1,6 +1,8 @@
 extend base
 
 append content
+  #fb-root
+
   section#home
     section.main
       if page.featured_01
@@ -207,6 +209,13 @@ append content
             section.column
               h3.name(itemscope itemtype="https://schema.org/Person" itemprop="name")= columnist.name
               p.title(itemprop="headline")= column.title
+      
+      section
+        .fb-page(data-href='https://www.facebook.com/brasildefato/', data-width='920px', data-small-header='true', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true')
+          .fb-xfbml-parse-ignore
+            blockquote(cite='https://www.facebook.com/brasildefato/')
+              a(href='https://www.facebook.com/brasildefato/')
+                | Brasil de Fato
 
       if page.last_news
         section.last-news(class="spacing")
