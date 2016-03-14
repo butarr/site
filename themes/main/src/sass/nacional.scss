@@ -306,6 +306,7 @@
   @include picture-with-caption();
   @include image-rounded-responsive(300px);
   width: 100%;
+  max-height: 300px;
   padding-top: $VERTICAL-SPACE;
 
   @include media-query(THREE) {
