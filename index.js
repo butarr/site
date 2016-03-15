@@ -1,5 +1,5 @@
 var Hexo = require('hexo');
-var hexo = new Hexo(process.cwd(), {});
+var hexo = new Hexo(process.cwd(), {'debug': true});
 
 hexo.init().then(function(){
     hexo.call('generate', {'watch': true}).then(function(){
