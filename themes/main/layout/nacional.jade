@@ -223,7 +223,7 @@ append content
           h2.section-name Últimas notícias
           if page.last_news
             ol
-              each post in page.last_news
+              each post, index in page.last_news
                 li.inactive
-                  a.title(itemprop="url", href=post.path)=post.title
+                  a.title(itemprop="url", href=post.path) #{index + 1}. #{post.title}
                   meta(itemprop="datePublished" content=post.date)

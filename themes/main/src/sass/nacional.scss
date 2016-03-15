@@ -451,11 +451,7 @@
 }
 
 #home .last-news#side {
-  ol > li.inactive {
+  ol > li {
     display: none;
-  }
-
-  ol > li.active {
-    display: inline-block;
   }
 }
