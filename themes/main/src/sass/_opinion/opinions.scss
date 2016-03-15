@@ -3,85 +3,140 @@
 @import '_includes/mixins';
 
 #opinions {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 2 * $COLUMN-WIDTH;
+  padding: 0 10px;
+  @include get-font(OPINIONS);
+  @include margin-site($HEADER-HEIGHT-CONTRACTED);
 
-
-  @include media-query(MEDIUM) {
-    margin-left: 7%;
-    padding: 0;
-    padding-left: 30px;
+  @include media-query(THREE) {
+    width: 100%;
+    max-width: 3 * $COLUMN_WIDTH;
+    margin: 180px auto 0 auto;
   }
 
-  @include media-query(LARGE) {
-    display: inline-block;
-    float: left;
-    width: 60%;
+  @include media-query(FOUR) {
+    max-width: 4 * $COLUMN_WIDTH;
   }
-}
 
-#opinions-aside {
-  display: none;
-
-  @include media-query(LARGE) {
-    display: inline-block;
-    float: right;
-    width: 30%;
-    max-width: 400px;
+  section + section {
+    padding-left: 20px;
   }
 }
 
 #opinions .hat {
-  padding: 0 0 5px 0;
-  margin: 10px 10px;
-  border-bottom: 3px solid $bdf-red;
-  color: $bdf-red;
+  border-top: 3px solid $bdf-red;
+  padding-top: 8px;
 }
 
 #opinions .opinion + .opinion {
-  margin: 10px 10px;
-  padding: 10px 0;
-  border-top: 2px dotted #7d0004;
+  border-top: 1px solid $box-background;
 }
+
 #opinions .opinion {
-  padding: 0 10px;
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  padding: 10px 10px;
+
+  @include media-query(TWO){
+    padding: 20px 10px;
+  }
 
   a {
     text-decoration: none;
     color: $black-light;
   }
 
-
   .person {
     @include person;
-    display: inline-block;
+    width: 70px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    @include media-query(TWO){
+      display: flex;
+      width: $COLUMN_WIDTH;
+      flex-wrap: wrap;
+    }
 
     .name {
       color: $bdf-red;
-      word-spacing: 0;
-      margin-bottom: 0;
-      width: 65%;
-    }
+      margin-top: 10px;
+      padding: 0;
+      text-align: center;
+      width: 100%;
+      min-width: 100px;
+      display: none;
 
-    .job-title {
-      color: $gray;
-      width: 65%;
+      @include media-query(TWO) {
+        min-width: 150px;
+        display: inline-block;
+      }
+
+      @include media-query(THREE){
+        min-width: 200px;
+      }
     }
 
     .profile-image {
-      max-width: 90px;
-      width: 30%;
+      width: 70px;
+
+      @include media-query(TWO){
+        width: 90px;
+      }
     }
   }
 
   .date-published {
-    &::after{
-      content: ' - ';
+    padding-top: 5px;
+    &::before{
+      content: ' Publicado em ';
     }
+    font-size: 0.9em;
   }
 
-
   .title {
-    margin-top: 0;
+    margin-top: 5px;
     display: inline-block;
+  }
+
+  .job-title {
+    display: none;
+    padding-top: 20px;
+
+    @include media-query(TWO){
+      display: inline-block;
+    }
+  }
+}
+
+#opinions .name-mobile {
+  display: display-block;
+  color: $bdf-red;
+  margin-top: 10px;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+  min-width: 100px;
+  line-height: 1.2em;
+
+  @include media-query(TWO){
+    display: none;
+  }
+}
+
+#opinions .text{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @include media-query(TWO){
+    padding-top: 20px;
   }
 }
