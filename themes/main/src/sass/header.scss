@@ -1,6 +1,7 @@
 @import '_includes/colors';
 @import '_includes/query';
 @import '_includes/constants';
+@import '_includes/mixins';
 
 $lateral-margin: 10px;
 
@@ -41,6 +42,10 @@ $lateral-margin: 10px;
       justify-content: flex-end;
     }
   }
+
+.menu-options{
+  @include transition-left();
+}
 
   img#hamburguer {
     margin-left: $lateral-margin;

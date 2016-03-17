@@ -1,0 +1,38 @@
+@import '_includes/query';
+@import '_includes/colors';
+@import '_includes/fonts';
+
+#menu-desktop {
+  display: none;
+  background: $header-background;
+
+  @include media-query(THREE) {
+    display: block;
+  }
+
+  ul {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      @include get-font(MENU);
+      padding: 5px 20px;
+
+      a {
+        color: white;
+      }
+    }
+
+    li:hover {
+      background-color: $menu-over;
+      cursor: pointer;
+      padding: 5px 20px;
+    }
+
+    li + li {
+      border-left: 2px solid $menu-divisor;
+    }
+  }
+}

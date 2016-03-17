@@ -3,7 +3,7 @@ $(document).ready(function() {
   $(window).scroll(function(){
     var top = $(this).scrollTop();
     var disapeared = ( top > 120 );
-    $('.menu-nav, .menu-options, .banner-header').toggleClass('contracted', disapeared);
+    $('#menu-mobile, .menu-options, .banner-header').toggleClass('contracted', disapeared);
   });
 
   $('#hamburguer').click(function() {
@@ -12,7 +12,7 @@ $(document).ready(function() {
     $(this).addClass('open');
   });
 
-  $('#close-bttn').click(function() {
+  $('#close-button').click(function() {
     var toggle_el = $('.menu-options').data('toggle');
     $(toggle_el).removeClass('open');
     $(this).removeClass('open');

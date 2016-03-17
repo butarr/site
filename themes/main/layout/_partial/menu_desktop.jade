@@ -1,17 +1,6 @@
-nav.banner-options
+nav#menu-desktop
   ul
-    li
-      a(itemprop="url", href="nacional")= "Nacional"
-      meta(itemprop="name",content="string")
-    li
-      a(itemprop="url", href="internacional")= "Internacional"
-      meta(itemprop="name",content="string")
-    li
-      a(itemprop="url", href="cultura")= "Cultura"
-      meta(itemprop="name",content="string")
-    li
-      a(itemprop="url", href="direitos_humanos")= "Direitos Humanos"
-      meta(itemprop="name",content="string")
-    li
-      a(itemprop="url", href="bem_viver")= "Bem Viver"
-      meta(itemprop="name",content="string")
+    each menu_item in ["Nacional", "Internacional", "Cultura", "Direitos Humanos", "Bem Viver"]
+      li
+        a(itemprop="url", href="nacional")= menu_item
+        meta(itemprop="name",content="string")
