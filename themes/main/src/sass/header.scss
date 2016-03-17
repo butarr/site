@@ -4,52 +4,24 @@
 @import '_includes/mixins';
 
 $lateral-margin: 10px;
+$image-height: 1.6em;
 
 #page-header {
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-}
-
-#page-header {
-
-  #header-icons {
-    display: flex;
-    align-items: center;
-    @include media-query(THREE) {
-      width: 200px;
-      justify-content: flex-end;
-    }
-  }
-  
-  .social-media-icons {
-    @include media-query(THREE) {
-      height: 55px;
-      display: flex;
-      align-items: center;
-
-      img {
-        height: 1.6em;
-        margin-right: $lateral-margin;
-      }
-    }
-  } 
- 
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: $header-background;
 }
 
 #page-header .banner-header {
-  transition: all 0.4s ease;
-  top: 0;
-  background-color: $header-background;
-  width: 100%;
   height: $HEADER-HEIGHT-CONTRACTED;
   display: flex;
-  align-items: center;
+
   @include media-query(THREE) {
-      height: $HEADER-HEIGHT-DESKTOP;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      border-bottom: 2px solid $menu-divisor;
+    height: $HEADER-HEIGHT-DESKTOP;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: 2px solid $menu-divisor;
   }
 
   .banner-elements {
@@ -58,33 +30,38 @@ $lateral-margin: 10px;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
+
     @include media-query(THREE) {
       width: 890px;
       margin: auto;
       justify-content: flex-end;
     }
   }
+}
 
 .menu-options{
   @include transition-left();
 }
 
-  img#hamburguer {
+#page-header .banner-elements{
+  #hamburguer {
     margin-left: $lateral-margin;
     margin-top: 5px;
-    height: 25px;
+    height: $image-height;
+
     @include media-query(THREE){
       display: none;
     }
   }
 
-  img#search {
-    height: 25px;
+  #search {
+    height: $image-height;
     margin-right: $lateral-margin;
   }
 
   #logo-header-desktop {
     display: none;
+
     @include media-query(THREE) {
       display: inline-block;
       width: 450px;
@@ -94,23 +71,62 @@ $lateral-margin: 10px;
   #logo-header-mobile {
     height: 2.5em;
     padding: 0 10px;
+
     @include media-query(THREE) {
       display: none;
     }
   }
-
-
-
 }
 
- #page-header .banner-header.contracted {
-    @include media-query(THREE) {
-      height: $HEADER-HEIGHT-CONTRACTED;
-      display:flex;
+#page-header .contracted {
+  @include media-query(THREE) {
+    height: $HEADER-HEIGHT-CONTRACTED;
+    display:flex;
 
-      .banner-elements {
-        justify-content: space-between;
-        width: 100%;
-      }
+    .banner-elements {
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    #logo-header-mobile {
+      display: inline-block;
+    }
+
+    #logo-header-desktop, #hamburguer {
+      display: none;
+    }
+
+    #header-icons {
+      width: 0;
     }
   }
+}
+
+#page-header #header-icons {
+  display: flex;
+  align-items: center;
+
+  @include media-query(THREE) {
+    width: 200px;
+    justify-content: flex-end;
+  }
+
+  .social-media-icons {
+    @include media-query(THREE) {
+      height: 55px;
+      display: flex;
+      align-items: center;
+
+      img {
+        height: $image-height;
+        margin-right: $lateral-margin;
+      }
+    }
+  } 
+
+  .social-media-icons.contracted {
+    display: none;
+  }
+}
+
+

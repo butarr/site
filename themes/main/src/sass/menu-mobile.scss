@@ -11,7 +11,7 @@
   box-sizing: border-box;
   background-color: $menu-over;
   box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.42);
-  position: absolute;
+  position: fixed;
   @include transition-left();
   z-index: 101;
 
@@ -54,7 +54,7 @@
   align-items: center;
 
   img {
-    height: 25px;
+    height: 1.6em;
     margin: 0 15px;
   }
 }
