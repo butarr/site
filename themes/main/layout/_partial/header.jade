@@ -3,10 +3,9 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
     div.banner-elements
       figure.menu-options(data-toggle="nav#menu-mobile")
         img#hamburguer(data-toggle="nav#menu-mobile", src="#{ url_for('img/hamburguer-menu.svg') }", alt="imagem menu")
-      figure#logo_bdf
-        a(href="#{ url_for('index.html') }", title="Link para a página principal")
-          img.mobile(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
-          img.desktop(src="#{ url_for('img/logo-tagline.svg') }", alt="imagem brasil de fato")
+      a(href="#{ url_for('index.html') }", title="Link para a página principal")
+        img#logo-header-mobile(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
+        img#logo-header-desktop(src="#{ url_for('img/logo-tagline.svg') }", alt="imagem brasil de fato")
       div#icons
         figure
           a(target="_blank", href="#{ url_for('//www.facebook.com/brasildefato') }", title="Facebook do Brasil de Fato")
