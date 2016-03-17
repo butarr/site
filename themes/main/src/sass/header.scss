@@ -11,6 +11,32 @@ $lateral-margin: 10px;
     width: 100%;
 }
 
+#page-header {
+
+  #header-icons {
+    display: flex;
+    align-items: center;
+    @include media-query(THREE) {
+      width: 200px;
+      justify-content: flex-end;
+    }
+  }
+  
+  .social-media-icons {
+    @include media-query(THREE) {
+      height: 55px;
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 1.6em;
+        margin-right: $lateral-margin;
+      }
+    }
+  } 
+ 
+}
+
 #page-header .banner-header {
   transition: all 0.4s ease;
   top: 0;
@@ -57,15 +83,6 @@ $lateral-margin: 10px;
     margin-right: $lateral-margin;
   }
 
-  img.social-media {
-    display:none;
-    @include media-query(THREE) {
-      display: flex;
-      height: 25px;
-      margin-right: $lateral-margin;
-    }
-  }
-
   #logo-header-desktop {
     display: none;
     @include media-query(THREE) {
@@ -82,15 +99,7 @@ $lateral-margin: 10px;
     }
   }
 
-  #icons {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    @include media-query(THREE) {
-      width: 200px;
-      justify-content: flex-end;
-    }
-  }
+
 
 }
 
@@ -98,27 +107,6 @@ $lateral-margin: 10px;
     @include media-query(THREE) {
       height: $HEADER-HEIGHT-CONTRACTED;
       display:flex;
-
-
-      img.desktop {
-        display: none;
-      }
-
-      img.mobile {
-        display: inline-block;
-      }
-
-      img#social-media {
-        display: none;
-      }
-
-      img#hamburguer {
-        display: none;
-      }
-
-      #icons {
-        width: 50px;
-      }
 
       .banner-elements {
         justify-content: space-between;
