@@ -113,7 +113,6 @@ $image-height: 1.6em;
 
   .social-media-icons {
     @include media-query(THREE) {
-      height: 55px;
       display: flex;
       align-items: center;
 
