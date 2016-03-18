@@ -90,6 +90,7 @@ $image-height: 1.6em;
 
     #logo-header-mobile {
       display: inline-block;
+      padding-left: 50px;
     }
 
     #logo-header-desktop, #hamburguer {
@@ -97,7 +98,7 @@ $image-height: 1.6em;
     }
 
     #header-icons {
-      width: 0;
+      width: 35px;
     }
   }
 }
@@ -112,6 +113,7 @@ $image-height: 1.6em;
   }
 
   .social-media-icons {
+    display: none;
     @include media-query(THREE) {
       display: flex;
       align-items: center;
