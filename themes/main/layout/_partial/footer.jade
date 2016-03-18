@@ -1,31 +1,15 @@
-div#container 
-  figure#bdf-logo-footer
-    a(href="#{ url_for('index.html') }", title="Link para a página principal")
-      img#logo(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
-  div.footer-items
-    nav
-      ul
-        li
-          a.active(itemprop="url", href="expediente")= "Expediente"
-          meta(itemprop="name",content="string") 
-        li
-          a.active(itemprop="url", href="parceiros")= "Parceiros"
-          meta(itemprop="name",content="string") 
-        li
-          a.active(itemprop="url", href="publicidade")= "Publicidade"
-          meta(itemprop="name",content="string") 
-        li
-          a.active(itemprop="url", href="contato")= "Contato"
-          meta(itemprop="name",content="string") 
-    div.social-block
-      p Social:
-      div.icons
-        figure
-          a(target="_blank", href="#{ url_for('http://www.facebook.com/brasildefato') }", title="Facebook do Brasil de Fato")
-            img.social-media(src="#{ url_for('img/social-media/facebook.svg') }", alt="imagem facebook") 
-        figure
-          a(target="_blank", href="#{ url_for('http://twitter.com/Brasil_de_Fato') }", title="Twitter do Brasil de Fato")
-            img.social-media(src="#{ url_for('img/social-media/twitter.svg') }", alt="imagem twitter")
-        figure
-          a(target="_blank", href="#{ url_for('http://www.youtube.com/c/AgênciaBrasildeFato') }", title="Youtube do Brasil de Fato")
-            img#youtube(src="#{ url_for('img/social-media/youtube.svg') }", alt="imagem youtube")
+footer#page-footer(itemscope itemtype="http://schema.org/WPFooter")
+  div#footer-container 
+    header#footer-header
+      a(href="#{ url_for('index.html') }", title="Link para a página principal")
+        img(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
+    div#footer-items
+      nav
+        ul
+          each menu_item in ["Expediente", "Parceiros", "Publicidade", "Contato"]
+            li
+              a.active(itemprop="url", href="expediente")= menu_item
+              meta(itemprop="name",content="string") 
+      div#footer-social-block
+        p Social:
+        include social-media-icons
