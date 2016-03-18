@@ -1,12 +1,6 @@
 extends base
 
 append content
-  include _partial/post/social_network
-
-append content
-  include _partial/post/breadcrumb
-
-append content
   article#post(itemtype="http://schema.org/NewsArticle", itemscope)
     header
       span.hat(itemprop="about")= page.hat
@@ -28,6 +22,3 @@ append content
 
     section.content
      != page.content
-
-append content
-  include _partial/post/last_news
