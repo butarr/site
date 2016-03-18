@@ -2,9 +2,7 @@ extend base
 
 append content
   #fb-root
-
   #home
-
     .main
       if page.featured_01
         - var post=page.featured_01
@@ -141,7 +139,7 @@ append content
                 p.credits(itemprop="creator")= post.cover.credits
        
       if page.last_news
-        section.last-news(class="spacing")
+        section.last-news(class= "spacing")
           meta(itemprop="itemListOrder" content="http://schema.org/ItemListUnordered")
           h2.section-name Últimas notícias
           if page.last_news
@@ -167,17 +165,17 @@ append content
         a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Radar dos Movimentos")
           img#radar_desktop(src="#{ url_for('img/radar.png') }", alt="imagem radar dos movimentos")
 
-      section.printed-news
-        h1.section-name Edições Impressas
+      section.printed-news(class="spacing")
+        h2.section-name Edições Impressas
         figure
           a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Brasil de Fato - Minas Gerais")
-            img#radar_desktop(src="#{ url_for('img/tabloide-mg.png') }", alt="imagem do tabloide")
+            img(src="#{ url_for('img/tabloide-mg.png') }", alt="imagem do tabloide")
         figure
           a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Brasil de Fato - Rio de Janeiro")
-            img#radar_desktop(src="#{ url_for('img/tabloide-pr.png') }", alt="imagem do tabloide")
+            img(src="#{ url_for('img/tabloide-pr.png') }", alt="imagem do tabloide")
         figure
           a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Brasil de Fato - Rio de Janeiro")
-            img#radar_desktop(src="#{ url_for('img/tabloide-rj.png') }", alt="imagem do tabloide")
+            img(src="#{ url_for('img/tabloide-rj.png') }", alt="imagem do tabloide")
 
       section(class= "columns" class="spacing" itemscope itemtype="http://schema.org/ItemList")
         h2.section-name Colunistas
@@ -210,12 +208,6 @@ append content
             section.column
               h3.name(itemscope itemtype="https://schema.org/Person" itemprop="name")= columnist.name
               p.title(itemprop="headline")= column.title
-      
-      section
-        .fb-page(data-href='https://www.facebook.com/brasildefato/', data-small-header='true', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true')
-          .fb-xfbml-parse-ignore
-            blockquote(cite='https://www.facebook.com/brasildefato/')
-              a(href='https://www.facebook.com/brasildefato/')
 
       if page.last_news
         section#side.last-news(class="spacing")
@@ -227,3 +219,9 @@ append content
                 li.inactive
                   a.title(itemprop="url", href=post.path) #{index + 1}. #{post.title}
                   meta(itemprop="datePublished" content=post.date)
+
+      .module-facebook(class="spacing")
+        .fb-page(data-href='https://www.facebook.com/brasildefato/', data-small-header='true', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true')
+          .fb-xfbml-parse-ignore
+            blockquote(cite='https://www.facebook.com/brasildefato/')
+              a(href='https://www.facebook.com/brasildefato/')
