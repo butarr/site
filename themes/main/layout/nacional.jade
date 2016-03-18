@@ -59,37 +59,7 @@ append content
         a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Radar dos Movimentos")
           img#radar_mobile(src="#{ url_for('img/radar_mobile.png') }", alt="imagem radar dos movimentos")
 
-      section.columns(itemscope itemtype="http://schema.org/ItemList" class="spacing")
-        h2.section-name Colunistas
-        if page.column_01
-          - var column=page.column_01
-          - var columnist=site.data.columnists[column.columnist]
-          article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
-            figure
-              img(src=columnist.photo alt="Imagem de perfil do colunista" title="Imagem de perfil do colunista" itemscope itemtype="https://schema.org/Person" itemprop="image")
-            section.column
-              h3.name(itemscope itemtype="https://schema.org/Person" itemprop="name")= columnist.name
-              p.title(itemprop="headline")= column.title
-
-        if page.column_02
-          - var column=page.column_02
-          - var columnist=site.data.columnists[column.columnist]
-          article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
-            figure
-              img(src= columnist.photo alt="Imagem de perfil do colunista" title="Imagem de perfil do colunista" itemscope itemtype="https://schema.org/Person" itemprop="image")
-            section.column
-              h3.name(itemscope itemtype="https://schema.org/Person" itemprop="name")= columnist.name
-              p.title(itemprop="headline")= column.title
-
-        if page.column_03
-          - var column=page.column_03
-          - var columnist=site.data.columnists[column.columnist]
-          article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
-            figure
-              img(src=columnist.photo alt="Imagem de perfil do colunista" title="Imagem de perfil do colunista" itemscope itemtype="https://schema.org/Person" itemprop="image")
-            section.column
-              h3.name(itemscope itemtype="https://schema.org/Person" itemprop="name")= columnist.name
-              p.title(itemprop="headline")= column.title    
+      include _partial/modules/module_columns
 
       section#videos(class="gallery-videos" class="spacing")
         h2.section-name Vídeos
@@ -150,15 +120,7 @@ append content
                   meta(itemprop="datePublished" content=post.date)
 
       if page.most_read
-        section.most-read(class="spacing")
-          meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
-          h2.section-name Mais lidas
-          if page.most_read
-            ol
-              each post in page.most_read
-                li
-                  a.title(itemprop="url", href=post.path)=post.title
-                  meta(itemprop="datePublished" content=post.date)
+        include _partial/modules/module_most_read
 
     aside.sidebar
       figure(class= "radar" class= "spacing")
@@ -177,37 +139,7 @@ append content
           a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Brasil de Fato - Rio de Janeiro")
             img(src="#{ url_for('img/tabloide-rj.png') }", alt="imagem do tabloide")
 
-      section(class= "columns" class="spacing" itemscope itemtype="http://schema.org/ItemList")
-        h2.section-name Colunistas
-        if page.column_01
-          - var column=page.column_01
-          - var columnist=site.data.columnists[column.columnist]
-          article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
-            figure
-              img(src=columnist.photo alt="Imagem de perfil do colunista" title="Imagem de perfil do colunista" itemscope itemtype="https://schema.org/Person" itemprop="image")
-            section.column
-              h3.name(itemscope itemtype="https://schema.org/Person" itemprop="name")= columnist.name
-              p.title(itemprop="headline")= column.title
-
-        if page.column_02
-          - var column=page.column_02
-          - var columnist=site.data.columnists[column.columnist]
-          article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
-            figure
-              img(src= columnist.photo alt="Imagem de perfil do colunista" title="Imagem de perfil do colunista" itemscope itemtype="https://schema.org/Person" itemprop="image")
-            section.column
-              h3.name(itemscope itemtype="https://schema.org/Person" itemprop="name")= columnist.name
-              p.title(itemprop="headline")= column.title
-
-        if page.column_03
-          - var column=page.column_03
-          - var columnist=site.data.columnists[column.columnist]
-          article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
-            figure
-              img(src=columnist.photo alt="Imagem de perfil do colunista" title="Imagem de perfil do colunista" itemscope itemtype="https://schema.org/Person" itemprop="image")
-            section.column
-              h3.name(itemscope itemtype="https://schema.org/Person" itemprop="name")= columnist.name
-              p.title(itemprop="headline")= column.title
+      include _partial/modules/module_columns
 
       if page.last_news
         section#side.last-news(class="spacing")
@@ -220,8 +152,4 @@ append content
                   a.title(itemprop="url", href=post.path) #{index + 1}. #{post.title}
                   meta(itemprop="datePublished" content=post.date)
 
-      .module-facebook(class="spacing")
-        .fb-page(data-href='https://www.facebook.com/brasildefato/', data-small-header='true', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true')
-          .fb-xfbml-parse-ignore
-            blockquote(cite='https://www.facebook.com/brasildefato/')
-              a(href='https://www.facebook.com/brasildefato/')
+      include _partial/modules/module_facebook

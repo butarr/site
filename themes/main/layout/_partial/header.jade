@@ -3,7 +3,6 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
     .banner-elements
       .menu-options(data-toggle="nav#menu-mobile")
         img#hamburguer(data-toggle="nav#menu-mobile", src="#{ url_for('img/hamburguer-menu.svg') }", alt="imagem menu")
-      h1.acessibility-hidden Brasil de Fato - Uma Visão Popular do Brasil e do Mundo
       a(href="#{ url_for('index.html') }", title="Link para a página principal")
         img#logo-header-mobile(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
         img#logo-header-desktop(src="#{ url_for('img/logo-tagline.svg') }", alt="imagem brasil de fato")
@@ -11,4 +10,5 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
         include social-media-icons
         a(href="#{ url_for('') }", title="Lupa de Pesquisa")
           img#search(src="#{ url_for('img/search-icon.svg') }", alt="imagem lupa")
+  h1.acessibility-hidden Brasil de Fato - Uma Visão Popular do Brasil e do Mundo
   include menu_desktop

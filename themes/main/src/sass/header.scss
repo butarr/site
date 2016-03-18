@@ -11,6 +11,10 @@ $image-height: 1.6em;
   z-index: 100;
   width: 100%;
   background-color: $header-background;
+
+  .acessibility-hidden {
+    font-size: 0;
+  }
 }
 
 #page-header .banner-header {
@@ -36,10 +40,6 @@ $image-height: 1.6em;
       margin: auto;
       justify-content: flex-end;
     }
-  }
-
-  .acessibility-hidden {
-    font-size: 0;
   }
 }
 
