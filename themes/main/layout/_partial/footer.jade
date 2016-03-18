@@ -1,15 +1,15 @@
 footer#page-footer(itemscope itemtype="http://schema.org/WPFooter")
-  div#footer-container 
-    header#footer-header
+  #footer-container 
+    #footer-header
       a(href="#{ url_for('index.html') }", title="Link para a página principal")
         img(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
-    div#footer-items
+    #footer-items
       nav
         ul
           each menu_item in ["Expediente", "Parceiros", "Publicidade", "Contato"]
             li
               a.active(itemprop="url", href="expediente")= menu_item
               meta(itemprop="name",content="string") 
-      div#footer-social-block
+      #footer-social-block
         p Social:
         include social-media-icons
