@@ -3,12 +3,14 @@
 @import '_includes/mixins';
 
 #columnist {
+  @include margin-site($HEADER-HEIGHT-CONTRACTED);
   @include get-font(COLUMNIST);
   padding: 10px 15px;
   display: block;
   clear: both;
 
-  @include media-query(MEDIUM) {
+  @include media-query(THREE) {
+    @include margin-site($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
     padding: 15px 0 0 10%;
     float: left;
     width: 60%;
@@ -69,16 +71,16 @@
     word-spacing: 2px;
     line-height: 1.7em;
 
-    @include media-query(MEDIUM) {
+    @include media-query(THREE) {
       line-height: 1.3em;
     }
   }
 
-  @include media-query(MEDIUM) {
+  @include media-query(THREE) {
     width: 40%;
     margin-bottom: 20px;
   }
-  @include media-query(LARGE) {
+  @include media-query(FIVE) {
     width: 28%;
   }
 }

@@ -54,7 +54,8 @@
       }
     }
   }
-  @include media-query(MEDIUM) {
+  @include media-query(THREE) {
+    @include margin-site($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
     display: inline-block;
     float: left;
     width: 28%;

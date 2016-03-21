@@ -14,12 +14,8 @@
 
   @include media-query(THREE) {
     width: 100%;
-    max-width: 3 * $COLUMN_WIDTH;
+    max-width: 85%;
     margin: 180px auto 0 auto;
-  }
-
-  @include media-query(FOUR) {
-    max-width: 4 * $COLUMN_WIDTH;
   }
 
   section + section {
