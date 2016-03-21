@@ -116,13 +116,14 @@
   @include get-font(PERSON);
   width: 100%;
   padding: 10px 0;
+
   .profile-image {
-    width: 100px;
+    width: 70px;
     float: left;
     border-radius: 50%;
 
-    @include media-query(MEDIUM) {
-      width: 150px;
+    @include media-query(TWO) {
+      width: 90px;
     }
   }
 
@@ -143,7 +144,7 @@
   }
 
   .name {
-    margin-bottom: 10px;
+    margin: 10px 0;
   }
 
   .job-title {
@@ -197,5 +198,3 @@
     }
   }
 }
-
-

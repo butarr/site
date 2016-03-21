@@ -92,15 +92,7 @@
 }
 
 @mixin __person(){
-  .name {
-    font-family: 'Merriweather Sans', serif;
-    font-weight: 600;
-    font-size: 1em;
-
-    @include media-query(MEDIUM) {
-      font-size: 1.2em;
-    }
-  }
+  @include __name();
 
   .job-title {
     font-size: 0.9em;
@@ -108,6 +100,19 @@
 
     @include media-query(MEDIUM) {
       font-size: 1em;
+    }
+  }
+}
+
+@mixin __name() {
+  .name {
+    color: $bdf-red;
+    font-family: 'Merriweather Sans', serif;
+    font-weight: 600;
+    font-size: 1em;
+
+    @include media-query(TWO) {
+      font-size: 1.2em;
     }
   }
 }
@@ -138,12 +143,6 @@
 
   .job-title {
     font-family: 'Merriweather Sans', serif;
-  }
-
-  .name-mobile {
-    font-size: 1.1em;
-    font-weight: 700;
-    font-family: 'Merriweather', serif;
   }
 }
 
@@ -208,6 +207,10 @@
 
 @mixin __columnist(){
 
+  .name {
+
+  }
+
   .hat{
     font-size: 1.2em;
     font-weight: bold;
@@ -271,5 +274,8 @@
   }
   @else if( $type == OPINIONS ){
     @include __opinions();
+  }
+  @else if( $type == NAME ){
+    @include __name();
   }
 }

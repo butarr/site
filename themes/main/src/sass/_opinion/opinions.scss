@@ -9,6 +9,7 @@
   max-width: 2 * $COLUMN-WIDTH;
   padding: 0 10px;
   @include get-font(OPINIONS);
+  @include get-font(NAME);
   @include margin-site($HEADER-HEIGHT-CONTRACTED);
 
   @include media-query(THREE) {
@@ -49,82 +50,74 @@
     text-decoration: none;
     color: $black-light;
   }
+}
 
-  .person {
-    @include person;
-    width: 70px;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
+#opinions .person {
+  @include person;
+  width: 70px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
 
-    @include media-query(TWO){
-      display: flex;
-      width: $COLUMN_WIDTH;
-      flex-wrap: wrap;
-    }
-
-    .name {
-      color: $bdf-red;
-      margin-top: 10px;
-      padding: 0;
-      text-align: center;
-      width: 100%;
-      min-width: 100px;
-      display: none;
-
-      @include media-query(TWO) {
-        min-width: 150px;
-        display: inline-block;
-      }
-
-      @include media-query(THREE){
-        min-width: 200px;
-      }
-    }
-
-    .profile-image {
-      width: 70px;
-
-      @include media-query(TWO){
-        width: 90px;
-      }
-    }
-  }
-
-  .date-published {
-    padding-top: 5px;
-    &::before{
-      content: ' Publicado em ';
-    }
-    font-size: 0.9em;
-  }
-
-  .title {
-    margin-top: 5px;
-    display: inline-block;
-  }
-
-  .job-title {
-    display: none;
-    padding-top: 20px;
-
-    @include media-query(TWO){
-      display: inline-block;
-    }
+  @include media-query(TWO){
+    display: flex;
+    width: $COLUMN_WIDTH;
+    flex-wrap: wrap;
   }
 }
 
-#opinions .name-mobile {
-  display: display-block;
-  color: $bdf-red;
-  margin-top: 10px;
+
+#opinions .date-published {
+  padding-top: 5px;
+  font-size: 0.9em;
+
+  &::before{
+    content: ' Publicado em ';
+  }
+}
+
+#opinions .title {
+  margin-top: 5px;
+  display: inline-block;
+}
+
+#opinions .job-title {
+  display: none;
+  padding-top: 20px;
+
+  @include media-query(TWO){
+    display: inline-block;
+  }
+}
+
+#opinions .name {
+  margin: 10px 0;
   padding: 0;
-  text-align: left;
   width: 100%;
   min-width: 100px;
-  line-height: 1.2em;
+
+  @include media-query(TWO) {
+    min-width: 150px;
+    text-align: center;
+  }
+
+  @include media-query(THREE){
+    min-width: 200px;
+  }
+}
+
+#desktop {
+  display: none;
+
+  @include media-query(TWO){
+    display: inline-block;
+  }
+}
+
+#mobile {
+  display: display-block;
 
   @include media-query(TWO){
     display: none;

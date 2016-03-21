@@ -4,28 +4,34 @@ section(class= "columns" class="spacing" itemscope itemtype="http://schema.org/I
     - var column=page.column_01
     - var columnist=site.data.columnists[column.columnist]
     article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
-      figure
-        img(src=columnist.photo alt="Imagem de perfil do colunista" title="Imagem de perfil do colunista" itemscope itemtype="https://schema.org/Person" itemprop="image")
+      a(href=url_for(columnist.path), title="link para a pagina do colunista")
+        img(itemprop="image" alt="Imagem de perfil do Colunista" src=columnist.photo itemscope itemtype="https://schema.org/Person")               
       section.column
-        h3.name(itemscope itemtype="https://schema.org/Person" itemprop="name")= columnist.name
-        p.title(itemprop="headline")= column.title
+        a(href=url_for(columnist.path), title="link para a pagina do colunista")
+          h3.name(itemprop="name")= columnist.name   
+        a(href="#{ url_for(post.path) }", itemprop="url")
+          h1.title(itemprop="headline")= column.title
 
   if page.column_02
     - var column=page.column_02
     - var columnist=site.data.columnists[column.columnist]
     article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
-      figure
-        img(src= columnist.photo alt="Imagem de perfil do colunista" title="Imagem de perfil do colunista" itemscope itemtype="https://schema.org/Person" itemprop="image")
+      a(href=url_for(columnist.path), title="link para a pagina do colunista")
+        img(itemprop="image" alt="Imagem de perfil do Colunista" src=columnist.photo itemscope itemtype="https://schema.org/Person")               
       section.column
-        h3.name(itemscope itemtype="https://schema.org/Person" itemprop="name")= columnist.name
-        p.title(itemprop="headline")= column.title
+        a(href=url_for(columnist.path), title="link para a pagina do colunista")
+          h3.name(itemprop="name")= columnist.name   
+        a(href="#{ url_for(post.path) }", itemprop="url")
+          h1.title(itemprop="headline")= column.title
 
   if page.column_03
     - var column=page.column_03
     - var columnist=site.data.columnists[column.columnist]
     article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
-      figure
-        img(src=columnist.photo alt="Imagem de perfil do colunista" title="Imagem de perfil do colunista" itemscope itemtype="https://schema.org/Person" itemprop="image")
+      a(href=url_for(columnist.path), title="link para a pagina do colunista")
+        img(itemprop="image" alt="Imagem de perfil do Colunista" src=columnist.photo itemscope itemtype="https://schema.org/Person")               
       section.column
-        h3.name(itemscope itemtype="https://schema.org/Person" itemprop="name")= columnist.name
-        p.title(itemprop="headline")= column.title
+        a(href=url_for(columnist.path), title="link para a pagina do colunista")
+          h3.name(itemprop="name")= columnist.name   
+        a(href="#{ url_for(post.path) }", itemprop="url")
+          h1.title(itemprop="headline")= column.title

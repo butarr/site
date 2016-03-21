@@ -16,9 +16,9 @@ append content
           a(href=url_for(columnist.path), title="link para a pagina do colunista")
             img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=columnist.photo )        
           a(href=url_for(columnist.path), title="link para a pagina do colunista")
-            h3.name(itemprop="name")= columnist.name        
+            h3.name#desktop(itemprop="name")= columnist.name        
         section.text
-          h3.name-mobile(itemprop="name")= columnist.name
+          h3.name#mobile(itemprop="name")= columnist.name
           a(href="#{ url_for(post.path) }", itemprop="url")
             h1.title(itemprop="headline")= post.title
           time.date-published(datetime=post.date, itemprop="datePublished")= post.date.format('DD/MM/YYYY')

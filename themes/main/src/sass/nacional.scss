@@ -388,6 +388,8 @@
 }
 
 #home .columns {
+  @include get-font(NAME);
+
   .section-name {
     @include section-name();
   }
@@ -410,7 +412,7 @@
   }
 
   .columnist + .columnist {
-    margin-top: 15px;
+    margin-top: 20px;
   }
 
   .column {
@@ -419,17 +421,11 @@
 
   .columnist {
     display: flex;
-    margin-top: 15px;
+    margin: 20px 0;
+  }
 
-    figure {
-      display: flex;
-      flex: 0 0 90px;
-      justify-content: center;
-
-      @include media-query(THREE) {
-        flex: 0 0 70px;
-      }
-    }
+  .name {
+    font-size: 0.9em;
   }
 }
 
