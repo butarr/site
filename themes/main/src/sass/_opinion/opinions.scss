@@ -56,15 +56,15 @@
   @include person;
   width: 70px;
   height: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
 
   @include media-query(TWO){
-    display: flex;
-    width: $COLUMN_WIDTH;
     flex-wrap: wrap;
+    width: 35%;
   }
 }
 
@@ -93,30 +93,16 @@
 }
 
 #opinions .name {
-  margin: 10px 0;
-  padding: 0;
-  width: 100%;
-  min-width: 100px;
-
-  @include media-query(TWO) {
-    min-width: 150px;
-    text-align: center;
-  }
-
-  @include media-query(THREE){
-    min-width: 200px;
-  }
-}
-
-#desktop {
   display: none;
 
-  @include media-query(TWO){
+  @include media-query(TWO) {
     display: inline-block;
+    padding: 0;
+    text-align: center;
   }
 }
 
-#mobile {
+.name_mobile {
   display: display-block;
 
   @include media-query(TWO){
