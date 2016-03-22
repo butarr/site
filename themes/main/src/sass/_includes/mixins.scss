@@ -127,7 +127,7 @@
     }
   }
 
-  .name, .job-title {
+  .name, .description, .job-title {
     margin: 0;
     float: left;
     width: 50%;
@@ -146,7 +146,7 @@
     margin: 10px 0;
   }
 
-  .job-title {
+  .description {
     color: $title-color;
   }
 }

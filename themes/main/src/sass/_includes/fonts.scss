@@ -137,12 +137,14 @@
 
   .date-published {
     font-family: 'Merriweather Sans', serif;
-    font-size: 1em;
+    font-size: 0.9em;
     color: $link-hover;
   }
 
-  .job-title {
+  .description {
     font-family: 'Merriweather Sans', serif;
+    line-height: 1.1em;
+    font-size: 1.1em;
   }
 }
 

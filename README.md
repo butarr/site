@@ -32,6 +32,7 @@
     author: https://schema.org/author
     body: https://schema.org/articleBody
     section: https://schema.org/articleSection
+    description: https://schema.org/description
 
 
 3. News

@@ -68,7 +68,6 @@
 
 #opinions .date-published {
   padding-top: 5px;
-  font-size: 0.9em;
 
   &::before{
     content: ' Publicado em ';
@@ -80,7 +79,7 @@
   display: inline-block;
 }
 
-#opinions .job-title {
+#opinions .description {
   display: none;
   padding-top: 20px;
 
