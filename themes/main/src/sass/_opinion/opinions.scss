@@ -60,6 +60,7 @@
 
   @include media-query(TWO){
     flex-wrap: wrap;
+    max-width: 200px;
     width: 35%;
   }
 }
