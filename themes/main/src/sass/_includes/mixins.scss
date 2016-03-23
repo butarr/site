@@ -130,8 +130,7 @@
   .name, .description, .job-title {
     margin: 0;
     float: left;
-    width: 50%;
-    min-width: 200px;
+    width: 100%;
   }
 
   & > .name {

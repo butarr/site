@@ -12,10 +12,13 @@
   @include get-font(NAME);
   @include margin-site($HEADER-HEIGHT-CONTRACTED);
 
-  @include media-query(THREE) {
+  @include media-query(TWO){
     width: 100%;
     max-width: 85%;
-    margin: 180px auto 0 auto;
+  }
+
+  @include media-query(THREE) {
+    @include margin-site($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
   }
 
   section + section {
@@ -50,8 +53,9 @@
 
 #opinions .person {
   @include person;
-  max-width: 100px;
+  max-width: 70px;
   height: 100%;
+  padding-right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,10 +65,9 @@
   @include media-query(TWO){
     flex-wrap: wrap;
     max-width: 200px;
-    width: 35%;
+
   }
 }
-
 
 #opinions .date-published {
   padding-top: 5px;
@@ -93,6 +96,7 @@
 
   @include media-query(TWO) {
     display: inline-block;
+    width: 100%;
     padding: 0;
     text-align: center;
   }
