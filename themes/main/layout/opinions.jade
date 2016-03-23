@@ -7,9 +7,10 @@ append content
       article.opinion(itemscope, itemtype="http://schema.org/BlogPosting", itemprop="itemListElement")
         - var columnist = site.data.columnists[post.columnist];
         .person(itemscope, itemtype="http://schema.org/Person")
-          a(href=url_for(columnist.path), title="link para a pagina do colunista")
-            img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=columnist.photo )        
-          a(href=url_for(columnist.path), title="link para a pagina do colunista")
+          a(href=url_for(post.path), title="link para a pagina do colunista")
+            img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=columnist.photo )  
+            meta(itemprop="image", content='http:'+columnist.photo)      
+          a(href=url_for(post.path), title="link para a pagina do colunista")
             h4.name(itemprop="name")= columnist.name        
         .text
           h4.name_mobile(itemprop="name")= columnist.name
