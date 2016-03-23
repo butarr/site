@@ -158,7 +158,7 @@
 
   @include media-query(THREE) {
     width: 2 * $COLUMN-WIDTH;
-    @include space-between-columns();
+    @include lateral-spacing($LATERAL-COLUMN-SPACE);
   }
 }
 
@@ -171,7 +171,7 @@
   @include media-query(THREE) {
     width: $COLUMN-WIDTH;
     @include image-rounded(220px, 150px);
-    @include space-between-columns();
+    @include lateral-spacing($LATERAL-COLUMN-SPACE);
   }
 
   .title {
@@ -201,7 +201,7 @@
 
   @include media-query(THREE) {
     width: 2 * $COLUMN-WIDTH;
-    @include space-between-columns();
+    @include lateral-spacing($LATERAL-COLUMN-SPACE);
   }
 
   .title {
@@ -220,7 +220,7 @@
 
   @include media-query(THREE){
     width: $COLUMN-WIDTH;
-    @include space-between-columns();
+    @include lateral-spacing($LATERAL-COLUMN-SPACE);
   }
 
   .featured-text-box {
@@ -236,7 +236,7 @@
 
   @include media-query (THREE){
     width: $COLUMN-WIDTH;
-    @include space-between-columns();
+    @include lateral-spacing($LATERAL-COLUMN-SPACE);
   }
 
   .title {
@@ -302,7 +302,7 @@
 
 #home .gallery-images, .gallery-videos{
   width: 2 * $COLUMN_WIDTH;
-  @include space-between-columns();
+  @include lateral-spacing($LATERAL-COLUMN-SPACE);
 
   .section-name {
     @include section-name();
@@ -315,7 +315,7 @@
   width: 100%;
 
   @include media-query(THREE) {
-    @include space-between-columns();
+    @include lateral-spacing($LATERAL-COLUMN-SPACE);
   }
 
   @include media-query(FOUR) {
@@ -331,7 +331,7 @@
 
 #home .most-read {
   width: 100%;
-  @include space-between-columns();
+  @include lateral-spacing($LATERAL-COLUMN-SPACE);
 
   .section-name {
     @include section-name();
@@ -362,7 +362,7 @@
   @include media-query(THREE) {
     display: inline-block;
     width: $COLUMN-WIDTH;
-    @include space-between-columns();
+    @include lateral-spacing($LATERAL-COLUMN-SPACE);
   }
 
   section + section {
@@ -431,7 +431,7 @@
 
 
 #home .last-news {
-  @include space-between-columns();
+  @include lateral-spacing($LATERAL-COLUMN-SPACE);
 
   .section-name {
     @include section-name();

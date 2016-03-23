@@ -1,6 +1,8 @@
 @import '_includes/query';
 @import '_includes/colors';
 @import '_includes/mixins';
+@import '_includes/fonts';
+@import '_includes/constants';
 
 #opinions {
   display: flex;
@@ -13,21 +15,17 @@
   @include margin-site($HEADER-HEIGHT-CONTRACTED);
 
   @include media-query(TWO){
-    width: 100%;
-    max-width: 85%;
+    max-width: 5 * $COLUMN-WIDTH;
+    @include lateral-spacing($LATERAL-PAGE-SPACE);
   }
 
   @include media-query(THREE) {
     @include margin-site($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
   }
-
-  section + section {
-    padding-left: 20px;
-  }
 }
 
 #opinions .hat {
-  border-top: 3px solid $bdf-red;
+  border-top: 3px solid $title-underline;
   padding-top: 8px;
 }
 

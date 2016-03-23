@@ -42,9 +42,9 @@
   transition:  left 0.1s ease-in-out;
 }
 
-@mixin space-between-columns() {
-  padding-left: 5px;
-  padding-right: 5px;
+@mixin lateral-spacing($value) {
+  padding-left: $value;
+  padding-right: $value;
 }
 
 @mixin margin-site($header-height) {
