@@ -69,10 +69,6 @@
 
 #opinions .date-published {
   padding-top: 5px;
-
-  &::before{
-    content: ' Publicado em ';
-  }
 }
 
 #opinions .title {
