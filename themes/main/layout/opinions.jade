@@ -18,5 +18,4 @@ append content
             h3.title(itemprop="headline")= post.title
           time.date-published(datetime=post.date.toISOString(), itemprop="datePublished")= post.date.format('DD/MM/YYYY')
           p.description(itemprop="description")=post.description
-        meta(itemprop="image", content='http:'+columnist.photo)
         meta(itemprop="position", content=index)
