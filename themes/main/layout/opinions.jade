@@ -15,7 +15,7 @@ append content
           h4.name_mobile(itemprop="name")= columnist.name
           a(href="#{ url_for(post.path) }", itemprop="url")
             h3.title(itemprop="headline")= post.title
-          time.date-published(datetime=post.date, itemprop="datePublished")= post.date.format('DD/MM/YYYY')
+          time.date-published(datetime=post.date.toISOString(), itemprop="datePublished")= post.date.format('DD/MM/YYYY')
           p.description(itemprop="description")=post.description
         meta(itemprop="image", content='http:'+columnist.photo)
         meta(itemprop="position", content=index)
