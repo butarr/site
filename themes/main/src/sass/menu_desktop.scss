@@ -18,6 +18,7 @@
     li {
       @include get-font(MENU);
       padding: 5px 20px;
+      white-space: nowrap;
 
       a {
         color: white;
