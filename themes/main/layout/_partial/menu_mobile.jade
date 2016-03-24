@@ -5,7 +5,7 @@ nav#menu-mobile(itemscope, itemtype="http://schema.org/SiteNavigationElement")
       img#logo-menu-mobile(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
   .menu-scrollable
     ul
-      each menu_item in ["Nacional", "Internacional", "Cultura", "Direitos Humanos", "Bem Viver", "Expediente", "Parceiros", "Publicidade", "Contato"]
+      each menu_item in ["Nacional", "Direitos Humanos", "Cultura", "Geral", "Internacional", "Español", "Expediente", "Parceiros", "Publicidade", "Contato"]
         li
           a(itemprop="url", href="nacional")= menu_item
           meta(itemprop="name",content="string")
