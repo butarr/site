@@ -1,5 +1,5 @@
 ---
-layout: nacional
+layout: national
 
 featured_01:
   cover:
