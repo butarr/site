@@ -12,6 +12,7 @@
   padding: 0 10px;
   @include get-font(COLUMNISTS);
   @include get-font(NAME);
+  @include site-lateral-spacing();
 
   @include media-query(TWO){
     max-width: 5 * $COLUMN-WIDTH;

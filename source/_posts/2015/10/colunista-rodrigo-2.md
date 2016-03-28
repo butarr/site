@@ -10,7 +10,7 @@ author: "Gabriel Maia Salgado"
 pre_place: " "
 date: 2015-10-24T15:55:00-03:00
 columnist: rodrigovieira18@gmail.com
-layout: columnists
+layout: column
 url: 2015/10/20/segundo/
 ---
 <p align="justify">
