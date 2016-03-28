@@ -59,7 +59,7 @@ append content
         a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Radar dos Movimentos")
           img#radar_mobile(src="#{ url_for('img/radar_mobile.png') }", alt="imagem radar dos movimentos")
 
-      include _partial/modules/module_columns
+      include _partial/modules/module_columnists
 
       section#videos(class="gallery-videos" class="spacing")
         h2.section-name TV Brasil de Fato
@@ -142,7 +142,7 @@ append content
           a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Brasil de Fato - Rio de Janeiro")
             img(src="#{ url_for('img/btn-rj.png') }", alt="imagem do tabloide")
 
-      include _partial/modules/module_columns
+      include _partial/modules/module_columnists
 
       if page.last_news
         section#side.last-news(class="spacing")

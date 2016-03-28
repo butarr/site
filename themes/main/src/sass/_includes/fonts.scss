@@ -121,7 +121,7 @@
   }
 }
 
-@mixin __opinions(){
+@mixin __columnists(){
   .hat {
     font-family: 'Merriweather Sans', serif;
     font-weight: bold;
@@ -278,8 +278,8 @@
   @else if( $type == MENU ){
     @include __menu();
   }
-  @else if( $type == OPINIONS ){
-    @include __opinions();
+  @else if( $type == COLUMNISTS ){
+    @include __columnists();
   }
   @else if( $type == NAME ){
     @include __name();

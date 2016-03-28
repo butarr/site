@@ -143,7 +143,7 @@
     margin-top: 10px;
   }
 
-  .radar, .columns, .last-news {
+  .radar, .columnists, .last-news {
       width: 100%;
       @include media-query(THREE) {
         display: none;
@@ -387,7 +387,7 @@
   }
 }
 
-#home .columns {
+#home .columnists {
   @include get-font(NAME);
 
   .section-name {

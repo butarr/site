@@ -4,13 +4,13 @@
 @import '_includes/fonts';
 @import '_includes/constants';
 
-#opinions {
+#columnists {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 2 * $COLUMN-WIDTH;
   padding: 0 10px;
-  @include get-font(OPINIONS);
+  @include get-font(COLUMNISTS);
   @include get-font(NAME);
   @include margin-site($HEADER-HEIGHT-CONTRACTED);
 
@@ -24,16 +24,16 @@
   }
 }
 
-#opinions .hat {
+#columnists .hat {
   border-top: 3px solid $title-underline;
   padding-top: 8px;
 }
 
-#opinions .opinion + .opinion {
+#columnists .opinion + .opinion {
   border-top: 1px solid $box-background;
 }
 
-#opinions .opinion {
+#columnists .opinion {
   display: flex;
   align-items: flex-start;
   height: 100%;
@@ -49,7 +49,7 @@
   }
 }
 
-#opinions .person {
+#columnists .person {
   @include person;
   max-width: 70px;
   height: 100%;
@@ -67,16 +67,16 @@
   }
 }
 
-#opinions .date-published {
+#columnists .date-published {
   padding-top: 5px;
 }
 
-#opinions .title {
+#columnists .title {
   margin-top: 5px;
   display: inline-block;
 }
 
-#opinions .description {
+#columnists .description {
   display: none;
   padding-top: 20px;
 
@@ -85,7 +85,7 @@
   }
 }
 
-#opinions .name {
+#columnists .name {
   display: none;
 
   @include media-query(TWO) {
@@ -104,7 +104,7 @@
   }
 }
 
-#opinions .text{
+#columnists .text{
   display: flex;
   flex-direction: column;
   height: 100%;
