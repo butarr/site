@@ -97,10 +97,12 @@
 
 @mixin image-rounded-responsive($max-height) {
   figure {
-    width: 100%;
     max-height: $max-height;
     overflow: hidden;
     border-radius: 5px;
+    img {
+      width: 100%;
+    }
   }
 }
 

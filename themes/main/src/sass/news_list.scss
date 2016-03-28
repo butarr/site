@@ -1,0 +1,30 @@
+@import '_includes/query';
+@import '_includes/mixins';
+@import '_includes/constants';
+
+#news-list {
+  max-width: 2 * $COLUMN_WIDTH;
+  @include site-lateral-spacing();
+  @include column-lateral-spacing(10px);
+  @include image-rounded(150px, 150px); 
+  @include get-font(NEWS_LIST);
+
+  .section-name{
+    @include section-name();
+  }
+}
+
+#news-list .news-item{
+  display: flex;
+  padding: 5px 0;
+
+  .image {
+    margin-right: 10px;
+    width: 150px;
+  }
+
+  .title {
+    padding-bottom: 5px;
+  }
+}
+
