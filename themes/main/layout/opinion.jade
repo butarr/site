@@ -1,30 +1,16 @@
 extends base
 
 append content
-  include _partial/opinion/social_network
-
-append content
-  include _partial/opinion/breadcrumb
-
-append content
   - var columnist = site.data.columnists[page.columnist]
   article#opinion(itemscope, itemtype="http://schema.org/BlogPosting")
-    header
-      a(href=url_for( columnist.path ), title="Link para o perfil do colunista")
-        span.hat Colunista
+    span.hat Opinião
+    .opinion_header
       section.person(itemscope, itemtype="http://schema.org/Person")
-        a(href=url_for( columnist.path ), title="Link para o perfil do colunista")
-          img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=columnist.photo )
-        a(href=url_for( columnist.path ), title="Link para o perfil do colunista")
-          h1.name(itemprop="name")=columnist.name
-        h2.job-title(itemprop="jobTitle")=columnist.description
-    h1.title(itemprop="headline")= page.title
-    p.description(itemprop="description")= page.description
+        img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=columnist.photo )
+        h3.name(itemprop="name")=columnist.name
+      h2.title(itemprop="headline")= page.title
     meta(itemprop="datePublished", content=page.date)
     meta(itemprop="image", content='http:'+columnist.photo)
     section.content
+      p.description(itemprop="description")= page.description
       != page.content
-
-append content
-  include _partial/opinion/other_opinions
-  include _partial/opinion/last_articles

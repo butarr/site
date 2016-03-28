@@ -154,8 +154,11 @@
 
 @mixin __opinion(){
   .hat{
-    font-size: 1.2em;
+    font-family: 'Merriweather Sans', serif;
     font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: $link-visited;
   }
 
   .title {
@@ -168,19 +171,19 @@
   }
 
   .description {
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: bold;
 
     &::after, &::before{
-      font-size: 1.5em;
+      font-size: 1.4em;
     }
 
-    @include media-query(MEDIUM) {
-      font-size: 1.8em;
+    @include media-query(THREE) {
+      font-size: 1.4em;
       font-weight: bold;
 
       &::after, &::before{
-        font-size: 3.6em;
+        font-size: 1.5em;
       }
     }
   }

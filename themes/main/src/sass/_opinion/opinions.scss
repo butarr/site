@@ -12,15 +12,10 @@
   padding: 0 10px;
   @include get-font(COLUMNISTS);
   @include get-font(NAME);
-  @include margin-site($HEADER-HEIGHT-CONTRACTED);
 
   @include media-query(TWO){
     max-width: 5 * $COLUMN-WIDTH;
-    @include lateral-spacing($LATERAL-PAGE-SPACE);
-  }
-
-  @include media-query(THREE) {
-    @include margin-site($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
+    @include column-lateral-spacing();
   }
 }
 

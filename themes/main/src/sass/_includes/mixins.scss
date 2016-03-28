@@ -113,10 +113,10 @@
 }
 
 @mixin columnist-hat() {
-  padding-bottom: 8px;
-  border-bottom: 3px solid $title-underline;
   width: 100%;
   display: block;
+  border-top: 3px solid $title-underline;
+  padding-top: 8px;
 }
 
 @mixin person() {
