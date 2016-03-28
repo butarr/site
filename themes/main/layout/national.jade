@@ -55,6 +55,18 @@ append content
                 h3.title(itemprop="headline")= post.title
               meta(itemprop="datePublished" content=post.date)
 
+      section#printed-mobile.printed-news(class="spacing")
+        h2.section-name Edições Impressas
+        
+        .group-printed
+          figure
+            a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Brasil de Fato - Edções Impressas")
+              img(src="#{ url_for('img/newspaper.png') }", alt="imagem do tabloide")
+          .group-button
+            a(class='button', href='google.com') Minas Gerais
+            a(class='button', href='google.com') Paraná
+            a(class='button', href='google.com') Rio de Janeiro
+
       figure(class= "radar" class= "spacing")
         a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Radar dos Movimentos")
           img#radar_mobile(src="#{ url_for('img/radar_mobile.png') }", alt="imagem radar dos movimentos")
