@@ -128,7 +128,7 @@
   }
 
   .divisor + .divisor {
-    border-top: 1px solid $vertical-bar;
+    border-top: 1px solid $content-divisor;
     padding-top: $VERTICAL-SPACE;
 
     @include media-query(THREE){
