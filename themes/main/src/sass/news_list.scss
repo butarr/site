@@ -3,11 +3,15 @@
 @import '_includes/constants';
 
 #news-list {
-  max-width: 2 * $COLUMN_WIDTH;
+  max-width: 2 * $COLUMN-WIDTH;
   @include site-lateral-spacing();
   @include column-lateral-spacing(10px);
   @include image-rounded(150px, 150px); 
   @include get-font(NEWS_LIST);
+
+  @include media-query(THREE) {
+    max-width: 4 * $COLUMN-WIDTH;
+  }
 
   .section-name{
     @include section-name();
@@ -28,7 +32,15 @@
 
   .image {
     margin-right: 10px;
-    width: 150px;
+    width: 190px;
+
+  }
+
+  .no-image {
+    @include media-query(THREE) {
+      width: 190px;
+      margin-right: 10px;
+    }
   }
 
   .content {
