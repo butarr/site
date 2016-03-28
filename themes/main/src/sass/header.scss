@@ -8,6 +8,7 @@ $image-height: 1.6em;
 
 #page-header {
   position: fixed;
+  top: 0;
   z-index: 100;
   width: 100%;
   background-color: $header-background;

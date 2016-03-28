@@ -8,9 +8,9 @@
   flex-wrap: wrap;
   width: 100%;
   max-width: 2 * $COLUMN-WIDTH;
-  padding-left: 10px;
-  padding-right: 10px;
-  @include margin-site($HEADER-HEIGHT-CONTRACTED);
+  @include lateral-spacing(10px);
+  margin-left: auto;
+  margin-right: auto;
   @include get-font(NACIONAL);
 
   @include media-query (THREE){
@@ -18,7 +18,6 @@
     max-width: 3 * $COLUMN-WIDTH;
     padding-left: 0;
     padding-right: 0;
-    @include margin-site($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
   }
 
   @include media-query (FOUR){

@@ -2,6 +2,8 @@
 
 @import '_includes/colors';
 @import '_includes/mixins';
+@import '_includes/constants';
+@import '_includes/query';
 
 * {
   font-family: 'Merriweather', serif;
@@ -58,9 +60,13 @@ body {
 
       @include get-font(FOOTER);
     }
-
-    .love {
-      margin-left: 5px;
-    }
   }
+}
+
+main {
+  @include margin-site($HEADER-HEIGHT-CONTRACTED);
+
+    @include media-query (THREE){
+      @include margin-site($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
+    }
 }

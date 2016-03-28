@@ -48,7 +48,7 @@
 }
 
 @mixin margin-site($header-height) {
-  margin: ($header-height + 10px) auto 0 auto;
+  margin-top: $header-height + 10px;
 }
 
 @mixin picture-with-caption() {
