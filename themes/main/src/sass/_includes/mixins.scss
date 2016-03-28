@@ -1,6 +1,7 @@
 @import 'fonts';
 @import 'query';
 @import 'colors';
+@import 'constants';
 
 // Clearfix
 //
@@ -42,13 +43,18 @@
   transition:  left 0.1s ease-in-out;
 }
 
-@mixin lateral-spacing($value) {
+@mixin column-lateral-spacing($value: $LATERAL-COLUMN-SPACE) {
   padding-left: $value;
   padding-right: $value;
 }
 
-@mixin margin-site($header-height) {
+@mixin site-top-spacing($header-height) {
   margin-top: $header-height + 10px;
+}
+
+@mixin site-lateral-spacing ($value: auto) {
+  margin-left: $value;
+  margin-right: $value;
 }
 
 @mixin picture-with-caption() {
@@ -91,6 +97,7 @@
 
 @mixin image-rounded-responsive($max-height) {
   figure {
+    width: 100%;
     max-height: $max-height;
     overflow: hidden;
     border-radius: 5px;

@@ -64,9 +64,9 @@ body {
 }
 
 main {
-  @include margin-site($HEADER-HEIGHT-CONTRACTED);
+  @include site-top-spacing($HEADER-HEIGHT-CONTRACTED);
 
     @include media-query (THREE){
-      @include margin-site($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
+      @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
     }
 }
