@@ -383,6 +383,8 @@
   .section-name {
     @include section-name();
   }
+  display: flex;
+  flex-direction: column;
 }
 
 #home .columnists {
@@ -449,3 +451,27 @@
     display: none;
   }
 }
+
+
+#home a.button {
+  align:center;
+  color: $red-base;
+  font-family: 'Merriweather Sans', serif; 
+  border: 1px solid;
+  border-color: #b7b7b7;
+  border-radius: 3px;
+  box-shadow: 0px 1px 1px #b7b7b7;
+  font-weight: bold;
+  padding: 8px 8px;
+  text-align: center;
+  margin: 5px auto;
+  display: inline-block;
+  font-size: 16px;
+  width: 200px;
+}
+
+#home a.button:hover {
+    box-shadow: 1px 2px 1px #b7b7b7;
+    color:$red-light;
+}
+

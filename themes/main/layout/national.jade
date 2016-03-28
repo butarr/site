@@ -130,17 +130,12 @@ append content
       section.printed-news(class="spacing")
         h2.section-name Edições Impressas
         figure
-          a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Brasil de Fato - Minas Gerais")
+          a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Brasil de Fato - Edções Impressas")
             img(src="#{ url_for('img/newspaper.png') }", alt="imagem do tabloide")
-        figure
-          a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Brasil de Fato - Rio de Janeiro")
-            img(src="#{ url_for('img/btn-mg.png') }", alt="imagem do tabloide")
-        figure
-          a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Brasil de Fato - Rio de Janeiro")
-            img(src="#{ url_for('img/btn-pr.png') }", alt="imagem do tabloide")
-        figure
-          a(target="_blank", href="#{ url_for('//radar.brasildefato.com.br') }", title="Brasil de Fato - Rio de Janeiro")
-            img(src="#{ url_for('img/btn-rj.png') }", alt="imagem do tabloide")
+        a(class='button', href='google.com') Minas Gerais
+        a(class='button', href='google.com') Paraná
+        a(class='button', href='google.com') Rio de Janeiro
+        
 
       include _partial/modules/module_columnists
 
