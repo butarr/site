@@ -10,7 +10,7 @@
   @include get-font(NEWS_LIST);
 
   @include media-query(THREE) {
-    max-width: 4 * $COLUMN-WIDTH;
+    max-width: 3 * $COLUMN-WIDTH;
   }
 
   .section-name{
