@@ -10,7 +10,7 @@ author: "Gabriel Maia Salgado"
 pre_place: " "
 date: 2015-10-04T15:55:00-03:00
 columnist: wandecleya@gmail.com
-layout: opinion
+layout: columnists
 url: 2015/10/20/quinto/
 ---
 <p align="justify">
