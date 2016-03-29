@@ -132,7 +132,6 @@
 
 @mixin person() {
   @include get-font(PERSON);
-  width: 100%;
   padding: 10px 0;
 
   .profile-image {
@@ -148,7 +147,6 @@
   .name, .description, .job-title {
     margin: 0;
     float: left;
-    width: 100%;
   }
 
   & > .name {
@@ -159,11 +157,7 @@
     color: $bdf-red;
   }
 
-  .name {
-    margin: 10px 0;
-  }
-
-  .description {
+  p > .description {
     color: $title-color;
   }
 }

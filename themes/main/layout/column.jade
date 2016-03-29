@@ -4,11 +4,11 @@ append content
   - var columnist = site.data.columnists[page.columnist]
   article#column(itemscope, itemtype="http://schema.org/BlogPosting")
     span.hat Coluna
-    .column_header
+    .column-header
+      h2.title(itemprop="headline")= page.title
       .person(itemscope, itemtype="http://schema.org/Person")
         img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=columnist.photo )
-        h3.name(itemprop="name")=columnist.name
-      h2.title(itemprop="headline")= page.title
+        h3.name(itemprop="name")=columnist.name  
     meta(itemprop="datePublished", content=page.date)
     meta(itemprop="image", content='http:'+columnist.photo)
     .content
