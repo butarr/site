@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   width: 100%;
   max-width: 2 * $COLUMN-WIDTH;
-  @include column-lateral-spacing();
+  @include column-lateral-spacing(10px);
   @include site-lateral-spacing();
   @include get-font(NACIONAL);
 
