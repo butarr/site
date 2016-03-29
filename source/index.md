@@ -102,16 +102,19 @@ photo_caption:
 column_01:
   columnist: "rodrigovieira18@gmail.com"
   title: "Direitos minerários x direitos sociais: que as mineradoras paguem o justo"
+  path: "/2016/03/10/lula-e-os-guardas-da-esquina/"
   date: '2015-12-02T13:47:40-03:00'
 
 column_02:    
   columnist: "wandecleya@gmail.com"
   title: "O funk e o fim da música popular brasileira"
+  path: "/2016/03/10/lula-e-os-guardas-da-esquina/"
   date: '2015-12-02T13:47:40-03:00'
 
 column_03:
   columnist: "snowden@gmail.com"
   title: "Movimento negro: esboço de um caminho que não..."
+  path: "/2016/03/10/lula-e-os-guardas-da-esquina/"
   date: '2015-12-02T13:47:40-03:00'
 
 most_read:
