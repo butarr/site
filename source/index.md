@@ -117,6 +117,15 @@ column_03:
   path: "/2016/03/10/lula-e-os-guardas-da-esquina/"
   date: '2015-12-02T13:47:40-03:00'
 
+rio_de_janeiro: 
+  path: "/rio_de_janeiro"
+  
+parana: 
+  path: "/parana"
+
+minas_gerais: 
+  path: "/minas_gerais"
+
 most_read:
   - date: "2015-12-02T13:47:40-03:00"
     description: "Deputados"

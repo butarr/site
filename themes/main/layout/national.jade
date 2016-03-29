@@ -61,9 +61,12 @@ append content
         .printed-news-container
           img(src="#{ url_for('img/newspaper.png') }" alt="imagem do tabloide")
           .buttons-container
-            a(itemprop="url" class="button" href='google.com') Minas Gerais
-            a(itemprop="url" class="button" href='google.com') Paraná
-            a(itemprop="url" class="button" href='google.com') Rio de Janeiro
+            if page.minas_gerais
+              a(itemprop="url" class="button" href=page.minas_gerais.path) Minas Gerais
+            if page.parana
+              a(itemprop="url" class="button" href=page.parana.path) Paraná
+            if page.rio_de_janeiro
+              a(itemprop="url" class="button" href=page.rio_de_janeiro.path) Rio de Janeiro
 
       include _partial/modules/module_columnists
 
@@ -135,9 +138,12 @@ append content
       section.printed-news(class="spacing")
         h2.section-name Edições Impressas
         img(src="#{ url_for('img/newspaper.png') }" alt="imagem do tabloide")
-        a(class="button" href='google.com') Minas Gerais
-        a(class="button" href='google.com') Paraná
-        a(class="button" href='google.com') Rio de Janeiro
+        if page.minas_gerais
+          a(class="button" href= page.minas_gerais.path) Minas Gerais
+        if page.parana
+          a(class="button" href= page.parana.path) Paraná
+        if page.rio_de_janeiro
+          a(class="button" href= page.rio_de_janeiro.path) Rio de Janeiro
 
       include _partial/modules/module_columnists
 
