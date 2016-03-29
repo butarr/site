@@ -10,8 +10,10 @@ append content
             .image
               - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
               figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
+            .content(class= "divisor")
+              h3.title(itemprop= "headline")= post.title
+              p.description(itemprop="description")= post.description
           else
-            .no-image 
-          .content(class= "divisor")
-            h3.title(itemprop= "headline")= post.title
-            p.description(itemprop="description")= post.description
+            .content(class="no-image" class= "divisor") 
+              h3.title(itemprop= "headline")= post.title
+              p.description(itemprop="description")= post.description
