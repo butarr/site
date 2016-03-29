@@ -119,11 +119,11 @@ append content
         section.last-news(class= "spacing")
           meta(itemscope itemtype="http://schema.org/ItemList" itemprop="itemListOrder")
           h2.section-name Últimas notícias
-            ol
-              each post in page.last_news
-                li(itemprop="itemListElement")
-                  a(itemprop="url" href=post.path)
-                    h3.title(itemprop="headline")=post.title
+          ol
+            each post in page.last_news
+              li(itemprop="itemListElement")
+                a(itemprop="url" href=post.path)
+                  h3.title(itemprop="headline")=post.title
 
       if page.most_read
         include _partial/modules/module_most_read
