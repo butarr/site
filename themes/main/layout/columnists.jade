@@ -4,7 +4,7 @@ append content
   section#columnists(itemscope itemtype="http://schema.org/ItemList")
     h2.page-name Colunistas
     each post in page.columns
-      article.opinion(itemscope, itemtype="http://schema.org/BlogPosting", itemprop="itemListElement")
+      article.column(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
         - var columnist = site.data.columnists[post.columnist];
         .person(itemscope, itemtype="http://schema.org/Person")
           a(href=url_for(post.path), title="link para a pagina do colunista")

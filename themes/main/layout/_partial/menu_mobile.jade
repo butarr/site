@@ -7,6 +7,6 @@ nav#menu-mobile(itemscope, itemtype="http://schema.org/SiteNavigationElement")
     ul
       each val,index in {nacional:'Nacional', direitos_humanos:'Direitos Humanos', cultura:'Cultura', geral:'Geral', internacional:'Internacional', espanhol:'Español', expediente:'Expediente', parceiros:'Parceiros', publicidade:'Publicidade', contato:'Contato'}
         li
-          a(itemprop="url", href=index)= val
+          a(itemprop="url", href="\\" + index)= val
           meta(itemprop="name",content="string")
     include social-media-icons
