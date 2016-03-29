@@ -97,10 +97,12 @@
 
 @mixin image-rounded-responsive($max-height) {
   figure {
-    width: 100%;
     max-height: $max-height;
     overflow: hidden;
     border-radius: 5px;
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -109,6 +111,15 @@
   color: $title-color;
   text-transform: uppercase;
   border-bottom: 3px solid $title-underline;
+  margin-bottom: 5px;
+}
+
+@mixin page-name() {
+  display: block;
+  color: $page-title;
+  text-transform: uppercase;
+  border-top: 3px solid $title-underline;
+  padding-top: 8px;
   margin-bottom: 5px;
 }
 

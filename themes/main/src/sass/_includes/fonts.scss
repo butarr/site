@@ -122,7 +122,7 @@
 }
 
 @mixin __columnists(){
-  .hat {
+  .page-name {
     font-family: 'Merriweather Sans', serif;
     font-weight: bold;
     font-size: 1.2em;
@@ -262,6 +262,31 @@
   }
 }
 
+@mixin __news_list(){
+  h1, h2, span, p {
+    font-family: 'Merriweather Sans', serif;
+  }
+
+  .page-name {
+    font-size: 1.1em;
+    font-weight: 900;
+  }
+
+  .title, .column > .name {
+    font-size: 1.3em;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+    line-height: 1.2em;
+  }
+
+  .description {
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Merriweather Sans', serif;
+    line-height: 1.2em;
+  }
+}
+
 @mixin get-font($type){
 
   @if( $type == POST ){
@@ -269,6 +294,9 @@
   }
   @else if( $type == LAST_NEWS ){
     @include __last_news();
+  }
+  @else if( $type == NEWS_LIST ){
+    @include __news_list();
   }
   @else if( $type == PERSON ){
     @include __person();

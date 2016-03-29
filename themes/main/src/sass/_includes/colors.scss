@@ -5,10 +5,12 @@ $red-light: rgba(177,32,40,1);
 $red-dark: rgba(110, 16, 16, 1);
 
 $title-color: lighten($neutral-base, 10%);
+$page-title: lighten($neutral-base, 30%);
 $title-underline: $red-base;
 
 $box-background: lighten($neutral-base, 90%);
 $vertical-bar: lighten($neutral-base, 80%);
+$content-divisor: lighten($neutral-base, 70%);
 $box-border: $red-base;
 
 $header-background: $red-base;

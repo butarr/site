@@ -1,9 +1,9 @@
 extends base
 
 append content
-  section#columnists(itemscope, itemtype="http://schema.org/ItemList")
-    h2.hat Colunistas
-    - each post, index in site.posts.find({'layout': 'columnists'}).toArray()
+  section#columnists(itemscope itemtype="http://schema.org/ItemList")
+    h2.page-name Colunistas
+    each post in page.columns
       article.opinion(itemscope, itemtype="http://schema.org/BlogPosting", itemprop="itemListElement")
         - var columnist = site.data.columnists[post.columnist];
         .person(itemscope, itemtype="http://schema.org/Person")
@@ -16,6 +16,4 @@ append content
           h4.name_mobile(itemprop="name")= columnist.name
           a(href="#{ url_for(post.path) }", itemprop="url")
             h3.title(itemprop="headline")= post.title
-          time.date-published(datetime=post.date.toISOString(), itemprop="datePublished")= "Publicado em " + post.date.format('DD/MM/YYYY') + " às " + post.date.format('HH:MM')
           p.description(itemprop="description")=post.description
-        meta(itemprop="position", content=index)

@@ -1,0 +1,19 @@
+extends base
+
+append content
+  section#news-list(itemscope itemtype="http://schema.org/ItemList")
+    h2.page-name(itemprop="about")= page.area
+    each post in page.news
+      a(href=post.path)
+        article.news-item(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class= "divisor")
+          if post.cover
+            .image
+              - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+              figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
+            .content(class= "divisor")
+              h3.title(itemprop= "headline")= post.title
+              p.description(itemprop="description")= post.description
+          else
+            .content(class="no-image" class= "divisor") 
+              h3.title(itemprop= "headline")= post.title
+              p.description(itemprop="description")= post.description
