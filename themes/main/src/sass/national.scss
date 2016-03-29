@@ -392,12 +392,13 @@
   }
 }
 
-#home .radar {
-  width: $COLUMN-WIDTH;
+#home figure.radar {
   margin-top: $VERTICAL-SPACE;
+
   img {
     width: 100%;
   }
+  
   @include media-query(THREE) {
     margin-top: 0;
   }
