@@ -143,9 +143,33 @@
 
   .radar, .columnists, .last-news {
       width: 100%;
+
       @include media-query(THREE) {
         display: none;
       }
+  }
+
+  .printed-news{
+    width: 100%;
+
+    @include media-query(THREE) {
+      display: none;
+    }
+    
+    .printed-news-container {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 100%;
+      }
+
+      .buttons-container {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+    }
   }
 }
 
@@ -382,29 +406,9 @@
 #home .printed-news {
   display: flex;
   flex-direction: column;
+
   .section-name {
     @include section-name();
-  }
-}
-
-#home .main .printed-news{
-  width: 100%;
-  .group-printed {
-    display: flex;
-    align-items: center;
-
-    figure {
-      width: 50%;
-      img {
-        width: 100%;
-      }
-    }
-
-    .group-button {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-    }
   }
 }
 
