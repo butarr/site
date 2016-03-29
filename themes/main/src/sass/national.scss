@@ -411,6 +411,28 @@
   .section-name {
     @include section-name();
   }
+
+  .button {
+    color: $red-base;
+    font-family: 'Merriweather Sans', serif; 
+    border: 1px solid #b7b7b7;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px #b7b7b7;
+    font-weight: bold;
+    padding: 8px 0;
+    text-align: center;
+    margin: 5px auto;
+    font-size: 16px;
+    width: 100%;
+    @include media-query (THREE) {
+      width: 200px;
+    }  
+  }
+
+  .button:hover {
+    box-shadow: 1px 2px 1px #b7b7b7;
+    color:$red-light;
+  }
 }
 
 #home .columnists {
@@ -479,25 +501,4 @@
 }
 
 
-#home a.button {
-  color: $red-base;
-  font-family: 'Merriweather Sans', serif; 
-  border: 1px solid #b7b7b7;
-  border-radius: 3px;
-  box-shadow: 0px 1px 1px #b7b7b7;
-  font-weight: bold;
-  padding: 8px 0;
-  text-align: center;
-  margin: 5px auto;
-  font-size: 16px;
-  width: 100%;
-  @include media-query (THREE) {
-    width: 200px;
-  }  
-}
-
-#home a.button:hover {
-    box-shadow: 1px 2px 1px #b7b7b7;
-    color:$red-light;
-}
 
