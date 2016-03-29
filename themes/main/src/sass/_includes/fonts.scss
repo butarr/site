@@ -121,34 +121,68 @@
   }
 }
 
-@mixin __columnists(){
+@mixin __news_list(){
   .page-name {
-    font-family: 'Merriweather Sans', serif;
-    font-weight: bold;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    color: $link-visited;
+    font-size: 1.1em;
+    font-weight: 900;
+    font-family: 'Merriweather Sans';
   }
 
-  .title {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-
-  h3 {
-    padding: 10px 0;
-  }
-
-  .date-published {
-    font-family: 'Merriweather Sans', serif;
-    font-size: 0.9em;
-    color: $link-hover;
+  .title{
+    font-family: 'Merriweather', serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    line-height: 1.2em;
   }
 
   .description {
-    font-family: 'Merriweather Sans', serif;
-    line-height: 1.1em;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.2em;
+    font-family: 'Merriweather Sans';
+  }
+
+  .date {
+    font-size: 0.9em;
+    font-family: 'Merriweather Sans';
+  }
+}
+
+@mixin __columnists(){
+  .page-name {
     font-size: 1.1em;
+    font-weight: 900;
+    font-family: 'Merriweather Sans';
+  }
+
+  .title {
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.2em;
+    font-family: 'Merriweather', serif;
+    
+    @include media-query (TWO) {
+      font-size: 1.3em;
+    }
+  }
+
+  .name {
+    font-size: 1.1em;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+  }
+
+  .description {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.2em;
+    font-family: 'Merriweather Sans';
+  }
+
+  .date {
+    font-family: 'Merriweather Sans', serif;
+    font-size: 0.9em;
+    color: $link-hover;
   }
 }
 
@@ -263,33 +297,6 @@
       font-size: 1em;
       font-weight: bold;
     }
-  }
-}
-
-@mixin __news_list(){
-  .page-name {
-    font-size: 1.1em;
-    font-weight: 900;
-    font-family: 'Merriweather Sans';
-  }
-
-  .title{
-    font-family: 'Merriweather', serif;
-    font-size: 1.3em;
-    font-weight: 700;
-    line-height: 1.2em;
-  }
-
-  .description {
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.2em;
-    font-family: 'Merriweather Sans';
-  }
-
-  .date {
-    font-size: 0.9em;
-    font-family: 'Merriweather Sans';
   }
 }
 
