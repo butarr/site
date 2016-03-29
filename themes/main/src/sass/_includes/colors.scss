@@ -17,6 +17,7 @@ $menu-divisor: $red-dark;
 $menu-divisor-mobile: $red-base;
 
 $link: lighten($neutral-base, 10%);
+$text-column: lighten($neutral-base, 25%);
 $link-hover: lighten($neutral-base, 30%);
 $link-visited: lighten($neutral-base, 50%);
 
@@ -29,6 +30,3 @@ $gray-lighter: rgba(223, 223, 223,1);
 
 $black: rgba(51, 54, 44, 1);
 $black-light: rgba(19, 19, 19, 1);
-
-
-

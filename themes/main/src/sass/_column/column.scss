@@ -3,12 +3,13 @@
 @import '_includes/mixins';
 
 
-#opinion {
+#column {
   display: flex;
   flex-direction: column;
-  @include get-font(OPINION);
+  @include get-font(COLUMN);
   @include clearfix();
   @include site-lateral-spacing();
+  @include column-lateral-spacing(20px);
   padding-bottom: 10px;
 
   .hat {
@@ -17,26 +18,25 @@
 
   @include media-query(TWO){
     max-width: 4 * $COLUMN-WIDTH;
-    @include column-lateral-spacing();
   }
 }
 
-#opinion .opinion_header {
+#column .column_header {
   display: flex;
   align-items: center;
-  padding: 10px 0;
+  margin-top: 10px;
 }
 
-#opinion .person {
+#column .person {
   @include person;
-
-  max-width: 70px;
+  max-width: 100px;
   height: 100%;
   padding-right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
 
   @include media-query(TWO){
     flex-wrap: wrap;
@@ -44,49 +44,46 @@
   }
 }
 
-#opinion .person .name {
+#column .person .name {
+  color: $bdf-red;
   display: inline-block;
   width: 100%;
   padding: 0;
   text-align: center;
 }
 
-#opinion .title{
+#column .title{
   color: $black;
   margin-bottom: 5px;
   word-spacing: 5px;
 }
 
-#opinion .description{
-  padding: 10px;
-  line-height: 1.4;
+#column .description{
+  padding-top: 20px;
   color: lighten($black-light, 15%);
 
   &:before{
-    content: "“" ;
+    content: "“ " ;
   }
 
   &:after{
-    content: "”";
+    content: " ”";
   }
   &:before, &:after{
     @include media-query(THREE) {
-      color: $bdf-red;
-      line-height: 0;
       vertical-align: -0.45em;
     }
   }
 
-  @include media-query(MEDIUM) {
+  @include media-query(THREE) {
+    padding: 10px;
     float: right;
     width: 45%;
     margin-left: 15px;
   }
 }
 
-#opinion .content{
-  max-width: 3 * $COLUMN-WIDTH;
-  color: $black;
+#column .content{
   word-spacing: 2px;
-  line-height: 1.7;
+  align-self: center;
 }

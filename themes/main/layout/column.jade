@@ -2,15 +2,15 @@ extends base
 
 append content
   - var columnist = site.data.columnists[page.columnist]
-  article#opinion(itemscope, itemtype="http://schema.org/BlogPosting")
-    span.hat Opinião
-    .opinion_header
-      section.person(itemscope, itemtype="http://schema.org/Person")
+  article#column(itemscope, itemtype="http://schema.org/BlogPosting")
+    span.hat Coluna
+    .column_header
+      .person(itemscope, itemtype="http://schema.org/Person")
         img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=columnist.photo )
         h3.name(itemprop="name")=columnist.name
       h2.title(itemprop="headline")= page.title
     meta(itemprop="datePublished", content=page.date)
     meta(itemprop="image", content='http:'+columnist.photo)
-    section.content
+    .content
       p.description(itemprop="description")= page.description
       != page.content

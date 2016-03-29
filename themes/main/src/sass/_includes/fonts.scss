@@ -152,7 +152,7 @@
   }
 }
 
-@mixin __opinion(){
+@mixin __column(){
   .hat{
     font-family: 'Merriweather Sans', serif;
     font-weight: bold;
@@ -162,28 +162,41 @@
   }
 
   .title {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: bold;
+    line-height: 1.2em;
+
+    @include media-query(TWO){
+      font-size: 1.8em;
+    }
   }
 
-  .content p{
-    font-size: 1.1em;
+  .content {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    text-align: left;
+    color: $text-column;
   }
 
   .description {
-    font-size: 1.2em;
+    font-size: 1em;
+    line-height: 1.4em;
+    font-style: italic;
     font-weight: bold;
 
     &::after, &::before{
+      color: $bdf-red;
       font-size: 1.4em;
+      line-height: 0;
     }
 
     @include media-query(THREE) {
-      font-size: 1.4em;
+      font-size: 1.1em;
       font-weight: bold;
 
       &::after, &::before{
-        font-size: 1.5em;
+        font-size: 2em;
+        line-height: 0;
       }
     }
   }
@@ -260,8 +273,8 @@
   @else if( $type == PERSON ){
     @include __person();
   }
-  @else if( $type == OPINION ){
-    @include __opinion();
+  @else if( $type == COLUMN ){
+    @include __column();
   }
   @else if( $type == LAST_ARTICLES ){
     @include __last_articles();
