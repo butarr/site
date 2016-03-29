@@ -11,62 +11,45 @@
   @include get-font(NAME);
   @include site-lateral-spacing();
   @include column-lateral-spacing(10px);
+
+  .page-name {
+    @include page-name();
+  }
+
+  .column + .column {
+    border-top: 1px solid $content-divisor;
+  }
 }
 
-#columnists .page-name {
-  @include page-name();
-}
-
-#columnists .opinion + .opinion {
-  border-top: 1px solid $box-background;
-}
-
-#columnists .opinion {
+#columnists .column {
   display: flex;
-  align-items: flex-start;
-  height: 100%;
-  padding: 10px 10px;
-
-  @include media-query(TWO){
-    padding: 20px 10px;
-  }
-
-  a {
-    text-decoration: none;
-    color: $black-light;
-  }
+  padding: 20px 0;
 }
 
 #columnists .person {
   @include person;
+  margin-right: 20px;
   max-width: 70px;
-  height: 100%;
-  padding-right: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
 
   @include media-query(TWO){
+    display: flex;
     flex-wrap: wrap;
     max-width: 200px;
-
+    justify-content: center;
   }
 }
 
-#columnists .date-published {
-  padding-top: 5px;
+#columnists .date {
+  display: block;
+  padding-bottom: 15px;
 }
 
 #columnists .title {
-  margin-top: 5px;
-  display: inline-block;
+  padding-bottom: 10px;
 }
 
 #columnists .description {
   display: none;
-  padding-top: 20px;
 
   @include media-query(TWO){
     display: inline-block;
@@ -78,26 +61,16 @@
 
   @include media-query(TWO) {
     display: inline-block;
-    width: 100%;
-    padding: 0;
     text-align: center;
   }
 }
 
 .name_mobile {
   display: display-block;
+  padding-bottom: 10px;
 
   @include media-query(TWO){
     display: none;
   }
 }
 
-#columnists .text{
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-
-  @include media-query(TWO){
-    padding-top: 20px;
-  }
-}
