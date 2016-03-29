@@ -2,7 +2,7 @@ extends base
 
 append content
   section#news-list(itemscope itemtype="http://schema.org/ItemList")
-    h2.section-name(itemprop="about")= page.area
+    h2.page-name(itemprop="about")= page.area
     each post in page.news
       a(href=post.path)
         article.news-item(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class= "divisor")

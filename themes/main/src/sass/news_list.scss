@@ -9,8 +9,8 @@
   @include image-rounded(150px, 150px); 
   @include get-font(NEWS_LIST);
 
-  .section-name{
-    @include section-name();
+  .page-name{
+    @include page-name();
     @include media-query(TWO) {
       margin-bottom: 15px;
     }

@@ -114,6 +114,15 @@
   margin-bottom: 5px;
 }
 
+@mixin page-name() {
+  display: block;
+  color: $page-title;
+  text-transform: uppercase;
+  border-top: 3px solid $title-underline;
+  padding-top: 8px;
+  margin-bottom: 5px;
+}
+
 @mixin columnist-hat() {
   width: 100%;
   display: block;

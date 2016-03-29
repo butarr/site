@@ -5,24 +5,16 @@
 @import '_includes/constants';
 
 #columnists {
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  max-width: 2 * $COLUMN-WIDTH;
-  padding: 0 10px;
+  max-width: 3 * $COLUMN-WIDTH;
   @include get-font(COLUMNISTS);
   @include get-font(NAME);
   @include site-lateral-spacing();
-
-  @include media-query(TWO){
-    max-width: 5 * $COLUMN-WIDTH;
-    @include column-lateral-spacing();
-  }
+  @include column-lateral-spacing(10px);
 }
 
-#columnists .hat {
-  border-top: 3px solid $title-underline;
-  padding-top: 8px;
+#columnists .section-name {
+  @include page-name();
 }
 
 #columnists .opinion + .opinion {
