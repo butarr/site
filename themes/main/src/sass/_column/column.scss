@@ -9,24 +9,21 @@
   @include get-font(COLUMN);
   @include clearfix();
   @include site-lateral-spacing();
-  @include column-lateral-spacing();
+  @include column-lateral-spacing(15px);
   padding-bottom: 10px;
 
   .hat {
     @include columnist-hat;
   }
 
-  @include media-query(TWO){
+  @include media-query(THREE){
     max-width: 3 * $COLUMN-WIDTH;
+    @include column-lateral-spacing();
   }
 }
 
 #column .column-header {
   width: 100%;
-
-  @include media-query(THREE){
-    max-width: 3 * $COLUMN-WIDTH;
-  }
 }
 
 #column .title{
@@ -45,7 +42,11 @@
   flex-wrap: wrap;
 
   .profile-image{
-    width: 80px;
+    width: 50px;
+
+    @include media-query(TWO){
+      width: 60px;
+    }
   }
 }
 
@@ -87,6 +88,7 @@
   align-self: center;
 
   @include media-query(THREE){
-    margin-top: 20px;
+    margin-top: 30px;
   }
+
 }

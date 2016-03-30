@@ -113,11 +113,8 @@
     color: $bdf-red;
     font-family: 'Merriweather Sans', serif;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 1.2em;
 
-    @include media-query(TWO) {
-      font-size: 1.2em;
-    }
   }
 }
 
@@ -160,7 +157,7 @@
     font-weight: 700;
     line-height: 1.2em;
     font-family: 'Merriweather', serif;
-    
+
     @include media-query (TWO) {
       font-size: 1.3em;
     }
@@ -233,7 +230,7 @@
       font-weight: bold;
 
       &::after, &::before{
-        font-size: 2em;
+        font-size: 3em;
         line-height: 0;
       }
     }
