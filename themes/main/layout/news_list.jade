@@ -12,10 +12,10 @@ append content
               figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
             .content(class= "divisor")
               h3.title(itemprop= "headline")= post.title
-              time.date(datetime=post.date.toISOString(), itemprop="datePublished")= "Publicado em " + post.date.toLocaleString()
+              time.date(datetime=new Date(post.date).toISOString(), itemprop="datePublished")= "Publicado em " + new Date(post.date).toLocaleString()
               p.description(itemprop="description")= post.description
           else
-            .content(class="no-image" class= "divisor") 
+            .content(class="no-image" class= "divisor")
               h3.title(itemprop= "headline")= post.title
-              time.date(datetime=post.date.toISOString(), itemprop="datePublished")= "Publicado em " + post.date.toLocaleString()
+              time.date(datetime=new Date(post.date).toISOString(), itemprop="datePublished")= "Publicado em " + new Date(post.date).toLocaleString()
               p.description(itemprop="description")= post.description

@@ -5,7 +5,7 @@ nav#menu-mobile(itemscope, itemtype="http://schema.org/SiteNavigationElement")
       img#logo-menu-mobile(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
   .menu-scrollable
     ul
-      each val,index in {nacional:'Nacional', direitos_humanos:'Direitos Humanos', cultura:'Cultura', geral:'Geral', internacional:'Internacional', espanhol:'Español', expediente:'Expediente', parceiros:'Parceiros', publicidade:'Publicidade', contato:'Contato'}
+      each val,index in {nacional:'Nacional', direitos_humanos:'Direitos Humanos', cultura:'Cultura', geral:'Geral', internacional:'Internacional', espanol:'Español', expediente:'Expediente', parceiros:'Parceiros', publicidade:'Publicidade', contato:'Contato'}
         li
           a(itemprop="url", href="/" + index)= val
           meta(itemprop="name",content="string")
