@@ -123,11 +123,20 @@
   margin-bottom: 5px;
 }
 
-@mixin columnist-hat() {
+@mixin hat() {
   width: 100%;
   display: block;
   border-top: 3px solid $title-underline;
   padding-top: 8px;
+  @include get-font(HAT);
+}
+
+@mixin standalone_news_title() {
+  color: $black;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  word-spacing: 2px;
+  @include get-font(TITLE);
 }
 
 @mixin person() {

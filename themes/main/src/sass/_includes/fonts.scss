@@ -49,15 +49,17 @@
   }
 }
 
+@mixin __hat(){
+  font-family: 'Merriweather Sans', serif;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 900;
+  color: $link-visited;
+}
+
 @mixin __post(){
   .title {
     font-size: 2em;
-    font-weight: bold;
-  }
-
-  .hat {
-    text-transform: uppercase;
-    font-size: 0.9em;
     font-weight: bold;
   }
 
@@ -66,7 +68,7 @@
   }
 
   .description {
-    font-size: 1.6em;
+    font-size: 1.3em;
     font-weight: lighter;
   }
 }
@@ -183,25 +185,17 @@
   }
 }
 
+@mixin __title(){
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.2em;
+
+  @include media-query(TWO){
+    font-size: 2em;
+  }
+}
+
 @mixin __column(){
-  .hat{
-    font-family: 'Merriweather Sans', serif;
-    font-weight: bold;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    color: $link-visited;
-  }
-
-  .title {
-    font-size: 1.5em;
-    font-weight: bold;
-    line-height: 1.2em;
-
-    @include media-query(TWO){
-      font-size: 1.8em;
-    }
-  }
-
   .content {
     font-size: 1.1em;
     line-height: 1.5em;
@@ -263,11 +257,6 @@
 }
 
 @mixin __columnist(){
-
-  .name {
-
-  }
-
   .hat{
     font-size: 1.2em;
     font-weight: bold;
@@ -337,5 +326,11 @@
   }
   @else if( $type == NAME ){
     @include __name();
+  }
+  @else if( $type == HAT ){
+    @include __hat();
+  }
+  @else if( $type == TITLE ){
+    @include __title();
   }
 }

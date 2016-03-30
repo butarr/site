@@ -8,7 +8,6 @@ append content
       h2.description(itemprop="description")= page.description
       section.desktop.place-and-time
         time(datetime=page.date)= page.date.locale('pt-br').format('dddd, DD [de] MMMM [de] YYYY, [às] HH:mm')
-      
       if page.cover.medium
         figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
           - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits

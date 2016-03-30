@@ -16,13 +16,12 @@
 }
 
 #columnist .hat {
-  @include columnist-hat;
+  @include hat();
   color: $bdf-red;
 }
 
 #columnist .hat-articles {
-  @include columnist-hat;
-  @include get-font(COLUMNIST_HAT);
+  @include hat();
   border-width: 1px;
   color: $bdf-red;
 }

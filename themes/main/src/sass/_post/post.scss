@@ -17,13 +17,11 @@
 
 #post header {
   .hat {
-    color: $red;
+    @include hat;
   }
 
   .title {
-    color: $black;
-    margin: 5px 0;
-    line-height: 1.1em;
+    @include standalone_news_title;
   }
 
   .description {
