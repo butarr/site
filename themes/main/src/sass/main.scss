@@ -38,10 +38,6 @@ body {
     &:hover {
       color: $link-hover;
     }
-
-    &:visited {
-      color: $link-visited;
-    }
   }
 
   & > main {
