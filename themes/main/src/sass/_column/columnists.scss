@@ -1,18 +1,14 @@
-@import '_includes/query';
-@import '_includes/colors';
-@import '_includes/mixins';
-@import '_includes/fonts';
 @import '_includes/constants';
+@import '_includes/mixins';
+@import '_includes/colors';
 
 #columnists {
-  width: 100%;
-  max-width: 3 * $COLUMN-WIDTH;
-  @include get-font(COLUMNISTS);
-  @include get-font(NAME);
+  max-width: 3 * $COLUMN_WIDTH;
   @include site-lateral-spacing();
   @include column-lateral-spacing(10px);
+  @include get-font(COLUMNISTS);
 
-  .page-name {
+  .page-name { 
     @include page-name();
   }
 
@@ -21,56 +17,74 @@
   }
 }
 
-#columnists .column {
-  display: flex;
+#columnists .column{
+  display: table;
+  justify-content: flex-start;
   padding: 20px 0;
-}
 
-#columnists .person {
-  @include person;
-  margin-right: 20px;
-  max-width: 70px;
-
-  @include media-query(TWO){
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 200px;
-    justify-content: center;
+  .name {
+    color: $red-base;
   }
-}
 
-#columnists .date {
-  display: block;
-  padding-bottom: 15px;
-}
-
-#columnists .title {
-  padding-bottom: 10px;
-}
-
-#columnists .description {
-  display: none;
-
-  @include media-query(TWO){
-    display: inline-block;
-  }
-}
-
-#columnists .name {
-  display: none;
-
-  @include media-query(TWO) {
-    display: inline-block;
+  .person-cell {
+    display: table-cell;
+    min-width: 90px;
+    padding-right: 10px;
     text-align: center;
+
+    @include media-query(TWO) {
+      min-width: 160px;
+    }
+
+    .person-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .profile-image {
+        border-radius: 50%;
+        width: 70px;
+      }
+
+      .name {
+        display: none;
+
+        @include media-query(TWO) {
+          margin-top: 10px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .text {
+    display: table-cell;
+    width: 100%;
+    vertical-align: top;
+
+    .title {
+      padding-bottom: 7px;
+    }
+
+    .date {
+      display: block;
+      padding-bottom: 15px;
+    }
+
+    .name {
+      padding-bottom: 7px;
+
+      @include media-query(TWO) {
+        display: none;
+      }
+    }
+
+    .description {
+      display: none;
+
+      @include media-query(TWO) {
+        display: inline-block;
+      }
+    }
   }
 }
-
-.name_mobile {
-  display: display-block;
-  padding-bottom: 10px;
-
-  @include media-query(TWO){
-    display: none;
-  }
-}
-

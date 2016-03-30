@@ -125,6 +125,7 @@
     font-size: 1.1em;
     font-weight: 900;
     font-family: 'Merriweather Sans';
+    text-transform: uppercase;
   }
 
   .title{
@@ -152,6 +153,7 @@
     font-size: 1.1em;
     font-weight: 900;
     font-family: 'Merriweather Sans';
+    text-transform: uppercase;
   }
 
   .title {
@@ -168,7 +170,8 @@
   .name {
     font-size: 1.1em;
     font-weight: 700;
-    font-family: 'Merriweather', serif;
+    font-family: 'Merriweather Sans';
+    line-height: 1.1em;
   }
 
   .description {
