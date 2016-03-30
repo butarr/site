@@ -8,12 +8,14 @@ append content
       h2.description(itemprop="description")= page.description
       section.desktop.place-and-time
         time(datetime=page.date)= page.date.locale('pt-br').format('dddd, DD [de] MMMM [de] YYYY, [às] HH:mm')
-      figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
-        - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits
-        - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
-
-        img(itemprop="thumbnail", alt=imageDescription, title=imageDescription, src=page.cover['medium'] )
-        figcaption(itemprop="caption")= imageCaption
+      
+      if page.cover.medium
+        figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
+          - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits
+          - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
+          img(itemprop="thumbnail", alt=imageDescription, title=imageDescription, src=page.cover['medium'] )
+          figcaption(itemprop="caption")= imageCaption
+      
       section.place-and-time
         span.author(rel="author", itemprop="author")= page.author
         br
