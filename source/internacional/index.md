@@ -40,11 +40,6 @@ news:
     title: teste seis
     path: 2016/03/22/teste-seis/
     hat: amkdm
-  - date: 2016-03-22T13:07:31.702Z
-    description: linha fina
-    title: teste quatro
-    path: 2016/03/22/teste-quatro/
-    hat: chapéu
   - cover:
       url: //farm2.staticflickr.com/1631/25182946153_8733bdef1e_b.jpg
       small: //farm2.staticflickr.com/1631/25182946153_8733bdef1e_n.jpg
