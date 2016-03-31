@@ -65,6 +65,11 @@
     font-weight: bold;
   }
 
+  .author {
+    font-family: 'Merriweather Sans';
+    font-weight: lighter;
+  }
+
   .content p {
     font-size: 1.1em;
   }
@@ -72,6 +77,8 @@
   .description {
     font-size: 1.3em;
     font-weight: lighter;
+    font-family: 'Merriweather Sans';
+    line-height: 1.2em;
   }
 }
 
@@ -127,7 +134,6 @@
     font-size: 1.1em;
     font-weight: 900;
     font-family: 'Merriweather Sans';
-    text-transform: uppercase;
   }
 
   .title{
@@ -159,7 +165,6 @@
     font-size: 1.1em;
     font-weight: 900;
     font-family: 'Merriweather Sans';
-    text-transform: uppercase;
   }
 
   .title {
@@ -176,8 +181,7 @@
   .name {
     font-size: 1.1em;
     font-weight: 700;
-    font-family: 'Merriweather Sans';
-    line-height: 1.1em;
+    font-family: 'Merriweather', serif;
   }
 
   .description {

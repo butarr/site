@@ -26,7 +26,8 @@
 
   .description {
     color: $black-light;
-    margin: 25px 0;
+    margin-top: 10px;
+    margin-bottom: 40px;
   }
 
   figure {
@@ -42,64 +43,6 @@
     }
   }
 
-  .desktop.place-and-time{
-    display: none;
-
-    @include media-query(MEDIUM) {
-      display: block;
-    }
-  }
-
-  .place-and-time{
-    color: $gray-light;
-    line-height: 1.5em;
-    padding: 5px 0;
-    border-top: 2px solid $gray-lighter;
-    border-bottom: 2px solid $gray-lighter;
-
-    time {
-      display: block;
-      font-style: italic;
-    }
-
-    .author {
-      &::before {
-        content: ' ';
-      }
-      &::after {
-        content: ', ';
-      }
-    }
-
-    @include media-query(MEDIUM) {
-      border-top: none;
-      border-bottom: none;
-      color: $black;
-
-      &:not(.desktop) time {
-        display: none;
-      }
-
-      .author, .place {
-        font-weight: bold;
-
-        &::before{
-          font-weight: 300;
-        }
-      }
-
-      .author::after {
-        content: '';
-      }
-
-      .place {
-        &::before {
-          content: ' ';
-        }
-      }
-    }
-  }
-
   @include media-query(MEDIUM) {
     figure {
       margin-left: auto;
@@ -109,8 +52,19 @@
   }
 }
 
+#post header .place-and-time {
+  color: $page-title;
+  line-height: 1.5em;
+  padding: 5px 0;
+  display: block;
+}
+
 #post .content{
   color: $title-color;
   line-height: 1.7em;
   padding-top: 10px;
+
+  p {
+    margin-bottom: 20px;
+  }
 }
