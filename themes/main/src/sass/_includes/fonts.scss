@@ -70,10 +70,6 @@
     font-weight: lighter;
   }
 
-  .content p {
-    font-size: 1.1em;
-  }
-
   .description {
     font-size: 1.3em;
     font-weight: lighter;
@@ -208,18 +204,18 @@
   }
 }
 
-@mixin __column(){
-  .content {
-    font-size: 1.1em;
-    line-height: 1.5em;
-    text-align: left;
-    color: $text-column;
+@mixin __content(){
+  font-size: 1.1em;
+  line-height: 1.5em;
+  text-align: left;
+  color: $text-column;
 
-    @include media-query(TWO){
-      font-size: 1.2em;
-    }
+  @include media-query(TWO){
+    font-size: 1.2em;
   }
+}
 
+@mixin __column(){
   .description {
     font-size: 1.1em;
     line-height: 1.4em;
@@ -345,5 +341,8 @@
   }
   @else if( $type == TITLE ){
     @include __title();
+  }
+  @else if( $type == CONTENT ){
+    @include __content();
   }
 }

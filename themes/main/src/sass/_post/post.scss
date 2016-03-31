@@ -60,8 +60,7 @@
 }
 
 #post .content{
-  color: $title-color;
-  line-height: 1.7em;
+  @include get-font(CONTENT);
   padding-top: 10px;
 
   p {

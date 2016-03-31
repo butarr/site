@@ -89,6 +89,7 @@
 }
 
 #column .content{
+  @include get-font(CONTENT);
   word-spacing: 2px;
   align-self: center;
 
