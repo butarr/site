@@ -6,8 +6,12 @@
   max-width: 3 * $COLUMN-WIDTH;
   @include site-lateral-spacing();
   @include column-lateral-spacing(10px);
-  @include image-rounded(150px, 150px); 
+  @include image-rounded(110px, 110px); 
   @include get-font(NEWS_LIST);
+
+  @include media-query(TWO) {
+    @include image-rounded(150px, 150px);
+  }
 
   .page-name{
     @include page-name();
@@ -44,12 +48,13 @@
   }
 
   .image {
-    margin: 0 20px 10px 0;
-    width: 150px;
+    margin: 0 10px 10px 0;
+    width: 110px;
     float: left;
 
     @include media-query(TWO) {
-      margin-bottom: 20px;
+      width: 150px;
+      margin: 0 20px 10px 0;
     }
   }
 
@@ -62,13 +67,15 @@
   }
 
   .title {
-    padding-bottom: 7px;
+    padding-bottom: 15px;
+  }
+
+  .description {
+    padding-bottom: 15px;
   }
 
   .date {
      color: $details-font;
-     display: block;
-     padding-bottom: 15px;
   }
 }
 

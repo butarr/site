@@ -20,7 +20,7 @@ append content
           h4.name(itemprop="name")= columnist.name
           a(href="#{ url_for(post.path) }" itemprop="url")
             h3.title(itemprop="headline")= post.title
-          time.date(datetime=new Date(post.date).toISOString(), itemprop="datePublished")= "Publicado em " + new Date(post.date).toLocaleString()
+          time.date(datetime=new Date(post.date).toISOString(), itemprop="datePublished")= "Publicado em " + new Date(post.date).toLocaleDateString()
           a(href="#{ url_for(post.path) }" itemprop="url")
             p.description(itemprop="description")=post.description
 
