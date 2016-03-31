@@ -6,7 +6,7 @@ append content
     each post in page.news
       a(href=post.path)
         article.news-item(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class= "divisor")
-          if (post.cover.small != null)
+          if post.cover
             .image
               - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
               figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
