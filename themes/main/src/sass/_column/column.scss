@@ -47,12 +47,20 @@
   }
 }
 
-#column .person .name {
-  color: $bdf-red;
-  display: inline-block;
-  padding: 0;
-  text-align: center;
+#column .name-and-time {
+  display: flex;
+  flex-direction: column;
   padding-left: 20px;
+
+  .name {
+    color: $bdf-red;
+    display: block;
+  }
+
+  time {
+    color: $details-font;
+    padding-top: 7px;
+  }
 }
 
 #column .description{
@@ -86,6 +94,10 @@
 
   @include media-query(THREE){
     margin-top: 30px;
+  }
+
+  p {
+    margin-bottom: 20px;
   }
 
 }
