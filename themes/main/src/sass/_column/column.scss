@@ -20,6 +20,19 @@
     max-width: 3 * $COLUMN-WIDTH;
     @include column-lateral-spacing();
   }
+
+  figure {
+    margin-bottom: 20px;
+
+    img{
+      width: 100%;
+    }
+
+    figcaption{
+      color: $gray;
+      text-align: right;
+    }
+  }
 }
 
 #column .column-header {
@@ -63,8 +76,17 @@
   }
 }
 
+#column .content{
+  @include get-font(CONTENT);
+  word-spacing: 2px;
+  align-self: center;
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
 #column .description{
-  padding: 20px 10px;
   color: lighten($black-light, 15%);
 
   &:before{
@@ -81,24 +103,9 @@
   }
 
   @include media-query(THREE) {
-    padding: 20px;
     float: right;
     width: 45%;
-    margin-left: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
   }
-}
-
-#column .content{
-  @include get-font(CONTENT);
-  word-spacing: 2px;
-  align-self: center;
-
-  @include media-query(THREE){
-    margin-top: 30px;
-  }
-
-  p {
-    margin-bottom: 20px;
-  }
-
 }
