@@ -39,6 +39,7 @@
     figcaption{
       color: $gray;
       text-align: right;
+      margin-top: 10px;
     }
   }
 
@@ -54,7 +55,7 @@
 #post header .place-and-time {
   color: $details-font;
   line-height: 1.5em;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   display: block;
 }
 
