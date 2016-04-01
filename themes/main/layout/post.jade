@@ -12,7 +12,7 @@ append content
         span.place(rel="place", itemprop="contentLocation")= page.place + ', '
         time(datetime=page.date)= page.date.locale('pt-br').format(' DD [de] MMMM [de] YYYY, [às] HH:mm')
         
-      if page.cover.medium
+      if page.cover
         figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
           - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits
           - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
