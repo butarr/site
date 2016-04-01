@@ -6,12 +6,10 @@ append content
       span.hat(itemprop="about")= page.hat
       h1.title(itemprop="headline")= page.title
       h2.description(itemprop="description")= page.description
-      
       span.author(rel="author", itemprop="author")= page.author
       section.place-and-time      
         span.place(rel="place", itemprop="contentLocation")= page.place + ', '
-        time(datetime=page.date)= page.date.locale('pt-br').format(' DD [de] MMMM [de] YYYY, [às] HH:mm')
-        
+        time(datetime=page.date)= page.date.locale('pt-br').format(' DD [de] MMMM [de] YYYY, [às] HH:mm')    
       if page.cover
         figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
           - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits

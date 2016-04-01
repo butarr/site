@@ -68,13 +68,24 @@
   .author {
     font-family: 'Merriweather Sans';
     font-weight: lighter;
+    font-size: 1.2em;
+    color: $page-title;
+
+    @include media-query(THREE){
+      font-size: 1.3em;
+    }
   }
 
   .description {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: lighter;
     font-family: 'Merriweather Sans';
     line-height: 1.2em;
+    color: $black-light;
+
+    @include media-query(THREE){
+      font-size: 1.3em;
+    }
   }
 }
 

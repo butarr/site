@@ -25,7 +25,6 @@
   }
 
   .description {
-    color: $black-light;
     margin-top: 10px;
     margin-bottom: 40px;
   }
@@ -55,7 +54,7 @@
 #post header .place-and-time {
   color: $details-font;
   line-height: 1.5em;
-  padding: 5px 0;
+  padding-bottom: 5px;
   display: block;
 }
 
