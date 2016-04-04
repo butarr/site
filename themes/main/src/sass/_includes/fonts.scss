@@ -52,7 +52,6 @@
 }
 
 @mixin __expedient(){
-
   .page-name {
     font-size: 1.1em;
     font-weight: 900;
@@ -77,15 +76,6 @@
 }
 
 @mixin __post(){
-  h2, h3, p {
-    font-family: 'Merriweather Sans', serif;
-  }
-
-  .title {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-
   .author {
     font-family: 'Merriweather Sans';
     font-weight: lighter;

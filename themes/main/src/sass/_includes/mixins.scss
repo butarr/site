@@ -219,7 +219,8 @@
 
 @mixin blockquote-news(){
   blockquote {
-    width: 2 * $COLUMN-WIDTH;
+    max-width: 2 * $COLUMN-WIDTH;
+    width: 100%;
     quotes: "\201C""\201D""\2018""\2019";
     padding: 20px 0;
   }

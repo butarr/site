@@ -13,6 +13,10 @@
     max-width: 3 * $COLUMN-WIDTH;
     @include column-lateral-spacing();
   }
+
+  iframe {
+    width: 100%;
+  }
 }
 
 #post header {

@@ -4,8 +4,6 @@
 
 
 #column {
-  display: flex;
-  flex-direction: column;
   @include get-font(COLUMN);
   @include clearfix();
   @include site-lateral-spacing();
@@ -34,6 +32,10 @@
       margin-top: 10px;
     }
   }
+
+  iframe {
+    width: 100%;
+  }
 }
 
 #column .column-header {
@@ -50,7 +52,7 @@
   padding-right: 20px;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
   .profile-image{
     width: 50px;
