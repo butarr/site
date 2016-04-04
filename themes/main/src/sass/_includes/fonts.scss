@@ -73,7 +73,7 @@
   text-transform: uppercase;
   font-size: 1.1em;
   font-weight: 900;
-  color: $link-visited;
+  color: $page-title;
 }
 
 @mixin __post(){
@@ -240,6 +240,7 @@
 }
 
 @mixin __content(){
+  font-family: 'Merriweather', serif;
   font-size: 1.1em;
   line-height: 1.5em;
   text-align: left;
