@@ -115,11 +115,7 @@
 }
 
 @mixin page-name() {
-  display: block;
-  color: $page-title;
-  border-top: 3px solid $title-underline;
-  padding-top: 8px;
-  margin-bottom: 5px;
+  @include hat;
 }
 
 @mixin hat() {
@@ -128,6 +124,7 @@
   border-top: 3px solid $title-underline;
   padding-top: 8px;
   @include get-font(HAT);
+  margin-bottom: 5px;
 }
 
 @mixin standalone_news_title() {
