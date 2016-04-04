@@ -4,6 +4,7 @@ $red-base: rgba(140,25,31,1);
 $red-light: rgba(177,32,40,1);
 $red-dark: rgba(110, 16, 16, 1);
 
+$text-color: lighten($neutral-base, 20%);
 $title-color: lighten($neutral-base, 10%);
 $page-title: lighten($neutral-base, 30%);
 $details-font: lighten($neutral-base, 40%);
