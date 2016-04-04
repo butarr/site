@@ -296,6 +296,24 @@
   }
 }
 
+@mixin __blockquote_news(){
+  blockquote {
+    font-style: italic;
+    font-weight: bold;
+  }
+  blockquote:before {
+    color: $bdf-red;
+    font-size: 4em;
+    line-height: 0.1em;
+  }
+
+  blockquote:after {
+    color: $bdf-red;
+    font-size: 4em;
+    line-height: 0.1em;
+  }
+}
+
 @mixin __menu(){
   a {
     font-family: 'Merriweather', serif;
@@ -358,5 +376,8 @@
   }
   @else if( $type == CONTENT ){
     @include __content();
+  }
+  @else if( $type == BLOCKQUOTE-NEWS ){
+    @include __blockquote_news();
   }
 }
