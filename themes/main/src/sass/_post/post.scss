@@ -61,6 +61,7 @@
 
 #post .content{
   @include get-font(CONTENT);
+  @include blockquote-news;
   padding-top: 10px;
 
   p {

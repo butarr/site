@@ -13,14 +13,12 @@ append content
           time(datetime=page.date)= page.date.locale('pt-br').format(' DD [de] MMMM [de] YYYY, [às] HH:mm')
     meta(itemprop="datePublished", content=page.date)
     meta(itemprop="image", content='http:'+columnist.photo)
-    
     if page.cover
       figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
         - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits
         - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
         img(itemprop="thumbnail", alt=imageDescription, title=imageDescription, src=page.cover['medium'] )
         figcaption(itemprop="caption")= imageCaption
-    
     .content
-      p.description(itemprop="description")= page.description
+      blockquote.description(itemprop="description")= page.description
       != page.content

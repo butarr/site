@@ -92,15 +92,12 @@
 
   &:before{
     content: "“ " ;
+    vertical-align: -0.45em;
   }
 
   &:after{
     content: "”";
-  }
-  &:before, &:after{
-    @include media-query(THREE) {
-      vertical-align: -0.45em;
-    }
+    vertical-align: -0.6em;
   }
 
   @include media-query(THREE) {

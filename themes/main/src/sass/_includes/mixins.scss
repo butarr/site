@@ -216,3 +216,33 @@
     }
   }
 }
+
+@mixin blockquote-news(){
+  blockquote {
+    width: 2 * $COLUMN-WIDTH;
+    font-style: italic;
+    font-weight: bold;
+    quotes: "\201C""\201D""\2018""\2019";
+    padding: 20px 0;
+  }
+  blockquote:before {
+    color: $bdf-red;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+  blockquote:after {
+    color: $bdf-red;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    vertical-align: -0.6em;
+  }
+
+  blockquote p {
+    display: inline;
+  }
+}
