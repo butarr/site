@@ -1,0 +1,35 @@
+extends base
+
+append content
+  article#contact(itemtype="http://schema.org/NewsArticle", itemscope)
+    h2.page-name(itemprop="about")= "Contato"
+
+    h3.title= "Brasil de Fato Nacional"  
+    
+    ul.social-media-list
+      li.social-media-item E-mail: #[a(target="_blank", href="mailto:jornalismo@brasildefato.com.br") jornalismo@brasildefato.com.br]
+      li.social-media-item Facebook: #[a(target="_blank", href="//www.facebook.com/brasildefato") www.facebook.com/brasildefato]
+      li.social-media-item Twitter: #[a(target="_blank", href="//twitter.com/Brasil_de_Fato") twitter.com/Brasil_de_Fato]
+      li.social-media-item YouTube: #[a(target="_blank", href="//www.youtube.com/c/AgênciaBrasildeFato") www.youtube.com/c/AgênciaBrasildeFato]
+      li.social-media-item Whatsapp: +55 11 98739-4232
+
+    h3.title= "Edições Impressas Regionais"  
+
+    h4.printed-news= "Minas Gerais"
+
+    ul.social-media-list
+      li.social-media-item E-mail: #[a(target="_blank", href="mailto:redacaomg@brasildefato.com.br") redacaomg@brasildefato.com.br]
+      li.social-media-item Facebook: #[a(target="_blank", href="//www.facebook.com/brasildefatomg") www.facebook.com/brasildefatomg]
+
+    h4.printed-news= "Paraná"
+
+    ul.social-media-list
+      li.social-media-item E-mail: #[a(target="_blank", href="mailto:redacaopr@brasildefato.com.br") redacaopr@brasildefato.com.br]
+      li.social-media-item Facebook: #[a(target="_blank", href="//www.facebook.com/BDFPR ") www.facebook.com/BDFPR]
+
+    h4.printed-news= "Rio de Janeiro"
+
+    ul.social-media-list
+      li.social-media-item E-mail: #[a(target="_blank", href="mailto:redacaorj@brasildefato.com.br") redacaorj@brasildefato.com.br]
+      li.social-media-item Facebook: #[a(target="_blank", href="//www.facebook.com/brasildefatorj") www.facebook.com/brasildefatorj]
+

@@ -11,12 +11,7 @@ news:
     title: Grandes jornais publicam campanha publicitária da Fiesp apoiando o impeachment
     path: 2016/03/30/grandes-jornais-publicam-campanha-publicitaria-da-fiesp-apoiando-o-impeachment/
     hat: Golpe
-  - cover:
-      url: null
-      small: null
-      credits: null
-      subtitle: null
-    date: 2016-03-29T21:54:57.614Z
+  - date: 2016-03-29T21:54:57.614Z
     description: O manifesto pretende agregar o maior número de médicos e médicas que lutam em defesa da democracia
     title: Médicos lançam manifesto em defesa da democracia
     path: 2016/03/29/medicos-lancam-manifesto-em-defesa-da-democracia/
