@@ -6,9 +6,9 @@ footer#page-footer(itemscope itemtype="http://schema.org/WPFooter")
     #footer-items
       nav
         ul
-          each menu_item in ["Expediente", "Parceiros", "Publicidade", "Contato"]
+          each val, index  in {quem_somos:"Quem Somos", parceiros:"Parceiros", publicidade:"Publicidade", contato:"Contato"}
             li
-              a.active(itemprop="url", href="expediente")= menu_item
+              a.active(itemprop="url", href="/" + index)= val
               meta(itemprop="name",content="string") 
       #footer-social-block
         p Social:
