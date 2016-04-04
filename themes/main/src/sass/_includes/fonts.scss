@@ -227,6 +227,12 @@
   @include media-query(TWO){
     font-size: 1.2em;
   }
+
+  a {
+    color: $bdf-red;
+    font-weight: bold;
+    text-decoration: underline;
+  }
 }
 
 @mixin __column(){
