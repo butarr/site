@@ -51,7 +51,7 @@
   }
 }
 
-@mixin __contact(){
+@mixin __expedient(){
 
   .page-name {
     font-size: 1.1em;
@@ -60,15 +60,10 @@
     text-transform: uppercase;
   }
 
-  .printed-news {
+  .title {
     font-family: 'Merriweather Sans';
     text-transform: uppercase;
     font-size: 1rem;
-    font-weight: bold;
-  }
-
-  .title {
-    font-size: 1.4rem;
     font-weight: bold;
   }
 }
@@ -412,7 +407,7 @@
   @else if( $type == BLOCKQUOTE-NEWS ){
     @include __blockquote_news();
   }
-  @else if( $type == CONTACT ){
-    @include __contact();
+  @else if( $type == EXPEDIENT ){
+    @include __expedient();
   }
 }

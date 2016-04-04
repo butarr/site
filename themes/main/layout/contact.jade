@@ -1,7 +1,7 @@
 extends base
 
 append content
-  article#contact(itemtype="http://schema.org/NewsArticle", itemscope)
+  article.expedient(itemtype="http://schema.org/NewsArticle", itemscope)
     h2.page-name(itemprop="about")= "Contato"
 
     h3.title= "Site Brasil de Fato"  
@@ -12,22 +12,21 @@ append content
       li.social-media-item Twitter: #[a(target="_blank", href="//twitter.com/Brasil_de_Fato") twitter.com/Brasil_de_Fato]
       li.social-media-item YouTube: #[a(target="_blank", href="//www.youtube.com/c/AgênciaBrasildeFato") www.youtube.com/c/AgênciaBrasildeFato]
       li.social-media-item Whatsapp: +55 11 98739-4232
+  
 
-    h3.title= "Edições Impressas Regionais"  
-
-    h4.printed-news= "Minas Gerais"
+    h3.title= "Impresso Minas Gerais"
 
     ul.social-media-list
       li.social-media-item E-mail: #[a(target="_blank", href="mailto:redacaomg@brasildefato.com.br") redacaomg@brasildefato.com.br]
       li.social-media-item Facebook: #[a(target="_blank", href="//www.facebook.com/brasildefatomg") www.facebook.com/brasildefatomg]
 
-    h4.printed-news= "Paraná"
+    h3.title= "Impresso Paraná"
 
     ul.social-media-list
       li.social-media-item E-mail: #[a(target="_blank", href="mailto:redacaopr@brasildefato.com.br") redacaopr@brasildefato.com.br]
       li.social-media-item Facebook: #[a(target="_blank", href="//www.facebook.com/BDFPR ") www.facebook.com/BDFPR]
 
-    h4.printed-news= "Rio de Janeiro"
+    h3.title= "Impresso Rio de Janeiro"
 
     ul.social-media-list
       li.social-media-item E-mail: #[a(target="_blank", href="mailto:redacaorj@brasildefato.com.br") redacaorj@brasildefato.com.br]
