@@ -61,6 +61,10 @@
   line-height: 1.5em;
   padding-bottom: 10px;
   display: block;
+
+  .place {
+    display: inline-block;
+  }
 }
 
 #post .content{
