@@ -199,7 +199,7 @@
       font-size: 1.3em;
     }
   }
-  
+
   .description {
     font-size: 1em;
     font-weight: 400;
@@ -239,31 +239,6 @@
     color: $bdf-red;
     font-weight: bold;
     text-decoration: underline;
-  }
-}
-
-@mixin __column(){
-  .description {
-    font-size: 1.1em;
-    line-height: 1.4em;
-    font-style: italic;
-    font-weight: bold;
-
-    &::after, &::before{
-      color: $bdf-red;
-      font-size: 1.4em;
-      line-height: 0;
-    }
-
-    @include media-query(THREE) {
-      font-size: 1.1em;
-      font-weight: bold;
-
-      &::after, &::before{
-        font-size: 3em;
-        line-height: 0;
-      }
-    }
   }
 }
 
@@ -309,20 +284,22 @@
   }
 }
 
-@mixin __blockquote_news(){
+@mixin __page_blockquotes(){
   blockquote {
     font-style: italic;
     font-weight: bold;
+    font-size: 1.35rem;
+    line-height: 1.5em;
   }
   blockquote:before {
     color: $bdf-red;
-    font-size: 4em;
+    font-size: 3.5em;
     line-height: 0.1em;
   }
 
   blockquote:after {
     color: $bdf-red;
-    font-size: 4em;
+    font-size: 3.5em;
     line-height: 0.1em;
   }
 }
@@ -353,9 +330,6 @@
   }
   @else if( $type == PERSON ){
     @include __person();
-  }
-  @else if( $type == COLUMN ){
-    @include __column();
   }
   @else if( $type == LAST_ARTICLES ){
     @include __last_articles();
@@ -390,8 +364,8 @@
   @else if( $type == CONTENT ){
     @include __content();
   }
-  @else if( $type == BLOCKQUOTE-NEWS ){
-    @include __blockquote_news();
+  @else if( $type == PAGE_BLOCKQUOTES ){
+    @include __page_blockquotes();
   }
   @else if( $type == EXPEDIENT ){
     @include __expedient();

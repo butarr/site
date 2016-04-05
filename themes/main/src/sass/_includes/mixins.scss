@@ -235,5 +235,5 @@
   blockquote p {
     display: inline;
   }
-  @include get-font(BLOCKQUOTE-NEWS);
+  @include get-font(PAGE_BLOCKQUOTES);
 }

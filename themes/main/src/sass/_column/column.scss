@@ -4,10 +4,10 @@
 
 
 #column {
-  @include get-font(COLUMN);
   @include clearfix();
   @include site-lateral-spacing();
   @include column-lateral-spacing(15px);
+  @include blockquote-news;
   padding-bottom: 10px;
 
   .hat {
@@ -92,20 +92,10 @@
 #column .description{
   color: lighten($black-light, 15%);
 
-  &:before{
-    content: "“ " ;
-    vertical-align: -0.45em;
-  }
-
-  &:after{
-    content: "”";
-    vertical-align: -0.6em;
-  }
-
   @include media-query(THREE) {
     float: right;
-    width: 45%;
+    width: 40%;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
