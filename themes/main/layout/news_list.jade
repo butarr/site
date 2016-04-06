@@ -4,6 +4,7 @@ append content
   section#news-list(itemscope itemtype="http://schema.org/ItemList")
     h2.page-name(itemprop="about")= page.area
     each post in page.news
+      - var published_date = new Date(post.date)
       a.news-item-link(href=post.path)
         article.news-item(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class= "divisor")
           if post.cover
@@ -13,4 +14,4 @@ append content
           .content(class="no-image" class= "divisor")
             h3.title(itemprop= "headline")= post.title
             p.description(itemprop="description")= post.description
-            time.date(datetime=new Date(post.date).toISOString(), itemprop="datePublished")= "Publicado" + page.date.locale('pt-br').format(' DD [de] MMMM [de] YYYY, [às] HH:MM')
+            time.date(datetime=published_date.toISOString(), itemprop="datePublished")=date(published_date, '[Publicado ] DD [de] MMMM [de] YYYY') + ", às " + time(published_date, 'HH:MM')
