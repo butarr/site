@@ -18,7 +18,6 @@
 title: Brasil de Fato
 subtitle: Uma visão popular do Brasil e do mundo
 description: Uma visão popular do Brasil e do mundo
-logo: "/img/logo.svg"
 language: pt-br
 timezone:
 
@@ -67,3 +66,7 @@ deploy:
   type: git
   repo: git@github.com:brasil-de-fato/site.git
   branch: gh-pages
+
+# Social
+social:
+  facebook_url: 'http://www.facebook.com/brasildefato'
