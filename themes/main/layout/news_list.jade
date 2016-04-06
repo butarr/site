@@ -1,7 +1,9 @@
 extends base
 
-append open_graph
+block open_graph
   meta(property="og:title" content="#{page.area.toUpperCase()} | #{config.title}")
+  meta(property="og:description" content=config.description)
+  meta(property="og:image" content="#{config.url}/img/share-logo.png")
 
 append content
   section#news-list(itemscope itemtype="http://schema.org/ItemList")
