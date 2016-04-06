@@ -21,7 +21,7 @@ append content
     section.list-of-articles.js-masonry(itemscope, itemtype="http://schema.org/ItemList", data-masonry-options='{ "itemSelector": ".opinion", "columnWidth": ".opinion", "percentPosition": "true", "gutter": 15 }')
       - each post, index in page.posts.toArray()
         article.opinion(itemprop="itemListElement", itemscope, itemtype="http://schema.org/Article")
-          a(href="#{ url_for(post.path) }", itemprop="url")
+          a(href=post.path", itemprop="url")
             h1.title(itemprop="headline")= post.title
           time.date-time(itemprop="datePublished", datetime= post.date )= post.date.locale('pt-BR').format('LL')
           p.description(itemprop="about")= post.description

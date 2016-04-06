@@ -2,13 +2,13 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
   .banner-header
     .banner-elements
       .menu-options(data-toggle="nav#menu-mobile")
-        img#hamburguer(data-toggle="nav#menu-mobile", src="#{ url_for('img/hamburguer-menu.svg') }", alt="imagem menu")
-      a(href="#{ url_for('index.html') }", title="Link para a página principal")
-        img#logo-header-mobile(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
-        img#logo-header-desktop(src="#{ url_for('img/logo-tagline.svg') }", alt="imagem brasil de fato")
+        img#hamburguer(data-toggle="nav#menu-mobile", src="/img/hamburguer-menu.svg", alt="imagem menu")
+      a(href="/index.html", title="Link para a página principal")
+        img#logo-header-mobile(src="/img/logo.svg", alt="imagem brasil de fato")
+        img#logo-header-desktop(src="/img/logo-tagline.svg", alt="imagem brasil de fato")
       #header-icons
         include social-media-icons
-        a(href="#{ url_for('') }", title="Lupa de Pesquisa")
-          img#search(src="#{ url_for('img/search-icon.svg') }", alt="imagem lupa")
+        a(href="", title="Lupa de Pesquisa")
+          img#search(src="/img/search-icon.svg", alt="imagem lupa")
   h1.acessibility-hidden Brasil de Fato - Uma Visão Popular do Brasil e do Mundo
   include menu_desktop

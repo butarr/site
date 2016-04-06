@@ -54,13 +54,13 @@ append content
                 h3.title(itemprop="headline")= post.title
 
       figure(class= "radar" class= "spacing")
-        a(itemprop="url" target="_blank" href="#{ url_for('http://radar.brasildefato.com.br') }" title="Radar dos Movimentos")
-          img#radar_mobile(src="#{ url_for('img/radar_mobile.png') }" alt="imagem radar dos movimentos")
+        a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar dos Movimentos")
+          img#radar_mobile(src="/img/radar_mobile.png" alt="imagem radar dos movimentos")
 
       section.printed-news(class="spacing")
         h2.section-name Edições Impressas    
         .printed-news-container
-          img(src="#{ url_for('img/newspaper.png') }" alt="imagem do tabloide")
+          img(src="/img/newspaper.png" alt="imagem do tabloide")
           .buttons-container
             if page.minas_gerais
               a(itemprop="url" class="button" href=page.minas_gerais.path) Minas Gerais
@@ -133,12 +133,12 @@ append content
 
     aside.sidebar
       figure(class= "radar" class= "spacing")
-        a(target="_blank" href="#{ url_for('http://radar.brasildefato.com.br') }" title="Radar dos Movimentos")
-          img(src="#{ url_for('img/radar.png') }" alt="imagem radar dos movimentos")
+        a(target="_blank" href="http://radar.brasildefato.com.br" title="Radar dos Movimentos")
+          img(src="/img/radar.png" alt="imagem radar dos movimentos")
 
       section.printed-news(class="spacing")
         h2.section-name Edições Impressas
-        img(src="#{ url_for('img/newspaper.png') }" alt="imagem do tabloide")
+        img(src="/img/newspaper.png" alt="imagem do tabloide")
         if page.minas_gerais
           a(class="button" href= page.minas_gerais.path) Minas Gerais
         if page.parana

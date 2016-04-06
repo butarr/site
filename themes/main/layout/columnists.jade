@@ -10,17 +10,17 @@ append content
 
         .person-cell(itemscope itemtype="http://schema.org/Person")
           .person-container
-            a(href=url_for(post.path) title="link para a pagina do colunista")
+            a(href=post.path title="link para a pagina do colunista")
               img.profile-image(itemprop="image" alt="Imagem de perfil do Colunista" src=columnist.photo )
               meta(itemprop="image" content='http:'+columnist.photo)
-            a(href=url_for(post.path) title="link para a pagina do colunista")
+            a(href=post.path title="link para a pagina do colunista")
               h4.name(itemprop="name")= columnist.name
 
         .text
           h4.name(itemprop="name")= columnist.name
-          a(href="#{ url_for(post.path) }" itemprop="url")
+          a(href=post.path itemprop="url")
             h3.title(itemprop="headline")= post.title
           time.date(datetime=new Date(post.date).toISOString(), itemprop="datePublished")= "Publicado em " + new Date(post.date).toLocaleDateString()
-          a(href="#{ url_for(post.path) }" itemprop="url")
+          a(href=post.path itemprop="url")
             p.description(itemprop="description")=post.description
 

@@ -1,8 +1,8 @@
 nav#menu-mobile(itemscope, itemtype="http://schema.org/SiteNavigationElement")
   header.menu-header
-    img#close-button(src="#{ url_for('img/close-bttn.svg') }", alt="imagem botao fechar")
-    a(href="#{ url_for('/') }")
-      img#logo-menu-mobile(src="#{ url_for('img/logo.svg') }", alt="imagem brasil de fato")
+    img#close-button(src="/img/close-bttn.svg", alt="imagem botao fechar")
+    a(href="/")
+      img#logo-menu-mobile(src="/img/logo.svg", alt="imagem brasil de fato")
   .menu-scrollable
     ul
       each val,index in {nacional:'Nacional', direitos_humanos:'Direitos Humanos', cultura:'Cultura', geral:'Geral', internacional:'Internacional', espanol:'Español', expediente:'Expediente', parceiros:'Parceiros', publicidade:'Publicidade', contato:'Contato'}
