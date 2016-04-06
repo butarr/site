@@ -4,6 +4,7 @@ block vars
 html(lang='pt-BR')
   head
     include _partial/head
+    include _partial/open_graph
     include _partial/analytics
   body(class=bodyclass itemscope itemtype="http://schema.org/WebPage")
     include _partial/menu_mobile
@@ -12,4 +13,3 @@ html(lang='pt-BR')
       block content 
     include _partial/footer
     include _partial/after_footer
-
