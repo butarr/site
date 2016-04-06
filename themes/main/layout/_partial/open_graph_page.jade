@@ -6,6 +6,6 @@ meta(property="article:section" content=page.area)
 meta(property="article:tag" content=page.hat)
 
 if page.cover
-  meta(property="og:image" content=page.cover.link)
+  meta(property="og:image" content="https:#{page.cover.link}")
 else
   meta(property="og:image" content=config.logo)
