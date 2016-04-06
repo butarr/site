@@ -1,5 +1,8 @@
 extends base
 
+block open_graph
+  include _partial/open_graph_page
+
 append content
   - var columnist = site.data.columnists[page.columnist]
   article#column(itemscope, itemtype="http://schema.org/BlogPosting")
