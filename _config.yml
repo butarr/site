@@ -66,3 +66,9 @@ deploy:
   type: git
   repo: git@github.com:brasil-de-fato/site.git
   branch: gh-pages
+
+# Social
+social:
+  facebook_url: 'http://www.facebook.com/brasildefato'
+  twitter_url: 'http://www.facebook.com/brasildefato'
+  youtube_url: 'http://www.facebook.com/brasildefato'

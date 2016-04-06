@@ -1,5 +1,8 @@
 meta(property="og:url" content=url)
 
+if config
+  meta(property="og:site_name" content=config.title)
+
 block open_graph
   if config
     meta(property="og:title" content=config.title)
