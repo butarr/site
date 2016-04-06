@@ -13,4 +13,4 @@ append content
           .content(class="no-image" class= "divisor")
             h3.title(itemprop= "headline")= post.title
             p.description(itemprop="description")= post.description
-            time.date(datetime=new Date(post.date).toISOString(), itemprop="datePublished")= "Publicado em " + new Date(post.date).toLocaleString()
+            time.date(datetime=new Date(post.date).toISOString(), itemprop="datePublished")= "Publicado" + page.date.locale('pt-br').format(' DD [de] MMMM [de] YYYY, [às] HH:MM')

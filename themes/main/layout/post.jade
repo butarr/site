@@ -12,7 +12,7 @@ append content
       h4.author(rel="author", itemprop="author")= page.author
       .place-and-time      
         h5.place(rel="place", itemprop="contentLocation")= page.place + ', '
-        time(datetime=page.date.toISOString())= page.date.locale('pt-br').format(' DD [de] MMMM [de] YYYY, [às] HH:mm')    
+        time(datetime=page.date.toISOString())= page.date.locale('pt-br').format(' DD [de] MMMM [de] YYYY, [às] HH:MM')    
       if page.cover
         figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
           - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits

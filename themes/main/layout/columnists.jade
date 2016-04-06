@@ -20,6 +20,6 @@ append content
           h4.name(itemprop="name")= columnist.name
           a(href=post.path itemprop="url")
             h3.title(itemprop="headline")= post.title
-          time.date(datetime=new Date(post.date).toISOString(), itemprop="datePublished")= "Publicado em " + new Date(post.date).toLocaleDateString()
+          time.date(datetime=new Date(post.date).toISOString(), itemprop="datePublished")= "Publicado " + page.date.locale('pt-br').format('DD/MM/YYYY, HH:MM')
           a(href=post.path itemprop="url")
             p.description(itemprop="description")=post.description
