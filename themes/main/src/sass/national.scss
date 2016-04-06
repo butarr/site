@@ -483,8 +483,6 @@
 
 
 #home .last-news {
-  @include column-lateral-spacing();
-
   .section-name {
     @include section-name();
   }
