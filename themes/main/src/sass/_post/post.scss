@@ -8,6 +8,7 @@
   @include clearfix();
   @include site-lateral-spacing();
   @include column-lateral-spacing(15px);
+  width: 100%;
 
   @include media-query(THREE){
     max-width: 3 * $COLUMN-WIDTH;
@@ -56,7 +57,7 @@
   }
 }
 
-#post header .place-and-time {
+#post header .place-and-time, time {
   color: $details-font;
   line-height: 1.5em;
   padding-bottom: 10px;
@@ -67,7 +68,8 @@
   }
 }
 
-#post .content{
+#post .content {
+  width: 100%;
   @include get-font(CONTENT);
   @include blockquote-news;
   padding-top: 10px;

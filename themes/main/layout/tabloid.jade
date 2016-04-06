@@ -3,13 +3,11 @@ extends base
 append content
   article#post(itemtype="http://schema.org/NewsArticle", itemscope)
     header
-      h1.title(itemprop="headline")= page.title
-      section.place-and-time      
-        time(datetime=page.date)= page.date.locale('pt-br').format(' DD [de] MMMM [de] YYYY, [às] HH:mm')    
+      h2.title(itemprop="headline")= page.title
+      time(datetime=page.date.toISOString())= page.date.locale('pt-br').format(' DD [de] MMMM [de] YYYY, [às] HH:mm')    
       if page.cover
         figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
           - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
           img(itemprop="thumbnail", alt=imageDescription, title=imageDescription, src=page.cover['medium'] )
-
-    section.content
+    .content
      != page.content
