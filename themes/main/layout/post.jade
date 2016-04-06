@@ -1,12 +1,7 @@
 extends base
 
 block open_graph
-  meta(property="og:title" content="#{page.title} | #{config.title}")
-  meta(property="og:description" content=page.description)
-  if page.cover
-    meta(property="og:image" content=page.cover.link)
-  else
-    meta(property="og:image" content=config.logo)
+  include _partial/open_graph_page
 
 append content
   article#post(itemtype="http://schema.org/NewsArticle", itemscope)
