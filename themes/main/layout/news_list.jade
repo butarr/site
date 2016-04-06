@@ -1,5 +1,8 @@
 extends base
 
+append open_graph
+  meta(property="og:title" content="#{page.area.toUpperCase()} | #{config.title}")
+
 append content
   section#news-list(itemscope itemtype="http://schema.org/ItemList")
     h2.page-name(itemprop="about")= page.area
