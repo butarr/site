@@ -10,17 +10,29 @@
   @include column-lateral-spacing(10px);
   @include site-lateral-spacing();
 
+  #partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  img {
+    max-height: 200px;
+    width: 200px;
+    padding: 20px;
+  }
+
   .page-name {
     @include page-name();
     margin-bottom: 30px;
   }
 
-  p.title {
+  h3.title {
     margin: 30px 0 20px 0;
-    color: $text-color;
+    color: $text-color; 
   }
 
-  h3.title {
+  h4.title {
     margin: 30px 0 20px 0;
     color: $text-color;
     @include section-name();
@@ -45,7 +57,7 @@
   }
 
   .list {
-    margin: 10px 0;
+    margin: 15px 0 40px 0;
 
     .item {
       margin: 10px 0;
