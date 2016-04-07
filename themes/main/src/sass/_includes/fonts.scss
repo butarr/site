@@ -66,9 +66,25 @@
     font-weight: bold;
   }
 
+  a {
+      color: $red-base;
+
+      &:hover {
+        font-weight: bold;
+        color: $red-base;
+      }
+
+      &:visited {
+        color: $link-visited;
+      }
+  }
+
   .text {
     font-family: 'Merriweather Sans';
-    font-size: 1rem;
+    font-size: .8rem;
+    @include media-query (TWO) {
+      font-size: 1rem;
+    }
   }
 }
 
