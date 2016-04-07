@@ -7,7 +7,8 @@
   @include clearfix();
   @include site-lateral-spacing();
   @include column-lateral-spacing(15px);
-  @include blockquote-news;
+  @include content;
+  @include page-blockquotes;
   padding-bottom: 10px;
 
   .hat {
@@ -76,16 +77,6 @@
   time {
     color: $details-font;
     padding-top: 7px;
-  }
-}
-
-#column .content{
-  @include get-font(CONTENT);
-  word-spacing: 2px;
-  align-self: center;
-
-  p {
-    margin-bottom: 20px;
   }
 }
 

@@ -8,6 +8,8 @@
   @include clearfix();
   @include site-lateral-spacing();
   @include column-lateral-spacing(15px);
+  @include content;
+  @include page-blockquotes;
   width: 100%;
 
   @include media-query(THREE){
@@ -65,16 +67,5 @@
 
   h5, time {
     display: inline-block;
-  }
-}
-
-#post .content {
-  width: 100%;
-  @include get-font(CONTENT);
-  @include blockquote-news;
-  padding-top: 10px;
-
-  p {
-    margin-bottom: 20px;
   }
 }

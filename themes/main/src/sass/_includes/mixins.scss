@@ -214,7 +214,7 @@
   }
 }
 
-@mixin blockquote-news(){
+@mixin page-blockquotes() {
   blockquote {
     max-width: 2 * $COLUMN-WIDTH;
     width: 100%;
@@ -236,4 +236,18 @@
     display: inline;
   }
   @include get-font(PAGE_BLOCKQUOTES);
+}
+
+@mixin content() {
+  .content{
+    @include get-font(CONTENT);
+    padding-top: 10px;
+    word-spacing: 2px;
+    align-self: center;
+    word-wrap: break-word;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
 }
