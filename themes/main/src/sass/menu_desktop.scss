@@ -4,16 +4,26 @@
 
 #menu-desktop {
   display: none;
+  height: 80px;
 
   @include media-query(THREE) {
     display: block;
   }
 
-  ul {
+  @include media-query(FOUR) {
     height: 40px;
+  }
+
+  ul {
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+
+    @include media-query(FOUR) {
+      height: 40px;
+    }
 
     li {
       @include get-font(MENU);

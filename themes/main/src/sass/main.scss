@@ -65,6 +65,10 @@ main {
   @include site-top-spacing($HEADER-HEIGHT-CONTRACTED);
 
   @include media-query (THREE){
+    @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-EXTENDED);
+  }
+
+  @include media-query (FOUR){
     @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
   }
 }
