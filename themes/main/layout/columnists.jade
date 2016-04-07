@@ -20,6 +20,5 @@ append content
           h4.name(itemprop="name")= columnist.name
           a(href=post.path itemprop="url")
             h3.title(itemprop="headline")= post.title
-          time.date(datetime=published_date.toISOString(), itemprop="datePublished")=date(published_date, 'DD/MM/YYYY') + ", às " + time(published_date, 'HH:MM')
-          a(href=post.path itemprop="url")
             p.description(itemprop="description")=post.description
+            time.date(datetime=published_date.toISOString(), itemprop="datePublished")=date(published_date, '[Publicado em ] DD [de] MMMM [de] YYYY') + ", às " + time(published_date, 'HH:mm')

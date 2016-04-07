@@ -82,6 +82,7 @@
 
 #column .description{
   color: lighten($black-light, 15%);
+  padding-bottom: 15px;
 
   @include media-query(THREE) {
     float: right;
