@@ -13,13 +13,13 @@
   #partners {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-  }
+    justify-content: space-between;
 
-  img {
-    max-height: 200px;
-    width: 200px;
-    padding: 20px;
+    img {
+      max-height: 180px;
+      width: 180px;
+      padding: 20px 0;
+    }
   }
 
   .page-name {
@@ -27,20 +27,20 @@
     margin-bottom: 30px;
   }
 
-  h3.title {
+  p {
+    margin-bottom: 20px;
+  }
+
+  .title {
     margin: 30px 0 20px 0;
     color: $text-color; 
   }
 
   h4.title {
-    margin: 30px 0 20px 0;
-    color: $text-color;
     @include section-name();
   }
 
-  p {
-    margin-bottom: 20px;
-  }
+
 
   dl {
     .item {
@@ -52,9 +52,7 @@
     }
   }
 
-  .text {
-    margin-left: 10px;
-  }
+
 
   .list {
     margin: 15px 0 40px 0;
@@ -62,6 +60,10 @@
     .item {
       margin: 10px 0;
       color: $text-color;
+    }
+
+    .text {
+      margin-left: 10px;
     }
   }
 }
