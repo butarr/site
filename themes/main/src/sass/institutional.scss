@@ -3,8 +3,8 @@
 @import '_includes/colors';
 
 
-.expedient {
-  @include get-font(EXPEDIENT);
+.institutional {
+  @include get-font(INSTITUTIONAL);
   width: 100%;
   max-width: 3 * $COLUMN-WIDTH;
   @include column-lateral-spacing(10px);
@@ -16,7 +16,7 @@
   }
 
   .title {
-    margin-top: 30px;
+    margin: 20px 0;
     color: $text-color;
   }
 
@@ -26,11 +26,15 @@
     }
   }
 
+  .text {
+    margin-left: 10px;
+  }
+
   .list {
     margin: 10px 0;
 
     .item {
-      margin: 5px 0;
+      margin: 10px 0 10px 20px;
       color: $text-color;
     }
   }

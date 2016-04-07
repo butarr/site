@@ -51,7 +51,7 @@
   }
 }
 
-@mixin __expedient(){
+@mixin __institutional(){
   .page-name {
     font-size: 1.1em;
     font-weight: 900;
@@ -64,6 +64,11 @@
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: bold;
+  }
+
+  .text {
+    font-family: 'Merriweather Sans';
+    font-size: 1rem;
   }
 }
 
@@ -371,7 +376,7 @@
   @else if( $type == PAGE_BLOCKQUOTES ){
     @include __page_blockquotes();
   }
-  @else if( $type == EXPEDIENT ){
-    @include __expedient();
+  @else if( $type == INSTITUTIONAL ){
+    @include __institutional();
   }
 }
