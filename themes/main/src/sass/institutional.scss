@@ -15,14 +15,28 @@
     margin-bottom: 30px;
   }
 
-  .title {
+  p.title {
     margin: 30px 0 20px 0;
     color: $text-color;
+  }
+
+  h3.title {
+    margin: 30px 0 20px 0;
+    color: $text-color;
+    @include section-name();
+  }
+
+  p {
+    margin-bottom: 20px;
   }
 
   dl {
     .item {
       font-weight: bold;
+    }
+
+    dd {
+      line-height: 1.4;
     }
   }
 
@@ -38,6 +52,4 @@
       color: $text-color;
     }
   }
-
-  
 }
