@@ -1,14 +1,15 @@
 mixin columnist_item(column)
-  - var columnist=site.data.columnists[column.columnist]
-  if column && columnist
-    article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
-      a(href=column.path, title="link para a pagina do colunista")
-        img(itemprop="image" alt="Imagem de perfil do Colunista" src=columnist.photo itemscope itemtype="https://schema.org/Person")
-      .column
+  if column
+    - var columnist=site.data.columnists[column.columnist]
+    if columnist
+      article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
         a(href=column.path, title="link para a pagina do colunista")
-          h4.name(itemprop="name")= columnist.name
-        a(href=column.path, itemprop="url")
-          h3.title(itemprop="headline")= column.title
+          img(itemprop="image" alt="Imagem de perfil do Colunista" src=columnist.photo itemscope itemtype="https://schema.org/Person")
+        .column
+          a(href=column.path, title="link para a pagina do colunista")
+            h4.name(itemprop="name")= columnist.name
+          a(href=column.path, itemprop="url")
+            h3.title(itemprop="headline")= column.title
 
 section(class= "columnists" class="spacing" itemscope itemtype="http://schema.org/ItemList")
   a(href="/colunistas", title="link para a pagina de colunistas")
