@@ -239,6 +239,7 @@
 }
 
 #home .box-container {
+  display: flex;
 
   @include media-query(THREE){
     width: $COLUMN-WIDTH;
