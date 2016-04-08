@@ -81,6 +81,7 @@
 
     .description {
       display: none;
+      padding-bottom: 15px;
 
       @include media-query(TWO) {
         display: inline-block;
