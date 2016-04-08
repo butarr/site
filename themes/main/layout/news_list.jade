@@ -19,4 +19,4 @@ append content
           .content(class="no-image" class= "divisor")
             h3.title(itemprop= "headline")= post.title
             p.description(itemprop="description")= post.description
-            time.date(datetime=published_date.toISOString(), itemprop="datePublished")=date(published_date, '[Publicado em ] DD [de] MMMM [de] YYYY') + ", às " + time(published_date, 'HH:mm')
+            time.date(datetime=published_date.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_date)
