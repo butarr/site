@@ -5,6 +5,9 @@ nav#menu-mobile(itemscope itemtype="http://schema.org/SiteNavigationElement")
       img#logo-menu-mobile(src="/img/logo.svg" alt="imagem brasil de fato")
   .menu-scrollable
     ul
+      li
+        a(href="/index.html", title="Link para a página principal")= 'Início'
+        meta(itemprop="name",content="string")
       each val, index in {editorial:"Editorial", nacional:"Nacional", direitos_humanos:"Direitos Humanos", cultura:"Cultura", geral:"Geral", internacional:"Internacional", especiais:"Especiais", espanol:"Español"}
         li
           a(itemprop="url", href="/" + index)= val
