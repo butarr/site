@@ -19,7 +19,7 @@
     left: 0;
   }
 
-  @include media-query(THREE) {
+  @include media-query(FOUR) {
     display: none;
   }
 }
