@@ -106,13 +106,13 @@
 
 @mixin __post(){
   .author {
-    font-family: 'Merriweather Sans';
+    font-family: 'Merriweather', serif;
     font-weight: lighter;
-    font-size: 1.2em;
-    color: $page-title;
+    font-size: 1.0em;
+    color: $black-light;
 
     @include media-query(THREE){
-      font-size: 1.3em;
+      font-size: 1.0em;
     }
   }
 
