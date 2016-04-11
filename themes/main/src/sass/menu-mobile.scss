@@ -59,12 +59,9 @@
   }
 }
 
-#menu-mobile ul>li{
+#menu-mobile ul > li{
   position: relative;
   font-size: 1.1em;
-  padding: 8px;
-  display: flex;
-  justify-content: center;
   @include get-font(MENU);
   border-top: 2px solid $menu-divisor-mobile;
 
@@ -73,6 +70,10 @@
   }
 
   a {
+    font-weight:300;
+    padding: 10px 8px;
+    display: flex;
+    justify-content: center;
     color: white;
   }
 }
