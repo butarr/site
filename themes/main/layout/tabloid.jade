@@ -7,7 +7,7 @@ append content
       h2.title(itemprop="headline")= page.title
       time(datetime=page.date.toISOString())= full_date(published_date)
       if page.cover
-        a(href=page.issuu)
+        a(target="_blank" href=page.issuu)
           figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
             - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
             img(itemprop="thumbnail", alt=imageDescription, title=imageDescription, src=page.cover['medium'] )
