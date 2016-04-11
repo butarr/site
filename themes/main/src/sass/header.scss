@@ -22,7 +22,7 @@ $image-height: 1.6em;
   height: $HEADER-HEIGHT-CONTRACTED;
   display: flex;
 
-  @include media-query(THREE) {
+  @include media-query(FOUR) {
     height: $HEADER-HEIGHT-DESKTOP;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -36,7 +36,7 @@ $image-height: 1.6em;
     align-items: center;
     padding: 0 10px;
 
-    @include media-query(THREE) {
+    @include media-query(FOUR) {
       width: 890px;
       margin: auto;
       justify-content: flex-end;
@@ -54,7 +54,7 @@ $image-height: 1.6em;
     margin-top: 5px;
     height: $image-height;
 
-    @include media-query(THREE){
+    @include media-query(FOUR){
       display: none;
     }
   }
@@ -67,7 +67,7 @@ $image-height: 1.6em;
   #logo-header-desktop {
     display: none;
 
-    @include media-query(THREE) {
+    @include media-query(FOUR) {
       display: inline-block;
       width: 450px;
     }
@@ -77,14 +77,14 @@ $image-height: 1.6em;
     height: 2.5em;
     padding: 0 10px;
 
-    @include media-query(THREE) {
+    @include media-query(FOUR) {
       display: none;
     }
   }
 }
 
 #page-header .contracted {
-  @include media-query(THREE) {
+  @include media-query(FOUR) {
     height: $HEADER-HEIGHT-CONTRACTED;
     display:flex;
 
@@ -112,14 +112,14 @@ $image-height: 1.6em;
   display: flex;
   align-items: center;
 
-  @include media-query(THREE) {
+  @include media-query(FOUR) {
     width: 200px;
     justify-content: flex-end;
   }
 
   .social-media-icons {
     display: none;
-    @include media-query(THREE) {
+    @include media-query(FOUR) {
       display: flex;
       align-items: center;
 
@@ -128,11 +128,9 @@ $image-height: 1.6em;
         margin-right: $lateral-margin;
       }
     }
-  } 
+  }
 
   .social-media-icons.contracted {
     display: none;
   }
 }
-
-
