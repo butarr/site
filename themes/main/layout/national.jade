@@ -76,18 +76,7 @@ append content
 
       section#images(class= "gallery-images" class="spacing")
         h2.section-name Fotos    
-        .gallery-desktop
-          a(data-flickr-embed="true", href="//www.flickr.com/photos/brasildefato/albums/72157665304017756" title="Brasil de Fato")
-            img(src="//farm2.staticflickr.com/1555/25625164736_aa741c11ef.jpg", width="450" alt="Brasil de Fato")
-          script(async="" src="//embedr.flickr.com/assets/client-code.js" charset="utf-8")
-        .gallery-mobile
-          a(data-flickr-embed="true" href="//www.flickr.com/photos/brasildefato/albums/72157665304017756" title="Brasil de Fato")
-            img(src="//farm4.staticflickr.com/3679/11329756945_a5e569eb4c_n.jpg" width="370" alt="Brasil de Fato")
-          script(async="" src="//embedr.flickr.com/assets/client-code.js" charset="utf-8")
-        .gallery-mobile-smaller
-          a(data-flickr-embed="true" href="//www.flickr.com/photos/brasildefato/albums/72157665304017756" title="Brasil de Fato")
-            img(src="//farm4.staticflickr.com/3679/11329756945_a5e569eb4c_n.jpg" width="290" alt="Brasil de Fato")
-          script(async="" src="//embedr.flickr.com/assets/client-code.js" charset="utf-8")
+        iframe(align="center", src="//www.flickr.com/slideShow/index.gne?user_id=brasildefato", frameborder="0", width="450", scrolling="no")
 
       if page.featured_07
         - var post=page.featured_07

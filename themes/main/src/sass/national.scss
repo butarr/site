@@ -163,6 +163,15 @@
       }
     }
   }
+
+  iframe {
+    width: 100%;
+    height: 263px;
+
+    @include media-query(THREE){
+      height: 337px;
+    }
+  }
 }
 
 #home .featured-big-picture {
@@ -277,7 +286,7 @@
 #home .gallery-images .gallery-mobile-smaller {
   display: flex;
   justify-content: center;
-  @include media-query(MOBILE){
+  @include media-query(THREE){
     display: none;
   }
 }
