@@ -472,6 +472,34 @@
   .name {
     font-size: 0.9em;
   }
+
+  .button {
+    display: block;
+    color: $link;
+    font-family: 'Merriweather Sans', serif;
+    border: 1px solid #b7b7b7;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px #b7b7b7;
+    font-weight: bold;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    margin: 20px auto;
+    @include media-query (THREE) {
+      width: 200px;
+    }
+  }
+
+  .button:visited {
+    box-shadow: 1px 2px 1px #b7b7b7;
+    color:$link-visited;
+  }
+
+  .button:hover {
+    box-shadow: 1px 2px 1px #b7b7b7;
+    color:$link-hover;
+  }
 }
 
 
