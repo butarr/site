@@ -32,13 +32,15 @@ html * {
 
 
 body {
-  margin: 0;
-
   a {
-    color: $link;
+    color: $link-neutral-color;
+
+    &:visited {
+      color: $link-neutral-color-visited;
+    }
 
     &:hover {
-      color: $link-hover;
+      color: $link-neutral-color-hover;
     }
   }
 

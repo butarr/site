@@ -73,17 +73,15 @@
   }
 
   a {
-      color: $red-base;
+      color: $link;
       font-weight: bold;
-
-
-      &:hover {
-        text-decoration: underline;
-        color: $red-base;
-      }
 
       &:visited {
         color: $link-visited;
+      }
+
+      &:hover {
+        color: $link-hover;
       }
   }
 
@@ -243,7 +241,7 @@
   .date {
     font-family: 'Merriweather Sans', serif;
     font-size: 0.9em;
-    color: $link-hover;
+    color: $text-color;
   }
 }
 

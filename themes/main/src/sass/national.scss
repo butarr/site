@@ -26,14 +26,6 @@
   @include media-query(FIVE) {
     max-width: 5 * $COLUMN-WIDTH;
   }
-
-  a {
-    color: $link;
-
-    &:hover {
-      color: $link-hover;
-    }
-  }
 }
 
 #home {
