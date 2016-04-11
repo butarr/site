@@ -12,5 +12,5 @@ append content
             - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
             img(itemprop="thumbnail", alt=imageDescription, title=imageDescription, src=page.cover['medium'] )
     .content
-      a(href=page.issuu)= "Leia a edição completa"
+      a(target="_blank" href=page.issuu)= "Leia a edição completa"
      != page.content
