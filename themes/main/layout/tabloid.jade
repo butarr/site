@@ -3,11 +3,14 @@ extends base
 append content
   article#post(itemtype="http://schema.org/NewsArticle", itemscope)
     header
+      - var published_date = new Date(page.date)
       h2.title(itemprop="headline")= page.title
-      time(datetime=page.date.toISOString())= page.date.locale('pt-br').format(' DD [de] MMMM [de] YYYY, [às] HH:mm')    
+      time(datetime=page.date.toISOString())= full_date(published_date)
       if page.cover
-        figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
-          - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
-          img(itemprop="thumbnail", alt=imageDescription, title=imageDescription, src=page.cover['medium'] )
+        a(target="_blank" href=page.issuu)
+          figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
+            - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
+            img(itemprop="thumbnail", alt=imageDescription, title=imageDescription, src=page.cover['medium'] )
     .content
+      a(target="_blank" href=page.issuu)= "Leia a edição completa"
      != page.content
