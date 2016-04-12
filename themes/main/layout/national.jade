@@ -101,7 +101,7 @@ append content
           - var post=page.photo_caption
           - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
             figure
-              img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
+              img(src=post.cover.medium alt=imageDescription title=imageDescription itemprop="image")
               figcaption
                 h3.small(itemprop="headline")= post.title
                 p.credits(itemprop="creator")= post.cover.credits

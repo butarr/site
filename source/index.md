@@ -216,6 +216,7 @@ most_read:
 photo_caption:
   cover:
     url: //farm2.staticflickr.com/1685/25771107436_a3519f7152_b.jpg
+    medium: //farm2.staticflickr.com/1685/25771107436_a3519f7152.jpg
     small: //farm2.staticflickr.com/1685/25771107436_a3519f7152_n.jpg
     credits: 'Foto: Divulgação'
     subtitle: 'Instalação de aterro foi escolha incorreta, diz especialista'
