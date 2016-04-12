@@ -5,7 +5,7 @@
 
 #home {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
   max-width: 2 * $COLUMN-WIDTH;
   @include column-lateral-spacing(10px);
@@ -26,9 +26,17 @@
   @include media-query(FIVE) {
     max-width: 5 * $COLUMN-WIDTH;
   }
+
+  .container {
+    display: flex;
+  }
 }
 
 #home {
+  #last-news-dynamic {
+    order: -11;
+  }
+
   #featured-1 {
     order: -10;
   }
@@ -133,9 +141,7 @@
     margin-top: 10px;
   }
 
-  .radar, .columnists, .last-news {
-      width: 100%;
-
+  .radar, .columnists {
       @include media-query(THREE) {
         display: none;
       }
@@ -357,7 +363,7 @@
   }
 }
 
-#home .most-read {
+#home .most-read, .last-news#last-news-mobile {
   width: 100%;
   @include column-lateral-spacing();
 
@@ -379,10 +385,42 @@
   ol > li:before{
     content: counter(li) ".";
     counter-increment: li;
-    margin: 0 10px 0 -35px;
+    margin: 0 10px 0 -30px;
     color: $red-base;
   }
 }
+
+#home .last-news#last-news-mobile {
+  @include media-query(THREE) {
+    display: none;
+  }
+}
+
+#home .last-news#last-news-dynamic {
+  display: none;
+
+  @include media-query(THREE) {
+    width: 100%;
+    padding : 5px 0;
+    display: flex;
+    cursor: pointer;
+    @include column-lateral-spacing();
+
+    .section-name {
+      white-space: nowrap;
+    }
+
+    ol > li {
+      list-style: none;
+      padding-left: 10px;
+    }
+
+    .inactive {
+      display: none;
+    }
+  }
+}
+
 
 #home .sidebar {
   display: none;
@@ -508,26 +546,5 @@
   .button:hover {
     box-shadow: 1px 2px 1px #b7b7b7;
     color:$link-hover;
-  }
-}
-
-
-#home .last-news {
-  .section-name {
-    @include section-name();
-  }
-
-  ol > li {
-    list-style: none;
-    line-height: 1.2em;
-    padding : 5px 0 5px 8px;
-    border-left: 3px solid $vertical-bar;
-    margin-top: 10px;
-  }
-}
-
-#home .last-news#side {
-  ol > li {
-    display: none;
   }
 }

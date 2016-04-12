@@ -3,147 +3,150 @@ extend base
 append content
   #fb-root
   #home
-    .main
-      if page.featured_01
-        - var post=page.featured_01
-        - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured-1(itemscope itemtype="https://schema.org/NewsArticle" class="featured-big-picture" class="divisor" class="spacing")
-          a(itemprop="url" href=post.path)
-            figure
-              img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
-              figcaption
-                h3.title(itemprop="headline")= post.title
-
-      if page.featured_02
-        - var post=page.featured_02
-        - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured-2(itemscope itemtype="https://schema.org/NewsArticle" class="featured-small-picture" class="divisor" class="spacing")
-          a(itemprop="url" href=post.path)
-            figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-            h3.title(itemprop="headline")= post.title
-
-      if page.featured_03
-        - var post=page.featured_03
-        - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-        article#featured-3(itemscope itemtype="https://schema.org/NewsArticle" class="featured-small-picture" class="divisor" class="spacing")
-          a(itemprop="url" href=post.path)
-            figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-            h3.title(itemprop="headline")= post.title
-
-      #featured-text-container(class="divisor" class= "spacing")
-        if page.featured_04
-          - var post=page.featured_04
-          article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-and-title" class= "spacing")
-            a(itemprop="url" href=post.path)
-              h3.title(itemprop="headline")= post.title
-              p.description(itemprop="description")= post.description
-
-        if page.featured_05
-          - var post=page.featured_05
-          .box-container(class= "spacing")
-            article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-box")
-              a(itemprop="url" href=post.path)
-                h3.title(itemprop="headline")= post.title
-
-        if page.featured_06
-          - var post=page.featured_06
-          .box-container(class= "spacing")
-            article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-box")
-              a(itemprop="url" href=post.path)
-                h3.title(itemprop="headline")= post.title
-
-      figure(class= "radar" class= "spacing")
-        a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar dos Movimentos")
-          img#radar_mobile(src="/img/radar_mobile.png" alt="imagem radar dos movimentos")
-
-      section.printed-news(class="spacing")
-        h2.section-name Edições Impressas    
-        .printed-news-container
-          img(src="/img/newspaper.png" alt="imagem do tabloide")
-          .buttons-container
-            if page.minas_gerais
-              a(itemprop="url" class="button" href=page.minas_gerais.path) Minas Gerais
-            if page.parana
-              a(itemprop="url" class="button" href=page.parana.path) Paraná
-            if page.rio_de_janeiro
-              a(itemprop="url" class="button" href=page.rio_de_janeiro.path) Rio de Janeiro
-
-      include _partial/modules/module_columnists
-
-      section#videos(class="gallery-videos" class="spacing")
-        h2.section-name TV Brasil de Fato
-        iframe(src="//www.youtube.com/embed?listType=playlist&list=PLytfbsQYLZpB5uDo8LRdjf9X9RfOlFw4d" allowfullscreen)
-
-      section#images(class= "gallery-images" class="spacing")
-        h2.section-name Fotos    
-        iframe(align="center", src="//www.flickr.com/slideShow/index.gne?user_id=brasildefato&set_id=72157665304017756", frameborder="0", width="450", height="337", scrolling="no")
-
-      if page.featured_07
-        - var post=page.featured_07
-        - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
-        article#featured-7(itemscope itemtype="https://schema.org/NewsArticle" class="article-footer" class="spacing")
-          span.hat(itemprop="about")= post.hat
-          a(itemprop="url" href=post.path)
-            figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-            h3.title(itemprop="headline")= post.title
-
-      if page.featured_08
-        - var post=page.featured_08
-        - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
-        article#featured-8(itemscope itemtype="https://schema.org/NewsArticle" class="article-footer" class="spacing")
-          span.hat(itemprop="about")= post.hat
-          a(itemprop="url" href=post.path)
-            figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-            h2.title(itemprop="headline")= post.title
-      
-      if page.photo_caption
-        article.photo-caption(itemscope itemtype="https://schema.org/Photograph" class= "spacing")
-          - var post=page.photo_caption
-          - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
-            figure
-              img(src=post.cover.medium alt=imageDescription title=imageDescription itemprop="image")
-              figcaption
-                h3.small(itemprop="headline")= post.title
-                p.credits(itemprop="creator")= post.cover.credits
-       
-      if page.last_news
-        section.last-news(class= "spacing")
-          meta(itemscope itemtype="http://schema.org/ItemList" itemprop="itemListOrder")
-          h2.section-name Últimas notícias
+    .top
+    if page.last_news
+      section#last-news-dynamic.last-news(class="spacing")
+        meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
+        a(itemprop="url" href="") 
+          h2.section-name Últimas notícias:
+        if page.last_news
           ol
             each post in page.last_news
-              li(itemprop="itemListElement")
+              li.inactive(itemprop="itemListElement")
+                a.title(itemprop="url", href=post.path) #{post.title}
+
+    .container
+      .main    
+        if page.featured_01
+          - var post=page.featured_01
+          - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+          article#featured-1(itemscope itemtype="https://schema.org/NewsArticle" class="featured-big-picture" class="divisor" class="spacing")
+            a(itemprop="url" href=post.path)
+              figure
+                img(src=post.cover.small alt=imageDescription title=imageDescription itemprop="image")
+                figcaption
+                  h3.title(itemprop="headline")= post.title
+
+        if page.featured_02
+          - var post=page.featured_02
+          - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+          article#featured-2(itemscope itemtype="https://schema.org/NewsArticle" class="featured-small-picture" class="divisor" class="spacing")
+            a(itemprop="url" href=post.path)
+              figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
+              h3.title(itemprop="headline")= post.title
+
+        if page.featured_03
+          - var post=page.featured_03
+          - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+          article#featured-3(itemscope itemtype="https://schema.org/NewsArticle" class="featured-small-picture" class="divisor" class="spacing")
+            a(itemprop="url" href=post.path)
+              figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
+              h3.title(itemprop="headline")= post.title
+
+        #featured-text-container(class="divisor" class= "spacing")
+          if page.featured_04
+            - var post=page.featured_04
+            article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-and-title" class= "spacing")
+              a(itemprop="url" href=post.path)
+                h3.title(itemprop="headline")= post.title
+                p.description(itemprop="description")= post.description
+
+          if page.featured_05
+            - var post=page.featured_05
+            .box-container(class= "spacing")
+              article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-box")
                 a(itemprop="url" href=post.path)
-                  h3.title(itemprop="headline")=post.title
+                  h3.title(itemprop="headline")= post.title
 
-      if page.most_read
-        include _partial/modules/module_most_read
+          if page.featured_06
+            - var post=page.featured_06
+            .box-container(class= "spacing")
+              article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-box")
+                a(itemprop="url" href=post.path)
+                  h3.title(itemprop="headline")= post.title
 
-    aside.sidebar
-      figure(class= "radar" class= "spacing")
-        a(target="_blank" href="http://radar.brasildefato.com.br" title="Radar dos Movimentos")
-          img(src="/img/radar.png" alt="imagem radar dos movimentos")
+        figure(class= "radar" class= "spacing")
+          a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar dos Movimentos")
+            img#radar_mobile(src="/img/radar_mobile.png" alt="imagem radar dos movimentos")
 
-      section.printed-news(class="spacing")
-        h2.section-name Edições Impressas
-        img(src="/img/newspaper.png" alt="imagem do tabloide")
-        if page.minas_gerais
-          a(class="button" href= page.minas_gerais.path) Minas Gerais
-        if page.parana
-          a(class="button" href= page.parana.path) Paraná
-        if page.rio_de_janeiro
-          a(class="button" href= page.rio_de_janeiro.path) Rio de Janeiro
+        section.printed-news(class="spacing")
+          h2.section-name Edições Impressas    
+          .printed-news-container
+            img(src="/img/newspaper.png" alt="imagem do tabloide")
+            .buttons-container
+              if page.minas_gerais
+                a(itemprop="url" class="button" href=page.minas_gerais.path) Minas Gerais
+              if page.parana
+                a(itemprop="url" class="button" href=page.parana.path) Paraná
+              if page.rio_de_janeiro
+                a(itemprop="url" class="button" href=page.rio_de_janeiro.path) Rio de Janeiro
 
-      include _partial/modules/module_columnists
+        include _partial/modules/module_columnists
 
-      if page.last_news
-        section#side.last-news(class="spacing")
-          meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrdered")
-          h2.section-name Últimas notícias
-          if page.last_news
-            ol
-              each post, index in page.last_news
-                li.inactive
-                  a.title(itemprop="url", href=post.path) #{index + 1}. #{post.title}
+        section#videos(class="gallery-videos" class="spacing")
+          h2.section-name TV Brasil de Fato
+          iframe(src="//www.youtube.com/embed?listType=playlist&list=PLytfbsQYLZpB5uDo8LRdjf9X9RfOlFw4d" allowfullscreen)
 
-      include _partial/modules/module_facebook
+        section#images(class= "gallery-images" class="spacing")
+          h2.section-name Fotos    
+          iframe(align="center", src="//www.flickr.com/slideShow/index.gne?user_id=brasildefato&set_id=72157665304017756", frameborder="0", width="450", height="337", scrolling="no")
+
+        if page.featured_07
+          - var post=page.featured_07
+          - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
+          article#featured-7(itemscope itemtype="https://schema.org/NewsArticle" class="article-footer" class="spacing")
+            span.hat(itemprop="about")= post.hat
+            a(itemprop="url" href=post.path)
+              figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
+              h3.title(itemprop="headline")= post.title
+
+        if page.featured_08
+          - var post=page.featured_08
+          - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
+          article#featured-8(itemscope itemtype="https://schema.org/NewsArticle" class="article-footer" class="spacing")
+            span.hat(itemprop="about")= post.hat
+            a(itemprop="url" href=post.path)
+              figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
+              h2.title(itemprop="headline")= post.title
+        
+        if page.photo_caption
+          article.photo-caption(itemscope itemtype="https://schema.org/Photograph" class= "spacing")
+            - var post=page.photo_caption
+            - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
+              figure
+                img(src=post.cover.medium alt=imageDescription title=imageDescription itemprop="image")
+                figcaption
+                  h3.small(itemprop="headline")= post.title
+                  p.credits(itemprop="creator")= post.cover.credits
+         
+        if page.last_news
+          section.last-news#last-news-mobile(class= "spacing")
+            meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
+            a(itemprop="url" href="") 
+              h2.section-name Últimas notícias
+              ol
+                each post in page.last_news
+                  li(itemprop="itemListElement")
+                    a.item(itemprop="url" href=post.path)=post.title
+
+        if page.most_read
+          include _partial/modules/module_most_read
+
+      aside.sidebar
+        figure(class= "radar" class= "spacing")
+          a(target="_blank" href="http://radar.brasildefato.com.br" title="Radar dos Movimentos")
+            img(src="/img/radar.png" alt="imagem radar dos movimentos")
+
+        section.printed-news(class="spacing")
+          h2.section-name Edições Impressas
+          img(src="/img/newspaper.png" alt="imagem do tabloide")
+          if page.minas_gerais
+            a(class="button" href= page.minas_gerais.path) Minas Gerais
+          if page.parana
+            a(class="button" href= page.parana.path) Paraná
+          if page.rio_de_janeiro
+            a(class="button" href= page.rio_de_janeiro.path) Rio de Janeiro
+
+        include _partial/modules/module_columnists
+
+        include _partial/modules/module_facebook

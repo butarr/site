@@ -39,15 +39,41 @@
     font-weight: 400;
   }
 
-  .most-read li:before {
+  .most-read li:before, .last-news li:before {
     font-family: 'Merriweather Sans', serif;
     font-weight: bold;
     font-size: 1.5em;
   }
 
-  .last-news a {
-    font-size: 0.9em;
-    font-weight: 500;
+  .item {
+      font-size: 1.1rem;
+      font-weight: bold;
+  }
+
+  .last-news#last-news-dynamic {
+    font-size: 1rem;
+
+    li .title {
+      font-family: 'Merriweather Sans';
+      color: text-color;
+      font-weight: normal;
+    }
+
+    h2.section-name {
+      font-family: 'Merriweather', serif;
+      color: $link;
+      font-weight: bold;
+      line-height: 1.1;
+
+      &:visited {
+        color: $link-visited;
+      }
+
+      &:hover {
+        color: $link-hover;
+      }
+    }
+
   }
 }
 

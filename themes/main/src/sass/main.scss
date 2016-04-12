@@ -34,6 +34,7 @@ html * {
 body {
   a {
     color: $link-neutral-color;
+    cursor: pointer;
 
     &:visited {
       color: $link-neutral-color-visited;

@@ -42,7 +42,7 @@ $(document).ready(function() {
   }
 
   var toggleLastNews = function() {
-    var active = $('.last-news#side li.active');
+    var active = $('.last-news#last-news-dynamic li.active');
 
     var next = active.next();
     if (next.length == 0) {
@@ -56,7 +56,7 @@ $(document).ready(function() {
     next.fadeIn('slow');
   }
 
-  $('.last-news#side li:first').addClass('active').show();
+  $('.last-news#last-news-dynamic li:first').addClass('active').show();
   setInterval(toggleLastNews, 6000);
 });
 
