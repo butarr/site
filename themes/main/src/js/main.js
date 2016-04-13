@@ -12,6 +12,18 @@ $(document).ready(function() {
     $(this).addClass('open');
   });
 
+  $('#search-tool').click(function() {
+    if($('#search-tool').hasClass('open')) {
+      var toggle_el = $('.google-searcher');
+      $(toggle_el).removeClass('open');
+      $(this).removeClass('open');
+    } else {
+      var toggle_el = $('.google-searcher');
+      $(toggle_el).addClass('open');
+      $(this).addClass('open');
+    }
+  });
+
   $('#close-button').click(function() {
     var toggle_el = $('.menu-options').data('toggle');
     $(toggle_el).removeClass('open');

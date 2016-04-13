@@ -8,6 +8,20 @@ header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
         img#logo-header-desktop(src="/img/logo-tagline.svg", alt="imagem brasil de fato")
       #header-icons
         include social-media-icons
-
+        img#search-tool(src="/img/search-icon.svg", alt="imagem lupa")
+        .google-searcher
+          script.
+            (function() {
+            var cx = '011963050669547263372:okov-lxoj7i';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+            })();
+          gcse:searchbox-only
+        
   h1.acessibility-hidden Brasil de Fato - Uma Visão Popular do Brasil e do Mundo
   include menu_desktop

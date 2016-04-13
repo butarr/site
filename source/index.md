@@ -2,6 +2,7 @@
 featured_01:
   cover:
     url: //farm2.staticflickr.com/1463/25510068704_4ff20d08ef_b.jpg
+    medium: //farm2.staticflickr.com/1463/25510068704_4ff20d08ef.jpg
     small: //farm2.staticflickr.com/1463/25510068704_4ff20d08ef_n.jpg
     credits: 'Foto: Marcos Wesley/ISA, 2016'
     subtitle: 'Mulheres e crianças yanomami participando da apresentação dos resultados do estudo sobre contaminação por mercúrio de garimpo. Terra Indígena Yanomami, região do Papiú. '
