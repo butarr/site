@@ -7,8 +7,7 @@ append content
     if page.last_news
       section#last-news-dynamic.last-news(class="spacing")
         meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
-        a(itemprop="url" href="") 
-          h2.section-name Últimas notícias:
+        h2.section-name Últimas notícias:
         if page.last_news
           ol
             each post in page.last_news
