@@ -65,14 +65,6 @@
       color: $link;
       font-weight: bold;
       font-size: 1.1rem;
-
-      &:visited {
-        color: $link-visited;
-      }
-
-      &:hover {
-        color: $link-hover;
-      }
     }
 
   }
