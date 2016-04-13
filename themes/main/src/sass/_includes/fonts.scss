@@ -26,7 +26,8 @@
 
   figcaption .small {
     font-size: 1.2em;
-    line-height: 1.2em;
+    line-height: 1.2;
+    font-weight: bold;
   }
 
   figcaption .title {
@@ -51,7 +52,7 @@
   }
 
   .last-news#last-news-dynamic {
-    font-size: 1rem;
+    font-size: 0.9rem;
 
     li .title {
       font-family: 'Merriweather Sans';
@@ -63,7 +64,7 @@
       font-family: 'Merriweather', serif;
       color: $link;
       font-weight: bold;
-      line-height: 1.1;
+      font-size: 1.1rem;
 
       &:visited {
         color: $link-visited;
