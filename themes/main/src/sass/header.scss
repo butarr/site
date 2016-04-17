@@ -59,7 +59,7 @@ $image-height: 1.6em;
     }
   }
 
-  #search-tool {
+  #search {
     height: $image-height;
     margin-right: $lateral-margin;
   }
@@ -111,7 +111,6 @@ $image-height: 1.6em;
 #page-header #header-icons {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 
   @include media-query(FOUR) {
     width: 200px;
@@ -133,30 +132,5 @@ $image-height: 1.6em;
 
   .social-media-icons.contracted {
     display: none;
-  }
-}
-
-#page-header #header-icons .google-searcher {
-  display: none;
-
-  @include media-query(FOUR){
-    &.open {
-      display: block;
-    }
-
-    &.close {
-      display: none;
-    }
-
-    .gsc-search-button {
-      @include media-query(FOUR){
-        display: none;
-      }
-    }
-
-    .gsc-input {
-      width: 180px;
-      padding-top: 10px;
-    }
   }
 }
