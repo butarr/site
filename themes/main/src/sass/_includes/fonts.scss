@@ -64,7 +64,7 @@ $section-name-size: 1rem;
       color: $link;
     }
 
-    li .title {
+    span.title {
       font: normal #{$text-size}/#{$line-separation} $family-sans;
       color: text-color;
     }

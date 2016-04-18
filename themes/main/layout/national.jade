@@ -12,7 +12,8 @@ append content
           ol
             each post in page.last_news
               li.inactive(itemprop="itemListElement")
-                a.title(itemprop="url", href=post.path) #{post.title}
+                a(itemprop="url", href=post.path)
+                  span.title= post.title
 
     .container
       .main    
