@@ -23,9 +23,7 @@ $section-name-size: 1rem;
   }
 
   .description {
-    font-size: $text-size;
-    font-family: $family-sans;
-    line-height: $line-separation;
+    font: normal #{$text-size}/#{$line-separation} $family-sans;
   }
 
   figcaption .title {
