@@ -12,37 +12,27 @@ $section-name-size: 1rem;
 
 @mixin __national(){
   .section-name, .hat {
-    font: small-caps bold $section-name-size $family-sans;
+    font: bold $section-name-size $family-sans;
+    color: $title-color;
+    text-transform: uppercase;
   }
 
-  .title, .column > .name {
+  .title {
     font-size: $title-size;
     font-weight: bold;
     font-family: $family-serif;
     line-height: $line-separation;
   }
 
-
-
-  .description, .column > .title, .opinion > date {
+  .description {
     font-size: $text-size;
     font-family: $family-sans;
     line-height: $line-separation;
   }
 
-  figcaption .small {
-    font-size: 1.2em;
-    line-height: $line-separation;
-    font-weight: bold;
-  }
-
   figcaption .title {
     font-size: 1.7em;
     line-height: $line-separation;
-  }
-
-  figcaption .credits {
-    font-size: 0.8em;
   }
 
   .most-read li:before, .last-news li:before {
