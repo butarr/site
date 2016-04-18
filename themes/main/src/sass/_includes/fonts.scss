@@ -391,8 +391,8 @@ $family-sans: 'Merriweather Sans';
   @else if( $type == COLUMNIST ){
     @include __columnist();
   }
-  @else if( $type == NACIONAL ){
-    @include __nacional();
+  @else if( $type == NATIONAL ){
+    @include __national();
   }
   @else if( $type == FOOTER ){
     @include __footer();
