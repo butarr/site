@@ -110,33 +110,6 @@
   margin-bottom: $VERTICAL-SPACE;
 }
 
-#home .streaming {
-  display: flex;
-  justify-content: center;
-
-  img {
-    width: 100%;
-  }
-
-  #desktop {
-    display: none;
-    min-width: 3 * $COLUMN-WIDTH;
-
-    @include media-query(THREE){
-      display: block;
-    }
-  }
-
-  #mobile {
-    display: block;
-    margin-bottom: 10px;
-
-    @include media-query(THREE){
-      display: none;
-    }
-  }
-}
-
 #home .main {
   display: flex;
   flex-wrap: wrap;
