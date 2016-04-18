@@ -22,20 +22,20 @@ $title-size: 1.1rem;
 
   .title, .column > .name {
     font-size: $title-size;
-    font-weight: 700;
+    font-weight: bold;
     font-family: $family-serif;
     line-height: 1.2em;
   }
 
   .section-name, .hat {
     font-size: 1.1em;
-    font-weight: 900;
+    font-weight: bold;
     font-family: $family-sans;
   }
 
   .description, .column > .title, .opinion > date {
     font-size: $text-size;
-    font-weight: 400;
+
     font-family: $family-sans;
     line-height: 1.2em;
   }
@@ -53,7 +53,6 @@ $title-size: 1.1rem;
 
   figcaption .credits {
     font-size: 0.8em;
-    font-weight: 400;
   }
 
   .most-read li:before, .last-news li:before {
