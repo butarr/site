@@ -1,5 +1,6 @@
 @import '_includes/query';
 $font-serif: 'Merriweather';
+$font-sans: 'Merriweather Sans';
 
 @mixin __nacional(){
   .title, .column > .name {
@@ -17,7 +18,7 @@ $font-serif: 'Merriweather';
   .description, .column > .title, .opinion > date {
     font-size: 1em;
     font-weight: 400;
-    font-family: 'Merriweather Sans', serif;
+    font-family: $font-serif;
     line-height: 1.2em;
   }
 
@@ -38,7 +39,7 @@ $font-serif: 'Merriweather';
   }
 
   .most-read li:before, .last-news li:before {
-    font-family: 'Merriweather Sans', serif;
+    font-family: $font-sans;
     font-weight: bold;
     font-size: 1.5em;
   }
@@ -52,7 +53,7 @@ $font-serif: 'Merriweather';
     font-size: 0.9rem;
 
     li .title {
-      font-family: 'Merriweather Sans';
+      font-family: $font-sans;
       color: text-color;
       font-weight: normal;
     }
@@ -77,12 +78,12 @@ $font-serif: 'Merriweather';
   .page-name {
     font-size: 1.1em;
     font-weight: 900;
-    font-family: 'Merriweather Sans';
+    font-family: $font-sans;
     text-transform: uppercase;
   }
 
   .title {
-    font-family: 'Merriweather Sans';
+    font-family: $font-sans;
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: bold;
@@ -102,7 +103,7 @@ $font-serif: 'Merriweather';
   }
 
   .text {
-    font-family: 'Merriweather Sans';
+    font-family: $font-sans;
     font-size: .8rem;
     @include media-query (TWO) {
       font-size: 1rem;
@@ -111,7 +112,7 @@ $font-serif: 'Merriweather';
 }
 
 @mixin __hat(){
-  font-family: 'Merriweather Sans', serif;
+  font-family: $font-sans;
   text-transform: uppercase;
   font-size: 1.1em;
   font-weight: 900;
@@ -133,7 +134,7 @@ $font-serif: 'Merriweather';
   .description {
     font-size: 1.2em;
     font-weight: lighter;
-    font-family: 'Merriweather Sans';
+    font-family: $font-sans;
     line-height: 1.2em;
     color: $black-light;
 
@@ -187,7 +188,7 @@ $font-serif: 'Merriweather';
 @mixin __name() {
   .name, .name_mobile {
     color: $bdf-red;
-    font-family: 'Merriweather Sans', serif;
+    font-family: $font-sans;
     font-weight: 600;
     font-size: 1.1em;
     line-height: 1.2;
@@ -198,7 +199,7 @@ $font-serif: 'Merriweather';
   .page-name {
     font-size: 1.1em;
     font-weight: 900;
-    font-family: 'Merriweather Sans';
+    font-family: $font-sans;
     text-transform: uppercase;
   }
 
@@ -217,12 +218,12 @@ $font-serif: 'Merriweather';
     font-size: 1em;
     font-weight: 400;
     line-height: 1.2em;
-    font-family: 'Merriweather Sans';
+    font-family: $font-sans;
   }
 
   .date {
     font-size: 0.9em;
-    font-family: 'Merriweather Sans';
+    font-family: $font-sans;
   }
 }
 
@@ -232,7 +233,7 @@ $font-serif: 'Merriweather';
   .page-name {
     font-size: 1.1em;
     font-weight: 900;
-    font-family: 'Merriweather Sans';
+    font-family: $font-sans;
     text-transform: uppercase;
   }
 
@@ -251,11 +252,11 @@ $font-serif: 'Merriweather';
     font-size: 1em;
     font-weight: 400;
     line-height: 1.2em;
-    font-family: 'Merriweather Sans';
+    font-family: $font-sans;
   }
 
   .date {
-    font-family: 'Merriweather Sans', serif;
+    font-family: $font-sans;
     font-size: 0.9em;
     color: $text-color;
   }
@@ -322,11 +323,11 @@ $font-serif: 'Merriweather';
 }
 
 @mixin __footer(){
-  font-family: 'Merriweather Sans', serif;
+  font-family: $font-sans;
   font-size: 1em;
 
   a {
-    font-family: 'Merriweather Sans', serif;
+    font-family: $font-sans;
     font-size: 1em;
   }
 }
