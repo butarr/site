@@ -8,12 +8,9 @@ $text-size: 1rem;
 
 @mixin __national(){
   .last-news#last-news-dynamic {
-
     li .title {
-      font-family: $family-sans;
+      font: normal $text-size $family-sans;
       color: text-color;
-      font-weight: normal;
-      font-size: $text-size;
     }
 
     h2.section-name {
