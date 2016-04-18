@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 // Reset base font sizes
 h1,h2,h3,h4,h5,h6,p,ul,ol { margin-bottom: 0; }
 h1 { font-size: 1.4em; }
