@@ -5,6 +5,7 @@ $family-serif: 'Merriweather';
 $family-sans: 'Merriweather Sans';
 
 $text-size: 1rem;
+$title-size: 1.1rem;
 
 @mixin __national(){
   .last-news#last-news-dynamic {
@@ -17,12 +18,12 @@ $text-size: 1rem;
       font-family: $family-serif;
       color: $link;
       font-weight: bold;
-      font-size: 1.1rem;
+      font-size: $title-size;
     }
   }
 
   .title, .column > .name {
-    font-size: 1.1em;
+    font-size: $title-size;
     font-weight: 700;
     font-family: $family-serif;
     line-height: 1.2em;
