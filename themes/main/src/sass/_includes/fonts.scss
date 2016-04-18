@@ -7,10 +7,15 @@ $family-sans: 'Merriweather Sans';
 $line-separation: 1.2;
 $text-size: 1rem;
 $title-size: 1.1rem;
+$section-name-size: 1rem;
 
 
 @mixin __national(){
-
+  .section-name, .hat {
+    font-size: $section-name-size;
+    font-weight: bold;
+    font-family: $family-sans;
+  }
 
   .title, .column > .name {
     font-size: $title-size;
@@ -19,15 +24,10 @@ $title-size: 1.1rem;
     line-height: $line-separation;
   }
 
-  .section-name, .hat {
-    font-size: 1.1em;
-    font-weight: bold;
-    font-family: $family-sans;
-  }
+
 
   .description, .column > .title, .opinion > date {
     font-size: $text-size;
-
     font-family: $family-sans;
     line-height: $line-separation;
   }
