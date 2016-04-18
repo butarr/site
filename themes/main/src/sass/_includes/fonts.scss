@@ -12,9 +12,7 @@ $section-name-size: 1rem;
 
 @mixin __national(){
   .section-name, .hat {
-    font-size: $section-name-size;
-    font-weight: bold;
-    font-family: $family-sans;
+    font: small-caps bold $section-name-size $family-sans;
   }
 
   .title, .column > .name {
