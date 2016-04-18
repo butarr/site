@@ -1,10 +1,11 @@
 @import '_includes/query';
+$font-serif: 'Merriweather';
 
 @mixin __nacional(){
   .title, .column > .name {
     font-size: 1.1em;
     font-weight: 700;
-    font-family: 'Merriweather', serif;
+    font-family: $font-serif;
     line-height: 1.2em;
   }
 
@@ -57,7 +58,7 @@
     }
 
     h2.section-name {
-      font-family: 'Merriweather', serif;
+      font-family: $font-serif;
       color: $link;
       font-weight: bold;
       font-size: 1.1rem;
@@ -68,7 +69,7 @@
 
 @mixin __institutional(){
   p {
-    font-family: 'Merriweather', serif;
+    font-family: $font-serif;
     line-height: 1.4;
     font-size: 1rem;
   }
@@ -119,7 +120,7 @@
 
 @mixin __post(){
   .author {
-    font-family: 'Merriweather', serif;
+    font-family: $font-serif;
     font-weight: lighter;
     font-size: 1.0em;
     color: $black-light;
@@ -202,7 +203,7 @@
   }
 
   .title{
-    font-family: 'Merriweather', serif;
+    font-family: $font-serif;
     font-size: 1.1em;
     font-weight: 700;
     line-height: 1.3em;
@@ -239,7 +240,7 @@
     font-size: 1.2em;
     font-weight: 700;
     line-height: 1.2em;
-    font-family: 'Merriweather', serif;
+    font-family: $font-serif;
 
     @include media-query (TWO) {
       font-size: 1.3em;
@@ -271,7 +272,7 @@
 }
 
 @mixin __content(){
-  font-family: 'Merriweather', serif;
+  font-family: $font-serif;
   font-size: 1.1em;
   line-height: 1.5em;
   text-align: left;
@@ -352,11 +353,11 @@
 
 @mixin __menu(){
   a {
-    font-family: 'Merriweather', serif;
+    font-family: $font-serif;
     font-size: 1em;
 
     @include media-query(THREE) {
-      font-family: 'Merriweather', serif;
+      font-family: $font-serif;
       font-size: 1em;
       font-weight: bold;
     }
