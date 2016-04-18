@@ -1,10 +1,6 @@
 @import '_includes/query';
 
 @mixin __nacional(){
-  h1, h2, span, p {
-    font-family: 'Merriweather Sans', serif;
-  }
-
   .title, .column > .name {
     font-size: 1.1em;
     font-weight: 700;

@@ -226,4 +226,3 @@ photo_caption:
   path: 2016/03/14/aterro-em-seropedica-no-rj-e-um-crime-ambiental-diz-pesquisadora/
 layout: national
 ---
-
