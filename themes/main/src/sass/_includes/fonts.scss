@@ -4,27 +4,19 @@
 $family-serif: 'Merriweather';
 $family-sans: 'Merriweather Sans';
 
+$line-separation: 1.2;
 $text-size: 1rem;
 $title-size: 1.1rem;
 
-@mixin __national(){
-  .last-news#last-news-dynamic {
-    li .title {
-      font: normal $text-size $family-sans;
-      color: text-color;
-    }
 
-    h1.section-name {
-      font: bold $title-size $family-serif;
-      color: $link;
-    }
-  }
+@mixin __national(){
+
 
   .title, .column > .name {
     font-size: $title-size;
     font-weight: bold;
     font-family: $family-serif;
-    line-height: 1.2em;
+    line-height: $line-separation;
   }
 
   .section-name, .hat {
@@ -37,18 +29,18 @@ $title-size: 1.1rem;
     font-size: $text-size;
 
     font-family: $family-sans;
-    line-height: 1.2em;
+    line-height: $line-separation;
   }
 
   figcaption .small {
     font-size: 1.2em;
-    line-height: 1.2;
+    line-height: $line-separation;
     font-weight: bold;
   }
 
   figcaption .title {
     font-size: 1.7em;
-    line-height: 1.2em;
+    line-height: $line-separation;
   }
 
   figcaption .credits {
@@ -66,6 +58,17 @@ $title-size: 1.1rem;
       font-weight: bold;
   }
 
+  .last-news#last-news-dynamic {
+    h1.section-name {
+      font: bold $title-size $family-serif;
+      color: $link;
+    }
+
+    li .title {
+      font: normal #{$text-size}/#{$line-separation} $family-sans;
+      color: text-color;
+    }
+  }
 
 }
 
