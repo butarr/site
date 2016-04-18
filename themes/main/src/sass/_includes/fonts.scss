@@ -18,10 +18,8 @@ $section-name-size: 1rem;
   }
 
   .title {
-    font-size: $title-size;
-    font-weight: bold;
-    font-family: $family-serif;
-    line-height: $line-separation;
+    font: bold #{$title-size}/#{$line-separation} $family-serif;
+    color: $title-color;
   }
 
   .description {
@@ -33,6 +31,8 @@ $section-name-size: 1rem;
   figcaption .title {
     font-size: 1.7em;
     line-height: $line-separation;
+    color: white;
+    font-weight: bold;
   }
 
   .most-read li:before, .last-news li:before {
@@ -48,7 +48,7 @@ $section-name-size: 1rem;
 
   .last-news#last-news-dynamic {
     h1.section-name {
-      font: bold $title-size $family-serif;
+      font: bold $title-size $family-sans;
       color: $link;
     }
 
