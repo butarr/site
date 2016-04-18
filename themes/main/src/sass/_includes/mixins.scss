@@ -108,8 +108,6 @@
 
 @mixin section-name() {
   display: block;
-  color: $title-color;
-  text-transform: uppercase;
   border-bottom: 3px solid $title-underline;
   margin-bottom: 5px;
 }
