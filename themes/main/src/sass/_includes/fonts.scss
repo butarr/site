@@ -1,24 +1,27 @@
 @import '_includes/query';
-$font-serif: 'Merriweather';
-$font-sans: 'Merriweather Sans';
+@import '_includes/colors';
 
-@mixin __nacional(){
+$family-serif: 'Merriweather';
+$family-sans: 'Merriweather Sans';
+
+@mixin __national(){
   .title, .column > .name {
     font-size: 1.1em;
     font-weight: 700;
-    font-family: $font-serif;
+    font-family: $family-serif;
     line-height: 1.2em;
   }
 
   .section-name, .hat {
     font-size: 1.1em;
     font-weight: 900;
+    font-family: $family-sans;
   }
 
   .description, .column > .title, .opinion > date {
     font-size: 1em;
     font-weight: 400;
-    font-family: $font-serif;
+    font-family: $family-serif;
     line-height: 1.2em;
   }
 
@@ -39,7 +42,7 @@ $font-sans: 'Merriweather Sans';
   }
 
   .most-read li:before, .last-news li:before {
-    font-family: $font-sans;
+    font-family: $family-sans;
     font-weight: bold;
     font-size: 1.5em;
   }
@@ -53,13 +56,13 @@ $font-sans: 'Merriweather Sans';
     font-size: 0.9rem;
 
     li .title {
-      font-family: $font-sans;
+      font-family: $family-sans;
       color: text-color;
       font-weight: normal;
     }
 
     h2.section-name {
-      font-family: $font-serif;
+      font-family: $family-serif;
       color: $link;
       font-weight: bold;
       font-size: 1.1rem;
@@ -70,7 +73,7 @@ $font-sans: 'Merriweather Sans';
 
 @mixin __institutional(){
   p {
-    font-family: $font-serif;
+    font-family: $family-serif;
     line-height: 1.4;
     font-size: 1rem;
   }
@@ -78,12 +81,12 @@ $font-sans: 'Merriweather Sans';
   .page-name {
     font-size: 1.1em;
     font-weight: 900;
-    font-family: $font-sans;
+    font-family: $family-sans;
     text-transform: uppercase;
   }
 
   .title {
-    font-family: $font-sans;
+    font-family: $family-sans;
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: bold;
@@ -103,7 +106,7 @@ $font-sans: 'Merriweather Sans';
   }
 
   .text {
-    font-family: $font-sans;
+    font-family: $family-sans;
     font-size: .8rem;
     @include media-query (TWO) {
       font-size: 1rem;
@@ -112,7 +115,7 @@ $font-sans: 'Merriweather Sans';
 }
 
 @mixin __hat(){
-  font-family: $font-sans;
+  font-family: $family-sans;
   text-transform: uppercase;
   font-size: 1.1em;
   font-weight: 900;
@@ -121,7 +124,7 @@ $font-sans: 'Merriweather Sans';
 
 @mixin __post(){
   .author {
-    font-family: $font-serif;
+    font-family: $family-serif;
     font-weight: lighter;
     font-size: 1.0em;
     color: $black-light;
@@ -134,7 +137,7 @@ $font-sans: 'Merriweather Sans';
   .description {
     font-size: 1.2em;
     font-weight: lighter;
-    font-family: $font-sans;
+    font-family: $family-sans;
     line-height: 1.2em;
     color: $black-light;
 
@@ -188,7 +191,7 @@ $font-sans: 'Merriweather Sans';
 @mixin __name() {
   .name, .name_mobile {
     color: $bdf-red;
-    font-family: $font-sans;
+    font-family: $family-sans;
     font-weight: 600;
     font-size: 1.1em;
     line-height: 1.2;
@@ -199,12 +202,12 @@ $font-sans: 'Merriweather Sans';
   .page-name {
     font-size: 1.1em;
     font-weight: 900;
-    font-family: $font-sans;
+    font-family: $family-sans;
     text-transform: uppercase;
   }
 
   .title{
-    font-family: $font-serif;
+    font-family: $family-serif;
     font-size: 1.1em;
     font-weight: 700;
     line-height: 1.3em;
@@ -218,12 +221,12 @@ $font-sans: 'Merriweather Sans';
     font-size: 1em;
     font-weight: 400;
     line-height: 1.2em;
-    font-family: $font-sans;
+    font-family: $family-sans;
   }
 
   .date {
     font-size: 0.9em;
-    font-family: $font-sans;
+    font-family: $family-sans;
   }
 }
 
@@ -233,7 +236,7 @@ $font-sans: 'Merriweather Sans';
   .page-name {
     font-size: 1.1em;
     font-weight: 900;
-    font-family: $font-sans;
+    font-family: $family-sans;
     text-transform: uppercase;
   }
 
@@ -241,7 +244,7 @@ $font-sans: 'Merriweather Sans';
     font-size: 1.2em;
     font-weight: 700;
     line-height: 1.2em;
-    font-family: $font-serif;
+    font-family: $family-serif;
 
     @include media-query (TWO) {
       font-size: 1.3em;
@@ -252,11 +255,11 @@ $font-sans: 'Merriweather Sans';
     font-size: 1em;
     font-weight: 400;
     line-height: 1.2em;
-    font-family: $font-sans;
+    font-family: $family-sans;
   }
 
   .date {
-    font-family: $font-sans;
+    font-family: $family-sans;
     font-size: 0.9em;
     color: $text-color;
   }
@@ -273,7 +276,7 @@ $font-sans: 'Merriweather Sans';
 }
 
 @mixin __content(){
-  font-family: $font-serif;
+  font-family: $family-serif;
   font-size: 1.1em;
   line-height: 1.5em;
   text-align: left;
@@ -323,11 +326,11 @@ $font-sans: 'Merriweather Sans';
 }
 
 @mixin __footer(){
-  font-family: $font-sans;
+  font-family: $family-sans;
   font-size: 1em;
 
   a {
-    font-family: $font-sans;
+    font-family: $family-sans;
     font-size: 1em;
   }
 }
@@ -354,11 +357,11 @@ $font-sans: 'Merriweather Sans';
 
 @mixin __menu(){
   a {
-    font-family: $font-serif;
+    font-family: $family-serif;
     font-size: 1em;
 
     @include media-query(THREE) {
-      font-family: $font-serif;
+      font-family: $family-serif;
       font-size: 1em;
       font-weight: bold;
     }
