@@ -15,10 +15,8 @@ $title-size: 1.1rem;
     }
 
     h1.section-name {
-      font-family: $family-serif;
+      font: bold $title-size $family-serif;
       color: $link;
-      font-weight: bold;
-      font-size: $title-size;
     }
   }
 
