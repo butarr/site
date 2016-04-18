@@ -4,7 +4,26 @@
 $family-serif: 'Merriweather';
 $family-sans: 'Merriweather Sans';
 
+$text-size: 1rem;
+
 @mixin __national(){
+  .last-news#last-news-dynamic {
+
+    li .title {
+      font-family: $family-sans;
+      color: text-color;
+      font-weight: normal;
+      font-size: $text-size;
+    }
+
+    h2.section-name {
+      font-family: $family-serif;
+      color: $link;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  }
+
   .title, .column > .name {
     font-size: 1.1em;
     font-weight: 700;
@@ -19,7 +38,7 @@ $family-sans: 'Merriweather Sans';
   }
 
   .description, .column > .title, .opinion > date {
-    font-size: 1em;
+    font-size: $text-size;
     font-weight: 400;
     font-family: $family-sans;
     line-height: 1.2em;
@@ -52,23 +71,7 @@ $family-sans: 'Merriweather Sans';
       font-weight: bold;
   }
 
-  .last-news#last-news-dynamic {
-    font-size: 0.9rem;
 
-    li .title {
-      font-family: $family-sans;
-      color: text-color;
-      font-weight: normal;
-    }
-
-    h2.section-name {
-      font-family: $family-serif;
-      color: $link;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-
-  }
 }
 
 @mixin __institutional(){
