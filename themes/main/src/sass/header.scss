@@ -114,7 +114,7 @@ $image-height: 1.6em;
   flex-wrap: wrap;
 
   @include media-query(FOUR) {
-    width: 200px;
+    width: 210px;
     justify-content: flex-end;
   }
 
@@ -136,8 +136,29 @@ $image-height: 1.6em;
   }
 }
 
-#page-header #header-icons .google-searcher {
+#page-header #header-icons .search-tool {
   display: none;
+  padding: 10px 0 0 10px;
+  top: 45px;
+  width: 200px;
+
+  .gsc-control-cse-pt_PT {
+    padding: 0;
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  .search .gsc-results-wrapper-overlay {
+    width: 70%;
+    height: 80%;
+    top: 5%;
+    left: 12%;
+    padding: 30px;
+  }
+
+  .gsc-inline-block {
+    min-width: 90px;
+  }
 
   @include media-query(FOUR){
     &.open {
@@ -152,11 +173,6 @@ $image-height: 1.6em;
       @include media-query(FOUR){
         display: none;
       }
-    }
-
-    .gsc-input {
-      width: 180px;
-      padding-top: 10px;
     }
   }
 }

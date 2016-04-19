@@ -14,11 +14,11 @@ $(document).ready(function() {
 
   $('#search-tool').click(function() {
     if($('#search-tool').hasClass('open')) {
-      var toggle_el = $('.google-searcher');
+      var toggle_el = $('.search-tool');
       $(toggle_el).removeClass('open');
       $(this).removeClass('open');
     } else {
-      var toggle_el = $('.google-searcher');
+      var toggle_el = $('.search-tool');
       $(toggle_el).addClass('open');
       $(this).addClass('open');
     }
@@ -79,3 +79,14 @@ $(document).ready(function() {
   js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5&appId=123400244719553";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
+
+(function() {
+  var cx = '011963050669547263372:ei7nv4vae54';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+  '//cse.google.com/cse.js?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
