@@ -139,8 +139,10 @@ $image-height: 1.6em;
 #page-header #header-icons .search-tool {
   display: none;
   padding: 10px 0 0 10px;
-  top: 45px;
   width: 200px;
+  position: fixed;
+  top: 10%;
+  right: 57px;
 
   .gsc-control-cse-pt_PT {
     padding: 0;
@@ -150,10 +152,38 @@ $image-height: 1.6em;
 
   .search .gsc-results-wrapper-overlay {
     width: 70%;
-    height: 80%;
+    height: 50%;
     top: 5%;
     left: 12%;
     padding: 30px;
+  }
+
+  input {
+      height: 27px;
+      width: 100%;
+      padding-left: 25px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #a8acbc #babdcc #c0c3d2;
+      border-radius: 13px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+      -moz-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+      -ms-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+      -o-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+      box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+
+      table.gsc-search-box td.gsc-input {
+        padding-right: 0;
+      }
+
+      #gsc-i-id1 {
+        padding: 0 10px;
+      }
   }
 
   .gsc-inline-block {
