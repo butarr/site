@@ -1,8 +1,0 @@
-section.most-read(class="spacing")
-  meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
-  h2.section-name Mais lidas
-  if page.most_read
-    ol
-      each post in page.most_read
-        li(itemprop="itemListElement")
-          a.item(itemprop="url", href=post.path)=post.title
