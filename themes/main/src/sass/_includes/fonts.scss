@@ -7,6 +7,7 @@ $family-sans: 'Merriweather Sans';
 $line-separation: 1.2;
 $text-size: 1rem;
 $title-size: 1.1rem;
+$big-title-size: 1.6rem;
 $section-name-size: 1rem;
 
 
@@ -27,7 +28,7 @@ $section-name-size: 1rem;
   }
 
   figcaption .title {
-    font-size: 1.7em;
+    font-size: $big-title-size;
     line-height: $line-separation;
     color: white;
     font-weight: bold;
