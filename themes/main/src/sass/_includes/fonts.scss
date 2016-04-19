@@ -25,13 +25,13 @@ $number-size: 1.3rem;
     color: $title-color;
   }
 
-  .description {
-    font: normal #{$text-size}/#{$line-separation} $family-sans;
-  }
-
-  figcaption .title {
+  .big-title {
     font: bold #{$big-title-size}/#{$line-separation} $family-serif;
     color: white;
+  }
+
+  .description {
+    font: normal #{$text-size}/#{$line-separation} $family-sans;
   }
 
   .most-read, .last-news#last-news-mobile{
