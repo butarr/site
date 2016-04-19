@@ -479,8 +479,6 @@
 }
 
 #home .columnists {
-  @include get-font(NAME);
-
   .section-name {
     @include section-name();
   }
@@ -498,7 +496,6 @@
   }
 
   .title {
-    color: $title-color;
     margin-top: 5px;
   }
 
