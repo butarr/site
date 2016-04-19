@@ -64,18 +64,22 @@ $image-height: 1.6em;
     margin-right: $lateral-margin;
   }
 
-  #logo-header-desktop {
+  .logo-header-desktop {
     display: none;
 
     @include media-query(FOUR) {
       display: inline-block;
+      height: 82.45px;
       width: 450px;
+      background: $bdf-red url("/img/logo-tagline.svg") no-repeat;
     }
   }
 
-  #logo-header-mobile {
+  .logo-header-mobile {
     height: 2.5em;
+    width: 230.688px;
     padding: 0 10px;
+    background: $bdf-red url("/img/logo.svg") no-repeat;
 
     @include media-query(FOUR) {
       display: none;
