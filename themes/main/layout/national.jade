@@ -123,14 +123,23 @@ append content
           section.last-news#last-news-mobile(class= "spacing")
             meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
             a(itemprop="url" href="") 
-              h2.section-name Últimas notícias
+              h1.section-name Últimas Notícias
               ol
                 each post in page.last_news
                   li(itemprop="itemListElement")
-                    a.item(itemprop="url" href=post.path)=post.title
+                    a(itemprop="url" href=post.path)
+                      span.title= post.title
 
         if page.most_read
-          include _partial/modules/module_most_read
+          section.most-read(class="spacing")
+            meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
+            h1.section-name Mais lidas
+            if page.most_read
+              ol
+                each post in page.most_read
+                  li(itemprop="itemListElement")
+                    a(itemprop="url", href=post.path)
+                      span.title= post.title
 
       aside.sidebar
         figure(class= "radar" class= "spacing")

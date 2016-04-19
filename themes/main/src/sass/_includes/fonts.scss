@@ -10,6 +10,8 @@ $title-size: 1.1rem;
 $big-title-size: 1.6rem;
 $section-name-size: 1rem;
 
+$number-size: 1.3rem;
+
 
 @mixin __national(){
   .section-name, .hat {
@@ -32,16 +34,18 @@ $section-name-size: 1rem;
     color: white;
   }
 
-  .most-read li:before, .last-news li:before {
-    font-family: $family-sans;
-    font-weight: bold;
-    font-size: 1.5em;
+  .most-read, .last-news#last-news-mobile{
+    li:before {
+      font: bold $number-size $family-sans;
+      color: $number-color;
+    }
+
+    span.title {
+      font: bold #{$title-size}/#{$line-separation} $family-serif;
+      color: $text-color;
+    }
   }
 
-  .item {
-      font-size: 1.1rem;
-      font-weight: bold;
-  }
 
   .last-news#last-news-dynamic {
     h1.section-name {
@@ -51,7 +55,7 @@ $section-name-size: 1rem;
 
     span.title {
       font: normal #{$text-size}/#{$line-separation} $family-sans;
-      color: text-color;
+      color: $text-color;
     }
   }
 
