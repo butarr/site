@@ -28,10 +28,8 @@ $section-name-size: 1rem;
   }
 
   figcaption .title {
-    font-size: $big-title-size;
-    line-height: $line-separation;
+    font: bold #{$big-title-size}/#{$line-separation} $family-serif;
     color: white;
-    font-weight: bold;
   }
 
   .most-read li:before, .last-news li:before {
