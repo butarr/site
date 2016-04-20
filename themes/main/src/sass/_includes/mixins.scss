@@ -113,14 +113,15 @@
 }
 
 @mixin page-name() {
-  @include hat;
+  border-top: 3px solid $title-underline;
+  padding-top: 8px;
 }
 
 @mixin hat() {
   width: 100%;
   display: block;
-  border-top: 3px solid $title-underline;
-  padding-top: 8px;
+
+
   @include get-font(HAT);
   margin-bottom: 5px;
 }

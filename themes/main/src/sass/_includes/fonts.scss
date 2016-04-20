@@ -4,7 +4,9 @@
 $family-serif: 'Merriweather';
 $family-sans: 'Merriweather Sans';
 
-$line-separation: 1.2;
+$line-separation-title: 1.3;
+$line-separation-content: 1.6;
+
 $text-size: 1rem;
 $details-size: 0.9rem;
 $title-size: 1.1rem;
@@ -23,17 +25,17 @@ $number-size: 1.3rem;
   }
 
   .title {
-    font: bold #{$title-size}/#{$line-separation} $family-serif;
+    font: bold #{$title-size}/#{$line-separation-title} $family-serif;
     color: $title-color;
   }
 
   .big-title {
-    font: bold #{$big-title-size}/#{$line-separation} $family-serif;
+    font: bold #{$big-title-size}/#{$line-separation-title} $family-serif;
     color: white;
   }
 
   .description {
-    font: normal #{$text-size}/#{$line-separation} $family-sans;
+    font: normal #{$text-size}/#{$line-separation-title} $family-sans;
   }
 
   .most-read, .last-news#last-news-mobile{
@@ -43,7 +45,7 @@ $number-size: 1.3rem;
     }
 
     span.title {
-      font: bold #{$title-size}/#{$line-separation} $family-serif;
+      font: bold #{$title-size}/#{$line-separation-title} $family-serif;
       color: $text-color;
     }
   }
@@ -55,14 +57,14 @@ $number-size: 1.3rem;
     }
 
     span.title {
-      font: normal #{$text-size}/#{$line-separation} $family-sans;
+      font: normal #{$text-size}/#{$line-separation-title} $family-sans;
       color: $text-color;
     }
   }
 
   .columnists {
     .name {
-      font: bold #{$text-size}/#{$line-separation} $family-sans;
+      font: bold #{$text-size}/#{$line-separation-title} $family-sans;
       color: $name-color;
     }
   }
@@ -72,8 +74,9 @@ $number-size: 1.3rem;
 @mixin __institutional(){
   p {
     font-family: $family-serif;
-    line-height: 1.4;
-    font-size: 1rem;
+    line-height: $line-separation-content;
+    font-size: $text-size;
+    color: $text-color;
   }
 
   .page-name {
