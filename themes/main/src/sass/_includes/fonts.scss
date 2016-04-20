@@ -6,9 +6,11 @@ $family-sans: 'Merriweather Sans';
 
 $line-separation: 1.2;
 $text-size: 1rem;
+$details-size: 0.9rem;
 $title-size: 1.1rem;
 $big-title-size: 1.6rem;
 $section-name-size: 1rem;
+$page-name-size: 1.1rem;
 
 $number-size: 1.3rem;
 
@@ -63,6 +65,23 @@ $number-size: 1.3rem;
       font: bold #{$text-size}/#{$line-separation} $family-sans;
       color: $name-color;
     }
+  }
+}
+
+@mixin __last_news(){
+  h1.page-name {
+    font: bold $page-name-size $family-sans;
+    color: $page-title-color;
+  }
+
+  .title {
+    font: bold #{$text-size}/#{$line-separation} $family-serif;
+    color: $text-color;
+  }
+
+  .description {
+    font: normal #{$details-size}/#{$line-separation} $family-sans;
+    color: $details-color;
   }
 }
 
@@ -146,29 +165,7 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __last_news(){
-  & > h1 {
-    font-size: 1.3em;
-    font-weight: bold;
-  }
 
-  .hat {
-    text-transform: uppercase;
-    font-size: 0.9em;
-    font-weight: bold;
-  }
-
-  .title {
-    font-size: 1em;
-    font-weight: bold;
-  }
-
-  .description {
-    font-size: 0.9em;
-    line-height: 1.2em;
-    font-weight: 400;
-  }
-}
 
 @mixin __person(){
   @include __name();

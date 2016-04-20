@@ -7,8 +7,8 @@ $red-pinker: rgba(195, 59, 83, 1);
 
 $text-color: lighten($neutral-base, 20%);
 $title-color: lighten($neutral-base, 10%);
-$page-title: lighten($neutral-base, 30%);
-$details-font: lighten($neutral-base, 40%);
+$page-title-color: lighten($neutral-base, 30%);
+$details-color: lighten($neutral-base, 40%);
 $title-underline: $red-base;
 
 $link: $red-base;
@@ -34,8 +34,8 @@ $name-color: $red-base;
 
 $text-column: lighten($neutral-base, 25%);
 
-
-
+$page-title: lighten($neutral-base, 30%);
+$details-font: lighten($neutral-base, 40%);
 $bdf-red: rgba(140,25,31,1);
 $red: rgba(153, 39, 39, 1);
 
