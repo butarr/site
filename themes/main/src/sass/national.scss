@@ -385,7 +385,6 @@
     content: counter(li) ".";
     counter-increment: li;
     margin: 0 10px 0 -30px;
-    color: $red-base;
   }
 }
 
@@ -510,10 +509,6 @@
   .columnist {
     display: flex;
     margin-top: 20px;
-  }
-
-  .name {
-    font-size: 0.9em;
   }
 
   .button {

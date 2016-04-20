@@ -51,7 +51,7 @@ $number-size: 1.3rem;
   .last-news#last-news-dynamic {
     h1.section-name {
       font: bold $title-size $family-sans;
-      color: $link;
+      color: $link-color;
     }
 
     span.title {
@@ -68,22 +68,6 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __last_news(){
-  h1.page-name {
-    font: bold $page-name-size $family-sans;
-    color: $page-title-color;
-  }
-
-  .title {
-    font: bold #{$text-size}/#{$line-separation} $family-serif;
-    color: $text-color;
-  }
-
-  .description {
-    font: normal #{$details-size}/#{$line-separation} $family-sans;
-    color: $details-color;
-  }
-}
 
 @mixin __institutional(){
   p {
@@ -285,31 +269,6 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __last_articles(){
-  & > h1 {
-    font-size: 1em;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  .title {
-    font-size: 1em;
-    font-weight: bold;
-  }
-}
-
-@mixin __other_opinions(){
-  & > h1 {
-    font-size: 1em;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  .name {
-    font-size: 1em;
-  }
-}
-
 @mixin __columnist(){
   .hat{
     font-size: 1.2em;
@@ -365,20 +324,11 @@ $number-size: 1.3rem;
   @if( $type == POST ){
     @include __post();
   }
-  @else if( $type == LAST_NEWS ){
-    @include __last_news();
-  }
   @else if( $type == NEWS_LIST ){
     @include __news_list();
   }
   @else if( $type == PERSON ){
     @include __person();
-  }
-  @else if( $type == LAST_ARTICLES ){
-    @include __last_articles();
-  }
-  @else if( $type == OTHER_OPINIONS ){
-    @include __other_opinions();
   }
   @else if( $type == COLUMNIST ){
     @include __columnist();

@@ -11,9 +11,9 @@ $page-title-color: lighten($neutral-base, 30%);
 $details-color: lighten($neutral-base, 40%);
 $title-underline: $red-base;
 
-$link: $red-base;
-$link-visited: $red-pinker;
-$link-hover: $red-light;
+$link-color: $red-base;
+$link-visited-color: $red-pinker;
+$link-hover-color: $red-light;
 
 $link-neutral-color: lighten($neutral-base, 10%);
 $link-neutral-color-visited: lighten($neutral-base, 30%);
@@ -38,6 +38,10 @@ $page-title: lighten($neutral-base, 30%);
 $details-font: lighten($neutral-base, 40%);
 $bdf-red: rgba(140,25,31,1);
 $red: rgba(153, 39, 39, 1);
+
+$link: $red-base;
+$link-visited: $red-pinker;
+$link-hover: $red-light;
 
 $gray: rgba(126,126,126,1);
 $gray-light: rgba(169,169,169,1);
