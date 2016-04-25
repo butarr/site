@@ -7,7 +7,7 @@ append content
     each post in page.columns
       article.column(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
         - var columnist = site.data.columnists[post.columnist];
-        - var published_at = custom_format_to_moment(post.date)
+        - var published_date = new Date(post.date)
         .person-cell(itemscope itemtype="http://schema.org/Person")
           .person-container
             a(href=post.path title="link para a pagina do colunista")
@@ -21,4 +21,4 @@ append content
           a(href=post.path itemprop="url")
             h3.title(itemprop="headline")= post.title
             p.description(itemprop="description")= post.description
-            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+            time.date(datetime=published_date.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_date)
