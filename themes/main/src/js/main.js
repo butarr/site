@@ -13,13 +13,15 @@ $(document).ready(function() {
   });
 
   $('#search-icon').click(function() {
+    var toggle_el = $('#search-tool');
+    var toggle_content = $('#content');
     if($('#search-icon').hasClass('open')) {
-      var toggle_el = $('#search-tool');
       $(toggle_el).removeClass('open');
+      $(toggle_content).removeClass('open-search');
       $(this).removeClass('open');
     } else {
-      var toggle_el = $('#search-tool');
       $(toggle_el).addClass('open');
+      $(toggle_content).addClass('open-search');
       $(this).addClass('open');
     }
   });
