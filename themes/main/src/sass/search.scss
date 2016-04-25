@@ -43,14 +43,33 @@
      width: 100%;
      padding: 0;
      border-radius: 13px;
+     border-color: $content-divisor;
+
+     @include media-query(FOUR){
+       border-color: white;
+     }
    }
 
+   /* Sets space to fill search box */
    #gsc-i-id1 {
      padding: 0 10px;
    }
 
-   .gsc-inline-block {
-     min-width: 90px;
+   /* Adjusts results search to be responsive */
+   .gsc-results-wrapper-overlay {
+    width: 96%;
+    height: 96%;
+    top: 2%;
+    left: 2%;
+    padding: 25px 10px;
+
+     @include media-query(FOUR){
+       height: 85%;
+       width: 70%;
+       top: 5%;
+       left: 12%;
+       padding: 30px;
+     }
    }
 
   /* Add a border between individual search results */
@@ -66,6 +85,7 @@
 
   /* Highlight the pagination buttons at the bottom of search results */
   .gsc-cursor-page {
+      margin-top: 30px;
       font-size: 1.2em;
       padding: 4px 8px;
       border: 2px solid #ccc;
@@ -84,5 +104,14 @@
   /* Hides cursor box border */
   .gsc-cursor-box {
     border-top: 0;
+  }
+
+  /* Hides thumbnail (image) for mobile layout */
+  .gsc-thumbnail {
+    display: none;
+
+    @include media-query(FOUR){
+      display: block;
+    }
   }
 }
