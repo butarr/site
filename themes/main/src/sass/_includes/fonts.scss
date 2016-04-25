@@ -323,18 +323,24 @@ $number-size: 1.3rem;
 }
 
 @mixin __search(){
-  /* Sets font snippet of search results*/
+  /* Sets search box font */
+  .gsc-input {
+    font-size: $text-size;
+    font-family: $family-serif;
+  }
+
+  /* Sets font snippet of search results */
    .gs-snippet {
      font: normal #{$details-size}/#{$line-separation-title} $family-sans;
    }
 
-   /* Sets font title of search results*/
+   /* Sets font title of search results */
    .gs-title {
      font: bold #{$title-size}/#{$line-separation-title} $family-serif;
      color: $link-color;
    }
 
-   /* Sets font from page cursor of search results*/
+   /* Sets font from page cursor of search results */
    .gsc-cursor-page {
      font-size: 1.2em;
      font-family: $family-serif;
