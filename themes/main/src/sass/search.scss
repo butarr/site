@@ -1,0 +1,82 @@
+@import '_includes/colors';
+@import '_includes/query';
+@import '_includes/constants';
+@import '_includes/mixins';
+
+#search-tool {
+  @include get-font(SEARCH);
+  display: none;
+  width: 220px;
+  height: 800px;
+  position: absolute;
+  top: 33px;
+  right: -25px;
+
+  @include media-query(FOUR){
+    &.open {
+      display: block;
+    }
+
+    .gsc-search-button {
+        display: none;
+    }
+  }
+
+  .gsc-search-box {
+    padding: 0;
+  }
+
+   .gsc-control-cse-pt_PT {
+     padding: 0;
+     border-color: transparent;
+     background-color: transparent;
+   }
+
+   .gsc-input {
+     height: 27px;
+     width: 100%;
+     padding: 0;
+     border-radius: 13px;
+   }
+
+   #gsc-i-id1 {
+     padding: 0 10px;
+   }
+
+   .gsc-inline-block {
+     min-width: 90px;
+   }
+
+  /* Add a border between individual search results */
+  .gs-webResult {
+      border: 1px solid #eee;
+      padding: 1em;
+  }
+
+  /* Hide URL of search results */
+  .gsc-url-bottom {
+    display: none;
+  }
+
+  /* Highlight the pagination buttons at the bottom of search results */
+  .gsc-cursor-page {
+      font-size: 1.2em;
+      padding: 4px 8px;
+      border: 2px solid #ccc;
+  }
+
+  /* Adds space between image and search results */
+  .gsc-table-cell-snippet-close {
+    padding-left: 20px;
+  }
+
+  /* Hides google brand */
+  .gcsc-branding {
+    display: none;
+  }
+
+  /* Hides cursor box border */
+  .gsc-cursor-box {
+    border-top: 0;
+  }
+}
