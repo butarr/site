@@ -1,15 +1,13 @@
 header#page-header(itemscope, itemtype="http://schema.org/WPHeader")
   .banner-header
-    .banner-elements
-      .menu-options(data-toggle="nav#menu-mobile")
-        img#hamburguer(data-toggle="nav#menu-mobile", src="/img/hamburguer-menu.svg", alt="imagem menu")
+    .menu-options(data-toggle="nav#menu-mobile")
+      img#hamburguer(data-toggle="nav#menu-mobile", src="/img/hamburguer-menu.svg", alt="imagem menu")
+    .banner-logo
       a(href="/index.html" title="Link para a página principal")
-        .logo-header-mobile
-        .logo-header-desktop
-      #header-icons
-        include social-media-icons
-        img#search-tool(src="/img/search-icon.svg", alt="imagem lupa")
-        .search-tool
-          gcse:search
+    #header-icons
+      include social-media-icons
+      img#search-icon(src="/img/search-icon.svg", alt="imagem lupa")
+      #search-tool
+        gcse:search
         
   include menu_desktop

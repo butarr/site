@@ -12,13 +12,13 @@ $(document).ready(function() {
     $(this).addClass('open');
   });
 
-  $('#search-tool').click(function() {
-    if($('#search-tool').hasClass('open')) {
-      var toggle_el = $('.search-tool');
+  $('#search-icon').click(function() {
+    if($('#search-icon').hasClass('open')) {
+      var toggle_el = $('#search-tool');
       $(toggle_el).removeClass('open');
       $(this).removeClass('open');
     } else {
-      var toggle_el = $('.search-tool');
+      var toggle_el = $('#search-tool');
       $(toggle_el).addClass('open');
       $(this).addClass('open');
     }

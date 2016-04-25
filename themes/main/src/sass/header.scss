@@ -21,26 +21,12 @@ $image-height: 1.6em;
 #page-header .banner-header {
   height: $HEADER-HEIGHT-CONTRACTED;
   display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include media-query(FOUR) {
     height: $HEADER-HEIGHT-DESKTOP;
-    flex-wrap: wrap;
-    justify-content: space-around;
     border-bottom: 2px solid $menu-divisor;
-  }
-
-  .banner-elements {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-
-    @include media-query(FOUR) {
-      width: 890px;
-      margin: auto;
-      justify-content: flex-end;
-    }
   }
 }
 
@@ -48,54 +34,48 @@ $image-height: 1.6em;
   @include transition-left();
 }
 
-#page-header .banner-elements{
-  #hamburguer {
-    margin-left: $lateral-margin;
-    margin-top: 5px;
-    height: $image-height;
+#page-header .banner-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5em;
+  width: 210px;
+  background: $bdf-red url("/img/logo.svg") no-repeat;
 
-    @include media-query(FOUR){
-      display: none;
-    }
+  @include media-query(FOUR){
+    height: 82.45px;
+    width: 450px;
+    background: $bdf-red url("/img/logo-tagline.svg") no-repeat;
   }
+}
 
-  #search-tool {
-    height: $image-height;
-    margin-right: $lateral-margin;
-  }
+#hamburguer {
+  margin-left: $lateral-margin;
+  margin-top: 5px;
+  height: $image-height;
+  position: absolute;
+  left: 3px;
+  top: 13px;
 
-  .logo-header-desktop {
+  @include media-query(FOUR){
     display: none;
-
-    @include media-query(FOUR) {
-      display: inline-block;
-      height: 82.45px;
-      width: 450px;
-      background: $bdf-red url("/img/logo-tagline.svg") no-repeat;
-    }
   }
+}
 
-  .logo-header-mobile {
-    height: 2.5em;
-    width: 230.688px;
-    padding: 0 10px;
-    background: $bdf-red url("/img/logo.svg") no-repeat;
+#search-icon {
+  display: none;
 
-    @include media-query(FOUR) {
-      display: none;
-    }
+  @include media-query(FOUR){
+    display: inline-block;
   }
+  height: $image-height;
+  margin-right: $lateral-margin;
 }
 
 #page-header .contracted {
   @include media-query(FOUR) {
     height: $HEADER-HEIGHT-CONTRACTED;
     display:flex;
-
-    .banner-elements {
-      justify-content: space-between;
-      width: 100%;
-    }
 
     #logo-header-mobile {
       display: inline-block;
@@ -115,15 +95,17 @@ $image-height: 1.6em;
 #page-header #header-icons {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  position: absolute;
+  top: 30%;
 
   @include media-query(FOUR) {
-    width: 210px;
+    width: 230px;
     justify-content: flex-end;
   }
 
   .social-media-icons {
     display: none;
+
     @include media-query(FOUR) {
       display: flex;
       align-items: center;
@@ -137,76 +119,5 @@ $image-height: 1.6em;
 
   .social-media-icons.contracted {
     display: none;
-  }
-}
-
-#page-header #header-icons .search-tool {
-  display: none;
-  padding: 10px 0 0 10px;
-  width: 200px;
-  position: fixed;
-  top: 10%;
-  right: 57px;
-
-  .gsc-control-cse-pt_PT {
-    padding: 0;
-    border-color: transparent;
-    background-color: transparent;
-  }
-
-  .search .gsc-results-wrapper-overlay {
-    width: 70%;
-    height: 50%;
-    top: 5%;
-    left: 12%;
-    padding: 30px;
-  }
-
-  input {
-      height: 27px;
-      width: 100%;
-      padding-left: 25px;
-      border-width: 1px;
-      border-style: solid;
-      border-color: #a8acbc #babdcc #c0c3d2;
-      border-radius: 13px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-      -o-box-sizing: border-box;
-      box-sizing: border-box;
-      -webkit-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
-      -moz-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
-      -ms-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
-      -o-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
-      box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
-
-      table.gsc-search-box td.gsc-input {
-        padding-right: 0;
-      }
-
-      #gsc-i-id1 {
-        padding: 0 10px;
-      }
-  }
-
-  .gsc-inline-block {
-    min-width: 90px;
-  }
-
-  @include media-query(FOUR){
-    &.open {
-      display: block;
-    }
-
-    &.close {
-      display: none;
-    }
-
-    .gsc-search-button {
-      @include media-query(FOUR){
-        display: none;
-      }
-    }
   }
 }
