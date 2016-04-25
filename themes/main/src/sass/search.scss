@@ -4,28 +4,34 @@
 @import '_includes/mixins';
 
 #search-tool {
-  @include get-font(SEARCH);
   display: none;
-  width: 220px;
-  height: 800px;
-  position: absolute;
-  top: 33px;
-  right: -25px;
+  @include get-font(SEARCH);
+  width: 100%;
+  position: fixed;
+  top: 65px;
+  right: 0;
 
-  @include media-query(FOUR){
-    &.open {
-      display: block;
-    }
-
-    .gsc-search-button {
-        display: none;
-    }
+  &.open {
+    display: block;
   }
 
+  @include media-query(FOUR){
+    position: absolute;
+    width: 220px;
+    right: -25px;
+    top: 33px;
+  }
+
+  .gsc-search-button {
+      display: none;
+  }
+
+  /* Sets to zero search box padding */
   .gsc-search-box {
     padding: 0;
   }
 
+  /* Hides search box border */
    .gsc-control-cse-pt_PT {
      padding: 0;
      border-color: transparent;

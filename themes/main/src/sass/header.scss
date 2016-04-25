@@ -50,12 +50,12 @@ $image-height: 1.6em;
 }
 
 #hamburguer {
-  margin-left: $lateral-margin;
-  margin-top: 5px;
-  height: $image-height;
   position: absolute;
   left: 3px;
   top: 13px;
+  height: $image-height;
+  margin-top: 5px;
+  margin-left: $lateral-margin;
 
   @include media-query(FOUR){
     display: none;
@@ -63,13 +63,15 @@ $image-height: 1.6em;
 }
 
 #search-icon {
-  display: none;
-
-  @include media-query(FOUR){
-    display: inline-block;
-  }
+  position: fixed;
+  right: 3px;
+  top: 18px;
   height: $image-height;
   margin-right: $lateral-margin;
+
+  @include media-query(FOUR){
+    position: initial;
+  }
 }
 
 #page-header .contracted {
