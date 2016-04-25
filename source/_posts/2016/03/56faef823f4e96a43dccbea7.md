@@ -30,7 +30,7 @@ cover:
   cover: true
   credits: Odara
   subtitle: Fusquinha
-date: 2016-03-29T21:11:56.338Z
+date: 2016-03-29T21:11:56.338Z####
 ---
 <p>A Frente Brasil Popular (FBP) organizou um ato neste s&aacute;bado (26) em cinco bairros da periferia de S&atilde;o Paulo. Foram distribu&iacute;dos mais de mil panfletos no Jardim Miriam, no Jardim Celeste e em Heli&oacute;polis, na zona sul, e em Sapopemba e S&atilde;o Mateus, na zona leste. A FBP &eacute; composta por diversos movimentos populares e que luta contra o golpe e &agrave; favor da democracia.</p>
 

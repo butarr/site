@@ -29,7 +29,7 @@ cover:
   cover: true
   credits: null
   subtitle: null
-date: 2016-03-29T21:54:57.614Z
+date: 2016-03-29T21:54:57.614Z####
 ---
 <p>A Rede Nacional de M&eacute;dicos e M&eacute;dicas Populares, junto com o movimento M&eacute;dicos pela democracia, lan&ccedil;ou um abaixo-assinado contr&aacute;rio ao processo de impeachment em curso no Brasil.</p>
 

@@ -30,7 +30,7 @@ cover:
   cover: true
   credits: Fotografo
   subtitle: Edificio
-date: 2016-03-29T21:01:13.694Z
+date: 2016-03-29T21:01:13.694Z####
 ---
 <table align="left" border="0">
 	<tbody>
