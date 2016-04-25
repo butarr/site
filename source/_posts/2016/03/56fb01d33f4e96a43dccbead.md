@@ -29,7 +29,7 @@ cover:
   cover: true
   credits: Fotografo
   subtitle: bandeiras
-date: 2016-03-29T22:29:49.044Z####
+date: 2016-03-29T22:29:49.044Z
 ---
 <p>Levantando cartazes com frases &ldquo;n&atilde;o ao golpe&rdquo;, &ldquo;sim &agrave; democracia&rdquo; e &ldquo;vamos respeitar a Constitui&ccedil;&atilde;o Federal&rdquo;, e distribuindo rosas e pequenos ramalhetes, integrantes de mais de 50 movimentos da sociedade civil lan&ccedil;aram na tarde de segunda-feira (28), na entrada da C&acirc;mara dos Deputados, o Comit&ecirc; Pr&oacute;-Democracia do Congresso Nacional. O evento contou com a participa&ccedil;&atilde;o de parlamentares de diversos partidos e lembrou a import&acirc;ncia de serem respeitados preceitos constitucionais durante os trabalhos da comiss&atilde;o especial que aprecia o processo de impeachment da presidenta Dilma Rousseff.</p>
 

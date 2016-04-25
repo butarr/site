@@ -29,7 +29,7 @@ cover:
   cover: true
   credits: null
   subtitle: null
-date: 2016-03-29T22:03:39.524Z####
+date: 2016-03-29T22:03:39.524Z
 ---
 <p>President&nbsp;<a href="http://www.theguardian.com/world/dilma-rousseff">Dilma Rousseff</a>&rsquo;s hopes of seeing out her term of office have received a potentially fatal blow after the biggest party in the Brazilian congress voted to abandon her ruling coalition.</p>
 
