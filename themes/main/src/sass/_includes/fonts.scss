@@ -322,6 +322,25 @@ $number-size: 1.3rem;
   }
 }
 
+@mixin __search(){
+  /* Sets font snippet of search results*/
+   .gs-snippet {
+     font: normal #{$details-size}/#{$line-separation-title} $family-sans;
+   }
+
+   /* Sets font title of search results*/
+   .gs-title {
+     font: bold #{$title-size}/#{$line-separation-title} $family-serif;
+     color: $link-color;
+   }
+
+   /* Sets font from page cursor of search results*/
+   .gsc-cursor-page {
+     font-size: 1.2em;
+     font-family: $family-serif;
+   }
+}
+
 @mixin get-font($type){
 
   @if( $type == POST ){
@@ -365,5 +384,8 @@ $number-size: 1.3rem;
   }
   @else if( $type == INSTITUTIONAL ){
     @include __institutional();
+  }
+  @else if( $type == SEARCH ){
+    @include __search();
   }
 }
