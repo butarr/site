@@ -35,7 +35,7 @@
 
   /* Hides search box border */
    .gsc-control-cse-pt_PT {
-     padding: 0;
+     padding: 0 10px;
      border-color: transparent;
      background-color: transparent;
    }
@@ -67,13 +67,13 @@
     left: 2%;
     padding: 25px 10px;
 
-     @include media-query(FOUR){
-       height: 85%;
-       width: 70%;
-       top: 5%;
+    @include media-query(FOUR){
+       width: 76%;
+       height: 86%;
+       top: 7%;
        left: 12%;
        padding: 30px;
-     }
+    }
    }
 
   /* Add a border between individual search results */
@@ -105,9 +105,15 @@
     display: none;
   }
 
-  /* Hides cursor box border */
+  /* Sets cursor box config */
   .gsc-cursor-box {
     border-top: 0;
+    margin-top: 20px;
+  }
+
+  .gsc-cursor {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   /* Hides thumbnail image for mobile layout */
