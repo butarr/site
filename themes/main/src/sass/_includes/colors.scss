@@ -5,6 +5,11 @@ $red-light: rgba(177,32,40,1);
 $red-dark: rgba(110, 16, 16, 1);
 $red-pinker: rgba(195, 59, 83, 1);
 
+$background: $red-base;
+$menu-over: $red-light;
+$menu-divisor: $red-dark;
+$menu-divisor-mobile: $red-base;
+
 $text-color: lighten($neutral-base, 20%);
 $title-color: lighten($neutral-base, 10%);
 $page-title-color: lighten($neutral-base, 30%);
@@ -19,15 +24,13 @@ $link-neutral-color: lighten($neutral-base, 10%);
 $link-neutral-color-visited: lighten($neutral-base, 30%);
 $link-neutral-color-hover: lighten($neutral-base, 50%);
 
+$link-inverted-color: lighten($neutral-base, 100%);
+$link-inverted-color-visited: lighten($red-base, 60%);
+
 $box-background: lighten($neutral-base, 90%);
 $vertical-bar: lighten($neutral-base, 80%);
 $content-divisor: lighten($neutral-base, 70%);
 $box-border: $red-base;
-
-$header-background: $red-base;
-$menu-over: $red-light;
-$menu-divisor: $red-dark;
-$menu-divisor-mobile: $red-base;
 
 $number-color: $red-base;
 $name-color: $red-base;
@@ -37,7 +40,6 @@ $text-column: lighten($neutral-base, 25%);
 $page-title: lighten($neutral-base, 30%);
 $details-font: lighten($neutral-base, 40%);
 $bdf-red: rgba(140,25,31,1);
-$red: rgba(153, 39, 39, 1);
 
 $link: $red-base;
 $link-visited: $red-pinker;
