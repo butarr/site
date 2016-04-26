@@ -47,8 +47,8 @@ $number-size: 1.3rem;
       color: $number-color;
     }
 
-    span.title {
-      font: bold #{$title-size}/#{$line-separation-small} $family-serif;
+    .title {
+      font: bold #{$title-size}/#{$line-separation-big} $family-serif;
     }
   }
 
@@ -58,7 +58,7 @@ $number-size: 1.3rem;
       color: $link-color;
     }
 
-    span.title {
+    .title {
       font: normal #{$text-size}/#{$line-separation-small} $family-sans;
     }
   }

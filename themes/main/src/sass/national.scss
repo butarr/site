@@ -378,7 +378,10 @@
 
   ol > li {
     list-style: none;
-    line-height: 1.2em;
+
+    .title {
+      display: inline;
+    }
   }
 
   ol > li:before{

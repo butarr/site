@@ -54,6 +54,9 @@ body {
     @include clearfix();
   }
 
+  .outline {
+    font-size: 0;
+  }
 }
 
 main {
