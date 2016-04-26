@@ -14,9 +14,10 @@ $social-margin: 10px;
   width: 100%;
   margin-top: 10px;
   padding: 25px 0;
+  background-color: $background;
 }
 
-#page-footer #footer-container {
+#page-footer .footer-container {
   @include media-query(THREE) {
     align-items: flex-start;
     width: 3 * $COLUMN-WIDTH;
@@ -30,27 +31,27 @@ $social-margin: 10px;
 
   @include media-query(FIVE) {
     width: 5 * $COLUMN-WIDTH;
-  }   
+  }
 }
 
-#page-footer #footer-header {
+#page-footer .footer-header {
   margin-bottom: 10px;
   img {
     height: 2.4em;
 
     @include media-query(THREE) {
       height: 2.9em;
-    } 
+    }
   }
 }
 
-#page-footer #footer-items {
+#page-footer .footer-items {
   @include media-query(THREE) {
     display: flex;
     padding-left: 5px;
   }
 
-  nav {
+  .footer-menu {
     display: none;
 
     @include media-query(THREE) {
@@ -60,14 +61,10 @@ $social-margin: 10px;
     li {
       padding: $text-padding;
     }
-
-    a {
-      color: white;
-    }
   }
 }
 
-#page-footer #footer-social-block {
+#page-footer .footer-social-block {
   @include media-query(THREE) {
     display: flex;
     flex-direction: column;
