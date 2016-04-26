@@ -2,7 +2,7 @@ extends base
 
 append content
   section#columnists(itemscope itemtype="http://schema.org/ItemList")
-    h2.page-name Colunistas
+    h1.page-name Colunistas
 
     each post in page.columns
       article.column(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
@@ -14,11 +14,11 @@ append content
               img.profile-image(itemprop="image" alt="Imagem de perfil do Colunista" src=columnist.photo )
               meta(itemprop="image" content='http:'+columnist.photo)
             a(href=post.path title="link para a pagina do colunista")
-              h4.name(itemprop="name")= columnist.name
+              span.name(itemprop="name")= columnist.name
 
         .text
-          h4.name(itemprop="name")= columnist.name
+          span.name(itemprop="name")= columnist.name
           a(href=post.path itemprop="url")
-            h3.title(itemprop="headline")= post.title
+            h2.title(itemprop="headline")= post.title
             p.description(itemprop="description")= post.description
             time.date(datetime=published_date.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_date)

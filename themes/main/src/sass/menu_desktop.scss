@@ -5,6 +5,7 @@
 #menu-desktop {
   display: none;
   height: 80px;
+  @include get-font(MENU_DESKTOP);
 
   @include media-query(FOUR) {
     display: flex;
@@ -26,16 +27,11 @@
     }
 
     li {
-      @include get-font(MENU);
       padding: 5px 14px;
       white-space: nowrap;
 
       @include media-query(FIVE){
         padding: 5px 18px;
-      }
-
-      a {
-        color: white;
       }
     }
 

@@ -6,16 +6,12 @@
 $lateral-margin: 10px;
 $image-height: 1.6em;
 
-.acessibility-hidden {
-  font-size: 0;
-}
-
 #page-header {
   position: fixed;
   top: 0;
   z-index: 100;
   width: 100%;
-  background-color: $header-background;
+  background-color: $background;
 }
 
 #page-header .banner-header {

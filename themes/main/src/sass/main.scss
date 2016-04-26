@@ -54,17 +54,8 @@ body {
     @include clearfix();
   }
 
-
-  & > footer {
-    color: white;
-    background-color: $red;
-
-    p {
-      text-align: center;
-      margin: 0;
-
-      @include get-font(FOOTER);
-    }
+  .outline {
+    font-size: 0;
   }
 }
 

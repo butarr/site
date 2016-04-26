@@ -24,7 +24,8 @@
 
 #post header {
   .hat {
-    @include hat;
+    @include page-name();
+
   }
 
   .title {

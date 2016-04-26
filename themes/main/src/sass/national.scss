@@ -344,6 +344,10 @@
   @include image-rounded-responsive(300px);
   width: 100%;
 
+  .section-name {
+    @include section-name();
+  }
+
   @include media-query(THREE) {
     @include column-lateral-spacing();
   }
@@ -355,7 +359,6 @@
   @include media-query(FIVE){
     @include image-rounded-responsive(300px);
     width: 2 * $COLUMN-WIDTH;
-    margin-top: 25px;
   }
 
   p {
@@ -378,7 +381,10 @@
 
   ol > li {
     list-style: none;
-    line-height: 1.2em;
+
+    .title {
+      display: inline;
+    }
   }
 
   ol > li:before{
