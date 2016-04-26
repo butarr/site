@@ -131,4 +131,14 @@
       display: block;
     }
   }
+
+  /* Removes underline from cursor */
+  .gsc-cursor-page {
+    text-decoration: none;
+  }
+
+  /* Sets background color of current page cursor */
+  .gsc-cursor-current-page {
+    background-color: $red-dark;
+  }
 }
