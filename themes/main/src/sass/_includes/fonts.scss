@@ -76,10 +76,6 @@ $number-size: 1.3rem;
   color: $link-inverted-color;
 
   a {
-    &:visited {
-      color: $link-inverted-color-visited;
-    }
-
     &:hover {
       font-weight: bold;
     }
@@ -133,20 +129,32 @@ $number-size: 1.3rem;
   }
 }
 
+@mixin __menu_mobile(){
+  a {
+    font: $title-size $family-serif;
+    color: $link-inverted-color;
+  }
+}
+
+@mixin __menu_desktop(){
+  a {
+    font: bold $text-size $family-serif;
+    color: $link-inverted-color;
+  }
+}
 
 @mixin __institutional(){
+  .page-name {
+    font: bold $page-name-size $family-sans;
+    text-transform: uppercase;
+    color: $page-title-color;
+  }
+
   p {
     font-family: $family-serif;
     line-height: $line-separation-big;
     font-size: $text-size;
     color: $text-color;
-  }
-
-  .page-name {
-    font-size: 1.1em;
-    font-weight: 900;
-    font-family: $family-sans;
-    text-transform: uppercase;
   }
 
   .title {
@@ -302,18 +310,7 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __menu(){
-  a {
-    font-family: $family-serif;
-    font-size: 1em;
 
-    @include media-query(THREE) {
-      font-family: $family-serif;
-      font-size: 1em;
-      font-weight: bold;
-    }
-  }
-}
 
 @mixin __search(){
   /* Sets search box font */
@@ -360,8 +357,11 @@ $number-size: 1.3rem;
   @else if( $type == FOOTER ){
     @include __footer();
   }
-  @else if( $type == MENU ){
-    @include __menu();
+  @else if( $type == MENU_MOBILE ){
+    @include __menu_mobile();
+  }
+  @else if( $type == MENU_DESKTOP ){
+    @include __menu_desktop();
   }
   @else if( $type == COLUMNISTS ){
     @include __columnists();
