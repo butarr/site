@@ -141,9 +141,6 @@ append content
             - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
               figure
                 img(src=post.cover.medium alt=imageDescription title=imageDescription itemprop="image")
-                figcaption
-                  h3.small(itemprop="headline")= post.title
-                  p.credits(itemprop="creator")= post.cover.credits
          
         if page.last_news
           section.last-news#last-news-mobile(class= "spacing")
