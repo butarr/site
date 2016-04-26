@@ -22,6 +22,8 @@
     top: 33px;
   }
 
+/* SEARCH BOX */
+  /* Hides search button from search box */
   .gsc-search-button {
       display: none;
   }
@@ -38,6 +40,7 @@
      background-color: transparent;
    }
 
+   /* Sets config from search box white space */
    .gsc-input {
      height: 27px;
      width: 100%;
@@ -55,6 +58,7 @@
      padding: 0 10px;
    }
 
+/* SEARCH RESULTS */
    /* Adjusts results search to be responsive */
    .gsc-results-wrapper-overlay {
     width: 96%;
@@ -106,7 +110,7 @@
     border-top: 0;
   }
 
-  /* Hides thumbnail (image) for mobile layout */
+  /* Hides thumbnail image for mobile layout */
   .gsc-thumbnail {
     display: none;
 
