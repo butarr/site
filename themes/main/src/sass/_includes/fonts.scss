@@ -27,12 +27,14 @@ $number-size: 1.3rem;
 
   .title {
     font: bold #{$title-size}/#{$line-separation-small} $family-serif;
-    color: $title-color;
   }
 
   .big-title {
     font: bold #{$big-title-size}/#{$line-separation-small} $family-serif;
-    color: white;
+
+    a {
+      color: $link-inverted-color;
+    }
   }
 
   .description {
@@ -47,7 +49,6 @@ $number-size: 1.3rem;
 
     span.title {
       font: bold #{$title-size}/#{$line-separation-small} $family-serif;
-      color: $text-color;
     }
   }
 
@@ -59,7 +60,6 @@ $number-size: 1.3rem;
 
     span.title {
       font: normal #{$text-size}/#{$line-separation-small} $family-sans;
-      color: $text-color;
     }
   }
 
@@ -67,6 +67,21 @@ $number-size: 1.3rem;
     .name {
       font: bold #{$text-size}/#{$line-separation-small} $family-sans;
       color: $name-color;
+    }
+  }
+}
+
+@mixin __footer(){
+  font: #{$text-size}/1.0 $family-sans;
+  color: $link-inverted-color;
+
+  a {
+    &:visited {
+      color: $link-inverted-color-visited;
+    }
+
+    &:hover {
+      font-weight: bold;
     }
   }
 }
@@ -89,6 +104,32 @@ $number-size: 1.3rem;
   .date {
     font: $details-size $family-sans;
     color: $details-color;
+  }
+}
+
+@mixin __columnists(){
+  .page-name {
+    font: bold $page-name-size $family-sans;
+    text-transform: uppercase;
+    color: $page-title-color;
+  }
+
+  .title{
+    font: bold #{$list-title-size}/#{$line-separation-small} $family-serif;
+  }
+
+  .description {
+    font: normal #{$text-size}/#{$line-separation-small} $family-sans;
+  }
+
+  .date {
+    font: $details-size $family-sans;
+    color: $details-color;
+  }
+
+  .name {
+    font: bold #{$title-size}/#{$line-separation-small} $family-sans;
+    color: $name-color;
   }
 }
 
@@ -202,40 +243,7 @@ $number-size: 1.3rem;
 
 
 
-@mixin __columnists(){
-  @include get-font(NAME);
 
-  .page-name {
-    font-size: 1.1em;
-    font-weight: 900;
-    font-family: $family-sans;
-    text-transform: uppercase;
-  }
-
-  .title {
-    font-size: 1.2em;
-    font-weight: 700;
-    line-height: 1.2em;
-    font-family: $family-serif;
-
-    @include media-query (TWO) {
-      font-size: 1.3em;
-    }
-  }
-
-  .description {
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.2em;
-    font-family: $family-sans;
-  }
-
-  .date {
-    font-family: $family-sans;
-    font-size: 0.9em;
-    color: $text-color;
-  }
-}
 
 @mixin __title(){
   font-size: 1.5em;
@@ -272,15 +280,7 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __footer(){
-  font-family: $family-sans;
-  font-size: 1em;
 
-  a {
-    font-family: $family-sans;
-    font-size: 1em;
-  }
-}
 
 @mixin __page_blockquotes(){
   blockquote {
