@@ -58,6 +58,11 @@
      padding: 0 10px;
    }
 
+   /* Hides clear button */
+   .gsc-clear-button {
+     display: none;
+   }
+
 /* SEARCH RESULTS */
    /* Adjusts results search to be responsive */
    .gsc-results-wrapper-overlay {
@@ -110,6 +115,7 @@
     border-top: 0;
   }
 
+  /* Makes search result cursor wrapped */
   .gsc-cursor {
     display: flex;
     flex-wrap: wrap;
