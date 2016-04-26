@@ -7,11 +7,11 @@ append content
   article#post(itemtype="http://schema.org/NewsArticle", itemscope)
     header
       span.hat(itemprop="about")= page.hat
-      h2.title(itemprop="headline")= page.title
-      h3.description(itemprop="description")= page.description
-      h4.author(rel="author", itemprop="author")= page.author
+      h1.title(itemprop="headline")= page.title
+      p.description(itemprop="description")= page.description
+      span.author(rel="author", itemprop="author")= page.author
       .place-and-time      
-        h5(rel="place", itemprop="contentLocation")= page.place
+        span(rel="place", itemprop="contentLocation")= page.place
         time(datetime=page.date.toISOString())= ', ' + full_date(page.date)
       if page.cover
         figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")

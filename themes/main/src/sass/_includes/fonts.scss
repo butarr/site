@@ -196,6 +196,11 @@ $number-size: 1.3rem;
 }
 
 @mixin __post(){
+  .hat {
+    font: bold $page-name-size $family-sans;
+    text-transform: uppercase;
+    color: $page-title-color;
+  }
   .author {
     font-family: $family-serif;
     font-weight: lighter;
