@@ -12,23 +12,30 @@ $(document).ready(function() {
     $(this).addClass('open');
   });
 
-  $('#search-icon').click(function() {
-    var toggle_el = $('#search-tool');
-    var toggle_content = $('#content');
-    if($('#search-icon').hasClass('open')) {
-      $(toggle_el).removeClass('open');
-      $(toggle_content).removeClass('open-search');
-      $(this).removeClass('open');
-    } else {
-      $(toggle_el).addClass('open');
-      $(toggle_content).addClass('open-search');
-      $(this).addClass('open');
-    }
-  });
-
   $('#close-button').click(function() {
     var toggle_el = $('.menu-options').data('toggle');
     $(toggle_el).removeClass('open');
+    $(this).removeClass('open');
+  });
+
+  var toggle_el = $('#search-tool');
+  var toggle_content = $('#content');
+
+  $('#search-icon').click(function() {
+    if($('#search-icon').hasClass('open')) {
+       $(toggle_el).removeClass('open');
+       $(toggle_content).removeClass('open-search');
+       $(this).removeClass('open');
+     } else {
+       $(toggle_el).addClass('open');
+       $(toggle_content).addClass('open-search');
+       $(this).addClass('open');
+     }
+  });
+
+  $('#close-search-button').click(function() {
+    $(toggle_el).removeClass('open');
+    $(toggle_content).removeClass('open-search');
     $(this).removeClass('open');
   });
 

@@ -5,24 +5,48 @@
 
 #search-tool {
   display: none;
-  @include get-font(SEARCH);
   width: 100%;
   position: fixed;
-  top: 65px;
+  top: $HEADER-HEIGHT-CONTRACTED;
   right: 0;
-
-  &.open {
-    display: block;
-  }
+  padding: 0 $VERTICAL-SPACE;
+  background-color: $bdf-red;
+  @include get-font(SEARCH);
 
   @include media-query(FOUR){
     position: absolute;
     width: 220px;
-    right: -25px;
+    right: -40px;
     top: 33px;
+    padding: 0;
   }
 
+  &.open {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  #close-search-button {
+    height: 15px;
+    margin-bottom: 5px;
+
+    @include media-query(FOUR){
+      height: 13px;
+    }
+  }
+
+
 /* SEARCH BOX */
+  /* Sets search box size */
+  #___gcse_0 {
+    width: 100%;
+    padding-right: 10px;
+    @include media-query(FOUR){
+      width: 200px;
+    }
+  }
+
   /* Hides search button from search box */
   .gsc-search-button {
       display: none;
@@ -30,12 +54,13 @@
 
   /* Sets to zero search box padding */
   .gsc-search-box {
-    padding: 0;
+      padding: 0;
   }
 
-  /* Hides search box border */
+  /* Hides search box border created by Google*/
    .gsc-control-cse-pt_PT {
-     padding: 0 10px;
+     padding: 0;
+     width: 100%;
      border-color: transparent;
      background-color: transparent;
    }
