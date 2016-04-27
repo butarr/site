@@ -23,7 +23,23 @@ $section-name-size: 1rem;
 $number-size: 1.3rem;
 
 @mixin __main {
+
+  p {
+    strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    s {
+      text-decoration:line-through;
+    }
+  }
+
   a {
+    text-decoration:  none;
     color: $link-neutral-color;
     cursor: pointer;
 
