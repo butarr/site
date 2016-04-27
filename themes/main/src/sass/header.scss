@@ -75,17 +75,14 @@ $image-height: 1.6em;
     height: $HEADER-HEIGHT-CONTRACTED;
     display:flex;
 
-    #logo-header-mobile {
-      display: inline-block;
-      padding-left: 50px;
-    }
-
-    #logo-header-desktop, #hamburguer {
-      display: none;
+    .banner-logo{
+      background: $bdf-red url("/img/logo.svg") no-repeat;
+      height: 2.5em;
+      width: 210px;
     }
 
     #header-icons {
-      width: 35px;
+      display: none;
     }
   }
 }
