@@ -128,10 +128,7 @@ $number-size: 1.3rem;
 
   .big-title {
     font: bold #{$big-title-size}/#{$line-separation-small} $family-serif;
-
-    a {
-      color: $link-inverted-color;
-    }
+    color: $link-inverted-color;
   }
 
   .description {
