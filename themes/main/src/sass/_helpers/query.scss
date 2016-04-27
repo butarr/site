@@ -1,7 +1,5 @@
 @import 'constants';
 
-$medium_screen:     768px;
-$mobile: 375px;
 $two_columns: (2 * $COLUMN_WIDTH) + 30px;
 $three_columns: (3 * $COLUMN_WIDTH) + 30px;
 $four_columns: (4 * $COLUMN_WIDTH) + 30px;
@@ -9,13 +7,7 @@ $five_columns: (5 * $COLUMN_WIDTH) + 30px;
 
 
 @mixin media-query($canvas) {
-  @if $canvas == MEDIUM {
-   @media only screen and (min-width: $medium_screen) { @content; }
-  }
-  @else if $canvas == MOBILE {
-   @media only screen and (min-width: $mobile) { @content; }
-  }
-  @else if $canvas == TWO {
+  @if $canvas == TWO {
    @media only screen and (min-width: $two_columns) { @content; }
   }
   @else if $canvas == THREE {
