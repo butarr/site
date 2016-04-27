@@ -176,11 +176,21 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __columnist(){
+@mixin __column(){
   .hat {
     font: bold $page-name-size $family-sans;
     text-transform: uppercase;
     color: $page-title-color;
+  }
+
+  .title {
+      font: bold #{$standalone-title-size}/#{$line-separation-small} $family-serif;
+      color: $title-color;
+  }
+
+  time, figcaption {
+    font: $text-size $family-serif;
+    color: $details-color;
   }
 }
 
@@ -193,9 +203,7 @@ $number-size: 1.3rem;
   }
 
   p {
-    font-family: $family-serif;
-    line-height: $line-separation-big;
-    font-size: $text-size;
+    font: #{$text-size}/#{$line-separation-big} $family-serif;
     color: $text-color;
   }
 
@@ -228,10 +236,6 @@ $number-size: 1.3rem;
     }
   }
 }
-
-
-
-
 
 @mixin __person(){
   @include __name();
@@ -282,9 +286,16 @@ $number-size: 1.3rem;
   }
 
   a {
-    color: $bdf-red;
-    font-weight: bold;
-    text-decoration: underline;
+      color: $link;
+      font-weight: bold;
+
+      &:visited {
+        color: $link-visited;
+      }
+
+      &:hover {
+        color: $link-hover;
+      }
   }
 }
 
@@ -352,8 +363,8 @@ $number-size: 1.3rem;
   @else if( $type == PERSON ){
     @include __person();
   }
-  @else if( $type == COLUMNIST ){
-    @include __columnist();
+  @else if( $type == COLUMN ){
+    @include __column();
   }
   @else if( $type == NATIONAL ){
     @include __national();
