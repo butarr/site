@@ -10,7 +10,7 @@
   top: $HEADER-HEIGHT-CONTRACTED;
   right: 0;
   padding: 0 $VERTICAL-SPACE;
-  background-color: $bdf-red;
+  background-color: $background;
   @include get-font(SEARCH);
 
   @include media-query(FOUR){

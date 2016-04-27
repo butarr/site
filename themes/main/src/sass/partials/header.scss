@@ -36,12 +36,12 @@ $image-height: 1.6em;
   align-items: center;
   height: 2.5em;
   width: 210px;
-  background: $bdf-red url("/img/logo.svg") no-repeat;
+  background: $background url("/img/logo.svg") no-repeat;
 
   @include media-query(FOUR){
     height: 82.45px;
     width: 450px;
-    background: $bdf-red url("/img/logo-tagline.svg") no-repeat;
+    background: $background url("/img/logo-tagline.svg") no-repeat;
   }
 }
 
@@ -76,7 +76,7 @@ $image-height: 1.6em;
     display:flex;
 
     .banner-logo{
-      background: $bdf-red url("/img/logo.svg") no-repeat;
+      background: $background url("/img/logo.svg") no-repeat;
       height: 2.5em;
       width: 210px;
     }

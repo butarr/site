@@ -15,6 +15,7 @@ $title-color: lighten($neutral-base, 10%);
 $page-title-color: lighten($neutral-base, 30%);
 $details-color: lighten($neutral-base, 40%);
 $title-underline: $red-base;
+$columnist-name-color: $red-base;
 
 $link-color: $red-base;
 $link-visited-color: $red-pinker;
@@ -33,12 +34,13 @@ $box-border: $red-base;
 
 $number-color: $red-base;
 $name-color: $red-base;
+$quote-color: $red-base;
 
 $text-column: lighten($neutral-base, 25%);
 
 $page-title: lighten($neutral-base, 30%);
 $details-font: lighten($neutral-base, 40%);
-$bdf-red: rgba(140,25,31,1);
+
 
 $link: $red-base;
 $link-visited: $red-pinker;

@@ -312,17 +312,13 @@ $number-size: 1.3rem;
 
 @mixin __name() {
   .name, .name_mobile {
-    color: $bdf-red;
+    color: $columnist-name-color;
     font-family: $family-sans;
     font-weight: 600;
     font-size: 1.1em;
     line-height: 1.2;
   }
 }
-
-
-
-
 
 @mixin __title(){
   font-size: 1.5em;
