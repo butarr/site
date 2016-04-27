@@ -203,9 +203,7 @@ $number-size: 1.3rem;
   }
 
   p {
-    font-family: $family-serif;
-    line-height: $line-separation-big;
-    font-size: $text-size;
+    font: #{$text-size}/#{$line-separation-big} $family-serif;
     color: $text-color;
   }
 
@@ -238,10 +236,6 @@ $number-size: 1.3rem;
     }
   }
 }
-
-
-
-
 
 @mixin __person(){
   @include __name();
@@ -292,9 +286,16 @@ $number-size: 1.3rem;
   }
 
   a {
-    color: $bdf-red;
-    font-weight: bold;
-    text-decoration: underline;
+      color: $link;
+      font-weight: bold;
+
+      &:visited {
+        color: $link-visited;
+      }
+
+      &:hover {
+        color: $link-hover;
+      }
   }
 }
 
