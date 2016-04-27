@@ -68,6 +68,7 @@ $number-size: 1.3rem;
     font-size: 1.3rem;
     line-height: 1.5em;
   }
+
   blockquote:before {
     color: $quote-color;
     font-size: 3.5em;
@@ -284,7 +285,6 @@ $number-size: 1.3rem;
   }
 }
 
-
 @mixin __institutional(){
   .page-name {
     font: bold $page-name-size $family-sans;
@@ -316,7 +316,13 @@ $number-size: 1.3rem;
 }
 
 @mixin __person(){
-  @include __name();
+  .name, .name_mobile {
+    color: $columnist-name-color;
+    font-family: $family-sans;
+    font-weight: 600;
+    font-size: 1.1em;
+    line-height: 1.2;
+  }
 
   .job-title {
     font-size: 0.9em;
@@ -325,16 +331,6 @@ $number-size: 1.3rem;
     @include media-query(MEDIUM) {
       font-size: 1em;
     }
-  }
-}
-
-@mixin __name() {
-  .name, .name_mobile {
-    color: $columnist-name-color;
-    font-family: $family-sans;
-    font-weight: 600;
-    font-size: 1.1em;
-    line-height: 1.2;
   }
 }
 
@@ -363,10 +359,7 @@ $number-size: 1.3rem;
    }
 }
 
-
-
 @mixin get-font($type){
-
   @if( $type == POST ){
     @include __post();
   }
@@ -396,12 +389,6 @@ $number-size: 1.3rem;
   }
   @else if( $type == COLUMNISTS ){
     @include __columnists();
-  }
-  @else if( $type == NAME ){
-    @include __name();
-  }
-  @else if( $type == TITLE ){
-    @include __title();
   }
   @else if( $type == INSTITUTIONAL ){
     @include __institutional();
