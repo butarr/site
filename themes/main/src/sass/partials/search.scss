@@ -37,8 +37,8 @@
   }
 
 
-/* SEARCH BOX */
-  /* Sets search box size */
+// SEARCH BOX
+  // Sets search box size
   #___gcse_0 {
     width: 100%;
     padding-right: 10px;
@@ -47,17 +47,17 @@
     }
   }
 
-  /* Hides search button from search box */
+  // Hides search button from search box
   .gsc-search-button {
       display: none;
   }
 
-  /* Sets to zero search box padding */
+  // Sets to zero search box padding
   .gsc-search-box {
       padding: 0;
   }
 
-  /* Hides search box border created by Google*/
+  // Hides search box border created by Googl
    .gsc-control-cse-pt_PT {
      padding: 0;
      width: 100%;
@@ -65,7 +65,7 @@
      background-color: transparent;
    }
 
-   /* Sets config from search box white space */
+   // Sets config from search box white space
    .gsc-input {
      height: 27px;
      width: 100%;
@@ -78,18 +78,18 @@
      }
    }
 
-   /* Sets space to fill search box */
+   // Sets space to fill search box
    #gsc-i-id1 {
      padding: 0 10px;
    }
 
-   /* Hides clear button */
+   // Hides clear button
    .gsc-clear-button {
      display: none;
    }
 
-/* SEARCH RESULTS */
-   /* Adjusts results search to be responsive */
+// SEARCH RESULTS
+   // Adjusts results search to be responsive
    .gsc-results-wrapper-overlay {
     width: 96%;
     height: 96%;
@@ -106,18 +106,18 @@
     }
    }
 
-  /* Add a border between individual search results */
+  // Add a border between individual search results
   .gs-webResult {
       border: 1px solid #eee;
       padding: 1em;
   }
 
-  /* Hide URL of search results */
+  // Hide URL of search results
   .gsc-url-bottom {
     display: none;
   }
 
-  /* Highlight the pagination buttons at the bottom of search results */
+  // Highlight the pagination buttons at the bottom of search results
   .gsc-cursor-page {
       margin-top: 30px;
       font-size: 1.2em;
@@ -125,22 +125,22 @@
       border: 2px solid #ccc;
   }
 
-  /* Adds space between image and search results */
+  // Adds space between image and search results
   .gsc-table-cell-snippet-close {
     padding-left: 20px;
   }
 
-  /* Hides google brand */
+  // Hides google brand
   .gcsc-branding {
     display: none;
   }
 
-  /* Sets cursor box config */
+  // Sets cursor box config
   .gsc-cursor-box {
     border-top: 0;
   }
 
-  /* Makes search result cursor wrapped */
+  // Makes search result cursor wrapped
   .gsc-cursor {
     display: flex;
     flex-wrap: wrap;
@@ -148,7 +148,7 @@
     align-items: flex-start;
   }
 
-  /* Hides thumbnail image for mobile layout */
+  // Hides thumbnail image for mobile layout
   .gsc-thumbnail {
     display: none;
 
@@ -157,12 +157,12 @@
     }
   }
 
-  /* Removes underline from cursor */
+  // Removes underline from cursor
   .gsc-cursor-page {
     text-decoration: none;
   }
 
-  /* Sets background color of current page cursor */
+  // Sets background color of current page cursor
   .gsc-cursor-current-page {
     background-color: $red-dark;
   }
