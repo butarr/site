@@ -37,7 +37,7 @@
     color: $text-color;
   }
 
-  h4.title {
+  .title {
     @include section-name();
   }
 
