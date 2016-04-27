@@ -245,10 +245,8 @@ $number-size: 1.3rem;
   }
 
   .title {
-    font-family: $family-sans;
+    font: bold $text-size $family-sans;
     text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: bold;
   }
 
   a {
@@ -265,12 +263,7 @@ $number-size: 1.3rem;
   }
 
   .text {
-    font-family: $family-sans;
-    font-size: .8rem;
-    font-weight: bold;
-    @include media-query (TWO) {
-      font-size: 1rem;
-    }
+    font: bold $text-size $family-sans;
   }
 }
 
@@ -310,10 +303,6 @@ $number-size: 1.3rem;
     font-size: 2em;
   }
 }
-
-
-
-
 
 
 @mixin __page_blockquotes(){
