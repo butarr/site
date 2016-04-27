@@ -11,11 +11,6 @@
   box-sizing: border-box;
 }
 
-html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 // Hack to IE10
 @-ms-viewport{
   width: device-width;
@@ -26,21 +21,19 @@ body {
   & > main {
     width: 100%;
     @include clearfix();
-  }
-}
 
-main {
-  &.open-search {
-    @include site-top-spacing($HEADER-HEIGHT-CONTRACTED + $MENU-HEIGHT-DESKTOP);
+    &.open-search {
+      @include site-top-spacing($HEADER-HEIGHT-CONTRACTED + $MENU-HEIGHT-DESKTOP);
+
+      @include media-query (FOUR){
+        @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
+      }
+    }
+
+    @include site-top-spacing($HEADER-HEIGHT-CONTRACTED);
 
     @include media-query (FOUR){
       @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
     }
-  }
-
-  @include site-top-spacing($HEADER-HEIGHT-CONTRACTED);
-
-  @include media-query (FOUR){
-    @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
   }
 }

@@ -25,6 +25,8 @@ $number-size: 1.3rem;
 @mixin __main {
   html {
     font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   body {
