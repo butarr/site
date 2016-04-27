@@ -1,6 +1,6 @@
-@import '_includes/constants';
-@import '_includes/mixins';
-@import '_includes/colors';
+@import '_helpers/constants';
+@import '_helpers/mixins';
+@import '_helpers/colors';
 
 #columnists {
   max-width: 3 * $COLUMN_WIDTH;

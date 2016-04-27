@@ -12,7 +12,7 @@ append content
       .person(itemscope, itemtype="http://schema.org/Person")
         img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=columnist.photo )
         .name-and-time
-          h3.name(itemprop="name")= columnist.name
+          span.name(itemprop="name")= columnist.name
           time(datetime=page.date.toISOString())= full_date(page.date)
     meta(itemprop="datePublished", content=page.date)
     meta(itemprop="image", content='http:'+columnist.photo)

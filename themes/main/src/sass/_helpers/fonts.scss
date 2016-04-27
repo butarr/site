@@ -1,5 +1,5 @@
-@import '_includes/query';
-@import '_includes/colors';
+@import 'query';
+@import 'colors';
 
 $family-serif: 'Merriweather';
 $family-sans: 'Merriweather Sans';
@@ -7,16 +7,46 @@ $family-sans: 'Merriweather Sans';
 $line-separation-small: 1.3;
 $line-separation-big: 1.6;
 
+$page-name-size: 1.1rem;
+$list-title-size: 1.3rem;
+
+$standalone-title-size: 2rem;
+$standalone-description-size: 1.2rem;
+
 $text-size: 1rem;
 $details-size: 0.9rem;
 $title-size: 1.1rem;
 $big-title-size: 1.7rem;
-$list-title-size: 1.3rem;
 $section-name-size: 1rem;
-$page-name-size: 1.1rem;
 
 $number-size: 1.3rem;
 
+@mixin __menu_mobile(){
+  a {
+    font: $title-size $family-serif;
+    color: $link-inverted-color;
+  }
+}
+
+@mixin __menu_desktop(){
+  a {
+    font: bold $text-size $family-serif;
+    color: $link-inverted-color;
+  }
+}
+
+@mixin __footer(){
+  font: #{$text-size}/1.0 $family-sans;
+  color: $link-inverted-color;
+
+  a {
+    color: $link-inverted-color;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
 
 @mixin __national(){
   .section-name, .hat {
@@ -53,7 +83,7 @@ $number-size: 1.3rem;
   }
 
   .last-news#last-news-dynamic {
-    h1.section-name {
+    .section-name {
       font: bold $title-size $family-sans;
       color: $link-color;
     }
@@ -67,17 +97,6 @@ $number-size: 1.3rem;
     .name {
       font: bold #{$text-size}/#{$line-separation-small} $family-sans;
       color: $name-color;
-    }
-  }
-}
-
-@mixin __footer(){
-  font: #{$text-size}/1.0 $family-sans;
-  color: $link-inverted-color;
-
-  a {
-    &:hover {
-      font-weight: bold;
     }
   }
 }
@@ -129,19 +148,42 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __menu_mobile(){
-  a {
-    font: $title-size $family-serif;
-    color: $link-inverted-color;
+@mixin __post(){
+  .hat {
+    font: bold $page-name-size $family-sans;
+    text-transform: uppercase;
+    color: $page-title-color;
+  }
+
+  .title {
+      font: bold #{$standalone-title-size}/#{$line-separation-small} $family-serif;
+      color: $title-color;
+  }
+
+  .description {
+    font: #{$standalone-description-size}/#{$line-separation-small} $family-sans;
+    color: $title-color;
+  }
+
+  .author {
+    font: $text-size $family-serif;
+    color: $title-color;
+  }
+
+  .place, time, figcaption {
+    font: $text-size $family-serif;
+    color: $details-color;
   }
 }
 
-@mixin __menu_desktop(){
-  a {
-    font: bold $text-size $family-serif;
-    color: $link-inverted-color;
+@mixin __columnist(){
+  .hat {
+    font: bold $page-name-size $family-sans;
+    text-transform: uppercase;
+    color: $page-title-color;
   }
 }
+
 
 @mixin __institutional(){
   .page-name {
@@ -187,47 +229,7 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __hat(){
-  font-family: $family-sans;
-  text-transform: uppercase;
-  font-size: 1.1em;
-  font-weight: 900;
-  color: $page-title;
-}
 
-@mixin __post(){
-  .hat {
-    font: bold $page-name-size $family-sans;
-    text-transform: uppercase;
-    color: $page-title-color;
-  }
-  .author {
-    font-family: $family-serif;
-    font-weight: lighter;
-    font-size: 1.0em;
-    color: $black-light;
-
-    @include media-query(THREE){
-      font-size: 1.0em;
-    }
-  }
-
-  .description {
-    font-size: 1.2em;
-    font-weight: lighter;
-    font-family: $family-sans;
-    line-height: 1.2em;
-    color: $black-light;
-
-    @include media-query(THREE){
-      font-size: 1.3em;
-    }
-  }
-
-  h5 {
-    font-size: 1em;
-  }
-}
 
 
 
@@ -286,12 +288,7 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __columnist(){
-  .hat{
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-}
+
 
 
 
@@ -342,6 +339,8 @@ $number-size: 1.3rem;
    }
 }
 
+
+
 @mixin get-font($type){
 
   @if( $type == POST ){
@@ -373,9 +372,6 @@ $number-size: 1.3rem;
   }
   @else if( $type == NAME ){
     @include __name();
-  }
-  @else if( $type == HAT ){
-    @include __hat();
   }
   @else if( $type == TITLE ){
     @include __title();

@@ -2,7 +2,7 @@ extends base
 
 append content
   section#columnists(itemscope itemtype="http://schema.org/ItemList")
-    h1.page-name Colunistas
+    h2.page-name Colunistas
 
     each post in page.columns
       article.column(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
@@ -19,6 +19,6 @@ append content
         .text
           span.name(itemprop="name")= columnist.name
           a(href=post.path itemprop="url")
-            h2.title(itemprop="headline")= post.title
+            h3.title(itemprop="headline")= post.title
             p.description(itemprop="description")= post.description
             time.date(datetime=published_date.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_date)

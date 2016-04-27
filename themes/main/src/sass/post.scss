@@ -1,6 +1,6 @@
-@import '_includes/query';
-@import '_includes/colors';
-@import '_includes/mixins';
+@import '_helpers/query';
+@import '_helpers/colors';
+@import '_helpers/mixins';
 
 
 #post {
@@ -25,11 +25,10 @@
 #post header {
   .hat {
     @include page-name();
-
   }
 
-  .title {
-    @include standalone_news_title;
+  .title{
+    margin: 20px 0 10px 0;
   }
 
   .description {
@@ -44,7 +43,6 @@
     }
 
     figcaption{
-      color: $gray;
       text-align: right;
       margin-top: 10px;
     }
@@ -60,12 +58,10 @@
 }
 
 #post header .place-and-time, time {
-  color: $details-font;
-  line-height: 1.5em;
   padding-bottom: 10px;
   display: block;
 
-  h5, time {
+  time {
     display: inline-block;
   }
 }

@@ -7,7 +7,7 @@ var cleanCSS = require('gulp-clean-css');
 
 module.exports =  function (baseDir) {
 	return function() {
-	  return gulp.src(['src/sass/**/*.scss', '!src/sass/_include/'])
+	  return gulp.src(['src/sass/**/*.scss', '!src/sass/_helpers/'])
 			.pipe(plumber())
 	    .pipe(sass({
 	        includePaths: [nodeResetScss, 'styles']

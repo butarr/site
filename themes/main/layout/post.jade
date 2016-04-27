@@ -7,11 +7,11 @@ append content
   article#post(itemtype="http://schema.org/NewsArticle", itemscope)
     header
       span.hat(itemprop="about")= page.hat
-      h1.title(itemprop="headline")= page.title
+      h2.title(itemprop="headline")= page.title
       p.description(itemprop="description")= page.description
       span.author(rel="author", itemprop="author")= page.author
       .place-and-time      
-        span(rel="place", itemprop="contentLocation")= page.place
+        span.place(rel="place", itemprop="contentLocation")= page.place
         time(datetime=page.date.toISOString())= ', ' + full_date(page.date)
       if page.cover
         figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
@@ -19,5 +19,6 @@ append content
           - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
           img(itemprop="thumbnail", alt=imageDescription, title=imageDescription, src=page.cover['medium'] )
           figcaption(itemprop="caption")= imageCaption
+          
     .content
      != page.content

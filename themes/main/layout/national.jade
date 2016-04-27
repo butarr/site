@@ -13,22 +13,25 @@ mixin columnist_item(column)
             
 mixin columnists_list
   a(href="/colunistas", title="link para a pagina de colunistas")
-    h1.section-name Colunistas
-    +columnist_item(page.column_01)
-    +columnist_item(page.column_02)
-    +columnist_item(page.column_03)      
-  a(href="/colunistas" class="button" title="link para a pagina de colunistas") 
-    span Leia Mais
+    h2.section-name Colunistas
+  +columnist_item(page.column_01)
+  +columnist_item(page.column_02)
+  +columnist_item(page.column_03)      
+a(href="/colunistas" class="button" title="link para a pagina de colunistas") 
+  span Leia Mais
     
 mixin printed-news
-  h1.section-name Edições Impressas
+  h2.section-name Edições Impressas
   img(src="/img/newspaper.png" alt="imagem do tabloide")
   if page.minas_gerais
-    a(class="button" href= page.minas_gerais.path) Minas Gerais
+    a(class="button" href= page.minas_gerais.path)
+      h3 Minas Gerais
   if page.parana
-    a(class="button" href= page.parana.path) Paraná
+    a(class="button" href= page.parana.path)
+      h3 Paraná
   if page.rio_de_janeiro
-    a(class="button" href= page.rio_de_janeiro.path) Rio de Janeiro
+    a(class="button" href= page.rio_de_janeiro.path)
+      h3 Rio de Janeiro
 
 extend base
 
@@ -39,7 +42,7 @@ append content
     if page.last_news
       section#last-news-dynamic.last-news(class="spacing" hidden)
         meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
-        h1.section-name Últimas notícias:
+        h2.section-name Últimas notícias:
         if page.last_news
           ol
             each post in page.last_news
@@ -53,12 +56,12 @@ append content
           - var post=page.featured_01
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
           article#featured-1(itemscope itemtype="https://schema.org/NewsArticle" class="featured-big-picture" class="divisor" class="spacing")
-            h1.outline= post.title
+            h3.outline= post.title
             a(itemprop="url" href=post.path)
               figure
                 img(src=post.cover.medium alt=imageDescription title=imageDescription itemprop="image")
                 figcaption
-                  h1.big-title(itemprop="headline")= post.title
+                  h3.big-title(itemprop="headline")= post.title
 
         if page.featured_02
           - var post=page.featured_02
@@ -66,7 +69,7 @@ append content
           article#featured-2(itemscope itemtype="https://schema.org/NewsArticle" class="featured-small-picture" class="divisor" class="spacing")
             a(itemprop="url" href=post.path)
               figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-              h1.title(itemprop="headline")= post.title
+              h3.title(itemprop="headline")= post.title
 
         if page.featured_03
           - var post=page.featured_03
@@ -74,14 +77,14 @@ append content
           article#featured-3(itemscope itemtype="https://schema.org/NewsArticle" class="featured-small-picture" class="divisor" class="spacing")
             a(itemprop="url" href=post.path)
               figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-              h1.title(itemprop="headline")= post.title
+              h3.title(itemprop="headline")= post.title
 
         #featured-text-container(class="divisor" class= "spacing")
           if page.featured_04
             - var post=page.featured_04
             article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-and-title" class= "spacing")
               a(itemprop="url" href=post.path)
-                h1.title(itemprop="headline")= post.title
+                h3.title(itemprop="headline")= post.title
                 p.description(itemprop="description")= post.description
 
           if page.featured_05
@@ -89,18 +92,18 @@ append content
             .box-container(class= "spacing")
               article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-box")
                 a(itemprop="url" href=post.path)
-                  h1.title(itemprop="headline")= post.title
+                  h3.title(itemprop="headline")= post.title
 
           if page.featured_06
             - var post=page.featured_06
             .box-container(class= "spacing")
               article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-box")
                 a(itemprop="url" href=post.path)
-                  h1.title(itemprop="headline")= post.title
+                  h3.title(itemprop="headline")= post.title
 
         figure(class= "radar" class= "spacing")
-          a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar dos Movimentos")
-            img#radar_mobile(src="/img/radar_mobile.png" alt="imagem radar dos movimentos")
+          a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar de Movimentos Populares")
+            img#radar_mobile(src="/img/radar_mobile.png" alt="Radar de Movimentos Populares")
 
         section.printed-news(class="spacing")
           +printed-news
@@ -109,11 +112,11 @@ append content
           +columnists_list
 
         section#videos(class="gallery-videos" class="spacing")
-          h1.section-name TV Brasil de Fato
+          h2.section-name TV Brasil de Fato
           iframe(src="//www.youtube.com/embed?listType=playlist&list=PLytfbsQYLZpB5uDo8LRdjf9X9RfOlFw4d" allowfullscreen)
 
         section#images(class= "gallery-images" class="spacing")
-          h1.section-name Fotos    
+          h2.section-name Fotos    
           iframe(align="center", src="//www.flickr.com/slideShow/index.gne?user_id=brasildefato&set_id=72157665304017756", frameborder="0", width="450", height="337", scrolling="no")
 
         if page.featured_07
@@ -123,7 +126,7 @@ append content
             span.hat(itemprop="about")= post.hat
             a(itemprop="url" href=post.path)
               figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-              h1.title(itemprop="headline")= post.title
+              h3.title(itemprop="headline")= post.title
 
         if page.featured_08
           - var post=page.featured_08
@@ -132,11 +135,11 @@ append content
             span.hat(itemprop="about")= post.hat
             a(itemprop="url" href=post.path)
               figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-              h1.title(itemprop="headline")= post.title
+              h3.title(itemprop="headline")= post.title
         
         if page.photo_caption
           article.photo-caption(itemscope itemtype="https://schema.org/Photograph" class= "spacing")
-            h1.section-name Charge
+            h2.section-name Charge
             - var post=page.photo_caption
             - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
               figure
@@ -146,23 +149,22 @@ append content
           section.last-news#last-news-mobile(class= "spacing")
             meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
             a(itemprop="url" href="") 
-              h1.section-name Últimas Notícias
-              ol
-                each post in page.last_news
-                  li(itemprop="itemListElement")
-                    a(itemprop="url" href=post.path)
-                      h2.title= post.title
+              h2.section-name Últimas Notícias
+            ol
+              each post in page.last_news
+                li(itemprop="itemListElement")
+                  a(itemprop="url" href=post.path)
+                    h3.title= post.title
 
         if page.most_read
           section.most-read(class="spacing")
             meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
-            h1.section-name Mais lidas
-            if page.most_read
-              ol
-                each post in page.most_read
-                  li(itemprop="itemListElement")
-                    a(itemprop="url", href=post.path)
-                      h2.title= post.title
+            h2.section-name Mais lidas
+            ol
+              each post in page.most_read
+                li(itemprop="itemListElement")
+                  a(itemprop="url", href=post.path)
+                    h3.title= post.title
 
       aside.sidebar(hidden)
         figure(class= "radar" class= "spacing")
