@@ -140,18 +140,6 @@
     margin: 0;
     float: left;
   }
-
-  & > .name {
-    color: $black-light;
-  }
-
-  a > .name {
-    color: $columnist-name-color;
-  }
-
-  p > .description {
-    color: $title-color;
-  }
 }
 
 @mixin page-blockquotes() {

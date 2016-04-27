@@ -519,7 +519,7 @@
 
   .button {
     display: block;
-    color: $link;
+    color: $link-color;
     font-family: 'Merriweather Sans', serif;
     border: 1px solid #b7b7b7;
     border-radius: 3px;
@@ -537,11 +537,11 @@
 
   .button:visited {
     box-shadow: 1px 2px 1px #b7b7b7;
-    color:$link-visited;
+    color:$link-visited-color;
   }
 
   .button:hover {
     box-shadow: 1px 2px 1px #b7b7b7;
-    color:$link-hover;
+    color:$link-hover-color;
   }
 }

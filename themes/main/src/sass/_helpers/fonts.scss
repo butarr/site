@@ -243,15 +243,15 @@ $number-size: 1.3rem;
   }
 
   a {
-      color: $link;
+      color: $link-color;
       font-weight: bold;
 
       &:visited {
-        color: $link-visited;
+        color: $link-visited-color;
       }
 
       &:hover {
-        color: $link-hover;
+        color: $link-hover-color;
       }
   }
 }
@@ -274,15 +274,15 @@ $number-size: 1.3rem;
   }
 
   a {
-      color: $link;
+      color: $link-color;
       font-weight: bold;
 
       &:visited {
-        color: $link-visited;
+        color: $link-visited-color;
       }
 
       &:hover {
-        color: $link-hover;
+        color: $link-hover-color;
       }
   }
 
@@ -305,15 +305,15 @@ $number-size: 1.3rem;
   }
 
   a {
-      color: $link;
+      color: $link-color;
       font-weight: bold;
 
       &:visited {
-        color: $link-visited;
+        color: $link-visited-color;
       }
 
       &:hover {
-        color: $link-hover;
+        color: $link-hover-color;
       }
   }
 
