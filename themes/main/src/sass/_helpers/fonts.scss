@@ -101,8 +101,10 @@ $number-size: 1.3rem;
 }
 
 @mixin __footer(){
-  font: #{$text-size}/1.0 $family-sans;
-  color: $link-inverted-color;
+  p {
+    font: #{$text-size}/1.0 $family-sans;
+    color: $link-inverted-color;
+  }
 
   a {
     color: $link-inverted-color;
