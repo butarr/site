@@ -5,15 +5,11 @@
 @import '_helpers/constants';
 @import '_helpers/query';
 
+@include get-font(MAIN);
+
 * {
   box-sizing: border-box;
 }
-
-// Reset base font sizes
-h1,h2,h3,h4,h5,h6,p,ul,ol { margin-bottom: 0; }
-h1 { font-size: 1.4em; }
-h2 { font-size: 1.1em; }
-h3, h4, h5, h6 { font-size: 0.9em; }
 
 html * {
   -webkit-font-smoothing: antialiased;
@@ -27,8 +23,6 @@ html * {
 
 
 body {
-  @include get-font(MAIN);
-
   & > main {
     width: 100%;
     @include clearfix();
