@@ -285,6 +285,11 @@ $number-size: 1.3rem;
         color: $link-hover;
       }
   }
+
+  .name {
+    font: bold #{$text-size}/#{$line-separation-small} $family-sans;
+    color: $name-color;
+  }
 }
 
 @mixin __institutional(){
@@ -314,25 +319,6 @@ $number-size: 1.3rem;
 
   .text {
     font: bold $text-size $family-sans;
-  }
-}
-
-@mixin __person(){
-  .name, .name_mobile {
-    color: $columnist-name-color;
-    font-family: $family-sans;
-    font-weight: 600;
-    font-size: 1.1em;
-    line-height: 1.2;
-  }
-
-  .job-title {
-    font-size: 0.9em;
-    font-weight: bold;
-
-    @include media-query(MEDIUM) {
-      font-size: 1em;
-    }
   }
 }
 
@@ -370,9 +356,6 @@ $number-size: 1.3rem;
   }
   @else if( $type == NEWS_LIST ){
     @include __news_list();
-  }
-  @else if( $type == PERSON ){
-    @include __person();
   }
   @else if( $type == COLUMN ){
     @include __column();
