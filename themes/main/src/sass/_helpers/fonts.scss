@@ -35,7 +35,6 @@ $number-size: 1.3rem;
 
   p {
     font: #{$standalone-text-size}/#{$line-separation-big} $family-serif;
-    color: $text-color;
 
     strong {
       font-weight: bold;
@@ -110,7 +109,9 @@ $number-size: 1.3rem;
 
   a {
     &:hover {
-      font-weight: bold;
+      p {
+        font-weight: bold;
+      }
     }
   }
 }
@@ -129,6 +130,12 @@ $number-size: 1.3rem;
   .big-title {
     font: bold #{$big-title-size}/#{$line-separation-small} $family-serif;
     color: $link-inverted-color;
+  }
+
+  a:hover {
+    .big-title {
+      color: $link-inverted-color-hover;
+    }
   }
 
   .description {
@@ -162,11 +169,21 @@ $number-size: 1.3rem;
       font: bold #{$text-size}/#{$line-separation-small} $family-sans;
       color: $columnist-name-color;
     }
+
+    a:hover {
+      .section-name{
+        color: $link-neutral-color-hover;
+      }
+
+      .name {
+        color: $link-hover-color;
+      }
+    }
   }
 
   .button {
-    font: $family-serif;
-    color: bold $text-size $link-color;
+    font: bold $text-size$family-serif;
+    color: $link-color;
 
     &:visited {
       color:$link-visited-color;
@@ -264,6 +281,10 @@ $number-size: 1.3rem;
         color: $link-hover-color;
       }
   }
+
+  p {
+    color: $text-color;
+  }
 }
 
 @mixin __column(){
@@ -300,6 +321,10 @@ $number-size: 1.3rem;
     font: bold #{$text-size}/#{$line-separation-small} $family-sans;
     color: $columnist-name-color;
   }
+
+  p {
+    color: $text-color;
+  }
 }
 
 @mixin __institutional(){
@@ -329,6 +354,10 @@ $number-size: 1.3rem;
 
   .text {
     font: bold $text-size $family-sans;
+  }
+
+  p {
+    color: $text-color;
   }
 }
 
