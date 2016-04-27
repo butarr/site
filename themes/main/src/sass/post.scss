@@ -1,6 +1,7 @@
 @import '_helpers/query';
 @import '_helpers/colors';
 @import '_helpers/mixins';
+@import '_helpers/constants';
 
 
 #post {
@@ -8,7 +9,6 @@
   @include clearfix();
   @include site-lateral-spacing();
   @include column-lateral-spacing(15px);
-  @include content;
   @include page-blockquotes;
   width: 100%;
 
@@ -19,6 +19,10 @@
 
   iframe {
     width: 100%;
+  }
+
+  p {
+    margin-bottom: $PARAGRAPH-SPACE;
   }
 }
 
