@@ -162,6 +162,7 @@
     quotes: "\201C""\201D""\2018""\2019";
     padding: 20px 0;
   }
+  
   blockquote:before {
     content: open-quote;
     margin-right: 0.25em;
@@ -176,7 +177,6 @@
   blockquote p {
     display: inline;
   }
-  @include get-font(PAGE_BLOCKQUOTES);
 }
 
 @mixin content() {

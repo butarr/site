@@ -62,6 +62,24 @@ $number-size: 1.3rem;
     }
   }
 
+  blockquote {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1.5em;
+  }
+  blockquote:before {
+    color: $quote-color;
+    font-size: 3.5em;
+    line-height: 0.1em;
+  }
+
+  blockquote:after {
+    color: $quote-color;
+    font-size: 3.5em;
+    line-height: 0.1em;
+  }
+
   .outline {
     font-size: 0;
   }
@@ -332,23 +350,7 @@ $number-size: 1.3rem;
 
 
 @mixin __page_blockquotes(){
-  blockquote {
-    font-style: italic;
-    font-weight: bold;
-    font-size: 1.3rem;
-    line-height: 1.5em;
-  }
-  blockquote:before {
-    color: $bdf-red;
-    font-size: 3.5em;
-    line-height: 0.1em;
-  }
 
-  blockquote:after {
-    color: $bdf-red;
-    font-size: 3.5em;
-    line-height: 0.1em;
-  }
 }
 
 
@@ -417,9 +419,6 @@ $number-size: 1.3rem;
   }
   @else if( $type == TITLE ){
     @include __title();
-  }
-  @else if( $type == PAGE_BLOCKQUOTES ){
-    @include __page_blockquotes();
   }
   @else if( $type == INSTITUTIONAL ){
     @include __institutional();
