@@ -1,4 +1,11 @@
 ---
+minas_gerais:
+  path: //farm2.staticflickr.com/1463/25510068704_4ff20d08ef_b.jpg
+rio_de_janeiro:
+  path: //farm2.staticflickr.com/1463/25510068704_4ff20d08ef_b.jpg
+parana:
+  path: //farm2.staticflickr.com/1463/25510068704_4ff20d08ef_b.jpg
+
 featured_01:
   cover:
     url: //farm2.staticflickr.com/1463/25510068704_4ff20d08ef_b.jpg

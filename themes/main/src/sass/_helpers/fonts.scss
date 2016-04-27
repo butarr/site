@@ -69,18 +69,18 @@ $number-size: 1.3rem;
     font-weight: bold;
     font-size: 1.3rem;
     line-height: 1.5em;
-  }
 
-  blockquote:before {
-    color: $quote-color;
-    font-size: 3.5em;
-    line-height: 0.1em;
-  }
+    &:before {
+      color: $quote-color;
+      font-size: 3.5em;
+      line-height: 0.1em;
+    }
 
-  blockquote:after {
-    color: $quote-color;
-    font-size: 3.5em;
-    line-height: 0.1em;
+    &:after {
+      color: $quote-color;
+      font-size: 3.5em;
+      line-height: 0.1em;
+    }
   }
 
   .outline {
@@ -109,8 +109,6 @@ $number-size: 1.3rem;
   }
 
   a {
-    color: $link-inverted-color;
-
     &:hover {
       font-weight: bold;
     }
@@ -166,6 +164,19 @@ $number-size: 1.3rem;
     .name {
       font: bold #{$text-size}/#{$line-separation-small} $family-sans;
       color: $columnist-name-color;
+    }
+  }
+
+  .button {
+    font: $family-serif;
+    color: bold $text-size $link-color;
+
+    &:visited {
+      color:$link-visited-color;
+    }
+
+    &:hover {
+      color:$link-hover-color;
     }
   }
 }
