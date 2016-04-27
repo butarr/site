@@ -338,23 +338,6 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __title(){
-  font-size: 1.5em;
-  font-weight: bold;
-  line-height: 1.2em;
-
-  @include media-query(TWO){
-    font-size: 2em;
-  }
-}
-
-
-@mixin __page_blockquotes(){
-
-}
-
-
-
 @mixin __search(){
   /* Sets search box font */
   .gsc-input {
