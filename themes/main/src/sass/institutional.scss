@@ -9,7 +9,7 @@
   max-width: 3 * $COLUMN-WIDTH;
   @include column-lateral-spacing(10px);
   @include site-lateral-spacing();
-  
+
   p {
     margin-bottom: $PARAGRAPH-SPACE;
   }

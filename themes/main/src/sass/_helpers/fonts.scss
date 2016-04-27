@@ -22,6 +22,25 @@ $section-name-size: 1rem;
 
 $number-size: 1.3rem;
 
+@mixin __main {
+  a {
+    color: $link-neutral-color;
+    cursor: pointer;
+
+    &:visited {
+      color: $link-neutral-color-visited;
+    }
+
+    &:hover {
+      color: $link-neutral-color-hover;
+    }
+  }
+
+  .outline {
+    font-size: 0;
+  }
+}
+
 @mixin __menu_mobile(){
   a {
     font: $title-size $family-serif;
@@ -358,6 +377,9 @@ $number-size: 1.3rem;
 
   @if( $type == POST ){
     @include __post();
+  }
+  @else if( $type == MAIN ){
+    @include __main();
   }
   @else if( $type == NEWS_LIST ){
     @include __news_list();

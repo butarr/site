@@ -36,26 +36,11 @@ html * {
 
 
 body {
-  a {
-    color: $link-neutral-color;
-    cursor: pointer;
-
-    &:visited {
-      color: $link-neutral-color-visited;
-    }
-
-    &:hover {
-      color: $link-neutral-color-hover;
-    }
-  }
+  @include get-font(MAIN);
 
   & > main {
     width: 100%;
     @include clearfix();
-  }
-
-  .outline {
-    font-size: 0;
   }
 }
 
