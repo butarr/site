@@ -163,7 +163,7 @@ $number-size: 1.3rem;
   .columnists {
     .name {
       font: bold #{$text-size}/#{$line-separation-small} $family-sans;
-      color: $name-color;
+      color: $columnist-name-color;
     }
   }
 }
@@ -211,7 +211,7 @@ $number-size: 1.3rem;
 
   .name {
     font: bold #{$title-size}/#{$line-separation-small} $family-sans;
-    color: $name-color;
+    color: $columnist-name-color;
   }
 }
 
@@ -288,7 +288,7 @@ $number-size: 1.3rem;
 
   .name {
     font: bold #{$text-size}/#{$line-separation-small} $family-sans;
-    color: $name-color;
+    color: $columnist-name-color;
   }
 }
 

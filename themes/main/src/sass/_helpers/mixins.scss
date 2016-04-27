@@ -119,7 +119,6 @@
 }
 
 @mixin standalone_news_title() {
-
   word-spacing: 2px;
 }
 
@@ -134,11 +133,6 @@
     @include media-query(TWO) {
       width: 90px;
     }
-  }
-
-  .name, .description, .job-title {
-    margin: 0;
-    float: left;
   }
 }
 
@@ -163,19 +157,5 @@
 
   blockquote p {
     display: inline;
-  }
-}
-
-@mixin content() {
-  .content{
-    @include get-font(CONTENT);
-    padding-top: 10px;
-    word-spacing: 2px;
-    align-self: center;
-    word-wrap: break-word;
-
-    p {
-      margin-bottom: 20px;
-    }
   }
 }
