@@ -12,6 +12,7 @@ $list-title-size: 1.3rem;
 
 $standalone-title-size: 2rem;
 $standalone-description-size: 1.2rem;
+$standalone-text-size: 1.1rem;
 
 $text-size: 1rem;
 $details-size: 0.9rem;
@@ -174,6 +175,24 @@ $number-size: 1.3rem;
     font: $text-size $family-serif;
     color: $details-color;
   }
+
+  a {
+      color: $link;
+      font-weight: bold;
+
+      &:visited {
+        color: $link-visited;
+      }
+
+      &:hover {
+        color: $link-hover;
+      }
+  }
+
+  p {
+    font: #{$standalone-text-size}/#{$line-separation-big} $family-serif;
+    color: $text-color;
+  }
 }
 
 @mixin __column(){
@@ -192,6 +211,24 @@ $number-size: 1.3rem;
     font: $text-size $family-serif;
     color: $details-color;
   }
+
+  a {
+      color: $link;
+      font-weight: bold;
+
+      &:visited {
+        color: $link-visited;
+      }
+
+      &:hover {
+        color: $link-hover;
+      }
+  }
+
+  p {
+    font: #{$standalone-text-size}/#{$line-separation-big} $family-serif;
+    color: $text-color;
+  }
 }
 
 
@@ -203,7 +240,7 @@ $number-size: 1.3rem;
   }
 
   p {
-    font: #{$text-size}/#{$line-separation-big} $family-serif;
+    font: #{$standalone-text-size}/#{$line-separation-big} $family-serif;
     color: $text-color;
   }
 
@@ -274,30 +311,6 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __content(){
-  font-family: $family-serif;
-  font-size: 1.1em;
-  line-height: 1.5em;
-  text-align: left;
-  color: $text-column;
-
-  @include media-query(TWO){
-    font-size: 1.2em;
-  }
-
-  a {
-      color: $link;
-      font-weight: bold;
-
-      &:visited {
-        color: $link-visited;
-      }
-
-      &:hover {
-        color: $link-hover;
-      }
-  }
-}
 
 
 
@@ -386,9 +399,6 @@ $number-size: 1.3rem;
   }
   @else if( $type == TITLE ){
     @include __title();
-  }
-  @else if( $type == CONTENT ){
-    @include __content();
   }
   @else if( $type == PAGE_BLOCKQUOTES ){
     @include __page_blockquotes();

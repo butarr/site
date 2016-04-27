@@ -1,7 +1,7 @@
 @import '_helpers/mixins';
 @import '_helpers/fonts';
 @import '_helpers/colors';
-
+@import '_helpers/constants';
 
 .institutional {
   @include get-font(INSTITUTIONAL);
@@ -9,6 +9,10 @@
   max-width: 3 * $COLUMN-WIDTH;
   @include column-lateral-spacing(10px);
   @include site-lateral-spacing();
+  
+  p {
+    margin-bottom: $PARAGRAPH-SPACE;
+  }
 
   #partners {
     display: flex;
@@ -26,10 +30,6 @@
   .page-name {
     @include page-name();
     margin-bottom: 30px;
-  }
-
-  p {
-    margin-bottom: 20px;
   }
 
   .title {

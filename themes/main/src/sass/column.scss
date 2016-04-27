@@ -1,16 +1,20 @@
 @import '_helpers/query';
 @import '_helpers/colors';
 @import '_helpers/mixins';
+@import "_helpers/constants";
 
 
 #column {
   @include clearfix();
   @include site-lateral-spacing();
   @include column-lateral-spacing(15px);
-  @include content;
   @include page-blockquotes;
   @include get-font(COLUMN);
   padding-bottom: 10px;
+
+  p {
+    margin-bottom: $PARAGRAPH-SPACE;
+  }
 
   .hat {
     @include page-name();
