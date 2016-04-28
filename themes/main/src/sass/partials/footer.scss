@@ -37,10 +37,10 @@ $social-margin: 10px;
 #page-footer .footer-header {
   margin-bottom: 10px;
   img {
-    height: 2.4em;
+    height: 45px;
 
     @include media-query(THREE) {
-      height: 2.9em;
+      height: 50px;
     }
   }
 }
@@ -69,7 +69,7 @@ $social-margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 120px;
+    margin-left: 130px;
   }
 
   p {
