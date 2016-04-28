@@ -11,12 +11,6 @@
   box-sizing: border-box;
 }
 
-// Hack to IE10
-@-ms-viewport{
-  width: device-width;
-}
-
-
 body {
   & > main {
     width: 100%;
