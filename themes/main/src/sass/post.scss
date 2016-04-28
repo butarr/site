@@ -8,7 +8,7 @@
   @include get-font(POST);
   @include clearfix();
   @include site-lateral-spacing();
-  @include column-lateral-spacing(15px);
+  @include column-lateral-spacing(10px);
   @include page-blockquotes;
   width: 100%;
 

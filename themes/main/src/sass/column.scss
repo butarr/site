@@ -7,7 +7,7 @@
 #column {
   @include clearfix();
   @include site-lateral-spacing();
-  @include column-lateral-spacing(15px);
+  @include column-lateral-spacing(10px);
   @include page-blockquotes;
   @include get-font(COLUMN);
   padding-bottom: 10px;
@@ -30,7 +30,11 @@
   }
 
   figure {
-    margin: 40px 0 20px 0;
+    margin: 20px 0;
+
+    @include media-query(THREE){
+      margin-top: 40px;
+    }
 
     img{
       width: 100%;

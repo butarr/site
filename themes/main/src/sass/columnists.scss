@@ -69,6 +69,7 @@
 
     .name {
       padding-bottom: 7px;
+      display: block;
 
       @include media-query(TWO) {
         display: none;

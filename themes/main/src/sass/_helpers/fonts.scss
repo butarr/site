@@ -17,7 +17,7 @@ $standalone-text-size: 1.1rem;
 $text-size: 1rem;
 $details-size: 0.9rem;
 $title-size: 1.1rem;
-$big-title-size: 1.7rem;
+$big-title-size: 1.6rem;
 $section-name-size: 1rem;
 
 $number-size: 1.3rem;
@@ -25,9 +25,13 @@ $number-size: 1.3rem;
 //Mixins matching scss files
 @mixin __main {
   html {
-    font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+
+    @include media-query(THREE){
+      font-size: 16px;
+    }
   }
 
   body {
@@ -66,10 +70,7 @@ $number-size: 1.3rem;
   }
 
   blockquote {
-    font-style: italic;
-    font-weight: bold;
-    font-size: 1.3rem;
-    line-height: 1.5em;
+    font: italic bold 1.3rem/#{$line-separation-big} $family-serif;
     word-wrap: break-word;
     word-spacing: 2px;
 
@@ -147,7 +148,11 @@ $number-size: 1.3rem;
     }
 
     .title {
-      font: bold #{$title-size}/#{$line-separation-big} $family-serif;
+      font: normal #{$title-size}/#{$line-separation-big} $family-serif;
+
+      @include media-query(THREE){
+        font-weight: bold;
+      }
     }
   }
 
@@ -367,7 +372,7 @@ $number-size: 1.3rem;
   }
 
   .text {
-    font: bold $text-size $family-sans;
+    font: bold $details-size $family-sans;
   }
 
   p {
