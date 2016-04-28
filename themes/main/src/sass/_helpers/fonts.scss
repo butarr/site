@@ -35,6 +35,7 @@ $number-size: 1.3rem;
 
   p {
     font: #{$standalone-text-size}/#{$line-separation-big} $family-serif;
+    word-spacing: 2px;
 
     strong {
       font-weight: bold;
@@ -239,6 +240,12 @@ $number-size: 1.3rem;
   .name {
     font: bold #{$title-size}/#{$line-separation-small} $family-sans;
     color: $columnist-name-color;
+  }
+
+  a:hover {
+    .name {
+      color: $link-hover-color;
+    }
   }
 }
 
