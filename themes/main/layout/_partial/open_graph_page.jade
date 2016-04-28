@@ -2,10 +2,12 @@ meta(property="og:title" content="#{page.title} | #{config.title}")
 meta(property="og:description" content=page.description)
 meta(property="og:type" content="article")
 meta(property="article:published_time" content=page.date.toISOString())
-meta(property="article:section" content=page.area)
 meta(property="article:tag" content=page.hat)
 meta(property="article:publisher" content=config.social.facebook_url)
 
+if page.area
+  meta(property="article:section" content=page.area)
+  
 if page.cover
   meta(property="og:image" content="https:#{page.cover.link}")
 else
