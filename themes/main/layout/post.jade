@@ -6,13 +6,14 @@ block open_graph
 append content
   article#post(itemtype="http://schema.org/NewsArticle", itemscope)
     header
+      - var published_at = utc_to_brt(page.date)
       span.hat(itemprop="about")= page.hat
       h2.title(itemprop="headline")= page.title
       p.description(itemprop="description")= page.description
       span.author(rel="author", itemprop="author")= page.author
       .place-and-time      
         span.place(rel="place", itemprop="contentLocation")= page.place
-        time(datetime=page.date.toISOString())= ', ' + full_date(page.date)
+        time(datetime=published_at.toISOString())= ', ' + full_date(published_at)
       if page.cover
         figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
           - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits

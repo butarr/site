@@ -4,6 +4,7 @@ block open_graph
   include _partial/open_graph_page
 
 append content
+  - var published_at = utc_to_brt(page.date)
   - var columnist = site.data.columnists[page.columnist]
   article#column(itemscope, itemtype="http://schema.org/BlogPosting")
     span.hat Coluna
@@ -13,8 +14,8 @@ append content
         img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=columnist.photo )
         .name-and-time
           span.name(itemprop="name")= columnist.name
-          time(datetime=page.date.toISOString())= full_date(page.date)
-    meta(itemprop="datePublished", content=page.date)
+          time(datetime=published_at.toISOString())= full_date(published_at)
+    meta(itemprop="datePublished", content=published_at)
     meta(itemprop="image", content='http:'+columnist.photo)
     if page.cover
       figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")

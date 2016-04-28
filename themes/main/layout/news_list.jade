@@ -9,7 +9,7 @@ append content
   section#news-list(itemscope itemtype="http://schema.org/ItemList")
     h2.page-name(itemprop="about")= page.area
     each post in page.news
-      - var published_date = new Date(post.date)
+      - var published_at = utc_to_brt(post.date)
       a.news-item-link(href=post.path)
         article.news-item(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class= "divisor")
           h3.outline(itemprop= "headline")= post.title
@@ -20,4 +20,4 @@ append content
           .content(class="no-image" class= "divisor")
             p.title(itemprop= "headline")= post.title
             p.description(itemprop="description")= post.description
-            time.date(datetime=published_date.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_date)
+            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)

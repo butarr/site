@@ -3,9 +3,9 @@ extends base
 append content
   article#post(itemtype="http://schema.org/NewsArticle", itemscope)
     header
-      - var published_date = new Date(page.date)
+      - var published_at = utc_to_brt(page.date)
       h2.title(itemprop="headline")= page.title
-      time(datetime=page.date.toISOString())= full_date(published_date)
+      time(datetime=published_at.toISOString())= full_date(published_at)
       if page.cover
         a(target="_blank" href=page.issuu)
           figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
