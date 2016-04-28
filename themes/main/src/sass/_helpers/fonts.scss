@@ -337,19 +337,29 @@ $number-size: 1.3rem;
   .title {
     font: bold $text-size $family-sans;
     text-transform: uppercase;
+    color: $text-color;
+  }
+
+  .list {
+    font: #{$standalone-text-size}/#{$line-separation-big} $family-serif;
+    color: $text-color;
+
+    dt {
+      font-weight: bold;
+    }
   }
 
   a {
-      color: $link-color;
-      font-weight: bold;
+    color: $link-color;
+    font-weight: bold;
 
-      &:visited {
-        color: $link-visited-color;
-      }
+    &:visited {
+      color: $link-visited-color;
+    }
 
-      &:hover {
-        color: $link-hover-color;
-      }
+    &:hover {
+      color: $link-hover-color;
+    }
   }
 
   .text {
