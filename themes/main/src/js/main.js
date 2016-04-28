@@ -36,7 +36,6 @@ $(document).ready(function() {
   $('#close-search-button').click(function() {
     $(toggle_el).removeClass('open');
     $(toggle_content).removeClass('open-search');
-    $(this).removeClass('open');
   });
 
   if ($('.social-network')[0]) {

@@ -3,6 +3,23 @@
 @import '_helpers/constants';
 @import '_helpers/mixins';
 
+$image-height: 1.6rem;
+$lateral-margin: 10px;
+
+#search-icon {
+  position: fixed;
+  right: 3px;
+  top: 18px;
+  height: $image-height;
+  margin-right: $lateral-margin;
+  cursor: pointer;
+
+  @include media-query(FOUR){
+    position: initial;
+  }
+}
+
+
 #search-tool {
   display: none;
   width: 100%;
@@ -30,6 +47,7 @@
   #close-search-button {
     height: 15px;
     margin-bottom: 5px;
+    cursor: pointer;
 
     @include media-query(FOUR){
       height: 13px;

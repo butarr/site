@@ -58,18 +58,6 @@ $logo-big-height: 5.2rem;
   }
 }
 
-#search-icon {
-  position: fixed;
-  right: 3px;
-  top: 18px;
-  height: $image-height;
-  margin-right: $lateral-margin;
-
-  @include media-query(FOUR){
-    position: initial;
-  }
-}
-
 #page-header .contracted {
   @include media-query(FOUR) {
     height: $HEADER-HEIGHT-CONTRACTED;
