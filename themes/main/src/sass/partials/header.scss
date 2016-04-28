@@ -34,16 +34,14 @@ $logo-big-height: 5.2rem;
 
 #page-header .banner-logo {
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: $logo-small-height;
   width: 210px;
-  background: $background url("/img/logo.svg") no-repeat;
+  background: $background url("/img/logo.svg") no-repeat center;
 
   @include media-query(FOUR){
     height: $logo-big-height;
     width: 450px;
-    background: $background url("/img/logo-tagline.svg") no-repeat;
+    background: $background url("/img/logo-tagline.svg") no-repeat center;
   }
 }
 
@@ -78,7 +76,7 @@ $logo-big-height: 5.2rem;
     display:flex;
 
     .banner-logo{
-      background: $background url("/img/logo.svg") no-repeat;
+      background: $background url("/img/logo.svg") no-repeat center;
       height: $logo-small-height;
       width: 210px;
     }
