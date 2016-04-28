@@ -36,19 +36,20 @@ $logo-big-height: 5.2rem;
   display: flex;
   height: $logo-small-height;
   width: 210px;
-  background: $background url("/img/logo.svg") no-repeat center;
+  margin-bottom: 3px;
+  background: $background url("/img/logo.svg") no-repeat center center;
 
   @include media-query(FOUR){
     height: $logo-big-height;
     width: 450px;
-    background: $background url("/img/logo-tagline.svg") no-repeat center;
+    background: $background url("/img/logo-tagline.svg") no-repeat center center;
   }
 }
 
 #hamburguer {
   position: absolute;
   left: 3px;
-  top: 13px;
+  top: 15px;
   height: $image-height;
   margin-top: 5px;
   margin-left: $lateral-margin;
@@ -62,9 +63,10 @@ $logo-big-height: 5.2rem;
   @include media-query(FOUR) {
     height: $HEADER-HEIGHT-CONTRACTED;
     display:flex;
+    margin-bottom: 3px;
 
     .banner-logo{
-      background: $background url("/img/logo.svg") no-repeat center;
+      background: $background url("/img/logo.svg") no-repeat center center;
       height: $logo-small-height;
       width: 210px;
     }

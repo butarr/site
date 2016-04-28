@@ -3,13 +3,13 @@
 @import '_helpers/constants';
 @import '_helpers/mixins';
 
-$image-height: 1.6rem;
+$image-height: 25px;
 $lateral-margin: 10px;
 
 #search-icon {
   position: fixed;
   right: 3px;
-  top: 18px;
+  top: 15px;
   height: $image-height;
   margin-right: $lateral-margin;
   cursor: pointer;
@@ -18,7 +18,6 @@ $lateral-margin: 10px;
     position: initial;
   }
 }
-
 
 #search-tool {
   display: none;
@@ -32,8 +31,8 @@ $lateral-margin: 10px;
 
   @include media-query(FOUR){
     position: absolute;
-    width: 220px;
-    right: -40px;
+    width: 180px;
+    right: -28px;
     top: 33px;
     padding: 0;
   }
@@ -46,7 +45,7 @@ $lateral-margin: 10px;
 
   #close-search-button {
     height: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     cursor: pointer;
 
     @include media-query(FOUR){
@@ -59,9 +58,10 @@ $lateral-margin: 10px;
   // Sets search box size
   #___gcse_0 {
     width: 100%;
+    margin-bottom: 10px;
     padding-right: 10px;
     @include media-query(FOUR){
-      width: 200px;
+      width: 160px;
     }
   }
 
@@ -73,9 +73,10 @@ $lateral-margin: 10px;
   // Sets to zero search box padding
   .gsc-search-box {
       padding: 0;
+      margin: 0;
   }
 
-  // Hides search box border created by Googl
+  // Hides search box border created by Google
    .gsc-control-cse-pt_PT {
      padding: 0;
      width: 100%;
@@ -86,8 +87,8 @@ $lateral-margin: 10px;
    // Sets config from search box white space
    .gsc-input {
      height: 27px;
-     width: 100%;
      padding: 0;
+     width: 100%;
      border-radius: 13px;
      border-color: $content-divisor;
 
@@ -126,7 +127,7 @@ $lateral-margin: 10px;
 
   // Add a border between individual search results
   .gs-webResult {
-      border: 1px solid #eee;
+      border: 1px solid $box-border-neutral;
       padding: 1em;
   }
 
@@ -135,12 +136,36 @@ $lateral-margin: 10px;
     display: none;
   }
 
+  // Makes search result cursor wrapped
+  .gsc-cursor {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+
   // Highlight the pagination buttons at the bottom of search results
   .gsc-cursor-page {
-      margin-top: 30px;
-      font-size: 1.2em;
+      margin-top: 10px;
       padding: 4px 8px;
       border: 2px solid #ccc;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $link-inverted-color-hover;
+      }
+  }
+
+  // Sets background color of current page cursor
+  .gsc-cursor-current-page {
+    background-color: $link-visited-color;
+  }
+
+  // Sets cursor box config
+  .gsc-cursor-box {
+    border-top: 0;
   }
 
   // Adds space between image and search results
@@ -153,35 +178,12 @@ $lateral-margin: 10px;
     display: none;
   }
 
-  // Sets cursor box config
-  .gsc-cursor-box {
-    border-top: 0;
-  }
-
-  // Makes search result cursor wrapped
-  .gsc-cursor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
   // Hides thumbnail image for mobile layout
   .gsc-thumbnail {
     display: none;
 
-    @include media-query(FOUR){
+    @include media-query(TWO){
       display: block;
     }
-  }
-
-  // Removes underline from cursor
-  .gsc-cursor-page {
-    text-decoration: none;
-  }
-
-  // Sets background color of current page cursor
-  .gsc-cursor-current-page {
-    background-color: $red-dark;
   }
 }
