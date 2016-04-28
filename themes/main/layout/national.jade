@@ -56,7 +56,7 @@ append content
           - var post=page.featured_01
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
           article#featured-1(itemscope itemtype="https://schema.org/NewsArticle" class="featured-big-picture" class="divisor" class="spacing")
-            h3.outline= post.title
+            h3.offscreen= post.title
             a(itemprop="url" href=post.path)
               figure
                 img(src=post.cover.medium alt=imageDescription title=imageDescription itemprop="image")
@@ -67,7 +67,7 @@ append content
           - var post=page.featured_02
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
           article#featured-2(itemscope itemtype="https://schema.org/NewsArticle" class="featured-small-picture" class="divisor" class="spacing")
-            h3.outline(itemprop="headline")= post.title
+            h3.offscreen(itemprop="headline")= post.title
             a(itemprop="url" href=post.path)
               figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
               p.title(itemprop="headline")= post.title
@@ -76,7 +76,7 @@ append content
           - var post=page.featured_03
           - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
           article#featured-3(itemscope itemtype="https://schema.org/NewsArticle" class="featured-small-picture" class="divisor" class="spacing")
-            h3.outline(itemprop="headline")= post.title
+            h3.offscreen(itemprop="headline")= post.title
             a(itemprop="url" href=post.path)
               figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
               p.title(itemprop="headline")= post.title
@@ -125,7 +125,7 @@ append content
           - var post=page.featured_07
           - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
           article#featured-7(itemscope itemtype="https://schema.org/NewsArticle" class="article-footer" class="spacing")
-            h3.outline(itemprop="headline")= post.title
+            h3.offscreen(itemprop="headline")= post.title
             span.hat(itemprop="about")= post.hat
             a(itemprop="url" href=post.path)
               figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
@@ -135,7 +135,7 @@ append content
           - var post=page.featured_08
           - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
           article#featured-8(itemscope itemtype="https://schema.org/NewsArticle" class="article-footer" class="spacing")
-            h3.outline(itemprop="headline")= post.title
+            h3.offscreen(itemprop="headline")= post.title
             span.hat(itemprop="about")= post.hat
             a(itemprop="url" href=post.path)
               figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")

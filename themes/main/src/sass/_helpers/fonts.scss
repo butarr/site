@@ -79,10 +79,15 @@ $number-size: 1.3rem;
     }
   }
 
-  .outline {
+  .offscreen {
     position: absolute;
-    top: -9999px;
-    left: -9999px;
+    clip: rect(1px 1px 1px 1px); /* for Internet Explorer */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
   }
 }
 
@@ -373,6 +378,10 @@ $number-size: 1.3rem;
 
   .text {
     font: bold $details-size $family-sans;
+
+    @include media-query(THREE){
+      font-size: $text-size;
+    }
   }
 
   p {
@@ -400,7 +409,7 @@ $number-size: 1.3rem;
 
    // Sets font from page cursor of search results
    .gsc-cursor-page {
-     font-size: 1.2em;
+     font-size: 1.2rem;
      font-family: $family-serif;
    }
 }
