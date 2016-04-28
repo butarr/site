@@ -27,14 +27,6 @@
   }
 }
 
-@mixin transform($that) {
-  -webkit-transform: $that;
-  -moz-transform: $that;
-  -ms-transform: $that;
-  -o-transform: $that;
-  transform: $that;
-}
-
 @mixin transition-left(){
   transition:  left 0.1s ease-in-out;
 }
@@ -106,10 +98,6 @@
   display: block;
   border-top: 3px solid $title-underline;
   padding-top: 5px;
-}
-
-@mixin standalone_news_title() {
-  word-spacing: 2px;
 }
 
 @mixin person() {
