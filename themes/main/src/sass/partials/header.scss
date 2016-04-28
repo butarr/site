@@ -4,7 +4,9 @@
 @import '_helpers/mixins';
 
 $lateral-margin: 10px;
-$image-height: 1.6em;
+$image-height: 1.6rem;
+$logo-small-height: 2.5rem;
+$logo-big-height: 5.2rem;
 
 #page-header {
   position: fixed;
@@ -34,12 +36,12 @@ $image-height: 1.6em;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2.5em;
+  height: $logo-small-height;
   width: 210px;
   background: $background url("/img/logo.svg") no-repeat;
 
   @include media-query(FOUR){
-    height: 82.45px;
+    height: $logo-big-height;
     width: 450px;
     background: $background url("/img/logo-tagline.svg") no-repeat;
   }
@@ -77,7 +79,7 @@ $image-height: 1.6em;
 
     .banner-logo{
       background: $background url("/img/logo.svg") no-repeat;
-      height: 2.5em;
+      height: $logo-small-height;
       width: 210px;
     }
 
