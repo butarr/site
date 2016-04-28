@@ -17,7 +17,7 @@ $standalone-text-size: 1.1rem;
 $text-size: 1rem;
 $details-size: 0.9rem;
 $title-size: 1.1rem;
-$big-title-size: 1.6rem;
+$big-title-size: 1.5rem;
 $section-name-size: 1rem;
 
 $number-size: 1.3rem;
@@ -93,7 +93,7 @@ $number-size: 1.3rem;
 
 @mixin __menu_desktop(){
   a {
-    font: bold $text-size $family-serif;
+    font: $text-size $family-serif;
     color: $link-inverted-color;
   }
 }
@@ -147,10 +147,6 @@ $number-size: 1.3rem;
 
     .title {
       font: normal #{$title-size}/#{$line-separation-big} $family-serif;
-
-      @include media-query(THREE){
-        font-weight: bold;
-      }
     }
   }
 
@@ -166,8 +162,12 @@ $number-size: 1.3rem;
   }
 
   .columnists {
+    .title {
+      font: bold #{$title-size}/#{$line-separation-small} $family-serif;
+    }
+
     .name {
-      font: bold #{$text-size}/#{$line-separation-small} $family-sans;
+      font: bold #{$details-size}/#{$line-separation-small} $family-sans;
       color: $columnist-name-color;
     }
 
