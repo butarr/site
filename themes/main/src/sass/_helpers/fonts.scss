@@ -91,17 +91,6 @@ $number-size: 1.3rem;
       line-height: 0.1em;
     }
   }
-
-  .offscreen {
-    position: absolute;
-    clip: rect(1px 1px 1px 1px); /* for Internet Explorer */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0;
-    border: 0;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-  }
 }
 
 @mixin __menu_mobile(){
