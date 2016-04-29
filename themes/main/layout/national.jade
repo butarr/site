@@ -24,14 +24,14 @@ mixin printed-news
   h2.section-name Edições Impressas
   img(src="/img/newspaper.png" alt="jornal")
   if page.minas_gerais
-    a(class="button" href= page.minas_gerais.path)
-      h3 Minas Gerais
+    a(href= page.minas_gerais.path)
+      h3.button Minas Gerais
   if page.parana
-    a(class="button" href= page.parana.path)
-      h3 Paraná
+    a(href= page.parana.path)
+      h3.button Paraná
   if page.rio_de_janeiro
-    a(class="button" href= page.rio_de_janeiro.path)
-      h3 Rio de Janeiro
+    a(href= page.rio_de_janeiro.path)
+      h3.button Rio de Janeiro
 
 extend base
 
