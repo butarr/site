@@ -37,7 +37,7 @@ $social-margin: 10px;
 #page-footer .footer-header {
   margin-bottom: 10px;
   img {
-    height: 45px;
+    height: 35px;
 
     @include media-query(THREE) {
       height: 50px;
@@ -90,7 +90,7 @@ $social-margin: 10px;
     margin-top: 5px;
 
     img {
-      height: 30px;
+      height: 25px;
       margin: 0 $social-margin;
 
       @include media-query(THREE) {
