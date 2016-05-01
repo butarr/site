@@ -9,7 +9,7 @@ $red-pinker: rgba(195, 59, 83, 1);
 //Color Variables to use externally
 $background: $red-base;
 $menu-over: $red-light;
-$menu-divisor: $red-dark;
+$menu-divisor-desktop: $red-dark;
 $menu-divisor-mobile: $red-base;
 
 $text-color: lighten($neutral-base, 25%);
@@ -31,10 +31,10 @@ $link-inverted-color-hover: lighten($neutral-base, 90%);
 
 $title-underline: $red-base;
 $box-border: $red-base;
+$box-border-neutral: lighten($neutral-base, 80%);
 $box-background: lighten($neutral-base, 90%);
 $vertical-bar: lighten($neutral-base, 80%);
 $content-divisor: lighten($neutral-base, 70%);
-$box-border-neutral: lighten($neutral-base, 80%);
 
 $number-color: $red-base;
 $quote-color: $red-base;

@@ -24,7 +24,7 @@ $logo-big-height: 5.2rem;
 
   @include media-query(FOUR) {
     height: $HEADER-HEIGHT-DESKTOP;
-    border-bottom: 2px solid $menu-divisor;
+    border-bottom: 2px solid $menu-divisor-desktop;
   }
 }
 

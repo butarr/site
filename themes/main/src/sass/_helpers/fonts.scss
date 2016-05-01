@@ -81,7 +81,7 @@ $number-size: 1.3rem;
   }
 
   blockquote {
-    font: italic bold 1.3rem/#{$line-separation-big} $family-serif;
+    font: italic bold 1.3rem/#{$line-separation-big} ;
     word-wrap: break-word;
     word-spacing: 2px;
 
