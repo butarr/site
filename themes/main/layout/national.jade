@@ -23,12 +23,18 @@ a(href="/colunistas" class="button" title="link para a pagina de colunistas")
 mixin printed-news
   h2.section-name Edições Impressas
   img(src="/img/newspaper.png" alt="jornal")
+  if page.ceara
+    a(href= page.ceara.path)
+      h3.button Ceará
   if page.minas_gerais
     a(href= page.minas_gerais.path)
       h3.button Minas Gerais
   if page.parana
     a(href= page.parana.path)
       h3.button Paraná
+  if page.pernambuco
+    a(href= page.pernambuco.path)
+      h3.button Pernambuco
   if page.rio_de_janeiro
     a(href= page.rio_de_janeiro.path)
       h3.button Rio de Janeiro

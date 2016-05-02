@@ -5,6 +5,10 @@ rio_de_janeiro:
   path: //farm2.staticflickr.com/1463/25510068704_4ff20d08ef_b.jpg
 parana:
   path: //farm2.staticflickr.com/1463/25510068704_4ff20d08ef_b.jpg
+pernambuco:
+  path: //farm2.staticflickr.com/1463/25510068704_4ff20d08ef_b.jpg
+ceara:
+  path: //farm2.staticflickr.com/1463/25510068704_4ff20d08ef_b.jpg
 
 featured_01:
   cover:
