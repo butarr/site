@@ -196,15 +196,15 @@ $number-size: 1.3rem;
   }
 
   .button {
-    font: bold $text-size $family-serif;
+    font: bold $text-size $family-sans;
     color: $link-color;
 
     &:visited {
-      color:$link-visited-color;
+      color: $link-visited-color;
     }
 
     &:hover {
-      color:$link-hover-color;
+      color: $link-hover-color;
     }
   }
 }

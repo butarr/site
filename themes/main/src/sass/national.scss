@@ -447,15 +447,11 @@
   }
 
   .button {
-    color: $red-base;
-    font-family: 'Merriweather Sans', serif;
     border: 1px solid #b7b7b7;
     border-radius: 3px;
     box-shadow: 0px 1px 1px #b7b7b7;
-    font-weight: bold;
     padding: 8px 0;
     text-align: center;
-    font-size: 16px;
     width: 100%;
     margin: 5px auto;
     @include media-query (THREE) {
@@ -465,7 +461,6 @@
 
   .button:hover {
     box-shadow: 1px 2px 1px #b7b7b7;
-    color:$red-light;
   }
 }
 
@@ -510,7 +505,6 @@
     box-shadow: 0px 1px 1px #b7b7b7;
     padding: 8px 0;
     text-align: center;
-    font-size: 16px;
     width: 100%;
     margin: 20px auto;
     @include media-query (THREE) {
