@@ -302,12 +302,8 @@
 
 #home .gallery-videos {
   iframe, img, a{
-    height: 206px;
+    height: 263px;
     width: 100%;
-
-    @include media-query(MOBILE){
-      height: 263px;
-    }
 
     @include media-query(THREE){
       height: 337px;
