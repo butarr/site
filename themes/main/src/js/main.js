@@ -20,9 +20,10 @@ $(document).ready(function() {
 
   var toggle_el = $('#search-tool');
   var toggle_content = $('#content');
+  var toggle_icon = $('#search-icon');
 
   $('#search-icon').click(function() {
-    if($('#search-icon').hasClass('open')) {
+    if(toggle_icon.hasClass('open')) {
        $(toggle_el).removeClass('open');
        $(toggle_content).removeClass('open-search');
        $(this).removeClass('open');
@@ -36,6 +37,7 @@ $(document).ready(function() {
   $('#close-search-button').click(function() {
     $(toggle_el).removeClass('open');
     $(toggle_content).removeClass('open-search');
+    $(toggle_icon).removeClass('open');
   });
 
   if ($('.social-network')[0]) {
