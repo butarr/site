@@ -8,18 +8,20 @@ $social-margin: 10px;
 
 #page-footer {
   display: flex;
+  display: -webkit-flex; //Old Safari
   flex-direction: column;
+  -webkit-flex-direction: column; //Old Safari
   align-items: center;
-  @include get-font(FOOTER);
+  -webkit-align-items: center; //Old Safari
   width: 100%;
   margin-top: 10px;
   padding: 25px 0;
   background-color: $background;
+  @include get-font(FOOTER);
 }
 
 #page-footer .footer-container {
   @include media-query(THREE) {
-    align-items: flex-start;
     width: 3 * $COLUMN-WIDTH;
     margin: 0 auto;
     padding: 20px 0;
@@ -48,6 +50,7 @@ $social-margin: 10px;
 #page-footer .footer-items {
   @include media-query(THREE) {
     display: flex;
+    display: -webkit-flex; //Old Safari
   }
 
   .footer-menu {
@@ -66,9 +69,6 @@ $social-margin: 10px;
 
 #page-footer .footer-social-block {
   @include media-query(THREE) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     margin-left: 130px;
   }
 
@@ -84,8 +84,9 @@ $social-margin: 10px;
 
   .social-media-icons {
     display: flex;
+    display: -webkit-flex; //Old Safari
     justify-content: center;
-    align-items: center;
+    -webkit-justify-content: center; //Old Safari
     margin-bottom: 5px;
     margin-top: 5px;
 
