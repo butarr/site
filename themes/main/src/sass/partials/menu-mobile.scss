@@ -26,12 +26,12 @@
 }
 
 #menu-mobile .menu-header {
-  display: flex;
   display: -webkit-flex; //Old Safari
-  justify-content: space-between;
+  display: flex;
   -webkit-justify-content: space-between; //Old Safari
-  align-items: center;
+  justify-content: space-between;
   -webkit-align-items: center; //Old Safari
+  align-items: center;
   height: 60px;
   padding: 10px 20px 0 20px;
 
@@ -52,12 +52,12 @@
 
 #menu-mobile .social-media-icons {
   height: 55px;
-  display: flex;
   display: -webkit-flex; //Old Safari
-  justify-content: center;
+  display: flex;
   -webkit-justify-content: center; //Old Safari
-  align-items: center;
+  justify-content: center;
   -webkit-align-items: center; //Old Safari
+  align-items: center;
 
   img {
     height: 1.6em;
@@ -75,9 +75,9 @@
 
   a {
     padding: 10px 8px;
-    display: flex;
     display: -webkit-flex; //Old Safari
-    justify-content: center;
+    display: flex;
     -webkit-justify-content: center; //Old Safari
+    justify-content: center;  
   }
 }

@@ -17,12 +17,12 @@ $logo-big-height: 5.2rem;
 }
 
 #page-header .banner-header {
-  display: flex;
   display: -webkit-flex; //Old Safari
-  justify-content: center;
+  display: flex;
   -webkit-justify-content: center; //Old Safari
-  align-items: center;
+  justify-content: center;
   -webkit-align-items: center; //Old Safari
+  align-items: center;
   height: $HEADER-HEIGHT-CONTRACTED;
 
   @include media-query(FOUR) {
@@ -79,27 +79,28 @@ $logo-big-height: 5.2rem;
 }
 
 #page-header #header-icons {
-  display: flex;
   display: -webkit-flex; //Old Safari
-  align-items: center;
+  display: flex;
   -webkit-align-items: center; //Old Safari
+  align-items: center;
+
   position: absolute;
   top: 30%;
 
   @include media-query(FOUR) {
     width: 230px;
+    -webkit-justify-content: flex-end; //Old Safari
     justify-content: flex-end;
-    -webkit-justify-content: center; //Old Safari
   }
 
   .social-media-icons {
     display: none;
 
     @include media-query(FOUR) {
-      display: flex;
       display: -webkit-flex; //Old Safari
-      align-items: center;
+      display: flex;
       -webkit-align-items: center; //Old Safari
+      align-items: center;  
 
       img {
         height: $image-height;

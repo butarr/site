@@ -8,18 +8,18 @@
   @include get-font(MENU_DESKTOP);
 
   @include media-query(FOUR) {
-    display: flex;
     display: -webkit-flex; //Old Safari
+    display: flex;
     height: 40px;
   }
 
   ul {
-    display: flex;
     display: -webkit-flex; //Old Safari
-    justify-content: center;
+    display: flex;
     -webkit-justify-content: center; //Old Safari
-    align-items: center;
+    justify-content: center;
     -webkit-align-items: center; //Old Safari
+    align-items: center;  
     width: 3 * $COLUMN-WIDTH;
     height: 80px;
 
