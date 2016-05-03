@@ -17,10 +17,14 @@ $logo-big-height: 5.2rem;
 }
 
 #page-header .banner-header {
-  height: $HEADER-HEIGHT-CONTRACTED;
   display: flex;
+  display: -webkit-flex; //Old Safari
   justify-content: center;
+  -webkit-justify-content: center; //Old Safari
   align-items: center;
+  -webkit-align-items: center; //Old Safari
+
+  height: $HEADER-HEIGHT-CONTRACTED;
 
   @include media-query(FOUR) {
     height: $HEADER-HEIGHT-DESKTOP;
@@ -33,7 +37,6 @@ $logo-big-height: 5.2rem;
 }
 
 #page-header .banner-logo {
-  display: flex;
   height: $logo-small-height;
   width: 210px;
   margin-bottom: 3px;
@@ -62,7 +65,6 @@ $logo-big-height: 5.2rem;
 #page-header .contracted {
   @include media-query(FOUR) {
     height: $HEADER-HEIGHT-CONTRACTED;
-    display:flex;
     margin-bottom: 3px;
 
     .banner-logo{
@@ -79,13 +81,16 @@ $logo-big-height: 5.2rem;
 
 #page-header #header-icons {
   display: flex;
+  display: -webkit-flex; //Old Safari
   align-items: center;
+  -webkit-align-items: center; //Old Safari
   position: absolute;
   top: 30%;
 
   @include media-query(FOUR) {
     width: 230px;
     justify-content: flex-end;
+    -webkit-justify-content: center; //Old Safari
   }
 
   .social-media-icons {
@@ -93,7 +98,9 @@ $logo-big-height: 5.2rem;
 
     @include media-query(FOUR) {
       display: flex;
+      display: -webkit-flex; //Old Safari
       align-items: center;
+      -webkit-align-items: center; //Old Safari
 
       img {
         height: $image-height;
