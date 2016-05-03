@@ -10,14 +10,23 @@
   @include column-lateral-spacing(10px);
   @include site-lateral-spacing();
 
+  @include media-query(TWO) {
+    max-width: (3 * $COLUMN-WIDTH) + (2 * $LATERAL-PAGE-SPACE);
+    @include column-lateral-spacing($LATERAL-PAGE-SPACE);
+  }
+
   p {
     margin-bottom: $PARAGRAPH-SPACE;
   }
 
   #partners {
+    display: -webkit-flex; //Old Safari
     display: flex;
+    -webkit-flex-wrap: wrap; //Old Safari
     flex-wrap: wrap;
+    -webkit-justify-content: space-around; //Old Safari
     justify-content: space-around;
+    -webkit-align-items: center; //Old Safari
     align-items: center;
 
     img {
