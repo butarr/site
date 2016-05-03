@@ -9,16 +9,18 @@
 
   @include media-query(FOUR) {
     display: flex;
-    justify-content: center;
+    display: -webkit-flex; //Old Safari
     height: 40px;
   }
 
   ul {
     height: 80px;
     display: flex;
+    display: -webkit-flex; //Old Safari
     align-items: center;
+    -webkit-align-items: center; //Old Safari
     justify-content: center;
-    flex-wrap: nowrap;
+    -webkit-justify-content: center; //Old Safari
     width: 3 * $COLUMN-WIDTH;
 
     @include media-query(FOUR) {
