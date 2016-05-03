@@ -5,7 +5,7 @@
 
   @include media-query(THREE)
     display: -webkit-flex; //Old Safari
-    display: flex
+    display: flex;
     -webkit-justify-content: center; //Old Safari
     justify-content: center;
     padding: 0 10px 10px 10px;
