@@ -274,32 +274,6 @@
   padding-left: 10px;
 }
 
-#home .gallery-images .gallery-mobile-smaller {
-  display: flex;
-  justify-content: center;
-  @include media-query(THREE){
-    display: none;
-  }
-}
-
-#home .gallery-images .gallery-mobile {
-  display: none;
-  @include media-query(MOBILE){
-    display: flex;
-    justify-content: center;
-  }
-  @include media-query(THREE){
-    display: none;
-  }
-}
-
-#home .gallery-images .gallery-desktop {
-  display: none;
-  @include media-query(THREE){
-    display: inline-block;
-  }
-}
-
 #home .gallery-videos {
   iframe, img, a{
     height: 263px;
