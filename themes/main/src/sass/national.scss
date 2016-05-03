@@ -287,10 +287,13 @@
 
 #home .gallery-images, .gallery-videos{
   width: 2 * $COLUMN_WIDTH;
-  @include column-lateral-spacing();
 
   .section-name {
     @include section-name();
+  }
+
+  @include media-query(THREE) {
+    @include column-lateral-spacing();
   }
 }
 
