@@ -10,7 +10,11 @@
   @include column-lateral-spacing(10px);
   @include page-blockquotes;
   @include get-font(COLUMN);
-  padding-bottom: 10px;
+
+  @include media-query(TWO) {
+    max-width: (3 * $COLUMN-WIDTH) + (2 * $LATERAL-PAGE-SPACE);
+    @include column-lateral-spacing($LATERAL-PAGE-SPACE);
+  }
 
   p {
     margin-bottom: $PARAGRAPH-SPACE;
