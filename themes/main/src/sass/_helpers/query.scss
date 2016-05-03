@@ -1,9 +1,9 @@
 @import 'constants';
 
-$two_columns: (2 * $COLUMN_WIDTH) + 30px;
-$three_columns: (3 * $COLUMN_WIDTH) + 30px;
-$four_columns: (4 * $COLUMN_WIDTH) + 30px;
-$five_columns: (5 * $COLUMN_WIDTH) + 30px;
+$two_columns: (2 * $COLUMN_WIDTH) + (2 * $LATERAL-PAGE-SPACE);
+$three_columns: (3 * $COLUMN_WIDTH) + (2 * $LATERAL-PAGE-SPACE);
+$four_columns: (4 * $COLUMN_WIDTH) + (2 * $LATERAL-PAGE-SPACE);
+$five_columns: (5 * $COLUMN_WIDTH) + (2 * $LATERAL-PAGE-SPACE);
 
 
 @mixin media-query($canvas) {

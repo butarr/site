@@ -15,16 +15,16 @@
   @include get-font(NATIONAL);
 
   @include media-query (THREE){
-    max-width: 3 * $COLUMN-WIDTH;
-    @include column-lateral-spacing(0);
+    max-width: 3 * $COLUMN-WIDTH + (2 * $LATERAL-PAGE-SPACE);
+    @include column-lateral-spacing($LATERAL-PAGE-SPACE);
   }
 
   @include media-query (FOUR){
-    max-width: 4 * $COLUMN-WIDTH;
+    max-width: 4 * $COLUMN-WIDTH + (2 * $LATERAL-PAGE-SPACE);
   }
 
   @include media-query(FIVE) {
-    max-width: 5 * $COLUMN-WIDTH;
+    max-width: 5 * $COLUMN-WIDTH + (2 * $LATERAL-PAGE-SPACE);
   }
 
   .container {
