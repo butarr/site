@@ -12,9 +12,9 @@
   @include page-blockquotes;
   width: 100%;
 
-  @include media-query(THREE){
-    max-width: 3 * $COLUMN-WIDTH;
-    @include column-lateral-spacing();
+  @include media-query(TWO) {
+    max-width: (3 * $COLUMN-WIDTH) + (2 * $LATERAL-PAGE-SPACE);
+    @include column-lateral-spacing($LATERAL-PAGE-SPACE);
   }
 
   iframe {
