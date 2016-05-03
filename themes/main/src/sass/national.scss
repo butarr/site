@@ -232,6 +232,8 @@
 
 #home .box-container {
   display: flex;
+  display: -webkit-flex; //Old Safari
+  width: 100%;
 
   @include media-query(THREE){
     width: $COLUMN-WIDTH;
@@ -239,6 +241,7 @@
   }
 
   .featured-text-box {
+    width: 100%;
     background-color: $box-background;
     border-top: 3px solid $box-border;
     padding: 10px;
