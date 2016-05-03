@@ -34,18 +34,6 @@ $(document).ready(function() {
      }
   });
 
-  $('#search-icon').on('touchstart click', function(){
-    if(toggle_icon.hasClass('open')) {
-       $(toggle_el).removeClass('open');
-       $(toggle_content).removeClass('open-search');
-       $(this).removeClass('open');
-     } else {
-       $(toggle_el).addClass('open');
-       $(toggle_content).addClass('open-search');
-       $(this).addClass('open');
-     }
-  });
-
   $('#close-search-button').click(function() {
     $(toggle_el).removeClass('open');
     $(toggle_content).removeClass('open-search');
