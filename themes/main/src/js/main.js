@@ -34,7 +34,7 @@ $(document).ready(function() {
      }
   });
 
-  $('#search-icon').touchstart(function() {
+  $('#search-icon').on('touchstart click', function(){
     if(toggle_icon.hasClass('open')) {
        $(toggle_el).removeClass('open');
        $(toggle_content).removeClass('open-search');
