@@ -14,14 +14,14 @@
   }
 
   ul {
-    height: 80px;
     display: flex;
     display: -webkit-flex; //Old Safari
-    align-items: center;
-    -webkit-align-items: center; //Old Safari
     justify-content: center;
     -webkit-justify-content: center; //Old Safari
+    align-items: center;
+    -webkit-align-items: center; //Old Safari
     width: 3 * $COLUMN-WIDTH;
+    height: 80px;
 
     @include media-query(FOUR) {
       width: 100%;

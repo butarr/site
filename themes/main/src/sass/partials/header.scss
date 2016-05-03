@@ -23,7 +23,6 @@ $logo-big-height: 5.2rem;
   -webkit-justify-content: center; //Old Safari
   align-items: center;
   -webkit-align-items: center; //Old Safari
-
   height: $HEADER-HEIGHT-CONTRACTED;
 
   @include media-query(FOUR) {

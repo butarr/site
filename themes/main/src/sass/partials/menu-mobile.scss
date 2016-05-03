@@ -26,10 +26,13 @@
 }
 
 #menu-mobile .menu-header {
-  height: 60px;
   display: flex;
+  display: -webkit-flex; //Old Safari
   justify-content: space-between;
+  -webkit-justify-content: space-between; //Old Safari
   align-items: center;
+  -webkit-align-items: center; //Old Safari
+  height: 60px;
   padding: 10px 20px 0 20px;
 
   #close-button {
@@ -50,8 +53,11 @@
 #menu-mobile .social-media-icons {
   height: 55px;
   display: flex;
+  display: -webkit-flex; //Old Safari
   justify-content: center;
+  -webkit-justify-content: center; //Old Safari
   align-items: center;
+  -webkit-align-items: center; //Old Safari
 
   img {
     height: 1.6em;
@@ -70,6 +76,8 @@
   a {
     padding: 10px 8px;
     display: flex;
+    display: -webkit-flex; //Old Safari
     justify-content: center;
+    -webkit-justify-content: center; //Old Safari
   }
 }
