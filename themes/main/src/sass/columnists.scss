@@ -8,6 +8,11 @@
   @include column-lateral-spacing(10px);
   @include get-font(COLUMNISTS);
 
+  @include media-query(TWO) {
+    max-width: (3 * $COLUMN-WIDTH) + (2 * $LATERAL-PAGE-SPACE);
+    @include column-lateral-spacing($LATERAL-PAGE-SPACE);
+  }
+
   .page-name {
     @include page-name();
   }
