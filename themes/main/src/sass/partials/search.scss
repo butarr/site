@@ -38,9 +38,10 @@ $lateral-margin: 10px;
   }
 
   &.open {
+    display: -webkit-flex; //Old Safari
     display: flex;
+    -webkit-align-items: center; //Old Safari
     align-items: center;
-    flex-wrap: nowrap;
   }
 
   #close-search-button {
@@ -139,10 +140,6 @@ $lateral-margin: 10px;
   // Makes search result cursor wrapped
   .gsc-cursor {
     padding-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
   }
 
 
