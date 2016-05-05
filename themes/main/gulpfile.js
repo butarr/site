@@ -3,7 +3,7 @@ var gulp = require('gulp'),
 
 var TASKS = [
     'template',
-    'sitemap.js',
+    'sitemap',
     'imagemin',
     'javascript',
     'sass',
