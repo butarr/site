@@ -227,8 +227,10 @@ $number-size: 1.3rem;
     text-transform: uppercase;
     color: $page-title-color;
   }
+}
 
-  .title{
+@mixin __list(){
+  .title {
     font: bold #{$list-title-size}/#{$line-separation-small} $family-serif;
   }
 
@@ -432,6 +434,33 @@ $number-size: 1.3rem;
    }
 }
 
+@mixin __tabloid(){
+  h2.title {
+      font: bold #{$standalone-title-size}/#{$line-separation-small} $family-serif;
+      color: $title-color;
+  }
+
+  .area {
+    font: bold $standalone-title-size $family-serif;
+    color: $text-color;
+  }
+
+  .description {
+    font: #{$standalone-description-size}/#{$line-separation-small} $family-sans;
+    color: $title-color;
+  }
+
+  .author {
+    font: $text-size $family-serif;
+    color: $title-color;
+  }
+
+  .place, time, figcaption {
+    font: $text-size $family-serif;
+    color: $details-color;
+  }
+}
+
 @mixin get-font($type){
   @if( $type == POST ){
     @include __post();
@@ -441,6 +470,9 @@ $number-size: 1.3rem;
   }
   @else if( $type == NEWS_LIST ){
     @include __news_list();
+  }
+  @else if( $type == LIST ){
+    @include __list();
   }
   @else if( $type == COLUMN ){
     @include __column();
@@ -465,5 +497,8 @@ $number-size: 1.3rem;
   }
   @else if( $type == SEARCH ){
     @include __search();
+  }
+  @else if( $type == TABLOID ){
+    @include __tabloid();
   }
 }
