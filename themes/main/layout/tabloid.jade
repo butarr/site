@@ -11,6 +11,7 @@ append content
           img(itemprop="image", alt=page.title, src=page.cover['medium'], itemtype="http://schema.org/ImageObject")
         a(itemprop="url" href=page.issuu)
           h3.button(itemprop="url")="Leia a versão impressa"
+    p.tabloid-news Notícias desta edição:
     if page.areas
       each area in page.areas
         - var area_name = area.name
