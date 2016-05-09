@@ -438,14 +438,36 @@ $number-size: 1.3rem;
       color: $title-color;
   }
 
-  .author {
-    font: $text-size $family-serif;
-    color: $title-color;
-  }
-
-  .place, time, figcaption {
+  .place, time {
     font: $text-size $family-serif;
     color: $details-color;
+  }
+
+  .issuu a {
+    text-align: center;
+    font: bold #{$details-size}/#{$line-separation-small} $family-serif;
+    color: $link-color;
+
+    &:visited {
+      color: $link-visited-color;
+    }
+
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+
+  .button {
+    font: bold $text-size $family-sans;
+    color: $link-color;
+
+    &:visited {
+      color: $link-visited-color;
+    }
+
+    &:hover {
+      color: $link-hover-color;
+    }
   }
 }
 
