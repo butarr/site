@@ -1,4 +1,4 @@
-section#list
+section(class= "list")
   h2.page-name(itemprop="about")= area_name
   each post in news
     - var published_at = utc_to_brt(post.date)

@@ -2,7 +2,7 @@
 @import '_helpers/mixins';
 @import '_helpers/constants';
 
-#list {
+.list {
   @include image-rounded(110px, 110px);
   @include get-font(LIST);
 
@@ -24,7 +24,7 @@
   }
 }
 
-#list .news-item{
+.list .news-item{
   display: block;
   @include clearfix();
 
