@@ -12,6 +12,6 @@ append content
         img(itemprop="thumbnail", alt=imageDescription, title=imageDescription, src=page.cover['medium'] )
     if page.areas
       each area in page.areas
-        h3.area(itemprop="headline")= area.name
+        - var area_name = area.name
         - var news = area.news
         include _partial/list

@@ -221,15 +221,13 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __news_list(){
+@mixin __list(){
   .page-name {
     font: bold $page-name-size $family-sans;
     text-transform: uppercase;
     color: $page-title-color;
   }
-}
 
-@mixin __list(){
   .title {
     font: bold #{$list-title-size}/#{$line-separation-small} $family-serif;
   }
@@ -440,16 +438,6 @@ $number-size: 1.3rem;
       color: $title-color;
   }
 
-  .area {
-    font: bold $standalone-title-size $family-serif;
-    color: $text-color;
-  }
-
-  .description {
-    font: #{$standalone-description-size}/#{$line-separation-small} $family-sans;
-    color: $title-color;
-  }
-
   .author {
     font: $text-size $family-serif;
     color: $title-color;
@@ -467,9 +455,6 @@ $number-size: 1.3rem;
   }
   @else if( $type == MAIN ){
     @include __main();
-  }
-  @else if( $type == NEWS_LIST ){
-    @include __news_list();
   }
   @else if( $type == LIST ){
     @include __list();

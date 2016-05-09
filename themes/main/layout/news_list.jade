@@ -7,6 +7,6 @@ block open_graph
 
 append content
   section#news-list(itemscope itemtype="http://schema.org/ItemList")
-    h2.page-name(itemprop="about")= page.area
+    - var area_name = page.area
     - var news = page.news
     include _partial/list

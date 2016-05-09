@@ -18,6 +18,10 @@
   .news-item-link:last-child .news-item.divisor {
     border: none;
   }
+
+  .page-name{
+    @include page-name();
+  }
 }
 
 #list .news-item{
