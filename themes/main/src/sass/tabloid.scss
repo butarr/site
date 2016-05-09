@@ -14,8 +14,16 @@
     @include column-lateral-spacing($LATERAL-PAGE-SPACE);
   }
 
-  img{
+  h2.title {
+    margin-top: 20px;
+  }
+
+  img {
     width: 100%;
+
+    @include media-query(TWO){
+      width: 80%;
+    }
   }
 
   .list time {
@@ -24,6 +32,9 @@
 
   .issuu {
     margin-bottom: 37px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
   }
 
   .button {

@@ -437,11 +437,13 @@ $number-size: 1.3rem;
   h2.title {
       font: bold #{$standalone-title-size}/#{$line-separation-small} $family-serif;
       color: $title-color;
+      text-align: center;
   }
 
-  .place, time {
+  time {
     font: $text-size $family-serif;
     color: $details-color;
+    text-align: center;
   }
 
   .issuu a {
