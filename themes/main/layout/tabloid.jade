@@ -10,7 +10,8 @@ append content
         - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits
         - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
         img(itemprop="thumbnail", alt=imageDescription, title=imageDescription, src=page.cover['medium'] )
-    each area in page.areas
-      h3.area(itemprop="headline")= area.name
-      - var news = area.news
-      include _partial/list
+    if page.areas
+      each area in page.areas
+        h3.area(itemprop="headline")= area.name
+        - var news = area.news
+        include _partial/list
