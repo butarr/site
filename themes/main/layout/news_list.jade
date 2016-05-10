@@ -6,19 +6,18 @@ block open_graph
   meta(property="og:image" content="#{config.url}/img/share-logo.png")
 
 append content
-  section#news-list(itemscope itemtype="http://schema.org/ItemList")
-    section(class= "list")
-      h2(class="page-name" itemprop="about")= page.area
-      each post in page.news
-        - var published_at = utc_to_brt(post.date)
-        a.news-item-link(href=post.path)
-          article.news-item(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class= "divisor")
-            h3.offscreen(itemprop= "headline")= post.title
-            if post.cover
-              .image
-                - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-                figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-            .content(class="no-image" class= "divisor")
-              p.title(itemprop= "headline")= post.title
-              p.description(itemprop="description")= post.description
-              time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+  section#news-list(class= "list" itemscope itemtype="http://schema.org/ItemList")
+    h2(class="page-name" itemprop="about")= page.area
+    each post in page.news
+      - var published_at = utc_to_brt(post.date)
+      a.news-item-link(href=post.path)
+        article.news-item(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class= "divisor")
+          h3.offscreen(itemprop= "headline")= post.title
+          if post.cover
+            .image
+              - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+              figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
+          .content(class="no-image" class= "divisor")
+            p.title(itemprop= "headline")= post.title
+            p.description(itemprop="description")= post.description
+            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
