@@ -22,6 +22,10 @@
   .section-name{
     @include section-name();
   }
+
+  .page-name{
+    @include page-name();
+  }
 }
 
 .list .news-item{
