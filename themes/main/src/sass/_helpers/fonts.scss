@@ -229,6 +229,12 @@ $number-size: 1.3rem;
     color: $page-title-color;
   }
 
+  .section-name {
+    font: bold $page-name-size $family-sans;
+    text-transform: uppercase;
+    color: $page-title-color;
+  }
+
   .title {
     font: bold #{$list-title-size}/#{$line-separation-small} $family-serif;
   }

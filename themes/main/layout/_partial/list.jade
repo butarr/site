@@ -1,5 +1,5 @@
 section(class= "list")
-  h2.page-name(itemprop="about")= area_name
+  h2(class="section-name" itemprop="about")= area_name
   each post in news
     - var published_at = utc_to_brt(post.date)
     a.news-item-link(href=post.path)

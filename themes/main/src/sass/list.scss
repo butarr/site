@@ -19,8 +19,8 @@
     border: none;
   }
 
-  .page-name{
-    @include page-name();
+  .section-name{
+    @include section-name();
   }
 }
 
