@@ -5,15 +5,22 @@ append content
     - var published_at = utc_to_brt(page.date)
     h2.title(itemprop="headline")= page.title
     time(datetime=published_at.toISOString())= full_date(published_at)
-    if page.cover
-      .issuu
-        a(itemprop="url" href=page.issuu)
+    if page.content
+      if page.cover
+        .cover
           img(itemprop="image", alt=page.title, src=page.cover['medium'], itemtype="http://schema.org/ImageObject")
-        a(itemprop="url" href=page.issuu)
-          h3.button(itemprop="url")="Leia a versão impressa"
-    p.tabloid-news Notícias desta edição:
-    if page.areas
-      each area in page.areas
-        - var area_name = area.name
-        - var news = area.news
-        include _partial/list
+      .content
+        !=page.content
+    else
+      if page.cover
+        .issuu
+          a(itemprop="url" href=page.issuu)
+            img(itemprop="image", alt=page.title, src=page.cover['medium'], itemtype="http://schema.org/ImageObject")
+          a(itemprop="url" href=page.issuu)
+            h3.button(itemprop="url")="Leia a versão impressa"
+      p.tabloid-news Notícias desta edição:
+      if page.areas
+        each area in page.areas
+          - var area_name = area.name
+          - var news = area.news
+          include _partial/list
