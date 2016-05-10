@@ -230,9 +230,9 @@ $number-size: 1.3rem;
   }
 
   .section-name {
-    font: bold $page-name-size $family-sans;
+    font: bold $section-name-size $family-sans;
     text-transform: uppercase;
-    color: $page-title-color;
+    color: $title-color;
   }
 
   .title {

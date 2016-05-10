@@ -18,14 +18,6 @@
   .news-item-link:last-child .news-item.divisor {
     border: none;
   }
-
-  .section-name{
-    @include section-name();
-  }
-
-  .page-name{
-    @include page-name();
-  }
 }
 
 .list .news-item{
@@ -39,7 +31,7 @@
 
     @include media-query(TWO) {
       width: 150px;
-      margin: 0 20px 10px 0;
+      margin: 0 20px 0 0;
     }
   }
 

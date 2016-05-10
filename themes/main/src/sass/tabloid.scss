@@ -50,4 +50,8 @@
   p.tabloid-news {
     margin-bottom: 10px;
   }
+
+  .section-name{
+    @include section-name();
+  }
 }
