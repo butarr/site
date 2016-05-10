@@ -24,8 +24,11 @@
 
   .issuu {
     margin-bottom: 37px;
+    display: -webkit-flex; //Old Safari
     display: flex;
+    -webkit-flex-direction: column;  //Old Safari
     flex-direction: column;
+    -webkit-align-items: center;  //Old Safari
     align-content: center;
   }
 
