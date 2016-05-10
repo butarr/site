@@ -13,6 +13,7 @@
   @include column-lateral-spacing(10px);
   @include site-lateral-spacing();
   @include get-font(NATIONAL);
+  @include button;
 
   @include media-query (THREE){
     max-width: 3 * $COLUMN-WIDTH + (2 * $LATERAL-PAGE-SPACE);
@@ -128,28 +129,6 @@
 
 .spacing {
   margin-bottom: $VERTICAL-SPACE;
-}
-
-#home .button {
-  display: block;
-  border: 1px solid #b7b7b7;
-  border-radius: 3px;
-  box-shadow: 0px 1px 1px #b7b7b7;
-  padding: 8px 0;
-  text-align: center;
-  width: 100%;
-  margin: 5px auto;
-  @include media-query (THREE) {
-    width: 200px;
-  }
-
-  &:visited {
-    box-shadow: 1px 2px 1px #b7b7b7;
-  }
-
-  &:hover {
-    box-shadow: 1px 2px 1px #b7b7b7;
-  }
 }
 
 #home .main {
