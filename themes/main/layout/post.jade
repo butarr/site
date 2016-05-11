@@ -10,10 +10,13 @@ append content
       span.hat(itemprop="about")= page.hat
       h2.title(itemprop="headline")= page.title
       p.description(itemprop="description")= page.description
-      span.author(rel="author", itemprop="author")= page.author
-      .place-and-time      
-        span.place(rel="place", itemprop="contentLocation")= page.place
-        time(datetime=published_at.toISOString())= ', ' + full_date(published_at)
+      .details-bar
+        .author-time
+          span.author(rel="author", itemprop="author")= page.author
+          .place-and-time      
+            span.place(rel="place", itemprop="contentLocation")= page.place + ', '
+            time(datetime=published_at.toISOString())= full_date(published_at)
+        a.share-whatsapp.fa.fa-whatsapp.fa-5x(href='whatsapp://send?text=#{config.url}/#{page.url}' data-action='share/whatsapp/share' title='Compartilhar no whatsapp')
       if page.cover
         figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
           - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits
@@ -23,3 +26,5 @@ append content
           
     .content
      != page.content
+    
+     
