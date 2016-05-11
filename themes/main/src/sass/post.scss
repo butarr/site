@@ -55,21 +55,13 @@
   .details-bar {
     display: -webkit-flex; //Old Safari
     display: flex;
+    -webkit-jutify-content: space-between; //Old Safari
+    justify-content: space-between;
   }
 
-  .author-time {
-    -webkit-flex-grow: 1;  //Old Safari
-    flex-grow: 1;
-  }
 
   .share-whatsapp {
-    -webkit-flex-grow: 0;  //Old Safari
-    flex-grow: 0;
     margin-bottom: 10px;
-
-    @include media-query (ONE) {
-      float: right;
-    }
 
     @include media-query(THREE){
       display: none;
