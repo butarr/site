@@ -66,11 +66,6 @@
     -webkit-flex-grow: 0;  //Old Safari
     flex-grow: 0;
     margin-bottom: 10px;
-    color: $text-color;
-
-    &:hover {
-      color:$link-neutral-color-hover;
-    }
 
     @include media-query (ONE) {
       float: right;

@@ -325,6 +325,14 @@ $number-size: 1.3rem;
   p {
     color: $text-color;
   }
+
+  .share-whatsapp {
+    color: $text-color;
+
+    &:hover {
+      color:$link-neutral-color-hover;
+    }
+  }
 }
 
 @mixin __column(){
