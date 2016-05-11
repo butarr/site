@@ -53,14 +53,17 @@
   }
 
   .details-bar {
+    display: -webkit-flex; //Old Safari
     display: flex;
   }
 
   .author-time {
+    -webkit-flex-grow: 1;  //Old Safari
     flex-grow: 1;
   }
 
   .share-whatsapp {
+    -webkit-flex-grow: 0;  //Old Safari
     flex-grow: 0;
     margin-bottom: 10px;
     color: $text-color;
