@@ -53,18 +53,18 @@ $number-size: 1.3rem;
   p {
     font: #{$standalone-text-size}/#{$line-separation-big} $family-serif;
     word-spacing: 2px;
+  }
 
-    strong {
-      font-weight: bold;
-    }
+  strong {
+    font-weight: bold;
+  }
 
-    em {
-      font-style: italic;
-    }
+  em {
+    font-style: italic;
+  }
 
-    s {
-      text-decoration:line-through;
-    }
+  s {
+    text-decoration:line-through;
   }
 
   a {
