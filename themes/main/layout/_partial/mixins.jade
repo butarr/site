@@ -2,6 +2,6 @@ mixin page_title (category, title)
   - var category_capitalized= category.charAt(0).toUpperCase() + category.slice(1)
   if title
     -var title_capitalized= title.charAt(0).toUpperCase() + title.slice(1)
-    title= title_capitalized + " | " + category_capitalized + " | Brasil de Fato"
+    title= title_capitalized + " - " + category_capitalized + " - Brasil de Fato"
   else
-    title= category_capitalized + " | Brasil de Fato"
+    title= category_capitalized + " - Brasil de Fato"
