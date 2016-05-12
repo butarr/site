@@ -1,5 +1,8 @@
 extends ../layout/base
 
+block title
+  +page_title("Contato")
+
 append content
   article.institutional(itemtype="http://schema.org/NewsArticle", itemscope)
     h2.page-name(itemprop="about")= "Contato"

@@ -1,5 +1,8 @@
 extends ../layout/base
 
+block title
+  +page_title("Publicidade")
+  
 append content
   article.institutional(itemtype="http://schema.org/NewsArticle", itemscope)
     h2.page-name(itemprop="about")= "Publicidade"
@@ -39,4 +42,3 @@ append content
       li.item
         i.fa.fa-phone-square.fa-lg
           span.text (21) 3173-6336
-
