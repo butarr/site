@@ -1,3 +1,7 @@
-mixin page_title (page)
-	- var page_capitalized= page.charAt(0).toUpperCase() + page.slice(1)
-	title= page_capitalized + " - Brasil de Fato"
+mixin page_title (category, title)
+  - var category_capitalized= category.charAt(0).toUpperCase() + category.slice(1)
+  if title
+    -var title_capitalized= title.charAt(0).toUpperCase() + title.slice(1)
+    title= title_capitalized + " | " + category_capitalized + " | Brasil de Fato"
+  else
+    title= category_capitalized + " | Brasil de Fato"
