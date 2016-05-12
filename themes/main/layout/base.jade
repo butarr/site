@@ -1,14 +1,11 @@
 doctype html
-block vars
-  - var bodyclass = null;
 html(lang='pt-BR')
   head
+    include _partial/mixins
     include _partial/head
-    block title
-      title Brasil de Fato - Uma Visão Popular do Brasil e do Mundo
     include _partial/open_graph
     include _partial/analytics
-  body(class=bodyclass itemscope itemtype="http://schema.org/WebPage")
+  body(itemscope itemtype="http://schema.org/WebPage")
     h1.offscreen Brasil de Fato
     p.offscreen Uma Visão Popular do Brasil e do Mundo
     include _partial/tagmanager

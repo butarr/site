@@ -1,4 +1,9 @@
+
+
 extends base
+
+block title
+  +page_title(page.area)
 
 block open_graph
   meta(property="og:title" content="#{page.area.toUpperCase()} | #{config.title}")
