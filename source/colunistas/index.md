@@ -2,8 +2,13 @@
 layout: columnists
 
 columns:
+  - columnist: //facebook/ticosantacruz
+    title: Detonautas detona
+    description: Um domingo na Oscar Freire
+    date: 2016-03-29T17:40:29.929Z
+    path: /2016/05/16/tico/
   - columnist: ajokobskind@gmail.com
-    title: Xuxa e a fetichização da pobreza 
+    title: Xuxa e a fetichização da pobreza
     description: Ao dizer que os três meninos negros     no sinal estavam “ralando para conseguir
     date: 2016-03-29T17:40:29.929Z
     path: 2016/03/29/xuxa-e-a-fetichizacao-da-pobreza/
@@ -73,4 +78,3 @@ columns:
     date: 2016-02-10T13:03:04.629Z
     path: 2016/02/10/mais-do-mesmo-na-troca-de-relatoria-no-novo-codigo-da-mineracao/
 ---
-
