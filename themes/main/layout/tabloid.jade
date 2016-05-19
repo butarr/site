@@ -8,34 +8,29 @@ append content
     - var published_at = utc_to_brt(page.date)
     h2.title(itemprop="headline")= page.title
     time(datetime=published_at.toISOString())= full_date(published_at)
-    if page.content
-      if page.cover
+    if page.cover
+      .issuu
         figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
-          img(itemprop="thumbnail", alt=page.title, src=page.cover['medium'])
+          a(itemprop="url" href=page.issuu target="_blank")
+            img(itemprop="thumbnail", alt=page.title, src=page.cover['medium'])
+            span(class="button" itemprop="url")="Leia a versão impressa"
+    if page.content
       .content
         !=page.content
-    else
-      if page.cover
-        .issuu
-          figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
-            a(itemprop="url" href=page.issuu)
-              img(itemprop="thumbnail", alt=page.title, src=page.cover['medium'])
-          a(class="button" itemprop="url" href=page.issuu)
-            span(itemprop="url")="Leia a versão impressa"
+    if page.areas
       p.tabloid-news Notícias desta edição:
-      if page.areas
-        each area in page.areas
-          section(class= "list")
-            h3(class="section-name" itemprop="about")= area.name
-            each post in area.news
-              - var published_at = utc_to_brt(post.date)
-              a.news-item-link(href=post.path)
-                article.news-item(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class= "divisor")
-                  h4.offscreen(itemprop= "headline")= post.title
-                  if post.cover
-                    .image
-                      - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-                      figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-                  .content(class="no-image" class= "divisor")
-                    p.title(itemprop= "headline")= post.title
-                    p.description(itemprop="description")= post.description
+      each area in page.areas
+        section(class= "list")
+          h3(class="section-name" itemprop="about")= area.name
+          each post in area.news
+            - var published_at = utc_to_brt(post.date)
+            a.news-item-link(href=post.path)
+              article.news-item(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class= "divisor")
+                h4.offscreen(itemprop= "headline")= post.title
+                if post.cover
+                  .image
+                    - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+                    figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
+                .content(class="no-image" class= "divisor")
+                  p.title(itemprop= "headline")= post.title
+                  p.description(itemprop="description")= post.description
