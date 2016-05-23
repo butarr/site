@@ -9,7 +9,12 @@ block open_graph
   meta(property="og:image" content="#{config.url}/img/share-logo.png")
 
 append content
-  section#news-list(class= "list" itemscope itemtype="http://schema.org/ItemList")
+  
+  if page.area== "espanol"
+    - var language = "es"
+  else
+    - var language = null
+  section#news-list(class= "list" itemscope itemtype="http://schema.org/ItemList" lang= language)
     h2(class="page-name" itemprop="about")= page.area
     each post in page.news
       - var published_at = utc_to_brt(post.date)
