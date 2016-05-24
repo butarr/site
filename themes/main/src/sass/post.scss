@@ -25,7 +25,8 @@
   }
 
   img {
-    width: 100%;
+    width: 100% !important;
+    height: 100% !important;
   }
 }
 
@@ -44,10 +45,6 @@
 
   figure {
     margin-bottom: 20px;
-
-    img{
-      width: 100%;
-    }
 
     figcaption{
       text-align: right;
