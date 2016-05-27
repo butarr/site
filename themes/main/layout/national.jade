@@ -51,6 +51,13 @@ mixin featured-text-box
     article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-box")
       a(itemprop="url" href=post.path)
         h3.title(itemprop="headline")= post.title
+        
+mixin footer-article(field)
+  article(id=field itemscope itemtype="https://schema.org/NewsArticle" class="article-footer" class="spacing")
+    span.hat(itemprop="about")= post.hat
+    a(itemprop="url" href=post.path)
+      figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
+      h3.title(itemprop="headline")= post.title
 
 extends base
 
@@ -129,22 +136,12 @@ append content
         if page.featured_07
           - var post=page.featured_07
           - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
-          article#featured-7(itemscope itemtype="https://schema.org/NewsArticle" class="article-footer" class="spacing")
-            h3.offscreen(itemprop="headline")= post.title
-            span.hat(itemprop="about")= post.hat
-            a(itemprop="url" href=post.path)
-              figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-              p.title(itemprop="headline")= post.title
+          +footer-article("featured-7")
 
         if page.featured_08
           - var post=page.featured_08
           - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
-          article#featured-8(itemscope itemtype="https://schema.org/NewsArticle" class="article-footer" class="spacing")
-            h3.offscreen(itemprop="headline")= post.title
-            span.hat(itemprop="about")= post.hat
-            a(itemprop="url" href=post.path)
-              figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-              p.title(itemprop="headline")= post.title
+          +footer-article("featured-8")
         
         if page.photo_caption
           article.photo-caption(itemscope itemtype="https://schema.org/Photograph" class= "spacing")
