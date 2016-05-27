@@ -45,6 +45,12 @@ mixin small-picture (field)
     a(itemprop="url" href=post.path)
       h3.title(itemprop="headline")= post.title
     figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
+    
+mixin featured-text-box
+  .box-container(class= "spacing")
+    article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-box")
+      a(itemprop="url" href=post.path)
+        h3.title(itemprop="headline")= post.title
 
 extends base
 
@@ -96,17 +102,11 @@ append content
 
           if page.featured_05
             - var post=page.featured_05
-            .box-container(class= "spacing")
-              article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-box")
-                a(itemprop="url" href=post.path)
-                  h3.title(itemprop="headline")= post.title
+            +featured-text-box
 
           if page.featured_06
             - var post=page.featured_06
-            .box-container(class= "spacing")
-              article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-box")
-                a(itemprop="url" href=post.path)
-                  h3.title(itemprop="headline")= post.title
+            +featured-text-box
 
         figure(class= "radar" class= "spacing")
           a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar de Movimentos Populares")
