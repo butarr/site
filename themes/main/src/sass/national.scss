@@ -211,8 +211,12 @@
     @include column-lateral-spacing();
   }
 
-  .title {
-    flex-grow: 1;
+  figure {
+    flex-shrink: 0;
+  }
+
+  a {
+    flex-shrink: 1;
     padding: 0 10px;
 
     @include media-query(THREE) {
@@ -221,9 +225,7 @@
     }
   }
 
-  figure {
-    flex-grow: 0;
-  }
+
 }
 
 #home .featured-text-and-title{
