@@ -2,6 +2,7 @@
 @import '_helpers/fonts';
 @import '_helpers/colors';
 @import '_helpers/constants';
+@import '_helpers/mixins';
 
 $text-padding: 2px;
 $social-margin: 10px;
@@ -33,6 +34,14 @@ $social-margin: 10px;
 
   @include media-query(FIVE) {
     width: 5 * $COLUMN-WIDTH;
+  }
+}
+
+#page-footer .footer-container-internal {
+  @include media-query(THREE) {
+    width: 100%;
+    max-width: (3 * $COLUMN-WIDTH) + (2 * $LATERAL-PAGE-SPACE);
+    @include column-lateral-spacing($LATERAL-PAGE-SPACE);
   }
 }
 
