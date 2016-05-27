@@ -199,34 +199,30 @@
 }
 
 #home .featured-small-picture {
-  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
   @include image-rounded(150px, 150px);
 
   @include media-query(THREE) {
     width: $COLUMN-WIDTH;
+    flex-direction: column-reverse;
+    align-self: flex-start;
     @include image-rounded(220px, 150px);
     @include column-lateral-spacing();
   }
 
   .title {
-    display: inline-block;
-    position: absolute;
-    width: 50%;
-    max-width: 270px;
-    padding-right: 10px;
-    padding-left: 10px;
+    flex-grow: 1;
+    padding: 0 10px;
 
     @include media-query(THREE) {
-      position: relative;
-      width: 100%;
       border-left: 3px solid $vertical-bar;
-      padding-left: 10px;
       margin-top: $VERTICAL-SPACE;
     }
   }
 
   figure {
-    display: inline-block;
+    flex-grow: 0;
   }
 }
 
