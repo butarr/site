@@ -11,7 +11,12 @@ append content
     - var language= "es"
   else
     - var language= null
-  article#post(itemtype="http://schema.org/NewsArticle", itemscope lang= language)
+
+  article#post(itemscope itemtype="http://schema.org/NewsArticle" lang= language)
+    meta(itemprop="mainEntityOfPage" content=page.url)
+    div(itemscope itemtype="https://schema.org/Organization" itemprop="publisher")
+      meta(itemprop="name" content="Brasil de Fato")
+      link(itemprop="sameAs" href="https://www.brasildefato.com.br")
     header
       - var published_at = utc_to_brt(page.date)
       span.hat(itemprop="about")= page.hat
@@ -19,19 +24,19 @@ append content
       p.description(itemprop="description")= page.description
       .details-bar
         .author-time
-          span.author(rel="author", itemprop="author")= page.author
+          span.author(rel="author" itemprop="author")= page.author
           .place-and-time      
-            span.place(rel="place", itemprop="contentLocation")= page.place + ', '
-            time(datetime=published_at.toISOString())= full_date(published_at)
+            span.place(itemprop="contentLocation")= page.place + ', '
+            time(itemprop="datePublished" datetime=published_at.toISOString())= full_date(published_at)
         a.share-whatsapp.fa.fa-whatsapp.fa-5x(href='whatsapp://send?text=#{config.url}/#{page.url}' data-action='share/whatsapp/share' title='Compartilhar no whatsapp')
       if page.cover
-        figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
+        figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
           - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits
           - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
-          img(itemprop="thumbnail", alt=imageDescription, title=imageDescription, src=page.cover['medium'] )
+          img(itemprop="url" alt=imageDescription src=page.cover['medium'] )
           figcaption(itemprop="caption")= imageCaption
           
-    .content
+    .content(itemprop="articleBody")
      != page.content
     
      
