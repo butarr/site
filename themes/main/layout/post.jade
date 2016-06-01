@@ -1,9 +1,7 @@
 extends base
 
-- var hat = page.hat
-- var title = page.title
 block title
-  +page_title(hat, title)
+  +page_title(page.hat, page.title)
 
 block open_graph
   include _partial/open_graph_page
