@@ -1,13 +1,13 @@
 mixin page_title (category, title)
-  - var category_capitalized= category.charAt(0).toUpperCase() + category.slice(1)
+  - var category_capitalized= titlecase(category)
   if title
-    -var title_capitalized= title.charAt(0).toUpperCase() + title.slice(1)
+    - var title_capitalized= titlecase(title)
     title= title_capitalized + " - " + category_capitalized + " - Brasil de Fato"
   else
     title= category_capitalized + " - Brasil de Fato"
-    
+
 mixin footer (container)
-  footer#page-footer(itemscope itemtype="http://schema.org/WPFooter")  
+  footer#page-footer(itemscope itemtype="http://schema.org/WPFooter")
     div(class!= container)
       .footer-header
         a(href="/", title="Link para a página principal")
@@ -19,7 +19,7 @@ mixin footer (container)
               li
                 a.active(itemprop="url", href="/" + index + ".html")
                   p= val
-                meta(itemprop="name",content="string") 
+                meta(itemprop="name",content="string")
         .footer-social-block
           p Social:
           include social-media-icons
