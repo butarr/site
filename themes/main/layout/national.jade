@@ -188,4 +188,4 @@ append content
 
         include _partial/modules/module_facebook
 block footer
-  +footer("footer-container")
+  != partial('_partial/footer', {'containerClass': 'footer-container'})
