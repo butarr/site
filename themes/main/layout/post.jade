@@ -1,7 +1,7 @@
 extends base
 
 block title
-  +page_title(page.hat, page.title)
+  title= titlecase(page.title) + " - " + titlecase(page.area) + " - Brasil de Fato"
 
 block open_graph
   include _partial/open_graph_page

@@ -1,11 +1,3 @@
-mixin page_title (category, title)
-  - var category_capitalized= titlecase(category)
-  if title
-    - var title_capitalized= titlecase(title)
-    title= title_capitalized + " - " + category_capitalized + " - Brasil de Fato"
-  else
-    title= category_capitalized + " - Brasil de Fato"
-
 mixin footer (container)
   footer#page-footer(itemscope itemtype="http://schema.org/WPFooter")
     div(class!= container)
