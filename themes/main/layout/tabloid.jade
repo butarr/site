@@ -2,7 +2,21 @@ extends base
 
 block title
   title= page.title
-
+  
+block description
+  - var area_field = page.display_area
+  case area_field
+    when "tabloid_mg"
+      meta(name="description" content="Notícias da edição impressa de Minas Gerais.")
+    when "tabloid_ce"
+      meta(name="description" content="Notícias da edição impressa de Ceará.")
+    when "tabloid_pe"
+      meta(name="description" content="Notícias da edição impressa de Pernambuco.")
+    when "tabloid_rj"
+      meta(name="description" content="Notícias da edição impressa do Rio de Janeiro.")
+    when "tabloid_pr"
+      meta(name="description" content="Notícias da edição impressa do Paraná.")
+      
 append content
   main.grid-3-columns
     section#tabloid(itemtype="http://schema.org/NewsArticle", itemscope)

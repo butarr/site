@@ -2,6 +2,9 @@ extends base
 
 block title
   title= titlecase(page.title) + " - Coluna - Brasil de Fato"
+  
+block description
+  meta(name="description" content=page.description)
 
 block open_graph
   include _partial/open_graph_page

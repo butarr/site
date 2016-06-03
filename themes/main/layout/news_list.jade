@@ -2,7 +2,27 @@ extends base
 
 block title
   title= titlecase(page.area) + " - Brasil de Fato"
-
+  
+block description
+  - var area_field = page.area
+  case area_field
+    when "editorial"
+      meta(name="description" content="A linha editorial do Brasil de Fato, articulada com os movimentos populares, organizações sociais e sindicais.")
+    when "nacional"
+      meta(name="description" content="O que acontece na política, na economia e no cotidiano das cidades do Brasil.")
+    when "direitos humanos"
+      meta(name="description" content="Cobertura de violações de direitos fundamentais e da luta pelos direitos das classes oprimidas.")
+    when "cultura"
+      meta(name="description" content="Artes, cinema, música, teatro e diversas expressões e reflexões das culturas locais e nacionais.")
+    when "geral"
+      meta(name="description" content="Notícias sobre educação, saúde, meio-ambiente, ciência, religião e mais.")
+    when "internacional"
+      meta(name="description" content="Notícias, entrevistas e artigos de diversos países ao redor do mundo, com enfoque para América Latina.")
+    when "especiais"
+      meta(name="description" content="Coberturas multimídia de temas da atualidade e de fatos históricos que marcaram o Brasil e o mundo.")
+    when "espanol"
+      meta(name="description" content="Las noticias, entrevistas y artículos de Brasil de Fato traducidas al español. Notas en parceria con medios populares y alternativos de América Latina.")      
+    
 block open_graph
   meta(property="og:title" content="#{page.area.toUpperCase()} | #{config.title}")
   meta(property="og:description" content=config.description)
