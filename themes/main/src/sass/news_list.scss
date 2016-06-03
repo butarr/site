@@ -3,15 +3,11 @@
 @import '_helpers/constants';
 
 #news-list {
-  max-width: 3 * $COLUMN-WIDTH;
-  @include site-lateral-spacing();
   @include column-lateral-spacing(10px);
   @include image-rounded(110px, 110px);
 
   @include media-query(TWO) {
     @include image-rounded(150px, 150px);
-    max-width: (3 * $COLUMN-WIDTH) + (2 * $LATERAL-PAGE-SPACE);
-    @include column-lateral-spacing($LATERAL-PAGE-SPACE);
   }
 
   .page-name{

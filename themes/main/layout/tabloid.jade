@@ -4,7 +4,7 @@ block title
   title= page.title
 
 append content
-  main
+  main.grid-3-columns
     section#tabloid(itemtype="http://schema.org/NewsArticle", itemscope)
       - var published_at = utc_to_brt(page.date)
       h2.title(itemprop="headline")= page.title

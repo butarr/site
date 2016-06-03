@@ -3,16 +3,8 @@
 @import '_helpers/constants';
 
 #tabloid {
-  max-width: 3 * $COLUMN-WIDTH;
-  @include site-lateral-spacing();
-  @include column-lateral-spacing(10px);
   @include get-font(TABLOID);
   @include button;
-
-  @include media-query(TWO) {
-    max-width: (3 * $COLUMN-WIDTH) + (2 * $LATERAL-PAGE-SPACE);
-    @include column-lateral-spacing($LATERAL-PAGE-SPACE);
-  }
 
   h2.title {
     margin-top: 20px;

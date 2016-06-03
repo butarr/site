@@ -5,15 +5,6 @@
 
 .institutional {
   @include get-font(INSTITUTIONAL);
-  width: 100%;
-  max-width: 3 * $COLUMN-WIDTH;
-  @include column-lateral-spacing(10px);
-  @include site-lateral-spacing();
-
-  @include media-query(TWO) {
-    max-width: (3 * $COLUMN-WIDTH) + (2 * $LATERAL-PAGE-SPACE);
-    @include column-lateral-spacing($LATERAL-PAGE-SPACE);
-  }
 
   p {
     margin-bottom: $PARAGRAPH-SPACE;

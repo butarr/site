@@ -7,7 +7,7 @@ block open_graph
   include _partial/open_graph_page
 
 append content
-  main
+  main.grid-3-columns
     - var published_at = utc_to_brt(page.date)
     - var columnist = site.data.columnists[page.columnist]
     article#column(itemscope, itemtype="http://schema.org/BlogPosting")

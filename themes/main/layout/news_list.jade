@@ -9,7 +9,7 @@ block open_graph
   meta(property="og:image" content="#{config.url}/img/share-logo.png")
 
 append content
-  main  
+  main.grid-3-columns
     if page.area=="español"
       - var language= "es"
     else

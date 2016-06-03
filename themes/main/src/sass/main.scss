@@ -32,6 +32,16 @@ body {
   }
 }
 
+.grid-3-columns {
+  @include site-lateral-spacing();
+  @include column-lateral-spacing(10px);
+
+  @include media-query(TWO) {
+    max-width: (3 * $COLUMN-WIDTH) + (2 * $LATERAL-PAGE-SPACE);
+    @include column-lateral-spacing($LATERAL-PAGE-SPACE);
+  }
+}
+
 .offscreen {
   position: absolute;
   clip: rect(1px 1px 1px 1px); /* for Internet Explorer */
