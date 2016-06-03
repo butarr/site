@@ -46,7 +46,7 @@ mixin small-picture (field, post, imageDescription)
       h3.title(itemprop="headline")= post.title
     figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription.lenght itemprop="image")
     
-mixin featured-text-box (post, imageDescription)
+mixin featured-text-box (post)
   .box-container(class= "spacing")
     article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-box")
       a(itemprop="url" href=post.path)
@@ -109,11 +109,11 @@ append content
 
           if page.featured_05
             - var post=page.featured_05
-            +featured-text-box(post, imageDescription)
+            +featured-text-box(post)
 
           if page.featured_06
             - var post=page.featured_06
-            +featured-text-box(post, imageDescription)
+            +featured-text-box(post)
 
         figure(class= "radar" class= "spacing")
           a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar de Movimentos Populares")
