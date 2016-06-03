@@ -4,24 +4,25 @@ block title
   title= "Colunistas - Brasil de Fato"
 
 append content
-  section#columnists(itemscope itemtype="http://schema.org/ItemList")
-    h2.page-name Colunistas
+  main
+    section#columnists(itemscope itemtype="http://schema.org/ItemList")
+      h2.page-name Colunistas
 
-    each post in page.columns
-      article.column(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
-        - var columnist = site.data.columnists[post.columnist];
-        - var published_at = utc_to_brt(post.date)
-        .person-cell(itemscope itemtype="http://schema.org/Person")
-          .person-container
-            a(href=post.path title="link para a pagina do colunista")
-              img.profile-image(itemprop="image" alt="Imagem de perfil do Colunista" src=columnist.photo )
-              meta(itemprop="image" content='http:'+columnist.photo)
-            a(href=post.path title="link para a pagina do colunista")
-              span.name(itemprop="name")= columnist.name
+      each post in page.columns
+        article.column(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
+          - var columnist = site.data.columnists[post.columnist];
+          - var published_at = utc_to_brt(post.date)
+          .person-cell(itemscope itemtype="http://schema.org/Person")
+            .person-container
+              a(href=post.path title="link para a pagina do colunista")
+                img.profile-image(itemprop="image" alt="Imagem de perfil do Colunista" src=columnist.photo )
+                meta(itemprop="image" content='http:'+columnist.photo)
+              a(href=post.path title="link para a pagina do colunista")
+                span.name(itemprop="name")= columnist.name
 
-        .text
-          span.name(itemprop="name")= columnist.name
-          a(href=post.path itemprop="url")
-            h3.title(itemprop="headline")= post.title
-            p.description(itemprop="description")= post.description
-            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+          .text
+            span.name(itemprop="name")= columnist.name
+            a(href=post.path itemprop="url")
+              h3.title(itemprop="headline")= post.title
+              p.description(itemprop="description")= post.description
+              time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
