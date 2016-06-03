@@ -8,25 +8,8 @@
   display: flex;
   -webkit-flex-direction: column; //Old Safari
   flex-direction: column;
-  width: 100%;
-  max-width: 2 * $COLUMN-WIDTH;
-  @include column-lateral-spacing(10px);
-  @include site-lateral-spacing();
   @include get-font(NATIONAL);
   @include button;
-
-  @include media-query (THREE){
-    max-width: 3 * $COLUMN-WIDTH + (2 * $LATERAL-PAGE-SPACE);
-    @include column-lateral-spacing($LATERAL-PAGE-SPACE);
-  }
-
-  @include media-query (FOUR){
-    max-width: 4 * $COLUMN-WIDTH + (2 * $LATERAL-PAGE-SPACE);
-  }
-
-  @include media-query(FIVE) {
-    max-width: 5 * $COLUMN-WIDTH + (2 * $LATERAL-PAGE-SPACE);
-  }
 
   .container {
     display: -webkit-flex; //Old Safari
