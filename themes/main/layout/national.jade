@@ -44,7 +44,7 @@ mixin small-picture (field, post, imageDescription)
   article(id=field itemscope itemtype="https://schema.org/NewsArticle" class="featured-small-picture" class="divisor" class="spacing")
     a(itemprop="url" href=post.path)
       h3.title(itemprop="headline")= post.title
-    figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription.lenght itemprop="image")
+    figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
     
 mixin featured-text-box (post)
   .box-container(class= "spacing")
