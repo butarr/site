@@ -52,4 +52,14 @@
       margin-left: 10px;
     }
   }
+
+  .sitemap {
+    @include media-query(TWO) {
+      display: flex;
+      
+      .section {
+        margin-right: 50px;
+      }
+    }
+  }
 }
