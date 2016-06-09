@@ -28,12 +28,13 @@ append content
           figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
             a(itemprop="url" href=page.issuu target="_blank")
               img(itemprop="thumbnail", alt=page.title, src=page.cover['medium'])
-              span(class="button" itemprop="url")="Leia a versão impressa"
+      if page.issuu
+        a(itemprop="url" href=page.issuu target="_blank")
+          span(class="button" itemprop="url")="Leia a versão impressa"
       if page.content
-        .content
+        .body-content
           !=page.content
       if page.areas
-        p.tabloid-news Notícias desta edição:
         each area in page.areas
           section(class= "list")
             h3(class="section-name" itemprop="about")= area.name

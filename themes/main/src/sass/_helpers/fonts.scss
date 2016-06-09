@@ -22,7 +22,6 @@ $text-size: 1rem;
 $details-size: 0.9rem;
 $title-size: 1.1rem;
 $section-name-size: 1rem;
-$tabloid-news-size: 1.7rem;
 
 $number-size: 1.3rem;
 
@@ -472,10 +471,6 @@ $number-size: 1.3rem;
     &:hover {
       color: $link-hover-color;
     }
-  }
-
-  p.tabloid-news {
-    font: normal #{$tabloid-news-size}/#{$line-separation-small} $family-serif
   }
 }
 
