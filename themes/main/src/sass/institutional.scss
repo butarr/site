@@ -33,6 +33,7 @@
   }
 
   .title {
+    white-space: nowrap;
     margin: 30px 0 20px 0;
   }
 
@@ -42,6 +43,7 @@
   }
 
   .list {
+    white-space: nowrap;
     margin: 15px 0 40px 0;
 
     .item {
