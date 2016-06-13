@@ -56,11 +56,14 @@
   }
 
   .sitemap {
+
     @include media-query(TWO) {
       display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
 
-      section {
-        margin-right: 50px;
+      section{
+        margin: 0 10px;
       }
     }
   }
