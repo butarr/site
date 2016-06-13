@@ -56,8 +56,8 @@
   .sitemap {
     @include media-query(TWO) {
       display: flex;
-      
-      .section {
+
+      section {
         margin-right: 50px;
       }
     }

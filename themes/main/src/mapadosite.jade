@@ -5,17 +5,25 @@ append content
     article.institutional  
       h2.page-name Mapa do Site
       .sitemap
-        article.section
+        section
           h3.title Notícias
           ul.list
             each val,index in {editorial:'Editorial', nacional:'Nacional', direitos_humanos:'Direitos Humanos', cultura:'Cultura', geral:'Geral', internacional:'Internacional', especiais:'Especiais', espanol:'Español', colunistas: 'Colunistas'}
               li
                 a(itemprop="url", href="/" + index + "/")= val
                 meta(itemprop="name",content="string")
-        article.section    
+        section    
           h3.title Institucional
           ul.list
             each val, index  in {quem_somos:"Quem Somos", parceiros:"Parceiros", publicidade:"Publicidade", contato:"Contato"}
+              li
+                a(itemprop="url", href="/" + index + ".html")= val
+                meta(itemprop="name",content="string")
+
+        section    
+          h3.title Edições Regionais
+          ul.list
+            each val, index  in {minas_gerais:"Minas Gerais", parana:"Paraná", pernambuco:"Pernambuco", rio_de_janeiro:"Rio de Janeiro"}
               li
                 a(itemprop="url", href="/" + index + ".html")= val
                 meta(itemprop="name",content="string")
