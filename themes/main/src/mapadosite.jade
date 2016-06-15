@@ -15,7 +15,7 @@ append content
           section
             h3.title Notícias
             ul.list
-              each val,index in {editorial:'Editorial', nacional:'Nacional', direitos_humanos:'Direitos Humanos', cultura:'Cultura', geral:'Geral', internacional:'Internacional', especiais:'Especiais', espanol:'Español', colunistas: 'Colunistas'}
+              each val,index in {editorial:'Editorial', nacional:'Nacional', direitos_humanos:'Direitos Humanos', cultura:'Cultura', geral:'Geral', internacional:'Internacional', especiais:'Especiais', espanol:'Español'}
                 li
                   a(itemprop="url", href="/" + index + "/")= val
                       
@@ -24,7 +24,7 @@ append content
             ul.list
               each val, index  in {colunistas:"Colunas"}
                 li
-                  a(itemprop="url", href="/" + index + ".html")= val
+                  a(itemprop="url", href="/" + index + "/")= val
                   
           section    
             h3.title Institucional
