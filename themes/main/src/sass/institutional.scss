@@ -57,21 +57,13 @@
 
   .sitemap {
     margin-left: 30px;
-
-    section {
-      width: 200px;
-    }
+    width: 100%;
+    justify-content: space-between;
 
     @include media-query(TWO) {
       display: flex;
       flex-wrap: wrap;
       margin-left: 0;
-
-      .container {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-      }
     }
   }
 }

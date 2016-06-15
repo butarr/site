@@ -12,21 +12,13 @@ append content
     article.institutional  
       h2.page-name Mapa do Site
       .sitemap
-        .container
           section
             h3.title Notícias
             ul.list
               each val,index in {editorial:'Editorial', nacional:'Nacional', direitos_humanos:'Direitos Humanos', cultura:'Cultura', geral:'Geral', internacional:'Internacional', especiais:'Especiais', espanol:'Español', colunistas: 'Colunistas'}
                 li
                   a(itemprop="url", href="/" + index + "/")= val
-          section    
-            h3.title Edições Regionais
-            ul.list
-              each val, index  in {minas_gerais:"Minas Gerais", parana:"Paraná", pernambuco:"Pernambuco", rio_de_janeiro:"Rio de Janeiro"}
-                li
-                  a(itemprop="url", href="/" + index + "/")= val
-                  
-        .container        
+                      
           section    
             h3.title Colunistas
             ul.list
