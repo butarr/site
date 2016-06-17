@@ -170,6 +170,21 @@
   }
 }
 
+#home .advertising_01 {
+  display: none;
+
+  @include media-query(THREE) {
+    margin: 0 auto 10px auto;
+
+    img {
+      width: 640px;
+      height: 84px;
+    }
+
+    display: block;
+  }
+}
+
 #home .featured-big-picture {
   width: 100%;
   @include picture-with-caption();
