@@ -81,7 +81,12 @@ append content
         - var post=page.advertising_01
         a.advertising_01(itemprop="url" href=post.link target="_blank")
           img(src=post.image alt=post.title title=post.title itemprop="image")
-        
+
+      if page.advertising_03
+        - var post=page.advertising_03
+        a.advertising_03(itemprop="url" href=post.link target="_blank")
+          img(src=post.image alt=post.title title=post.title itemprop="image")
+
       .container
         .main    
           if page.featured_01
@@ -104,8 +109,13 @@ append content
             - var post=page.featured_03
             - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
             +small-picture("featured-3", post, imageDescription)    
-                
+
           #featured-text-container(class="divisor" class= "spacing")
+            if page.advertising_04
+              - var post=page.advertising_04
+              a.advertising_04(itemprop="url" href=post.link target="_blank")
+                img(src=post.image alt=post.title title=post.title itemprop="image")
+
             if page.featured_04
               - var post=page.featured_04
               article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-and-title" class= "spacing")
@@ -185,6 +195,11 @@ append content
           figure(class= "radar" class= "spacing")
             a(target="_blank" href="http://radar.brasildefato.com.br" title="Radar dos Movimentos")
               img(src="/img/radar.png" alt="Radar de movimentos populares")
+
+          if page.advertising_02
+            - var post=page.advertising_02
+            a.advertising_02(itemprop="url" href=post.link target="_blank")
+              img(src=post.image alt=post.title title=post.title itemprop="image")
 
           section.printed-news(class="spacing")
             +printed-news(page)

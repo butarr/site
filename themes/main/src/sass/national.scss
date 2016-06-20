@@ -185,6 +185,47 @@
   }
 }
 
+#home .advertising_02 {
+  display: none;
+
+  @include media-query(THREE) {
+    margin: 0 auto 10px auto;
+
+    img {
+      width: 220px;
+      height: 110px;
+    }
+
+    display: block;
+  }
+}
+
+#home .advertising_03 {
+  margin: 0 auto 10px auto;
+
+  img {
+    width: 300px;
+    height: 70px;
+  }
+
+  @include media-query(THREE) {
+    display: none;
+  }
+}
+
+#home .advertising_04 {
+  margin: 0 auto 10px auto;
+
+  img {
+    width: 300px;
+    height: 110px;
+  }
+
+  @include media-query(THREE) {
+    display: none;
+  }
+}
+
 #home .featured-big-picture {
   width: 100%;
   @include picture-with-caption();
