@@ -174,14 +174,15 @@
   display: none;
 
   @include media-query(THREE) {
-    margin: 0 auto 10px auto;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 10px;
 
     img {
       width: 640px;
       height: 84px;
     }
-
-    display: block;
   }
 }
 
@@ -201,7 +202,10 @@
 }
 
 #home .advertising_03 {
-  margin: 0 auto 10px auto;
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 10px;
 
   img {
     width: 300px;
