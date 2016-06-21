@@ -80,11 +80,11 @@ append content
           section#last-news-dynamic.last-news(class="spacing" hidden)
             meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
             h2.section-name Últimas notícias:
-              ol
-                each post in page.last_news
-                  li.inactive(itemprop="itemListElement")
-                    a(itemprop="url", href=post.path)
-                      h2.title= post.title
+            ol
+              each post in page.last_news
+                li.inactive(itemprop="itemListElement")
+                  a(itemprop="url", href=post.path)
+                    p.title= post.title
 
       .container
         .main    
