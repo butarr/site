@@ -168,7 +168,13 @@ $number-size: 1.3rem;
     .section-name {
       font: bold $title-size $family-sans;
       color: $link-color;
+
+      &:hover {
+        color: $link-hover-color;
+      }
     }
+
+
 
     .title {
       font: normal #{$text-size}/#{$line-separation-small} $family-sans;
