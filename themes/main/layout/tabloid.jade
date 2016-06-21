@@ -1,7 +1,21 @@
 extends base
 
 block title
-  title= page.title
+  - var area_field = page.display_area
+  case area_field
+    when "tabloid_mg"
+      - var state= "Minas Gerais"
+    when "tabloid_ce"
+      - var state= "Ceará"
+    when "tabloid_pe"
+      - var state= "Pernambuco"
+    when "tabloid_rj"
+      - var state= "Rio de Janeiro"
+    when "tabloid_pr"
+      - var state= "Paraná"
+        
+  title= "Edição " + page.edition + " - " + state + " - Brasil de Fato" 
+    
   
 block description
   - var area_field = page.display_area
