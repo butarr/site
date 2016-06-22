@@ -32,10 +32,23 @@ block description
       meta(name="description" content="Notícias da edição impressa do Paraná.")
       
 append content
+  - var area_field = page.display_area
+  case area_field
+    when "tabloid_mg"
+      - var acronym= "MG"
+    when "tabloid_ce"
+      - var acronym= "CE"
+    when "tabloid_pe"
+      - var acronym= "PE"
+    when "tabloid_rj"
+      - var acronym= "RJ"
+    when "tabloid_pr"
+      - var acronym= "PR"
+    
   main.grid-3-columns
     section#tabloid(itemtype="http://schema.org/NewsArticle", itemscope)
       - var published_at = utc_to_brt(page.date)
-      h2.title(itemprop="headline")= page.title
+      h2.title(itemprop="headline")= "Brasil de Fato " + acronym + " - Edição " + page.edition
       time(datetime=published_at.toISOString())= full_date(published_at)
       if page.cover
         .issuu
