@@ -100,3 +100,8 @@ $(document).ready(function() {
   var s = document.getElementsByTagName('script')[0];
   s.parentNode.insertBefore(gcse, s);
 })();
+
+//JQuery Scroll Depth
+jQuery(function() {
+  jQuery.scrollDepth();
+});
