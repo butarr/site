@@ -8,7 +8,6 @@ module.exports = function(baseDir){
 		return gulp.src('src/js/**/*.js')
 			.pipe(plumber())
 			.pipe(concat('main.js'))
-			.pipe(concat('jquery.scrolldepth.min.js'))
 			.pipe(uglify())
 			.pipe(gulp.dest(baseDir+'/js/'));
 	}
