@@ -14,8 +14,10 @@ block title
     when "tabloid_pr"
       - var state= "Paraná"
         
-  title= "Edição " + page.edition + " - " + state + " - Brasil de Fato" 
-    
+  if page.edition
+    title= "Edição " + page.edition + " - " + state + " - Brasil de Fato"
+  else
+    title= page.title
   
 block description
   - var area_field = page.display_area
@@ -48,7 +50,11 @@ append content
   main.grid-3-columns
     section#tabloid(itemtype="http://schema.org/NewsArticle", itemscope)
       - var published_at = utc_to_brt(page.date)
-      h2.title(itemprop="headline")= "Brasil de Fato " + acronym + " - Edição " + page.edition
+      if page.edition
+        - var title = "Brasil de Fato " + acronym + " - Edição " + page.edition
+      else
+        - var title = page.title
+      h2.title(itemprop="headline")= title
       time(datetime=published_at.toISOString())= full_date(published_at)
       if page.cover
         .issuu
