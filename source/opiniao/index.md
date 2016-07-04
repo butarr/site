@@ -11,5 +11,5 @@ news:
     title: '“No vermelho”: documentário retrata vida dos trabalhadores e artistas de sinal'
     path: 2016/03/29/no-vermelho-documentario-retrata-vida-dos-trabalhadores-e-artistas-de-sinal/
     hat: Economia
-area: editorial
+area: opinião
 ---
