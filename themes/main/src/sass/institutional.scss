@@ -53,6 +53,11 @@
     .text {
       margin-left: 10px;
     }
+
+    dd {
+      word-wrap: break-word;
+      white-space: initial;
+    }
   }
 
   .sitemap {
