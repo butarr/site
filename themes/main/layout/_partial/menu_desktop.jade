@@ -3,7 +3,7 @@ nav#menu-desktop(hidden)
     li
       a(href="/")= 'Início'
       meta(itemprop="name",content="string")
-    each val,index in {editorial:'Editorial', nacional:'Nacional', direitos_humanos:'Direitos Humanos', cultura:'Cultura', geral:'Geral', internacional:'Internacional', especiais:'Especiais', espanol:'Español'}
+    each val,index in {opiniao:'Opinião', nacional:'Nacional', direitos_humanos:'Direitos Humanos', cultura:'Cultura', geral:'Geral', internacional:'Internacional', especiais:'Especiais', espanol:'Español'}
       li
         a(itemprop="url", href="/" + index + "/")= val
         meta(itemprop="name",content="string")
