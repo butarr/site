@@ -2,7 +2,7 @@ mixin columnist_item(column)
   if column
     - var columnist=site.data.columnists[column.columnist]
     if columnist
-      article.columnist(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
+      article.columnist(itemscope itemtype="http://schema.org/BlogPosting")
         .photo
           a(href=column.path, title="link para a pagina do colunista")
             img(itemprop="image" alt="Foto de #{columnist.name}" src=columnist.photo itemscope itemtype="https://schema.org/Person")
