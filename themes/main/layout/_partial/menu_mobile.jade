@@ -1,18 +1,21 @@
 nav#menu-mobile(itemscope itemtype="http://schema.org/SiteNavigationElement")
   h2(class="offscreen") Menu Principal
   header.menu-header
-    img#close-button(src="/img/close-bttn.svg" alt="imagem botao fechar")
-    a(href="/")
-      img#logo-menu-mobile(src="/img/logo.svg" alt="imagem brasil de fato")
+    img#close-button(src="/img/close-bttn.svg" alt="Botao fechar")
+    a(itemprop="url" href="/")
+      img#logo-menu-mobile(src="/img/logo.svg" alt="Logo do brasil de fato")
+    meta(itemprop="name" content="Início")
   .menu-scrollable
     ul
       li
-        a(href="/")= 'Início'
-        meta(itemprop="name",content="string")
+        a(itemprop="url" href="/")= 'Início'
+        meta(itemprop="name" content="Início")
       each val, index in {opiniao:"Opinião", nacional:"Nacional", direitos_humanos:"Direitos Humanos", cultura:"Cultura", geral:"Geral", internacional:"Internacional", especiais:"Especiais", espanol:"Español"}
         li
-          a(itemprop="url", href="/" + index + "/")= val
+          a(itemprop="url" href="/" + index + "/")= val
+          meta(itemprop="name" content=val)
       each val, index in {quem_somos:"Quem Somos", parceiros:"Parceiros", publicidade:"Publicidade", contato:"Contato"}
         li
           a(itemprop="url" href="/" + index + ".html")= val
+          meta(itemprop="name" content=val)
     include social-media-icons
