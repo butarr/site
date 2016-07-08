@@ -48,18 +48,33 @@
     display: flex;
     -webkit-jutify-content: space-between; //Old Safari
     justify-content: space-between;
+    margin-bottom: 10px;
   }
 
+  .share-title {
+    margin: 0;
+    font-size: 1rem;
+    text-align: right;
+  }
 
-  .share-whatsapp {
-    margin-bottom: 10px;
+  .share-icons-container {
+    display: flex;
+    display: -webkit-flex; //Old Safari
+    justify-content: flex-end;
+    -webkit-jutify-content: flex-end; //Old Safari
+  }
 
-    @include media-query(THREE){
+  .share-icon {
+    margin-left: 1.2rem;
+  }
+
+  .share-mobile {
+    @include media-query(THREE) {
       display: none;
     }
   }
 
-  @include media-query(MEDIUM) {
+  @include media-query(THREE) {
     figure {
       margin-left: auto;
       margin-right: auto;

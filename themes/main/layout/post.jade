@@ -2,7 +2,7 @@ extends base
 
 block title
   title= titlecase(page.title) + " - " + titlecase(page.area) + " - Brasil de Fato"
-  
+
 block description
   meta(name="description" content=page.description)
 
@@ -29,18 +29,20 @@ append content
         .details-bar
           .author-time
             span.author(rel="author" itemprop="author")= page.author
-            .place-and-time      
+            .place-and-time
               span.place(itemprop="contentLocation")= page.place + ', '
               time(itemprop="datePublished" datetime=published_at.toISOString())= full_date(published_at)
-          a.share-whatsapp.fa.fa-whatsapp.fa-5x(href='whatsapp://send?text=#{config.url}/#{page.url}' data-action='share/whatsapp/share' title='Compartilhar no whatsapp')
+          .share-bar
+            p.share-title()= 'Compartilhe'
+            .share-icons-container
+              a.share-icon.fa.fa-facebook.fa-3x(href='https://www.facebook.com/sharer/sharer.php?u=#{config.url}/#{page.url}' target='_blank' title='Compartilhar no Facebook')
+              a.share-icon.share-mobile.fa.fa-whatsapp.fa-3x(href='whatsapp://send?text=#{config.url}/#{page.url}' data-action='share/whatsapp/share' title='Compartilhar no whatsapp')
         if page.cover
           figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
             - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits
             - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
             img(itemprop="url" alt=imageDescription src=page.cover['medium'] )
             figcaption(itemprop="caption")= imageCaption
-            
+
       .content(itemprop="articleBody")
        != page.content
-      
-       
