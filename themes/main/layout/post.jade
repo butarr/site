@@ -5,6 +5,7 @@ mixin social-media-share
     p.share-title()= 'Compartilhe'
     .share-icons-container
       a.share-icon.fa.fa-facebook.fa-3x(href='https://www.facebook.com/sharer/sharer.php?u=#{config.url}#{page.url}' target='_blank' title='Compartilhar no Facebook')
+      a.share-icon.fa.fa-twitter.fa-3x(href='https://twitter.com/share' target='_blank' title='Compartilhar no Twitter')
       a.share-icon.share-mobile.fa.fa-whatsapp.fa-3x(href='whatsapp://send?text=#{config.url}#{page.url}' data-action='share/whatsapp/share' title='Compartilhar no whatsapp')
 
 block title
@@ -15,6 +16,7 @@ block description
 
 block open_graph
   include _partial/open_graph_page
+  include _partial/twitter_meta_page
 
 append content
   main.grid-3-columns
