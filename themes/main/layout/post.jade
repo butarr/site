@@ -1,5 +1,12 @@
 extends base
 
+mixin social-media-share
+  .share-bar
+    p.share-title()= 'Compartilhe'
+    .share-icons-container
+      a.share-icon.fa.fa-facebook.fa-3x(href='https://www.facebook.com/sharer/sharer.php?u=#{config.url}#{page.url}' target='_blank' title='Compartilhar no Facebook')
+      a.share-icon.share-mobile.fa.fa-whatsapp.fa-3x(href='whatsapp://send?text=#{config.url}#{page.url}' data-action='share/whatsapp/share' title='Compartilhar no whatsapp')
+
 block title
   title= titlecase(page.title) + " - " + titlecase(page.area) + " - Brasil de Fato"
 
@@ -32,11 +39,7 @@ append content
             .place-and-time
               span.place(itemprop="contentLocation")= page.place + ', '
               time(itemprop="datePublished" datetime=published_at.toISOString())= full_date(published_at)
-          .share-bar
-            p.share-title()= 'Compartilhe'
-            .share-icons-container
-              a.share-icon.fa.fa-facebook.fa-3x(href='https://www.facebook.com/sharer/sharer.php?u=#{config.url}/#{page.url}' target='_blank' title='Compartilhar no Facebook')
-              a.share-icon.share-mobile.fa.fa-whatsapp.fa-3x(href='whatsapp://send?text=#{config.url}/#{page.url}' data-action='share/whatsapp/share' title='Compartilhar no whatsapp')
+          +social-media-share
         if page.cover
           figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
             - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits
@@ -46,3 +49,5 @@ append content
 
       .content(itemprop="articleBody")
        != page.content
+       footer
+        +social-media-share
