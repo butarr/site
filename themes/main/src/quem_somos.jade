@@ -7,9 +7,9 @@ block description
   meta(name="description" content="Histórico e expediente do site e jornais impressos regionais.")
 
 append content
-  main.grid-3-columns
-    article.institutional(itemtype="http://schema.org/NewsArticle", itemscope)
-      h2.page-name(itemprop="about")= "Quem Somos"
+  main.grid-3-columns(itemscope itemtype="http://schema.org/AboutPage")
+    article.institutional(itemprop="mainContentOfPage")
+      h2.page-name= "Quem Somos"
 
       p= "O Brasil de Fato (BdF) é um site de notícias e possui jornais regionais no Rio de Janeiro, em Minas Gerais, São Paulo, no Paraná e em Pernambuco. Lançado em 25 de janeiro de 2003, o BdF circulou por mais de dez anos com uma versão impressa nacional."
       p= "Por entenderem que, na luta por uma sociedade justa e fraterna, a democratização dos meios de comunicação é fundamental, movimentos populares criaram o Brasil de Fato para contribuir no debate de ideias e na análise dos fatos do ponto de vista da necessidade de mudanças sociais em nosso país."
