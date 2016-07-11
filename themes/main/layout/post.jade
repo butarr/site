@@ -41,12 +41,14 @@ append content
             .place-and-time
               span.place(itemprop="contentLocation")= page.place + ', '
               time(itemprop="datePublished" datetime=published_at.toISOString())= full_date(published_at)
+              meta(itemprop="dateModified" content="#{page.updated_at}")
           +social-media-share
         if page.cover
           figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
             - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits
             - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
             img(itemprop="url" alt=imageDescription src=page.cover['medium'] )
+            meta(itemprop="width" content="640")
             figcaption(itemprop="caption")= imageCaption
 
       .content(itemprop="articleBody")
