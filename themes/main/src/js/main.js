@@ -100,3 +100,11 @@ $(document).ready(function() {
   var s = document.getElementsByTagName('script')[0];
   s.parentNode.insertBefore(gcse, s);
 })();
+
+$(document).ready(function() {
+  var myimage = document.getElementById("imageFeatured");
+  var width = myimage.width;
+  var height = myimage.height;
+  $("#metaHeight").attr("content", height);
+  $("#metaWidth").attr("content", width);
+});
