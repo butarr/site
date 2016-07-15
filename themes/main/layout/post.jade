@@ -47,9 +47,9 @@ append content
           figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
             - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits
             - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
-            img(itemprop="url" alt=imageDescription src=page.cover['medium'] id="imageFeatured")
-            meta(id="metaWidth" itemprop="width")
-            meta(id="metaHeight" itemprop="height")      
+            img(itemprop="url" alt=imageDescription src=page.cover['medium'])
+            meta(itemprop="width" content="640")
+            meta(itemprop="height" content="420")      
             figcaption(itemprop="caption")= imageCaption
 
       .content(itemprop="articleBody")
