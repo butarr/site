@@ -8,6 +8,45 @@ mixin social-media-share
       a.share-icon.fa.fa-twitter.fa-3x(href='https://twitter.com/share' target='_blank' title='Compartilhar no Twitter')
       a.share-icon.share-mobile.fa.fa-whatsapp.fa-3x(href='whatsapp://send?text=#{config.url}#{page.url}' data-action='share/whatsapp/share' title='Compartilhar no whatsapp')
 
+block markup
+  script(type="application/ld+json").
+   {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "#{page.url}"
+    },
+    "about": "#{page.hat}",
+    "contentLocation": "#{page.place}",
+    "headline": "#{page.title}",
+    "articleBody": "#{page.content}",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https:#{page.cover['medium']}",
+      "height": 464,
+      "width": 696
+    },
+    "datePublished": "#{utc_to_brt(page.date)}",
+    "dateModified": "#{page.updated_at}",
+    "author": {
+      "@type": "Person",
+      "name": "#{page.author}"
+    },
+     "publisher": {
+      "@type": "Organization",
+      "name": "Brasil de Fato",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://google.com/logo.jpg",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "#{page.description}"
+   }
+  
+  
 block title
   title= titlecase(page.title) + " - " + titlecase(page.area) + " - Brasil de Fato"
 
@@ -25,34 +64,27 @@ append content
     else
       - var language= null
 
-    article#post(itemscope itemtype="http://schema.org/NewsArticle" lang= language)
-      meta(itemprop="mainEntityOfPage" content=page.url)
-      div(itemscope itemtype="https://schema.org/Organization" itemprop="publisher")
-        meta(itemprop="name" content="Brasil de Fato")
-        link(itemprop="sameAs" href="https://www.brasildefato.com.br")
+    article#post(lang= language)
       header
         - var published_at = utc_to_brt(page.date)
-        span.hat(itemprop="about")= page.hat
-        h2.title(itemprop="headline")= page.title
-        p.description(itemprop="description")= page.description
+        span.hat= page.hat
+        h2.title= page.title
+        p.description= page.description
         .details-bar
           .author-time
-            span.author(rel="author" itemprop="author")= page.author
+            span.author(rel="author")= page.author
             .place-and-time
-              span.place(itemprop="contentLocation")= page.place + ', '
-              time(itemprop="datePublished" datetime=published_at.toISOString())= full_date(published_at)
-              meta(itemprop="dateModified" content="#{page.updated_at}")
+              span.place= page.place + ', '
+              time= full_date(published_at)
           +social-media-share
         if page.cover
-          figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
+          figure
             - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits
             - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
-            img(itemprop="url" alt=imageDescription src=page.cover['medium'])
-            meta(itemprop="width" content="640")
-            meta(itemprop="height" content="420")      
-            figcaption(itemprop="caption")= imageCaption
+            img(alt=imageDescription src=page.cover['medium'])  
+            figcaption= imageCaption
 
-      .content(itemprop="articleBody")
+      .content
         != page.content
       footer
         +social-media-share
