@@ -267,14 +267,30 @@
     flex-shrink: 0;
   }
 
-  a {
+  .title {
     -webkit-flex-shrink: 1; //Old Safari
     flex-shrink: 1;
     padding: 0 10px;
+  }
 
-    @include media-query(THREE) {
+  @include media-query(THREE) {
+    .title {
       border-left: 3px solid $vertical-bar;
+      padding-left: 10px;
       margin-top: $VERTICAL-SPACE;
+    }
+  }
+
+  a {
+    display: -webkit-flex; //Old Safari
+    display: flex;
+    -webkit-flex-direction: row; //Old Safari
+    flex-direction: row;
+    @include media-query(THREE) {
+      -webkit-flex-direction: column; //Old Safari
+      flex-direction: column;
+      -webkit-align-self: flex-start; //Old Safari
+      align-self: flex-start;
     }
   }
 }

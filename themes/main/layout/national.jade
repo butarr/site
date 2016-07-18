@@ -43,9 +43,9 @@ mixin printed-news(page)
 mixin small-picture (field, post, imageDescription)
   article(id=field itemscope itemtype="https://schema.org/NewsArticle" class="featured-small-picture" class="divisor" class="spacing")
     a(itemprop="image" href=post.path)
+      figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
       h3.title(itemprop="headline")= post.title
-    figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-    
+
 mixin featured-text-box (post)
   .box-container(class= "spacing")
     article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-box")
