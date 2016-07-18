@@ -334,6 +334,10 @@ $number-size: 1.3rem;
   .share-icon {
     color: $text-color;
 
+    &:visited {
+      color: $text-color;
+    }
+
     &:hover {
       color:$link-neutral-color-hover;
     }
