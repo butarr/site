@@ -15,6 +15,6 @@ news:
       trajetória de Rafael Padilla, morto em 1917
     title: Filme resgata a história do primeiro palhaço negro da França
     path: /2016/07/20/filme-resgata-a-historia-do-primeiro-palhaco-negro-da-franca/
-area: cultura
+area: últimas notícias
 ---
 
