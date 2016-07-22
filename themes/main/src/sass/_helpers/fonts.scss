@@ -332,10 +332,10 @@ $number-size: 1.3rem;
   }
 
   .share-icon {
-    color: $text-color;
+    color: $link-neutral-color;
 
     &:visited {
-      color: $text-color;
+      color: $link-neutral-color-visited;
     }
 
     &:hover {
