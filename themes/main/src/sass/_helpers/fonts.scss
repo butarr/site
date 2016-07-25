@@ -484,6 +484,17 @@ $number-size: 1.3rem;
   }
 }
 
+@mixin __newsletter(){
+  .button {
+    background: $button-newsletter;
+    color: $link-inverted-color;
+  }
+
+  p {
+    font-size: $details-size;
+  }
+}
+
 @mixin get-font($type){
   @if( $type == POST ){
     @include __post();
@@ -520,5 +531,8 @@ $number-size: 1.3rem;
   }
   @else if( $type == TABLOID ){
     @include __tabloid();
+  }
+  @else if ($type == NEWSLETTER){
+    @include __newsletter();
   }
 }
