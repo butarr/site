@@ -7,46 +7,7 @@ mixin social-media-share
       a.share-icon.fa.fa-facebook.fa-3x(href='https://www.facebook.com/sharer/sharer.php?u=#{config.url}#{page.url}%3Freferer=bdf_button_facebook' target='_blank' title='Compartilhar no Facebook')
       a.share-icon.fa.fa-twitter.fa-3x(href='https://twitter.com/share?url=#{config.url}#{page.url}%3Freferer=bdf_button_twitter' target='_blank' title='Compartilhar no Twitter')
       a.share-icon.share-mobile.fa.fa-whatsapp.fa-3x(href='whatsapp://send?text=#{config.url}#{page.url}%3Freferer=bdf_button_whatsapp' data-action='share/whatsapp/share' title='Compartilhar no whatsapp')
-
-block markup
-  script(type="application/ld+json").
-   {
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "#{page.url}"
-    },
-    "about": "#{page.hat}",
-    "contentLocation": "#{page.place}",
-    "headline": "#{page.title}",
-    "articleBody": "#{page.content}",
-    "image": {
-      "@type": "ImageObject",
-      "url": "https:#{page.cover['medium']}",
-      "height": 464,
-      "width": 696
-    },
-    "datePublished": "#{utc_to_brt(page.date)}",
-    "dateModified": "#{page.updated_at}",
-    "author": {
-      "@type": "Person",
-      "name": "#{page.author}"
-    },
-     "publisher": {
-      "@type": "Organization",
-      "name": "Brasil de Fato",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://brasildefato.com.br/img/logo-microdata.jpg",
-        "width": 600,
-        "height": 60
-      }
-    },
-    "description": "#{page.description}"
-   }
-  
-  
+    
 block title
   title= titlecase(page.title) + " - " + titlecase(page.area) + " - Brasil de Fato"
 
@@ -64,27 +25,41 @@ append content
     else
       - var language= null
 
-    article#post(lang= language)
+    article#post(itemscope itemtype="http://schema.org/NewsArticle" lang= language)
+      meta(itemprop="mainEntityOfPage" content=page.url)
+      div(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
+        div(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
+          meta(itemprop="url" content="https://brasildefato.com.br/img/logo-microdata.jpg")
+          meta(itemprop="width" content="600")
+          meta(itemprop="height" content="60")
+        meta(itemprop="name" content="Brasil de Fato")
+        link(itemprop="sameAs" href="https://www.brasildefato.com.br")
+        
       header
         - var published_at = utc_to_brt(page.date)
-        span.hat= page.hat
-        h2.title= page.title
-        p.description= page.description
+        span.hat(itemprop="about")= page.hat
+        h2.title(itemprop="headline")= page.title
+        p.description(itemprop="description")= page.description
+        
         .details-bar
           .author-time
-            span.author(rel="author")= page.author
+            span.author(rel="author" itemprop="author")= page.author
             .place-and-time
-              span.place= page.place + ', '
-              time= full_date(published_at)
+              span.place(itemprop="contentLocation")= page.place + ', '
+              time(itemprop="datePublished" datetime=published_at.toISOString())= full_date(published_at)
+              meta(itemprop="dateModified" content="#{page.updated_at}")
           +social-media-share
+          
         if page.cover
-          figure
+          figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
             - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits
             - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
-            img(alt=imageDescription src=page.cover['medium'])  
-            figcaption= imageCaption
+            img(itemprop="url" alt=imageDescription src=page.cover['medium'])
+            meta(itemprop="width" content="640")
+            meta(itemprop="height" content="420")      
+            figcaption(itemprop="caption")= imageCaption
 
-      .content
+      .content(itemprop="articleBody")
         != page.content
       footer
         +social-media-share
