@@ -7,9 +7,9 @@ block description
   meta(name="description" content="Entre em contato com a redação, administrativo e publicidade do site e dos jornais regionais.")
 
 append content
-  main.grid-3-columns
-    article.institutional(itemtype="http://schema.org/NewsArticle", itemscope)
-      h2.page-name(itemprop="about")= "Contato"
+  main.grid-3-columns(itemtype="https://schema.org/ContactPage", itemscope)
+    article.institutional(itemprop="mainContentOfPage")
+      h2.page-name= "Contato"
 
       h3.title= "Site Brasil de Fato"  
       
