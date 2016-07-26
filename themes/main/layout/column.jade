@@ -1,5 +1,44 @@
 extends base
 
+block markup
+  script(type="application/ld+json").
+   {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "#{page.url}"
+    },
+    "about": "#{page.hat}",
+    "contentLocation": "#{page.place}",
+    "headline": "#{page.title}",
+    "articleBody": "#{page.content}",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https:#{page.cover['medium']}",
+      "height": 464,
+      "width": 696
+    },
+    "datePublished": "#{utc_to_brt(page.date)}",
+    "dateModified": "#{page.updated_at}",
+    "author": {
+      "@type": "Person",
+      "name": "#{page.author}"
+    },
+     "publisher": {
+      "@type": "Organization",
+      "name": "Brasil de Fato",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://brasildefato.com.br/img/logo-microdata.jpg",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "#{page.description}"
+   }
+   
+
 block title
   title= titlecase(page.title) + " - Coluna - Brasil de Fato"
   
@@ -15,21 +54,35 @@ append content
     - var columnist = site.data.columnists[page.columnist]
     article#column(itemscope, itemtype="http://schema.org/BlogPosting")
       span.hat Coluna
+      
       .column-header
         h2.title(itemprop="headline")= page.title
-        .person(itemscope, itemtype="http://schema.org/Person")
-          img.profile-image(itemprop="image", alt="Imagem de perfil do Colunista", src=columnist.photo )
+        .person 
+          img.profile-image(alt="Imagem de perfil do Colunista", src=columnist.photo)
           .name-and-time
-            span.name(itemprop="name")= columnist.name
+            span.name(itemprop="author")= columnist.name
             time(datetime=published_at.toISOString())= full_date(published_at)
-      meta(itemprop="datePublished", content=published_at)
-      meta(itemprop="image", content='http:'+columnist.photo)
+            meta(itemprop="datePublished", content=published_at)
+            meta(itemprop="dateModified", content=page.updated_at)
+            
       if page.cover
-        figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
+        figure(itemscope itemprop="image" itemtype="https://schema.org/ImageObject")
           - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits
           - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
-          img(itemprop="thumbnail", alt=imageDescription, title=imageDescription, src=page.cover['medium'] )
-          figcaption(itemprop="caption")= imageCaption
+          img(itemprop="url" alt=imageDescription, title=imageDescription, src=page.cover['medium'] )
+          figcaption= imageCaption
+          meta(itemprop="width" content="696")
+          meta(itemprop="height" content="434")
+          
       .content
         blockquote.description(itemprop="description")= page.description
         != page.content
+      
+      meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{page.url}")  
+      div(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
+        div(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
+          meta(itemprop="url" content="https://brasildefato.com.br/img/logo-microdata.jpg")
+          meta(itemprop="width" content="600")
+          meta(itemprop="height" content="60")
+        meta(itemprop="name" content="Brasil de Fato")
+    
