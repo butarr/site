@@ -253,6 +253,12 @@ $number-size: 1.3rem;
     font: $details-size $family-sans;
     color: $details-color;
   }
+
+  .pagination-title {
+    font: bold $page-name-size $family-sans;
+    text-transform: uppercase;
+    color: $page-title-color;
+  }
 }
 
 @mixin __columnists(){
@@ -284,6 +290,12 @@ $number-size: 1.3rem;
     .name {
       color: $link-hover-color;
     }
+  }
+
+  .pagination-title {
+    font: bold $page-name-size $family-sans;
+    text-transform: uppercase;
+    color: $page-title-color;
   }
 }
 

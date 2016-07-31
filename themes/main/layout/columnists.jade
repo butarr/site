@@ -10,9 +10,8 @@ append content
   main.grid-3-columns
     section#columnists(itemscope itemtype="http://schema.org/ItemList")
       h2.page-name Colunistas
-
       each post in page.columns
-        article.column(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement")
+        article.column(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement" class="divisor")
           - var columnist = site.data.columnists[post.columnist];
           - var published_at = utc_to_brt(post.date)
           .person-cell(itemscope itemtype="http://schema.org/Person")
@@ -29,3 +28,4 @@ append content
               h3.title(itemprop="headline")= post.title
               p.description(itemprop="description")= post.description
               time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+      include _partial/pagination

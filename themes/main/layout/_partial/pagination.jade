@@ -1,0 +1,12 @@
+.pagination-container
+  if page.prev || page.next
+    h2.pagination-title Mais Notícias
+  .pagination-button-container
+    if page.prev
+      - var prevUrl= 'index.html'
+      if page.page_index > 1
+        - var prevUrl= 'page' + (page.page_index-1) + '.html'
+      a.pagination.pagination-button.fa.fa-backward.fa-2x(href=prevUrl)
+    if page.next
+      - var nextUrl= 'page' + (page.page_index+1) + '.html'
+      a.pagination.pagination-button.fa.fa-forward.fa-2x(href=nextUrl)

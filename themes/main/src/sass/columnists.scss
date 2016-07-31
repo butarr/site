@@ -4,13 +4,15 @@
 
 #columnists {
   @include get-font(COLUMNISTS);
+  @include pagination;
 
   .page-name {
     @include page-name();
   }
 
-  .column + .column {
-    border-top: 1px solid $content-divisor;
+  .column.divisor {
+    padding: 20px 0;
+    border-bottom: 1px solid $content-divisor;
   }
 }
 

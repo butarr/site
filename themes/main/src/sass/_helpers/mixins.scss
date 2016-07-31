@@ -160,3 +160,40 @@
     }
   }
 }
+
+@mixin pagination(){
+  .pagination-container {
+    margin-top: 5px;
+    .pagination-title {
+      text-align: center;
+    }
+
+    .pagination-button-container {
+      display: -webkit-flex; //Old Safari
+      display: flex;
+      -webkit-justify-content: center; //Old Safari
+      justify-content: center;
+      -webkit-align-items: center; //Old Safari
+      align-items: center;
+    }
+  }
+
+  .pagination-button {
+    display: block;
+    border: 1px solid #b7b7b7;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px #b7b7b7;
+    padding: 2px 0px;
+    text-align: center;
+    width: 64px;
+    margin: 4px 6px 0px;
+
+    &:visited {
+      box-shadow: 1px 2px 1px #b7b7b7;
+    }
+
+    &:hover {
+      box-shadow: 1px 2px 1px #b7b7b7;
+    }
+  }
+}
