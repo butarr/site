@@ -1,12 +1,12 @@
 .pagination-container
   if page.prev || page.next
-    h2.pagination-title Mais Notícias
+    //h2.pagination-title Mais Notícias
   .pagination-button-container
-    if page.prev
-      - var prevUrl= 'index.html'
-      if page.page_index > 1
-        - var prevUrl= 'page' + (page.page_index-1) + '.html'
-      a.pagination.pagination-button.fa.fa-backward.fa-2x(href=prevUrl)
-    if page.next
-      - var nextUrl= 'page' + (page.page_index+1) + '.html'
-      a.pagination.pagination-button.fa.fa-forward.fa-2x(href=nextUrl)
+    - for (var n = 0; n < page.total && page.total > 1; n++)
+      - var thisUrl= 'index.html'
+      if n > 0
+        - var thisUrl= 'page' + (n) + '.html'
+      if n != page.current
+        a.pagination.button(href=thisUrl) #{n+1}
+      else
+        a.pagination.button.button-selected(href=thisUrl) #{n+1}

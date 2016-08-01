@@ -6,6 +6,7 @@
   @include column-lateral-spacing(10px);
   @include image-rounded(110px, 110px);
   @include pagination;
+  @include button;
 
   @include media-query(TWO) {
     @include image-rounded(150px, 150px);

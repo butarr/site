@@ -138,11 +138,17 @@
 }
 
 @mixin button(){
+  .pagination-button-container .button {
+    width: auto;
+    padding: 8px 16px;
+    margin: 5px 10px;
+  }
+
   .button {
     display: block;
-    border: 1px solid #b7b7b7;
+    border: 1px solid $button-border;
     border-radius: 3px;
-    box-shadow: 0px 1px 1px #b7b7b7;
+    box-shadow: 0px 1px 1px $button-border;
     padding: 8px 0;
     text-align: center;
     width: 100%;
@@ -152,12 +158,18 @@
     }
 
     &:visited {
-      box-shadow: 1px 2px 1px #b7b7b7;
+      box-shadow: 1px 2px 1px $button-border;
     }
 
     &:hover {
-      box-shadow: 1px 2px 1px #b7b7b7;
+      box-shadow: 1px 2px 1px $button-border;
     }
+  }
+
+  .button-selected {
+    cursor: default;
+    pointer-events: none;
+    border: 2px solid $button-border-selected;
   }
 }
 
@@ -175,25 +187,6 @@
       justify-content: center;
       -webkit-align-items: center; //Old Safari
       align-items: center;
-    }
-  }
-
-  .pagination-button {
-    display: block;
-    border: 1px solid #b7b7b7;
-    border-radius: 3px;
-    box-shadow: 0px 1px 1px #b7b7b7;
-    padding: 2px 0px;
-    text-align: center;
-    width: 64px;
-    margin: 4px 6px 0px;
-
-    &:visited {
-      box-shadow: 1px 2px 1px #b7b7b7;
-    }
-
-    &:hover {
-      box-shadow: 1px 2px 1px #b7b7b7;
     }
   }
 }

@@ -259,6 +259,32 @@ $number-size: 1.3rem;
     text-transform: uppercase;
     color: $page-title-color;
   }
+
+  .button {
+    font: bold #{$text-size}/#{$line-separation-small} $family-sans;
+    color: $link-neutral-color;
+
+    &:visited {
+      color: $link-neutral-color-visited;
+    }
+
+    &:hover {
+      color:$link-neutral-color-hover;
+    }
+  }
+
+  .button-selected {
+    font: bold #{$text-size}/#{$line-separation-small} $family-sans;
+    color:$link-color;
+
+    &:visited {
+      color:$link-color;
+    }
+
+    &:hover {
+      color:$link-color;
+    }
+  }
 }
 
 @mixin __columnists(){
@@ -296,6 +322,32 @@ $number-size: 1.3rem;
     font: bold $page-name-size $family-sans;
     text-transform: uppercase;
     color: $page-title-color;
+  }
+
+  .button {
+    font: bold #{$text-size}/#{$line-separation-small} $family-sans;
+    color: $link-neutral-color;
+
+    &:visited {
+      color: $link-neutral-color-visited;
+    }
+
+    &:hover {
+      color:$link-neutral-color-hover;
+    }
+  }
+
+  .button-selected {
+    font: bold #{$text-size}/#{$line-separation-small} $family-sans;
+    color:$link-color;
+
+    &:visited {
+      color:$link-color;
+    }
+
+    &:hover {
+      color:$link-color;
+    }
   }
 }
 

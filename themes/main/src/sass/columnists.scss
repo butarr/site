@@ -5,6 +5,7 @@
 #columnists {
   @include get-font(COLUMNISTS);
   @include pagination;
+  @include button;
 
   .page-name {
     @include page-name();
