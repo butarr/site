@@ -34,18 +34,42 @@ append content
       - var language= "es"
     else
       - var language= null
+      
     section#news-list(class= "list" itemscope itemtype="http://schema.org/ItemList" lang= language)
-      h2(class="page-name" itemprop="about")= page.area
+      h2(class="page-name" itemprop="name")= page.area
+      
+      - var position= 0
       each post in page.news
         - var published_at = utc_to_brt(post.date)
+        
         a.news-item-link(href=post.path)
-          article.news-item(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class= "divisor")
-            if post.cover
-              .image
-                - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-                figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-            .content(class="no-image" class= "divisor")
-              h3.title(itemprop= "headline")= post.title
-              p.description(itemprop="description")= post.description
-              time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
-      include _partial/pagination
+          article.news-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
+            meta(itemprop="url" content="https://www.brasildefato.com.br/#{post.path}")
+            meta(itemprop="position" content="#{++position}")
+            
+            span(itemscope itemtype="https://schema.org/NewsArticle")
+              meta(itemprop="author" content= post.author)
+              meta(itemprop="dateModified" content=post.updated_at)
+              meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{post.url}")
+              span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
+                span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
+                  meta(itemprop="url" content="https://www.brasildefato.com.br/img/logo-microdata.jpg")
+                  meta(itemprop="width" content="600")
+                  meta(itemprop="height" content="60")
+                meta(itemprop="name" content="Brasil de Fato")
+                link(itemprop="sameAs" href="https://www.brasildefato.com.br")
+                
+              if post.cover
+                .image
+                  - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+                  figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
+                    meta(itemprop="width" content="696")
+                    meta(itemprop="height" content="464")
+                    meta(itemprop="url" content="http://www.brasildefato.com.br/#{post.cover.url}")
+                  
+              .content(class="no-image" class= "divisor")
+                h3.title(itemprop= "headline")= post.title
+                p.description(itemprop="description")= post.description
+                time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+                
+include _partial/pagination

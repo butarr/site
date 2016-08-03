@@ -1,20 +1,22 @@
 ---
 layout: news_list
 news:
-  - cover:
-      url: //farm9.staticflickr.com/8617/28156477860_39248da2ea_b.jpg
-      small: //farm9.staticflickr.com/8617/28156477860_39248da2ea_n.jpg
-      medium: //farm9.staticflickr.com/8617/28156477860_39248da2ea_z.jpg
-      credits: Divulgaçao
-      subtitle: >-
-        Omar Sy: 'Chocolate fazia rir através dos estereótipos que havia sobre
-        os negros' 
-    date: 2016-07-20T21:20:05.687Z
-    description: >-
-      'Chocolate', dirigido por Roschdy Zem e interpretado por Omar Sy, refaz a
-      trajetória de Rafael Padilla, morto em 1917
-    title: Filme resgata a história do primeiro palhaço negro da França
-    path: /2016/07/20/filme-resgata-a-historia-do-primeiro-palhaco-negro-da-franca/
+  - updated_at: 2016-08-03T21:25:14.934Z
+    cover:
+      url: //farm9.staticflickr.com/8511/28132376924_ed3181bc14_b.jpg
+      small: //farm9.staticflickr.com/8511/28132376924_ed3181bc14_n.jpg
+      medium: //farm9.staticflickr.com/8511/28132376924_ed3181bc14_z.jpg
+      credits: Fotógrafa
+      subtitle: alguma imagem
+    date: 2016-08-03T21:24:14.398Z
+    description: Finissíma
+    title: Nos
+    path: /2016/08/03/nos/
+    author: Almodovar
 area: cultura
+current: 0
+total: 1
+next: false
+prev: false
 ---
 
