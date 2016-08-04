@@ -117,6 +117,8 @@
 #home .main {
   display: -webkit-flex; //Old Safari
   display: flex;
+  -webkit-align-content: flex-start; //Old Safari
+  align-content: flex-start;
   -webkit-flex-wrap: wrap; //Old Safari
   flex-wrap: wrap;
   width: 100%;
