@@ -40,6 +40,14 @@ mixin printed-news(page)
     a(href= page.rio_de_janeiro.path)
       h3.button Rio de Janeiro
       
+mixin newsletter
+  h2.section-name Boletim BdF
+  p Receba notícias via e-mail
+  div
+    input(type=text placeholder="Digite seu e-mail...")
+    a(class="button")
+      span Assinar
+
 mixin small-picture (field, post, imageDescription)
   article(id=field itemscope itemtype="https://schema.org/NewsArticle" class="featured-small-picture" class="divisor" class="spacing")
     a(itemprop="image" href=post.path)
@@ -138,7 +146,10 @@ append content
 
           section.printed-news(class="spacing")
             +printed-news(page)
-                  
+
+          section.newsletter(class="spacing")
+            +newsletter
+
           section(class= "columnists" class="spacing" itemscope itemtype="http://schema.org/ItemList" )
             +columnists_list
 
@@ -204,7 +215,10 @@ append content
 
           section.printed-news(class="spacing")
             +printed-news(page)
-                                    
+
+          section.newsletter(class="spacing")
+            +newsletter
+
           section(class= "columnists" class="spacing" itemscope itemtype="http://schema.org/ItemList")
             +columnists_list
 

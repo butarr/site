@@ -160,6 +160,12 @@
     }
   }
 
+  .newsletter {
+    @include media-query(THREE) {
+      display: none;
+    }
+  }
+
   iframe {
     width: 100%;
     height: 263px;
@@ -512,6 +518,38 @@
   img {
     width: 220px;
     margin: 0 auto;
+  }
+}
+
+#home .newsletter {
+  width: 100%;
+  @include get-font(NEWSLETTER);
+
+  .section-name {
+    @include section-name();
+    margin-bottom: 10px;
+  }
+
+  div {
+    height: 40px;
+    margin-top: 10px;
+    display: -webkit-flex; //Old Safari
+    display: flex;
+    -webkit-align-items: center; //Old Safari
+    align-items: center;
+  }
+
+  .button {
+    background: $button-newsletter;
+    color: $link-inverted-color;
+    width:45%;
+    height: 100%;
+  }
+
+  input {
+    height: 100%;
+    width: 55%;
+    margin-right: 5px;
   }
 }
 

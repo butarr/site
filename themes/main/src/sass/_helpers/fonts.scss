@@ -226,6 +226,17 @@ $number-size: 1.3rem;
       color: $link-hover-color;
     }
   }
+
+  .newsletter {
+    p {
+      font-size: $details-size;
+    }
+
+    input,
+    input::-webkit-input-placeholder {
+      font-size: 0.75rem;
+    }
+  }
 }
 
 @mixin __list(){
