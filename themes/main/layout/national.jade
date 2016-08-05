@@ -40,12 +40,12 @@ mixin printed-news(page)
     a(href= page.rio_de_janeiro.path)
       h3.button Rio de Janeiro
       
-mixin newsletter
+mixin newsletter(inputId)
   h2.section-name Boletim BdF
   p Receba notícias via e-mail
   div
-    input(type=text placeholder="Digite seu e-mail...")
-    a(class="button")
+    input(type=text id=inputId placeholder="Digite seu e-mail...")
+    a(class="button" onclick="registerOnAllIn('##{inputId}');")
       span Assinar
 
 mixin small-picture (field, post, imageDescription)
@@ -148,7 +148,7 @@ append content
             +printed-news(page)
 
           section.newsletter(class="spacing")
-            +newsletter
+            +newsletter("emailInputSingleColumnLayout")
 
           section(class= "columnists" class="spacing" itemscope itemtype="http://schema.org/ItemList" )
             +columnists_list
@@ -217,7 +217,7 @@ append content
             +printed-news(page)
 
           section.newsletter(class="spacing")
-            +newsletter
+            +newsletter("emailInputMultipleColumnLayout")
 
           section(class= "columnists" class="spacing" itemscope itemtype="http://schema.org/ItemList")
             +columnists_list
