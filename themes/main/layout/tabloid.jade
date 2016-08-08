@@ -20,18 +20,21 @@ block title
     title= page.title
   
 block description
-  - var area_field = page.display_area
-  case area_field
-    when "tabloid_mg"
-      meta(name="description" content="Notícias da edição impressa de Minas Gerais.")
-    when "tabloid_ce"
-      meta(name="description" content="Notícias da edição impressa do Ceará.")
-    when "tabloid_pe"
-      meta(name="description" content="Notícias da edição impressa de Pernambuco.")
-    when "tabloid_rj"
-      meta(name="description" content="Notícias da edição impressa do Rio de Janeiro.")
-    when "tabloid_pr"
-      meta(name="description" content="Notícias da edição impressa do Paraná.")
+  if page.title
+    - var area_field = page.display_area
+    case area_field
+      when "tabloid_mg"
+        meta(name="description" content="Notícias da edição impressa #{page.edition} de Minas Gerais, com o que acontece na politica, cultura e dia a dia das cidades.")
+      when "tabloid_ce"
+        meta(name="description" content="Notícias da edição impressa #{page.edition} do Ceará, com o que acontece na politica, cultura e dia a dia das cidades.")
+      when "tabloid_pe"
+        meta(name="description" content="Notícias da edição impressa #{page.edition} de Pernambuco, com o que acontece na politica, cultura e dia a dia das cidades.")
+      when "tabloid_rj"
+        meta(name="description" content="Notícias da edição impressa #{page.edition} do Rio de Janeiro, com o que acontece na politica, cultura e dia a dia das cidades.")
+      when "tabloid_pr"
+        meta(name="description" content="Notícias da edição impressa #{page.edition} do Paraná, com o que acontece na politica, cultura e dia a dia das cidades.")
+  else
+    meta(name="description" content=page.title)
       
 append content
   - var area_field = page.display_area
@@ -48,38 +51,58 @@ append content
       - var acronym= "PR"
     
   main.grid-3-columns
-    section#tabloid(itemtype="http://schema.org/NewsArticle", itemscope)
+    section#tabloid(itemscope itemtype="https://bib.schema.org/Newspaper")
       - var published_at = utc_to_brt(page.date)
-      if page.edition
-        - var title = "Brasil de Fato " + acronym + " - Edição " + page.edition
-      else
-        - var title = page.title
+      - var title = page.title
       h2.title(itemprop="headline")= title
+      
       time(datetime=published_at.toISOString())= full_date(published_at)
       if page.cover
         .issuu
           figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
-            a(itemprop="url" href=page.issuu target="_blank")
+            a(href=page.issuu target="_blank")
               img(itemprop="thumbnail", alt=page.title, src=page.cover['medium'])
       if page.issuu
         a(itemprop="url" href=page.issuu target="_blank")
-          span(class="button" itemprop="url")="Leia a versão impressa"
+          span(class="button")="Leia a versão impressa"
       if page.content
         .body-content
           !=page.content
       if page.areas
         each area in page.areas
-          section(class= "list")
-            h3(class="section-name" itemprop="about")= area.name
+          section(class= "list" itemscope itemtype="http://schema.org/ItemList")
+            h3(class="section-name" itemprop="name")= area.name
+            
+            - var position= 0
             each post in area.news
               - var published_at = utc_to_brt(post.date)
               a.news-item-link(href=post.url)
-                article.news-item(itemscope itemtype="https://schema.org/NewsArticle" itemprop="itemListElement" class= "divisor")
-                  h4.offscreen(itemprop= "headline")= post.title
-                  if post.cover
-                    .image
-                      - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-                      figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-                  .content(class="no-image" class= "divisor")
-                    p.title(itemprop= "headline")= post.title
-                    p.description(itemprop="description")= post.description
+                article.news-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"  class= "divisor")
+                  h4.offscreen= post.title
+                  meta(itemprop="url" content="https://www.brasildefato.com.br/#{post.path}")
+                  meta(itemprop="position" content="#{++position}")
+                  
+                  span(itemscope itemtype="https://schema.org/NewsArticle")
+                    meta(itemprop="author" content= post.author)
+                    meta(itemprop="dateModified" content=post.updated_at)
+                    meta(itemprop="datePublished" content=post.published_at)
+                    meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{post.url}")
+                    
+                    span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
+                      span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
+                        meta(itemprop="url" content="https://www.brasildefato.com.br/img/logo-microdata.jpg")
+                        meta(itemprop="width" content="600")
+                        meta(itemprop="height" content="60")
+                      meta(itemprop="name" content="Brasil de Fato")
+                      link(itemprop="sameAs" href="https://www.brasildefato.com.br")
+                      
+                    if post.cover
+                      .image
+                        - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+                        figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemscope itemtype="http://schema.org/ImageObject" itemprop="image")
+                          meta(itemprop="width" content="696")
+                          meta(itemprop="height" content="464")
+                          meta(itemprop="url" content="http://www.brasildefato.com.br/#{post.cover.url}")
+                    .content(class="no-image" class= "divisor")
+                      p.title(itemprop= "headline")= post.title
+                      p.description(itemprop="description")= post.description

@@ -7,21 +7,21 @@ block description
   - var area_field = page.area
   case area_field
     when "opinião"
-      meta(name="description" content="Artigos produzidos por colaboradores do Brasil de Fato e textos com a linha editorial do veículo, a qual é definida em articulação com movimentos populares, organizações sociais e sindicais.")
+      meta(name="description" content="Artigos de personalidades e colaboradores de movimentos populares, organizações sociais e sindicais. Página #{page.current + 1}")
     when "política"
-      meta(name="description" content="O que acontece na política e na economia do Brasil.")
+      meta(name="description" content="O que acontece na política e na economia do Brasil. Página #{page.current + 1}")
     when "direitos humanos"
-      meta(name="description" content="Cobertura de violações de direitos fundamentais e da luta pelos direitos das classes oprimidas.")
+      meta(name="description" content="Cobertura de violações de direitos fundamentais e da luta pelos direitos das classes oprimidas. Página #{page.current + 1}")
     when "cultura"
-      meta(name="description" content="Artes, cinema, música, teatro e diversas expressões e reflexões das culturas locais e nacionais.")
+      meta(name="description" content="Artes, cinema, música, teatro e diversas expressões e reflexões das culturas locais e nacionais. Página #{page.current + 1}")
     when "geral"
-      meta(name="description" content="Notícias sobre educação, saúde, meio-ambiente, ciência, religião e mais.")
+      meta(name="description" content="Notícias sobre educação, saúde, meio-ambiente, ciência, religião e mais. Página #{page.current + 1}")
     when "internacional"
-      meta(name="description" content="Notícias, entrevistas e artigos de diversos países ao redor do mundo, com enfoque para América Latina.")
+      meta(name="description" content="Notícias, entrevistas e artigos de diversos países ao redor do mundo, com enfoque para América Latina. Página #{page.current + 1}")
     when "especiais"
-      meta(name="description" content="Coberturas multimídia de temas da atualidade e de fatos históricos que marcaram o Brasil e o mundo.")
+      meta(name="description" content="Coberturas multimídia de temas da atualidade e de fatos históricos que marcaram o Brasil e o mundo. Página #{page.current + 1}")
     when "español"
-      meta(name="description" content="Las noticias, entrevistas y artículos de Brasil de Fato traducidas al español. Notas en parceria con medios populares y alternativos de América Latina.")      
+      meta(name="description" content="Las noticias, entrevistas y artículos de Brasil de Fato traducidas al español. Notas en parceria con medios populares y alternativos de América Latina. Página #{page.current + 1}")      
     
 block open_graph
   meta(property="og:title" content="#{page.area.toUpperCase()} | #{config.title}")
