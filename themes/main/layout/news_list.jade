@@ -51,6 +51,7 @@ append content
               meta(itemprop="author" content= post.author)
               meta(itemprop="dateModified" content=post.updated_at)
               meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{post.url}")
+              
               span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
                 span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
                   meta(itemprop="url" content="https://www.brasildefato.com.br/img/logo-microdata.jpg")
@@ -72,4 +73,4 @@ append content
                 p.description(itemprop="description")= post.description
                 time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
                 
-include _partial/pagination
+      include _partial/pagination

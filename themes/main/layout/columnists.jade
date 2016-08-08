@@ -10,22 +10,43 @@ append content
   main.grid-3-columns
     section#columnists(itemscope itemtype="http://schema.org/ItemList")
       h2.page-name Colunistas
+      
+      - var position= 0
       each post in page.columns
-        article.column(itemscope itemtype="http://schema.org/BlogPosting" itemprop="itemListElement" class="divisor")
+        article.column(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="divisor")
+          meta(itemprop="position" content="#{++position}")
           - var columnist = site.data.columnists[post.columnist];
-          - var published_at = utc_to_brt(post.date)
+          - var published_at = utc_to_brt(post.date)        
+          
           .person-cell(itemscope itemtype="http://schema.org/Person")
             .person-container
               a(href=post.path title="link para a pagina do colunista")
-                img.profile-image(itemprop="image" alt="Imagem de perfil do Colunista" src=columnist.photo )
-                meta(itemprop="image" content='http:'+columnist.photo)
+                img.profile-image(itemprop="image" alt="Imagem de perfil do Colunista" src=columnist.photo )                
               a(href=post.path title="link para a pagina do colunista")
                 span.name(itemprop="name")= columnist.name
 
-          .text
-            span.name(itemprop="name")= columnist.name
+          .text(itemscope itemtype="http://schema.org/BlogPosting")
+            
+            span(itemprop="image" itemscope itemtype="https://schema.org/ImageObject")
+              meta(itemprop="url" content="https://www.brasildefato.com.br/img/#{columnist.photo}")
+              meta(itemprop="width" content="696")
+              meta(itemprop="height" content="464")
+              
+            meta(itemprop="dateModified" content=post.date)
+            meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{post.url}")
+            
+            span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
+              span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
+                meta(itemprop="url" content="https://www.brasildefato.com.br/img/logo-microdata.jpg")
+                meta(itemprop="width" content="600")
+                meta(itemprop="height" content="60")
+              meta(itemprop="name" content="Brasil de Fato")
+              link(itemprop="sameAs" href="https://www.brasildefato.com.br")
+            
+            span.name(itemprop="author")= columnist.name
             a(href=post.path itemprop="url")
               h3.title(itemprop="headline")= post.title
               p.description(itemprop="description")= post.description
-              time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+              time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)    
+              
       include _partial/pagination
