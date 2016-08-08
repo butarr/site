@@ -25,7 +25,7 @@ block open_graph
   include _partial/twitter_meta_page
 
 append content
-  main.grid-3-columns
+  main.grid-3-columns-wide
     if page.area=="espanol"
       - var language= "es"
     else
@@ -61,12 +61,17 @@ append content
           figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
             - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits
             - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
-            img(itemprop="url" alt=imageDescription src=page.cover['medium'])
-            meta(itemprop="width" content="696")
-            meta(itemprop="height" content="464")      
+            .img-container
+              img(itemprop="url" alt=imageDescription src=page.cover['medium'])
+              meta(itemprop="width" content="696")
+              meta(itemprop="height" content="464")
             figcaption(itemprop="caption")= imageCaption
 
       .content(itemprop="articleBody")
-        != page.content
-      footer
-        +social-media-share
+        .text-content
+          != page.content
+          footer
+            +social-media-share
+        .sidebar
+          +social-media-share
+          include _partial/other-news

@@ -1,0 +1,14 @@
+if page.other_news
+  if page.other_news.length > 0
+    .other-bar
+      h2.other-title Outras Notícias
+      .other-article-container
+        each p,i in page.other_news
+          - var imageDescription=p.cover.subtitle + " - Créditos: " + p.cover.credits
+          - var articleId = "other-" + i
+          article(id=articleId itemscope itemtype="https://schema.org/NewsArticle" class="other-article" class="spacing")
+            a(itemprop="url" href=p.url)
+              figure
+                img(src="#{p.cover.link}"  alt=imageDescription title=imageDescription itemprop="image")
+                figcaption
+                  h3.other-figure-title(itemprop="headline")= p.title
