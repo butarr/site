@@ -2,15 +2,15 @@ mixin columnist_item(column)
   if column
     - var columnist=site.data.columnists[column.columnist]
     if columnist
-      article.columnist(itemscope itemtype="http://schema.org/BlogPosting")
+      article.columnist
         .photo
           a(href=column.path, title="link para a pagina do colunista")
-            img(itemprop="image" alt="Foto de #{columnist.name}" src=columnist.photo itemscope itemtype="https://schema.org/Person")
+            img(alt="Foto de #{columnist.name}" src=columnist.photo itemscope itemtype="https://schema.org/Person")
         .column
           a(href=column.path, title="link para a pagina do colunista")
             span.name(itemprop="name")= columnist.name
-          a(href=column.path, itemprop="url")
-            h2.title(itemprop="headline")= column.title
+          a(href=column.path)
+            h2.title= column.title
             
 mixin columnists_list
   a(href="/colunistas/", title="link para a pagina de colunistas")
@@ -60,16 +60,16 @@ mixin small-picture (field, post, imageDescription)
 
 mixin featured-text-box (post)
   .box-container(class= "spacing")
-    article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-box")
-      a(itemprop="url" href=post.path)
-        h3.title(itemprop="headline")= post.title
+    article(class="featured-text-box")
+      a(href=post.path)
+        h3.title= post.title
         
 mixin footer-article(field, post, imageDescription)
-  article(id=field itemscope itemtype="https://schema.org/NewsArticle" class="article-footer" class="spacing")
-    span.hat(itemprop="about")= post.hat
-    a(itemprop="url" href=post.path)
-      figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
-      h3.title(itemprop="headline")= post.title
+  article(id=field class="article-footer" class="spacing")
+    span.hat= post.hat
+    a(href=post.path)
+      figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription)
+      h3.title= post.title
 
 extends base
 
@@ -91,13 +91,12 @@ append content
             
         if page.last_news
           section#last-news-dynamic.last-news(class="spacing" hidden)
-            meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
             a(itemprop="url" href="/ultimas_noticias/")  
               h2.section-name Últimas notícias:
             ol
               each post in page.last_news
-                li.inactive(itemprop="itemListElement")
-                  a(itemprop="url", href=post.path)
+                li.inactive
+                  a(href=post.path)
                     p.title= post.title
 
       .container
@@ -105,13 +104,13 @@ append content
           if page.featured_01
             - var post=page.featured_01
             - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-            article#featured-1(itemscope itemtype="https://schema.org/NewsArticle" class="featured-big-picture" class="divisor" class="spacing")
+            article#featured-1(class="featured-big-picture" class="divisor" class="spacing")
               h3.offscreen= post.title
-              a(itemprop="url" href=post.path)
+              a(href=post.path)
                 figure
-                  img(src=post.cover.medium alt=imageDescription title=imageDescription itemprop="image")
+                  img(src=post.cover.medium alt=imageDescription title=imageDescription)
                   figcaption
-                    h3.big-title(itemprop="headline")= post.title
+                    h3.big-title= post.title
 
           if page.featured_02
             - var post=page.featured_02
@@ -126,15 +125,15 @@ append content
           #featured-text-container(class="divisor" class= "spacing")
             if page.advertising_04
               - var post=page.advertising_04
-              a.advertising_04(itemprop="url" href=post.link target="_blank")
-                img(src=post.image alt=post.title title=post.title itemprop="image")
+              a.advertising_04(href=post.link target="_blank")
+                img(src=post.image alt=post.title title=post.title)
 
             if page.featured_04
               - var post=page.featured_04
-              article(itemscope itemtype="https://schema.org/NewsArticle" class="featured-text-and-title" class= "spacing")
-                a(itemprop="url" href=post.path)
-                  h3.title(itemprop="headline")= post.title
-                  p.description(itemprop="description")= post.description
+              article(class="featured-text-and-title" class= "spacing")
+                a(href=post.path)
+                  h3.title= post.title
+                  p.description= post.description
 
             if page.featured_05
               - var post=page.featured_05
@@ -154,7 +153,7 @@ append content
           section.newsletter(class="spacing")
             +newsletter("emailInputSingleColumnLayout")
 
-          section(class= "columnists" class="spacing" itemscope itemtype="http://schema.org/ItemList" )
+          section(class= "columnists" class="spacing")
             +columnists_list
 
           section#videos(class="gallery-videos" class="spacing")

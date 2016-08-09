@@ -25,7 +25,7 @@ append content
     else
       - var language= null
 
-    article#post(itemscope itemtype="http://schema.org/NewsArticle" lang= language)
+    article#post(itemscope itemtype="http://schema.org/Article" lang= language)
       meta(itemprop="mainEntityOfPage" content=page.url)
       div(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
         div(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
