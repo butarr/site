@@ -1,7 +1,9 @@
-nav#menu-desktop(hidden)
+nav#menu-desktop(hidden itemscope itemtype="http://schema.org/SiteNavigationElement")
   ul
     li
-      a(href="/")= 'Início'
+      a(itemprop="url" href="/")= 'Início'
+      meta(itemprop="name" content="Início")
     each val,index in {opiniao:'Opinião', politica:'Política', direitos_humanos:'Direitos Humanos', cultura:'Cultura', geral:'Geral', internacional:'Internacional', especiais:'Especiais', espanol:'Español'}
       li
-        a(href="/" + index + "/")= val
+        a(itemprop="url", href="/" + index + "/")= val
+        meta(itemprop="name" content=val)

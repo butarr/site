@@ -26,6 +26,12 @@ append content
       - var language= null
 
     article#post(itemscope itemtype="http://schema.org/NewsArticle" lang= language)
+    
+      meta(property="og:type" content="article")
+      meta(itemprop="og:headline" content="#{page.title}")
+      meta(itemprop="og:description" content="#{page.description}")
+      meta(property="og:image" content="#{page.cover.url}")
+      
       meta(itemprop="mainEntityOfPage" content=page.url)
       div(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
         div(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
