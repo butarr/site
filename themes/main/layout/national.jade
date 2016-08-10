@@ -2,14 +2,14 @@ mixin columnist_item(column)
   if column
     - var columnist=site.data.columnists[column.columnist]
     if columnist
-      article.columnist
+      article.columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
         .photo
           a(href=column.path, title="link para a pagina do colunista")
-            img(alt="Foto de #{columnist.name}" src=columnist.photo itemscope itemtype="https://schema.org/Person")
+            img(alt="Foto de #{columnist.name}" src=columnist.photo itemprop="image")
         .column
           a(href=column.path, title="link para a pagina do colunista")
             span.name(itemprop="name")= columnist.name
-          a(href=column.path)
+          a(href=column.path itemprop="url")
             h2.title= column.title
             
 mixin columnists_list
@@ -25,27 +25,27 @@ mixin printed-news(page)
   h2.section-name Edições Impressas
   img(src="/img/newspaper.png" alt="jornal")
   if page.ceara
-    a(href= page.ceara.path)
+    a(href= page.ceara.path itemprop="url")
       h3.button Ceará
   if page.minas_gerais
-    a(href= page.minas_gerais.path)
+    a(href= page.minas_gerais.path itemprop="url")
       h3.button Minas Gerais
   if page.parana
-    a(href= page.parana.path)
+    a(href= page.parana.path itemprop="url")
       h3.button Paraná
   if page.pernambuco
-    a(href= page.pernambuco.path)
+    a(href= page.pernambuco.path itemprop="url")
       h3.button Pernambuco
   if page.rio_de_janeiro
-    a(href= page.rio_de_janeiro.path)
+    a(href= page.rio_de_janeiro.path itemprop="url")
       h3.button Rio de Janeiro
       
 mixin newsletter(inputId)
   h2.section-name Boletim BdF
   p Receba notícias via e-mail
   if(theme.allin_direct_subscription_enabled)
-    div
-      input(type=text id=inputId placeholder="Digite seu e-mail...")
+    div(itemscope itemtype="https://schema.org/SubscribeAction")
+      input(type=text id=inputId placeholder="Digite seu e-mail..." itemprop="agent")
       a(class="button" onclick="registerOnAllIn('##{inputId}');")
         span Assinar
   else
@@ -53,23 +53,23 @@ mixin newsletter(inputId)
       span Assinar
 
 mixin small-picture (field, post, imageDescription)
-  article(id=field itemscope itemtype="https://schema.org/NewsArticle" class="featured-small-picture" class="divisor" class="spacing")
-    a(itemprop="image" href=post.path)
+  article(id=field class="featured-small-picture" class="divisor" class="spacing")
+    a(itemprop="url" href=post.path)
       figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
       h3.title(itemprop="headline")= post.title
 
 mixin featured-text-box (post)
   .box-container(class= "spacing")
     article(class="featured-text-box")
-      a(href=post.path)
-        h3.title= post.title
+      a(href=post.path itemprop="url")
+        h3.title(itemprop="headline")= post.title
         
 mixin footer-article(field, post, imageDescription)
   article(id=field class="article-footer" class="spacing")
     span.hat= post.hat
-    a(href=post.path)
+    a(href=post.path itemprop="url")
       figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription)
-      h3.title= post.title
+      h3.title(itemprop="headline")= post.title
 
 extends base
 
@@ -80,23 +80,24 @@ append content
       .top
         if page.advertising_01
           - var post=page.advertising_01
-          div.advertising_01
+          div.advertising_01(itemscope itemtype="http://schema.org/WPAdBlock")
             a(itemprop="url" href=post.link target="_blank")
               img(src=post.image alt=post.title title=post.title itemprop="image")
 
         if page.advertising_03
           - var post=page.advertising_03
-          a.advertising_03(itemprop="url" href=post.link target="_blank")
-            img(src=post.image alt=post.title title=post.title itemprop="image")
+          div.advertising_03(itemscope itemtype="http://schema.org/WPAdBlock")
+            a(itemprop="url" href=post.link target="_blank")
+              img(src=post.image alt=post.title title=post.title itemprop="image")
             
         if page.last_news
-          section#last-news-dynamic.last-news(class="spacing" hidden)
+          section#last-news-dynamic.last-news(itemscope itemtype="https://schema.org/ItemList" class="spacing" hidden)
             a(itemprop="url" href="/ultimas_noticias/")  
               h2.section-name Últimas notícias:
             ol
               each post in page.last_news
-                li.inactive
-                  a(href=post.path)
+                li.inactive(itemprop="itemListElement")
+                  a(href=post.path itemprop="url")
                     p.title= post.title
 
       .container
@@ -106,11 +107,11 @@ append content
             - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
             article#featured-1(class="featured-big-picture" class="divisor" class="spacing")
               h3.offscreen= post.title
-              a(href=post.path)
-                figure
-                  img(src=post.cover.medium alt=imageDescription title=imageDescription)
+              a(href=post.path itemprop="url")
+                figure(itemscope itemtype="https://schema.org/ImageObject")
+                  img(itemprop="image" src=post.cover.medium alt=imageDescription title=imageDescription)
                   figcaption
-                    h3.big-title= post.title
+                    h3.big-title(itemprop="caption")= post.title
 
           if page.featured_02
             - var post=page.featured_02
@@ -125,15 +126,16 @@ append content
           #featured-text-container(class="divisor" class= "spacing")
             if page.advertising_04
               - var post=page.advertising_04
-              a.advertising_04(href=post.link target="_blank")
-                img(src=post.image alt=post.title title=post.title)
+              div.advertising_04(itemscope itemtype="http://schema.org/WPAdBlock")
+                a(itemprop="url" href=post.link target="_blank")
+                  img(src=post.image alt=post.title title=post.title itemprop="image")
 
             if page.featured_04
               - var post=page.featured_04
               article(class="featured-text-and-title" class= "spacing")
-                a(href=post.path)
-                  h3.title= post.title
-                  p.description= post.description
+                a(href=post.path itemprop="url")
+                  h3.title(itemprop="headline")= post.title
+                  p.description(itemprop="description")= post.description
 
             if page.featured_05
               - var post=page.featured_05
@@ -153,16 +155,16 @@ append content
           section.newsletter(class="spacing")
             +newsletter("emailInputSingleColumnLayout")
 
-          section(class= "columnists" class="spacing")
+          section(class= "columnists" class="spacing" itemscope itemtype="https://schema.org/ItemList")
             +columnists_list
 
           section#videos(class="gallery-videos" class="spacing")
             h2.section-name TV Brasil de Fato
             iframe(src="//www.youtube.com/embed?listType=playlist&list=PLytfbsQYLZpB5uDo8LRdjf9X9RfOlFw4d" allowfullscreen)
 
-          section#images(class= "gallery-images" class="spacing")
+          section#images(itemscope itemtype="https://schema.org/ImageObject" class= "gallery-images" class="spacing")
             h2.section-name Fotos    
-            iframe(src="//www.flickr.com/slideShow/index.gne?user_id=brasildefato&set_id=72157665304017756", width="450", height="337")
+            iframe(itemprop="image" src="//www.flickr.com/slideShow/index.gne?user_id=brasildefato&set_id=72157665304017756", width="450", height="337")
 
           if page.featured_07
             - var post=page.featured_07
@@ -175,18 +177,18 @@ append content
             +footer-article("featured-8", post, imageDescription)
           
           if page.photo_caption
-            article.photo-caption(itemscope itemtype="https://schema.org/Photograph" class= "spacing")
+            article.photo-caption(class= "spacing")
               h2.section-name Charge
               - var post=page.photo_caption
               - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
-                figure
+                figure(itemscope itemtype="https://schema.org/ImageObject")
                   img(src=post.cover.medium alt=imageDescription title=imageDescription itemprop="image")
                   figcaption
-                    p.subtitle(itemprop="headline")= post.cover.subtitle
-                    p.credits= post.cover.credits
+                    p.subtitle(itemprop="caption")= post.cover.subtitle
+                    p.credits(itemprop="author")= post.cover.credits
            
           if page.last_news
-            section.last-news#last-news-mobile(class= "spacing")
+            section.last-news#last-news-mobile(class= "spacing" itemscope itemtype="https://schema.org/ItemList")
               meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
               a(itemprop="url" href="/ultimas_noticias/")
                 h2.section-name Últimas Notícias
@@ -197,7 +199,7 @@ append content
                       h3.title= post.title
 
           if page.most_read
-            section.most-read(class="spacing")
+            section.most-read(class="spacing" itemscope itemtype="https://schema.org/ItemList")
               meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
               h2.section-name Mais lidas
               ol
@@ -213,8 +215,9 @@ append content
 
           if page.advertising_02
             - var post=page.advertising_02
-            a.advertising_02(itemprop="url" href=post.link target="_blank")
-              img(src=post.image alt=post.title title=post.title itemprop="image")
+            div.advertising_02(itemscope itemtype="http://schema.org/WPAdBlock")
+              a(itemprop="url" href=post.link target="_blank")
+                img(src=post.image alt=post.title title=post.title itemprop="image")
 
           section.printed-news(class="spacing")
             +printed-news(page)
