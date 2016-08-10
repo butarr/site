@@ -85,14 +85,14 @@ append content
               a.news-item-link(href=post.url)
                 article.news-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"  class= "divisor")
                   h4.offscreen= post.title
-                  meta(itemprop="url" content="https://www.brasildefato.com.br/#{post.path}")
+                  meta(itemprop="url" content="https://www.brasildefato.com.br/#{post.url}")
                   meta(itemprop="position" content="#{++position}")
                   
                   span(itemscope itemtype="https://schema.org/NewsArticle")
                     meta(itemprop="author" content= post.author)
                     meta(itemprop="dateModified" content=post.updated_at)
                     meta(itemprop="datePublished" content=post.published_at)
-                    meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{post.path}")
+                    meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{post.url}")
                     
                     span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
                       span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
@@ -108,7 +108,7 @@ append content
                         figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemscope itemtype="http://schema.org/ImageObject" itemprop="image")
                           meta(itemprop="width" content="696")
                           meta(itemprop="height" content="464")
-                          meta(itemprop="url" content="http://www.brasildefato.com.br/#{post.cover.url}")
+                          meta(itemprop="url" content="http://www.brasildefato.com.br/#{post.cover.small}")
                     .content(class="no-image" class= "divisor")
                       p.title(itemprop= "headline")= post.title
                       p.description(itemprop="description")= post.description

@@ -24,8 +24,25 @@ block description
       meta(name="description" content="Las noticias, entrevistas y artículos de Brasil de Fato traducidas al español. Notas en parceria con medios populares y alternativos de América Latina. Página #{page.current + 1}")      
     
 block canonical
-  link(href="https://www.brasildefato.com.br/#{page.path}" rel="canonical")
-
+  - var area_field = page.area
+  case area_field
+    when "opinião"
+      link(href="https://www.brasildefato.com.br/opiniao/" rel="canonical")
+    when "política"
+      link(href="https://www.brasildefato.com.br/politica/" rel="canonical")
+    when "direitos humanos"
+      link(href="https://www.brasildefato.com.br/direitos_humanos/" rel="canonical")
+    when "cultura"
+      link(href="https://www.brasildefato.com.br/cultura/" rel="canonical")
+    when "geral"
+      link(href="https://www.brasildefato.com.br/geral/" rel="canonical")
+    when "internacional"
+      link(href="https://www.brasildefato.com.br/internacional/" rel="canonical")
+    when "especiais"
+      link(href="https://www.brasildefato.com.br/especiais/" rel="canonical")
+    when "español"
+      link(href="https://www.brasildefato.com.br/espanol/" rel="canonical")
+    
 block keywords
   meta(name="keywords" content="#{page.area}")
       
