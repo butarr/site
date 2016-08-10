@@ -23,6 +23,12 @@ block description
     when "español"
       meta(name="description" content="Las noticias, entrevistas y artículos de Brasil de Fato traducidas al español. Notas en parceria con medios populares y alternativos de América Latina. Página #{page.current + 1}")      
     
+block canonical
+  link(href="https://www.brasildefato.com.br/#{page.path}" rel="canonical")
+
+block keywords
+  meta(name="keywords" content="#{page.area}")
+      
 block open_graph
   meta(property="og:title" content="#{page.area.toUpperCase()} | #{config.title}")
   meta(property="og:description" content=config.description)
@@ -50,7 +56,7 @@ append content
             span(itemscope itemtype="https://schema.org/NewsArticle")
               meta(itemprop="author" content= post.author)
               meta(itemprop="dateModified" content=post.updated_at)
-              meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{post.url}")
+              meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{post.path}")
               
               span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
                 span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")

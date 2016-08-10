@@ -6,6 +6,9 @@ block title
 block description
   meta(name="description" content="Militantes sociais, intelectuais e jornalistas dão sua opinião sobre os principais fatos da conjuntura. Página #{page.current + 1}")
 
+  block canonical
+    link(href="https://www.brasildefato.com.br/#{page.url}" rel="canonical")
+
 append content
   main.grid-3-columns
     section#columnists(itemscope itemtype="http://schema.org/ItemList")

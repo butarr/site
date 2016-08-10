@@ -5,6 +5,9 @@ block title
   
 block description
   meta(name="description" content=page.description)
+  
+block canonical
+  link(href="https://www.brasildefato.com.br/#{page.url}" rel="canonical")
 
 block open_graph
   include _partial/open_graph_page

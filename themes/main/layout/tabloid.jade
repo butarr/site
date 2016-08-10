@@ -36,6 +36,12 @@ block description
   else
     meta(name="description" content=page.title)
       
+block canonical
+  link(href="https://www.brasildefato.com.br/#{page.path}" rel="canonical")
+  
+block keywords
+  meta(name="keywords" content="#{page.display_area}")
+          
 append content
   - var area_field = page.display_area
   case area_field
@@ -86,7 +92,7 @@ append content
                     meta(itemprop="author" content= post.author)
                     meta(itemprop="dateModified" content=post.updated_at)
                     meta(itemprop="datePublished" content=post.published_at)
-                    meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{post.url}")
+                    meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{post.path}")
                     
                     span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
                       span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
