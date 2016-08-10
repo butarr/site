@@ -23,25 +23,27 @@ block description
     when "español"
       meta(name="description" content="Las noticias, entrevistas y artículos de Brasil de Fato traducidas al español. Notas en parceria con medios populares y alternativos de América Latina. Página #{page.current + 1}")      
     
+      
 block canonical
-  - var area_field = page.area
+  - var area_field= page.area
   case area_field
     when "opinião"
-      link(href="https://www.brasildefato.com.br/opiniao/" rel="canonical")
+      - var sitepath= "opiniao"
     when "política"
-      link(href="https://www.brasildefato.com.br/politica/" rel="canonical")
+      - var sitepath= "politica"
     when "direitos humanos"
-      link(href="https://www.brasildefato.com.br/direitos_humanos/" rel="canonical")
+      - var sitepath= "direitos_humanos"
     when "cultura"
-      link(href="https://www.brasildefato.com.br/cultura/" rel="canonical")
+      - var sitepath= "cultura"
     when "geral"
-      link(href="https://www.brasildefato.com.br/geral/" rel="canonical")
+      - var sitepath= "geral"
     when "internacional"
-      link(href="https://www.brasildefato.com.br/internacional/" rel="canonical")
+      - var sitepath= "internacional"
     when "especiais"
-      link(href="https://www.brasildefato.com.br/especiais/" rel="canonical")
+      - var sitepath= "especiais"
     when "español"
-      link(href="https://www.brasildefato.com.br/espanol/" rel="canonical")
+      - var sitepath= "espanol"
+  link(href="https://www.brasildefato.com.br/#{sitepath}/" rel="canonical")
     
 block keywords
   meta(name="keywords" content="#{page.area}")
@@ -73,7 +75,7 @@ append content
             span(itemscope itemtype="https://schema.org/NewsArticle")
               meta(itemprop="author" content= post.author)
               meta(itemprop="dateModified" content=post.updated_at)
-              meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{post.path}")
+              meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{sitepath}/")
               
               span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
                 span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
