@@ -6,8 +6,8 @@ block title
 block description
   meta(name="description" content="Militantes sociais, intelectuais e jornalistas dão sua opinião sobre os principais fatos da conjuntura. Página #{page.current + 1}")
 
-  block canonical
-    link(href="https://www.brasildefato.com.br/colunistas/" rel="canonical")
+block canonical
+  link(href="https://www.brasildefato.com.br/colunistas/" rel="canonical")
 
 append content
   main.grid-3-columns
@@ -31,12 +31,12 @@ append content
           .text(itemscope itemtype="http://schema.org/BlogPosting")
             
             span(itemprop="image" itemscope itemtype="https://schema.org/ImageObject")
-              meta(itemprop="url" content="https://www.brasildefato.com.br/img/#{columnist.photo}")
+              meta(itemprop="url" content="https:#{columnist.photo}")
               meta(itemprop="width" content="696")
               meta(itemprop="height" content="464")
               
             meta(itemprop="dateModified" content=post.date)
-            meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{post.url}")
+            meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/colunistas/")
             
             span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
               span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
