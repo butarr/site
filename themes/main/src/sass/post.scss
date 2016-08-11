@@ -83,6 +83,18 @@
   }
 }
 
+#post .text-content {
+  position: relative;
+  @include media-query(THREE) {
+    footer .share-bar {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      padding-bottom: 10px;
+    }
+  }
+}
+
 #post .sidebar .share-bar {
   display: none;
   @include media-query(THREE) {
