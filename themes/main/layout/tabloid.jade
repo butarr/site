@@ -83,7 +83,7 @@ append content
             each post in area.news
               - var published_at = utc_to_brt(post.date)
               a.news-item-link(href=post.url)
-                article.news-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"  class= "divisor")
+                .news-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"  class= "divisor")
                   h4.offscreen= post.title
                   meta(itemprop="url" content="https://www.brasildefato.com.br/#{post.url}")
                   meta(itemprop="position" content="#{++position}")

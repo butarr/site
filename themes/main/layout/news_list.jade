@@ -68,7 +68,7 @@ append content
         - var published_at = utc_to_brt(post.date)
         
         a.news-item-link(href=post.path)
-          article.news-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
+          .news-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
             meta(itemprop="url" content="https://www.brasildefato.com.br/#{post.path}")
             meta(itemprop="position" content="#{++position}")
             

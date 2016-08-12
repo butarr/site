@@ -2,7 +2,7 @@ mixin columnist_item(column)
   if column
     - var columnist=site.data.columnists[column.columnist]
     if columnist
-      article.columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
+      .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
         .photo
           a(href=column.path, title="link para a pagina do colunista")
             img(alt="Foto de #{columnist.name}" src=columnist.photo itemprop="image")
@@ -53,19 +53,19 @@ mixin newsletter(inputId)
       span Assinar
 
 mixin small-picture (field, post, imageDescription)
-  article(id=field class="featured-small-picture" class="divisor" class="spacing")
+  div(id=field class="featured-small-picture" class="divisor" class="spacing")
     a(itemprop="url" href=post.path)
       figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
       h3.title(itemprop="headline")= post.title
 
 mixin featured-text-box (post)
   .box-container(class= "spacing")
-    article(class="featured-text-box")
+    div(class="featured-text-box")
       a(href=post.path itemprop="url")
         h3.title(itemprop="headline")= post.title
         
 mixin footer-article(field, post, imageDescription)
-  article(id=field class="article-footer" class="spacing")
+  div(id=field class="article-footer" class="spacing")
     span.hat= post.hat
     a(href=post.path itemprop="url")
       figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription)
@@ -105,7 +105,7 @@ append content
           if page.featured_01
             - var post=page.featured_01
             - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-            article#featured-1(class="featured-big-picture" class="divisor" class="spacing")
+            div#featured-1(class="featured-big-picture" class="divisor" class="spacing")
               h3.offscreen= post.title
               a(href=post.path itemprop="url")
                 figure(itemscope itemtype="https://schema.org/ImageObject")
@@ -132,7 +132,7 @@ append content
 
             if page.featured_04
               - var post=page.featured_04
-              article(class="featured-text-and-title" class= "spacing")
+              div(class="featured-text-and-title" class= "spacing")
                 a(href=post.path itemprop="url")
                   h3.title(itemprop="headline")= post.title
                   p.description(itemprop="description")= post.description
@@ -177,7 +177,7 @@ append content
             +footer-article("featured-8", post, imageDescription)
           
           if page.photo_caption
-            article.photo-caption(class= "spacing")
+            .photo-caption(class= "spacing")
               h2.section-name Charge
               - var post=page.photo_caption
               - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
