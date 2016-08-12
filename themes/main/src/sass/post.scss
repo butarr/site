@@ -85,7 +85,9 @@
 
 #post .text-content {
   position: relative;
+
   @include media-query(THREE) {
+    min-width: 75%;
     padding-bottom: 65px;
     footer .share-bar {
       width: 100%;
@@ -136,6 +138,7 @@
   @include media-query(THREE) {
     margin-left: $PARAGRAPH-SPACE;
     min-width: $COLUMN-WIDTH;
+    min-height: $COLUMN-WIDTH;
 
     .share-title {
       text-align: left;
