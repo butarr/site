@@ -560,6 +560,12 @@ $number-size: 1.3rem;
 }
 
 @mixin __other(){
+  a:hover {
+    .other-figure-title {
+      color: $link-inverted-color-hover;
+    }
+  }
+
   .other-figure-title {
     font: bold #{$title-size} $family-serif;
     color: $link-inverted-color;
