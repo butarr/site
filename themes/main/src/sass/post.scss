@@ -82,21 +82,6 @@
   }
 }
 
-#post .text-content {
-  position: relative;
-
-  @include media-query(THREE) {
-    min-width: 75%;
-    padding-bottom: 65px;
-    footer .share-bar {
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      padding-bottom: 10px;
-    }
-  }
-}
-
 #post .sidebar .share-bar {
   display: none;
   @include media-query(THREE) {
@@ -105,6 +90,31 @@
 }
 
 #post .share-bar {
+  .share-title {
+    margin: 0;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .share-icons-container {
+    display: flex;
+    display: -webkit-flex; //Old Safari
+    justify-content: flex-start;
+    -webkit-jutify-content: flex-start; //Old Safari
+  }
+
+  .share-icon {
+    margin-right: 1.2rem;
+  }
+
+  .share-mobile {
+    @include media-query(THREE) {
+      display: none;
+    }
+  }
+}
+
+#post .details-bar .share-bar {
   .share-title {
     margin: 0;
     font-size: 1rem;
@@ -120,12 +130,7 @@
 
   .share-icon {
     margin-left: 1.2rem;
-  }
-
-  .share-mobile {
-    @include media-query(THREE) {
-      display: none;
-    }
+    margin-right: 0;
   }
 }
 
@@ -138,20 +143,6 @@
     @include column-lateral-spacing();
     min-width: $COLUMN-WIDTH;
     min-height: $COLUMN-WIDTH;
-
-    .share-title {
-      text-align: left;
-    }
-
-    .share-icons-container {
-      justify-content: flex-start;
-      -webkit-jutify-content: flex-start; //Old Safari
-    }
-
-    .share-icon {
-      margin-right: 1.2rem;
-      margin-left: 0;
-    }
   }
 }
 
