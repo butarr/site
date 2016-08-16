@@ -228,8 +228,8 @@
     }
 
     @include media-query (THREE) {
-      width: ($COLUMN-WIDTH - $LATERAL-COLUMN-SPACE);
-      @include column-lateral-spacing(0);
+      width: $COLUMN-WIDTH;
+      @include column-lateral-spacing($LATERAL-COLUMN-SPACE);
     }
 
     .title {
