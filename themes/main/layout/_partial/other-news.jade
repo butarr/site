@@ -6,9 +6,9 @@ if page.other_news
         each p,i in page.other_news
           - var imageDescription=p.cover.subtitle + " - Créditos: " + p.cover.credits
           - var articleId = "other-" + i
-          article(id=articleId itemprop="itemListElement" class="other-article" class="spacing")
+          div(id=articleId itemprop="itemListElement" class="other-article" class="spacing")
             a(itemprop="url" href=p.url)
               figure(itemscope itemtype="https://schema.org/ImageObject")
                 img(src="#{p.cover.link}"  alt=imageDescription title=imageDescription itemprop="image")
                 figcaption
-                  h3.other-figure-title(itemprop="caption")= p.title
+                  h3.other-figure-title(itemprop="headline")= p.title
