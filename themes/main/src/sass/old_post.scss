@@ -3,7 +3,7 @@
 @import '_helpers/constants';
 
 
-#post {
+#old_post {
   @include get-font(POST);
   @include page-blockquotes;
 
@@ -23,7 +23,7 @@
 
 
 
-#post header {
+#old_post header {
   .hat {
     @include page-name();
   }
@@ -54,14 +54,14 @@
   }
 }
 
-#post header .share-bar {
+#old_post header .share-bar {
   display: block;
   @include media-query(THREE) {
     display: none;
   }
 }
 
-#post .text-content {
+#old_post .text-content {
   position: relative;
 
   @include media-query(THREE) {
@@ -77,7 +77,7 @@
 }
 
 
-#post header, #post footer {
+#old_post header, #post footer {
   .share-title {
     margin: 0;
     font-size: 1rem;
@@ -103,7 +103,7 @@
 }
 
 
-#post header .place-and-time, time {
+#old_post header .place-and-time, time {
   padding-bottom: 10px;
   display: block;
 
