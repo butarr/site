@@ -136,7 +136,7 @@
   }
 
   @include media-query(THREE) {
-    margin-left: $PARAGRAPH-SPACE;
+    @include column-lateral-spacing();
     min-width: $COLUMN-WIDTH;
     min-height: $COLUMN-WIDTH;
 
