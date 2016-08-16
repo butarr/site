@@ -2,7 +2,6 @@
 @import '_helpers/mixins';
 @import '_helpers/constants';
 
-
 #old_post {
   @include get-font(POST);
   @include page-blockquotes;
@@ -11,7 +10,7 @@
     width: 100%;
   }
 
-  p {
+  .content .content p {
     margin-bottom: $PARAGRAPH-SPACE;
   }
 

@@ -13,6 +13,12 @@ block title
 
 block description
   meta(name="description" content=page.description)
+  
+block canonical
+  link(href="https://www.brasildefato.com.br#{page.url}" rel="canonical")
+
+block keywords
+  meta(name="keywords" content="#{page.area}")
 
 block open_graph
   include _partial/open_graph_page
@@ -25,16 +31,16 @@ append content
 
       header
         - var published_at = utc_to_brt(page.date)
-        h2.title(itemprop="headline")= page.title
-        p.description(itemprop="description")= page.description
+        h2.title= page.title
+        p.description= page.description
 
         .details-bar
           .place-and-time
-            time(itemprop="datePublished" datetime=published_at.toISOString())= date(published_at)
-            meta(itemprop="dateModified" content="#{page.updated_at}")
+            time(datetime=published_at.toISOString())= date(published_at)
+            meta(content="#{page.updated_at}")
           +social-media-share
 
-      .content(itemprop="articleBody")
+      .content
         != page.content
       footer
         +social-media-share
