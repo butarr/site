@@ -223,6 +223,17 @@
     @include image-rounded-responsive(150px);
     @include column-lateral-spacing($LATERAL-COLUMN-SPACE);
 
+    figcaption {
+      height: 100%;
+      display: -webkit-flex; //Old Safari
+      display: flex;
+      -webkit-flex-direction: column; //Old Safari
+      flex-direction: column;
+      -webkit-justify-content: flex-end; //Old Safari
+      justify-content: flex-end;
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(80,80,80,.6) 85%);
+    }
+
     @include media-query (TWO) {
       width: 50%;
     }
