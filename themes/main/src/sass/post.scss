@@ -35,6 +35,7 @@
 
   .text-content {
     width: 100%;
+    @include column-lateral-spacing();
   }
 }
 

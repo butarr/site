@@ -221,7 +221,6 @@
     width: 100%;
     @include picture-with-caption();
     @include image-rounded-responsive(150px);
-    @include column-lateral-spacing($LATERAL-COLUMN-SPACE);
 
     figcaption {
       height: 100%;
@@ -240,7 +239,6 @@
 
     @include media-query (THREE) {
       width: $COLUMN-WIDTH;
-      @include column-lateral-spacing($LATERAL-COLUMN-SPACE);
     }
 
     .title {
