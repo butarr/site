@@ -571,21 +571,30 @@ $number-size: 1.3rem;
 }
 
 @mixin __other(){
-  a:hover {
-    .other-figure-title {
-      color: $link-inverted-color-hover;
-    }
-  }
-
-  .other-figure-title {
-    font: bold #{$title-size} $family-serif;
-    color: $link-inverted-color;
-  }
-
   .other-title {
     font: bold $page-name-size $family-sans;
     text-transform: uppercase;
     color: $page-title-color;
+  }
+
+  .other-decorator {
+    color: $link-color;
+    padding-top: 0.4rem;
+  }
+
+  a:hover {
+    .other-article-title {
+      color: $link-neutral-color-hover;
+    }
+  }
+
+  .other-article-title {
+    font: normal $standalone-text-size $family-serif;
+    color: $link-neutral-color;
+
+    @include media-query(THREE){
+      font-size: $text-size;
+    }
   }
 }
 
