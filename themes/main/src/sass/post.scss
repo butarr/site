@@ -32,6 +32,10 @@
     -webkit-flex-direction: row; //Old Safari
     flex-direction: row;
   }
+
+  .text-content {
+    width: 100%;
+  }
 }
 
 #post header {
