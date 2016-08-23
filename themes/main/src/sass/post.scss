@@ -75,13 +75,6 @@
   }
 }
 
-#post header .share-bar {
-  display: block;
-  @include media-query(THREE) {
-    display: none;
-  }
-}
-
 #post .sidebar .share-bar {
   display: none;
   @include media-query(THREE) {
@@ -106,11 +99,11 @@
     margin: 0.4rem;
     max-width: 2.2rem;
   }
+}
 
-  .share-mobile {
-    @include media-query(THREE) {
-      display: none;
-    }
+#post .share-mobile {
+  @include media-query(THREE) {
+    display: none;
   }
 }
 

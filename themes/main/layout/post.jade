@@ -17,7 +17,8 @@ block open_graph
   include _partial/twitter_meta_page
 
 append content
-  main.grid-4-columns
+  - var hasOtherNews = page.other_news && (page.other_news.length > 0)
+  main(class=hasOtherNews ? 'grid-4-columns' : 'grid-3-columns')
     if page.area=="espanol"
       - var language= "es"
     else
@@ -47,8 +48,12 @@ append content
               span.place(itemprop="contentLocation")= page.place + ', '
               time(itemprop="datePublished" datetime=published_at.toISOString())= full_date(published_at)
               meta(itemprop="dateModified" content="#{page.updated_at}")
-          include _partial/social-media-share
-          
+          if page.other_news && (page.other_news.length > 0)
+            .share-mobile
+              include _partial/social-media-share
+          else
+            include _partial/social-media-share
+
         if page.cover
           figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
             - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits
@@ -64,6 +69,7 @@ append content
           != page.content
           footer
             include _partial/social-media-share
-        aside.sidebar(itemscope itemtype="http://schema.org/WPSideBar")
-          include _partial/social-media-share
-          include _partial/other-news
+        if page.other_news && (page.other_news.length > 0)
+          aside.sidebar(itemscope itemtype="http://schema.org/WPSideBar")
+            include _partial/social-media-share
+            include _partial/other-news
