@@ -200,7 +200,7 @@
 
   .other-title {
     @include page-name();
-    margin: 0 0 $VERTICAL-SPACE;
+    margin: 0;
   }
 
   .other-article-container {
@@ -221,8 +221,7 @@
     width: 100%;
 
     @include media-query (THREE) {
-      width: $COLUMN-WIDTH;
-      margin-left: $LATERAL-COLUMN-SPACE;
+      padding-left: $LATERAL-COLUMN-SPACE;
     }
 
     a {

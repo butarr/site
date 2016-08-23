@@ -125,6 +125,7 @@
   @include media-query(THREE) {
     @include column-lateral-spacing();
     min-width: $COLUMN-WIDTH;
+    max-width: $COLUMN-WIDTH;
     min-height: $COLUMN-WIDTH;
   }
 }
