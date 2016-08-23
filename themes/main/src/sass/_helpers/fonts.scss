@@ -592,7 +592,7 @@ $number-size: 1.3rem;
     font: normal $standalone-text-size $family-serif;
     color: $link-neutral-color;
 
-    @include media-query(THREE){
+    @include media-query(THREE) {
       font-size: $text-size;
     }
   }

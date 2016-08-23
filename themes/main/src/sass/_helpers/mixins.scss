@@ -222,6 +222,7 @@
 
     @include media-query (THREE) {
       width: $COLUMN-WIDTH;
+      margin-left: $LATERAL-COLUMN-SPACE;
     }
 
     a {
