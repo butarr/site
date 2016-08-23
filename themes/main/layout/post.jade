@@ -1,13 +1,5 @@
 extends base
 
-mixin social-media-share
-  .share-bar
-    p.share-title()= 'Compartilhe'
-    .share-icons-container
-      a.share-icon.fa.fa-facebook.fa-3x(href='https://www.facebook.com/sharer/sharer.php?u=#{config.url}#{page.url}%3Freferer=bdf_button_facebook' target='_blank' title='Compartilhar no Facebook')
-      a.share-icon.fa.fa-twitter.fa-3x(href='https://twitter.com/share?url=#{config.url}#{page.url}%3Freferer=bdf_button_twitter' target='_blank' title='Compartilhar no Twitter')
-      a.share-icon.share-mobile.fa.fa-whatsapp.fa-3x(href='whatsapp://send?text=#{config.url}#{page.url}%3Freferer=bdf_button_whatsapp' data-action='share/whatsapp/share' title='Compartilhar no whatsapp')
-    
 block title
   title= titlecase(page.title) + " - " + titlecase(page.area) + " - Brasil de Fato"
 
@@ -55,7 +47,7 @@ append content
               span.place(itemprop="contentLocation")= page.place + ', '
               time(itemprop="datePublished" datetime=published_at.toISOString())= full_date(published_at)
               meta(itemprop="dateModified" content="#{page.updated_at}")
-          +social-media-share
+          include _partial/social-media-share
           
         if page.cover
           figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
@@ -71,7 +63,7 @@ append content
         .text-content
           != page.content
           footer
-            +social-media-share
+            include _partial/social-media-share
         aside.sidebar(itemscope itemtype="http://schema.org/WPSideBar")
-          +social-media-share
+          include _partial/social-media-share
           include _partial/other-news

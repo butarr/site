@@ -406,6 +406,17 @@ $number-size: 1.3rem;
     color: $text-color;
   }
 
+  .share-title {
+    font: bold $page-name-size $family-sans;
+    text-transform: uppercase;
+    color: $page-title-color;
+    text-align: left;
+  }
+
+  .details-bar .share-title {
+    text-align: right;
+  }
+
   .share-icon {
     color: $link-neutral-color;
 
