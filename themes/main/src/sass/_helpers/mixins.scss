@@ -195,7 +195,7 @@
   @include get-font(OTHER);
 
   .other-bar {
-    margin: 0;
+    margin: $PARAGRAPH-SPACE 0 0;
   }
 
   .other-title {
