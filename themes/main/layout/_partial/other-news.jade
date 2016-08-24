@@ -2,7 +2,6 @@
   h2.other-title Outras Notícias
   .other-article-container(itemscope itemtype="https://schema.org/ItemList")
     each p,i in page.other_news
-      - var imageDescription=p.cover.subtitle + " - Créditos: " + p.cover.credits
       - var articleId = "other-" + i
       ul(id=articleId itemprop="itemListElement" class="other-article" class="spacing")
         li
