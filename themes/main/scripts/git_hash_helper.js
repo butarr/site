@@ -1,7 +1,2 @@
-var gitHashShort = require('child_process').execSync('git rev-parse --short HEAD').toString().trim();
-
-function gitHash() {
-  return gitHashShort;
-}
-
-hexo.extend.helper.register('git_hash', gitHash);
+var execSync = require('child_process').execSync;
+process.env.SHORT_GIT_HASH = execSync('git rev-parse --short HEAD').toString().trim();
