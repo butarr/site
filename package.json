@@ -34,7 +34,6 @@
   },
   "devDependencies": {
     "gulp-clean-css": "^2.0.6",
-    "gulp-dest-clean": "^0.5.0",
     "pug-lint": "^2.2.2",
     "sass-lint": "^1.8.2"
   }
