@@ -15,7 +15,7 @@ module.exports =  function (baseDir) {
 	    .pipe(sass({
 	        includePaths: [nodeResetScss, 'styles']
 	    }).on('error', sass.logError))
-			.pipe(concat('main.'+gitHashShort+'.css'))
+			.pipe(concat('main.css'))
 			.pipe(cleanCSS({compatibility: 'ie8'}))
 			.pipe(gulp.dest(baseDir+'/css/'));
 	}
