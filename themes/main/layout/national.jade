@@ -100,6 +100,8 @@ append content
                   a(href=post.path itemprop="url")
                     p.title= post.title
 
+
+
       .container
         .main    
           if page.featured_01
@@ -113,6 +115,7 @@ append content
                   figcaption
                     h3.big-title(itemprop="caption")= post.title
 
+
           if page.featured_02
             - var post=page.featured_02
             - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
@@ -121,7 +124,7 @@ append content
           if page.featured_03
             - var post=page.featured_03
             - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-            +small-picture("featured-3", post, imageDescription)    
+            +small-picture("featured-3", post, imageDescription)   
 
           #featured-text-container(class="divisor" class= "spacing")
             if page.advertising_04
@@ -137,13 +140,26 @@ append content
                   h3.title(itemprop="headline")= post.title
                   p.description(itemprop="description")= post.description
 
-            if page.featured_05
+
+            if page.advertising_06
+                - var post=page.advertising_06
+                div.advertising_06(itemscope itemtype="http://schema.org/WPAdBlock" class = "spacing")
+                  a(itemprop="url" href=post.link target="_blank")
+                  img(src=post.image alt=post.title title=post.title itemprop="image") 
+                        
+            else if page.featured_05
               - var post=page.featured_05
               +featured-text-box(post)
 
             if page.featured_06
               - var post=page.featured_06
-              +featured-text-box(post)
+              +featured-text-box(post)  
+
+          if page.advertising_05
+            - var post=page.advertising_05
+            div.advertising_05(id = 'bannerHome' class= "spacing" itemscope itemtype="http://schema.org/WPAdBlock" )
+              a(itemprop="url" href=post.link target="_blank")
+              img(src=post.image alt=post.title title=post.title itemprop="image") 
 
           figure(class= "radar" class= "spacing")
             a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar de Movimentos Populares")
