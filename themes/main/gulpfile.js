@@ -1,6 +1,4 @@
 var gulp = require('gulp'),
-    spawn = require('child_process').spawn,
-    hexoDir = __dirname +'/../..'
     baseDir = __dirname +'/source';
 
 var TASKS = [
@@ -17,6 +15,4 @@ TASKS.forEach(function(name) {
 });
 
 gulp.task('build', ['javascript', 'sass', 'imagemin', 'template', 'copyist']);
-gulp.task('default', ['build', 'watch'], function() {
-  spawn(hexoDir+'/node_modules/hexo/bin/hexo', ['serve', '--cwd', hexoDir], { stdio: 'inherit' });
-});
+gulp.task('default', ['build', 'watch']);

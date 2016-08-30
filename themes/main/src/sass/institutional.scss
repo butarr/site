@@ -42,6 +42,13 @@
     margin-bottom: 10px;
   }
 
+  img.stats {
+    width: 100%;
+  }
+  img.stats+img.stats {
+    margin-top: 2rem;
+  }
+
   .list {
     white-space: nowrap;
     margin: 15px 0 40px 0;
