@@ -69,6 +69,7 @@ append content
       .content(itemprop="articleBody")
         .text-content
           != page.content
+          .content-footer
             include _partial/social-media-share
         if page.other_news && (page.other_news.length > 0)
           aside.sidebar(itemscope itemtype="http://schema.org/WPSideBar")
