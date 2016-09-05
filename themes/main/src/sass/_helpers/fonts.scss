@@ -236,6 +236,10 @@ $number-size: 1.3rem;
       color: $green-base;
     }
 
+    .fail-message p {
+      color: $red-base;
+    }
+
     i {
       font-size: $details-size;
       color: $newsletter-check;

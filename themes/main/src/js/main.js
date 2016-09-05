@@ -18,12 +18,6 @@ $(document).ready(function() {
     $(this).removeClass('open');
   });
 
-  $(".button").click(function() {
-    $(".thanks-message").show();
-    if ($(".thanks-message").is(':visible'))
-        $(".thanks-message").css('display','flex');
-  });
-
   var toggle_el = $('#search-tool');
   var toggle_content = $('#content');
   var toggle_icon = $('#search-icon');

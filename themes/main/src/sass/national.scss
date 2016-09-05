@@ -588,6 +588,15 @@
       margin-left: 5px;
     }
   }
+
+  .fail-message {
+    display: none;
+    height: 25px;
+
+    p {
+      margin-left: 5px;
+    }
+  }
 }
 
 #home .columnists {

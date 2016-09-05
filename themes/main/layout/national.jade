@@ -49,8 +49,11 @@ mixin newsletter(inputId)
     a(class="button" onclick="registerOnAllIn('##{inputId}');")
       span Assinar
   .thanks-message
-    i(class="fa fa-check" aria-hidden="true") 
+    i(class="fa fa-check" aria-hidden="true")
     p Obrigada!
+  .fail-message
+    i(aria-hidden="true")
+    p Email inválido!
 
 mixin small-picture (field, post, imageDescription)
   div(id=field class="featured-small-picture" class="divisor" class="spacing")
