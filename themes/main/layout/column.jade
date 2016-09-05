@@ -1,7 +1,7 @@
 extends base
 
 block title
-  title= titlecase(page.title) + " - Coluna - Brasil de Fato"
+  title #{titlecase(page.title)} #{config.separator} Coluna #{config.separator} #{config.title}
   
 block description
   meta(name="description" content=page.description)
