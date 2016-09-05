@@ -571,14 +571,22 @@
   .button {
     background: $button-newsletter;
     color: $link-inverted-color;
-    width:45%;
+    width: 38%;
     height: 100%;
   }
 
   input {
     height: 100%;
     width: 55%;
-    margin-right: 5px;
+  }
+
+  .thanks-message {
+    display: none;
+    height: 25px;
+
+    p {
+      margin-left: 5px;
+    }
   }
 }
 
