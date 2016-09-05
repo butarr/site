@@ -232,6 +232,15 @@ $number-size: 1.3rem;
       font-size: $details-size;
     }
 
+    .thanks-message p {
+      color: $green-base;
+    }
+
+    i {
+      font-size: $details-size;
+      color: $newsletter-check;
+    }
+
     input,
     input::-webkit-input-placeholder {
       font-size: 0.75rem;
