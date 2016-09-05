@@ -45,6 +45,7 @@ mixin newsletter(inputId)
   p Receba notícias via e-mail
   #newsletter-input
     input(type=text id=inputId placeholder="Digite seu e-mail..." class="email")
+    script(src="//i.btg360.com.br/lc.js")
     a(class="button" onclick="registerOnAllIn('##{inputId}');")
       span Assinar
   .thanks-message
