@@ -23,4 +23,7 @@ function registerOnAllIn(emailInputSelector) {
       console.error("\njqXHR:" + jqXHR + "\ntextStatus:" + textStatus + "\nerrorThrown:" + errorThrown + "\n");
     }
   });
+
+  // Clean input object
+  document.getElementById("emailInputMultipleColumnLayout").value = "";
 }
