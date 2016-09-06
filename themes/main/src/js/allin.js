@@ -19,12 +19,13 @@ function registerOnAllIn(emailInputSelector) {
             $(".thanks-message").css('display', 'flex');
 
     } else {
+        $(".thanks-message").hide();
         $(".fail-message").show();
         if ($(".fail-message").is(':visible'))
             $(".fail-message").css('display', 'flex');
     }
 
-    document.getElementById("emailInputMultipleColumnLayout").value = "";
+    $(emailInputSelector).val('');
 }
 
 function validateEmail(email) {
