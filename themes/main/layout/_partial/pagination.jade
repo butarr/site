@@ -1,11 +1,9 @@
 .pagination-container
-  if page.prev || page.next
-    //h2.pagination-title Mais Notícias
   .pagination-button-container
     - for (var n = 0; n < page.total && page.total > 1; n++)
       - var thisUrl= 'index.html'
       if n > 0
-        - var thisUrl= 'page' + (n) + '.html'
+        - var thisUrl= 'pagina' + (n+1) + '.html'
       if n != page.current
         a.pagination.button(href=thisUrl) #{n+1}
       else
