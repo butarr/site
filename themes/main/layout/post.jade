@@ -59,8 +59,8 @@ append content
               span.place(itemprop="contentLocation")= page.place + ', '
               time(itemprop="datePublished" datetime=published_at.toISOString())= full_date(published_at)
               meta(itemprop="dateModified" content="#{page.updated_at}")
-            .share-mobile
-              include _partial/social-media-share
+          .share-mobile
+            include _partial/social-media-share
 
         if page.cover
           figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
