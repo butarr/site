@@ -141,7 +141,7 @@ append content
                   h3.title(itemprop="headline")= post.title
                   p.description(itemprop="description")= post.description
                         
-            else if page.featured_05
+            if page.featured_05
               - var post=page.featured_05
               +featured-text-box(post)
 
