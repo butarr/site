@@ -15,6 +15,19 @@
     display: -webkit-flex; //Old Safari
     display: flex;
   }
+
+  @include media-query (TWO){
+    width: 2 * $COLUMN-WIDTH;
+  }
+  @include media-query (THREE){
+    width: 3 * $COLUMN-WIDTH;
+  }
+  @include media-query (FOUR){
+    width: 4 * $COLUMN-WIDTH;
+  }
+  @include media-query (FIVE){
+    width: 5 * $COLUMN-WIDTH;
+  }
 }
 
 #home {
