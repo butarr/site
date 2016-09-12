@@ -39,6 +39,10 @@ $logo-big-height: 5.2rem;
   height: $logo-small-height;
   width: 210px;
   margin-bottom: 3px;
+
+}
+
+#page-header .banner-logo-default {
   background: $background url("/img/logo.svg") no-repeat center center;
 
   @include media-query(FOUR){
@@ -47,6 +51,18 @@ $logo-big-height: 5.2rem;
     background: $background url("/img/logo-tagline.svg") no-repeat center center;
   }
 }
+
+
+#page-header .banner-logo-radio {
+  background: $background url("/img/logo.svg") no-repeat center center;
+
+  @include media-query(FOUR){
+    height: $logo-big-height;
+    width: 450px;
+    background: $background url("/img/logo-tagline.svg") no-repeat center center;
+  }
+}
+
 
 #hamburguer {
   position: absolute;

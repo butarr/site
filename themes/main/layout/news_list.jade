@@ -22,8 +22,9 @@ block description
       meta(name="description" content="Coberturas multimídia de temas da atualidade e de fatos históricos que marcaram o Brasil e o mundo. Página #{page.current + 1}")
     when "español"
       meta(name="description" content="Las noticias, entrevistas y artículos de Brasil de Fato traducidas al español. Notas en parceria con medios populares y alternativos de América Latina. Página #{page.current + 1}")      
-    
-      
+    when "radio"
+      meta(name="description" content="As notícias do Brasil de Fato em áudio e texto para rádios do Brasil e da América Latina em nossa Radioagência BdF. Página #{page.current +1}")
+     
 block canonical
   - var area_field= page.area
   case area_field
@@ -43,6 +44,9 @@ block canonical
       - var sitepath= "especiais"
     when "español"
       - var sitepath= "espanol"
+    when "radio"
+      - var sitepath= "radio"
+
   link(href="https://www.brasildefato.com.br/#{sitepath}/" rel="canonical")
     
 block keywords
@@ -52,6 +56,11 @@ block open_graph
   meta(property="og:title" content="#{page.area.toUpperCase()} | #{config.title}")
   meta(property="og:description" content=config.description)
   meta(property="og:image" content="#{config.url}/img/share-logo.png")
+
+if page.area == "radio"
+  block bannerLogo
+    .banner-logo.banner-logo-radio
+
 
 append content
   main.grid-3-columns
