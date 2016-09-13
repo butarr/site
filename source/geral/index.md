@@ -1,16 +1,24 @@
 ---
 layout: news_list
 news:
-  - cover:
-      url: //farm2.staticflickr.com/1449/26028828812_532d1f8b03_b.jpg
-      small: //farm2.staticflickr.com/1449/26028828812_532d1f8b03_n.jpg
-      credits: Fotografo
-      subtitle: Edificio
-    date: 2016-03-29T21:01:13.694Z
-    description: ' Um dos “interlocutores”, com uma camisa da CBF teria dito: “Mas não entendo como você pode ser contra o impeachment e n'
-    title: '“No vermelho”: documentário retrata vida dos trabalhadores e artistas de sinal'
-    path: 2016/03/29/no-vermelho-documentario-retrata-vida-dos-trabalhadores-e-artistas-de-sinal/
-    hat: Economia
+  - updated_at: 2016-08-08T21:31:20.092Z
+    cover:
+      url: //farm8.staticflickr.com/7564/28272049292_dae440bb70_b.jpg
+      small: //farm8.staticflickr.com/7564/28272049292_dae440bb70_n.jpg
+      medium: //farm8.staticflickr.com/7564/28272049292_dae440bb70_z.jpg
+      credits: AMAMAM
+      subtitle: AJAJAJAJAJ
+    date: 2016-07-17T22:58:13.164Z
+    description: Fina
+    title: >-
+      Para movimentos populares, novo presidente da Câmara manterá agenda
+      neoliberal
+    path: /2016/07/17/jjjaaajjajaj/
+    author: EU
 area: geral
+current: 0
+total: 1
+next: false
+prev: false
 ---
 

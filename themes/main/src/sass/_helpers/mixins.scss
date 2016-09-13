@@ -195,12 +195,13 @@
   @include get-font(OTHER);
 
   .other-bar {
-    margin: $PARAGRAPH-SPACE 0 0;
+    margin: 10px 0 0;
   }
 
   .other-title {
     @include page-name();
     margin: 0;
+    margin-bottom: 10px;
   }
 
   .other-article-container {
@@ -220,10 +221,6 @@
   .other-article {
     width: 100%;
 
-    @include media-query (THREE) {
-      padding-left: $LATERAL-COLUMN-SPACE;
-    }
-
     a {
       display: -webkit-flex; //Old Safari
       display: flex;
@@ -232,11 +229,8 @@
       -webkit-flex-direction: row; //Old Safari
       flex-direction: row;
       justify-content: flex-start;
-      margin-top: $VERTICAL-SPACE;
-    }
-
-    .other-article-title {
-      padding-left: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
     }
   }
 }
