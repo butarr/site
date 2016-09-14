@@ -7,7 +7,6 @@ mixin news_list(title, list)
         ul(id=articleId itemprop="itemListElement" class="other-article" class="spacing")
           li
             a(itemprop="url" href=p.url)
-              .other-decorator.fa.fa-circle.fa-1x
               h3.other-article-title(itemprop="headline")= p.title
 
 extends base

@@ -1,206 +1,256 @@
 ---
 featured_01:
   cover:
-    url: //farm8.staticflickr.com/7494/27189912304_f90e6f8c72_b.jpg
-    small: //farm8.staticflickr.com/7494/27189912304_f90e6f8c72_n.jpg
-    medium: //farm8.staticflickr.com/7494/27189912304_f90e6f8c72_z.jpg
-    credits: Fotografo
-    subtitle: Marica em festa
-  date: 2016-06-20T20:42:47.345Z
-  description: >-
-    Evento terá apresentações culturais e participação de intelectuais nacionais
-    e internacionais
+    url: //farm9.staticflickr.com/8124/29261333330_94ab124fa6_b.jpg
+    small: //farm9.staticflickr.com/8124/29261333330_94ab124fa6_n.jpg
+    medium: //farm9.staticflickr.com/8124/29261333330_94ab124fa6_z.jpg
+    credits: Mano
+    subtitle: Um cara com barbas
+  date: 2016-09-08T22:58:23.677Z
+  description: Amor e aventura
   title: >-
-    Maricá realiza 1º Festival Internacional da Utopia, com diversas atividades
-    gratuitas
+    Governo Alckmin infiltrou PM em Tinder para prender manifestantes, dizem
+    vítimas
   path: >-
-    /2016/06/20/marica-realiza-1o-festival-internacional-da-utopia-com-diversas-atividades-gratuitas/
-  hat: Politica
+    /2016/09/08/governo-alckmin-infiltrou-pm-em-tinder-para-prender-manifestantes-dizem-vitimas/
+  hat: Chapéu
+featured_02:
+  cover:
+    url: //farm9.staticflickr.com/8549/28428896084_1b1347c851_b.jpg
+    small: //farm9.staticflickr.com/8549/28428896084_1b1347c851_n.jpg
+    medium: //farm9.staticflickr.com/8549/28428896084_1b1347c851_z.jpg
+    credits: Eu
+    subtitle: Uma foto
+  date: 2016-08-17T17:49:44.955Z
+  description: Muito boa essa coisa
+  title: Deputados e ministros são coronéis da mídia em Pernambuco
+  path: /2016/08/17/ministros-e-deputados-sao-coroneis-da-midia-em-pernambuco/
+  hat: Chapéu
 featured_03:
   cover:
-    url: //farm8.staticflickr.com/7338/27189989034_9fa16619b8_b.jpg
-    small: //farm8.staticflickr.com/7338/27189989034_9fa16619b8_n.jpg
-    medium: //farm8.staticflickr.com/7338/27189989034_9fa16619b8_z.jpg
-    credits: Fotografo
-    subtitle: Galera
-  date: 2016-06-20T20:45:38.014Z
+    url: //farm9.staticflickr.com/8426/28695729636_93800858e3_b.jpg
+    small: //farm9.staticflickr.com/8426/28695729636_93800858e3_n.jpg
+    medium: //farm9.staticflickr.com/8426/28695729636_93800858e3_z.jpg
+    credits: tgh
+    subtitle: Uma GUI
+  date: 2016-08-02T20:28:29.897Z
   description: >-
-    Fazendeiros da região contrataram jagunços para ameaçar comunidades
-    indígenas, apurou o Ministério Público Federal
-  title: >-
-    Fazendeiros da região contrataram jagunços para ameaçar comunidades
-    indígenas, apurou
-  path: >-
-    /2016/06/20/fazendeiros-da-regiao-contrataram-jaguncos-para-ameacar-comunidades-indigenas-apurou/
-  hat: MPF denuncia 12 pessoas envolvidas em milícia privada contra indígenas no MS
+    Rodas de conversa, debates, oficinas, intervenções artísticas, entre outras
+    atividades; estão programadas
+  title: 'Em SP, mulheres fortalecem ações no Mês da Visibilidade Lésbica'
+  path: /2016/08/02/em-sp-mulheres-fortalecem-acoes-no-mes-da-visibilidade-lesbica/
+  hat: Chapéu
 featured_04:
   cover:
-    url: //farm9.staticflickr.com/8511/28132376924_ed3181bc14_b.jpg
-    small: //farm9.staticflickr.com/8511/28132376924_ed3181bc14_n.jpg
-    medium: //farm9.staticflickr.com/8511/28132376924_ed3181bc14_z.jpg
-    credits: Fotógrafa
-    subtitle: alguma imagem
-  date: 2016-08-03T21:24:14.398Z
-  description: Finissíma
-  title: Nos
-  path: /2016/08/03/nos/
-  hat: Mexicano
+    url: //farm8.staticflickr.com/7319/28650512261_177a20e75b_b.jpg
+    small: //farm8.staticflickr.com/7319/28650512261_177a20e75b_n.jpg
+    medium: //farm8.staticflickr.com/7319/28650512261_177a20e75b_z.jpg
+    credits: tgh
+    subtitle: Uma moeda
+  date: 2016-08-02T20:05:37.878Z
+  description: Agora com mais doce de leite
+  title: Mo money mo prooblems
+  path: /2016/08/02/mais-um-caia-no-chao/
+  hat: Chapeu
 featured_05:
   cover:
-    url: //farm8.staticflickr.com/7229/27822387435_9006a5467b_b.jpg
-    small: //farm8.staticflickr.com/7229/27822387435_9006a5467b_n.jpg
-    medium: //farm8.staticflickr.com/7229/27822387435_9006a5467b_z.jpg
-    credits: ' '
-    subtitle: ' '
-  date: 2016-06-21T19:37:14.358Z
+    url: //farm9.staticflickr.com/8878/28622773302_f814aa9534_b.jpg
+    small: //farm9.staticflickr.com/8878/28622773302_f814aa9534_n.jpg
+    medium: //farm9.staticflickr.com/8878/28622773302_f814aa9534_z.jpg
+    credits: tgh
+    subtitle: LASERRSZ
+  date: 2016-08-02T20:28:32.144Z
   description: >-
-    Hashtag #jornalistascontraoassédio se tornou um grupo e agora uma fanpage,
-    que já alcançou cerca de 8.400 curtidas
+    MPF recorre à decisão de juiz e pede que índios Munduruku sejam indenizados
+    em R$10 milhões
   title: >-
-    Demissão de jornalista do iG que denunciou assédio de MC Biel gera campanha
-    nas redes
+    No Pará, indígenas impedidos de acessar educação diferenciada podem ser
+    indenizados
   path: >-
-    /2016/06/21/demissao-de-jornalista-do-ig-que-denunciou-assedio-de-mc-biel-gera-campanha-nas-redes/
-  hat: De Mexicano
-advertising_02:
-  link: www.bdf.com
-  image: >-
-    http://transervicos.herokuapp.com/assets/trans-people-32d1d9e663e5ffea8f48085e2c7faba71394f78486191667c89087ce73528b1d.svg
-  title: Miçangas de Transistores
-advertising_04:
-  link: www.decifre-me
-  image: 'http://www.cantorasdobrasil.com.br/images/carmencosta.jpg'
-  title: Giu Multiuso Contrate-me
-ceara:
+    /2016/08/02/no-para-indigenas-impedidos-de-acessar-educacao-diferenciada-podem-ser-indenizados/
+  hat: Cultura
+featured_06:
   cover:
-    url: 'https://docs.google.com/uc?id=0B46YLSm1qo-6UnlQcmt5ZHl2LVU&export=download'
-    credits: as;kfja;kfj
-    subtitle: f;skafl;akdf
-  date: 2016-06-23T21:13:18.542Z
-  title: Brasil de Fato CE - Edição 90980909
-  path: /2016/06/23/brasil-de-fato-ce-edicao-90980909/
-last_news:
-  - cover:
-      url: //farm9.staticflickr.com/8511/28132376924_ed3181bc14_b.jpg
-      small: //farm9.staticflickr.com/8511/28132376924_ed3181bc14_n.jpg
-      medium: //farm9.staticflickr.com/8511/28132376924_ed3181bc14_z.jpg
-      credits: Fotógrafa
-      subtitle: alguma imagem
-    date: 2016-08-03T21:24:14.398Z
-    description: Finissíma
-    title: Nos
-    path: /2016/08/03/nos/
-    hat: Mexicano
-  - cover:
-      url: //farm8.staticflickr.com/7229/27822387435_9006a5467b_b.jpg
-      small: //farm8.staticflickr.com/7229/27822387435_9006a5467b_n.jpg
-      medium: //farm8.staticflickr.com/7229/27822387435_9006a5467b_z.jpg
-      credits: ' '
-      subtitle: ' '
-    date: 2016-06-21T19:37:14.358Z
-    description: >-
-      Hashtag #jornalistascontraoassédio se tornou um grupo e agora uma fanpage,
-      que já alcançou cerca de 8.400 curtidas
-    title: >-
-      Demissão de jornalista do iG que denunciou assédio de MC Biel gera
-      campanha nas redes
-    path: >-
-      /2016/06/21/demissao-de-jornalista-do-ig-que-denunciou-assedio-de-mc-biel-gera-campanha-nas-redes/
-    hat: De Mexicano
-  - cover:
-      url: //farm8.staticflickr.com/7338/27189989034_9fa16619b8_b.jpg
-      small: //farm8.staticflickr.com/7338/27189989034_9fa16619b8_n.jpg
-      medium: //farm8.staticflickr.com/7338/27189989034_9fa16619b8_z.jpg
-      credits: Fotografo
-      subtitle: Galera
-    date: 2016-06-20T20:45:38.014Z
-    description: >-
-      Fazendeiros da região contrataram jagunços para ameaçar comunidades
-      indígenas, apurou o Ministério Público Federal
-    title: >-
-      Fazendeiros da região contrataram jagunços para ameaçar comunidades
-      indígenas, apurou
-    path: >-
-      /2016/06/20/fazendeiros-da-regiao-contrataram-jaguncos-para-ameacar-comunidades-indigenas-apurou/
-    hat: >-
-      MPF denuncia 12 pessoas envolvidas em milícia privada contra indígenas no
-      MS
-  - cover:
-      url: //farm8.staticflickr.com/7494/27189912304_f90e6f8c72_b.jpg
-      small: //farm8.staticflickr.com/7494/27189912304_f90e6f8c72_n.jpg
-      medium: //farm8.staticflickr.com/7494/27189912304_f90e6f8c72_z.jpg
-      credits: Fotografo
-      subtitle: Marica em festa
-    date: 2016-06-20T20:42:47.345Z
-    description: >-
-      Evento terá apresentações culturais e participação de intelectuais
-      nacionais e internacionais
-    title: >-
-      Maricá realiza 1º Festival Internacional da Utopia, com diversas
-      atividades gratuitas
-    path: >-
-      /2016/06/20/marica-realiza-1o-festival-internacional-da-utopia-com-diversas-atividades-gratuitas/
-    hat: Politica
-  - cover:
-      url: //farm8.staticflickr.com/7723/27724701101_bf712e076b_b.jpg
-      small: //farm8.staticflickr.com/7723/27724701101_bf712e076b_n.jpg
-      medium: //farm8.staticflickr.com/7723/27724701101_bf712e076b_z.jpg
-      credits: Roberto Stuckert Filho/PR
-      subtitle: >-
-        Dilma terá na terça segunda reunião sobre a formação de um pacto
-        nacional a ser firmado para o país
-    date: 2016-06-20T18:55:22.170Z
-    description: >-
-      Próximos cinco dias são aguardados com expectativas sobre julgamentos e
-      discussões sobre o EBC e saídas de ministros
-    title: Semana terá Dilma com movimentos e Temer com governadores
-    path: /2016/06/20/semana-tera-dilma-com-movimentos-e-temer-com-governadores/
-    hat: Agenda
+    url: //farm8.staticflickr.com/7721/28650762281_3f5b91e610_b.jpg
+    small: //farm8.staticflickr.com/7721/28650762281_3f5b91e610_n.jpg
+    medium: //farm8.staticflickr.com/7721/28650762281_3f5b91e610_z.jpg
+    credits: tgh
+    subtitle: Umas coisas escritas....
+  date: 2016-08-02T20:24:19.051Z
+  description: >-
+    Evento, às vésperas das Olimpíadas, possibilitou o encontro de grupos em
+    favor da tolerância, solidariedade e justiça
+  title: Vigília defende dignidade frente à mercantilização da vida
+  path: /2016/08/02/vigilia-defende-dignidade-frente-a-mercantilizacao-da-vida/
+  hat: Chapéu
+featured_07:
+  cover:
+    url: //farm9.staticflickr.com/8816/28616628222_e99ee32e29_b.jpg
+    small: //farm9.staticflickr.com/8816/28616628222_e99ee32e29_n.jpg
+    medium: //farm9.staticflickr.com/8816/28616628222_e99ee32e29_z.jpg
+    credits: tgh
+    subtitle: I'm a baller
+  date: 2016-08-02T15:12:26.512Z
+  description: Outra Descrição
+  title: Outro Título
+  path: /2016/08/02/outro-titulo/
+  hat: Olimpíadas
+featured_08:
+  cover:
+    url: //farm9.staticflickr.com/8375/28616637052_697fd8249b_b.jpg
+    small: //farm9.staticflickr.com/8375/28616637052_697fd8249b_n.jpg
+    medium: //farm9.staticflickr.com/8375/28616637052_697fd8249b_z.jpg
+    credits: tgh & FCB
+    subtitle: Front & Center @ Festival FATAMATA 2016
+  date: 2016-08-02T15:12:20.918Z
+  description: >-
+    Possimus enim fugiat facilis mollitia repudiandae quod. Consectetur labore
+    quibusdam incidunt ut rem qui et voluptas quia. Necessitatibus aut maiores
+    et corrupti quisquam omnis expedita. Distinctio minima autem praesentium.
+  title: Doloribus qui pariatur quia quibusdam repellat laborum ut.
+  path: /2016/08/02/doloribus-qui-pariatur-quia-quibusdam-repellat-laborum-ut/
+  hat: Olimpíadas
+column_01:
+  columnist: joaopaulopintodacunha@gmail.com
+  title: Ummmmm títuloo
+  date: 2016-08-01T22:52:26.438Z
+  path: /2016/08/01/ummmmm-tituloo/
+column_02:
+  columnist: bscerqueiraprofessora@gmail.com
+  title: Opinião
+  date: 2016-07-31T07:05:33.836Z
+  path: /2016/07/31/opiniao/
+column_03:
+  columnist: bscerqueiraprofessora@gmail.com
+  title: Coluna sem Capa mas com audio
+  date: 2016-09-07T19:16:59.807Z
+  path: /2016/09/07/coluna-sem-capa/
+advertising_02:
+  link: 'http://money.com'
+  image: 'https://medlineplus.gov/ency/images/ency/fullsize/9505.jpg'
+  title: Lateral
+advertising_03:
+  link: 'http://brasildefato.com.br'
+  image: 'http://s3.thingpic.com/images/Xa/AQZCKGoyDrcTBbt9fo8qZaxa.jpeg'
+  title: Topo movel
+advertising_01:
+  link: 'http://thiagohersan.com'
+  image: 'http://www.freedigitalphotos.net/images/img/homepage/87357.jpg'
+  title: Topo
+advertising_04:
+  link: 'http://www.foo.com'
+  image: >-
+    http://www.linkanimal.com.br/wp-content/uploads/gato_foto_preto_e_branco_800.jpg
+  title: Contextual movel
+advertising_05:
+  link: 'http://thiagohersan.com'
+  image: >-
+    http://i.dailymail.co.uk/i/pix/2016/03/22/13/32738A6E00000578-3504412-image-a-6_1458654517341.jpg
+  title: Pubs
 most_read:
   - cover:
-      url: //farm9.staticflickr.com/8511/28132376924_ed3181bc14_b.jpg
-      small: //farm9.staticflickr.com/8511/28132376924_ed3181bc14_n.jpg
-      medium: //farm9.staticflickr.com/8511/28132376924_ed3181bc14_z.jpg
-      credits: Fotógrafa
-      subtitle: alguma imagem
-    date: 2016-08-03T21:24:14.398Z
-    description: Finissíma
-    title: Nos
-    path: /2016/08/03/nos/
-    hat: Mexicano
-  - cover:
-      url: //farm8.staticflickr.com/7338/27189989034_9fa16619b8_b.jpg
-      small: //farm8.staticflickr.com/7338/27189989034_9fa16619b8_n.jpg
-      medium: //farm8.staticflickr.com/7338/27189989034_9fa16619b8_z.jpg
-      credits: Fotografo
-      subtitle: Galera
-    date: 2016-06-20T20:45:38.014Z
-    description: >-
-      Fazendeiros da região contrataram jagunços para ameaçar comunidades
-      indígenas, apurou o Ministério Público Federal
-    title: >-
-      Fazendeiros da região contrataram jagunços para ameaçar comunidades
-      indígenas, apurou
-    path: >-
-      /2016/06/20/fazendeiros-da-regiao-contrataram-jaguncos-para-ameacar-comunidades-indigenas-apurou/
-    hat: >-
-      MPF denuncia 12 pessoas envolvidas em milícia privada contra indígenas no
-      MS
-  - cover:
-      url: //farm8.staticflickr.com/7723/27724701101_bf712e076b_b.jpg
-      small: //farm8.staticflickr.com/7723/27724701101_bf712e076b_n.jpg
-      medium: //farm8.staticflickr.com/7723/27724701101_bf712e076b_z.jpg
-      credits: Roberto Stuckert Filho/PR
+      url: //farm8.staticflickr.com/7504/28793074702_1be7742e5a_b.jpg
+      small: //farm8.staticflickr.com/7504/28793074702_1be7742e5a_n.jpg
+      medium: //farm8.staticflickr.com/7504/28793074702_1be7742e5a_z.jpg
+      credits: AB
       subtitle: >-
-        Dilma terá na terça segunda reunião sobre a formação de um pacto
-        nacional a ser firmado para o país
-    date: 2016-06-20T18:55:22.170Z
+        Legislação tem grande êxito no que diz respeito à esfera do debate
+        público: mais de 98% das brasileiras afirmam conhecer o texto.
+    date: 2016-08-10T20:06:12.329Z
     description: >-
-      Próximos cinco dias são aguardados com expectativas sobre julgamentos e
-      discussões sobre o EBC e saídas de ministros
-    title: Semana terá Dilma com movimentos e Temer com governadores
-    path: /2016/06/20/semana-tera-dilma-com-movimentos-e-temer-com-governadores/
-    hat: Agenda
+      Legislação estabeleceu marcos para politicas públicas contra a violência
+      doméstica, mas poucas foram efetivadas
+    title: >-
+      Lei Maria da Penha completa 10 anos como referência, mas com problemas de
+      execução
+    path: >-
+      /2016/08/10/lei-maria-da-penha-completa-10-anos-como-referencia-mas-com-problemas-de-execucao/
+    hat: Chapeu
+  - cover:
+      url: //farm9.staticflickr.com/8878/28622773302_f814aa9534_b.jpg
+      small: //farm9.staticflickr.com/8878/28622773302_f814aa9534_n.jpg
+      medium: //farm9.staticflickr.com/8878/28622773302_f814aa9534_z.jpg
+      credits: tgh
+      subtitle: LASERRSZ
+    date: 2016-08-02T20:28:32.144Z
+    description: >-
+      MPF recorre à decisão de juiz e pede que índios Munduruku sejam
+      indenizados em R$10 milhões
+    title: >-
+      No Pará, indígenas impedidos de acessar educação diferenciada podem ser
+      indenizados
+    path: >-
+      /2016/08/02/no-para-indigenas-impedidos-de-acessar-educacao-diferenciada-podem-ser-indenizados/
+    hat: Cultura
+last_news:
+  - cover:
+      url: //farm9.staticflickr.com/8124/29261333330_94ab124fa6_b.jpg
+      small: //farm9.staticflickr.com/8124/29261333330_94ab124fa6_n.jpg
+      medium: //farm9.staticflickr.com/8124/29261333330_94ab124fa6_z.jpg
+      credits: Mano
+      subtitle: Um cara com barbas
+    date: 2016-09-08T22:58:23.677Z
+    description: Amor e aventura
+    title: >-
+      Governo Alckmin infiltrou PM em Tinder para prender manifestantes, dizem
+      vítimas
+    path: >-
+      /2016/09/08/governo-alckmin-infiltrou-pm-em-tinder-para-prender-manifestantes-dizem-vitimas/
+    hat: Chapéu
+  - date: 2016-09-07T19:16:59.807Z
+    description: 'Olho na capa, na copa, no copo'
+    title: Coluna sem Capa mas com audio
+    path: /2016/09/07/coluna-sem-capa/
+  - cover:
+      url: //farm9.staticflickr.com/8376/29397782752_22dde57ce8_b.jpg
+      small: //farm9.staticflickr.com/8376/29397782752_22dde57ce8_n.jpg
+      medium: //farm9.staticflickr.com/8376/29397782752_22dde57ce8_z.jpg
+      credits: tgh
+      subtitle: Uma notícia do BdF
+    date: 2016-09-06T20:42:05.727Z
+    description: Olhaaaaaaíííí
+    title: Mais um mais ums mais mum
+    path: /2016/09/06/mais-um-mais-ums-mais-mum/
+    hat: Chapéu
+  - cover:
+      url: //farm9.staticflickr.com/8549/28428896084_1b1347c851_b.jpg
+      small: //farm9.staticflickr.com/8549/28428896084_1b1347c851_n.jpg
+      medium: //farm9.staticflickr.com/8549/28428896084_1b1347c851_z.jpg
+      credits: Eu
+      subtitle: Uma foto
+    date: 2016-08-17T17:49:44.955Z
+    description: Muito boa essa coisa
+    title: Deputados e ministros são coronéis da mídia em Pernambuco
+    path: /2016/08/17/ministros-e-deputados-sao-coroneis-da-midia-em-pernambuco/
+    hat: Chapéu
+  - cover:
+      url: //farm8.staticflickr.com/7504/28793074702_1be7742e5a_b.jpg
+      small: //farm8.staticflickr.com/7504/28793074702_1be7742e5a_n.jpg
+      medium: //farm8.staticflickr.com/7504/28793074702_1be7742e5a_z.jpg
+      credits: AB
+      subtitle: >-
+        Legislação tem grande êxito no que diz respeito à esfera do debate
+        público: mais de 98% das brasileiras afirmam conhecer o texto.
+    date: 2016-08-10T20:06:12.329Z
+    description: >-
+      Legislação estabeleceu marcos para politicas públicas contra a violência
+      doméstica, mas poucas foram efetivadas
+    title: >-
+      Lei Maria da Penha completa 10 anos como referência, mas com problemas de
+      execução
+    path: >-
+      /2016/08/10/lei-maria-da-penha-completa-10-anos-como-referencia-mas-com-problemas-de-execucao/
+    hat: Chapeu
+photo_caption:
+  cover:
+    url: //farm9.staticflickr.com/8019/28891054373_877daf6153_b.jpg
+    small: //farm9.staticflickr.com/8019/28891054373_877daf6153_n.jpg
+    medium: //farm9.staticflickr.com/8019/28891054373_877daf6153_z.jpg
+    credits: tgh
+    subtitle: WooohoootT!!
+  date: 2016-09-07T04:11:27.685Z
+  title: Bababababababadddd
+  path: /2016/09/07/bababababababa/
 layout: national
 ---
 
