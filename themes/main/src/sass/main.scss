@@ -20,6 +20,10 @@ body {
       @include site-top-spacing($HEADER-HEIGHT-CONTRACTED + $MENU-HEIGHT-DESKTOP);
 
       @include media-query (FOUR){
+        @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-TWO-LINES-DESKTOP);
+      } 
+
+      @include media-query (FIVE){
         @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
       }
     }
@@ -27,8 +31,12 @@ body {
     @include site-top-spacing($HEADER-HEIGHT-CONTRACTED);
 
     @include media-query (FOUR){
-      @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
-    }
+        @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-TWO-LINES-DESKTOP);
+      } 
+
+      @include media-query (FIVE){
+        @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
+      }
   }
 }
 
