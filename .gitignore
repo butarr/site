@@ -10,3 +10,5 @@ themes/**/source/
 .deploy_git/
 .idea/
 *swp
+source/*
+!source/_data
