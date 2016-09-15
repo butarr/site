@@ -19,7 +19,7 @@ $(document).ready(function() {
   });
 
   var toggle_el = $('#search-tool');
-  var toggle_content = $('#content');
+  var toggle_content = $('#home');
   var toggle_icon = $('#search-icon');
 
   $('#search-icon').click(function() {

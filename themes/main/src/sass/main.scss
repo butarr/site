@@ -16,27 +16,25 @@ body {
     width: 100%;
     @include clearfix();
 
-    &.open-search {
-      @include site-top-spacing($HEADER-HEIGHT-CONTRACTED + $MENU-HEIGHT-DESKTOP);
+    #home {
+      &.open-search {
+        @include site-top-spacing($OPEN-SEARCH-TOOL);
 
-      @include media-query (FOUR){
-        @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-TWO-LINES-DESKTOP);
-      } 
-
-      @include media-query (FIVE){
-        @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
+        @include media-query (FOUR) {
+          margin-top: 0;
+        }
       }
     }
 
     @include site-top-spacing($HEADER-HEIGHT-CONTRACTED);
 
-    @include media-query (FOUR){
+    @include media-query (FOUR) {
         @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-TWO-LINES-DESKTOP);
-      } 
+    }
 
-      @include media-query (FIVE){
+    @include media-query (FIVE) {
         @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
-      }
+    }
   }
 }
 
