@@ -8,3 +8,8 @@ block canonical
   
 block keywords
   meta(name="keywords" content="sátira, caricatura, cartoon, ilustração, política, economia, direitos humanos, cotidiano, crítica, ironia, irreverência")
+
+block open_graph
+  meta(property="og:title" content="#{titlecase(page.area)} | #{config.title}")
+  meta(property="og:description" content=config.description)
+  meta(property="og:image" content="#{config.url}/img/share-logo.png")
