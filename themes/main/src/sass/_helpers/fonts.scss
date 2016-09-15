@@ -174,8 +174,6 @@ $number-size: 1.3rem;
       }
     }
 
-
-
     .title {
       font: normal #{$text-size}/#{$line-separation-small} $family-sans;
     }
@@ -308,6 +306,14 @@ $number-size: 1.3rem;
     &:hover {
       color:$link-color;
     }
+  }
+}
+
+@mixin __photo_caption_list(){
+  .page-name {
+    font: bold $page-name-size $family-sans;
+    text-transform: uppercase;
+    color: $page-title-color;
   }
 }
 
@@ -620,6 +626,9 @@ $number-size: 1.3rem;
   }
   @else if( $type == LIST ){
     @include __list();
+  }
+  @else if( $type == PHOTO_CAPTION_LIST ){
+    @include __photo_caption_list();
   }
   @else if( $type == COLUMN ){
     @include __column();
