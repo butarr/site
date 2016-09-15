@@ -2,3 +2,6 @@ extends base
 
 block title
   title #{titlecase(page.area)} #{config.separator} #{config.title}
+  
+block canonical
+  link(href="https://www.brasildefato.com.br/#{page.area}/" rel="canonical")
