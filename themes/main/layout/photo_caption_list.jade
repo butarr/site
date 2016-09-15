@@ -1,0 +1,34 @@
+extends base
+
+block title
+  title #{titlecase(page.area)} #{config.separator} #{config.title}
+  
+block canonical
+  link(href="https://www.brasildefato.com.br/#{page.area}/" rel="canonical")
+  
+block keywords
+  meta(name="keywords" content="crítica, ironia, humor, sátira, caricatura, cartoon, ilustração, política, economia, direitos humanos, cotidiano")
+
+block open_graph
+  meta(property="og:title" content="#{titlecase(page.area)} | #{config.title}")
+  meta(property="og:description" content=config.description)
+  meta(property="og:image" content="#{config.url}/img/share-logo.png")
+  
+append content
+  main.grid-3-columns
+    
+    section#photo-caption-list(itemscope itemtype="http://schema.org/ImageGallery")
+      h2(class="page-name" itemprop="name")= page.area
+      
+      .image-list(itemscope itemtype="http://schema.org/ItemList")
+        - var position= 0
+        
+        each item in page.list
+          .image-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement")
+              - var imageDescription= item.cover.subtitle + " - Créditos: " + item.cover.credits
+              figure(itemscope itemtype="https://schema.org/ImageObject")
+                img(src=item.cover.medium alt=imageDescription title=imageDescription itemprop="image")
+                figcaption
+                  p.subtitle(itemprop="caption")= item.cover.subtitle
+                  p.credits(itemprop="author")= item.cover.credits
+                

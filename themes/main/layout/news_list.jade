@@ -1,7 +1,7 @@
 extends base
 
 block title
-  title= titlecase(page.area) + " - Brasil de Fato"
+  title #{titlecase(page.area)} #{config.separator} #{config.title}
   
 block description
   - var area_field = page.area
