@@ -101,13 +101,17 @@ $logo-big-height: 5.2rem;
   align-items: center;
 
   position: absolute;
-  top: 30%;
+  top: 24%;
   right: 10%;
 
   @include media-query(FOUR) {
     width: 230px;
     -webkit-justify-content: flex-end; //Old Safari
     justify-content: flex-end;
+  }
+
+  @include media-query (FIVE) {
+    top: 30%;
   }
 
   .social-media-icons {
@@ -117,7 +121,7 @@ $logo-big-height: 5.2rem;
       display: -webkit-flex; //Old Safari
       display: flex;
       -webkit-align-items: center; //Old Safari
-      align-items: center;  
+      align-items: center;
 
       img {
         height: $image-height;
