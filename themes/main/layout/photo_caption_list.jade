@@ -19,3 +19,16 @@ append content
     
     section#photo-caption-list(itemscope itemtype="http://schema.org/ImageGallery")
       h2(class="page-name" itemprop="name")= page.area
+      
+      .image-list(itemscope itemtype="http://schema.org/ItemList")
+        - var position= 0
+        
+        each item in page.list
+          .image-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement")
+              - var imageDescription= item.cover.subtitle + " - Créditos: " + item.cover.credits
+              figure(itemscope itemtype="https://schema.org/ImageObject")
+                img(src=item.cover.medium alt=imageDescription title=imageDescription itemprop="image")
+                figcaption
+                  p.subtitle(itemprop="caption")= item.cover.subtitle
+                  p.credits(itemprop="author")= item.cover.credits
+                

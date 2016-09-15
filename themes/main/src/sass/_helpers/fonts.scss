@@ -315,6 +315,18 @@ $number-size: 1.3rem;
     text-transform: uppercase;
     color: $page-title-color;
   }
+
+  .image-item {
+    color: $link-inverted-color;
+
+    .subtitle {
+      font: bold #{$title-size}/#{$line-separation-small} $family-serif;
+    }
+
+    .credits {
+      font: #{$details-size}/#{$line-separation-small} $family-sans;
+    }
+  }
 }
 
 @mixin __columnists(){
