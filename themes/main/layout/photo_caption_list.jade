@@ -3,6 +3,9 @@ extends base
 block title
   title #{titlecase(page.area)} #{config.separator} #{config.title}
   
+block description
+  meta(name="description" content="Charges e ilustrações com a análise política dos acontecimentos")
+  
 block canonical
   link(href="https://www.brasildefato.com.br/#{page.area}/" rel="canonical")
   
@@ -25,10 +28,13 @@ append content
         
         each item in page.list
           .image-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement")
-              - var imageDescription= item.cover.subtitle + " - Créditos: " + item.cover.credits
-              figure(itemscope itemtype="https://schema.org/ImageObject")
-                img(src=item.cover.medium alt=imageDescription title=imageDescription itemprop="image")
-                figcaption
-                  p.subtitle(itemprop="caption")= item.cover.subtitle
-                  p.credits(itemprop="author")= item.cover.credits
+            meta(itemprop="url" content="https://www.brasildefato.com.br/#{item.url}")
+            meta(itemprop="position" content="#{++position}")
+            
+            - var imageDescription= item.cover.subtitle + " - Créditos: " + item.cover.credits
+            figure(itemscope itemtype="https://schema.org/ImageObject")
+              img(src=item.cover.medium alt=imageDescription title=imageDescription itemprop="image")
+              figcaption
+                p.subtitle(itemprop="caption")= item.cover.subtitle
+                p.credits(itemprop="author")= item.cover.credits
                 
