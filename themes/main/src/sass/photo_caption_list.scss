@@ -14,6 +14,7 @@
 
   @include media-query(FOUR) {
     max-width: 4 * $COLUMN-WIDTH;
+    width: 4 * $COLUMN-WIDTH;
   }
 
   .page-name{

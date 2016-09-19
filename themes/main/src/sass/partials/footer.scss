@@ -37,6 +37,19 @@ $social-margin: 10px;
   }
 }
 
+#page-footer .footer-photo-caption-list {
+  @include media-query(FOUR) {
+    width: 3 * $COLUMN-WIDTH;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+
+  @include media-query(FOUR) {
+    width: 4 * $COLUMN-WIDTH;
+  }
+}
+
+
 #page-footer .footer-container-internal {
   @include media-query(THREE) {
     width: 100%;
