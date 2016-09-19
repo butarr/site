@@ -12,7 +12,11 @@ nav#menu-mobile(itemscope itemtype="http://schema.org/SiteNavigationElement")
       li
         a(itemprop="url" href="/")= 'Início'
         meta(itemprop="name" content="Início")
-      each val, index in {opiniao:"Opinião", politica:"Política", direitos_humanos:"Direitos Humanos", cultura:"Cultura", geral:"Geral", internacional:"Internacional", especiais:"Especiais", espanol:"Español", radio: "Rádio"}
+      - var list = {opiniao:'Opinião', politica:'Política', direitos_humanos:'Direitos Humanos', cultura:'Cultura', geral:'Geral', internacional:'Internacional', especiais:'Especiais', espanol:'Español'}
+      - if (config.toggles._2NZBR1YM_radio_menu) {
+      -   list.radio = 'Rádio'
+      - }
+      each val, index in list
         li
           a(itemprop="url" href="/" + index + "/")= val
           meta(itemprop="name" content=val)

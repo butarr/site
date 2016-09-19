@@ -70,3 +70,7 @@ deploy:
 # Social
 social:
   facebook_url: 'http://www.facebook.com/brasildefato'
+
+# toggles
+toggles:
+  _2NZBR1YM_radio_menu: false
