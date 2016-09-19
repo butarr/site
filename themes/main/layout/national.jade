@@ -188,7 +188,8 @@ append content
           
           if page.photo_caption
             .photo-caption(class= "spacing")
-              h2.section-name Charge
+              a(itemprop="url" href="/charges/")
+                h2.section-name Charge
               - var post=page.photo_caption
               - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
                 
