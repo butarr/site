@@ -22,7 +22,11 @@ nav#two-lines-menu(hidden itemscope itemtype="http://schema.org/SiteNavigationEl
         a(itemprop="url", href="/" + index + "/")= val
         meta(itemprop="name" content=val)
   ul.full-menu-list 
-    each val,index in { internacional:'Internacional', especiais:'Especiais', espanol:'Español', radio:'Rádio'}
+    - var list = { internacional:'Internacional', especiais:'Especiais', espanol:'Español'}
+    - if (config && config.toggles._2NZBR1YM_radio_menu) {
+    -   list.radio = 'Rádio'
+    - }
+    each val,index in list
       li
         a(itemprop="url", href="/" + index + "/")= val
         meta(itemprop="name" content=val)
