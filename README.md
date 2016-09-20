@@ -7,8 +7,9 @@
 ## Running
 
 - `npm install`
-- `npm start`
+- Rename `_config.yml.example` for `_config.yml`
 
+- `npm start`
 The site will be running on http://localhost:4000
 
 ## Running with Docker
