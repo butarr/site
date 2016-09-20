@@ -8,6 +8,7 @@ cat <<EOF > _config.yml
 title: Brasil de Fato
 subtitle: Uma visão popular do Brasil e do mundo
 description: Uma visão popular do Brasil e do mundo
+separator: "|"
 logo: "/img/logo.svg"
 language: pt-br
 
