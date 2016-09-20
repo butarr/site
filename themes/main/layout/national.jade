@@ -189,13 +189,13 @@ append content
           if page.photo_caption
             .photo-caption(class= "spacing")
               a(itemprop="url" href="/charges/")
-                h2.section-name Charges
+                h2.section-name#charge_title_analytics Charges
               - var post=page.photo_caption
               - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
                 
               figure(itemscope itemtype="https://schema.org/ImageObject")
                 a(itemprop="url" href="/charges/")
-                  img(src=post.cover.medium alt=imageDescription title=imageDescription itemprop="image")
+                  img#charge_image_analytics(src=post.cover.medium alt=imageDescription title=imageDescription itemprop="image")
                 figcaption
                   p.subtitle(itemprop="caption")= post.cover.subtitle
                   p.credits(itemprop="author")= post.cover.credits
