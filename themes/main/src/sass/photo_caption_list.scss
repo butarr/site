@@ -2,6 +2,7 @@
 @import '_helpers/mixins';
 @import '_helpers/constants';
 @import '_helpers/fonts';
+@import '_helpers/lightbox';
 
 #photo-caption-list {
   @include get-font(PHOTO_CAPTION_LIST);
