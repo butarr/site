@@ -201,6 +201,12 @@ $number-size: 1.3rem;
   }
 
   .photo-caption {
+    a:hover {
+      .section-name{
+        color: $link-neutral-color-hover;
+      }
+    }
+
     color: $link-inverted-color;
 
     .subtitle {
