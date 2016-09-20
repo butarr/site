@@ -1,6 +1,7 @@
 .DS_Store
 Thumbs.db
 db.json
+_config.yml
 *.log
 node_modules/
 public/
@@ -12,4 +13,3 @@ themes/**/source/
 *swp
 source/*
 !source/_data
-_config.yml
