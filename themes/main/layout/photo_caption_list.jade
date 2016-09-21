@@ -33,13 +33,13 @@ append content
             
             - var imageDescription= item.cover.subtitle + " - Créditos: " + item.cover.credits
             
-            figure(itemscope itemtype="https://schema.org/ImageObject")
-              a(href="#image" + position)
+            a(href="#image" + position)
+              figure(itemscope itemtype="https://schema.org/ImageObject")
                 img(src=item.cover.medium alt=imageDescription title=imageDescription itemprop="image")
-              figcaption
-                p.subtitle(itemprop="caption")= item.cover.subtitle
-                p.credits(itemprop="author")= item.cover.credits
-                  
+                figcaption
+                  p.subtitle(itemprop="caption")= item.cover.subtitle
+                  p.credits(itemprop="author")= item.cover.credits
+                    
             div(class="lightbox short-animate" id="image" + position)
               img(class="long-animate" src=item.cover.medium)
             div(id="lightbox-controls" class="short-animate")

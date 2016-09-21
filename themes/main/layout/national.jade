@@ -192,13 +192,12 @@ append content
                 h2.section-name Charges
               - var post=page.photo_caption
               - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
-                
-              figure(itemscope itemtype="https://schema.org/ImageObject")
-                a(itemprop="url" href="/charges/")
+              a(itemprop="url" href="/charges/")
+                figure(itemscope itemtype="https://schema.org/ImageObject")
                   img#charge_image_analytics(src=post.cover.medium alt=imageDescription title=imageDescription itemprop="image")
-                figcaption
-                  p.subtitle(itemprop="caption")= post.cover.subtitle
-                  p.credits(itemprop="author")= post.cover.credits
+                  figcaption
+                    p.subtitle(itemprop="caption")= post.cover.subtitle
+                    p.credits(itemprop="author")= post.cover.credits
            
           if page.last_news
             section.last-news#last-news-mobile(class= "spacing" itemscope itemtype="https://schema.org/ItemList")

@@ -207,7 +207,9 @@ $number-size: 1.3rem;
       }
     }
 
-    color: $link-inverted-color;
+    a {
+      color: $link-inverted-color;
+    }
 
     .subtitle {
       font: bold #{$title-size}/#{$line-separation-small} $family-serif;
@@ -322,6 +324,10 @@ $number-size: 1.3rem;
     color: $page-title-color;
   }
 
+  a {
+    color: $link-inverted-color;
+  }
+  
   .image-item {
     color: $link-inverted-color;
 
