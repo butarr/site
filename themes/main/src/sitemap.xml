@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-      <loc>https://www.brasildefato.com.br/index.html</loc>
+      <loc>https://www.brasildefato.com.br</loc>
       <changefreq>hourly</changefreq>
-      <priority>.5</priority>
+      <priority>.9</priority>
   </url>
   <url>
       <loc>https://www.brasildefato.com.br/opiniao/</loc>
       <changefreq>weekly</changefreq>
-      <priority>.7</priority>
+      <priority>.6</priority>
   </url>
   <url>
       <loc>https://www.brasildefato.com.br/politica/</loc>
       <changefreq>hourly</changefreq>
-      <priority>.6</priority>
+      <priority>.7</priority>
   </url>
   <url>
       <loc>https://www.brasildefato.com.br/direitos_humanos/</loc>
@@ -33,7 +33,7 @@
   <url>
       <loc>https://www.brasildefato.com.br/especiais/</loc>
       <changefreq>monthly</changefreq>
-      <priority>.8</priority>
+      <priority>.7</priority>
   </url>
   <url>
       <loc>https://www.brasildefato.com.br/geral/</loc>
@@ -51,9 +51,14 @@
       <priority>.6</priority>
   </url>
   <url>
+      <loc>https://www.brasildefato.com.br/charges/</loc>
+      <changefreq>daily</changefreq>
+      <priority>.6</priority>
+  </url>
+  <url>
       <loc>https://www.brasildefato.com.br/quem_somos.html</loc>
       <changefreq>yearly</changefreq>
-      <priority>.2</priority>
+      <priority>.1</priority>
   </url>
   <url>
       <loc>https://www.brasildefato.com.br/parceiros.html</loc>
