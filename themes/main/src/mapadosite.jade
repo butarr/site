@@ -29,6 +29,13 @@ append content
                   a(itemprop="url", href="/" + index + "/")= val
                   
           section    
+            h3.title Charges
+            ul.list
+              each val, index  in {charges:"Charges"}
+                li
+                  a(itemprop="url", href="/" + index + "/")= val
+                  
+          section    
             h3.title Institucional
             ul.list
               each val, index  in {quem_somos:"Quem Somos", parceiros:"Parceiros", publicidade:"Publicidade", contato:"Contato"}
