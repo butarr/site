@@ -335,6 +335,27 @@ $number-size: 1.3rem;
   }
 }
 
+@mixin __photo_caption(){
+  .title {
+      font: bold #{$standalone-title-size}/#{$line-separation-small} $family-serif;
+      color: $title-color;
+  }
+
+  .hat {
+    font: bold $page-name-size $family-sans;
+    text-transform: uppercase;
+    color: $page-title-color;
+  }
+
+  .subtitle {
+    font: bold #{$title-size}/#{$line-separation-small} $family-serif;
+  }
+
+  .credits {
+    font: #{$details-size}/#{$line-separation-small} $family-sans;
+  }
+}
+
 @mixin __columnists(){
   .page-name {
     font: bold $page-name-size $family-sans;
@@ -647,6 +668,9 @@ $number-size: 1.3rem;
   }
   @else if( $type == PHOTO_CAPTION_LIST ){
     @include __photo_caption_list();
+  }
+  @else if( $type == PHOTO_CAPTION ){
+    @include __photo_caption();
   }
   @else if( $type == COLUMN ){
     @include __column();
