@@ -1,6 +1,5 @@
-#content {
-  height:4000px;
-}
+@import '../_helpers/constants';
+@import '../_helpers/query';
 
 .short-animate {
   -webkit-transition:.5s ease-in-out;
@@ -26,7 +25,7 @@
   left:0;
   right:0;
   background:rgba(66,66,66,.8);
-  z-index:501;
+  z-index:50;
   opacity:0;
 }
 
@@ -113,7 +112,26 @@
 }
 
 .lightbox:target ~ #lightbox-controls {
-  top:0px;
+  top: $HEADER-HEIGHT-CONTRACTED;
+
+  @include media-query (FOUR) {
+    top: $HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-TWO-LINES-DESKTOP;
+  }
+
+  @include media-query (FIVE) {
+    top: $HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP;
+  }
+}
+
+.lightbox:target ~ #lightbox-controls.contracted {
+  @include media-query (FOUR) {
+    top: $HEADER-HEIGHT-CONTRACTED + $MENU-HEIGHT-TWO-LINES-DESKTOP;
+  }
+
+  @include media-query (FIVE) {
+    top: $HEADER-HEIGHT-CONTRACTED + $MENU-HEIGHT-DESKTOP;
+  }
+
 }
 
 .lightbox:target ~ #lightbox-controls #close-lightbox:after {
@@ -122,15 +140,4 @@
 
 .lightbox:target ~ #lightbox-controls #close-lightbox:before {
   height:50px;
-}
-
-@-webkit-keyframes wiggle {
-	0% {
-	  -webkit-transform:rotate(2deg);
-  }
-  20% {-webkit-transform:rotate(-2deg);}
-  40% {-webkit-transform:rotate(2deg);}
-  60% {-webkit-transform:rotate(-2deg);}
-  80% {-webkit-transform:rotate(2deg);}
-	100% {-webkit-transform:rotate(-2deg);}
 }

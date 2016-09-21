@@ -3,7 +3,7 @@ $(document).ready(function() {
   $(window).scroll(function(){
     var top = $(this).scrollTop();
     var disapeared = ( top > 120 );
-    $('#menu-mobile, .menu-options, .banner-header, .social-media-icons').toggleClass('contracted', disapeared);
+    $('#menu-mobile, .menu-options, .banner-header, .social-media-icons, #lightbox-controls').toggleClass('contracted', disapeared);
   });
 
   $('#hamburguer').click(function() {
