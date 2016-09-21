@@ -1,0 +1,21 @@
+extends base
+
+block title
+  title #{titlecase(page.area)} #{config.separator} #{config.title}
+  
+block description
+  meta(name="description" content="Charges e ilustrações com a análise política dos acontecimentos")
+  
+append content
+  main(class='grid-4-columns')
+    section#photo-caption
+      span.hat(itemprop="about") Charge
+      h2.title(itemprop="headline")= page.title
+      figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
+        .img-container
+          img(itemprop="url" alt=imageDescription src=page.cover['medium'])
+          meta(itemprop="width" content="696")
+          meta(itemprop="height" content="464")
+        figcaption
+          p.subtitle(itemprop="caption")= page.cover.subtitle
+          p.credits(itemprop="author")= page.cover.credits
