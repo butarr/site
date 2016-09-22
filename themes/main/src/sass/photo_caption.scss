@@ -4,6 +4,7 @@
 
 #photo-caption{
   @include get-font(PHOTO_CAPTION);
+  @include button;
 
   figure {
     margin-bottom: 20px;

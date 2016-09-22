@@ -327,7 +327,7 @@ $number-size: 1.3rem;
   a {
     color: $link-inverted-color;
   }
-  
+
   .image-item {
     color: $link-inverted-color;
 
@@ -359,6 +359,19 @@ $number-size: 1.3rem;
 
   .credits {
     font: #{$details-size}/#{$line-separation-small} $family-sans;
+  }
+
+  .button {
+    font: bold $text-size $family-sans;
+    color: $link-color;
+
+    &:visited {
+      color: $link-visited-color;
+    }
+
+    &:hover {
+      color: $link-hover-color;
+    }
   }
 }
 
