@@ -57,4 +57,9 @@ theme: main
 #Toggles
 toggles:
   _2NZBR1YM_radio_menu: ${TOGGLE_2NZBR1YM_RADIO_MENU:-false}
+
+feed:
+  type: rss2
+  limit: 20
+  hub:
 EOF
