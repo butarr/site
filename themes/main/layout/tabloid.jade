@@ -60,7 +60,7 @@ append content
     section#tabloid(itemscope itemtype="https://bib.schema.org/Newspaper")
       - var published_at = utc_to_brt(page.date)
       - var title = page.title
-      h2.title(itemprop="headline")= title
+      h1.title(itemprop="headline")= title
       
       time(datetime=published_at.toISOString())= full_date(published_at)
       if page.cover
@@ -77,14 +77,14 @@ append content
       if page.areas
         each area in page.areas
           section(class= "list" itemscope itemtype="http://schema.org/ItemList")
-            h3(class="section-name" itemprop="name")= area.name
+            h2(class="section-name" itemprop="name")= area.name
             
             - var position= 0
             each post in area.news
               - var published_at = utc_to_brt(post.date)
               a.news-item-link(href=post.url)
                 .news-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"  class= "divisor")
-                  h4.offscreen= post.title
+                  h3.offscreen= post.title
                   meta(itemprop="url" content="https://www.brasildefato.com.br/#{post.url}")
                   meta(itemprop="position" content="#{++position}")
                   

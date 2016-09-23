@@ -70,7 +70,7 @@ append content
       - var language= null
       
     section#news-list(class= "list" itemscope itemtype="http://schema.org/ItemList" lang= language)
-      h2(class="page-name" itemprop="name")= page.area
+      h1(class="page-name" itemprop="name")= page.area
       
       - var position= 0
       each post in page.news

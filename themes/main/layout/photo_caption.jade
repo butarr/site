@@ -9,8 +9,8 @@ block description
 append content
   main(class='grid-4-columns')
     section#photo-caption
-      span.hat(itemprop="about") Charge
-      h2.title(itemprop="headline")= page.title
+      h2.hat(itemprop="about") Charge
+      h1.title(itemprop="headline")= page.title
       figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
         .img-container
           img(itemprop="url" alt=imageDescription src=page.cover['medium'])

@@ -47,13 +47,13 @@ append content
         
       header
         - var published_at = utc_to_brt(page.date)
-        span.hat(itemprop="about")= page.hat
-        h2.title(itemprop="headline")= page.title
-        p.description(itemprop="description")= page.description
+        h3.hat(itemprop="about")= page.hat
+        h1.title(itemprop="headline")= page.title
+        h2.description(itemprop="description")= page.description
         
         .details-bar
           .author-time
-            span.author(rel="author" itemprop="author")= page.author
+            address.author(rel="author" itemprop="author")= page.author
             .place-and-time
               span.place(itemprop="contentLocation")= page.place + ', '
               time(itemprop="datePublished" datetime=published_at.toISOString())= full_date(published_at)
