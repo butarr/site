@@ -1,0 +1,14 @@
+.footer-header
+  a(href="/", title="Link para a página principal")
+    img(src="/img/logo.svg", alt="imagem brasil de fato")
+.footer-items
+  .footer-menu
+    ul
+      each val, index  in {"quem-somos":"Quem Somos", "parceiros":"Parceiros", "publicidade":"Publicidade", "contato":"Contato", "mapa-do-site": "Mapa do Site"}
+        li
+          a.active(itemprop="url", href="/" + index )
+            p= val
+          meta(itemprop="name" content=val)
+  .footer-social-block
+    p Social:
+    include social-media-icons

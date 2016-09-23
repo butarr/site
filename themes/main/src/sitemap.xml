@@ -56,22 +56,22 @@
       <priority>.6</priority>
   </url>
   <url>
-      <loc>https://www.brasildefato.com.br/quem_somos.html</loc>
+      <loc>https://www.brasildefato.com.br/quem-somos</loc>
       <changefreq>yearly</changefreq>
       <priority>.1</priority>
   </url>
   <url>
-      <loc>https://www.brasildefato.com.br/parceiros.html</loc>
+      <loc>https://www.brasildefato.com.br/parceiros</loc>
       <changefreq>yearly</changefreq>
       <priority>.1</priority>
   </url>
   <url>
-      <loc>https://www.brasildefato.com.br/publicidade.html</loc>
+      <loc>https://www.brasildefato.com.br/publicidade</loc>
       <changefreq>never</changefreq>
       <priority>.1</priority>
   </url>
   <url>
-      <loc>https://www.brasildefato.com.br/contato.html</loc>
+      <loc>https://www.brasildefato.com.br/contato</loc>
       <changefreq>never</changefreq>
       <priority>.1</priority>
   </url>
