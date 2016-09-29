@@ -16,7 +16,7 @@
     "gulp-uglify": "^1.0.2",
     "hexo": "^3.2.2",
     "hexo-front-matter": "^0.2.2",
-    "hexo-generator-feed": "^1.2.0",
+    "hexo-generator-feed-brasil-de-fato": "^1.2.0",
     "hexo-renderer-jade": "^0.3.0",
     "hexo-renderer-marked": "^0.2.10",
     "hexo-server": "^0.2.0",
