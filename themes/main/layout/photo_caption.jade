@@ -6,12 +6,16 @@ block title
 block description
   meta(name="description" content="Charges e ilustrações com a análise política dos acontecimentos")
   
+block canonical
+  link(href="https://www.brasildefato.com.br#{page.url}" rel="canonical")
+  
 append content
   main(class='grid-4-columns')
     section#photo-caption
-      h2.hat(itemprop="about") Charge
-      h1.title(itemprop="headline")= page.title
+      h1.hat(itemprop="about") Charge
+      h2.title(itemprop="headline")= page.title
       figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
+        - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
         .img-container
           img(itemprop="url" alt=imageDescription src=page.cover['medium'])
           meta(itemprop="width" content="696")
