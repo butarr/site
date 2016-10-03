@@ -38,3 +38,33 @@
     margin: 20px 0 10px 0;
   }
 }
+
+#other-photo-captions {
+  max-width: 4 * $COLUMN-WIDTH;
+  padding-top: 10px;
+
+  h3 {
+    @include section-name();
+  }
+
+  .related_photo_captions {
+    padding: $VERTICAL-SPACE 0;
+    display: -webkit-flex; //Old Safari
+    display: flex;
+    -webkit-flex-wrap: nowrap; //Old Safari
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-around; //Old Safari
+    justify-content: space-around;
+
+    .photo-caption-smaller {
+      @include picture-with-caption();
+      @include image-rounded-responsive(200px);
+      @include column-lateral-spacing();
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
