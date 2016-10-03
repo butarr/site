@@ -373,11 +373,12 @@ $number-size: 1.3rem;
       color: $link-hover-color;
     }
   }
+
   .photo-caption-smaller {
       color: $link-inverted-color;
   }
 
-  h3 {
+  .section-name {
     font: bold $page-name-size $family-sans;
     text-transform: uppercase;
     color: $page-title-color;

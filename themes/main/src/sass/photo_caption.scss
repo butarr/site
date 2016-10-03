@@ -43,7 +43,7 @@
   max-width: 4 * $COLUMN-WIDTH;
   padding-top: 10px;
 
-  h3 {
+  .section-name {
     @include section-name();
   }
 
