@@ -25,7 +25,9 @@
 }
 
 #photo-caption-list .image-list {
+  display: -webkit-flex; //Old Safari
   display: flex;
+  -webkit-flex-wrap: wrap; //Old Safari
   flex-wrap: wrap;
 }
 
