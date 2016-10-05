@@ -355,10 +355,12 @@ $number-size: 1.3rem;
 
   .subtitle {
     font: bold #{$title-size}/#{$line-separation-small} $family-serif;
+    color: $link-inverted-color;
   }
 
   .credits {
     font: #{$details-size}/#{$line-separation-small} $family-sans;
+    color: $link-inverted-color;
   }
 
   .button {
@@ -372,10 +374,6 @@ $number-size: 1.3rem;
     &:hover {
       color: $link-hover-color;
     }
-  }
-
-  .photo-caption-smaller {
-      color: $link-inverted-color;
   }
 
   .section-name {
