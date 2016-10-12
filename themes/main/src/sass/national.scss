@@ -82,12 +82,6 @@
     }
   }
 
-  #bannerHome {
-    -webkit-order: -6; //Old Safari
-    order: -6;
-
-  }
-
   #videos {
     -webkit-order: -5; //Old Safari
     order: -5;
@@ -197,7 +191,7 @@
   }
 }
 
-#home .advertising_01 {
+#home .advertising-01 {
   display: none;
 
   @include media-query(THREE) {
@@ -214,7 +208,7 @@
   }
 }
 
-#home .advertising_02 {
+#home .spotlight-02-desktop {
   display: none;
 
   @include media-query(THREE) {
@@ -231,7 +225,7 @@
   }
 }
 
-#home .advertising_03 {
+#home .advertising-03 {
   display: flex;
   justify-content: center;
 
@@ -247,7 +241,7 @@
   }
 }
 
-#home .advertising_04 {
+#home .spotlight-01-mobile, .spotlight-02-mobile {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -264,9 +258,11 @@
   }
 }
 
-#home .advertising_05 {
+#home .spotlight-01-desktop {
   display: none;
   width: 100%;
+  -webkit-order: -6; //Old Safari
+  order: -6;
 
   @include media-query(THREE) {
     display: flex;

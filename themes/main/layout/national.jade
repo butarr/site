@@ -73,7 +73,22 @@ mixin footer-article(field, post, imageDescription)
     a(href=post.path itemprop="url")
       figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription)
       h3.title(itemprop="headline")= post.title
-
+      
+mixin spotlight_01_mobile(post, type)
+  div.spotlight-01-mobile(class="spacing" itemscope itemtype=type)
+    a(itemprop="url" href=post.link target="_blank")
+      img(src=post.image alt=post.title title=post.title itemprop="image")
+      
+mixin spotlight_01_desktop(post, type)
+  div.spotlight-01-desktop(class= "spacing" itemscope itemtype=type )
+    a(itemprop="url" href=post.link target="_blank")
+      img(src=post.image alt=post.title title=post.title itemprop="image")
+      
+mixin spotlight_02_desktop(post, type)
+  div.spotlight-02-desktop(class="spacing" itemscope itemtype=type)
+    a(itemprop="url" href=post.link target="_blank")
+      img(src=post.image alt=post.title title=post.title itemprop="image")
+      
 extends base
 append content
   h1.offscreen Brasil de Fato
@@ -83,13 +98,13 @@ append content
       .top
         if site.data.advertisings.advertising_01
           - var post=site.data.advertisings.advertising_01
-          div.advertising_01(class="spacing" itemscope itemtype="http://schema.org/WPAdBlock")
+          div.advertising-01(class="spacing" itemscope itemtype="http://schema.org/WPAdBlock")
             a(itemprop="url" href=post.link target="_blank")
               img(src=post.image alt=post.title title=post.title itemprop="image")
 
         if site.data.advertisings.advertising_03
           - var post=site.data.advertisings.advertising_03
-          div.advertising_03(class="spacing" itemscope itemtype="http://schema.org/WPAdBlock")
+          div.advertising-03(class="spacing" itemscope itemtype="http://schema.org/WPAdBlock")
             a(itemprop="url" href=post.link target="_blank")
               img(src=post.image alt=post.title title=post.title itemprop="image")
             
@@ -102,7 +117,6 @@ append content
                 li.inactive(itemprop="itemListElement")
                   a(href=post.path itemprop="url")
                     p.title= post.title
-
 
       .container
         .main    
@@ -128,11 +142,10 @@ append content
             +small-picture("featured-3", post, imageDescription)   
 
           #featured-text-container(class="divisor" class= "spacing")
-            if site.data.advertisings.advertising_04
-              - var post=site.data.advertisings.advertising_04
-              div.advertising_04(class="spacing" itemscope itemtype="http://schema.org/WPAdBlock")
-                a(itemprop="url" href=post.link target="_blank")
-                  img(src=post.image alt=post.title title=post.title itemprop="image")
+            if page.spotlight_01
+              +spotlight_01_mobile(page.spotlight_01)
+            else if site.data.advertisings.advertising_04
+              +spotlight_01_mobile(site.data.advertisings.advertising_04, "http://schema.org/WPAdBlock")
                 
             if page.featured_04
               - var post=page.featured_04
@@ -140,6 +153,12 @@ append content
                 a(href=post.path itemprop="url")
                   h3.title(itemprop="headline")= post.title
                   p.description(itemprop="description")= post.description
+                  
+            if page.spotlight_02
+              - var post=page.spotlight_02
+              div.spotlight-02-mobile(class="spacing" itemscope)
+                a(itemprop="url" href=post.link target="_blank")
+                  img(src=post.image alt=post.title title=post.title itemprop="image")
                         
             if page.featured_05
               - var post=page.featured_05
@@ -149,11 +168,10 @@ append content
               - var post=page.featured_06
               +featured-text-box(post)  
 
-          if site.data.advertisings.advertising_05
-            - var post=site.data.advertisings.advertising_05
-            div.advertising_05(id = 'bannerHome' class= "spacing" itemscope itemtype="http://schema.org/WPAdBlock" )
-              a(itemprop="url" href=post.link target="_blank")
-                img(src=post.image alt=post.title title=post.title itemprop="image") 
+          if page.spotlight_01
+            +spotlight_01_desktop(page.spotlight_01) 
+          else if site.data.advertisings.advertising_05
+            +spotlight_01_desktop(site.data.advertisings.advertising_05, "http://schema.org/WPAdBlock")
 
           figure(class= "radar" class= "spacing")
             a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar de Movimentos Populares")
@@ -231,11 +249,10 @@ append content
             a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar dos Movimentos")
               img(src="/img/radar.png" alt="Radar de movimentos populares")
 
-          if site.data.advertisings.advertising_02
-            - var post=site.data.advertisings.advertising_02
-            div.advertising_02(class="spacing" itemscope itemtype="http://schema.org/WPAdBlock")
-              a(itemprop="url" href=post.link target="_blank")
-                img(src=post.image alt=post.title title=post.title itemprop="image")
+          if page.spotlight_02
+            +spotlight_02_desktop(page.spotlight_02)
+          else if site.data.advertisings.advertising_02
+            +spotlight_02_desktop(site.data.advertisings.advertising_02, "http://schema.org/WPAdBlock")
 
           section.printed-news(class="spacing")
             +printed-news(page)
