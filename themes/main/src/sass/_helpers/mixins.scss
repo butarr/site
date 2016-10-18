@@ -37,7 +37,7 @@
 }
 
 @mixin site-top-spacing($header-height) {
-  margin-top: $header-height + 10px;
+  margin-top: $header-height;
 }
 
 @mixin site-lateral-spacing ($value: auto) {

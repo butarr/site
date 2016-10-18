@@ -16,6 +16,8 @@ body {
     width: 100%;
     @include clearfix();
 
+    padding-top: 10px;
+
     #home {
       &.open-search {
         @include site-top-spacing($OPEN-SEARCH-TOOL);

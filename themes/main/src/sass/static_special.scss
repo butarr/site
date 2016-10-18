@@ -1,0 +1,70 @@
+@import '_helpers/query';
+@import '_helpers/mixins';
+@import '_helpers/constants';
+
+main.special {
+  padding-top: 0;
+}
+
+section {
+  width: auto;
+  background-color: white;
+  z-index: 3;
+  position: relative;
+}
+
+section.image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 370px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+
+  @include media-query(TWO) {
+    height: 450px;
+  }
+}
+
+section.title {
+  background-color: transparent;
+  text-align: center;
+  height: 370px;
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+
+  display: table;
+  text-align: center;
+
+  @include media-query(TWO) {
+    height: 450px;
+  }
+
+  div {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  h1 {
+    font-family: Merriweather;
+    font-size: 22px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.36;
+    color: #ffffff;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  p {
+    font-family: MerriweatherSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    color: #ffffff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  }
+}
