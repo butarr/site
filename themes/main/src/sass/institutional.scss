@@ -5,6 +5,7 @@
 
 .institutional {
   @include get-font(INSTITUTIONAL);
+  min-height: 360px;
 
   p {
     margin-bottom: $PARAGRAPH-SPACE;
