@@ -3,68 +3,71 @@
 @import '_helpers/constants';
 
 main.special {
+  @include site-top-spacing($HEADER-HEIGHT-CONTRACTED);
   padding-top: 0;
-}
 
-section {
-  width: auto;
-  background-color: white;
-  z-index: 3;
-  position: relative;
-}
-
-section.image {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  height: 370px;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-
-  @include media-query(TWO) {
-    height: 450px;
-  }
-}
-
-section.title {
-  background-color: transparent;
-  text-align: center;
-  height: 370px;
-  position: relative;
-  z-index: 2;
-  padding: 30px;
-
-  display: table;
-  text-align: center;
-
-  @include media-query(TWO) {
-    height: 450px;
+  section {
+    width: 100%;
+    background-color: white;
   }
 
-  div {
-    display: table-cell;
-    vertical-align: middle;
+  section.cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 370px;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+
+    @include media-query(TWO) {
+      height: 450px;
+    }
   }
 
-  h1 {
-    font-family: Merriweather;
-    font-size: 22px;
-    font-weight: 900;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.36;
+  section.title {
+    background-color: transparent;
+    text-align: center;
+    height: 370px;
+    padding: 30px;
     color: #ffffff;
-    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
-  }
 
-  p {
-    font-family: MerriweatherSans;
-    font-size: 16px;
-    font-weight: normal;
-    font-style: italic;
-    font-stretch: normal;
-    color: #ffffff;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    display: table;
+    text-align: center;
+
+    @include media-query(THREE) {
+      height: 450px;
+      padding: 122px;
+    }
+
+    div {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    h1 {
+      font-family: $family-serif;
+      font-size: 22px;
+      font-weight: 900;
+      line-height: 1.36;
+      text-shadow: 0 2px 0 rgba(0, 0, 0, 0.9);
+      margin-bottom: 10px;
+
+      @include media-query(THREE){
+        font-size: 30px;
+      }
+    }
+
+    p {
+      font-family: $family-sans;
+      font-size: 16px;
+      font-style: italic;
+      line-height: 20px;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
+
+      @include media-query(THREE){
+        font-size: 18px;
+      }
+    }
   }
 }

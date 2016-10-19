@@ -77,7 +77,11 @@ $logo-big-height: 5.2rem;
   }
 }
 
-#page-header .contracted {
+.always-contracted #hamburguer {
+  display: block;
+}
+
+#page-header .contracted, #page-header .always-contracted {
   @include media-query(FOUR) {
     height: $HEADER-HEIGHT-CONTRACTED;
     margin-bottom: 3px;

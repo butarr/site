@@ -19,10 +19,6 @@
   &.open {
     left: 0;
   }
-
-  @include media-query(FOUR) {
-    display: none;
-  }
 }
 
 #menu-mobile .menu-header {
@@ -78,6 +74,6 @@
     display: -webkit-flex; //Old Safari
     display: flex;
     -webkit-justify-content: center; //Old Safari
-    justify-content: center;  
+    justify-content: center;
   }
 }
