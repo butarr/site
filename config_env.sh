@@ -56,8 +56,6 @@ theme: main
 
 #Toggles
 toggles:
-  _2NZBR1YM_radio_menu: ${TOGGLE_2NZBR1YM_RADIO_MENU:-false}
-  _m5FcYh10_photo_caption_page: ${TOGGLE_m5FcYh10_PHOTO_CAPTION_PAGE:-false}
 
 feed:
   type: rss2

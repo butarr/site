@@ -210,12 +210,7 @@ append content
                 h2.section-name Charges
               - var post=page.photo_caption
               - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
-              - var photo_caption_href="/charges/"
-              - if (config.toggles._m5FcYh10_photo_caption_page) {
-              -   photo_caption_href = post.path
-              - }
-
-              a(itemprop="url" href=photo_caption_href)
+              a(itemprop="url" href=post.path)
                 figure(itemscope itemtype="https://schema.org/ImageObject")
                   img#charge_image_analytics(src=post.cover.medium alt=imageDescription title=imageDescription itemprop="image")
                   figcaption
