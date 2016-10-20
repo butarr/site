@@ -37,13 +37,6 @@ $lateral-margin: 10px;
     padding: 0;
   }
 
-  &.open {
-    display: -webkit-flex; //Old Safari
-    display: flex;
-    -webkit-align-items: center; //Old Safari
-    align-items: center;
-  }
-
   #close-search-button {
     height: 15px;
     margin-bottom: 10px;
@@ -53,7 +46,26 @@ $lateral-margin: 10px;
       height: 13px;
     }
   }
+}
 
+#search-tool-404 {
+  display: block;
+  width: 100%;
+  position: relative;
+  right: 0;
+  border: 1px solid $box-border-neutral;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px $box-border-neutral;
+  @include get-font(SEARCH);
+}
+
+#search-tool, #search-tool-404 {
+  &.open {
+    display: -webkit-flex; //Old Safari
+    display: flex;
+    -webkit-align-items: center; //Old Safari
+    align-items: center;
+  }
 
 // SEARCH BOX
   // Sets search box size
