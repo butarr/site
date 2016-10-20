@@ -104,7 +104,6 @@ append content
 
               .content(class="no-image" class= "divisor")
                 h3.title(itemprop= "headline")= post.title
-                p.description(itemprop="description")= post.description
-                iframe(height="80" width="100%" class="iframe" src="https://w.soundcloud.com/player/?url=#{post.audio}&color=110909&auto_play=false&show_artwork=false&show_comments=false&show_playcount=true&hide_related=true&show_user=false&show_reposts=false&liking=false&visual=false&buying=false&sharing=false&download=true&following=false")
+                iframe(class="iframe" src="https://w.soundcloud.com/player/?url=#{post.audio}&color=8c191f&auto_play=false&show_artwork=false&show_comments=false&show_playcount=true&hide_related=true&show_user=false&show_reposts=false&liking=false&visual=false&buying=false&sharing=false&download=true&following=false")
 
       include _partial/pagination
