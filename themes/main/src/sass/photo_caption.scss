@@ -2,6 +2,36 @@
 @import '_helpers/mixins';
 @import '_helpers/constants';
 
+#photo-caption  {
+  .share-title {
+    margin: 0;
+  }
+
+  .share-bar {
+    margin-top: 0.4rem;
+  }
+
+  .share-icons-container {
+    display: flex;
+    display: -webkit-flex; //Old Safari
+    justify-content: flex-start;
+    -webkit-jutify-content: flex-start; //Old Safari
+  }
+
+  .share-icon {
+    margin: 0.4rem;
+    margin-left: 0;
+    width: 2.2rem;
+  }
+
+  .share-mobile {
+    @include media-query(THREE) {
+      display: none;
+    }
+  }
+}
+
+
 #photo-caption{
   @include get-font(PHOTO_CAPTION);
   @include button;
@@ -42,7 +72,7 @@
     }
 
     figcaption {
-      text-align: right;
+      text-align: left;
       margin-top: 10px;
     }
   }

@@ -8,7 +8,14 @@ block description
   
 block canonical
   link(href="https://www.brasildefato.com.br#{page.url}" rel="canonical")
-  
+
+block open_graph
+  if !page.description
+    meta(name="twitter:description" content=page.cover.subtitle)
+    meta(property="og:description" content=page.cover.subtitle)
+  include _partial/open_graph_page
+  include _partial/twitter_meta_page
+
 append content
   main(class='grid-4-columns')
     section#photo-caption
@@ -23,6 +30,7 @@ append content
         figcaption
           p.subtitle(itemprop="caption")= page.cover.subtitle
           p.credits(itemprop="author")= page.cover.credits
+      include _partial/social-media-share
     
       a(href="/charges/" class="button" title="link para a pagina de charges") 
         span Todas as charges
