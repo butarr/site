@@ -10,6 +10,10 @@ main.special {
     width: 100%;
   }
 
+  article time, article address {
+    display: none;
+  }
+
   section.cover {
     background-repeat: no-repeat;
     background-position: center center;
