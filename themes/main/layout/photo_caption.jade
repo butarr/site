@@ -1,20 +1,20 @@
 extends base
 
 block title
-  title #{titlecase(page.area)} #{config.separator} #{config.title}
+  title #{titlecase(page.cover.subtitle)} #{config.separator} #{config.title}
   
 block description
   meta(name="description" content="Charges e ilustrações com a análise política dos acontecimentos")
   
 block canonical
-  link(href="https://www.brasildefato.com.br#{page.url}" rel="canonical")
+  link(href=url rel="canonical")
 
 block open_graph
-  if !page.description
-    meta(name="twitter:description" content=page.cover.subtitle)
-    meta(property="og:description" content=page.cover.subtitle)
   include _partial/open_graph_page
   include _partial/twitter_meta_page
+
+  meta(name="twitter:description" content=page.cover.subtitle)
+  meta(property="og:description" content=page.cover.subtitle)
 
 append content
   main(class='grid-4-columns')
