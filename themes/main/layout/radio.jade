@@ -94,14 +94,6 @@ append content
                 meta(itemprop="name" content="Brasil de Fato")
                 link(itemprop="sameAs" href="https://www.brasildefato.com.br")
 
-              if post.cover
-                .image
-                  - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-                  figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
-                    meta(itemprop="width" content="696")
-                    meta(itemprop="height" content="464")
-                    meta(itemprop="url" content="http://www.brasildefato.com.br/#{post.cover.url}")
-
               .content(class="no-image" class= "divisor")
                 h3.title(itemprop= "headline")= post.title
                 iframe(class="iframe" src="https://w.soundcloud.com/player/?url=#{post.audio}&color=8c191f&auto_play=false&show_artwork=false&show_comments=false&show_playcount=true&hide_related=true&show_user=false&show_reposts=false&liking=false&visual=false&buying=false&sharing=false&download=true&following=false")
