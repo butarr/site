@@ -2,6 +2,8 @@
 @import '_helpers/mixins';
 @import '_helpers/constants';
 
+@include get-font(SPECIAL);
+
 main.special {
   @include site-top-spacing($HEADER-HEIGHT-CONTRACTED);
   padding-top: 0;
@@ -29,14 +31,10 @@ main.special {
   }
 
   section.title {
+    display: table;
     background-color: transparent;
-    text-align: center;
     height: 370px;
     padding: 30px;
-    color: #ffffff;
-
-    display: table;
-    text-align: center;
 
     @include media-query(FOUR) {
       height: 450px;
@@ -49,28 +47,7 @@ main.special {
     }
 
     h1 {
-      font-family: $family-serif;
-      font-size: 22px;
-      font-weight: 900;
-      line-height: 1.36;
-      text-shadow: 0 2px 0 rgba(0, 0, 0, 0.9);
       padding-bottom: 10px;
-
-      @include media-query(FOUR){
-        font-size: 30px;
-      }
-    }
-
-    p {
-      font-family: $family-sans;
-      font-size: 16px;
-      font-style: italic;
-      line-height: 20px;
-      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
-
-      @include media-query(FOUR){
-        font-size: 18px;
-      }
     }
   }
 
@@ -92,29 +69,50 @@ main.special {
       padding-top: 50px;
     }
 
-    h2 {
-      font-family: $family-serif;
-      font-size: 20px;
-      font-weight: 900;
-      text-align: center;
-      color: #404040;
-
-      @include media-query(FOUR){
-        font-size: 24px;
-      }
-    }
-
     p {
-      font-family: $family-serif;
-      font-size: 16px;
-      line-height: 1.63;
-      color: #404040;
       padding-top: 20px;
-
       @include media-query(FOUR){
-        font-size: 18px;
         padding-top: 30px;
       }
+    }
+  }
+
+  section.related {
+    padding: 34px 25px 0 25px;
+    margin: 0 auto;
+
+    .related-article-container {
+      display: -webkit-flex; //Old Safari
+      display: flex;
+      -webkit-flex-direction: row; //Old Safari
+      flex-direction: row;
+      -webkit-flex-wrap: wrap; //Old Safari
+      flex-wrap: wrap;
+      padding: 25px 0 0;
+    }
+
+    .related-article {
+      display: -webkit-flex; //Old Safari
+      display: flex;
+      -webkit-align-items: flex-start; //Old Safari
+      align-items: flex-start;
+      -webkit-justify-content: center; //Old Safari
+      justify-content: center;
+      width: 100%;
+      padding: 0 5px 25px;
+
+      @include media-query(TWO) {
+        width: 50%;
+      }
+      @include media-query(THREE) {
+        width: 33%;
+      }
+
+      @include image-rounded-responsive(200px);
+    }
+
+    .related-figure-title {
+      padding: 10px 0 0;
     }
   }
 }

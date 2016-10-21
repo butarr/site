@@ -692,6 +692,65 @@ $number-size: 1.3rem;
   }
 }
 
+@mixin __special(){
+  section.title {
+    text-align: center;
+    color: $link-inverted-color;
+
+    h1 {
+      font: 900 22px/1.36 $family-serif;
+      text-shadow: 0 2px 0 rgba(0, 0, 0, 0.9);
+
+      @include media-query(FOUR){
+        font-size: 30px;
+      }
+    }
+
+    p {
+      font: italic 16px/20px $family-sans;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
+
+      @include media-query(FOUR){
+        font-size: 18px;
+      }
+    }
+  }
+
+  section.text {
+    color: $text-color;
+
+    h2 {
+      font: 900 20px $family-serif;
+      text-align: center;
+
+      @include media-query(FOUR){
+        font-size: 24px;
+      }
+    }
+
+    p {
+      font: 16px/1.63 $family-serif;
+
+      @include media-query(FOUR){
+        font-size: 18px;
+      }
+    }
+  }
+
+  section.related {
+    h2 {
+      text-align: center;
+      font: bold 24px $family-serif;
+      color: $text-color;
+    }
+
+    h3 {
+      text-align: center;
+      font: bold 18px $family-serif;
+    }
+  }
+}
+
 @mixin get-font($type){
   @if( $type == POST ){
     @include __post();
@@ -737,5 +796,11 @@ $number-size: 1.3rem;
   }
   @else if( $type == OTHER ){
     @include __other();
+  }
+  @else if( $type == OTHER ){
+    @include __other();
+  }
+  @else if( $type == SPECIAL ){
+    @include __special();
   }
 }
