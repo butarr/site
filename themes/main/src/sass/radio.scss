@@ -1,6 +1,11 @@
+@import '_helpers/query';
 @import '_helpers/constants';
 
 .iframe {
-  width: 2 * $COLUMN-WIDTH;
+  width: 100%;
   height: 95px;
+
+  @include media-query(THREE){
+      width: 3 * $COLUMN-WIDTH;
+  }
 }
