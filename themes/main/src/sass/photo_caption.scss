@@ -32,11 +32,12 @@
 }
 
 
-#photo-caption{
+#photo-caption {
   @include get-font(PHOTO_CAPTION);
   @include button;
   @include site-lateral-spacing();
   max-width: 2 * $COLUMN-WIDTH;
+  padding-bottom: 10px;
 
   @include media-query(THREE) {
     max-width: 3 * $COLUMN-WIDTH;

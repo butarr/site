@@ -381,6 +381,15 @@ $number-size: 1.3rem;
     text-transform: uppercase;
     color: $page-title-color;
   }
+
+  .photo-caption-smaller {
+    .subtitle {
+      color: $link-inverted-color;
+    }
+    .credits {
+      color: $link-inverted-color;
+    }
+  }
 }
 
 @mixin __columnists(){
