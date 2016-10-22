@@ -77,6 +77,17 @@ main.special {
     }
   }
 
+  section.image {
+    padding-top: 60px;
+    img {
+      width: 100%;
+    }
+
+    figcaption {
+      padding-top: 12px;
+    }
+  }
+
   section.related {
     padding: 34px 25px 0 25px;
     margin: 0 auto;
