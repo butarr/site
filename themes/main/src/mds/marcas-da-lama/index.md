@@ -82,7 +82,6 @@ sections:
     text: "O governo boliviano apresentou à Organização das Nações Unidas (ONU) uma proposta de Declaração de Direitos dos Camponeses em 2012. A ideia, construída durante quase uma década, partiu de movimentos camponeses de todo mundo vinculados à Via Campesina. Em entrevista ao Brasil de Fato, Diego Montón, integrante do Movimento Nacional Campesino y Indígena da Argentina, membro da secretaria operativa da Coordenação Latino-americana das Organizações do Campo Cloc e representante da América Latina no coletivo internacional da Via Campesina que discute a Declaração dos Direitos Camponeses, explica que o avanço das companhias transnacionais gerou uma série de novas violações de direitos humanos, exigindo que as organizações camponesas buscassem uma proteção internacional ao seu modo de vida e trabalho.
     Diego Montón, da Via campesina, explica importância da Declaração dos Direitos Camponeses para toda sociedade."
   - type: video
-    title: "Da lama ao caos"
     url: https://www.youtube.com/watch?v=vrb86nqCkbY
 
 ---
