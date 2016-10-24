@@ -697,7 +697,7 @@ $number-size: 1.3rem;
     text-align: center;
     color: $link-inverted-color;
 
-    h1 {
+    .pageTitle {
       font: 900 22px/1.36 $family-serif;
       text-shadow: 0 2px 0 rgba(0, 0, 0, 0.9);
 
@@ -716,10 +716,10 @@ $number-size: 1.3rem;
     }
   }
 
-  section.text {
+  section.text, section.video {
     color: $text-color;
 
-    h2 {
+    .moduleTitle {
       font: 900 20px $family-serif;
       text-align: center;
 
@@ -738,13 +738,13 @@ $number-size: 1.3rem;
   }
 
   section.links {
-    h2 {
+    .links-headline {
       text-align: center;
       font: bold 24px $family-serif;
       color: $text-color;
     }
 
-    h3 {
+    .link-figure-title {
       text-align: center;
       font: bold 18px $family-serif;
     }

@@ -71,13 +71,15 @@ append content
 
       section.title
         div.description
-          h1(itemprop="headline")= page.title
+          h1.pageTitle(itemprop="headline")= page.title
           p(itemprop="description")= page.description
       div.blocks(itemprop="articleBody")
-        each s in page.sections
-          if s.type == 'links'
-            +displayLinks(s)
-          else if s.type == 'text'
-            +displayText(s)
-          else if s.type == 'image'
-            +displayImage(s)
+        each section in page.sections
+          if section.type == 'links'
+            +displayLinks(section)
+          else if section.type == 'text'
+            +displayText(section)
+          else if section.type == 'image'
+            +displayImage(section)
+          else if section.type == 'video'
+            +displayVideo(section)
