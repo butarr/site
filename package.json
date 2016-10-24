@@ -23,6 +23,7 @@
     "hexo-util": "^0.5.3",
     "imagemin-jpegtran": "^4.3.0",
     "imagemin-optipng": "^4.3.0",
+    "js-yaml": "^3.6.1",
     "moment-timezone": "^0.5.3",
     "node-reset-scss": "^1.0.1",
     "underscore": "^1.8.3"
