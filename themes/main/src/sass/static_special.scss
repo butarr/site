@@ -103,13 +103,6 @@ main.special {
     }
 
     .related-article {
-      display: -webkit-flex; //Old Safari
-      display: flex;
-      -webkit-align-items: flex-start; //Old Safari
-      align-items: flex-start;
-      -webkit-justify-content: center; //Old Safari
-      justify-content: center;
-      width: 100%;
       padding: 0 5px 25px;
 
       @include media-query(TWO) {
