@@ -1,6 +1,6 @@
 mixin displayText(section)
   section.text
-    h2= section.title
+    h2.moduleTitle= section.title
     p= section.text
 
 mixin displayImage(section)
@@ -23,6 +23,10 @@ mixin displayLinks(section)
             figure
               img(src=p.cover.link  alt=p.cover.title title=p.cover.title itemprop="image")
             h3.link-figure-title(itemprop="name")= p.title
+
+mixin displayVideo(section)
+  section.video
+    h2.moduleTitle= section.title
 
 extends base
 
