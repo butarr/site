@@ -1,45 +1,47 @@
-extends base
+mixin displayText(section)
+  section.text
+    h2= section.title
+    p= section.text
 
-block vars
-  - var pageTitle = 'Especial Marcas da Lama | Brasil de Fato'
-  - var pageDescription = 'Especial Marcas da Lama'
-  - var pageTags = 'especial, mariana, desastre, crime, samarco'
-  - var pageAuthor = 'Redação Brasil de Fato'
-  - var pageCover = 'https://afitopi.files.wordpress.com/2016/05/photo-1461295025362-7547f63dbaea-1-e1463342677907.jpg'
-  - var pageCanonical = 'https://www.brasildefato.com.br/marcas-da-lama'
+mixin displayImage(section)
+  section.image
+    figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
+      a(itemprop="url" href=section.url)
+        img(itemprop="url" src=section.desktop  alt=section.title title=section.title)
+        meta(itemprop="width" content="960")
+        meta(itemprop="height" content="640")
+
+mixin displayLinks(section)
+  section.links
+    h2.links-headline= section.title
+    ul.links-container(itemscope itemtype="https://schema.org/ItemList")
+      each p,i in section.links
+        li.link(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+          meta(itemprop="position" content=i)
+          a(itemprop="url" href=p.url)
+            figure
+              img(src=p.cover.link  alt=p.cover.title title=p.cover.title itemprop="image")
+            h3.link-figure-title(itemprop="name")= p.title
+
+extends base
 
 block title
   block vars
-  title= pageTitle
+  title= page.title
   
 block description
-  meta(name="description" content=pageDescription)
+  meta(name="description" content=page.description)
 
 block canonical
-  link(href=pageCanonical rel="canonical")
+  link(href="https://www.brasildefato.com.br#{page.url}" rel="canonical")
   
 block keywords
-  meta(name="keywords" content=pageTags)
+  meta(name="keywords" content=page.tags)
 
 block open_graph
-  - var published_at = utc_to_brt(page.date)
-
-  meta(property="og:url" content=pageCanonical+'/index.html')
-  meta(property="og:title" content=pageTitle)
-  meta(property="og:description" content=pageDescription)
-  meta(property="og:image" content=pageCover)
-  meta(property="og:type" content="article")
-  meta(property="article:published_time" content=published_at.toISOString())
-  meta(property="article:section" content='Especial')
-  meta(property="article:tag" content=pageTags)
-  meta(property="article:publisher" content="https://".concat(facebook_url))
-
-  meta(name="twitter:card" content="summary_large_image")
-  meta(name="twitter:site" content=twitter_user)
-  meta(name="twitter:creator" content=twitter_user)
-  meta(name="twitter:title" content=pageTitle)
-  meta(name="twitter:description" content=pageDescription)
-  meta(name="twitter:image" content=pageCover)
+  include _partial/open_graph_page
+  include _partial/twitter_meta_page
+  meta(property="article:tag" content=page.tags)
 
 block header
   include _partial/menu_special
@@ -47,9 +49,9 @@ block header
 append content
   main.special
     article(itemscope itemtype="http://schema.org/NewsArticle")
-      meta(itemprop="mainEntityOfPage" content=pageCanonical)
+      meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br#{page.url}")
       meta(itemprop="dateModified" content=published_at.toISOString())
-      address(rel="author" itemprop="author")= pageAuthor
+      address(rel="author" itemprop="author")= page.author
       time(itemprop="datePublished" datetime=published_at.toISOString())= full_date(published_at)
 
       div(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
@@ -61,74 +63,20 @@ append content
         link(itemprop="sameAs" href="https://www.brasildefato.com.br")
 
       figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
-        section.cover(style="background-image: url(#{pageCover});")
-        link(itemprop="url" href=pageCover)
+        section.cover(style="background-image: url(#{page.cover.link});")
+        link(itemprop="url" href=page.cover.link)
         meta(itemprop="width" content="1200")
         meta(itemprop="height" content="800")
 
       section.title
         div.description
-          h1(itemprop="headline")="Especial Brasil de fato: Agricultura camponesa “Não há democracia sem direito à alimentação”"
-          p(itemprop="description")="Diego Montón, da Via campesina, explica importância da Declaração dos Direitos Camponeses para toda sociedade." 
+          h1(itemprop="headline")= page.title
+          p(itemprop="description")= page.description
       div.blocks(itemprop="articleBody")
-        section.text
-          h2="Avanço das companhias transnacionais"
-          p="O governo boliviano apresentou à Organização das Nações Unidas (ONU) uma proposta de Declaração de Direitos dos Camponeses em 2012. A ideia, construída durante quase uma década, partiu de movimentos camponeses de todo mundo vinculados à Via Campesina. Em entrevista ao Brasil de Fato, Diego Montón, integrante do Movimento Nacional Campesino y Indígena da Argentina, membro da secretaria operativa da Coordenação Latino-americana das Organizações do Campo Cloc e representante da América Latina no coletivo internacional da Via Campesina que discute a Declaração dos Direitos Camponeses, explica que o avanço das companhias transnacionais gerou uma série de novas violações de direitos humanos, exigindo que as organizações camponesas buscassem uma proteção internacional ao seu modo de vida e trabalho."
-          p="Diego Montón, da Via campesina, explica importância da Declaração dos Direitos Camponeses para toda sociedade."
-        section.image
-          a(itemprop="url" href="https://brasildefato.com.br")
-            picture(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
-              source(srcset="http://samplephotovideo.com/wp-content/uploads/2015/12/Nikon-D4-Sample-Images-5-960x640.jpg" media="(min-width: 690px)")
-              img(itemprop="url" src="http://samplephotovideo.com/wp-content/uploads/2015/12/Nikon-D4-Sample-Images-5-960x640.jpg"  alt="Foto Massa" title="Foto Massa")
-              meta(itemprop="width" content="960")
-              meta(itemprop="height" content="640")
-              
-        section.text
-          h2="Avanço das companhias transnacionais"
-          p="O governo boliviano apresentou à Organização das Nações Unidas (ONU) uma proposta de Declaração de Direitos dos Camponeses em 2012. A ideia, construída durante quase uma década, partiu de movimentos camponeses de todo mundo vinculados à Via Campesina. Em entrevista ao Brasil de Fato, Diego Montón, integrante do Movimento Nacional Campesino y Indígena da Argentina, membro da secretaria operativa da Coordenação Latino-americana das Organizações do Campo Cloc e representante da América Latina no coletivo internacional da Via Campesina que discute a Declaração dos Direitos Camponeses, explica que o avanço das companhias transnacionais gerou uma série de novas violações de direitos humanos, exigindo que as organizações camponesas buscassem uma proteção internacional ao seu modo de vida e trabalho."
-        section.image
-          a(itemprop="url" href="https://brasildefato.com.br")
-            picture(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
-              source(srcset="https://cdn.photographylife.com/wp-content/uploads/2016/02/Nikon-D5-Sample-Image-4-960x640.jpg" media="(min-width: 690px)")
-              img(itemprop="url" src="https://cdn.photographylife.com/wp-content/uploads/2016/02/Nikon-D5-Sample-Image-4-960x640.jpg"  alt="Foto Massa" title="Foto Massa")
-              meta(itemprop="width" content="960")
-              meta(itemprop="height" content="640")
-
-        section.related
-          h2.related-headline= "Saiba mais sobre as Marcas da Lama"
-          .related-article-container
-            article.related-article(itemscope itemtype="https://schema.org/NewsArticle")
-              a(itemprop="url" href="https://brasildefato.com.br")
-                figure
-                  img(src="http://assets.barcroftmedia.com.s3-website-eu-west-1.amazonaws.com/assets/images/recent-images-15.jpg"  alt="Foto Massa" title="Foto Massa" itemprop="image")
-                h3.related-figure-title(itemprop="headline")= "Artigo sobre Verdura"
-
-            article.related-article(itemscope itemtype="https://schema.org/NewsArticle")
-              a(itemprop="url" href="https://brasildefato.com.br")
-                figure
-                  img(src="https://cdn.shopify.com/s/files/1/0719/7579/products/beach_grinder_800_large.jpg"  alt="Foto Massa" title="Foto Massa" itemprop="image")
-                h3.related-figure-title(itemprop="headline")= "Artigo sobre DNS e como as coisas mudam e não sempre ficam paradas no mesmo lugar"
-
-            article.related-article(itemscope itemtype="https://schema.org/NewsArticle")
-              a(itemprop="url" href="https://brasildefato.com.br")
-                figure
-                  img(src="http://www.animatedimages.org/data/media/110/animated-peace-image-0042.jpg"  alt="Foto Massa" title="Foto Massa" itemprop="image")
-                h3.related-figure-title(itemprop="headline")= "Artigo sobre Pimentão"
-
-            article.related-article(itemscope itemtype="https://schema.org/NewsArticle")
-              a(itemprop="url" href="https://brasildefato.com.br")
-                figure
-                  img(src="http://assets.barcroftmedia.com.s3-website-eu-west-1.amazonaws.com/assets/images/recent-images-14.jpg"  alt="Foto Massa" title="Foto Massa" itemprop="image")
-                h3.related-figure-title(itemprop="headline")= "Artigo sobre Folha"
-
-            article.related-article(itemscope itemtype="https://schema.org/NewsArticle")
-              a(itemprop="url" href="https://brasildefato.com.br")
-                figure
-                  img(src="http://www.planwallpaper.com/static/images/foggygoldengatebridge.jpg"  alt="Foto Massa" title="Foto Massa" itemprop="image")
-                h3.related-figure-title(itemprop="headline")= "Artigo sobre DNS"
-
-            article.related-article(itemscope itemtype="https://schema.org/NewsArticle")
-              a(itemprop="url" href="https://brasildefato.com.br")
-                figure
-                  img(src="http://www.hdcreativewallpaper.com/uploads/cache/968274544/playful-kitty-hd-1080p-images-download-36lO-480x320-MM-78.jpg"  alt="Foto Massa" title="Foto Massa" itemprop="image")
-                h3.related-figure-title(itemprop="headline")= "Artigo sobre Queijo"
+        each s in page.sections
+          if s.type == 'links'
+            +displayLinks(s)
+          else if s.type == 'text'
+            +displayText(s)
+          else if s.type == 'image'
+            +displayImage(s)

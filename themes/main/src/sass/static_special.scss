@@ -82,17 +82,13 @@ main.special {
     img {
       width: 100%;
     }
-
-    figcaption {
-      padding-top: 12px;
-    }
   }
 
-  section.related {
+  section.links {
     padding: 34px 25px 0 25px;
     margin: 0 auto;
 
-    .related-article-container {
+    .links-container {
       display: -webkit-flex; //Old Safari
       display: flex;
       -webkit-flex-direction: row; //Old Safari
@@ -102,7 +98,8 @@ main.special {
       padding: 25px 0 0;
     }
 
-    .related-article {
+    .link {
+
       padding: 0 5px 25px;
 
       @include media-query(TWO) {
@@ -115,7 +112,7 @@ main.special {
       @include image-rounded-responsive(200px);
     }
 
-    .related-figure-title {
+    .link-figure-title {
       padding: 10px 0 0;
     }
   }
