@@ -69,7 +69,7 @@ append content
         link(itemprop="sameAs" href="https://www.brasildefato.com.br")
 
       figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
-        section.cover(style="background-image: url(#{page.cover.link});")
+        section#cover(style="background-image: url(#{page.cover.link});")
         link(itemprop="url" href=page.cover.link)
         meta(itemprop="width" content="1200")
         meta(itemprop="height" content="800")
@@ -78,7 +78,16 @@ append content
         div.description
           h1.pageTitle(itemprop="headline")= page.title
           p(itemprop="description")= page.description
+
       div.blocks(itemprop="articleBody")
+        #share-special.share-special-invisible
+          a.share-icon(href='https://www.facebook.com/sharer/sharer.php?u=#{config.url}#{page.url}%3Freferer=bdf_button_facebook' target='_blank' title='Compartilhe no Facebook')
+            img(src="/img/social-media/share-facebook.svg" alt="Compartilhe no Facebook")
+          a.share-icon(href='https://twitter.com/share?url=#{config.url}#{page.url}%3Freferer=bdf_button_twitter' target='_blank' title='Compartilhe no Twitter')
+            img(src="/img/social-media/share-twitter.svg" alt="Compartilhe no Twitter")
+          a.share-icon.share-mobile(href='whatsapp://send?text=#{config.url}#{page.url}%3Freferer=bdf_button_whatsapp' data-action='share/whatsapp/share' title='Compartilhe no whatsapp')
+            img(src="/img/social-media/share-whatsapp.svg" alt="Compartilhe no WhatsApp")
+
         each section in page.sections
           if section.type == 'links'
             +displayLinks(section)

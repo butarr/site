@@ -17,7 +17,7 @@ main.special {
     display: none;
   }
 
-  section.cover {
+  section#cover {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -74,6 +74,8 @@ main.special {
   }
 
   section.image {
+    position: relative;
+    z-index: 3;
     img {
       width: 100%;
     }
@@ -99,6 +101,9 @@ main.special {
     padding-left: 25px;
     padding-right: 25px;
     margin: 0 auto;
+    position: relative;
+    background-color: $special-background;
+    z-index: 3;
 
     .links-container {
       display: -webkit-flex; //Old Safari
@@ -111,7 +116,6 @@ main.special {
     }
 
     .link {
-
       padding: 0 5px 25px;
 
       @include media-query(TWO) {
@@ -126,6 +130,65 @@ main.special {
 
     .link-figure-title {
       padding: 10px 0 0;
+    }
+  }
+
+  .share-special-visible {
+    top: 60px;
+    @include media-query(THREE) {
+      top: 20%;
+    }
+  }
+
+  .share-special-invisible {
+    top: -100px;
+  }
+
+  #share-special {
+    display: -webkit-flex; //Old Safari
+    display: flex;
+    -webkit-flex-direction: row; //Old Safari
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap; //Old Safari
+    flex-wrap: nowrap;
+    justify-content: center;
+    -webkit-justify-content: center; //Old Safari
+
+    width: 100%;
+    padding: 5px 0;
+    background-color: $special-background;
+
+    position: fixed;
+    z-index: 4;
+
+    -webkit-transition: top 1s; //Old Safari
+    transition: top 1s;
+
+    .share-icon {
+      width: 50px;
+      margin: 0 5px;
+    }
+
+    @include media-query(THREE) {
+      -webkit-flex-direction: column; //Old Safari
+      flex-direction: column;
+      -webkit-flex-wrap: wrap; //Old Safari
+      flex-wrap: wrap;
+
+      z-index: 2;
+
+      width: 5%;
+      margin-left: 2%;
+      background-color: rgba(0,0,0,0);
+
+      .share-icon {
+        width: 100%;
+        margin: 8% 0;
+      }
+
+      .share-mobile {
+        display: none;
+      }
     }
   }
 }
