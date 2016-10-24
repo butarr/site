@@ -53,21 +53,17 @@ main.special {
 
   .blocks {
     background-color: $special-background;
-    padding-bottom: 50px;
+  }
 
-    @include media-query(FOUR){
-      padding-bottom: 100px;
-    }
+  .verticalSpacing {
+    padding-top: 50px;
   }
 
   section.text {
-    padding: 25px 25px 0 25px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin: 0 auto;
     max-width: 665px;
-
-    @include media-query(FOUR){
-      padding-top: 50px;
-    }
 
     p {
       padding-top: 20px;
@@ -78,7 +74,6 @@ main.special {
   }
 
   section.image {
-    padding-top: 60px;
     img {
       width: 100%;
     }
@@ -109,7 +104,8 @@ main.special {
   }
 
   section.links {
-    padding: 34px 25px 0 25px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin: 0 auto;
 
     .links-container {

@@ -1,10 +1,10 @@
 mixin displayText(section)
-  section.text
+  section.text.verticalSpacing
     h2.moduleTitle= section.title
     p= section.text
 
 mixin displayImage(section)
-  section.image
+  section.image.verticalSpacing
     a(itemprop="url" href=section.url)
       picture(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
         source(srcset=section.desktop media="(min-width: 690px)")
@@ -13,7 +13,7 @@ mixin displayImage(section)
         meta(itemprop="height" content="640")
 
 mixin displayLinks(section)
-  section.links
+  section.links.verticalSpacing
     h2.links-headline= section.title
     ul.links-container(itemscope itemtype="https://schema.org/ItemList")
       each p,i in section.links
@@ -25,7 +25,7 @@ mixin displayLinks(section)
             h3.link-figure-title(itemprop="name")= p.title
 
 mixin displayVideo(section)
-  section.video
+  section.video.verticalSpacing
     h2.moduleTitle= section.title
     .multimedia
       iframe(src="https://www.youtube.com/embed/vrb86nqCkbY" width="560" height="349")
