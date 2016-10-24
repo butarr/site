@@ -1,6 +1,7 @@
 @import '_helpers/query';
 @import '_helpers/mixins';
 @import '_helpers/constants';
+@import '_helpers/colors';
 
 @include get-font(SPECIAL);
 
@@ -51,7 +52,7 @@ main.special {
   }
 
   .blocks {
-    background-color: #f9f9f9;
+    background-color: $special-background;
     padding-bottom: 50px;
 
     @include media-query(FOUR){

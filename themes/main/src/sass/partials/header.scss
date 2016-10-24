@@ -31,6 +31,16 @@ $logo-big-height: 5.2rem;
   }
 }
 
+#page-header .banner-special {
+  display: -webkit-flex; //Old Safari
+  display: flex;
+  -webkit-justify-content: center; //Old Safari
+  justify-content: center;
+  -webkit-align-items: center; //Old Safari
+  align-items: center;
+  height: $HEADER-HEIGHT-CONTRACTED;
+}
+
 .menu-options{
   @include transition-left();
 }
