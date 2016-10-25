@@ -24,8 +24,9 @@ published_at: 2016-10-28T22:58:23.677Z
 sections:
   - type: text
     title: "Avanço das companhias transnacionais"
-    text: "<p>O governo boliviano apresentou à Organização das Nações Unidas (ONU) uma proposta de Declaração de Direitos dos Camponeses em 2012. A ideia, construída durante quase uma década, partiu de movimentos camponeses de todo mundo vinculados à Via Campesina. Em entrevista ao Brasil de Fato, Diego Montón, integrante do Movimento Nacional Campesino y Indígena da Argentina, membro da secretaria operativa da Coordenação Latino-americana das Organizações do Campo Cloc e representante da América Latina no coletivo internacional da Via Campesina que discute a Declaração dos Direitos Camponeses, explica que o avanço das companhias transnacionais gerou uma série de novas violações de direitos humanos, exigindo que as organizações camponesas buscassem uma proteção internacional ao seu modo de vida e trabalho.</p>
-    <p>Diego Montón, da Via campesina, explica importância da Declaração dos Direitos Camponeses para toda sociedade.</p>"
+    text: "<p>Era cerca de 16 horas quando uma movimentação estranha começou a ser percebida pelos moradores de Bento Rodrigues, pequeno distrito da cidade de Mariana, em Minas Gerais. Com cerca de 500 habitantes, os gritos foram rapidamente reproduzidos. \"A barragem estourou!\", diziam alguns moradores, que durante a correria alertavam sobre a feroz lama de rejeitos que estava prestes a atingir o bairro que surgiu por volta do século XVIII, tornando-se uma das primeiras unidades mineradoras no estado mineiro.</p>
+    <p>Acostumados com o ambiente e rotina da mineração, mesmo aos que se recusaram a acreditar de imediato por não ouvirem nenhum aviso oficial ou alerta sonoro, bastaram alguns segundos para acreditar que as barragens pertencentes à mineradora Samarco - uma joint venture da Vale e da anglo-australiana BHP Billiton - haviam se rompido.</p>
+    <p>Panelas no fogo, roupas, documentos, fotografias, carros, animais… tudo precisou ser deixado para trás para se chegar às partes mais altas do vilarejo.</p>"
   - type: image
     url: https://www.brasildefato.com.br
     desktop: https://pixabay.com/static/uploads/photo/2015/07/25/09/33/harris-hawk-859397_960_720.jpg
