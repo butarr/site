@@ -29,11 +29,9 @@ sections:
     <p>Panelas no fogo, roupas, documentos, fotografias, carros, animais… tudo precisou ser deixado para trás para se chegar às partes mais altas do vilarejo.</p>"
   - type: image
     url: https://www.brasildefato.com.br
-    desktop: https://pixabay.com/static/uploads/photo/2015/07/25/09/33/harris-hawk-859397_960_720.jpg
-    mobile: https://s-media-cache-ak0.pinimg.com/736x/e5/78/45/e5784531bb9e1c15792e2a942c2f0a75.jpg
+    desktop: https://farm6.staticflickr.com/5604/30476219891_37246b3c0a_z.jpg
+    mobile: https://farm6.staticflickr.com/5648/30562918105_d4e683857b_z.jpg
     title: Fotazo
-    credits: "Foto: Raony Lima"
-    subtitle: Agricultor em meio a uma plantação colhendo couve
   - type: text
     title: "Avanço das companhias transnacionais"
     text: "<p>O governo boliviano apresentou à Organização das Nações Unidas (ONU) uma proposta de Declaração de Direitos dos Camponeses em 2012. A ideia, construída durante quase uma década, partiu de movimentos camponeses de todo mundo vinculados à Via Campesina. Em entrevista ao Brasil de Fato, Diego Montón, integrante do Movimento Nacional Campesino y Indígena da Argentina, membro da secretaria operativa da Coordenação Latino-americana das Organizações do Campo Cloc e representante da América Latina no coletivo internacional da Via Campesina que discute a Declaração dos Direitos Camponeses, explica que o avanço das companhias transnacionais gerou uma série de novas violações de direitos humanos, exigindo que as organizações camponesas buscassem uma proteção internacional ao seu modo de vida e trabalho.</p>
@@ -44,18 +42,14 @@ sections:
     source_info: "Poeta, artista, presidente golpista"
   - type: image
     url: https://www.brasildefato.com.br
-    desktop: https://cdn.photographylife.com/wp-content/uploads/2016/02/Nikon-D5-Sample-Image-4-960x640.jpg
-    mobile: https://cdn.photographylife.com/wp-content/uploads/2016/02/Nikon-D5-Sample-Image-4-960x640.jpg
-    title: Fotazo
-    credits: "Foto: Arnaldo Penha"
-    subtitle: Um cara com barbas
+    desktop: https://farm6.staticflickr.com/5615/30348700976_821a39c824_z.jpg
+    mobile: https://farm6.staticflickr.com/5473/29970309920_c2f98c3f60_z.jpg
+    title: Fotona
   - type: image
     url: https://www.brasildefato.com.br
-    desktop: https://cdn.photographylife.com/wp-content/uploads/2016/02/Nikon-D5-Sample-Image-4-960x640.jpg
-    mobile: https://cdn.photographylife.com/wp-content/uploads/2016/02/Nikon-D5-Sample-Image-4-960x640.jpg
+    desktop: https://farm8.staticflickr.com/7761/29940083270_19059240ac_z.jpg
+    mobile: https://farm6.staticflickr.com/5348/30445675282_c5979c867a_z.jpg
     title: Fotazo
-    credits: "Foto: Arnaldo Penha"
-    subtitle: Um cara com barbas
   - type: quote
     text: "Está cada vez mais difícil fugir de mim. Se eu pudesse, não continuaria."
     source: "Arnaldo Penha"
