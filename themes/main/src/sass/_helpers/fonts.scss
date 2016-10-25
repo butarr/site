@@ -737,6 +737,28 @@ $number-size: 1.3rem;
     }
   }
 
+  section.quote {
+    blockquote {
+      font: italic bold 2rem/#{$line-separation-big} $family-serif;
+      word-wrap: break-word;
+      word-spacing: 2px;
+
+      &:before, &:after {
+        color: $quote-color;
+        font-size: 2.5em;
+        line-height: 0.1em;
+      }
+
+      @include media-query(THREE) {
+        font: italic bold 2.5rem/#{2*$line-separation-big} $family-serif;
+
+        &:before, &:after {
+          font-size: 3.5em;
+        }
+      }
+    }
+  }
+
   section.links {
     .links-headline {
       text-align: center;

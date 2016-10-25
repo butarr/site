@@ -28,8 +28,8 @@ sections:
     Diego Montón, da Via campesina, explica importância da Declaração dos Direitos Camponeses para toda sociedade."
   - type: image
     url: https://www.brasildefato.com.br
-    desktop: http://samplephotovideo.com/wp-content/uploads/2015/12/Nikon-D4-Sample-Images-5-960x640.jpg
-    mobile: http://www.eyecareforanimals.com/wp-content/uploads/2015/05/hawk-big.jpg
+    desktop: https://pixabay.com/static/uploads/photo/2015/07/25/09/33/harris-hawk-859397_960_720.jpg
+    mobile: https://s-media-cache-ak0.pinimg.com/736x/e5/78/45/e5784531bb9e1c15792e2a942c2f0a75.jpg
     title: Fotazo
     credits: "Foto: Raony Lima"
     subtitle: Agricultor em meio a uma plantação colhendo couve
@@ -44,6 +44,8 @@ sections:
     title: Fotazo
     credits: "Foto: Arnaldo Penha"
     subtitle: Um cara com barbas
+  - type: quote
+    text: "Tudo que sobe... cai."
   - type: links
     title: "Saiba mais sobre as Marcas da Lama"
     links:

@@ -137,6 +137,23 @@
   }
 }
 
+@mixin special-blockquotes() {
+  blockquote {
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+
+  blockquote:before {
+    content: open-quote;
+    margin-right: 0.25em;
+    vertical-align: -0.2em;
+  }
+
+  blockquote:after {
+    content: close-quote;
+    vertical-align: -0.8em;
+  }
+}
+
 @mixin button(){
   .pagination-button-container .button {
     width: auto;

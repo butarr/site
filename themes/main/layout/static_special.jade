@@ -29,6 +29,10 @@ mixin displayVideo(section)
     .multimedia
       iframe(src="https://www.youtube.com/embed/vrb86nqCkbY" width="560" height="349")
 
+mixin displayQuote(section)
+  section.quote.verticalSpacing
+    blockquote(itemprop="description")= section.text
+
 extends base
 
 block title
@@ -97,4 +101,6 @@ append content
             +displayImage(section)
           else if section.type == 'video'
             +displayVideo(section)
+          else if section.type == 'quote'
+            +displayQuote(section)
         div.verticalSpacing
