@@ -24,8 +24,8 @@ published_at: 2016-10-28T22:58:23.677Z
 sections:
   - type: text
     title: "Avanço das companhias transnacionais"
-    text: "O governo boliviano apresentou à Organização das Nações Unidas (ONU) uma proposta de Declaração de Direitos dos Camponeses em 2012. A ideia, construída durante quase uma década, partiu de movimentos camponeses de todo mundo vinculados à Via Campesina. Em entrevista ao Brasil de Fato, Diego Montón, integrante do Movimento Nacional Campesino y Indígena da Argentina, membro da secretaria operativa da Coordenação Latino-americana das Organizações do Campo Cloc e representante da América Latina no coletivo internacional da Via Campesina que discute a Declaração dos Direitos Camponeses, explica que o avanço das companhias transnacionais gerou uma série de novas violações de direitos humanos, exigindo que as organizações camponesas buscassem uma proteção internacional ao seu modo de vida e trabalho.
-    Diego Montón, da Via campesina, explica importância da Declaração dos Direitos Camponeses para toda sociedade."
+    text: "<p>O governo boliviano apresentou à Organização das Nações Unidas (ONU) uma proposta de Declaração de Direitos dos Camponeses em 2012. A ideia, construída durante quase uma década, partiu de movimentos camponeses de todo mundo vinculados à Via Campesina. Em entrevista ao Brasil de Fato, Diego Montón, integrante do Movimento Nacional Campesino y Indígena da Argentina, membro da secretaria operativa da Coordenação Latino-americana das Organizações do Campo Cloc e representante da América Latina no coletivo internacional da Via Campesina que discute a Declaração dos Direitos Camponeses, explica que o avanço das companhias transnacionais gerou uma série de novas violações de direitos humanos, exigindo que as organizações camponesas buscassem uma proteção internacional ao seu modo de vida e trabalho.</p>
+    <p>Diego Montón, da Via campesina, explica importância da Declaração dos Direitos Camponeses para toda sociedade.</p>"
   - type: image
     url: https://www.brasildefato.com.br
     desktop: https://pixabay.com/static/uploads/photo/2015/07/25/09/33/harris-hawk-859397_960_720.jpg
@@ -35,13 +35,12 @@ sections:
     subtitle: Agricultor em meio a uma plantação colhendo couve
   - type: text
     title: "Avanço das companhias transnacionais"
-    text: "O governo boliviano apresentou à Organização das Nações Unidas (ONU) uma proposta de Declaração de Direitos dos Camponeses em 2012. A ideia, construída durante quase uma década, partiu de movimentos camponeses de todo mundo vinculados à Via Campesina. Em entrevista ao Brasil de Fato, Diego Montón, integrante do Movimento Nacional Campesino y Indígena da Argentina, membro da secretaria operativa da Coordenação Latino-americana das Organizações do Campo Cloc e representante da América Latina no coletivo internacional da Via Campesina que discute a Declaração dos Direitos Camponeses, explica que o avanço das companhias transnacionais gerou uma série de novas violações de direitos humanos, exigindo que as organizações camponesas buscassem uma proteção internacional ao seu modo de vida e trabalho.
-    Diego Montón, da Via campesina, explica importância da Declaração dos Direitos Camponeses para toda sociedade."
+    text: "<p>O governo boliviano apresentou à Organização das Nações Unidas (ONU) uma proposta de Declaração de Direitos dos Camponeses em 2012. A ideia, construída durante quase uma década, partiu de movimentos camponeses de todo mundo vinculados à Via Campesina. Em entrevista ao Brasil de Fato, Diego Montón, integrante do Movimento Nacional Campesino y Indígena da Argentina, membro da secretaria operativa da Coordenação Latino-americana das Organizações do Campo Cloc e representante da América Latina no coletivo internacional da Via Campesina que discute a Declaração dos Direitos Camponeses, explica que o avanço das companhias transnacionais gerou uma série de novas violações de direitos humanos, exigindo que as organizações camponesas buscassem uma proteção internacional ao seu modo de vida e trabalho.</p>
+    <p>Diego Montón, da Via campesina, explica importância da Declaração dos Direitos Camponeses para toda sociedade.</p>"
   - type: quote
     text: "Quando parei para pensar, todos os pensamentos já haviam acontecido."
     source: "Michel Temer"
     source_info: "Poeta, artista, presidente golpista"
-
   - type: image
     url: https://www.brasildefato.com.br
     desktop: https://cdn.photographylife.com/wp-content/uploads/2016/02/Nikon-D5-Sample-Image-4-960x640.jpg
@@ -95,8 +94,8 @@ sections:
           title: Ufffffffff!!!
   - type: text
     title: "Avanço das companhias transnacionais"
-    text: "O governo boliviano apresentou à Organização das Nações Unidas (ONU) uma proposta de Declaração de Direitos dos Camponeses em 2012. A ideia, construída durante quase uma década, partiu de movimentos camponeses de todo mundo vinculados à Via Campesina. Em entrevista ao Brasil de Fato, Diego Montón, integrante do Movimento Nacional Campesino y Indígena da Argentina, membro da secretaria operativa da Coordenação Latino-americana das Organizações do Campo Cloc e representante da América Latina no coletivo internacional da Via Campesina que discute a Declaração dos Direitos Camponeses, explica que o avanço das companhias transnacionais gerou uma série de novas violações de direitos humanos, exigindo que as organizações camponesas buscassem uma proteção internacional ao seu modo de vida e trabalho.
-    Diego Montón, da Via campesina, explica importância da Declaração dos Direitos Camponeses para toda sociedade."
+    text: "<p>O governo boliviano apresentou à Organização das Nações Unidas (ONU) uma proposta de Declaração de Direitos dos Camponeses em 2012. A ideia, construída durante quase uma década, partiu de movimentos camponeses de todo mundo vinculados à Via Campesina. Em entrevista ao Brasil de Fato, Diego Montón, integrante do Movimento Nacional Campesino y Indígena da Argentina, membro da secretaria operativa da Coordenação Latino-americana das Organizações do Campo Cloc e representante da América Latina no coletivo internacional da Via Campesina que discute a Declaração dos Direitos Camponeses, explica que o avanço das companhias transnacionais gerou uma série de novas violações de direitos humanos, exigindo que as organizações camponesas buscassem uma proteção internacional ao seu modo de vida e trabalho.</p>
+    <p>Diego Montón, da Via campesina, explica importância da Declaração dos Direitos Camponeses para toda sociedade.</p>"
   - type: video
     url: https://www.youtube.com/watch?v=vrb86nqCkbY
 
