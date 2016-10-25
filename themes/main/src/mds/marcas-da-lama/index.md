@@ -2,7 +2,7 @@
 layout: static_special
 area: especial
 url: /marcas-da-lama/
-title: "Especial: Marcas da Lama"
+title: "O adeus a Bento Rodrigues"
 description: Diego Montón, da Via campesina, explica importância da Declaração dos Direitos Camponeses para toda sociedade.
 author: Redação Brasil de Fato
 tags:
@@ -11,10 +11,10 @@ tags:
   - mariana
   - barragem
 cover:
-  link: //farm6.staticflickr.com/5019/29386779464_fea6f2c4fd_b.jpg
-  thumbnail: //farm6.staticflickr.com/5019/29386779464_fea6f2c4fd_t.jpg
-  medium: //farm6.staticflickr.com/5019/29386779464_fea6f2c4fd_z.jpg
-  small: //farm6.staticflickr.com/5019/29386779464_fea6f2c4fd_n.jpg
+  link: //farm9.staticflickr.com/8618/30475034741_c70eaa7977_z.jpg
+  thumbnail: //farm9.staticflickr.com/8618/30475034741_c70eaa7977_z.jpg
+  medium: //farm9.staticflickr.com/8618/30475034741_c70eaa7977_z.jpg
+  small: //farm9.staticflickr.com/8618/30475034741_c70eaa7977_z.jpg
   title: eisensteinpotemkinlion.gif
   credits: RL
   subtitle: Leãozão

@@ -131,7 +131,7 @@ main.special {
     flex-direction: column;
 
     background-color: $box-background;
-    padding: 50px 25px 0;
+    padding: 50px 25px;
     margin-top: 50px;
 
     @include media-query(THREE) {
