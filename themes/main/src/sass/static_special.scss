@@ -160,12 +160,12 @@ main.special {
   .share-special-visible {
     top: 60px;
     @include media-query(THREE) {
-      top: 20%;
+      top: 130px;
     }
   }
 
   .share-special-invisible {
-    top: -200px;
+    top: -100px;
   }
 
   #share-special {
@@ -199,11 +199,10 @@ main.special {
       -webkit-flex-wrap: wrap; //Old Safari
       flex-wrap: wrap;
 
+      width: 45px;
       z-index: 2;
-
-      width: 5%;
-      margin-left: 2%;
       background-color: rgba(0,0,0,0);
+      margin-left: 2%;
 
       .share-icon {
         width: 100%;
@@ -213,6 +212,11 @@ main.special {
       .share-mobile {
         display: none;
       }
+    }
+
+    @include media-query(FOUR) {
+      width: 55px;
+      margin-left: 32px;
     }
   }
 }
