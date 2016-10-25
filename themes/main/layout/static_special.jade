@@ -26,8 +26,9 @@ mixin displayLinks(section)
 
 mixin displayVideo(section)
   section.video.verticalSpacing
-    .multimedia
-      iframe(src="https://www.youtube.com/embed/vrb86nqCkbY" width="560" height="349")
+    .container
+      .video-wrapper.video-wrapper-16x9
+        iframe(src="https://www.youtube.com/embed/vrb86nqCkbY" width="560" height="349")
 
 mixin displayQuote(section)
   section.quote.verticalSpacing

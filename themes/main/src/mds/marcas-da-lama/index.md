@@ -49,6 +49,13 @@ sections:
     title: Fotazo
     credits: "Foto: Arnaldo Penha"
     subtitle: Um cara com barbas
+  - type: image
+    url: https://www.brasildefato.com.br
+    desktop: https://cdn.photographylife.com/wp-content/uploads/2016/02/Nikon-D5-Sample-Image-4-960x640.jpg
+    mobile: https://cdn.photographylife.com/wp-content/uploads/2016/02/Nikon-D5-Sample-Image-4-960x640.jpg
+    title: Fotazo
+    credits: "Foto: Arnaldo Penha"
+    subtitle: Um cara com barbas
   - type: quote
     text: "Está cada vez mais difícil fugir de mim. Se eu pudesse, não continuaria."
     source: "Arnaldo Penha"

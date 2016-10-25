@@ -59,11 +59,22 @@ main.special {
     padding-top: 50px;
   }
 
+  section.image.verticalSpacing + section.image.verticalSpacing  {
+    padding-top: 0;
+  }
+
   section.text {
     padding-left: 25px;
     padding-right: 25px;
     margin: 0 auto;
-    max-width: 665px;
+
+    @include media-query(THREE) {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: (3*$COLUMN-WIDTH);
+    }
+
+
 
     p {
       padding-top: 20px;
@@ -82,18 +93,33 @@ main.special {
   }
 
   section.video {
+
     .moduleTitle {
       padding-bottom: 25px;
     }
 
-    .multimedia {
-      display: flex;
-      justify-content: center;
+    .container {
+      max-width: (3*$COLUMN-WIDTH);
+      margin: 0 auto;
     }
 
-    .multimedia iframe {
-      max-width: 615px;
-      width: 100%;
+    .video-wrapper-16x9 {
+      padding-bottom: 56.25%;
+    }
+
+    .video-wrapper {
+      position: relative;
+      margin: 1rem auto;
+      height: 0;
+      overflow: hidden;
+
+      iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
