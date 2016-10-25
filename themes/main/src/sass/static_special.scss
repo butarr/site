@@ -160,6 +160,8 @@ main.special {
       display: flex;
       -webkit-flex-direction: row; //Old Safari
       flex-direction: row;
+      -webkit-justify-content: center; //Old Safari
+      justify-content: center;
       -webkit-flex-wrap: wrap; //Old Safari
       flex-wrap: wrap;
       padding: 25px 0 0;
