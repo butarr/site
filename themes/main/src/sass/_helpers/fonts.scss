@@ -750,7 +750,8 @@ $number-size: 1.3rem;
       }
 
       @include media-query(THREE) {
-        font: italic bold 2.5rem/#{2*$line-separation-big} $family-serif;
+        font: italic bold 2.5rem/#{$line-separation-big} $family-serif;
+        word-spacing: 4px;
 
         &:before, &:after {
           font-size: 3.5em;
