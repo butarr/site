@@ -157,15 +157,33 @@ main.special {
     }
   }
 
-  .share-special-visible {
-    top: 60px;
+  .share-special-top {
+    position: fixed;
+    bottom: 0;
+    padding: 5px 0;
     @include media-query(THREE) {
-      top: 130px;
+      top: -100px;
+      bottom: auto;
     }
   }
 
-  .share-special-invisible {
-    top: -100px;
+  .share-special-middle {
+    position: fixed;
+    bottom: 0;
+    padding: 5px 0;
+    @include media-query(THREE) {
+      top: 130px;
+      bottom: auto;
+    }
+  }
+
+  .share-special-bottom {
+    position: relative;
+    padding: 25px 0 0;
+    @include media-query(THREE) {
+      position: fixed;
+      padding: 5px 0;
+    }
   }
 
   #share-special {
@@ -179,10 +197,8 @@ main.special {
     -webkit-justify-content: center; //Old Safari
 
     width: 100%;
-    padding: 5px 0;
     background-color: $special-background;
 
-    position: fixed;
     z-index: 4;
 
     -webkit-transition: top 1s; //Old Safari
