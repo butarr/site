@@ -31,7 +31,7 @@ mixin displayVideo(section)
         iframe(src="https://www.youtube.com/embed/vrb86nqCkbY" width="560" height="349")
 
 mixin displayQuote(section)
-  section.quote.verticalSpacing
+  section.quote
     blockquote(itemprop="description")= section.text
     .quote-info
       h3.quote-source= section.source
