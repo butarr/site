@@ -55,12 +55,12 @@ main.special {
     background-color: $special-background;
   }
 
-  .verticalSpacing {
-    padding-top: 50px;
-  }
-
   section.image.verticalSpacing + section.image.verticalSpacing  {
     padding-top: 0;
+  }
+  
+  .verticalSpacing {
+    padding-top: 50px;
   }
 
   section.text {
