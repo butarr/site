@@ -58,7 +58,7 @@ main.special {
   section.image.verticalSpacing + section.image.verticalSpacing  {
     padding-top: 0;
   }
-  
+
   .verticalSpacing {
     padding-top: 50px;
   }
@@ -189,7 +189,7 @@ main.special {
     position: fixed;
     bottom: 0;
     padding: 5px 0;
-    @include media-query(THREE) {
+    @include media-query(FOUR) {
       top: -100px;
       bottom: auto;
     }
@@ -199,7 +199,7 @@ main.special {
     position: fixed;
     bottom: 0;
     padding: 5px 0;
-    @include media-query(THREE) {
+    @include media-query(FOUR) {
       top: 130px;
       bottom: auto;
     }
@@ -208,7 +208,7 @@ main.special {
   .share-special-bottom {
     position: relative;
     padding: 25px 0 0;
-    @include media-query(THREE) {
+    @include media-query(FOUR) {
       position: fixed;
       padding: 5px 0;
     }
@@ -237,7 +237,7 @@ main.special {
       margin: 0 5px;
     }
 
-    @include media-query(THREE) {
+    @include media-query(FOUR) {
       -webkit-flex-direction: column; //Old Safari
       flex-direction: column;
       -webkit-flex-wrap: wrap; //Old Safari
