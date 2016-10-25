@@ -101,13 +101,23 @@ main.special {
     @include special-blockquotes;
     display: -webkit-flex; //Old Safari
     display: flex;
-    -webkit-justify-content: center; //Old Safari
-    justify-content: center;
+    -webkit-flex-direction: column; //Old Safari
+    flex-direction: column;
 
-    padding: 80px 25px 0;
+    background-color: $box-background;
+    padding: 50px 25px 0;
 
     @include media-query(THREE) {
-      padding: 110px 10% 0;
+      padding: 80px 10% 0;
+    }
+
+    .quote-info {
+      width: 100%;
+      margin-bottom: 10px;
+
+      h3 {
+        display: inline;
+      }
     }
   }
 

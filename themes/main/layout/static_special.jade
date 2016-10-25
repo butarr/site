@@ -32,6 +32,9 @@ mixin displayVideo(section)
 mixin displayQuote(section)
   section.quote.verticalSpacing
     blockquote(itemprop="description")= section.text
+    .quote-info
+      h3.quote-source= section.source
+      h3.quote-source-info= section.source_info
 
 extends base
 

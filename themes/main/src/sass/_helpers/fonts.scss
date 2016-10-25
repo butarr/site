@@ -758,6 +758,26 @@ $number-size: 1.3rem;
         }
       }
     }
+
+    .quote-source {
+      font: bold 0.9rem/1 $family-sans;
+
+      @include media-query(THREE) {
+        font: bold 1rem/1 $family-sans;
+      }
+    }
+
+    .quote-source-info {
+      font: normal 0.9rem/1 $family-sans;
+
+      @include media-query(THREE) {
+        font: normal 1rem/1 $family-sans;
+      }
+    }
+
+    .quote-source-info:before {
+      content: ", ";
+    }
   }
 
   section.links {
