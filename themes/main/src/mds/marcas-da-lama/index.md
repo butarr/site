@@ -102,12 +102,11 @@ sections:
     mobile: //farm6.staticflickr.com/5806/30586453595_2b4d32bd3a_b.jpg
     title: Fotos da Antiga Bento Rodrigues, com criança, rio, horta.
 
-  - type: image
+  - type: imagelink
     desktop: //farm9.staticflickr.com/8617/30586475515_6ebd3069cf_b.jpg
     mobile: //farm9.staticflickr.com/8617/30586475515_6ebd3069cf_b.jpg
     title: Lembranças de Bento Rodrigues
     link: https://www.flickr.com/photos/brasildefato/albums/72157675597652176
-    link_text: Botão Veja a galeria de fotos
 
   - type: text
     text: "<p>Em Bento Rodrigues, Marquinhos tinha três propriedades. A casa dos pais, como uma herança dividida entre ele e sete irmãos, e dois terrenos. Uma vez aposentado e com a filha crescida, o plano era voltar para o vilarejo, no qual pretendia passar o resto da vida. Ver a destruição após a passagem da lama foi “um sonho interrompido”, lamenta. Uma marca para a vida inteira; assim ele qualifica o momento em que soube que Bento não existiria mais (ver vídeo).</p>"

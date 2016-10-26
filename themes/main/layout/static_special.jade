@@ -13,10 +13,15 @@ mixin displayImage(section)
       img(itemprop="url" src=section.mobile  alt=section.title title=section.title)
       meta(itemprop="width" content="960")
       meta(itemprop="height" content="640")
-    if section.link && section.link_text
-      .image-link
-        a(itemprop="url" href=section.link target="_blank")
-          h3.link-text= section.link_text
+          
+mixin displayImageAsLink(section)
+  section.image.verticalSpacing
+    a(itemprop="url" href=section.link target="_blank")
+      picture(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
+        source(srcset=section.desktop media="(min-width: 690px)")
+        img(itemprop="url" src=section.mobile  alt=section.title title=section.title)
+        meta(itemprop="width" content="960")
+        meta(itemprop="height" content="640")
 
 mixin displayLinks(section)
   section.links.verticalSpacing
@@ -113,6 +118,8 @@ append content
             +displayMultimedia(section)
           else if section.type == 'video'
             +displayVideo(section)
+          else if section.type == 'imagelink'
+            +displayImageAsLink(section)
           else if section.type == 'quote'
             +displayQuote(section)
 
