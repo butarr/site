@@ -96,7 +96,6 @@
 
   section.image {
     position: relative;
-    z-index: 3;
     img {
       display: block;
       width: 100%;
@@ -191,7 +190,6 @@
     margin: 0 auto;
     position: relative;
     background-color: $special-background;
-    z-index: 3;
 
     .links-container {
       display: -webkit-flex; //Old Safari
