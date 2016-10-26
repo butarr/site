@@ -31,8 +31,9 @@ mixin displayLinks(section)
             h3.link-figure-title(itemprop="name")= p.title
 
 mixin displayMultimedia(section)
-  section.video.verticalSpacing
+  section.multimedia.verticalSpacing
     .container
+      .video-wrapper.content-wrapper
         !{section.embed}
         
 mixin displayVideo(section)

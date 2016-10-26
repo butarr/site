@@ -5,7 +5,11 @@
 
 @include get-font(SPECIAL);
 
-main.special {
+@function ratio($width, $height) {
+  @return percentage( $height / $width);
+}
+
+.special {
   @include site-top-spacing($HEADER-HEIGHT-CONTRACTED);
   padding-top: 0;
 
@@ -111,7 +115,33 @@ main.special {
     }
 
     .video-wrapper-16x9 {
-      padding-bottom: 56.25%;
+      padding-bottom: ratio(16, 9);
+    }
+
+    .video-wrapper {
+      position: relative;
+      margin: 1rem auto;
+      height: 0;
+      overflow: hidden;
+
+      iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .multimedia {
+    .container {
+      max-width: (3*$COLUMN-WIDTH);
+      margin: 0 auto;
+    }
+
+    .content-wrapper {
+      padding-bottom: ratio(652, 500);
     }
 
     .video-wrapper {

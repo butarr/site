@@ -41,7 +41,7 @@ sections:
     title: "O antes e depois de Bento Rodrigues"
 
   - type: multimedia
-    embed: <iframe class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=9a91474c-88df-11e5-a524-0e7075bba956" width="100%" height="747" frameborder="0"></iframe>
+    embed: <iframe class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=9a91474c-88df-11e5-a524-0e7075bba956" width="100%" height="747px" frameborder="0"></iframe>
 
   - type: image
     desktop: //farm6.staticflickr.com/5561/30462672872_206d860330_b.jpg
