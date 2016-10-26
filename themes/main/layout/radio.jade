@@ -44,12 +44,12 @@ append content
               meta(itemprop="name" content="Brasil de Fato")
               link(itemprop="sameAs" href="https://www.brasildefato.com.br")
 
-          .player
-            iframe(id=position class="soundCloudWidget" src="https://w.soundcloud.com/player/?url=#{post.audio}&color=8c191f&auto_play=false&show_artwork=false&show_comments=false&show_playcount=true&hide_related=true&show_user=false&show_reposts=false&liking=false&visual=false&buying=false&sharing=false&download=true&following=false")
-            i.fa.fa-play-circle-o(onclick="play(#{position});")
-            i.fa.fa-pause-circle-o(onclick="pause(#{position});")
+          div.player(id="item_#{position}")
+            iframe.widget(src="https://w.soundcloud.com/player/?url=#{post.audio}&color=8c191f&auto_play=false&show_artwork=false&show_comments=false&show_playcount=true&hide_related=true&show_user=false&show_reposts=false&liking=false&visual=false&buying=false&sharing=false&download=true&following=false")
+            i.play.fa.fa-play-circle-o(onclick="play(#{position});")
+            i.pause.fa.fa-pause-circle-o(onclick="pause(#{position});")
             a.news-item-link(href=post.path)
               h3.title(itemprop= "headline")= post.title
-            a(href="javascript:download(#{position});" id="download#{position}").download Download
+            a.download(href="javascript:download(#{position});") Download
 
       include _partial/pagination

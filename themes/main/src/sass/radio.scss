@@ -5,12 +5,16 @@
 .player {
   display: flex;
 
-  .soundCloudWidget {
-      display: none;
+  .widget {
+    display: none;
   }
 
   i {
     font-size: 4em;
+  }
+
+  .pause {
+    display: none;
   }
 
   .divisor + .divisor {
