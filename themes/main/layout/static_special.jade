@@ -34,7 +34,7 @@ mixin displayMultimedia(section)
   section.video.verticalSpacing
     .container
       .video-wrapper.video-wrapper-16x9
-        iframe(src=section.embed width="560" height="349")
+        !{section.embed}
 
 mixin displayQuote(section)
   section.quote
