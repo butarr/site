@@ -707,11 +707,11 @@ $number-size: 1.3rem;
     }
 
     p {
-      font: italic 16px/20px $family-sans;
+      font: bold italic 1.3rem/1.4 $family-serif;
       text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
 
       @include media-query(FOUR){
-        font-size: 18px;
+        font-size: 1.5rem;
       }
     }
   }
