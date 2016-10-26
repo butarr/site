@@ -26,6 +26,10 @@ sections:
     title: ""
     text: "<p>Era cerca de 16 horas quando uma movimentação estranha começou a ser percebida pelos moradores de Bento Rodrigues, pequeno distrito da cidade de Mariana, em Minas Gerais. Com cerca de 600 habitantes, os gritos foram rapidamente reproduzidos. \"A barragem estourou!\", diziam alguns moradores, que durante a correria alertavam sobre a feroz lama de rejeitos que estava prestes a atingir o bairro que surgiu por volta do século XVIII, tornando-se uma das primeiras unidades mineradoras no estado mineiro.</p>
     <p>Acostumados com o ambiente e rotina da mineração, bastaram alguns segundos para os moradores entenderem que a barragem do Fundão, pertencente à mineradora Samarco (um empreendimento conjunto da Vale e da BHP Billiton), havia se rompido. Mesmo os que se recusaram a acreditar de imediato no que acontecia, por não ouviram nenhum aviso oficial ou alerta sonoro, não demoraram muito em perceber a gravidade da situação.</p>"
+  - type: image
+    desktop: //farm9.staticflickr.com/8623/30543256616_5d5d0faafb_b.jpg
+    mobile: //farm9.staticflickr.com/8623/30543256616_5d5d0faafb_b.jpg
+    title: Bento Rodrigues
   - type: text
     title: ""
     text: "<p>Panelas no fogo, roupas, documentos, fotografias, carros, animais… Tudo precisou ser deixado para trás para se chegar às partes mais altas do vilarejo. Em meio à desolação e busca por notícias sobre o paradeiro de amigos, parentes e vizinhos, houve quem conseguisse parar e, entre lágrimas, observar a enxurrada de lama destruir ruas, casas, escola e posto de saúde. </p>
@@ -38,6 +42,11 @@ sections:
   - type: text
     title: "O antes e depois de Bento Rodrigues"
     text: ""
+
+  - type: image
+    desktop: //farm6.staticflickr.com/5561/30462672872_206d860330_b.jpg
+    mobile: //farm6.staticflickr.com/5561/30462672872_206d860330_b.jpg
+    title: Bento Rodrigues
 
   - type: text
     title: " "
@@ -66,6 +75,13 @@ sections:
   - type: video
     url: https://www.youtube.com/watch?v=_RyEASLGvD4
 
+  - type: image
+    desktop: //farm6.staticflickr.com/5775/29947861004_0acb966fba_b.jpg
+    mobile: //farm6.staticflickr.com/5775/29947861004_0acb966fba_b.jpg
+    title: Lembranças de Bento Rodrigues
+    link: https://www.flickr.com/photos/brasildefato/albums/72157675597652176
+    link_text: Veja a galeria de fotos
+
   - type: text
     title: ""
     text: "<p>Quando Joana se mudou para Bento Rodrigues, com pouco mais de 20 anos, ela estava grávida do primeiro filho. A vida no pequeno povoado logo se tornou a vida que sempre quis. Das lembranças mais felizes, se destacam os passeios a cavalo. O trajeto do distrito até o centro de Mariana durava cerca de duas horas de carroça, quando se podia admirar a paisagem, da qual ela lembra com gosto.</p>
@@ -77,8 +93,6 @@ sections:
   - type: video
     url: https://www.youtube.com/watch?v=4j2PAsEEKOs
 
-
-
   - type: image
     desktop: //farm6.staticflickr.com/5680/29946540724_c36059779d_b.jpg
     mobile: //farm6.staticflickr.com/5680/29946540724_c36059779d_b.jpg
@@ -86,7 +100,6 @@ sections:
 
   - type: video
     url:  https://www.youtube.com/watch?v=KJltSE8Y8m4
-
 
   - type: image
     desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
@@ -96,18 +109,4 @@ sections:
     desktop: //farm6.staticflickr.com/5660/30461746182_0feee6cd30_b.jpg
     mobile: //farm6.staticflickr.com/5660/30461746182_0feee6cd30_b.jpg
     title: Rodapé
-  - type: image
-    desktop: //farm6.staticflickr.com/5561/30462672872_206d860330_b.jpg
-    mobile: //farm6.staticflickr.com/5561/30462672872_206d860330_b.jpg
-    title: Bento Rodrigues
-  - type: image
-    desktop: //farm9.staticflickr.com/8623/30543256616_5d5d0faafb_b.jpg
-    mobile: //farm9.staticflickr.com/8623/30543256616_5d5d0faafb_b.jpg
-    title: Bento Rodrigues
-  - type: image
-    desktop: //farm6.staticflickr.com/5775/29947861004_0acb966fba_b.jpg
-    mobile: //farm6.staticflickr.com/5775/29947861004_0acb966fba_b.jpg
-    title: Lembranças de Bento Rodrigues
-    link: https://www.flickr.com/photos/brasildefato/albums/72157675597652176
-    link_text: "Veja Mais: Galeria de fotos de Bento Rodrigues antes da tragédia"
 ---
