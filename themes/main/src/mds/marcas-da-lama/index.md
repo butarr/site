@@ -11,13 +11,13 @@ tags:
   - mariana
   - barragem
 cover:
-  link: //farm9.staticflickr.com/8618/30475034741_c70eaa7977_z.jpg
-  thumbnail: //farm9.staticflickr.com/8618/30475034741_c70eaa7977_z.jpg
-  medium: //farm9.staticflickr.com/8618/30475034741_c70eaa7977_z.jpg
-  small: //farm9.staticflickr.com/8618/30475034741_c70eaa7977_z.jpg
-  title: eisensteinpotemkinlion.gif
-  credits: RL
-  subtitle: Leãozão
+  link: //farm6.staticflickr.com/5792/30542012446_8096cd26b0_b.jpg
+  thumbnail: //farm6.staticflickr.com/5792/30542012446_8096cd26b0_t.jpg
+  medium: //farm6.staticflickr.com/5792/30542012446_8096cd26b0_z.jpg
+  small: //farm6.staticflickr.com/5792/30542012446_8096cd26b0_n.jpg
+  title: header.jpg
+  credits: Lucas Bois
+  subtitle: Bento Rodrigues
 date: 2016-10-28T22:58:23.677Z
 published_at: 2016-10-28T22:58:23.677Z
 
@@ -132,5 +132,30 @@ sections:
     <p>Diego Montón, da Via campesina, explica importância da Declaração dos Direitos Camponeses para toda sociedade.</p>"
   - type: video
     url: https://www.youtube.com/watch?v=vrb86nqCkbY
+  - type: image
+    url: https://www.brasildefato.com.br
+    desktop: //farm6.staticflickr.com/5680/29946540724_c36059779d_b.jpg
+    mobile: //farm6.staticflickr.com/5680/29946540724_c36059779d_b.jpg
+    title: Manuel Marcos Muniz
+  - type: image
+    url: https://www.brasildefato.com.br
+    desktop: //farm6.staticflickr.com/5444/29944612863_5838d974d8_b.jpg
+    mobile: //farm6.staticflickr.com/5444/29944612863_5838d974d8_b.jpg
+    title: Joana D'arc Norberto
+  - type: image
+    url: https://www.brasildefato.com.br
+    desktop: //farm6.staticflickr.com/5457/30578347245_328925cc2a_b.jpg
+    mobile: //farm6.staticflickr.com/5457/30578347245_328925cc2a_b.jpg
+    title: Mapa Da Lama
+  - type: image
+    url: https://www.brasildefato.com.br
+    desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
+    mobile: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
+    title: Rodapé
+  - type: image
+    url: https://www.brasildefato.com.br
+    desktop: //farm6.staticflickr.com/5660/30461746182_0feee6cd30_b.jpg
+    mobile: //farm6.staticflickr.com/5660/30461746182_0feee6cd30_b.jpg
+    title: Rodapé
 
 ---
