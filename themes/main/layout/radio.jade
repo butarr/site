@@ -96,6 +96,16 @@ append content
 
               .content(class="no-image" class= "divisor")
                 h3.title(itemprop= "headline")= post.title
-                iframe(class="iframe" src="https://w.soundcloud.com/player/?url=#{post.audio}&color=8c191f&auto_play=false&show_artwork=false&show_comments=false&show_playcount=true&hide_related=true&show_user=false&show_reposts=false&liking=false&visual=false&buying=false&sharing=false&download=true&following=false")
+
+        .player
+          iframe(id=position class="soundCloudWidget" src="https://w.soundcloud.com/player/?url=#{post.audio}&color=8c191f&auto_play=false&show_artwork=false&show_comments=false&show_playcount=true&hide_related=true&show_user=false&show_reposts=false&liking=false&visual=false&buying=false&sharing=false&download=true&following=false")
+          dl.actionButtons
+            dd
+              button(onclick="play(#{position});").play Play
+            dd
+              button(onclick="pause(#{position});").pause Pause
+            dd
+              a(href="javascript:download();" id="download#{position}").download Download
+
 
       include _partial/pagination
