@@ -13,8 +13,13 @@ function pause(id) {
   widget.pause();
 }
 
-function download() {
-  var link = document.getElementById('download1');
-  link.href = "https://api.soundcloud.com/tracks/290049982/download?client_id=cUa40O3Jg3Emvp6Tv4U6ymYYO50NUGpJ";
-  link.click();
+function download(id) {
+  var iframe = document.getElementById(id);
+  var widget = SC.Widget(iframe);
+
+  widget.getCurrentSound(function(sound){
+    var link = document.getElementById('download' + id);
+    link.href = sound.download_url + "?client_id=cUa40O3Jg3Emvp6Tv4U6ymYYO50NUGpJ";
+    link.click();
+  });
 }
