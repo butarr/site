@@ -698,11 +698,11 @@ $number-size: 1.3rem;
     color: $link-inverted-color;
 
     .pageTitle {
-      font: 900 22px/1.36 $family-serif;
+      font: 900 2rem/1.36 $family-serif;
       text-shadow: 0 2px 0 rgba(0, 0, 0, 0.9);
 
-      @include media-query(FOUR){
-        font-size: 30px;
+      @include media-query(THREE){
+        font-size: 3rem;
       }
     }
 

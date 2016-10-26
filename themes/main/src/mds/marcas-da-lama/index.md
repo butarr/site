@@ -3,7 +3,7 @@ layout: static_special
 area: especial
 url: /marcas-da-lama/
 title: "O adeus a Bento Rodrigues"
-description: A barragem estourou, a barragem estourou"! Estes foram os gritos mais ouvidos em Bento Rodrigues naquela que era pra ter sido uma quinta-feira normal, e tradicionalmente tranquila. Extremamente diferente de qualquer outro dia dos mais de cem anos do vilarejo, o dia 5 de novembro de 2015 ficou marcado na história com o maior desastre ambiental do país
+description: O dia 5 de novembro de 2015 ficou marcado na história com o maior desastre ambiental do país
 author: Redação Brasil de Fato
 tags:
   - especial
@@ -52,8 +52,7 @@ sections:
 
   - type: text
     text: "<p>Os sons em Bento Rodrigues aos finais de semana eram tradicionais: crianças brincando pelas ruas, pequenos bate-papos com vizinhos e amigos em frente de casa, festas e reuniões de família. Com tudo debaixo da lama, o dia 6 de novembro era para ser o mais silencioso do pequeno povoado mineiro. Mas, dessa vez, o ambiente de Bento Rodrigues foi preenchido pelo barulho de helicópteros e grupos de resgate, que circulavam pelo vilarejo à procura de sobreviventes.</p>
-    <p>Segundo o relatório \"Antes fosse mais leve a carga: Avaliação dos aspectos econômicos, políticos e sociais do desastre da Samarco/Vale/BHP em Mariana (MG)\", do Grupo Política, Economia, Mineração, Ambiente e Sociedade (PoEMAS), a lama de rejeito causou uma \"destruição socioambiental por 663 km nos rios Gualaxo do Norte, Carmo e Doce até chegar na foz do último, onde adentrou 80 km2 ao mar\".</p>
-    <p>O distrito de Bento Rodrigues, hoje totalmente destruído, foi apenas o primeiro local atingido e, portanto, uma das paradas da reportagem para o especial Marcas da Lama - Um ano de resistência na Bacia do Rio Doce.</p>"
+    <p>Segundo o relatório \"Antes fosse mais leve a carga: Avaliação dos aspectos econômicos, políticos e sociais do desastre da Samarco/Vale/BHP em Mariana (MG)\", do Grupo Política, Economia, Mineração, Ambiente e Sociedade (PoEMAS), a lama de rejeito causou uma \"destruição socioambiental por 663 km nos rios Gualaxo do Norte, Carmo e Doce até chegar na foz do último, onde adentrou 80 km² ao mar\".</p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5720/30466295692_e1628aaa8a_b.jpg
@@ -90,6 +89,10 @@ sections:
     mobile: //farm6.staticflickr.com/5680/29946540724_c36059779d_b.jpg
     title: Manuel Marcos Muniz
 
+  - type: text
+    text: "<p>As lembranças de infância de Manuel Marcos Muniz, mais conhecido como Marquinhos, são de Bento Rodrigues. Os ensinamentos da roça vieram dos pais, que se mudaram para o pequeno vilarejo quando ele ainda era um menino. A rotina da família era guiada pelas criações de animais e plantações ao redor da casa.</p><p>As transformações do povoado mineiro ocorreram ao compasso das mudanças em sua vida. Início dos estudos, primeira namorada, casamento, o nascimento da única filha. Aposentado e com 52 anos, hoje, a cada lembrança vasculhada na memória, um relato sobre Bento. “As raízes estavam todas ali”, diz.</p><p>Para acomodar a vida familiar, o trabalho da esposa e os estudos da filha, no início dos anos 2000, a rotina passou a ser dividida entre Bento Rodrigues e o centro do município de Mariana, onde também construiu uma casa. As criações de galinhas, porcos e a lavoura permaneceram no pequeno distrito e ficavam aos cuidados de um de seus irmãos. Já aos finais de semana, o próprio Marquinhos se responsabilizava pelo roçado e aproveitava a vida no campo com a família.</p><p>Felizmente, conta ele, os registros dessa rotina ficaram preservados nas fotografias guardadas na casa em Mariana. Nem tudo foi perdido na lama.</p>"
+
+
   - type: image
     desktop: //farm6.staticflickr.com/5775/29947861004_0acb966fba_b.jpg
     mobile: //farm6.staticflickr.com/5775/29947861004_0acb966fba_b.jpg
@@ -97,8 +100,18 @@ sections:
     link: https://www.flickr.com/photos/brasildefato/albums/72157675597652176
     link_text: Veja a galeria de fotos
 
+  - type: text
+    text: "<p>Em Bento Rodrigues, Marquinhos tinha três propriedades. A casa dos pais, como uma herança dividida entre ele e sete irmãos, e dois terrenos. Uma vez aposentado e com a filha crescida, o plano era voltar para o vilarejo, no qual pretendia passar o resto da vida. Ver a destruição após a passagem da lama foi “um sonho interrompido”, lamenta. Uma marca para a vida inteira; assim ele qualifica o momento em que soube que Bento não existiria mais (ver vídeo).</p>"
+
+
   - type: video
-    embed:  <iframe width="560" height="315" src="https://www.youtube.com/embed/KJltSE8Y8m4" frameborder="0" allowfullscreen></iframe>
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/Gii1uTncPxE" frameborder="0" allowfullscreen></iframe>
+
+  - type: text
+    text: "<p>Foram 29 anos e dez meses. Este foi o tempo dedicado por Manuel Marcos ao trabalho na mineradora Samarco, na qual foi operador-mantenedor de bombas no mineroduto.</p><p>Passado um ano do rompimento, a sua posição é de crítica à mineradora. Segundo ele, pelo fato de possuir uma residência em Mariana, a empresa não o reconhece como atingido de Bento Rodrigues. Para além disso, o terreno herdado dos pais foi desapropriado pelo governador de Minas Gerais, Fernando Pimentel (PT), que, em setembro deste ano, assinou uma requisição administrativa de terrenos no distrito de Bento Rodrigues para que a Samarco construa o Dique S4.</p><p>Na ocasião, o Movimento do Atingidos por Barragens (MAB) se posicionou dizendo que a ação "só simboliza um Estado refém dos interesses privados das mineradoras transnacionais."</p>"
+
+  - type: video
+    embed:  <iframe width="560" height="315" src="https://www.youtube.com/embed/nxosoA8RIp8" frameborder="0" allowfullscreen></iframe>
 
 
   - type: image
