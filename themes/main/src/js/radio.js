@@ -2,9 +2,6 @@ function play(id) {
   var iframe = document.getElementById(id);
   var widget = SC.Widget(iframe);
   widget.play();
-  widget.getCurrentSound(function(sound){
-    console.log(">>>>>", sound);
-  });
 }
 
 function pause(id) {
