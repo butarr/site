@@ -3,7 +3,7 @@ layout: static_special
 area: especial
 url: /marcas-da-lama/
 title: "O adeus a Bento Rodrigues"
-description: Diego Montón, da Via campesina, explica importância da Declaração dos Direitos Camponeses para toda sociedade.
+description: A barragem estourou, a barragem estourou"! Estes foram os gritos mais ouvidos em Bento Rodrigues naquela que era pra ter sido uma quinta-feira normal, e tradicionalmente tranquila. Extremamente diferente de qualquer outro dia dos mais de cem anos do vilarejo, o dia 5 de novembro de 2015 ficou marcado na história com o maior desastre ambiental do país
 author: Redação Brasil de Fato
 tags:
   - especial
@@ -34,7 +34,7 @@ sections:
     <p>Já não era mais possível enxergar o que até pouco antes era Bento Rodrigues, a não ser por alguns carros e telhados que se deslocavam pelo distrito, flutuando sem rumo nesse rio de barro. Das 200 casas, pouco mais de 20 ficaram em pé. Entre moradores e trabalhadores da mineradora, morreram 19 pessoas. </p>
     <p>Em breves minutos, tragados pela lama, afundam e se perdem objetos pessoais, plantações, lares, memórias e vidas: foi o adeus a Bento Rodrigues.</p>"
 
-  - type: multimedia
+  - type: video
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/cy-1G6Js3cc" frameborder="0" allowfullscreen></iframe>
 
   - type: subtitle
@@ -69,7 +69,7 @@ sections:
   - type: text
     text: "<p>\"Ali era a casa de Paulo César, ali era a casa de Dona Geralda, ali o terreno do meu sogro, mais ali o bar da Sandra, aqui era a casa de Joaquim\". É assim que Joana D'arc Norberto, 43 anos, inicia a conversa com a equipe do Brasil de Fato, enquanto percorre o que restou de Bento Rodrigues quase um ano depois do ocorrido.</p><p>Mesmo que muitos imóveis ainda estejam marcados pela destruição da lama ou tenham desaparecido completamente do mapa, os mais de vinte anos morando no distrito garantiram à dona-de-casa minuciosidade na memória. Os locais exatos das casas dos amigos ainda são lembrados por ela.</p><p>Foram poucos os pertences recuperados por Joana e sua família. Embora sua casa tenha sido uma das poucas que não foram atingidas diretamente pela enxurrada, por se localizar na parte alta do povoado, se passaram dias até que ela e os vizinhos pudessem voltar ao local, e muitos pertences foram saqueados.</p><p>\"A gente sempre pedia pra entrar lá, pra tirar alguma coisa e poder levar – pra quando Deus abençoar, e a gente tiver uma nova casa –, poder levar. A gente queria conseguir tirar alguma coisa, mas não podia entrar. Hoje, não tem mais nada, porque os outros saquearam tudo\", lamenta.</p><p>Mãe de seis filhos, Joana caminha pela antiga casa lembrando como ela foi um dia (ver vídeo). \"Toda vez que eu volto aqui é uma tristeza\", diz, garantindo que, mesmo assim, faz questão de retornar sempre que possível a Bento Rodrigues. Ela ainda tem esperança de resgatar algum pertence, alguma memória.</p>"
 
-  - type: multimedia
+  - type: video
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/_RyEASLGvD4" frameborder="0" allowfullscreen></iframe>
 
   - type: image
@@ -86,7 +86,7 @@ sections:
     <p>Em nota, a Samarco informou que já iniciou o processo de realocação e reconstrução das comunidades afetadas em Bento Rodrigues, Paracatu de Baixo e Gesteira. \"As famílias já escolheram os terrenos onde os novos distritos serão erguidos. As obras serão entregues até 2019\", afirma a mineradora.</p>
     <p>Quando questionada sobre o que deveria ser feito em relação a Bento, Joana é categórica: \"eu acho que deveria deixar para ser uma cidade histórica, preservar a memória de todo mundo\".</p>"
 
-  - type: multimedia
+  - type: video
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/4j2PAsEEKOs" frameborder="0" allowfullscreen></iframe>
 
   - type: image
@@ -94,8 +94,9 @@ sections:
     mobile: //farm6.staticflickr.com/5680/29946540724_c36059779d_b.jpg
     title: Manuel Marcos Muniz
 
-  - type: multimedia
+  - type: video
     embed:  <iframe width="560" height="315" src="https://www.youtube.com/embed/KJltSE8Y8m4" frameborder="0" allowfullscreen></iframe>
+    
 
   - type: image
     desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg

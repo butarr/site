@@ -33,8 +33,13 @@ mixin displayLinks(section)
 mixin displayMultimedia(section)
   section.video.verticalSpacing
     .container
-      .video-wrapper.video-wrapper-16x9
         !{section.embed}
+        
+mixin displayVideo(section)
+  section.video.verticalSpacing
+    .container
+      .video-wrapper.video-wrapper-16x9
+        !{section.embed}        
 
 mixin displayQuote(section)
   section.quote
@@ -105,6 +110,8 @@ append content
             +displayImage(section)
           else if section.type == 'multimedia'
             +displayMultimedia(section)
+          else if section.type == 'video'
+            +displayVideo(section)
           else if section.type == 'quote'
             +displayQuote(section)
 
