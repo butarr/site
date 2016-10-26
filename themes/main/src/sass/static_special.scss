@@ -78,7 +78,7 @@ main.special {
       max-width: (3*$COLUMN-WIDTH);
     }
 
-    p {
+    p + p {
       padding-top: 20px;
       @include media-query(FOUR){
         padding-top: 30px;
