@@ -40,13 +40,15 @@ sections:
   - type: subtitle
     title: "O antes e depois de Bento Rodrigues"
 
+  - type: multimedia
+    embed: <iframe class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=9a91474c-88df-11e5-a524-0e7075bba956" width="100%" height="747" frameborder="0"></iframe>
+
   - type: image
     desktop: //farm6.staticflickr.com/5561/30462672872_206d860330_b.jpg
     mobile: //farm6.staticflickr.com/5561/30462672872_206d860330_b.jpg
     title: Bento Rodrigues
 
-  - type: multimedia
-    embed: <iframe class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=9a91474c-88df-11e5-a524-0e7075bba956" width="100%" height="747" frameborder="0"></iframe>
+
 
   - type: text
     text: "<p>Os sons em Bento Rodrigues aos finais de semana eram tradicionais: crianças brincando pelas ruas, pequenos bate-papos com vizinhos e amigos em frente de casa, festas e reuniões de família. Com tudo debaixo da lama, o dia 6 de novembro era para ser o mais silencioso do pequeno povoado mineiro. Mas, dessa vez, o ambiente de Bento Rodrigues foi preenchido pelo barulho de helicópteros e grupos de resgate, que circulavam pelo vilarejo à procura de sobreviventes.</p>
@@ -72,19 +74,13 @@ sections:
   - type: video
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/_RyEASLGvD4" frameborder="0" allowfullscreen></iframe>
 
-  - type: image
-    desktop: //farm6.staticflickr.com/5775/29947861004_0acb966fba_b.jpg
-    mobile: //farm6.staticflickr.com/5775/29947861004_0acb966fba_b.jpg
-    title: Lembranças de Bento Rodrigues
-    link: https://www.flickr.com/photos/brasildefato/albums/72157675597652176
-    link_text: Veja a galeria de fotos
-
   - type: text
     text: "<p>Quando Joana se mudou para Bento Rodrigues, com pouco mais de 20 anos, ela estava grávida do primeiro filho. A vida no pequeno povoado logo se tornou a vida que sempre quis. Das lembranças mais felizes, se destacam os passeios a cavalo. O trajeto do distrito até o centro de Mariana durava cerca de duas horas de carroça, quando se podia admirar a paisagem, da qual ela lembra com gosto.</p>
     <p>Hoje, ela conta que a rotina é totalmente outra. A imposição do abandono da vida rural, devido ao rompimento da barragem, fez com [que] Joana e a família ficassem por mais de um mês morando em um hotel. Em dezembro de 2015, se mudaram para um pequeno sítio em Mariana, onde, aos poucos, eles têm conseguido recuperar parte da antiga rotina. \"Algumas coisas a gente conseguiu recuperar, mas outras não\", diz, lembrando-se dos cavalos, burros, mulas, galinhas e plantações que foram embora com a lama.</p>
     <p>Com a decisão de que Bento Rodrigues deixará de existir – tomada em uma assembleia realizada dias após a tragédia –, uma comunidade será construída pela Samarco em um novo terreno. \"Eles estão mexendo aqui e nós estamos ficando para trás. Isso que eles estão mexendo, eu acho que deve ser para nos dar as nossas casas. E todos nós ainda estamos esperando as nossas casas\", desabafa a matriarca, enquanto passeia pelo que sobrou do povoado, vendo vários caminhões transitarem (ver capítulo 2).</p>
     <p>Em nota, a Samarco informou que já iniciou o processo de realocação e reconstrução das comunidades afetadas em Bento Rodrigues, Paracatu de Baixo e Gesteira. \"As famílias já escolheram os terrenos onde os novos distritos serão erguidos. As obras serão entregues até 2019\", afirma a mineradora.</p>
     <p>Quando questionada sobre o que deveria ser feito em relação a Bento, Joana é categórica: \"eu acho que deveria deixar para ser uma cidade histórica, preservar a memória de todo mundo\".</p>"
+
 
   - type: video
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/4j2PAsEEKOs" frameborder="0" allowfullscreen></iframe>
@@ -94,9 +90,16 @@ sections:
     mobile: //farm6.staticflickr.com/5680/29946540724_c36059779d_b.jpg
     title: Manuel Marcos Muniz
 
+  - type: image
+    desktop: //farm6.staticflickr.com/5775/29947861004_0acb966fba_b.jpg
+    mobile: //farm6.staticflickr.com/5775/29947861004_0acb966fba_b.jpg
+    title: Lembranças de Bento Rodrigues
+    link: https://www.flickr.com/photos/brasildefato/albums/72157675597652176
+    link_text: Veja a galeria de fotos
+
   - type: video
     embed:  <iframe width="560" height="315" src="https://www.youtube.com/embed/KJltSE8Y8m4" frameborder="0" allowfullscreen></iframe>
-    
+
 
   - type: image
     desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
