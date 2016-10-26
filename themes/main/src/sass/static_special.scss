@@ -226,7 +226,6 @@
   .share-special-top {
     position: fixed;
     bottom: 0;
-    padding: 5px 0;
     @include media-query(FOUR) {
       top: -100px;
       bottom: auto;
@@ -236,7 +235,6 @@
   .share-special-middle {
     position: fixed;
     bottom: 0;
-    padding: 5px 0;
     @include media-query(FOUR) {
       top: 130px;
       bottom: auto;
@@ -245,10 +243,8 @@
 
   .share-special-bottom {
     position: relative;
-    padding: 25px 0 25px;
     @include media-query(FOUR) {
       position: fixed;
-      padding: 5px 0;
     }
   }
 
@@ -263,16 +259,16 @@
     -webkit-justify-content: center; //Old Safari
 
     width: 100%;
+    padding: 10px 0;
     background-color: $special-background;
-
     z-index: 4;
 
     -webkit-transition: top 1s; //Old Safari
     transition: top 1s;
 
     .share-icon {
-      width: 50px;
-      margin: 0 5px;
+      width: 38px;
+      margin: 0 8px;
     }
 
     @include media-query(FOUR) {
@@ -282,9 +278,9 @@
       flex-wrap: wrap;
 
       width: 45px;
-      z-index: 2;
-      background-color: rgba(0,0,0,0);
       margin-left: 2%;
+      background-color: rgba(0,0,0,0);
+      z-index: 2;
 
       .share-icon {
         width: 100%;

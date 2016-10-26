@@ -10,7 +10,7 @@ $(document).ready(function() {
     var windowBottom = $(window).scrollTop()  + $(window).height();
     if(windowBottom > footerTop) {
       $('#share-special').toggleClass('share-special-bottom', true);
-    } else if(windowBottom < (footerTop-100)) {
+    } else if(windowBottom < (footerTop-64)) {
       $('#share-special').toggleClass('share-special-bottom', false);
     }
   });
