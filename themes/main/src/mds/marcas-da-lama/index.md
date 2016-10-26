@@ -110,9 +110,6 @@ sections:
   - type: text
     text: "<p>Foram 29 anos e dez meses. Este foi o tempo dedicado por Manuel Marcos ao trabalho na mineradora Samarco, na qual foi operador-mantenedor de bombas no mineroduto.</p><p>Passado um ano do rompimento, a sua posição é de crítica à mineradora. Segundo ele, pelo fato de possuir uma residência em Mariana, a empresa não o reconhece como atingido de Bento Rodrigues. Para além disso, o terreno herdado dos pais foi desapropriado pelo governador de Minas Gerais, Fernando Pimentel (PT), que, em setembro deste ano, assinou uma requisição administrativa de terrenos no distrito de Bento Rodrigues para que a Samarco construa o Dique S4.</p><p>Na ocasião, o Movimento do Atingidos por Barragens (MAB) se posicionou dizendo que a ação \"só simboliza um Estado refém dos interesses privados das mineradoras transnacionais.\"</p>"
 
-  - type: video
-    embed:  <iframe width="560" height="315" src="https://www.youtube.com/embed/nxosoA8RIp8" frameborder="0" allowfullscreen></iframe>
-
 
   - type: image
     desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
