@@ -59,11 +59,15 @@ main.special {
     padding-top: 0;
   }
 
+  section.subtitle.verticalSpacing + section.text.verticalSpacing  {
+    padding-top: 0;
+  }
+
   .verticalSpacing {
     padding-top: 50px;
   }
 
-  section.text {
+  section.text, section.subtitle {
     padding-left: 25px;
     padding-right: 25px;
     margin: 0 auto;
@@ -73,8 +77,6 @@ main.special {
       padding-right: 0;
       max-width: (3*$COLUMN-WIDTH);
     }
-
-
 
     p {
       padding-top: 20px;
@@ -99,11 +101,6 @@ main.special {
   }
 
   section.video {
-
-    .moduleTitle {
-      padding-bottom: 25px;
-    }
-
     .container {
       max-width: (3*$COLUMN-WIDTH);
       margin: 0 auto;

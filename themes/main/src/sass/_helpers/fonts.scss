@@ -716,10 +716,10 @@ $number-size: 1.3rem;
     }
   }
 
-  section.text, section.video {
+  section.subtitle {
     color: $text-color;
 
-    .moduleTitle {
+    .title {
       font: 900 20px $family-serif;
       text-align: center;
 
@@ -727,6 +727,10 @@ $number-size: 1.3rem;
         font-size: 24px;
       }
     }
+  }
+
+  section.text {
+    color: $text-color;
 
     p {
       font: 16px/1.63 $family-serif;

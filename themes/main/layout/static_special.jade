@@ -1,7 +1,10 @@
 mixin displayText(section)
   section.text.verticalSpacing
-    h2.moduleTitle= section.title
     !{section.text}
+
+mixin displaySubtitle(section)
+  section.subtitle.verticalSpacing
+    h2.title= section.title
 
 mixin displayImage(section)
   section.image.verticalSpacing
@@ -96,6 +99,8 @@ append content
             +displayLinks(section)
           else if section.type == 'text'
             +displayText(section)
+          else if section.type == 'subtitle'
+            +displaySubtitle(section)
           else if section.type == 'image'
             +displayImage(section)
           else if section.type == 'video'
