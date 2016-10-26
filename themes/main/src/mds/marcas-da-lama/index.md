@@ -109,5 +109,5 @@ sections:
     mobile: //farm6.staticflickr.com/5775/29947861004_0acb966fba_b.jpg
     title: Lembranças de Bento Rodrigues
     link: https://www.flickr.com/photos/brasildefato/albums/72157675597652176
-    link_text: Veja a galeria de fotos
+    link_text: "Veja Mais: Galeria de fotos de Bento Rodrigues antes da tragédia"
 ---
