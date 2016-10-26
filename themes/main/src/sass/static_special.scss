@@ -64,7 +64,11 @@ main.special {
   }
 
   .verticalSpacing {
-    padding-top: 50px;
+    padding-top: 30px;
+
+      @include media-query(THREE) {
+        padding-top: 50px;
+      }
   }
 
   section.text, section.subtitle {
