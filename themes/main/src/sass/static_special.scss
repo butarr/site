@@ -145,7 +145,7 @@ main.special {
       width: 100%;
       margin-bottom: 10px;
 
-      h3 {
+      .quote-source, .quote-source-info {
         display: inline;
       }
     }
@@ -211,7 +211,7 @@ main.special {
 
   .share-special-bottom {
     position: relative;
-    padding: 25px 0 0;
+    padding: 25px 0 25px;
     @include media-query(FOUR) {
       position: fixed;
       padding: 5px 0;
