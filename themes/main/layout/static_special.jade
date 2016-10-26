@@ -30,7 +30,7 @@ mixin displayLinks(section)
               img(src=p.cover.link  alt=p.cover.title title=p.cover.title itemprop="image")
             h3.link-figure-title(itemprop="name")= p.title
 
-mixin displayVideo(section)
+mixin displayMultimedia(section)
   section.video.verticalSpacing
     .container
       .video-wrapper.video-wrapper-16x9
@@ -103,8 +103,8 @@ append content
             +displaySubtitle(section)
           else if section.type == 'image'
             +displayImage(section)
-          else if section.type == 'video'
-            +displayVideo(section)
+          else if section.type == 'multimedia'
+            +displayMultimedia(section)
           else if section.type == 'quote'
             +displayQuote(section)
 
