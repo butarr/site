@@ -4,7 +4,7 @@ mixin displayText(section)
 
 mixin displaySubtitle(section)
   section.subtitle.verticalSpacing
-    h2.title= section.title
+    h2.subtitle= section.title
 
 mixin displayImage(section)
   section.image.verticalSpacing
@@ -97,7 +97,7 @@ append content
       section.title
         div.description
           h1.pageTitle(itemprop="headline")= page.title
-          p(itemprop="description")= page.description
+          p.description(itemprop="description")= page.description
 
       div.blocks(itemprop="articleBody")
         each section in page.sections

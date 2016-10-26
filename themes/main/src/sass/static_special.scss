@@ -3,13 +3,12 @@
 @import '_helpers/constants';
 @import '_helpers/colors';
 
-@include get-font(SPECIAL);
-
 @function ratio($width, $height) {
   @return percentage( $height / $width);
 }
 
 .special {
+  @include get-font(SPECIAL);
   @include site-top-spacing($HEADER-HEIGHT-CONTRACTED);
   padding-top: 0;
 

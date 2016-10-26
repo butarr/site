@@ -706,7 +706,7 @@ $number-size: 1.3rem;
       }
     }
 
-    p {
+    .description {
       font: bold italic 1.3rem/1.4 $family-serif;
       text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
 
@@ -719,13 +719,9 @@ $number-size: 1.3rem;
   section.subtitle {
     color: $text-color;
 
-    .title {
-      font: 900 20px $family-serif;
+    .subtitle {
+      font: 900 1.6rem/1.4 $family-serif;
       text-align: center;
-
-      @include media-query(FOUR){
-        font-size: 24px;
-      }
     }
   }
 
@@ -733,11 +729,7 @@ $number-size: 1.3rem;
     color: $text-color;
 
     p {
-      font: 16px/1.63 $family-serif;
-
-      @include media-query(FOUR){
-        font-size: 18px;
-      }
+      font: 1.1rem/1.63 $family-serif;
     }
   }
 
