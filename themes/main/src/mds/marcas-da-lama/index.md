@@ -54,8 +54,8 @@ sections:
     <p>O distrito de Bento Rodrigues, hoje totalmente destruído, foi apenas o primeiro local atingido e, portanto, uma das paradas da reportagem para o especial Marcas da Lama - Um ano de resistência na Bacia do Rio Doce.</p>"
 
   - type: image
-    desktop: //farm6.staticflickr.com/5457/30578347245_328925cc2a_b.jpg
-    mobile: //farm6.staticflickr.com/5457/30578347245_328925cc2a_b.jpg
+    desktop: //farm6.staticflickr.com/5720/30466295692_e1628aaa8a_b.jpg
+    mobile: //farm6.staticflickr.com/5720/30466295692_e1628aaa8a_b.jpg
     title: Mapa Da Lama
 
   - type: text
