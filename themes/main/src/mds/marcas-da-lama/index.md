@@ -27,7 +27,6 @@ sections:
     text: "<p>Era cerca de 16 horas quando uma movimentação estranha começou a ser percebida pelos moradores de Bento Rodrigues, pequeno distrito da cidade de Mariana, em Minas Gerais. Com cerca de 600 habitantes, os gritos foram rapidamente reproduzidos. \"A barragem estourou!\", diziam alguns moradores, que durante a correria alertavam sobre a feroz lama de rejeitos que estava prestes a atingir o bairro que surgiu por volta do século XVIII, tornando-se uma das primeiras unidades mineradoras no estado mineiro.</p>
     <p>Acostumados com o ambiente e rotina da mineração, bastaram alguns segundos para os moradores entenderem que a barragem do Fundão, pertencente à mineradora Samarco (um empreendimento conjunto da Vale e da BHP Billiton), havia se rompido. Mesmo os que se recusaram a acreditar de imediato no que acontecia, por não ouviram nenhum aviso oficial ou alerta sonoro, não demoraram muito em perceber a gravidade da situação.</p>"
   - type: image
-    url: https://www.brasildefato.com.br
     desktop: https://farm6.staticflickr.com/5604/30476219891_37246b3c0a_z.jpg
     mobile: https://farm6.staticflickr.com/5648/30562918105_d4e683857b_z.jpg
     title: Fotazo
@@ -36,7 +35,6 @@ sections:
     text: "<p>Panelas no fogo, roupas, documentos, fotografias, carros, animais… Tudo precisou ser deixado para trás para se chegar às partes mais altas do vilarejo. Em meio à desolação e busca por notícias sobre o paradeiro de amigos, parentes e vizinhos, houve quem conseguisse parar e, entre lágrimas, observar a enxurrada de lama destruir ruas, casas, escola e posto de saúde. </p>
     <p>Já não era mais possível enxergar o que até pouco antes era Bento Rodrigues, a não ser por alguns carros e telhados que se deslocavam pelo distrito, flutuando sem rumo nesse rio de barro. Das 200 casas, pouco mais de 20 ficaram em pé. Entre moradores e trabalhadores da mineradora, morreram 19 pessoas. </p>
     <p>Em breves minutos, tragados pela lama, afundam e se perdem objetos pessoais, plantações, lares, memórias e vidas: foi o adeus a Bento Rodrigues.</p>"
-
 
   - type: text
     title: "O antes e depois de Bento Rodrigue"
@@ -48,11 +46,9 @@ sections:
     <p>Segundo o relatório \"Antes fosse mais leve a carga: Avaliação dos aspectos econômicos, políticos e sociais do desastre da Samarco/Vale/BHP em Mariana (MG)\", do Grupo Política, Economia, Mineração, Ambiente e Sociedade (PoEMAS), a lama de rejeito causou uma \"destruição socioambiental por 663 km nos rios Gualaxo do Norte, Carmo e Doce até chegar na foz do último, onde adentrou 80 km2 ao mar\".</p>
     <p>O distrito de Bento Rodrigues, hoje totalmente destruído, foi apenas o primeiro local atingido e, portanto, uma das paradas da reportagem para o especial Marcas da Lama - Um ano de resistência na Bacia do Rio Doce.</p>"
 
-
   - type: text
     title: "" 
     text: "<p>\"Ali era a casa de Paulo César, ali era a casa de Dona Geralda, ali o terreno do meu sogro, mais ali o bar da Sandra, aqui era a casa de Joaquim\". É assim que Joana D'arc Norberto, 43 anos, inicia a conversa com a equipe do Brasil de Fato, enquanto percorre o que restou de Bento Rodrigues quase um ano depois do ocorrido.</p>
-
 
     <p>Mesmo que muitos imóveis ainda estejam marcados pela destruição da lama ou tenham desaparecido completamente do mapa, os mais de vinte anos morando no distrito garantiram à dona-de-casa minuciosidade na memória. Os locais exatos das casas dos amigos ainda são lembrados por ela.</p>
 
@@ -62,7 +58,6 @@ sections:
 
     <p>Mãe de seis filhos, Joana caminha pela antiga casa lembrando como ela foi um dia (ver vídeo). \"Toda vez que eu volto aqui é uma tristeza\", diz, garantindo que, mesmo assim, faz questão de retornar sempre que possível a Bento Rodrigues. Ela ainda tem esperança de resgatar algum pertence, alguma memória.</p>"
 
-
   - type: text
     title: "" 
     text: "<p>Quando Joana se mudou para Bento Rodrigues, com pouco mais de 20 anos, ela estava grávida do primeiro filho. A vida no pequeno povoado logo se tornou a vida que sempre quis. Das lembranças mais felizes, se destacam os passeios a cavalo. O trajeto do distrito até o centro de Mariana durava cerca de duas horas de carroça, quando se podia admirar a paisagem, da qual ela lembra com gosto.</p>
@@ -71,21 +66,15 @@ sections:
     <p>Em nota, a Samarco informou que já iniciou o processo de realocação e reconstrução das comunidades afetadas em Bento Rodrigues, Paracatu de Baixo e Gesteira. \"As famílias já escolheram os terrenos onde os novos distritos serão erguidos. As obras serão entregues até 2019\", afirma a mineradora.</p>
     <p>Quando questionada sobre o que deveria ser feito em relação a Bento, Joana é categórica: \"eu acho que deveria deixar para ser uma cidade histórica, preservar a memória de todo mundo\".</p>"
 
-
-  - type: video
-    url: ""
-
   - type: quote
     text: "Quando parei para pensar, todos os pensamentos já haviam acontecido."
     source: "Michel Temer"
     source_info: "Poeta, artista, presidente golpista"
   - type: image
-    url: https://www.brasildefato.com.br
     desktop: https://farm6.staticflickr.com/5615/30348700976_821a39c824_z.jpg
     mobile: https://farm6.staticflickr.com/5473/29970309920_c2f98c3f60_z.jpg
     title: Fotona
   - type: image
-    url: https://www.brasildefato.com.br
     desktop: https://farm8.staticflickr.com/7761/29940083270_19059240ac_z.jpg
     mobile: https://farm6.staticflickr.com/5348/30445675282_c5979c867a_z.jpg
     title: Fotazo
@@ -133,29 +122,37 @@ sections:
   - type: video
     url: https://www.youtube.com/watch?v=vrb86nqCkbY
   - type: image
-    url: https://www.brasildefato.com.br
     desktop: //farm6.staticflickr.com/5680/29946540724_c36059779d_b.jpg
     mobile: //farm6.staticflickr.com/5680/29946540724_c36059779d_b.jpg
     title: Manuel Marcos Muniz
   - type: image
-    url: https://www.brasildefato.com.br
     desktop: //farm6.staticflickr.com/5444/29944612863_5838d974d8_b.jpg
     mobile: //farm6.staticflickr.com/5444/29944612863_5838d974d8_b.jpg
     title: Joana D'arc Norberto
   - type: image
-    url: https://www.brasildefato.com.br
     desktop: //farm6.staticflickr.com/5457/30578347245_328925cc2a_b.jpg
     mobile: //farm6.staticflickr.com/5457/30578347245_328925cc2a_b.jpg
     title: Mapa Da Lama
   - type: image
-    url: https://www.brasildefato.com.br
     desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
     mobile: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
     title: Rodapé
   - type: image
-    url: https://www.brasildefato.com.br
     desktop: //farm6.staticflickr.com/5660/30461746182_0feee6cd30_b.jpg
     mobile: //farm6.staticflickr.com/5660/30461746182_0feee6cd30_b.jpg
     title: Rodapé
-
+  - type: image
+    desktop: //farm6.staticflickr.com/5561/30462672872_206d860330_b.jpg
+    mobile: //farm6.staticflickr.com/5561/30462672872_206d860330_b.jpg
+    title: Bento Rodrigues
+  - type: image
+    desktop: //farm9.staticflickr.com/8623/30543256616_5d5d0faafb_b.jpg
+    mobile: //farm9.staticflickr.com/8623/30543256616_5d5d0faafb_b.jpg
+    title: Bento Rodrigues
+  - type: image
+    desktop: //farm6.staticflickr.com/5775/29947861004_0acb966fba_b.jpg
+    mobile: //farm6.staticflickr.com/5775/29947861004_0acb966fba_b.jpg
+    title: Lembranças de Bento Rodrigues
+    link: https://www.flickr.com/photos/brasildefato/albums/72157675597652176
+    link_text: Veja a galeria de fotos
 ---
