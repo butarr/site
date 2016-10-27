@@ -36,7 +36,7 @@ sections:
     <p>Já não era mais possível enxergar o que até pouco antes era Bento Rodrigues, a não ser por alguns carros e telhados que se deslocavam pelo distrito, flutuando sem rumo nesse rio de barro. Das 200 casas, pouco mais de 20 ficaram em pé. Entre moradores e trabalhadores da mineradora, morreram 19 pessoas. </p>
     <p>Em breves minutos, tragados pela lama, afundam e se perdem objetos pessoais, plantações, lares, memórias e vidas: foi o adeus a Bento Rodrigues.</p>"
 
-  - type: video
+  - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/cy-1G6Js3cc" frameborder="0" allowfullscreen></iframe>
 
   - type: image
@@ -46,13 +46,12 @@ sections:
 
   - type: multimedia
     embed: <iframe class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=9a91474c-88df-11e5-a524-0e7075bba956" width="100%" height="747px" frameborder="0"></iframe>
+    ratio: 75%
 
   - type: image
     desktop: //farm6.staticflickr.com/5561/30462672872_206d860330_b.jpg
     mobile: //farm6.staticflickr.com/5561/30462672872_206d860330_b.jpg
     title: Foto pintada de casal com vidro despedaçado encrustada na lama
-
-
 
   - type: text
     text: "<p>Os sons em Bento Rodrigues aos finais de semana eram tradicionais: crianças brincando pelas ruas, pequenos bate-papos com vizinhos e amigos em frente de casa, festas e reuniões de família. Com tudo debaixo da lama, o dia 6 de novembro era para ser o mais silencioso do pequeno povoado mineiro. Mas, dessa vez, o ambiente de Bento Rodrigues foi preenchido pelo barulho de helicópteros e grupos de resgate, que circulavam pelo vilarejo à procura de sobreviventes.</p>
@@ -60,7 +59,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5720/30466295692_e1628aaa8a_b.jpg
-    mobile: //farm6.staticflickr.com/5720/30466295692_e1628aaa8a_b.jpg
+    mobile: //farm6.staticflickr.com/5728/29966542273_910518cce9_b.jpg
     title: "Mapa demarcando a barragem, Bento Rodrigues e Mariana em Minas Gerais"
 
   - type: text
@@ -68,13 +67,13 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5444/29944612863_5838d974d8_b.jpg
-    mobile: //farm6.staticflickr.com/5444/29944612863_5838d974d8_b.jpg
+    mobile: //farm6.staticflickr.com/5759/30600188485_c69d155d48_b.jpg
     title: "Foto de Joana D'arc Norberto, de 43 anos, com sua fala \"Não estava em casa quando tudo aconteceu. Um genro me ligou e disse: 'ei, Joana, acabou Bento, morreu todo mundo'\""
 
   - type: text
     text: "<p>\"Ali era a casa de Paulo César, ali era a casa de Dona Geralda, ali o terreno do meu sogro, mais ali o bar da Sandra, aqui era a casa de Joaquim\". É assim que Joana D'arc Norberto, 43 anos, inicia a conversa com a equipe do Brasil de Fato, enquanto percorre o que restou de Bento Rodrigues quase um ano depois do ocorrido.</p><p>Mesmo que muitos imóveis ainda estejam marcados pela destruição da lama ou tenham desaparecido completamente do mapa, os mais de vinte anos morando no distrito garantiram à dona-de-casa minuciosidade na memória. Os locais exatos das casas dos amigos ainda são lembrados por ela.</p><p>Foram poucos os pertences recuperados por Joana e sua família. Embora sua casa tenha sido uma das poucas que não foram atingidas diretamente pela enxurrada, por se localizar na parte alta do povoado, se passaram dias até que ela e os vizinhos pudessem voltar ao local, e muitos pertences foram saqueados.</p><p>\"A gente sempre pedia pra entrar lá, pra tirar alguma coisa e poder levar – pra quando Deus abençoar, e a gente tiver uma nova casa –, poder levar. A gente queria conseguir tirar alguma coisa, mas não podia entrar. Hoje, não tem mais nada, porque os outros saquearam tudo\", lamenta.</p><p>Mãe de seis filhos, Joana caminha pela antiga casa lembrando como ela foi um dia (ver vídeo). \"Toda vez que eu volto aqui é uma tristeza\", diz, garantindo que, mesmo assim, faz questão de retornar sempre que possível a Bento Rodrigues. Ela ainda tem esperança de resgatar algum pertence, alguma memória.</p>"
 
-  - type: video
+  - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/_RyEASLGvD4" frameborder="0" allowfullscreen></iframe>
 
   - type: text
@@ -85,12 +84,12 @@ sections:
     <p>Quando questionada sobre o que deveria ser feito em relação a Bento, Joana é categórica: \"eu acho que deveria deixar para ser uma cidade histórica, preservar a memória de todo mundo\".</p>"
 
 
-  - type: video
+  - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/4j2PAsEEKOs" frameborder="0" allowfullscreen></iframe>
 
   - type: image
     desktop: //farm6.staticflickr.com/5680/29946540724_c36059779d_b.jpg
-    mobile: //farm6.staticflickr.com/5680/29946540724_c36059779d_b.jpg
+    mobile: //farm6.staticflickr.com/5697/29968095974_36bf78bc65_b.jpg
     title: "Foto de Manuel Marcos Muniz, de 52 anos, com sua fala \"A gente acha que já passou, que já acabou, mas tem dia que a gente só vive em função da tragédia da Samarco, do rompimento da barragem\""
 
   - type: text
@@ -99,10 +98,10 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5806/30586453595_2b4d32bd3a_b.jpg
-    mobile: //farm6.staticflickr.com/5806/30586453595_2b4d32bd3a_b.jpg
+    mobile: //farm6.staticflickr.com/5537/29966502163_9c882af9e6_b.jpg
     title: Fotos da Antiga Bento Rodrigues, com criança, rio, horta.
 
-  - type: imagelink
+  - type: image
     desktop: //farm9.staticflickr.com/8617/30586475515_6ebd3069cf_b.jpg
     mobile: //farm9.staticflickr.com/8617/30586475515_6ebd3069cf_b.jpg
     title: Lembranças de Bento Rodrigues
@@ -112,12 +111,14 @@ sections:
     text: "<p>Em Bento Rodrigues, Marquinhos tinha três propriedades. A casa dos pais, como uma herança dividida entre ele e sete irmãos, e dois terrenos. Uma vez aposentado e com a filha crescida, o plano era voltar para o vilarejo, no qual pretendia passar o resto da vida. Ver a destruição após a passagem da lama foi “um sonho interrompido”, lamenta. Uma marca para a vida inteira; assim ele qualifica o momento em que soube que Bento não existiria mais (ver vídeo).</p>"
 
 
-  - type: video
+  - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/Gii1uTncPxE" frameborder="0" allowfullscreen></iframe>
 
   - type: text
     text: "<p>Foram 29 anos e dez meses. Este foi o tempo dedicado por Manuel Marcos ao trabalho na mineradora Samarco, na qual foi operador-mantenedor de bombas no mineroduto.</p><p>Passado um ano do rompimento, a sua posição é de crítica à mineradora. Segundo ele, pelo fato de possuir uma residência em Mariana, a empresa não o reconhece como atingido de Bento Rodrigues. Para além disso, o terreno herdado dos pais foi desapropriado pelo governador de Minas Gerais, Fernando Pimentel (PT), que, em setembro deste ano, assinou uma requisição administrativa de terrenos no distrito de Bento Rodrigues para que a Samarco construa o Dique S4.</p><p>Na ocasião, o Movimento do Atingidos por Barragens (MAB) se posicionou dizendo que a ação \"só simboliza um Estado refém dos interesses privados das mineradoras transnacionais.\"</p>"
 
+  - type: multimedia
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/u-ddXSEut9A" frameborder="0" allowfullscreen></iframe>
 
 
   - type: image
@@ -125,7 +126,7 @@ sections:
     mobile: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
     title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
   - type: image
-    desktop: //farm6.staticflickr.com/5660/30461746182_0feee6cd30_b.jpg
-    mobile: //farm6.staticflickr.com/5660/30461746182_0feee6cd30_b.jpg
+    desktop: //farm6.staticflickr.com/5471/29967477173_4e42af1d3e_b.jpg
+    mobile: //farm6.staticflickr.com/5471/29967477173_4e42af1d3e_b.jpg
     title: Única parede de pé de uma casa
 ---

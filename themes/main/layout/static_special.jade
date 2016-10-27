@@ -1,27 +1,24 @@
+mixin picture(section)
+  picture(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
+    source(srcset=section.desktop media="(min-width: 690px)")
+    img(itemprop="url" src=section.mobile  alt=section.title title=section.title)
+    meta(itemprop="width" content="960")
+    meta(itemprop="height" content="640")
+
 mixin displayText(section)
-  section.text.verticalSpacing
-    !{section.text}
+  section.text.verticalSpacing !{section.text}
 
 mixin displaySubtitle(section)
   section.subtitle.verticalSpacing
-    h2.subtitle= section.title
+    h2.subtitle= section.text
 
 mixin displayImage(section)
   section.image.verticalSpacing
-    picture(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
-      source(srcset=section.desktop media="(min-width: 690px)")
-      img(itemprop="url" src=section.mobile  alt=section.title title=section.title)
-      meta(itemprop="width" content="960")
-      meta(itemprop="height" content="640")
-          
-mixin displayImageAsLink(section)
-  section.image.verticalSpacing
-    a(itemprop="url" href=section.link target="_blank")
-      picture(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
-        source(srcset=section.desktop media="(min-width: 690px)")
-        img(itemprop="url" src=section.mobile  alt=section.title title=section.title)
-        meta(itemprop="width" content="960")
-        meta(itemprop="height" content="640")
+    if section.link
+      a(itemprop="url" href=section.link target="_blank")
+        +picture(section)
+    else
+      +picture(section)
 
 mixin displayLinks(section)
   section.links.verticalSpacing
@@ -38,14 +35,7 @@ mixin displayLinks(section)
 mixin displayMultimedia(section)
   section.multimedia.verticalSpacing
     .container
-      .video-wrapper.content-wrapper
-        !{section.embed}
-        
-mixin displayVideo(section)
-  section.video.verticalSpacing
-    .container
-      .video-wrapper.video-wrapper-16x9
-        !{section.embed}        
+      .video-wrapper.content-wrapper(style="padding-bottom: #{section.ratio};") !{section.embed}
 
 mixin displayQuote(section)
   section.quote
@@ -106,22 +96,23 @@ append content
 
       div.blocks(itemprop="articleBody")
         each section in page.sections
-          if section.type == 'links'
-            +displayLinks(section)
-          else if section.type == 'text'
-            +displayText(section)
-          else if section.type == 'subtitle'
-            +displaySubtitle(section)
-          else if section.type == 'image'
-            +displayImage(section)
-          else if section.type == 'multimedia'
-            +displayMultimedia(section)
-          else if section.type == 'video'
-            +displayVideo(section)
-          else if section.type == 'imagelink'
-            +displayImageAsLink(section)
-          else if section.type == 'quote'
-            +displayQuote(section)
+          case section.type
+            when 'links'
+              +displayLinks(section)
+            when 'text'
+              +displayText(section)
+            when 'subtitle'
+              +displaySubtitle(section)
+            when 'image'
+              +displayImage(section)
+            when 'multimedia'
+              +displayMultimedia(section)
+            when 'video'
+              +displayVideo(section)
+            when 'imagelink'
+              +displayImageAsLink(section)
+            when 'quote'
+              +displayQuote(section)
 
         #share-special.share-special-top
           a.share-icon(href='https://www.facebook.com/sharer/sharer.php?u=#{config.url}#{page.url}%3Freferer=bdf_button_facebook' target='_blank' title='Compartilhe no Facebook')
