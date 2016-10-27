@@ -6,8 +6,7 @@ mixin picture(section)
     meta(itemprop="height" content="640")
 
 mixin displayText(section)
-  section.text.verticalSpacing
-    !{section.text}
+  section.text.verticalSpacing !{section.text}
 
 mixin displaySubtitle(section)
   section.subtitle.verticalSpacing
@@ -37,14 +36,12 @@ mixin displayLinks(section)
 mixin displayMultimedia(section)
   section.multimedia.verticalSpacing
     .container
-      .video-wrapper.content-wrapper
-        !{section.embed}
+      .video-wrapper.content-wrapper !{section.embed}
         
 mixin displayVideo(section)
   section.video.verticalSpacing
     .container
-      .video-wrapper.video-wrapper-16x9
-        !{section.embed}        
+      .video-wrapper.video-wrapper-16x9 !{section.embed}
 
 mixin displayQuote(section)
   section.quote
