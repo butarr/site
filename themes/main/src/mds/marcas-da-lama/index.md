@@ -60,7 +60,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5720/30466295692_e1628aaa8a_b.jpg
-    mobile: //farm6.staticflickr.com/5720/30466295692_e1628aaa8a_b.jpg
+    mobile: //farm6.staticflickr.com/5728/29966542273_910518cce9_b.jpg
     title: "Mapa demarcando a barragem, Bento Rodrigues e Mariana em Minas Gerais"
 
   - type: text
@@ -68,7 +68,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5444/29944612863_5838d974d8_b.jpg
-    mobile: //farm6.staticflickr.com/5444/29944612863_5838d974d8_b.jpg
+    mobile: //farm6.staticflickr.com/5759/30600188485_c69d155d48_b.jpg
     title: "Foto de Joana D'arc Norberto, de 43 anos, com sua fala \"Não estava em casa quando tudo aconteceu. Um genro me ligou e disse: 'ei, Joana, acabou Bento, morreu todo mundo'\""
 
   - type: text
@@ -90,7 +90,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5680/29946540724_c36059779d_b.jpg
-    mobile: //farm6.staticflickr.com/5680/29946540724_c36059779d_b.jpg
+    mobile: //farm6.staticflickr.com/5697/29968095974_36bf78bc65_b.jpg
     title: "Foto de Manuel Marcos Muniz, de 52 anos, com sua fala \"A gente acha que já passou, que já acabou, mas tem dia que a gente só vive em função da tragédia da Samarco, do rompimento da barragem\""
 
   - type: text
@@ -99,7 +99,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5806/30586453595_2b4d32bd3a_b.jpg
-    mobile: //farm6.staticflickr.com/5806/30586453595_2b4d32bd3a_b.jpg
+    mobile: //farm6.staticflickr.com/5537/29966502163_9c882af9e6_b.jpg
     title: Fotos da Antiga Bento Rodrigues, com criança, rio, horta.
 
   - type: image
