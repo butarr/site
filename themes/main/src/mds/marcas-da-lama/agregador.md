@@ -26,14 +26,14 @@ sections:
     text: "<p>Talvez algum texto aqui...</p>"
 
   - type: links
-    title: "Capítulo 1: Pessoas e Cidades"
+    title: "Capítulo 1: Os atingidos"
     links:
-      - title: O adeus à Bento Rodrigues
-        url: /2016/09/08/governo-alckmin-infiltrou-pm-em-tinder-para-prender-manifestantes-dizem-vitimas/
-        cover: //farm9.staticflickr.com/8626/29951176424_2163179ec4_b.jpg
-      - title: Mais um mais ums mais mum
-        url: /2016/09/06/mais-um-mais-ums-mais-mum/
-        cover: http://thecybertramp.com/blog/wp-content/uploads/2011/08/rainbow.jpg
+      - title: O adeus a Bento Rodrigues
+        url: /marcas-da-lama/pagina1.html
+        cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
+      - title: "Barra Longa: a cidade canteiro de obras"
+        url: /marcas-da-lama/pagina2.html
+        cover: //farm6.staticflickr.com/5483/29975370914_5849a56f7c_b.jpg
       - title: Deputados e ministros são coronéis da mídia em Pernambuco
         url: /2016/08/17/ministros-e-deputados-sao-coroneis-da-midia-em-pernambuco/
         cover: https://pubs.usgs.gov/dds/dds-80/images/other/cover_photo.jpg
@@ -41,7 +41,7 @@ sections:
   - type: links
     title: "Capítulo 2: Samarco"
     links:
-      - title: Artigo sobre Verdura
+      - title: A Samarco e o modelo de mineração no Brasil
         url: https://brasildefato.com.br
         cover: http://assets.barcroftmedia.com.s3-website-eu-west-1.amazonaws.com/assets/images/recent-images-14.jpg
       - title: Artigo sobre DNS
@@ -49,9 +49,9 @@ sections:
         cover: http://www.planwallpaper.com/static/images/foggygoldengatebridge.jpg
   
   - type: links
-    title: "Capítulo 3: O Futuro"
+    title: "Capítulo 3: A resistência"
     links:
-      - title: Artigo sobre Queijo
+      - title: A resistência na Bacia do Rio Doce
         url: https://brasildefato.com.br
         cover: http://www.hdcreativewallpaper.com/uploads/cache/968274544/playful-kitty-hd-1080p-images-download-36lO-480x320-MM-78.jpg
 ---
