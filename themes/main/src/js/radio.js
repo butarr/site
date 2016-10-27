@@ -3,8 +3,20 @@ function getWidget(id) {
   return SC.Widget(iframe);
 }
 
+function updateProgressBar(id) {
+  var progressBar = $('#item_' + id + ' progress')[0];
+
+  return function(sound) {
+    progressBar.value = sound.relativePosition * 100;
+  };
+}
+
 function play(id) {
-  getWidget(id).play();
+  var widget = getWidget(id);
+
+  widget.bind(SC.Widget.Events.PLAY_PROGRESS, updateProgressBar(id));
+  widget.play();
+
   $('#item_' + id + ' .play').hide();
   $('#item_' + id + ' .pause').show();
 }

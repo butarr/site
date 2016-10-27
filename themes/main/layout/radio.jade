@@ -51,7 +51,7 @@ append content
               i.pause.fa.fa-pause-circle-o(onclick="pause(#{position});")
               a.news-radio-link(href=post.path)
                 h3.title(itemprop= "headline")= post.title
-            progress(min='0', max='100', value='0') 0% played
+            progress(min='0', max='100', value='0')
             a.download(href="javascript:download(#{position});") Download
 
       include _partial/pagination
