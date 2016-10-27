@@ -115,7 +115,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
-    mobile: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
+    mobile: //farm6.staticflickr.com/5727/29973631194_29d8bcc5d2_b.jpg
     title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
   - type: image
     desktop: //farm6.staticflickr.com/5471/29967477173_4e42af1d3e_b.jpg
