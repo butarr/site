@@ -24,6 +24,11 @@ $link-color: $red-base;
 $link-visited-color: $red-pinker;
 $link-hover-color: $red-light;
 
+$special-base: #2a1c16;
+$link-special-color: lighten($special-base, 10%);
+$link-special-visited-color: lighten($special-base, 30%);
+$link-special-hover-color: lighten($special-base, 50%);
+
 $link-neutral-color: lighten($neutral-base, 10%);
 $link-neutral-color-visited: lighten($neutral-base, 30%);
 $link-neutral-color-hover: lighten($neutral-base, 50%);

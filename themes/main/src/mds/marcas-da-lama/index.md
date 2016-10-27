@@ -39,10 +39,10 @@ sections:
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/cy-1G6Js3cc" frameborder="0" allowfullscreen></iframe>
 
-  - type: image
-    desktop: //farm6.staticflickr.com/5761/30498538991_fdfae9b1a4_b.jpg
-    mobile: //farm6.staticflickr.com/5761/30498538991_fdfae9b1a4_b.jpg
-    title: Titulo Antes e Depois de Bento Rodrigues
+  - type: subtitle
+    desktop: //farm6.staticflickr.com/5457/30487004472_406c67db28_b.jpg
+    mobile: //farm6.staticflickr.com/5457/30487004472_406c67db28_b.jpg
+    text: O antes e depois de Bento Rodrigues
 
   - type: multimedia
     embed: <iframe class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=9a91474c-88df-11e5-a524-0e7075bba956" width="100%" height="747px" frameborder="0"></iframe>
@@ -95,21 +95,14 @@ sections:
   - type: text
     text: "<p>As lembranças de infância de Manuel Marcos Muniz, mais conhecido como Marquinhos, são de Bento Rodrigues. Os ensinamentos da roça vieram dos pais, que se mudaram para o pequeno vilarejo quando ele ainda era um menino. A rotina da família era guiada pelas criações de animais e plantações ao redor da casa.</p><p>As transformações do povoado mineiro ocorreram ao compasso das mudanças em sua vida. Início dos estudos, primeira namorada, casamento, o nascimento da única filha. Aposentado e com 52 anos, hoje, a cada lembrança vasculhada na memória, um relato sobre Bento. “As raízes estavam todas ali”, diz.</p><p>Para acomodar a vida familiar, o trabalho da esposa e os estudos da filha, no início dos anos 2000, a rotina passou a ser dividida entre Bento Rodrigues e o centro do município de Mariana, onde também construiu uma casa. As criações de galinhas, porcos e a lavoura permaneceram no pequeno distrito e ficavam aos cuidados de um de seus irmãos. Já aos finais de semana, o próprio Marquinhos se responsabilizava pelo roçado e aproveitava a vida no campo com a família.</p><p>Felizmente, conta ele, os registros dessa rotina ficaram preservados nas fotografias guardadas na casa em Mariana. Nem tudo foi perdido na lama.</p>"
 
-
   - type: image
     desktop: //farm6.staticflickr.com/5806/30586453595_2b4d32bd3a_b.jpg
     mobile: //farm6.staticflickr.com/5537/29966502163_9c882af9e6_b.jpg
-    title: Fotos da Antiga Bento Rodrigues, com criança, rio, horta.
-
-  - type: image
-    desktop: //farm9.staticflickr.com/8617/30586475515_6ebd3069cf_b.jpg
-    mobile: //farm9.staticflickr.com/8617/30586475515_6ebd3069cf_b.jpg
-    title: Lembranças de Bento Rodrigues
+    text: Clique aqui para ver o álbum
     link: https://www.flickr.com/photos/brasildefato/albums/72157675597652176
 
   - type: text
     text: "<p>Em Bento Rodrigues, Marquinhos tinha três propriedades. A casa dos pais, como uma herança dividida entre ele e sete irmãos, e dois terrenos. Uma vez aposentado e com a filha crescida, o plano era voltar para o vilarejo, no qual pretendia passar o resto da vida. Ver a destruição após a passagem da lama foi “um sonho interrompido”, lamenta. Uma marca para a vida inteira; assim ele qualifica o momento em que soube que Bento não existiria mais (ver vídeo).</p>"
-
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/Gii1uTncPxE" frameborder="0" allowfullscreen></iframe>
@@ -119,7 +112,6 @@ sections:
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/u-ddXSEut9A" frameborder="0" allowfullscreen></iframe>
-
 
   - type: image
     desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg

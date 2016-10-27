@@ -95,14 +95,10 @@
 
   section.image {
     position: relative;
+
     img {
       display: block;
       width: 100%;
-    }
-
-    .image-link {
-      padding: 10px 10px 0;
-      background-color: $special-background;
     }
   }
 

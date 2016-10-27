@@ -720,11 +720,11 @@ $number-size: 1.3rem;
     color: $text-color;
 
     .text {
-      font: 900 1.8rem/1.4 $family-serif;
+      font: 900 1.6rem/1.4 $family-serif;
       text-align: center;
 
       @include media-query(THREE) {
-        font-size: 2.2rem;
+        font-size: 2.0rem;
       }
     }
   }
@@ -781,17 +781,18 @@ $number-size: 1.3rem;
   }
 
   section.image {
+    text-align: center;
+
     .link-text {
-      color: $link-color;
-      font-weight: bold;
-      text-align: center;
+      color: $link-special-color;
+      font: bold 1rem/1 $family-serif;
 
       &:visited {
-        color: $link-visited-color;
+        color: $link-special-visited-color;
       }
 
       &:hover {
-        color: $link-hover-color;
+        color: $link-special-hover-color;
       }
     }
   }
