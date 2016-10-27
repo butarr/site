@@ -1,39 +1,47 @@
 @import '_helpers/query';
 @import '_helpers/constants';
 @import '_helpers/colors';
+@import '_helpers/fonts';
+@import '_helpers/mixins';
 
 #radio {
+  @include get-font(RADIO);
+
+  .page-name{
+    @include page-name();
+    @include media-query(TWO) {
+      margin-bottom: 15px;
+    }
+  }
 
   .divisor {
     padding: 20px 0;
     border-bottom: 1px solid $content-divisor;
   }
 
-  .player {
-    .widget {
-      display: none;
-    }
+  .widget {
+    display: none;
+  }
 
-    i {
-      font-size: 4em;
-    }
+  i {
+    font-size: 4em;
+  }
 
-    .pause {
-      display: none;
-    }
+  .pause {
+    display: none;
+  }
 
-    .player-title {
-      width: 100%;
-      display: flex;
-    }
+  .player-title {
+    width: 100%;
+    display: flex;
+  }
 
-    .title {
-      padding-left: 10px;
-    }
+  .title {
+    padding-left: 15px;
+  }
 
-    progress {
-      width: 100%;
-      padding: $VERTICAL-SPACE 0;
-    }
+  progress {
+    width: 100%;
+    padding: $VERTICAL-SPACE 0;
   }
 }

@@ -806,6 +806,13 @@ $number-size: 1.3rem;
   }
 }
 
+@mixin __radio(){
+  .download {
+    font: bold #{$details-size}/#{$line-separation-small} $family-sans;
+    color: $columnist-name-color;
+  }
+}
+
 @mixin get-font($type){
   @if( $type == POST ){
     @include __post();
@@ -857,5 +864,8 @@ $number-size: 1.3rem;
   }
   @else if( $type == SPECIAL ){
     @include __special();
+  }
+  @else if( $type == RADIO ){
+    @include __radio();
   }
 }
