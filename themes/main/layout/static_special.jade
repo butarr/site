@@ -1,3 +1,10 @@
+mixin picture(section)
+  picture(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
+    source(srcset=section.desktop media="(min-width: 690px)")
+    img(itemprop="url" src=section.mobile  alt=section.title title=section.title)
+    meta(itemprop="width" content="960")
+    meta(itemprop="height" content="640")
+
 mixin displayText(section)
   section.text.verticalSpacing
     !{section.text}
@@ -8,20 +15,12 @@ mixin displaySubtitle(section)
 
 mixin displayImage(section)
   section.image.verticalSpacing
-    picture(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
-      source(srcset=section.desktop media="(min-width: 690px)")
-      img(itemprop="url" src=section.mobile  alt=section.title title=section.title)
-      meta(itemprop="width" content="960")
-      meta(itemprop="height" content="640")
+    +picture(section)
           
 mixin displayImageAsLink(section)
   section.image.verticalSpacing
     a(itemprop="url" href=section.link target="_blank")
-      picture(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
-        source(srcset=section.desktop media="(min-width: 690px)")
-        img(itemprop="url" src=section.mobile  alt=section.title title=section.title)
-        meta(itemprop="width" content="960")
-        meta(itemprop="height" content="640")
+      +picture(section)
 
 mixin displayLinks(section)
   section.links.verticalSpacing
