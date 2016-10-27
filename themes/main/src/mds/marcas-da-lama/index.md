@@ -127,7 +127,7 @@ sections:
     mobile: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
     title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
   - type: image
-    desktop: //farm6.staticflickr.com/5660/30461746182_0feee6cd30_b.jpg
-    mobile: //farm6.staticflickr.com/5660/30461746182_0feee6cd30_b.jpg
+    desktop: //farm6.staticflickr.com/5471/29967477173_4e42af1d3e_b.jpg
+    mobile: //farm6.staticflickr.com/5471/29967477173_4e42af1d3e_b.jpg
     title: Única parede de pé de uma casa
 ---
