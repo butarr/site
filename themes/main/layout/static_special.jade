@@ -10,15 +10,13 @@ mixin displayText(section)
 
 mixin displaySubtitle(section)
   section.subtitle.verticalSpacing
-    h2.subtitle= section.text
+    h2.text= section.text
 
 mixin displayImage(section)
   section.image.verticalSpacing
+    +picture(section)
     if section.link
-      a(itemprop="url" href=section.link target="_blank")
-        +picture(section)
-    else
-      +picture(section)
+      a.link-text(itemprop="url" href=section.link target="_blank")= section.text
 
 mixin displayLinks(section)
   section.links.verticalSpacing
