@@ -14,11 +14,10 @@ mixin displaySubtitle(section)
 
 mixin displayImage(section)
   section.image.verticalSpacing
-    +picture(section)
-          
-mixin displayImageAsLink(section)
-  section.image.verticalSpacing
-    a(itemprop="url" href=section.link target="_blank")
+    if section.link
+      a(itemprop="url" href=section.link target="_blank")
+        +picture(section)
+    else
       +picture(section)
 
 mixin displayLinks(section)

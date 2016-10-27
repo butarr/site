@@ -102,7 +102,7 @@ sections:
     mobile: //farm6.staticflickr.com/5806/30586453595_2b4d32bd3a_b.jpg
     title: Fotos da Antiga Bento Rodrigues, com criança, rio, horta.
 
-  - type: imagelink
+  - type: image
     desktop: //farm9.staticflickr.com/8617/30586475515_6ebd3069cf_b.jpg
     mobile: //farm9.staticflickr.com/8617/30586475515_6ebd3069cf_b.jpg
     title: Lembranças de Bento Rodrigues
