@@ -2,22 +2,38 @@
 @import '_helpers/constants';
 @import '_helpers/colors';
 
-.player {
-  display: flex;
+#radio {
 
-  .widget {
-    display: none;
+  .divisor {
+    padding: 20px 0;
+    border-bottom: 1px solid $content-divisor;
   }
 
-  i {
-    font-size: 4em;
-  }
+  .player {
+    .widget {
+      display: none;
+    }
 
-  .pause {
-    display: none;
-  }
+    i {
+      font-size: 4em;
+    }
 
-  .divisor + .divisor {
-    border-top: 1px solid $content-divisor;
+    .pause {
+      display: none;
+    }
+
+    .player-title {
+      width: 100%;
+      display: flex;
+    }
+
+    .title {
+      padding-left: 10px;
+    }
+
+    progress {
+      width: 100%;
+      padding: $VERTICAL-SPACE 0;
+    }
   }
 }

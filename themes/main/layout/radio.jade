@@ -20,14 +20,14 @@ block open_graph
 append content
   main.grid-3-columns
 
-    section#news-list(class= "list" itemscope itemtype="http://schema.org/ItemList" lang= language)
+    section#radio(class= "list" itemscope itemtype="http://schema.org/ItemList" lang= language)
       h1(class="page-name" itemprop="name")= page.area
 
       - var position= 0
       each post in page.news
         - var published_at = utc_to_brt(post.date)
 
-        .news-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
+        .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
           meta(itemprop="url" content="https://www.brasildefato.com.br/#{post.path}")
           meta(itemprop="position" content="#{++position}")
 
@@ -45,11 +45,13 @@ append content
               link(itemprop="sameAs" href="https://www.brasildefato.com.br")
 
           div.player(id="item_#{position}")
-            iframe.widget(src="https://w.soundcloud.com/player/?url=#{post.audio}&color=8c191f&auto_play=false&show_artwork=false&show_comments=false&show_playcount=true&hide_related=true&show_user=false&show_reposts=false&liking=false&visual=false&buying=false&sharing=false&download=true&following=false")
-            i.play.fa.fa-play-circle-o(onclick="play(#{position});")
-            i.pause.fa.fa-pause-circle-o(onclick="pause(#{position});")
-            a.news-item-link(href=post.path)
-              h3.title(itemprop= "headline")= post.title
+            .player-title
+              iframe.widget(src="https://w.soundcloud.com/player/?url=#{post.audio}&color=8c191f&auto_play=false&show_artwork=false&show_comments=false&show_playcount=true&hide_related=true&show_user=false&show_reposts=false&liking=false&visual=false&buying=false&sharing=false&download=true&following=false")
+              i.play.fa.fa-play-circle-o(onclick="play(#{position});")
+              i.pause.fa.fa-pause-circle-o(onclick="pause(#{position});")
+              a.news-radio-link(href=post.path)
+                h3.title(itemprop= "headline")= post.title
+            progress(min='0', max='100', value='0') 0% played
             a.download(href="javascript:download(#{position});") Download
 
       include _partial/pagination
