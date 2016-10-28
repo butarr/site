@@ -22,13 +22,13 @@ mixin displayLinks(section)
   section.links.verticalSpacing
     h2.links-headline= section.title
     ul.links-container(itemscope itemtype="https://schema.org/ItemList")
-      each p,i in section.links
+      each item, category in section.links
         li.link(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-          meta(itemprop="position" content=i)
-          a(itemprop="url" href=p.url)
+          meta(itemprop="position" content=category)
+          a(itemprop="url" href=item.url)
             figure
-              img(src=p.cover  alt=p.title title=p.title itemprop="image")
-            h3.link-figure-title(itemprop="name")= p.title
+              img(src=item.cover  alt=item.title title=item.title itemprop="image")
+            h3.link-figure-title(itemprop="name")= item.title
 
 mixin displayMultimedia(section)
   section.multimedia.verticalSpacing
