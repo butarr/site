@@ -1,7 +1,7 @@
 ---
 layout: static_special
 area: especial
-url: /marcas-da-lama/
+url: /marcas-da-lama/barra-longa/
 title: "O adeus a Bento Rodrigues"
 description: O dia 5 de novembro de 2015 ficou marcado na história com o maior desastre ambiental do país
 author: Redação Brasil de Fato
@@ -67,8 +67,8 @@ sections:
     title: ""
 
   - type: multimedia
-    embed: "" 
-    
+    embed: ""
+
   - type: image
     desktop: ""
     mobile: ""
