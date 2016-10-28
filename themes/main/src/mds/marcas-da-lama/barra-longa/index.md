@@ -35,13 +35,13 @@ sections:
 
 
   - type: multimedia
-    embed: ""
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/KWlRqtRHNAo" frameborder="0" allowfullscreen></iframe>
 
   - type: text
     text: ""
 
   - type: multimedia
-    embed: ""
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/1ghhXZGNRCY" frameborder="0" allowfullscreen></iframe>
 
   - type: text
     text: ""
@@ -65,7 +65,7 @@ sections:
     title: ""
 
   - type: multimedia
-    embed: ""
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/T_6qI9VItKM" frameborder="0" allowfullscreen></iframe>
 
   - type: image
     desktop: ""
@@ -81,7 +81,7 @@ sections:
     text: ""  
 
   - type: multimedia
-    embed: ""   
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/E1NpEKxfXOg" frameborder="0" allowfullscreen></iframe>   
 
   - type: image
     desktop: ""
