@@ -2,8 +2,8 @@
 layout: static_special
 area: especial
 url: /marcas-da-lama/barra-longa/
-title: "O adeus a Bento Rodrigues"
-description: O dia 5 de novembro de 2015 ficou marcado na história com o maior desastre ambiental do país
+title: "Barra Longa: a cidade canteiro de obras"
+description: Poeira, barulho excessivo e ininterrupto, transtornos psicológicos e doenças respiratórias permanecem na rotina dos moradores
 author: Redação Brasil de Fato
 tags:
   - especial
@@ -25,7 +25,9 @@ published_at: 2016-10-28T22:58:23.677Z
 
 sections:
   - type: text
-    text: "<p></p>"
+    text: "<p>Localizada a 70 km de Mariana, a cidade de Barra Longa, cuja população é de cerca de 6 mil pessoas, foi uma das impactadas pela lama de rejeitos da mineradora Samarco, após o rompimento da barragem de Fundão, em 5 de novembro de 2015.</p>
+    <p>A enxurrada de lama, que matou 19 pessoas, percorreu o Rio Gualaxo e chegou ao local por volta das 22h, devastando o perímetro urbano do município, invadindo casas e destruindo patrimônios públicos, entre eles a Praça Manoel Lino Mol. Alcançou também o povoado de Gesteira, com pouco mais de 100 habitantes, onde a lama atingiu a tradicional Igreja de Nossa Senhora da Conceição.</p>
+    <p>Segundo o relatório da Secretaria de Estado de Desenvolvimento Regional de Política Urbana e Gestão Metropolitana (Sedru), Barra Longa foi prejudicada, principalmente, na pecuária e no comércio, com prejuízos imediatos estimados em R$ 14,5 milhões e R$ 1 milhão, respectivamente. Tais perdas ainda estão presentes na vida de pequenos produtores e comerciantes, que não conseguiram ter a mesma renda anterior à tragédia.</p>"
 
 
   - type: image
@@ -38,13 +40,16 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/KWlRqtRHNAo" frameborder="0" allowfullscreen></iframe>
 
   - type: text
-    text: ""
+    text: "<p>A rotina na cidade não voltou ao normal. Os espaços públicos e coletivos permanecem em obras e a utilização do rio, que antes servia para a pesca e o lazer, está totalmente comprometida. Nas ruas, o trânsito de caminhões, máquinas e ônibus segue ininterrupto durante o dia e a noite, limitando a circulação dos moradores pela cidade.</p>
+    <p>Ainda hoje, Barra Longa é uma “cidade canteiro de obras”. São mais de 600 funcionários de diferentes empreiteiras que tentam recuperar os estragos causados.</p>"
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/1ghhXZGNRCY" frameborder="0" allowfullscreen></iframe>
 
   - type: text
-    text: ""
+    text: "<p>A lama que ficou pelas ruas tornou-se sólida e seca. Com a ventania e a passagem de carros e caminhões, a poeira sempre visível pode ser a causa de muitos problemas de saúde. Neste ano, a Secretaria de Saúde do município informou que houve um aumento expressivo de casos de pessoas com insuficiência respiratória, além de doenças de pele e diarreia.</p>
+    <p>Logo após o rompimento, o Grupo Independente de Avaliação do Impacto Ambiental (Giaia), um coletivo científico-cidadão que se organizou para fazer uma análise colaborativa do impacto ambiental em Mariana, publicou no <a href=http://giaia.eco.br/wp-content/uploads/2015/12/Resultados-11_12-Agua-GIAIA.pdf>“Relatório Parcial Expedição Rio Doce”</a> que elementos químicos como manganês, arsênio e chumbo estavam acima do permitido pela legislação; e “que mesmo não tendo padrão de legislação comparativa para os metais ferro e alumínio, esses estão em concentrações extremamente altas em todos os pontos de coleta afetados pela lama de rejeito”.</p>
+    <p>No mesmo período, a Samarco afirmou em seu portal online que “seu rejeito não é tóxico e não apresenta periculosidade à saúde humana, tendo em vista que não disponibiliza contaminantes para a água, mesmo em condições de exposição à chuva”. No entanto, os impactos na saúde são as principais reclamações dos moradores</p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5321/30324862390_31d00d10ac_b.jpg
