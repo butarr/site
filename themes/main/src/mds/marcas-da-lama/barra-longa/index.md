@@ -11,7 +11,7 @@ tags:
   - mariana
   - barragem
   - samarco
-  - "bento rodrigues"
+  - "barra longa"
 cover:
   link: //farm6.staticflickr.com/5792/30542012446_8096cd26b0_b.jpg
   thumbnail: //farm6.staticflickr.com/5792/30542012446_8096cd26b0_t.jpg
