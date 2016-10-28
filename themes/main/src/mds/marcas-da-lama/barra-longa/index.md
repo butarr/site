@@ -12,12 +12,12 @@ tags:
   - barragem
   - samarco
   - "barra longa"
-cover:
+cover:P
   link: //farm6.staticflickr.com/5681/30322277070_597104e36e_b.jpg
   thumbnail: //farm6.staticflickr.com/5681/30322277070_597104e36e_t.jpg
   medium: //farm6.staticflickr.com/5681/30322277070_597104e36e_z.jpg
   small: //farm6.staticflickr.com/5681/30322277070_597104e36e_n.jpg
-  title: ruínas enlamaçadas
+  title: Pórtico da entrada da cidade de Barra Longa em meio a lama
   credits: Lucas Bois
   subtitle: Bento Rodrigues
 date: 2016-10-28T22:58:23.677Z
@@ -25,9 +25,7 @@ published_at: 2016-10-28T22:58:23.677Z
 
 sections:
   - type: text
-    text: "<p>Localizada a 70 km de Mariana, a cidade de Barra Longa foi uma das impactadas pela lama de rejeito da mineradora Samarco, após o rompimento da barragem de Fundão, em 5 de novembro de 2015.</p>
-    <p>A enxurrada de lama que matou 19 pessoas, percorreu o Rio Gualaxo, e chegou no local por volta das 22h, devastando o perímetro urbano da cidade, invadindo casas e destruindo patrimônios públicos, entre eles a Praça Manoel Lino Mol, além do povoado de Gesteira, de pouco mais de 100 habitantes, onde a lama atingiu a tradicional Igreja de Nossa Senhora da Conceição.</p>
-    <p>Segundo o relatório da Secretaria de Estado de Desenvolvimento Regional de Política Urbana e Gestão Metropolitana (SEDRU), Barra Longa, cuja população é de cerca de 6 mil pessoas, foi prejudicada principalmente na pecuária e no comércio, com prejuízos imediatos estimados em R$ 14,5 milhões e R$ 1 milhão, respectivamente. Tais perdas ainda são presentes na vida de pequenos produtores e comerciantes que não conseguiram voltar a ter a receita anterior à tragédia.</p>"
+    text: "<p></p>"
 
 
   - type: image
@@ -103,5 +101,13 @@ sections:
     desktop: ""
     mobile: ""
     title: ""  
+  - type: image
+    desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
+    mobile: //farm6.staticflickr.com/5727/29973631194_29d8bcc5d2_b.jpg
+    title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
+  - type: image
+    desktop: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
+    mobile: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
+    title: Corvo no topo de uma montanha de lama
 
 ---
