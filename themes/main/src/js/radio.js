@@ -41,10 +41,23 @@ function pause(id) {
   $('#item_' + id + ' .play').show();
 }
 
-function download(id) {
-  getWidget(id).getCurrentSound(function(sound){
-    var link = $('#item_' + id + ' .download')[0];
-    link.href = sound.download_url + "?client_id=cUa40O3Jg3Emvp6Tv4U6ymYYO50NUGpJ";
-    link.click();
-  });
+function setDownloadLink(widget, playerDiv) {
+  return function() {
+    widget.getCurrentSound(function(sound) {
+      var link = playerDiv.find('.download')[0];
+      link.href = sound.download_url + "?client_id=cUa40O3Jg3Emvp6Tv4U6ymYYO50NUGpJ";
+    });
+  };
 }
+
+function setup() {
+  $('.player').each(function(index) {
+    var playerDiv = $(this);
+    var widget = SC.Widget(playerDiv.find('.widget')[0]);
+
+    widget.bind(SC.Widget.Events.READY, setDownloadLink(widget, playerDiv));
+  });
+  
+};
+
+$(document).ready(setup);
