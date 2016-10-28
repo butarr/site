@@ -13,10 +13,10 @@ tags:
   - samarco
   - "barra longa"
 cover:
-  link: //farm6.staticflickr.com/5792/30542012446_8096cd26b0_b.jpg
-  thumbnail: //farm6.staticflickr.com/5792/30542012446_8096cd26b0_t.jpg
-  medium: //farm6.staticflickr.com/5792/30542012446_8096cd26b0_z.jpg
-  small: //farm6.staticflickr.com/5792/30542012446_8096cd26b0_n.jpg
+  link: //farm6.staticflickr.com/5681/30322277070_597104e36e_b.jpg
+  thumbnail: //farm6.staticflickr.com/5681/30322277070_597104e36e_t.jpg
+  medium: //farm6.staticflickr.com/5681/30322277070_597104e36e_z.jpg
+  small: //farm6.staticflickr.com/5681/30322277070_597104e36e_n.jpg
   title: ruínas enlamaçadas
   credits: Lucas Bois
   subtitle: Bento Rodrigues
