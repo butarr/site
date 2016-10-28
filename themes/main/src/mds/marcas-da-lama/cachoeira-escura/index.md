@@ -13,10 +13,10 @@ tags:
   - samarco
   - "bento rodrigues"
 cover:
-  link: //farm6.staticflickr.com/5651/30507064272_a4e28b4ef7_b.jpg
-  thumbnail: //farm6.staticflickr.com/5651/30507064272_a4e28b4ef7_t.jpg
-  medium: //farm6.staticflickr.com/5651/30507064272_a4e28b4ef7_z.jpg
-  small: //farm6.staticflickr.com/5651/30507064272_a4e28b4ef7_n.jpg
+  link: //farm6.staticflickr.com/5555/30624300005_d30e171979_b.jpg
+  thumbnail: //farm6.staticflickr.com/5555/30624300005_d30e171979_t.jpg
+  medium: //farm6.staticflickr.com/5555/30624300005_d30e171979_z.jpg
+  small: //farm6.staticflickr.com/5555/30624300005_d30e171979_n.jpg
   title: galões coloridos
   credits: Lucas Bois
   subtitle: Bento Rodrigues
