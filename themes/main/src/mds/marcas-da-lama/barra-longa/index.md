@@ -92,7 +92,7 @@ sections:
     text: ""  
 
   - type: multimedia
-    embed: ""     
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/nERWksYhIcI" frameborder="0" allowfullscreen></iframe>     
 
   - type: text
     text: ""
