@@ -12,7 +12,7 @@ tags:
   - barragem
   - samarco
   - "barra longa"
-cover:P
+cover:
   link: //farm6.staticflickr.com/5681/30322277070_597104e36e_b.jpg
   thumbnail: //farm6.staticflickr.com/5681/30322277070_597104e36e_t.jpg
   medium: //farm6.staticflickr.com/5681/30322277070_597104e36e_z.jpg
