@@ -698,7 +698,7 @@ $number-size: 1.3rem;
     color: $link-inverted-color;
 
     .pageTitle {
-      font: 900 2rem/1.36 $family-serif;
+      font: 900 2rem/1.2 $family-serif;
       text-shadow: 0 2px 0 rgba(0, 0, 0, 0.9);
 
       @include media-query(THREE){
@@ -707,7 +707,7 @@ $number-size: 1.3rem;
     }
 
     .description {
-      font: bold italic 1.3rem/1.4 $family-serif;
+      font: 400 italic 1.3rem/1.2 $family-serif;
       text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
 
       @include media-query(FOUR){
