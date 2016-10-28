@@ -3,6 +3,17 @@ function getWidget(id) {
   return SC.Widget(iframe);
 }
 
+function handleProgressBarClick(id) {
+  var widget = getWidget(id);
+
+  return function(e) {
+    widget.getDuration(function(duration) {
+      var offset = e.offsetX / e.target.offsetWidth;
+      widget.seekTo(duration * offset);
+    });
+  };
+}
+
 function updateProgressBar(id) {
   var progressBar = $('#item_' + id + ' progress')[0];
 
@@ -13,6 +24,9 @@ function updateProgressBar(id) {
 
 function play(id) {
   var widget = getWidget(id);
+
+  var progressBar = $('#item_' + id + ' progress')[0];
+  progressBar.addEventListener('click', handleProgressBarClick(id));
 
   widget.bind(SC.Widget.Events.PLAY_PROGRESS, updateProgressBar(id));
   widget.play();
