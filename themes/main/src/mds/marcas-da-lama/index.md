@@ -29,10 +29,10 @@ sections:
     title: "Capítulo 1: Os atingidos"
     links:
       - title: O adeus a Bento Rodrigues
-        url: /marcas-da-lama/index.html
+        url: /marcas-da-lama/bento-rodrigues
         cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
       - title: "Barra Longa: a cidade canteiro de obras"
-        url: /marcas-da-lama/pagina-2.html
+        url: /marcas-da-lama/barra-longa
         cover: //farm6.staticflickr.com/5483/29975370914_5849a56f7c_b.jpg
       - title: Deputados e ministros são coronéis da mídia em Pernambuco
         url: /marcas-da-lama/pagina-3.html
