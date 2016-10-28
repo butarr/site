@@ -735,6 +735,19 @@ $number-size: 1.3rem;
     p {
       font: 1.1rem/1.63 $family-serif;
     }
+
+    a {
+        color: $link-special-color;
+        font: bold 1.1rem/1 $family-sans;
+
+        &:visited {
+          color: $link-special-visited-color;
+        }
+
+        &:hover {
+          color: $link-special-hover-color;
+        }
+    }
   }
 
   section.quote {
