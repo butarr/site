@@ -41,15 +41,15 @@ sections:
 
   - type: text
     text: "<p>A rotina na cidade não voltou ao normal. Os espaços públicos e coletivos permanecem em obras e a utilização do rio, que antes servia para a pesca e o lazer, está totalmente comprometida. Nas ruas, o trânsito de caminhões, máquinas e ônibus segue ininterrupto durante o dia e a noite, limitando a circulação dos moradores pela cidade.</p>
-    <p>Ainda hoje, Barra Longa é uma “cidade canteiro de obras”. São mais de 600 funcionários de diferentes empreiteiras que tentam recuperar os estragos causados.</p>"
+    <p>Ainda hoje, Barra Longa é uma \"cidade canteiro de obras\". São mais de 600 funcionários de diferentes empreiteiras que tentam recuperar os estragos causados.</p>"
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/1ghhXZGNRCY" frameborder="0" allowfullscreen></iframe>
 
   - type: text
     text: "<p>A lama que ficou pelas ruas tornou-se sólida e seca. Com a ventania e a passagem de carros e caminhões, a poeira sempre visível pode ser a causa de muitos problemas de saúde. Neste ano, a Secretaria de Saúde do município informou que houve um aumento expressivo de casos de pessoas com insuficiência respiratória, além de doenças de pele e diarreia.</p>
-    <p>Logo após o rompimento, o Grupo Independente de Avaliação do Impacto Ambiental (Giaia), um coletivo científico-cidadão que se organizou para fazer uma análise colaborativa do impacto ambiental em Mariana, publicou no <a href=http://giaia.eco.br/wp-content/uploads/2015/12/Resultados-11_12-Agua-GIAIA.pdf>“Relatório Parcial Expedição Rio Doce”</a> que elementos químicos como manganês, arsênio e chumbo estavam acima do permitido pela legislação; e “que mesmo não tendo padrão de legislação comparativa para os metais ferro e alumínio, esses estão em concentrações extremamente altas em todos os pontos de coleta afetados pela lama de rejeito”.</p>
-    <p>No mesmo período, a Samarco afirmou em seu portal online que “seu rejeito não é tóxico e não apresenta periculosidade à saúde humana, tendo em vista que não disponibiliza contaminantes para a água, mesmo em condições de exposição à chuva”. No entanto, os impactos na saúde são as principais reclamações dos moradores</p>"
+    <p>Logo após o rompimento, o Grupo Independente de Avaliação do Impacto Ambiental (Giaia), um coletivo científico-cidadão que se organizou para fazer uma análise colaborativa do impacto ambiental em Mariana, publicou no <a href=http://giaia.eco.br/wp-content/uploads/2015/12/Resultados-11_12-Agua-GIAIA.pdf>\"Relatório Parcial Expedição Rio Doce\"</a> que elementos químicos como manganês, arsênio e chumbo estavam acima do permitido pela legislação; e \"que mesmo não tendo padrão de legislação comparativa para os metais ferro e alumínio, esses estão em concentrações extremamente altas em todos os pontos de coleta afetados pela lama de rejeito\".</p>
+    <p>No mesmo período, a Samarco afirmou em seu portal online que \"seu rejeito não é tóxico e não apresenta periculosidade à saúde humana, tendo em vista que não disponibiliza contaminantes para a água, mesmo em condições de exposição à chuva\". No entanto, os impactos na saúde são as principais reclamações dos moradores</p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5321/30324862390_31d00d10ac_b.jpg
@@ -57,12 +57,20 @@ sections:
     title: "Estatística de que o atendimento nos centros de saúde de Barra Longa em 2015 foi de 22 pessoas antendidas e em 2016 289 pacientes, um aumento de mais de 1000%"
 
   - type: text
-    text: ""
+    text: "<p>Um dos casos de impacto na saúde é o de Anna Clara Oliveira Coelho, 4 anos. Ela é filha de Edvania de Oliveira, 36 anos, e José Eduardo Coelho, 54 anos. No dia 5 de novembro, a lama invadiu cerca de 1 metro de altura na garagem da casa da família. Anna Clara presenciou tudo.</p>
+    <p>Poucos meses depois da tragédia, a menina começou a apresentar sintomas de depressão, problemas respiratórios e manchas na pele. \"Acho que o principal problema da Anna Clara foi por ficar aqui em cima e ver o tanto de lama que tinha\", relata a mãe. \"Criança também tem disso né, todo mundo falando, nervoso, com medo danado, e ela ouvindo tudo isso. Acho que pra criança é um trauma bem grande\", complementa José Eduardo.</p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5831/30536803841_686cca6176_b.jpg
     mobile: //farm6.staticflickr.com/5610/30536814551_b1de9359a8_b.jpg
     title: "Edvania de Oliveira, 36 anos, fala: Era umas 22h quando a lama começou a chegar aqui. Todo mundo ficou acordado. A gente deu sorte que chegou à noite. Se tivesse chegado durante o dia, muita gente ia morrer."
+
+  - type: text
+    text: "<p>O acompanhamento psicológico da menina está sendo realizado desde janeiro pela psicóloga Luiza Laura Lanna, no Sistema Único de Saúde (SUS). No relato do acompanhamento, ela sinaliza que \"a paciente está sempre assustada e dizendo que vai mudar para outra cidade. Anna Clara deve continuar o tratamento até que consiga se livrar do trauma\".</p>
+    <p>Além do acompanhamento psicológico, o laudo clínico da filha de Edvania e José Eduardo, assinado pelo médico pediatra e alergista Antônio Carlos Pires Maciel, de uma clínica particular na cidade de Ponte Nova, sinaliza que ela apresenta um quadro de rinite ofensiva e dermatite. São, conforme o laudo, \"sintomas relacionados à exposição com poeira proveniente da lama (barragem) composta de irritantes (ferro, etc)\".</p>
+    <p>Devido aos impactos na renda e na destruição de seu patrimônio, hoje a família recebe da mineradora um auxílio base: um salário mínimo, mais um adicional de 20% do salário para cada um dos dependentes e cesta básica no valor de R$ 338,61.</p>
+    <p>Contudo, os custos com o tratamento médico representam boa parte da renda familiar mensal – cada consulta da filha custa R$ 300 –; além de gastos com água, luz e produtos de limpeza, entre outros, que aumentaram.</p>
+    <p>Para José Eduardo, há, por parte da Samarco, uma negligência em relação a esse tipo de problema dos moradores de Barra Longa. \"Entregar a cidade bonitinha, com gramado, com flores é importante? É importante! Mas e a saúde daqui pra frente? […] A Samarco não considera que os problemas de saúde estão sendo por causa dos rejeitos da lama\", desabafa.</p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5811/30625043265_f995207599_b.jpg
@@ -77,30 +85,29 @@ sections:
     mobile: //farm9.staticflickr.com/8640/30537129191_2380ba37d5_z.jpg
     title: "José Eduardo Coelho Filho de 54 anos, fala que: A marca da lama não vai se apagar tão cedo. Acho que talvez nem apaque mais."
 
+  - type: text
+    text: ""
+
+  - type: multimedia
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/E1NpEKxfXOg" frameborder="0" allowfullscreen></iframe>   
+
   - type: image
     desktop: //farm6.staticflickr.com/5766/30537162311_37aeec1b93_b.jpg
     mobile: //farm6.staticflickr.com/5518/30537172131_5d8618aaa4_z.jpg
     title: "Simone Maria Silva Marques de 39 anos, fala que: A Samarco é muito omissa. A cada volta que eu dou nas ruas de Barra Longa, eu volto mais revoltada."   
 
   - type: text
-    text: ""  
-
-  - type: multimedia
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/E1NpEKxfXOg" frameborder="0" allowfullscreen></iframe>   
-
-  - type: image
-    desktop: ""
-    mobile: ""
-    title: ""  
-
-  - type: text
-    text: ""  
+    text: "<p>Com ruas estragadas, encanamento entupido ou esgoto a céu aberto, o aumento do número de pessoas infectadas com dengue foi significativo no início deste ano. Segundo a Secretaria Municipal de Saúde, em todo o ano de 2015, foram registrados apenas dois casos; já em 2016, até o dia 2 de março, 128 casos foram confirmados. Na época, a Samarco divulgou nota em que informou que, em conjunto com a prefeitura, criou grupos de trabalho para vistorias nas residências da região.</p>
+    <p>Edvania foi uma das que contraiu dengue no começo deste ano. Ela e o marido contam que tiveram que arcar com todos os custos do tratamento. \"Até o táxi para conseguir chegar ao médico eu tive que pagar\", lembra.</p>
+    <p>De acordo com Tiago da Silva, do Movimento dos Atingidos por Barragens (MAB), Barra Longa teve a maior epidemia de dengue no Brasil, proporcionalmente ao número da população. \"A Samarco não assume a sua responsabilidade\", confronta. (ver vídeo)</p>"
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/nERWksYhIcI" frameborder="0" allowfullscreen></iframe>     
 
   - type: text
-    text: ""
+    text: "<p>Com o intuito de denunciar a realidade local, de trocar experiências, avaliar e propor alternativas, desde setembro, cerca de 15 moradores de Barra Longa e militantes do MAB formaram o Coletivo de Saúde.</p>
+    <p>Ainda não há nenhum documento oficial que avalie e compare a situação dos moradores antes e depois do rompimento da barragem, o que dificulta a população de cobrar efetivamente a empresa e propor iniciativas em políticas públicas. Sendo assim, um dos focos do grupo é cobrar da mineradora e dos órgãos públicos pesquisas independentes focadas na cidade.</p>
+    <p>\"Reivindicamos que a Samarco pare de nos dar respostas evasivas diante da situação de saúde da população de Barra Longa. Precisamos de estudos independentes que indiquem o número de doentes, os tipos de doenças e que façam a comparação entre o tanto de doentes que temos agora e como era a nossa realidade antes do rompimento. Que estude melhor as consequências da exposição diária à poeira do rejeito e ao canteiro de obras\", salienta o coletivo, em <a> href=http://tragedianunciada.mabnacional.org.br/2016/10/27/carta-dos-atingidos-pela-samarco-pelo-direito-a-saude/>carta pública</a> lançada no final de outubro deste ano.</p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
