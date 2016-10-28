@@ -86,7 +86,8 @@ sections:
     title: "José Eduardo Coelho Filho de 54 anos, fala que: A marca da lama não vai se apagar tão cedo. Acho que talvez nem apaque mais."
 
   - type: text
-    text: ""
+    text: "<p>Questões semelhantes às de José Eduardo e Edvania são enfrentadas por Simone Maria da Silva, 39 anos, e seu marido José Márcio Marques, 38 anos. Assim como no laudo de Anna Clara, o quadro clínico da filha do casal, Sofya Silva Marques, de 1 ano e 8 meses, assinado pelo mesmo médico, diz que seu problema respiratório \"é desencadeado por inalantes (fatores desencadeantes e irritativos relacionados à exposição da poeira proveniente dos rejeitos de minérios) resultado do rompimento da barragem de Mariana, afetando o meio ambiente da cidade de Barra Longa, cidade onde reside a menor\".</p>
+    <p>Desde novembro do ano passado, Simone fez diversas solicitações de apoio financeiro à mineradora para o pagamento dos remédios receitados pelos médicos. A Samarco se recusou a fazê-lo, respondendo, em documento do dia 21 de setembro deste ano, que a empresa \"atua no suporte às ações de Saúde do Município de acordo com as demandas e em conformidade com o preconizado pelo Ministério da Saúde. Em caso de necessidade, a manifestante deverá procurar assistência junto ao Serviço de Saúde de Referência do município\". (Ver vídeo)</p>"
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/E1NpEKxfXOg" frameborder="0" allowfullscreen></iframe>   
