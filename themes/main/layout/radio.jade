@@ -52,6 +52,7 @@ append content
               a.news-radio-link(href=post.path)
                 h3.title(itemprop= "headline")= post.title
             progress(min='0', max='100', value='0')
+            span.duration
             a.download Download
 
       include _partial/pagination

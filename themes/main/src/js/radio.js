@@ -46,8 +46,24 @@ function setDownloadLink(widget, playerDiv) {
 }
 
 function setProgressBarHandler(widget, playerDiv) {
-  var progressBar = playerDiv.find('progress')[0];
-  progressBar.addEventListener('click', handleProgressBarClick(widget));
+  return function() {
+    var progressBar = playerDiv.find('progress')[0];
+    progressBar.addEventListener('click', handleProgressBarClick(widget));
+  }
+}
+
+function setDurationCount(widget, playerDiv) {
+  return function() {
+    widget.getDuration(function(duration) {
+      var durationMinutes = parseInt((duration / 60000).toString());
+      var durationSeconds = parseInt(((duration % 60000) / 1000).toString());
+
+      var totalDuration = durationMinutes + ':' + durationSeconds;
+      var durationCount = playerDiv.find('.duration');
+      durationCount.totalDuration = totalDuration;
+      durationCount.text('0:00 / ' + totalDuration);
+    });
+  }
 }
 
 function setup() {
@@ -57,6 +73,7 @@ function setup() {
 
     widget.bind(SC.Widget.Events.READY, setDownloadLink(widget, playerDiv));
     widget.bind(SC.Widget.Events.READY, setProgressBarHandler(widget, playerDiv));
+    widget.bind(SC.Widget.Events.READY, setDurationCount(widget, playerDiv));
   });
 };
 
