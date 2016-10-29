@@ -3,9 +3,7 @@ function getWidget(id) {
   return SC.Widget(iframe);
 }
 
-function handleProgressBarClick(id) {
-  var widget = getWidget(id);
-
+function handleProgressBarClick(widget) {
   return function(e) {
     widget.getDuration(function(duration) {
       var offset = e.offsetX / e.target.offsetWidth;
@@ -24,9 +22,6 @@ function updateProgressBar(id) {
 
 function play(id) {
   var widget = getWidget(id);
-
-  var progressBar = $('#item_' + id + ' progress')[0];
-  progressBar.addEventListener('click', handleProgressBarClick(id));
 
   widget.bind(SC.Widget.Events.PLAY_PROGRESS, updateProgressBar(id));
   widget.play();
@@ -50,14 +45,19 @@ function setDownloadLink(widget, playerDiv) {
   };
 }
 
+function setProgressBarHandler(widget, playerDiv) {
+  var progressBar = playerDiv.find('progress')[0];
+  progressBar.addEventListener('click', handleProgressBarClick(widget));
+}
+
 function setup() {
   $('.player').each(function(index) {
     var playerDiv = $(this);
     var widget = SC.Widget(playerDiv.find('.widget')[0]);
 
     widget.bind(SC.Widget.Events.READY, setDownloadLink(widget, playerDiv));
+    widget.bind(SC.Widget.Events.READY, setProgressBarHandler(widget, playerDiv));
   });
-  
 };
 
 $(document).ready(setup);
