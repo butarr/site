@@ -192,7 +192,7 @@
 
   .share-special-top {
     position: fixed;
-    bottom: 0;
+    bottom: -60px;
     @include media-query(FOUR) {
       top: -100px;
       bottom: auto;
@@ -230,8 +230,8 @@
     background-color: $special-background;
     z-index: 4;
 
-    -webkit-transition: top 1s; //Old Safari
-    transition: top 1s;
+    -webkit-transition: bottom 1s; //Old Safari
+    transition: bottom 1s;
 
     .share-icon {
       width: 38px;
@@ -248,6 +248,9 @@
       margin-left: 2%;
       background-color: rgba(0,0,0,0);
       z-index: 2;
+
+      -webkit-transition: top 1s; //Old Safari
+      transition: top 1s;
 
       .share-icon {
         width: 100%;
