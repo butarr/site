@@ -2,14 +2,16 @@
 layout: static_special
 area: especial
 url: /marcas-da-lama/
-title: "Marcas Da Lama"
-description: "Especial de 1 ano da tragédia"
+title: "Marcas da Lama"
+description: "Um ano de resistência na Bacia do Rio Doce"
 author: Redação Brasil de Fato
 tags:
   - especial
   - lama
   - mariana
   - barragem
+  - samarco
+  - "Bento Rodrigues"
 cover:
   link: //farm6.staticflickr.com/5792/30542012446_8096cd26b0_b.jpg
   thumbnail: //farm6.staticflickr.com/5792/30542012446_8096cd26b0_t.jpg
@@ -23,35 +25,35 @@ published_at: 2016-10-28T22:58:23.677Z
 
 sections:
   - type: text
-    text: "<p>Talvez algum texto aqui...</p>"
+    text: "<p>Era uma quinta-feira, 5 de novembro, o dia que ficou marcado como o início da maior catástrofe socioambiental da história do Brasil. Do rompimento da barragem de Fundão – no município mineiro de Mariana –, percorrendo toda a Bacia do Rio Doce, até desembocar no mar do litoral capixaba, foram levados com a enxurrada de lama povoados, vidas, memórias e bens de milhares de pessoas.</p><p>Ao todo, 19 trabalhadores e moradores morreram, além de impactos nos ecossistemas e prejuízos na economia de dezenas de municípios em Minas Gerais e no Espírito Santo. Pertencente à mineradora Samarco – controlada pela BHP Billiton e pela Vale S.A. –, a barragem despejou cerca de 55 milhões de m³ de lama.</p><p>Um ano após a tragédia, a reportagem do <b>Brasil de Fato</b> percorreu diversas cidades atingidas para resgatar as histórias e consequências do desastre socioambiental.</p><p>O especial <b>\"Marcas da Lama: um ano de resistência na Bacia do Rio Doce\"</b> narra a rotina e vida de diversos atingidos ao longo da Bacia do Rio do Doce; aborda o modelo de mineração no país e sua relação com as multinacionais e o Estado; por fim, trata da luta dos atingidos e atingidas em busca de seus direitos.</p><p>De segunda-feira (31) até o próximo sábado (5), quando se completa um ano da tragédia, uma reportagem multimídia é lançada por dia. Acompanhe os relatos, números e análises deste especial no site do <b>Brasil de Fato</b> e em nossas redes sociais.</p>"
 
   - type: links
     title: "Capítulo 1: Os atingidos"
     links:
       - title: O adeus a Bento Rodrigues
-        url: /marcas-da-lama/bento-rodrigues
+        url: /marcas-da-lama/bento-rodrigues/
         cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
       - title: "Barra Longa: a cidade canteiro de obras"
         url:
-        cover: //farm6.staticflickr.com/5483/29975370914_5849a56f7c_b.jpg
+        cover: //farm6.staticflickr.com/5329/30058832733_597bcd2d35_z.jpg
       - title: "Cachoeira Escura: o direito à água"
         url:
-        cover: https://pubs.usgs.gov/dds/dds-80/images/other/cover_photo.jpg
+        cover: //farm6.staticflickr.com/5466/30692684595_c443b92198_z.jpg
       - title: "Mascarenhas: a morte do Rio Doce"
         url:
-        cover: http://www.planwallpaper.com/static/images/foggygoldengatebridge.jpg
+        cover: //farm6.staticflickr.com/5820/30604703741_e9a7516194_z.jpg
 
   - type: links
     title: "Capítulo 2: Mineração"
     links:
       - title: "Lucro a todo custo: acidente ou tragédia"
         url:
-        cover: http://assets.barcroftmedia.com.s3-website-eu-west-1.amazonaws.com/assets/images/recent-images-14.jpg
+        cover: //farm6.staticflickr.com/5728/30061760584_8c503b0e10_z.jpg
 
   - type: links
     title: "Capítulo 3: Luta"
     links:
       - title: "A resistência na Bacia do Rio Doce"
         url:
-        cover: http://www.hdcreativewallpaper.com/uploads/cache/968274544/playful-kitty-hd-1080p-images-download-36lO-480x320-MM-78.jpg
+        cover: //farm6.staticflickr.com/5731/30605469151_672db47378_z.jpg
 ---

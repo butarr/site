@@ -32,10 +32,7 @@
 
   .player {
     display: flex;
-  }
-
-  .player-progress {
-    display: flex;
+    display: none;
     width: 100%;
 
     progress {
@@ -78,5 +75,19 @@
       padding-right: $LATERAL-COLUMN-SPACE;
     }
   }
-    
+
+  .loader {
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 6px solid $red-base; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    animation: spin 1.5s linear infinite;
+  }
+
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+  }
 }
