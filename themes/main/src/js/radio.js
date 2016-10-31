@@ -71,6 +71,13 @@ function setDurationCount(widget, playerDiv) {
   }
 }
 
+function setResetPlayerHandler(playerDiv) {
+  return function() {
+    playerDiv.find('.pause').hide();
+    playerDiv.find('.play').show();
+  }
+}
+
 function setup() {
   $('.player').each(function(index) {
     var playerDiv = $(this);
@@ -79,6 +86,7 @@ function setup() {
     widget.bind(SC.Widget.Events.READY, setDownloadLink(widget, playerDiv));
     widget.bind(SC.Widget.Events.READY, setProgressBarHandler(widget, playerDiv));
     widget.bind(SC.Widget.Events.READY, setDurationCount(widget, playerDiv));
+    widget.bind(SC.Widget.Events.FINISH, setResetPlayerHandler(playerDiv));
   });
 };
 
