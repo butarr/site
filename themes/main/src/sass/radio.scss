@@ -29,13 +29,11 @@
     display: none;
   }
 
-  .player-title {
+  .player-progress {
     width: 100%;
     display: flex;
-  }
+    justify-content: center;
 
-  .title {
-    padding-left: 15px;
   }
 
   progress {
@@ -45,6 +43,7 @@
 
   .download {
     display: flex;
+    justify-content: flex-end;
 
     i {
       height: 10px;
@@ -56,17 +55,23 @@
   }
 
   .button {
-    width: 150px;
+    width: 110px;
     margin: 0;
   }
 
   .progress-bar {
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
-    margin-bottom: $VERTICAL-SPACE;
+    align-items: center;
+    padding-left: $LATERAL-COLUMN-SPACE;
 
     span {
       padding: 0 $LATERAL-COLUMN-SPACE;
     }
+  }
+
+  .title {
+    margin-bottom: $VERTICAL-SPACE;
   }
 }
