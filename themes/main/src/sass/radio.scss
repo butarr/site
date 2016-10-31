@@ -23,30 +23,24 @@
 
   i {
     font-size: 4em;
+    color: $background;
   }
 
   .pause {
     display: none;
   }
 
+  .player {
+    display: flex;
+  }
+
   .player-progress {
-    width: 100%;
     display: flex;
-    justify-content: center;
-
-  }
-
-  progress {
     width: 100%;
-    padding: $VERTICAL-SPACE;
-  }
 
-  .download {
-    display: flex;
-    justify-content: flex-end;
-
-    i {
-      height: 10px;
+    progress {
+      width: 100%;
+      padding: $VERTICAL-SPACE;
     }
   }
 
@@ -56,13 +50,13 @@
 
   .button {
     width: 110px;
+    height: 35px;
     margin: 0;
   }
 
   .progress-bar {
-    width: 100%;
+    width: 70%;
     display: flex;
-    flex-wrap: nowrap;
     align-items: center;
     padding-left: $LATERAL-COLUMN-SPACE;
 
