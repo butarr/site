@@ -56,8 +56,8 @@ sections:
       - title: "A resistência na Bacia do Rio Doce"
         url:
         cover: //farm6.staticflickr.com/5731/30605469151_672db47378_z.jpg
-  - type: image
-    desktop: //farm6.staticflickr.com/5808/30694925415_42c2623fe3_b.jpg
+  - type: imageCentralized
+    desktop: //farm6.staticflickr.com/5728/30658627316_246eeb8205_b.jpg
     mobile: //farm6.staticflickr.com/5725/30694940015_8b77ae5968_z.jpg
     title: "Marcas da Lama"
 
