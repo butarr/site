@@ -46,9 +46,10 @@ append content
 
           a.news-radio-link(href=post.path)
             h2.title(itemprop= "headline")= post.title
-          .loader
-          .player(id="item_#{position}")
-            .player-progress
+          
+          .audio-item(id="item_#{position}")
+            .loader
+            .player
               iframe.widget(src="https://w.soundcloud.com/player/?url=#{post.audio}&color=8c191f&auto_play=false&show_artwork=false&show_comments=false&show_playcount=true&hide_related=true&show_user=false&show_reposts=false&liking=false&visual=false&buying=false&sharing=false&download=true&following=false")
               i.play.fa.fa-play-circle-o(onclick="play(#{position});")
               i.pause.fa.fa-pause-circle-o(onclick="pause(#{position});")
@@ -56,8 +57,8 @@ append content
                 span.timeProgress 0:00
                 progress(min='0', max='100', value='0')
                 span.duration 0:00
-            a.download 
-              i.fa.fa-download
-              h3 Download
+              a.download 
+                i.fa.fa-download
+                h3 Download
 
       include _partial/pagination
