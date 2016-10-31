@@ -153,6 +153,11 @@
     }
   }
 
+  section.imageCentralized {
+    display: flex;
+    justify-content: center;
+  }
+
   section.links {
     @include column-lateral-spacing;
     margin: 0 auto;

@@ -1,8 +1,8 @@
 ---
 layout: static_special
 area: especial
-url: /marcas-da-lama/barra-longa/
-title: "O adeus a Bento Rodrigues"
+url: /marcas-da-lama/mineracao/
+title: "Lucro a todo custo: acidente ou tragédia"
 description: O dia 5 de novembro de 2015 ficou marcado na história com o maior desastre ambiental do país
 author: Redação Brasil de Fato
 tags:
@@ -11,15 +11,15 @@ tags:
   - mariana
   - barragem
   - samarco
-  - "barra longa"
+  - mineração
 cover:
-  link: //farm6.staticflickr.com/5681/30322277070_597104e36e_b.jpg
-  thumbnail: //farm6.staticflickr.com/5681/30322277070_597104e36e_t.jpg
-  medium: //farm6.staticflickr.com/5681/30322277070_597104e36e_z.jpg
-  small: //farm6.staticflickr.com/5681/30322277070_597104e36e_n.jpg
+  link: //farm6.staticflickr.com/5757/30065321114_e26ce77ee2_b.jpg
+  thumbnail: //farm6.staticflickr.com/5757/30065321114_e26ce77ee2_t.jpg
+  medium: //farm6.staticflickr.com/5757/30065321114_e26ce77ee2_z.jpg
+  small: //farm6.staticflickr.com/5757/30065321114_e26ce77ee2_n.jpg
   title: Pórtico da entrada da cidade de Barra Longa em meio a lama
   credits: Lucas Bois
-  subtitle: Bento Rodrigues
+  subtitle: Trilhos de trem
 date: 2016-10-28T22:58:23.677Z
 published_at: 2016-10-28T22:58:23.677Z
 

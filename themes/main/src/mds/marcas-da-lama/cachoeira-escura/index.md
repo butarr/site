@@ -11,7 +11,7 @@ tags:
   - mariana
   - barragem
   - samarco
-  - "cacholeira escura"
+  - "cachoeira escura"
 cover:
   link: //farm6.staticflickr.com/5672/30654955286_c1f88324e5_b.jpg
   thumbnail: //farm6.staticflickr.com/5672/30654955286_c1f88324e5_t.jpg
