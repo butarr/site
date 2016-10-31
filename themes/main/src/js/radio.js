@@ -12,9 +12,9 @@ function handleProgressBarClick(widget) {
   };
 }
 
-function updateProgress(id) {
-  var progressBar = $('#item_' + id + ' progress')[0];
-  var timeProgress = $('#item_' + id + ' .timeProgress');
+function setUpdateProgressHandler(playerDiv) {
+  var progressBar = playerDiv.find('progress')[0];
+  var timeProgress = playerDiv.find('.timeProgress');
 
   return function(sound) {
     progressBar.value = sound.relativePosition * 100;
@@ -23,11 +23,7 @@ function updateProgress(id) {
 }
 
 function play(id) {
-  var widget = getWidget(id);
-
-  widget.bind(SC.Widget.Events.PLAY_PROGRESS, updateProgress(id));
-  widget.play();
-
+  getWidget(id).play();
   $('#item_' + id + ' .play').hide();
   $('#item_' + id + ' .pause').show();
 }
@@ -87,6 +83,7 @@ function setup() {
     widget.bind(SC.Widget.Events.READY, setProgressBarHandler(widget, playerDiv));
     widget.bind(SC.Widget.Events.READY, setDurationCount(widget, playerDiv));
     widget.bind(SC.Widget.Events.FINISH, setResetPlayerHandler(playerDiv));
+    widget.bind(SC.Widget.Events.PLAY_PROGRESS, setUpdateProgressHandler(playerDiv));
   });
 };
 
