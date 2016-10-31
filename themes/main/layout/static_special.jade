@@ -25,10 +25,16 @@ mixin displayLinks(section)
       each item, category in section.links
         li.link(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
           meta(itemprop="position" content=category)
-          a(itemprop="url" href=item.url)
+          if item.url
+            a(itemprop="url" href=item.url)
+              figure
+                img(src=item.cover  alt=item.title title=item.title itemprop="image")
+              h3.link-figure-title(itemprop="name")= item.title
+          else
             figure
               img(src=item.cover  alt=item.title title=item.title itemprop="image")
             h3.link-figure-title(itemprop="name")= item.title
+            
 
 mixin displayMultimedia(section)
   section.multimedia.verticalSpacing
