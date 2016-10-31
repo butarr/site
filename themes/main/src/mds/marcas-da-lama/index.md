@@ -56,4 +56,8 @@ sections:
       - title: "A resistência na Bacia do Rio Doce"
         url:
         cover: //farm6.staticflickr.com/5731/30605469151_672db47378_z.jpg
+  - type: image
+    desktop: //farm6.staticflickr.com/5702/30577156142_266c0e9025_b.jpg
+    mobile: //farm6.staticflickr.com/5707/30060391033_1e6034e19f_z.jpg
+    title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
 ---
