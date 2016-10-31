@@ -6,7 +6,8 @@ function getWidget(id) {
 function handleProgressBarClick(widget) {
   return function(e) {
     widget.getDuration(function(duration) {
-      var offset = e.offsetX / e.target.offsetWidth;
+      var offsetX = e.pageX - $(e.target).offset().left;
+      var offset = offsetX / e.target.offsetWidth;
       widget.seekTo(duration * offset);
     });
   };
