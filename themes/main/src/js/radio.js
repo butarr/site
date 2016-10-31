@@ -74,9 +74,11 @@ function setResetPlayerHandler(playerDiv) {
   }
 }
 
-function showPlayer(playerDiv) {
-  playerDiv.find('.loader').hide();
-  playerDiv.find('.player').css('display', 'flex');
+function setShowPlayer(playerDiv) {
+  return function() {
+    playerDiv.find('.loader').hide();
+    playerDiv.find('.player').css('display', 'flex');
+  };
 }
 
 function setup() {
@@ -87,7 +89,7 @@ function setup() {
     widget.bind(SC.Widget.Events.READY, setDownloadLink(widget, playerDiv));
     widget.bind(SC.Widget.Events.READY, setProgressBarHandler(widget, playerDiv));
     widget.bind(SC.Widget.Events.READY, setDurationCount(widget, playerDiv));
-    widget.bind(SC.Widget.Events.READY, showPlayer(playerDiv));
+    widget.bind(SC.Widget.Events.READY, setShowPlayer(playerDiv));
     widget.bind(SC.Widget.Events.FINISH, setResetPlayerHandler(playerDiv));
     widget.bind(SC.Widget.Events.PLAY_PROGRESS, setUpdateProgressHandler(playerDiv));
   });
