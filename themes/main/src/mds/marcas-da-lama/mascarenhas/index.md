@@ -11,7 +11,7 @@ tags:
   - mariana
   - barragem
   - samarco
-  - "barra longa"
+  - "mascarenhas"
 cover:
   link: //farm6.staticflickr.com/5474/30393304060_48514415ea_b.jpg
   thumbnail: //farm6.staticflickr.com/5474/30393304060_48514415ea_t.jpg
