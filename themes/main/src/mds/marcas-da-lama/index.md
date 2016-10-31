@@ -59,5 +59,5 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5702/30577156142_266c0e9025_b.jpg
     mobile: //farm6.staticflickr.com/5707/30060391033_1e6034e19f_z.jpg
-    title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
+    title: "Créditos da reportagem. Reportagem: Simone Freire, José Eduardo Bernardes e Guilherme Weimann. Edição: Vivian Fernandes. Vídeo e foto: José Eduardo Bernardes, Guilherme Weimann e Thiago Hersan. Edição de vídeo: Marcelo Cruz. Design e edição de foto: Wilcker Morais. Coordenação de arte: José Bruno Lima. Desenvolvimento: Giuliana Marquesi, Michael Feitosa, Nicholas Pereira, Ricardo Retamal, Thiago Hersan e Wandecleya Martins. Apoio: Nadine Nascimento, Júlia Dolce, Norma Odara, Rute Pina e Rafael Tatemoto. Coordenação de jornalismo: Simone Freire. Agradecimentos: Regiane, Jonatan, Fabiana, Ellen, Camila, Thiago, Diane, Valcileno, Binho, Débora, Maria Julia, além do Movimento pela Soberania Popular na Mineração (MAM) e do Movimento das Atingidos por Barragens (MAB)."
 ---
