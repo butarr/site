@@ -13,13 +13,13 @@ tags:
   - samarco
   - "barra longa"
 cover:
-  link: //farm6.staticflickr.com/5681/30322277070_597104e36e_b.jpg
-  thumbnail: //farm6.staticflickr.com/5681/30322277070_597104e36e_t.jpg
-  medium: //farm6.staticflickr.com/5681/30322277070_597104e36e_z.jpg
-  small: //farm6.staticflickr.com/5681/30322277070_597104e36e_n.jpg
-  title: Pórtico da entrada da cidade de Barra Longa em meio a lama
-  credits: Lucas Bois
-  subtitle: Bento Rodrigues
+  link: //farm6.staticflickr.com/5474/30393304060_48514415ea_b.jpg
+  thumbnail: //farm6.staticflickr.com/5474/30393304060_48514415ea_t.jpg
+  medium: //farm6.staticflickr.com/5474/30393304060_48514415ea_z.jpg
+  small: //farm6.staticflickr.com/5474/30393304060_48514415ea_n.jpg
+  title: Imagem do Rio Doce
+  credits: Thiago Hersan
+  subtitle: Mascarenhas
 date: 2016-10-28T22:58:23.677Z
 published_at: 2016-10-28T22:58:23.677Z
 
@@ -106,8 +106,8 @@ sections:
     mobile: //farm6.staticflickr.com/5727/29973631194_29d8bcc5d2_b.jpg
     title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
   - type: image
-    desktop: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
+    desktop: //farm6.staticflickr.com/5547/30693213985_af1794d26b_b.jpg
     mobile: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
-    title: Corvo no topo de uma montanha de lama
+    title: Imagem do Rio Doce
 
 ---
