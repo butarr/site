@@ -6,12 +6,10 @@
 
 #radio {
   @include get-font(RADIO);
+  @include button;
 
   .page-name{
     @include page-name();
-    @include media-query(TWO) {
-      margin-bottom: 15px;
-    }
   }
 
   .divisor {
@@ -42,6 +40,33 @@
 
   progress {
     width: 100%;
-    padding: $VERTICAL-SPACE 0;
+    padding: $VERTICAL-SPACE;
+  }
+
+  .download {
+    display: flex;
+
+    i {
+      height: 10px;
+    }
+  }
+
+  .duration {
+    float: right;
+  }
+
+  .button {
+    width: 150px;
+    margin: 0;
+  }
+
+  .progress-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: $VERTICAL-SPACE;
+
+    span {
+      padding: 0 $LATERAL-COLUMN-SPACE;
+    }
   }
 }

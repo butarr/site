@@ -50,10 +50,11 @@ append content
               i.play.fa.fa-play-circle-o(onclick="play(#{position});")
               i.pause.fa.fa-pause-circle-o(onclick="pause(#{position});")
               a.news-radio-link(href=post.path)
-                h3.title(itemprop= "headline")= post.title
-            span.timeProgress 0:00
-            progress(min='0', max='100', value='0')
-            span.duration 0:00
-            a.download Download
+                h2.title(itemprop= "headline")= post.title
+            .progress-bar
+              span.timeProgress 0:00
+              progress(min='0', max='100', value='0')
+              span.duration 0:00
+            h3.button Download
 
       include _partial/pagination

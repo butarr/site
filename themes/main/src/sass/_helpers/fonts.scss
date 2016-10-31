@@ -826,8 +826,10 @@ $number-size: 1.3rem;
 
 @mixin __radio(){
   .download {
-    font: bold #{$details-size}/#{$line-separation-small} $family-sans;
-    color: $columnist-name-color;
+    p {
+      font: bold #{$details-size}/#{$line-separation-small} $family-sans;
+      color: $columnist-name-color;
+    }
   }
 }
 
