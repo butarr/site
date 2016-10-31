@@ -154,19 +154,19 @@
   }
 
   section.links {
-    padding-left: 25px;
-    padding-right: 25px;
+    @include column-lateral-spacing;
     margin: 0 auto;
     position: relative;
     background-color: $special-background;
+    max-width: ((4 * $COLUMN-WIDTH) + (4 * $LATERAL-PAGE-SPACE));
 
     .links-container {
       display: -webkit-flex; //Old Safari
       display: flex;
       -webkit-flex-direction: row; //Old Safari
       flex-direction: row;
-      -webkit-justify-content: center; //Old Safari
-      justify-content: center;
+      -webkit-justify-content: space-around; //Old Safari
+      justify-content: space-around;
       -webkit-flex-wrap: wrap; //Old Safari
       flex-wrap: wrap;
       padding: 25px 0 0;
@@ -174,15 +174,10 @@
 
     .link {
       padding: 0 5px 25px;
+      max-width: (2 * $COLUMN-WIDTH);
+      width: 100%;
 
-      @include media-query(TWO) {
-        width: 50%;
-      }
-      @include media-query(THREE) {
-        width: 33%;
-      }
-
-      @include image-rounded-responsive(200px);
+      @include image-rounded-responsive(300px);
     }
 
     .link-figure-title {

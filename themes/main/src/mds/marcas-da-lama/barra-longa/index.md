@@ -13,10 +13,10 @@ tags:
   - samarco
   - "barra longa"
 cover:
-  link: //farm6.staticflickr.com/5681/30322277070_597104e36e_b.jpg
-  thumbnail: //farm6.staticflickr.com/5681/30322277070_597104e36e_t.jpg
-  medium: //farm6.staticflickr.com/5681/30322277070_597104e36e_z.jpg
-  small: //farm6.staticflickr.com/5681/30322277070_597104e36e_n.jpg
+  link: //farm6.staticflickr.com/5582/30653716696_a26908ca95_b.jpg
+  thumbnail: //farm6.staticflickr.com/5582/30653716696_a26908ca95_t.jpg
+  medium: //farm6.staticflickr.com/5582/30653716696_a26908ca95_z.jpg
+  small: //farm6.staticflickr.com/5582/30653716696_a26908ca95_n.jpg
   title: Pórtico da entrada da cidade de Barra Longa em meio a lama
   credits: Lucas Bois
   subtitle: Bento Rodrigues
@@ -106,10 +106,7 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/nERWksYhIcI" frameborder="0" allowfullscreen></iframe>     
 
   - type: text
-    text: "<p>Com o intuito de denunciar a realidade local, de trocar experiências, avaliar e propor alternativas, desde setembro, cerca de 15 moradores e militantes do MAB formaram o Coletivo de Saúde.</p>
-    <p>Ainda não há nenhum documento oficial que avalie e compare a situação do local antes e depois do rompimento da barragem, o que dificulta a população de cobrar efetivamente a empresa e propor iniciativas em políticas públicas. Sendo assim, um dos focos do grupo é cobrar da mineradora e dos órgãos públicos pesquisas independentes focadas na cidade.</p>
-    <p>\"Reivindicamos que a Samarco pare de nos dar respostas evasivas diante da situação de saúde da população de Barra Longa. Precisamos de estudos independentes que indiquem o número de doentes, os tipos de doenças e que façam a comparação entre o tanto de doentes que temos agora e como era a nossa realidade antes do rompimento. Que estude melhor as consequências da exposição diária à poeira do rejeito e ao canteiro de obras\", salienta o coletivo, em <a href=http://tragedianunciada.mabnacional.org.br/2016/10/27/carta-dos-atingidos-pela-samarco-pelo-direito-a-saude/>carta pública</a> lançada no final de outubro deste ano.</p>"
-
+    text: "<p>Com o intuito de denunciar a realidade local, de trocar experiências, avaliar e propor alternativas, desde setembro, cerca de 15 moradores e militantes do MAB formaram o Coletivo de Saúde.</p><p>Ainda não há nenhum documento oficial que avalie e compare a situação dos moradores antes e depois do rompimento da barragem, o que dificulta a população de cobrar efetivamente a empresa e propor iniciativas em políticas públicas. Sendo assim, um dos focos do grupo é cobrar da mineradora e dos órgãos públicos pesquisas independentes focadas na cidade.</p><p>\"Reivindicamos que a Samarco pare de nos dar respostas evasivas diante da situação de saúde da população de Barra Longa. Precisamos de estudos independentes que indiquem o número de doentes, os tipos de doenças e que façam a comparação entre o tanto de doentes que temos agora e como era a nossa realidade antes do rompimento. Que estude melhor as consequências da exposição diária à poeira do rejeito e ao canteiro de obras\", salienta o coletivo, em <a href=\"http://tragedianunciada.mabnacional.org.br/2016/10/27/carta-dos-atingidos-pela-samarco-pelo-direito-a-saude\" target=\"_blank\" />carta pública</a> lançada no final de outubro deste ano.</p><p>Em nota, a Samarco informou que, logo após a tragédia, disponibilizou diversos tipos de insumos hospitalares, bem como profissionais de saúde e uma ambulância tripulada para atendimentos. A empresa também alegou que o aumento da quantidade de diagnósticos na cidade se deu porque houve um aumento dos atendimentos. Além disso, afirmou que não se pode \"estabelecer relação do número de atendimentos com o evento do rompimento da barragem\".</p><p>Embora não reconheça a relação entre o rompimento da barragem e o crescimento do número de diagnósticos nas cidade atingidas, em compromissos firmados pela mineradora no Termo de Transação e de Ajustamento de Conduta (TTAC), um ano depois da tragédia está em andamento a criação de um estudo epidemiológico e toxicológico para identificar o perfil dos problemas de saúde dos impactados, desde Mariana até a foz do Rio Doce. O objetivo é avaliar a ocorrência dos problemas de saúde com as consequências geradas por este desastre socioambiental.</p><p>Até o fechamento desta publicação, a mineradora não respondeu aos questionamentos da reportagem sobre a situação da filha de Simone Maria da Silva, que solicita um auxílio financeiro na compra de medicamentos para a criança.</p>"
   - type: image
     desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
     mobile: //farm6.staticflickr.com/5727/29973631194_29d8bcc5d2_b.jpg
