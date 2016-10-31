@@ -12,18 +12,20 @@ function handleProgressBarClick(widget) {
   };
 }
 
-function updateProgressBar(id) {
+function updateProgress(id) {
   var progressBar = $('#item_' + id + ' progress')[0];
+  var timeProgress = $('#item_' + id + ' .timeProgress');
 
   return function(sound) {
     progressBar.value = sound.relativePosition * 100;
+    timeProgress.text(toMinutesAndSeconds(sound.currentPosition));
   };
 }
 
 function play(id) {
   var widget = getWidget(id);
 
-  widget.bind(SC.Widget.Events.PLAY_PROGRESS, updateProgressBar(id));
+  widget.bind(SC.Widget.Events.PLAY_PROGRESS, updateProgress(id));
   widget.play();
 
   $('#item_' + id + ' .play').hide();
@@ -52,14 +54,19 @@ function setProgressBarHandler(widget, playerDiv) {
   }
 }
 
+function toMinutesAndSeconds(durationMilliseconds) {
+  var durationMinutes = parseInt((durationMilliseconds / 60000).toString());
+  var durationSeconds = parseInt(((durationMilliseconds % 60000) / 1000).toString());
+  durationSeconds = (durationSeconds < 10) ? '0' + durationSeconds : durationSeconds;
+
+  return durationMinutes + ':' + durationSeconds;
+}
+
 function setDurationCount(widget, playerDiv) {
   return function() {
     widget.getDuration(function(duration) {
-      var durationMinutes = parseInt((duration / 60000).toString());
-      var durationSeconds = parseInt(((duration % 60000) / 1000).toString());
-
       var durationCount = playerDiv.find('.duration');
-      durationCount.text(durationMinutes + ':' + durationSeconds);
+      durationCount.text(toMinutesAndSeconds(duration));
     });
   }
 }
