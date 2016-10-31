@@ -32,26 +32,26 @@ sections:
         url: /marcas-da-lama/bento-rodrigues
         cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
       - title: "Barra Longa: a cidade canteiro de obras"
-        url: /marcas-da-lama/barra-longa
+        url:
         cover: //farm6.staticflickr.com/5483/29975370914_5849a56f7c_b.jpg
-      - title: Deputados e ministros são coronéis da mídia em Pernambuco
-        url: /marcas-da-lama/pagina-3.html
+      - title: "Cachoeira Escura: o direito à água"
+        url:
         cover: https://pubs.usgs.gov/dds/dds-80/images/other/cover_photo.jpg
-
-  - type: links
-    title: "Capítulo 2: Samarco"
-    links:
-      - title: A Samarco e o modelo de mineração no Brasil
-        url: /marcas-da-lama/pagina-4.html
-        cover: http://assets.barcroftmedia.com.s3-website-eu-west-1.amazonaws.com/assets/images/recent-images-14.jpg
-      - title: Artigo sobre DNS
-        url: /marcas-da-lama/pagina-5.html
+      - title: "Mascarenhas: a morte do Rio Doce"
+        url:
         cover: http://www.planwallpaper.com/static/images/foggygoldengatebridge.jpg
 
   - type: links
-    title: "Capítulo 3: A resistência"
+    title: "Capítulo 2: Mineração"
     links:
-      - title: A resistência na Bacia do Rio Doce
-        url: /marcas-da-lama/pagina-6.html
+      - title: "Lucro a todo custo: acidente ou tragédia"
+        url:
+        cover: http://assets.barcroftmedia.com.s3-website-eu-west-1.amazonaws.com/assets/images/recent-images-14.jpg
+
+  - type: links
+    title: "Capítulo 3: Luta"
+    links:
+      - title: "A resistência na Bacia do Rio Doce"
+        url:
         cover: http://www.hdcreativewallpaper.com/uploads/cache/968274544/playful-kitty-hd-1080p-images-download-36lO-480x320-MM-78.jpg
 ---
