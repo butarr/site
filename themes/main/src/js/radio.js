@@ -58,10 +58,8 @@ function setDurationCount(widget, playerDiv) {
       var durationMinutes = parseInt((duration / 60000).toString());
       var durationSeconds = parseInt(((duration % 60000) / 1000).toString());
 
-      var totalDuration = durationMinutes + ':' + durationSeconds;
       var durationCount = playerDiv.find('.duration');
-      durationCount.totalDuration = totalDuration;
-      durationCount.text('0:00 / ' + totalDuration);
+      durationCount.text(durationMinutes + ':' + durationSeconds);
     });
   }
 }
