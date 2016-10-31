@@ -8,7 +8,7 @@
   @include get-font(RADIO);
   @include button;
 
-  .page-name{
+  .page-name {
     @include page-name();
   }
 
@@ -17,66 +17,12 @@
     border-bottom: 1px solid $content-divisor;
   }
 
-  .widget {
-    display: none;
-  }
-
-  i {
-    font-size: 4em;
-    color: $background;
-  }
-
-  .pause {
-    display: none;
-  }
-
-  .player {
-    display: flex;
-    display: none;
-    width: 100%;
-
-    progress {
-      width: 100%;
-      padding: $VERTICAL-SPACE;
-    }
-  }
-
-  .duration {
-    float: right;
-  }
-
-  .button {
-    width: 110px;
-    height: 35px;
-    margin: 0;
-  }
-
-  .progress-bar {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    padding-left: $LATERAL-COLUMN-SPACE;
-
-    span {
-      padding: 0 $LATERAL-COLUMN-SPACE;
-    }
-  }
-
   .title {
     margin-bottom: $VERTICAL-SPACE;
   }
 
-  .download {
-    display: flex;
-    align-items: center;
-
-    i {
-      font-size: 3em;
-      padding-right: $LATERAL-COLUMN-SPACE;
-    }
-  }
-
   .loader {
+    display: none;
     border: 5px solid #f3f3f3; /* Light grey */
     border-top: 6px solid $red-base; /* Blue */
     border-radius: 50%;
@@ -89,5 +35,49 @@
   @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
+  }
+
+  .player {
+    display: flex;
+    width: 100%;
+
+    .pause {
+      display: none;
+    }
+
+    i {
+      font-size: 4em;
+      color: $background;
+    }
+
+    .progress-bar {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: $LATERAL-COLUMN-SPACE;
+
+      progress {
+        width: 70%;
+        padding: $VERTICAL-SPACE;
+      }
+
+      span {
+        padding: 0 $LATERAL-COLUMN-SPACE;
+      }
+    }
+
+    .download {
+      display: flex;
+      align-items: center;
+
+      i {
+        font-size: 3em;
+        padding-right: $LATERAL-COLUMN-SPACE;
+      }
+    }
+
+    .widget {
+      display: none;
+    }
   }
 }
