@@ -832,17 +832,9 @@ $number-size: 1.3rem;
     }
   }
 
-  .button {
+  h3 {
     font: bold $details-size $family-sans;
     color: $link-color;
-
-    &:visited {
-      color: $link-visited-color;
-    }
-
-    &:hover {
-      color: $link-hover-color;
-    }
   }
 }
 

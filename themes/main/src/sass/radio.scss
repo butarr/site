@@ -68,4 +68,15 @@
   .title {
     margin-bottom: $VERTICAL-SPACE;
   }
+
+  .download {
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 3em;
+      padding-right: $LATERAL-COLUMN-SPACE;
+    }
+  }
+    
 }

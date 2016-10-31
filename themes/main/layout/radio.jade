@@ -43,7 +43,7 @@ append content
                 meta(itemprop="height" content="60")
               meta(itemprop="name" content="Brasil de Fato")
               link(itemprop="sameAs" href="https://www.brasildefato.com.br")
-          
+
           a.news-radio-link(href=post.path)
             h2.title(itemprop= "headline")= post.title
           div.player(id="item_#{position}")
@@ -56,6 +56,7 @@ append content
                 progress(min='0', max='100', value='0')
                 span.duration 0:00
             a.download 
-              h3.button Download
+              i.fa.fa-download
+              h3 Download
 
       include _partial/pagination
