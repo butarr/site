@@ -34,8 +34,8 @@ sections:
         url: /marcas-da-lama/bento-rodrigues/
         cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
       - title: "Barra Longa: a cidade canteiro de obras"
-        url:
-        cover: //farm6.staticflickr.com/5329/30058832733_597bcd2d35_z.jpg
+        url: /marcas-da-lama/barra-longa/
+        cover: //farm6.staticflickr.com/5766/30082446503_8bc15cebc2_z.jpg
       - title: "Cachoeira Escura: o direito à água"
         url:
         cover: //farm6.staticflickr.com/5466/30692684595_c443b92198_z.jpg

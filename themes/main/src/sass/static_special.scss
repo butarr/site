@@ -188,6 +188,16 @@
     .link-figure-title {
       padding: 10px 0 0;
     }
+
+    .links-container-navigation {
+      -webkit-flex-wrap: nowrap; //Old Safari
+      flex-wrap: nowrap;
+    }
+
+    .link-navigation {
+      max-width: (1.333 * $COLUMN-WIDTH);
+      @include image-rounded-responsive(200px);
+    }
   }
 
   .share-special-top {

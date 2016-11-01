@@ -66,8 +66,8 @@ sections:
     text: "<p>O distrito de Bento Rodrigues, hoje totalmente destruído, foi apenas o primeiro local atingido e, portanto, uma das paradas da reportagem para o especial <b>Marcas da Lama - Um ano de resistência na Bacia do Rio Doce</b>.</p><p>\"Ali era a casa de Paulo César, ali era a casa de Dona Geralda, ali o terreno do meu sogro, mais ali o bar da Sandra, aqui era a casa de Joaquim\". É assim que Joana D'arc Norberto, 43 anos, inicia a conversa com a equipe do <b>Brasil de Fato</b>, enquanto percorre o que restou de Bento Rodrigues, quase um ano depois do ocorrido.</p>"
 
   - type: image
-    desktop: //farm6.staticflickr.com/5444/29944612863_5838d974d8_b.jpg
-    mobile: //farm6.staticflickr.com/5759/30600188485_c69d155d48_b.jpg
+    desktop: //farm6.staticflickr.com/5799/30715424255_f06dc0c18c_b.jpg
+    mobile: //farm6.staticflickr.com/5799/30715424255_f06dc0c18c_b.jpg
     title: "Foto de Joana D'arc Norberto, de 43 anos, com sua fala \"Não estava em casa quando tudo aconteceu. Um genro me ligou e disse: 'ei, Joana, acabou Bento, morreu todo mundo'\""
 
   - type: text
@@ -88,8 +88,8 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/4j2PAsEEKOs" frameborder="0" allowfullscreen></iframe>
 
   - type: image
-    desktop: //farm6.staticflickr.com/5680/29946540724_c36059779d_b.jpg
-    mobile: //farm6.staticflickr.com/5697/29968095974_36bf78bc65_b.jpg
+    desktop: //farm6.staticflickr.com/5830/30598753452_5eb424f796_b.jpg
+    mobile: //farm6.staticflickr.com/5830/30598753452_5eb424f796_b.jpg
     title: "Foto de Manuel Marcos Muniz, de 52 anos, com sua fala \"A gente acha que já passou, que já acabou, mas tem dia que a gente só vive em função da tragédia da Samarco, do rompimento da barragem\""
 
   - type: text
@@ -130,15 +130,4 @@ sections:
     desktop: //farm6.staticflickr.com/5471/29967477173_4e42af1d3e_b.jpg
     mobile: //farm6.staticflickr.com/5471/29967477173_4e42af1d3e_b.jpg
     title: Única parede de pé de uma casa
-
-  - type: navigationLinks
-    title: "Marcas da Lama: Leia mais"
-    links:
-      - title: Marcas da Lama
-        url: /marcas-da-lama/
-        cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
-      - title: "Barra Longa: a cidade canteiro de obras"
-        url: /marcas-da-lama/barra-longa/
-        cover: //farm6.staticflickr.com/5596/30417032270_3558ae4375_b.jpg
-
 ---
