@@ -3,7 +3,7 @@ layout: static_special
 area: especial
 url: /marcas-da-lama/cachoeira-escura/
 title: "Cachoeira Escura: o direito à água"
-description: O dia 5 de novembro de 2015 ficou marcado na história com o maior desastre ambiental do país
+description: A falta de qualidade no recurso hídrico ainda é um dos principais problemas das cidades atingidas pela lama da Samarco
 author: Redação Brasil de Fato
 tags:
   - especial
@@ -59,8 +59,8 @@ sections:
     <p>Ajudante de cozinha, Yrani diz que várias pessoas da família já se sentiram mal após consumir o que ela chama de \"água da Samarco\". Vômito, diarreia, dor de estômago, tontura e alergia na pele são alguns dos sintomas levantados por ela. O maior medo agora é pela saúde dos filhos e sobrinhos que bebem a água encanada na escola. \"Tem uma moça que levou o filho no médico, que disse que era para ela dar uns dois litros de água mineral para ele levar para a escola. E que se ela der água [encanada] pra ele, ele vai morrer\", conta.</p>"
 
   - type: image
-    desktop: ""
-    mobile: ""
+    desktop: //farm6.staticflickr.com/5610/30086280714_e413fc923f_b.jpg
+    mobile: //farm6.staticflickr.com/5576/30718699485_ed687f156a_b.jpg
     title: "Aspas Yranildes"
 
   - type: text
