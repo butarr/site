@@ -66,7 +66,22 @@
 
       progress {
         width: 80%;
-        padding: $VERTICAL-SPACE;
+        height: 7px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      progress::-webkit-progress-value {
+        background-color: $red-base;
+      }
+
+      progress::-moz-progress-bar {
+        background-color: $red-base;
+      }
+
+      progress::-webkit-progress-bar {
+        background-color: $link-inverted-color-hover;
       }
 
       span {
