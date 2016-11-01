@@ -51,14 +51,17 @@ append content
             .loader
             .player
               iframe.widget(src="https://w.soundcloud.com/player/?url=#{post.audio}&color=8c191f&auto_play=false&show_artwork=false&show_comments=false&show_playcount=true&hide_related=true&show_user=false&show_reposts=false&liking=false&visual=false&buying=false&sharing=false&download=true&following=false")
-              a.play(onclick="play(#{position});")
-                img(src="/img/icons/play.svg")
-              a.pause(onclick="pause(#{position});")
-                img(src="/img/icons/pause.svg")
-              .progress-bar
-                span.timeProgress 0:00
-                progress(min='0', max='100', value='0')
-                span.duration 0:00
+              .controls
+                a.play(onclick="play(#{position});")
+                  img(src="/img/icons/play.svg")
+                a.pause(onclick="pause(#{position});")
+                  img(src="/img/icons/pause.svg")
+                .progress-and-source
+                  .progress-bar
+                    span.timeProgress 0:00
+                    progress(min='0', max='100', value='0')
+                    span.duration 0:00
+                  p via SoundCloud
               a.download 
                 img(src="/img/icons/download.svg")
                 h3 Download

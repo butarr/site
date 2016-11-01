@@ -40,6 +40,10 @@
     display: none;
     width: 100%;
 
+    @include media-query(TWO) {
+      justify-content: space-between;
+    }
+
     .play {
       img {
         height: 40px;
@@ -58,10 +62,23 @@
       color: $background;
     }
 
-    .progress-bar {
+    .progress-and-source {
       width: 100%;
+      padding-top: 10px;
+
+      @include media-query(THREE) {
+        width: 530px;
+      }
+
+      p {
+        float: right;
+      }
+    }
+
+    .progress-bar {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       padding-left: $LATERAL-COLUMN-SPACE;
 
       progress {
@@ -97,15 +114,20 @@
       align-items: center;
       flex-direction: column;
       justify-content: space-between;
+      padding-left: 20px;
 
       img {
         height: 30px;
-        padding-right: $LATERAL-COLUMN-SPACE;
       }
     }
 
     .widget {
       display: none;
     }
+  }
+
+  .controls {
+    display: flex;
+    width: 100%;
   }
 }

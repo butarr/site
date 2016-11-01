@@ -22,6 +22,7 @@ $text-size: 1rem;
 $details-size: 0.9rem;
 $title-size: 1.1rem;
 $section-name-size: 1rem;
+$audio-duration-size: 0.8rem;
 
 $number-size: 1.3rem;
 
@@ -828,6 +829,18 @@ $number-size: 1.3rem;
   h3 {
     font: bold #{$details-size}/#{$line-separation-small} $family-sans;
     color: $download-link;
+  }
+
+  .progress-bar {
+    span {
+      font: normal #{$audio-duration-size}/#{$line-separation-small} $family-serif;
+    }
+  }
+  
+  .progress-and-source {
+    p {
+      font: normal #{$audio-duration-size}/#{$line-separation-small} $family-sans;
+    }
   }
 }
 
