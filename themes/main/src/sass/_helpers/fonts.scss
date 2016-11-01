@@ -824,17 +824,10 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __radio(){
-  .download {
-    p {
-      font: bold #{$details-size}/#{$line-separation-small} $family-sans;
-      color: $download-link;
-    }
-  }
-
+@mixin __radio() {
   h3 {
-    font: bold $details-size $family-sans;
-    color: $link-color;
+    font: bold #{$details-size}/#{$line-separation-small} $family-sans;
+    color: $download-link;
   }
 }
 
