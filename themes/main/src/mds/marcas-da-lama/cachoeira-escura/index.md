@@ -100,7 +100,7 @@ sections:
     <p>Hoje, a extração de areia também está prejudicada. A venda, diz ele, \"diminuiu muito por causa do barro que desceu\" do rio após o rompimento.</p>"
 
   - type: multimedia
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/WGoOpeNzo04" frameborder="0" allowfullscreen></iframe>  
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/nTiIbUPMO_M" frameborder="0" allowfullscreen></iframe>  
 
   - type: image
     desktop: //farm6.staticflickr.com/5442/30717949355_cb687502c3_b.jpg
