@@ -31,30 +31,30 @@ sections:
     title: "Capítulo 1: Los afectados"
     links:
       - title: El adiós a Bento Rodrigues
-        url: /marcas-da-lama/bento-rodrigues/
+        url: //marcas-del-barro/bento-rodrigues/
         cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
       - title: "Barra Longa: zona de obras"
-        url: /marcas-da-lama/barra-longa/
+        url: //marcas-del-barro/barra-longa/
         cover: //farm6.staticflickr.com/5766/30082446503_8bc15cebc2_z.jpg
       - title: "Cachoeira Escura: el derecho al agua"
-        url: /marcas-da-lama/cachoeira-escura/
+        url: //marcas-del-barro/cachoeira-escura/
         cover: //farm6.staticflickr.com/5338/30681655266_c68529395a_z.jpg
       - title: "Mascarenhas: la muerte del río Doce"
-        url: /marcas-da-lama/mascarenhas/
+        url: //marcas-del-barro/mascarenhas/
         cover: //farm6.staticflickr.com/5535/30718512145_1f1dda95f8_z.jpg
 
   - type: links
     title: "Capítulo 2: Minería"
     links:
       - title: "Lucro a cualquier costo: accidente o tragedia"
-        url: /marcas-da-lama/mineria/
+        url: //marcas-del-barro/mineria/
         cover: //farm6.staticflickr.com/5728/30061760584_8c503b0e10_z.jpg
 
   - type: links
     title: "Capítulo 3: Lucha"
     links:
       - title: "La resistencia en la cuenca del Río Doce"
-        url: /marcas-da-lama/lucha/
+        url: /marcas-del-barro/lucha/
         cover: //farm6.staticflickr.com/5731/30605469151_672db47378_z.jpg
   - type: imageCentralized
     desktop: //farm6.staticflickr.com/5513/30083375303_fbf49eb6c5_z.jpg
