@@ -25,60 +25,66 @@ published_at: 2016-10-28T22:58:23.677Z
 
 sections:
   - type: text
+    text: "<p></p><p></p>"
+
+
+  - type: image
+    desktop: //farm6.staticflickr.com/5515/30716437945_2f876abaa9_b.jpg
+    mobile: //farm6.staticflickr.com/5616/30628038951_01286d791d_b.jpg
+    title: "Mapa Cachoeira Escura"
+
+
+  - type: multimedia
+    embed: ""
+
+  - type: text
     text: "<p></p>"
 
+  - type: multimedia
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/tIY-QqcXUDw" frameborder="0" allowfullscreen></iframe>
+
+  - type: image
+    desktop:
+    mobile:
+    title: ""
+
+  - type: text
+    text: "<p></p>"
 
   - type: image
     desktop: ""
     mobile: ""
     title: ""
 
+  - type: text
+    text: "<p></p>"
+
+  - type: image
+    desktop: ""
+    mobile: ""
+    title: ""
+
+  - type: text
+    text: "<p></p>"
+
+  - type: image
+    desktop: ""
+    mobile: ""
+    title: ""
+
+  - type: text
+    text: "<p></p>"
 
   - type: multimedia
     embed: ""
 
-  - type: text
-    text: ""
-
-  - type: multimedia
-    embed: ""
-
-  - type: text
-    text: ""
-
   - type: image
     desktop: ""
     mobile: ""
     title: ""
 
   - type: text
-    text: ""
-
-  - type: image
-    desktop: ""
-    mobile: ""
-    title: ""
-
-  - type: image
-    desktop: ""
-    mobile: ""
-    title: ""
-
-  - type: multimedia
-    embed: ""
-
-  - type: image
-    desktop: ""
-    mobile: ""
-    title: ""
-
-  - type: image
-    desktop: ""
-    mobile: ""
-    title: ""   
-
-  - type: text
-    text: ""  
+    text: "<p></p>"
 
   - type: multimedia
     embed: ""   
@@ -89,13 +95,8 @@ sections:
     title: ""  
 
   - type: text
-    text: ""  
+    text: "<p></p>"  
 
-  - type: multimedia
-    embed: ""     
-
-  - type: text
-    text: ""
   - type: image
     desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
     mobile: //farm6.staticflickr.com/5727/29973631194_29d8bcc5d2_b.jpg
