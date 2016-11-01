@@ -57,8 +57,8 @@ sections:
         url:
         cover: //farm6.staticflickr.com/5731/30605469151_672db47378_z.jpg
   - type: imageCentralized
-    desktop: //farm6.staticflickr.com/5728/30658627316_246eeb8205_b.jpg
-    mobile: //farm6.staticflickr.com/5725/30694940015_8b77ae5968_z.jpg
+    desktop: //farm6.staticflickr.com/5711/30400424460_019a285f99_b.jpg
+    mobile: //farm6.staticflickr.com/5711/30400424460_019a285f99_b.jpg
     title: "Marcas da Lama"
 
   - type: text
