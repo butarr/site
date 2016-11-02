@@ -37,8 +37,8 @@ sections:
         url: /marcas-da-lama/barra-longa/
         cover: //farm6.staticflickr.com/5766/30082446503_8bc15cebc2_z.jpg
       - title: "Cachoeira Escura: o direito à água"
-        url:
-        cover: //farm6.staticflickr.com/5466/30692684595_c443b92198_z.jpg
+        url: /marcas-da-lama/cachoeira-escura/
+        cover: //farm6.staticflickr.com/5338/30681655266_c68529395a_z.jpg
       - title: "Mascarenhas: a morte do Rio Doce"
         url:
         cover: //farm6.staticflickr.com/5820/30604703741_e9a7516194_z.jpg
