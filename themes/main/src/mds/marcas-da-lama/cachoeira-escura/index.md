@@ -32,7 +32,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5515/30716437945_2f876abaa9_b.jpg
     mobile: //farm6.staticflickr.com/5616/30628038951_01286d791d_b.jpg
-    title: "Mapa Cachoeira Escura"
+    title: "Mapa mostrando a localização de Cachoeira Escura em relação à Barragem de Fundão, mais distante que Mariana, Bentos Rodrigues e Barra Longa. E um pouco antes de Belo Oriente"
 
 
   - type: multimedia
@@ -51,7 +51,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5336/30083575113_b5e03f3275_b.jpg
     mobile: //farm6.staticflickr.com/5716/30601409772_de73e5f836_b.jpg
-    title: "Aspas Yranildes"
+    title: "Foto de Yrani Salviana Venuto de 34 anos e seu relato: Eles (Empresa e governo) falam que água está própria pra beber, mas não está. A gente passa mal, fica com o estômago doendo, tontura."
 
   - type: text
     text: "<p>São mais de 20 galões de água distribuídos pelo quintal da casa de Yrani Salviana Venuto, 34 anos, onde também moram as três irmãs, além de filhos, sobrinhos e sua mãe. Localizada na parte alta da cidade, a residência fica a 40 minutos da bica mais próxima, na qual é possível captar água gratuitamente.</p>
@@ -61,7 +61,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5610/30086280714_e413fc923f_b.jpg
     mobile: //farm6.staticflickr.com/5576/30718699485_ed687f156a_b.jpg
-    title: "Aspas Yranildes"
+    title: "Foto de Yvanildes Salviano Venuto de 39 anos com seu relato: Outro dia a gente saiu de casa 23h30, para aproveitar que tem pouca gente na bica para pegar água, VOltamos de lá uma hora da manhã."
 
   - type: text
     text: "<p>Yrani paga ao vizinho uma parte de sua conta de luz para captar água de uma fonte privada. Já a irmã, Yvanildes Salviano Venuto Teotônio, 39 anos, dispõe de um carro e consegue mais facilmente descer o morro e encher alguns galões de água para consumo: são cerca de seis por semana.</p>
@@ -70,7 +70,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5508/30417636370_3d26d496cd_b.jpg
     mobile: //farm6.staticflickr.com/5508/30417636370_3d26d496cd_b.jpg
-    title: "Foto 1"
+    title: "Foto de bica enchendo galão de água"
 
   - type: text
     text: "<p>O trabalho cotidiano e as fontes de renda dos agricultores, ribeirinhos, pescadores e indígenas que vivem ao longo de toda a extensão do Rio Doce foram comprometidos. Nesse cenário de comprometimento da qualidade da água e do solo, \"propriedades camponesas, dependentes da criação de gado e dos rios próximos para sua reprodução social foram diretamente afetadas\". Isso é o que aponta o relatório \"Antes fosse mais leve a carga: Avaliação dos aspectos econômicos, políticos e sociais do desastre da Samarco/Vale/BHP em Mariana (MG)\", do Grupo Política, Economia, Mineração, Ambiente e Sociedade (PoEMAS).</p>
@@ -79,7 +79,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5821/30416996350_b8b54f7e59_b.jpg
     mobile: //farm6.staticflickr.com/5697/30717728885_23a347747f_b.jpg
-    title: "Aspas Silvana"
+    title: "Foto de Silvana Rodrigues do Nascimento de 49 anos e seu relato: Agora, com o estrago que está no rio, não tem como manter a família"
 
   - type: text
     text: "<p>Silvana Rodrigues do Nascimento, 49 anos, é uma das atingidas no distrito. Com uma relação antiga com o Rio Doce, as lembranças da vida que ela um dia teve são substituídas, hoje, pela lama visível todos os dias no quintal de sua casa.</p>
@@ -92,7 +92,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5482/30600997672_4213ae9033_b.jpg
     mobile: //farm6.staticflickr.com/5482/30600997672_4213ae9033_b.jpg
-    title: "Aspas Sebastião"
+    title: "Foto de Sebastião Cirilo de Souza de 72 anos e seu relato: A venda da areia diminuiu muito por causa do barro (lama) que desceu"
 
   - type: text
     text: "<p>Quem também retira o sustento das margens do Rio Doce é Sebastião Cirilo de Souza, 72 anos. \"A idade que eu tenho é a idade que eu estou na beira deste rio aqui\", brinca.
@@ -103,9 +103,9 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/nTiIbUPMO_M" frameborder="0" allowfullscreen></iframe>  
 
   - type: image
-    desktop: //farm6.staticflickr.com/5442/30717949355_cb687502c3_b.jpg
-    mobile: //farm6.staticflickr.com/5442/30717949355_cb687502c3_b.jpg
-    title: "Foto 2"  
+    desktop: //farm6.staticflickr.com/5821/30104016374_b85f49bc9c_b.jpg
+    mobile: //farm6.staticflickr.com/5821/30104016374_b85f49bc9c_b.jpg
+    title: "Placa do Areial Avenida, com trator e monte de areia ao fundo"  
 
   - type: text
     text: "<p>Em outubro deste ano, a Prefeitura de Belo Oriente informou, em sua página na internet, que firmou um acordo com a mineradora Samarco para melhorar o abastecimento de água na cidade. A empresa realiza a escavação de um poço artesiano em um local próximo à Estação de Tratamento de Água (ETA) de Cachoeira Escura.</p>
