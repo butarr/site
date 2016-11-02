@@ -46,6 +46,7 @@ append content
 
           a.news-radio-link(href=post.path)
             h2.title(itemprop= "headline")= post.title
+            h3.description(itemprop="description")= post.description
           
           .audio-item(id="item_#{position}")
             .loader
@@ -65,6 +66,6 @@ append content
                     p via SoundCloud
               a.download 
                 img(src="/img/icons/download.svg")
-                h3 Baixar
+                h4 Baixar
 
       include _partial/pagination

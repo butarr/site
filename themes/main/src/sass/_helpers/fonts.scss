@@ -826,7 +826,7 @@ $number-size: 1.3rem;
 }
 
 @mixin __radio() {
-  h3 {
+  h4 {
     font: bold #{$details-size}/#{$line-separation-small} $family-sans;
     color: $download-link;
   }
