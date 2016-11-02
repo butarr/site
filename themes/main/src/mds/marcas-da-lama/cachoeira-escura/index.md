@@ -73,8 +73,8 @@ sections:
     title: "Foto de bica enchendo galão de água"
 
   - type: text
-    text: "<p>O trabalho cotidiano e as fontes de renda dos agricultores, ribeirinhos, pescadores e indígenas que vivem ao longo de toda a extensão do Rio Doce foram comprometidos. Nesse cenário de comprometimento da qualidade da água e do solo, \"propriedades camponesas, dependentes da criação de gado e dos rios próximos para sua reprodução social foram diretamente afetadas\". Isso é o que aponta o relatório \"Antes fosse mais leve a carga: Avaliação dos aspectos econômicos, políticos e sociais do desastre da Samarco/Vale/BHP em Mariana (MG)\", do Grupo Política, Economia, Mineração, Ambiente e Sociedade (PoEMAS).</p>
-    <p>Este um dos focos de denúncia de moradores e militantes do MAB, que, ao longo do último ano, vem reivindicando que a Samarco reconheça pescadores e pequenos produtores da região como atingidos, uma vez que a lama que chegou no distrito mineiro também impôs a perda do trabalho de subsistência.</p>"
+    text: "<p>O trabalho cotidiano e as fontes de renda dos agricultores, ribeirinhos, pescadores e indígenas que vivem ao longo de toda a extensão do Rio Doce foram atingidos. Nesse cenário de comprometimento da qualidade da água e do solo, \"propriedades camponesas, dependentes da criação de gado e dos rios próximos para sua reprodução social foram diretamente afetadas\". Isso é o que aponta o relatório \"Antes fosse mais leve a carga: Avaliação dos aspectos econômicos, políticos e sociais do desastre da Samarco/Vale/BHP em Mariana (MG)\", do Grupo Política, Economia, Mineração, Ambiente e Sociedade (PoEMAS).</p>
+    <p>Este um dos focos de denúncia de moradores e militantes do MAB, que, ao longo do último ano, vêm reivindicando que a Samarco reconheça pescadores e pequenos produtores da região como atingidos, uma vez que a lama que chegou no distrito mineiro também impôs a perda do trabalho de subsistência.</p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5821/30416996350_b8b54f7e59_b.jpg
@@ -84,7 +84,7 @@ sections:
   - type: text
     text: "<p>Silvana Rodrigues do Nascimento, 49 anos, é uma das atingidas no distrito. Com uma relação antiga com o Rio Doce, as lembranças da vida que ela um dia teve são substituídas, hoje, pela lama visível todos os dias no quintal de sua casa.</p>
     <p>Do rio, ela tirava boa parte da renda e do alimento da família, pescando para o próprio consumo ou vendendo o excedente. Agora, conta ela, já não é possível nada disso. \"A renda caiu demais na casa. Não tem mais recurso para manter a casa igual mantinha\", diz. Ela não é reconhecida pela Samarco como uma atingida.</p>
-    <p>Após um cavalo e alguns porcos e galinhas morrerem após o consumo da água do rio, Silvana teve certeza que já não era mais possível beber da mesma fonte que a alimentou durante boa parte de sua vida. Atualmente, o abastecimento de água vem de um caminhão pipa que passa uma vez por semana em sua residência. \"Não tem recurso [financeiro] para ter uma água limpa para tomar em casa. O caminhão pipa é que coloca água aqui. Nós temos que economizar muito, porque acaba antes [do caminhão voltar]\", afirma.</p>"
+    <p>Depois de um cavalo e alguns porcos e galinhas morrerem após o consumo da água do rio, Silvana teve certeza que já não era mais possível beber da mesma fonte que a alimentou durante boa parte de sua vida. Atualmente, o abastecimento de água vem de um caminhão pipa que passa uma vez por semana em sua residência. \"Não tem recurso [financeiro] para ter uma água limpa para tomar em casa. O caminhão pipa é que coloca água aqui. Nós temos que economizar muito, porque acaba antes [do caminhão voltar]\", afirma.</p>"
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/-q2CWrnPmrE" frameborder="0" allowfullscreen></iframe>
