@@ -22,7 +22,7 @@ $text-size: 1rem;
 $details-size: 0.9rem;
 $title-size: 1.1rem;
 $section-name-size: 1rem;
-$audio-duration-size: 0.8rem;
+$audio-info-size: 0.8rem;
 
 $number-size: 1.3rem;
 
@@ -833,13 +833,13 @@ $number-size: 1.3rem;
 
   .progress-bar {
     span {
-      font: normal #{$audio-duration-size}/#{$line-separation-small} $family-serif;
+      font: normal #{$audio-info-size}/#{$line-separation-small} $family-serif;
     }
   }
-  
+
   .progress-and-source {
     p {
-      font: normal #{$audio-duration-size}/#{$line-separation-small} $family-sans;
+      font: normal #{$audio-info-size}/#{$line-separation-small} $family-sans;
     }
   }
 }
