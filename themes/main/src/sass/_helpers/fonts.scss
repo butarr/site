@@ -831,14 +831,8 @@ $number-size: 1.3rem;
     color: $download-link;
   }
 
-  .progress-bar {
-    span {
-      font: normal #{$audio-info-size}/#{$line-separation-small} $family-serif;
-    }
-  }
-
   .progress-and-source {
-    p {
+    p, span {
       font: normal #{$audio-info-size}/#{$line-separation-small} $family-sans;
     }
   }

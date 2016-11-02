@@ -20,113 +20,98 @@
   .title, .description {
     margin-bottom: $VERTICAL-SPACE;
   }
+}
 
-  .loader {
-    border: 5px solid $loader-background;
-    border-top: 6px solid $loader-color;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin: auto;
-    animation: spin 1.5s linear infinite;
-  }
+#radio .loader {
+  border: 5px solid $loader-background;
+  border-top: 6px solid $loader-color;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  animation: spin 1.5s linear infinite;
+}
 
-  @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-  }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
-  .player {
+#radio .player {
+  display: none;
+  width: 100%;
+
+  .widget {
     display: none;
-    width: 100%;
+  }
+}
 
-    @include media-query(TWO) {
-      justify-content: space-between;
-    }
+#radio .controls {
+  display: flex;
+  width: 100%;
 
-    .play {
-      img {
-        height: 40px;
-      }
-    }
-
-    .pause {
-      display: none;
-      img {
-        height: 40px;
-      }
-    }
-
-    i {
-      font-size: 4em;
-      color: $background;
-    }
-
-    .progress-and-source {
-      width: 100%;
-      padding-top: 10px;
-
-      @include media-query(THREE) {
-        width: 530px;
-      }
-
-      p {
-        float: right;
-      }
-    }
-
-    .progress-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-left: $LATERAL-COLUMN-SPACE;
-
-      progress {
-        width: 80%;
-        height: 7px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-      }
-
-      progress::-webkit-progress-value {
-        background-color: $red-base;
-      }
-
-      progress::-moz-progress-bar {
-        background-color: $red-base;
-      }
-
-      progress::-webkit-progress-bar {
-        background-color: $link-inverted-color-hover;
-      }
-
-      span {
-        width: 30px;
-        text-align: center;
-      }
-    }
-
-    .download {
-      height: 52px;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: space-between;
-      padding-left: 20px;
-
-      img {
-        height: 30px;
-      }
-    }
-
-    .widget {
-      display: none;
-    }
+  .play img {
+    height: 40px;
   }
 
-  .controls {
-    display: flex;
+  .pause {
+    display: none;
+    img {
+      height: 40px;
+    }
+  }
+}
+
+#radio .progress-and-source {
+  width: 100%;
+  padding-top: 10px;
+
+  p {
+    float: right;
+  }
+}
+
+#radio .progress-bar {
+  display: flex;
+  align-items: center;
+  padding-left: $LATERAL-COLUMN-SPACE;
+
+  progress {
     width: 100%;
+    height: 7px;
+    padding: 0 $LATERAL-COLUMN-SPACE;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  progress::-webkit-progress-value {
+    background-color: $red-base;
+  }
+
+  progress::-moz-progress-bar {
+    background-color: $red-base;
+  }
+
+  progress::-webkit-progress-bar {
+    background-color: $link-inverted-color-hover;
+  }
+
+  span {
+    width: 30px;
+    text-align: center;
+  }
+}
+
+#radio .download {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+
+  img {
+    height: 30px;
   }
 }
