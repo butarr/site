@@ -103,8 +103,8 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/nTiIbUPMO_M" frameborder="0" allowfullscreen></iframe>  
 
   - type: image
-    desktop: //farm6.staticflickr.com/5442/30717949355_cb687502c3_b.jpg
-    mobile: //farm6.staticflickr.com/5442/30717949355_cb687502c3_b.jpg
+    desktop: //farm6.staticflickr.com/5821/30104016374_b85f49bc9c_b.jpg
+    mobile: //farm6.staticflickr.com/5821/30104016374_b85f49bc9c_b.jpg
     title: "Foto 2"  
 
   - type: text
