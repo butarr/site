@@ -82,7 +82,7 @@ sections:
     title: "Gráfico com dados sobre o acesso à água: No município de Baixo Guandu: 80,9% da população tem abastecimento de água e 17,4% usa água de poço. Em Colatina, 87,6% têm abastecimento de água e 11,2% usam água de poço. Em Linhares, 84,4% têm abastecimento de água e 13,6% usam água de poço. Fonte: IJSN, 2010."
 
   - type: multimedia
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/T_6qI9VItKM" frameborder="0" allowfullscreen></iframe>
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/Fnc-za_A6ao" frameborder="0" allowfullscreen></iframe>
 
   - type: text
     text: "<p>Jonatan e a família também recebem o cartão de auxílio da Samarco. Para eles, o benefício só foi conquistado às custas de protestos que pressionaram a empresa, como o bloqueio dos trilhos de trem na região. No entanto, ele afirma que o futuro é incerto, uma vez que não se sabe até quando o cartão estará disponível ou se um dia o rio vai se recuperar e estar próprio para a pesca.</p>
