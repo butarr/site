@@ -1,7 +1,7 @@
 ---
 layout: static_special
 area: especial
-url: /marcas-da-lama/barra-longa/
+url: /marcas-da-lama/luta-dos-atingidos/
 title: "A resistência na Bacia do Rio Doce"
 description: O dia 5 de novembro de 2015 ficou marcado na história com o maior desastre ambiental do país
 author: Redação Brasil de Fato
@@ -11,7 +11,7 @@ tags:
   - mariana
   - barragem
   - samarco
-  - "rio doce"
+  - mineração
 cover:
   link: //farm6.staticflickr.com/5681/30322277070_597104e36e_b.jpg
   thumbnail: //farm6.staticflickr.com/5681/30322277070_597104e36e_t.jpg
