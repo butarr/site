@@ -49,9 +49,9 @@ sections:
     text: ""
 
   - type: image
-    desktop: //farm6.staticflickr.com/5804/30638917962_141d924d24_b.jpg
-    mobile: //farm6.staticflickr.com/5498/30718896906_16c582fda6_b.jpg
-    title: ""
+    desktop: //farm6.staticflickr.com/5712/30757261115_71d68d5aa9_b.jpg
+    mobile: //farm6.staticflickr.com/5451/30121663703_78247df3d2_b.jpg
+    title: "Foto de Nelci Maria de Andrade de 67 anos e seu relato: Eu estou sentindo falta do Rio Doce. A gente não vai vê-lo nunca mais. Só se for um milagre."
 
   - type: text
     text: ""
