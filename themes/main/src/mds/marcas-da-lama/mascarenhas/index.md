@@ -99,7 +99,7 @@ sections:
     <p>A mudança no pensamento e na convivência com o meio ambiente também é algo que mudou na comunidade atingida. \"A tragédia reforça nossa convicção de que nós temos que mudar muita coisa nesse mundo se a gente quiser viver um pouco mais de tempo aqui no planeta\", opina o prefeito de Baixo Guandu.</p>"  
 
   - type: multimedia
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/E1NpEKxfXOg" frameborder="0" allowfullscreen></iframe>   
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/7cPx00ESy3k" frameborder="0" allowfullscreen></iframe>   
 
   - type: image
     desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
