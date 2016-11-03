@@ -75,10 +75,13 @@ sections:
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/T_6qI9VItKM" frameborder="0" allowfullscreen></iframe>
 
+  - type: text
+    text: ""
+
   - type: image
-    desktop: ""
-    mobile: ""
-    title: ""
+    desktop: //farm6.staticflickr.com/5622/30756752975_1cc1a5c42d_b.jpg
+    mobile: //farm6.staticflickr.com/5647/30720032276_82df49a448_b.jpg
+    title: "Aspas Neto Barros"
 
   - type: text
     text: ""  
