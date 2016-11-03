@@ -56,7 +56,8 @@ sections:
       - title: "La resistencia en la cuenca del Río Doce"
         url: /marcas-del-barro/lucha/
         cover: //farm6.staticflickr.com/5731/30605469151_672db47378_z.jpg
-  - type: imageCentralized
+  - type: image
+    centralized: true
     desktop: //farm6.staticflickr.com/5513/30083375303_fbf49eb6c5_z.jpg
     mobile: //farm6.staticflickr.com/5462/30681162986_834e79a321_z.jpg
     title: "Marcas da Lama"

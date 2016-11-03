@@ -4,6 +4,8 @@ mixin picture(section)
     img(itemprop="url" src=section.mobile  alt=section.title title=section.title)
     meta(itemprop="width" content="960")
     meta(itemprop="height" content="640")
+  if section.link
+    a.link-text(itemprop="url" href=section.link target="_blank")= section.text
 
 mixin displayText(section)
   section.text.verticalSpacing !{section.text}
@@ -13,16 +15,12 @@ mixin displaySubtitle(section)
     h2.text= section.text
 
 mixin displayImage(section)
-  section.image.verticalSpacing
-    +picture(section)
-    if section.link
-      a.link-text(itemprop="url" href=section.link target="_blank")= section.text
-      
-mixin displayImageCentralized(section)
-  section.imageCentralized.verticalSpacing
-    +picture(section)
-    if section.link
-      a.link-text(itemprop="url" href=section.link target="_blank")= section.text
+  if section.centralized
+    section.imageCentralized.verticalSpacing
+      +picture(section)
+  else
+    section.image.verticalSpacing
+      +picture(section)
 
 mixin displayLinks(section)
   section.links.verticalSpacing
@@ -139,8 +137,6 @@ append content
               +displayImageAsLink(section)
             when 'quote'
               +displayQuote(section)
-            when 'imageCentralized'
-              +displayImageCentralized(section)
             when 'navigationLinks'
               +displayNavigationLinks(section)
 
