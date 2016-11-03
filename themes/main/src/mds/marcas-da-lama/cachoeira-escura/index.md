@@ -91,7 +91,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5482/30600997672_4213ae9033_b.jpg
-    mobile: //farm6.staticflickr.com/5482/30600997672_4213ae9033_b.jpg
+    mobile: //farm6.staticflickr.com/5645/30669221531_f3d124b803_b.jpg
     title: "Foto de Sebastião Cirilo de Souza de 72 anos e seu relato: A venda da areia diminuiu muito por causa do barro (lama) que desceu"
 
   - type: text
