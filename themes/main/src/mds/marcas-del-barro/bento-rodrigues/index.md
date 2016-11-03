@@ -1,9 +1,9 @@
 ---
 layout: static_special
 area: especial
-url: /marcas-da-lama/bento-rodrigues
-title: "O adeus a Bento Rodrigues"
-description: O dia 5 de novembro de 2015 ficou marcado na história como o maior desastre ambiental do país
+url: /marcas-del-barro/bento-rodrigues
+title: "El adiós a Bento Rodrigues"
+description: El 5 de noviembre de 2015 quedó marcado en la historia como el día del mayor desastre ambiental de Brasil
 author: Redação Brasil de Fato
 tags:
   - especial
@@ -25,16 +25,16 @@ published_at: 2016-10-28T22:58:23.677Z
 
 sections:
   - type: text
-    text: "<p>Era cerca de 16 horas quando uma movimentação estranha começou a ser percebida pelos moradores de Bento Rodrigues, pequeno distrito da cidade de Mariana, em Minas Gerais. Entre os cerca de 600 habitantes, os gritos rapidamente se espalharam. \"A barragem estourou!\", diziam alguns moradores, que durante a correria alertavam sobre a feroz lama de rejeitos que estava prestes a atingir o bairro, que surgiu por volta do século XVIII, tornando-se uma das primeiras unidades mineradoras no estado.</p>
-    <p>Acostumados com o ambiente e rotina da mineração, bastaram alguns segundos para que os moradores entendessem que a barragem de Fundão, pertencente à mineradora Samarco (um empreendimento conjunto da Vale e da BHP Billiton), havia se rompido. Mesmo os que se recusaram a acreditar de imediato no que acontecia, por não ouvirem nenhum aviso oficial ou alerta sonoro, não demoraram muito em perceber a gravidade da situação.</p>"
+    text: "<p>Eran cerca de las cuatro de la tarde cuando los pobladores de Bento Rodrigues, pequeño pueblo de la ciudad de Mariana, en el estado de Minas Gerais, comenzaron a sentir movimientos extraños. Entre los más de 600 habitantes los gritos se expandieron rápidamente. “¡El dique reventó!”, decían algunos de los vecinos que en medio de las corridas alertaban sobre el feroz barro con desechos que pronto afectaría al pueblo; que surgió en el siglo  XVIII, tornándose uno de los primeros espacios de minería en el estado.</p>
+    <p>Acostumbrados al ambiente y la rutina de la minería, bastaron algunos segundos para que los pobladores entendieran que el dique de Fundão, perteneciente a la  minera Samarco (un emprendimiento conjunto de las empresas Vale y BHP Billiton), se había roto. Mismo los que se negaron a creer de inmediato en lo que pasaba – al no haber oído ningún aviso oficial ni alerta sonora – no demoraron mucho en percibir la gravedad de la situación.</p>"
   - type: image
     desktop: //farm9.staticflickr.com/8623/30543256616_5d5d0faafb_b.jpg
     mobile: //farm9.staticflickr.com/8623/30543256616_5d5d0faafb_b.jpg
     title: Casa em escombros e carro sob montanhas de lama
   - type: text
-    text: "<p>Panelas no fogo, roupas, documentos, fotografias, carros, animais… Tudo precisou ser deixado para trás para se chegar às partes mais altas do vilarejo. Em meio à desolação e busca por notícias sobre o paradeiro de amigos, parentes e vizinhos, houve quem conseguisse parar e, entre lágrimas, observar a enxurrada de lama destruir ruas, casas, escola e posto de saúde. </p>
-    <p>Já não era mais possível enxergar o que até pouco antes era Bento Rodrigues, a não ser por alguns carros e telhados que se deslocavam pelo distrito, flutuando sem rumo nesse rio de barro. Das 200 casas, pouco mais de 20 ficaram em pé. Entre moradores e trabalhadores da mineradora, morreram 19 pessoas. </p>
-    <p>Em breves minutos, tragados pela lama, afundaram e se perderam objetos pessoais, plantações, lares, memórias e vidas: foi o adeus a Bento Rodrigues.</p>"
+    text: "<p>Ollas en el fuego, ropas, documentos, fotos, autos, animales, todo quedó atrás para llegar a las partes más altas del pueblo. En medio de la desolación y la búsqueda de noticias sobre el paradero de amigos, parientes y vecinos, hubo quienes pudieron parar y entre lágrimas observar como la avalancha de barro destruía calles, casas, la escuela y el centro de salud.</p>
+    <p>Ya no era posible ver lo que hasta hacía un rato era Bento Rodrigues. Salvo por algunos autos y techos que se movían sin rumbo en el río de barro. De las 200 casas, poco más de veinte quedaron en pie. Entre pobladores y trabajadores de la minera murieron 19 personas. En pocos minutos, tragados por el barro, se hundieron y perdieron objetos personales, plantaciones, hogares, memorias y vidas. Fue el adiós a Bento Rodrigues.</p>"
+    
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/cy-1G6Js3cc" frameborder="0" allowfullscreen></iframe>
@@ -42,7 +42,7 @@ sections:
   - type: subtitle
     desktop: //farm6.staticflickr.com/5457/30487004472_406c67db28_b.jpg
     mobile: //farm6.staticflickr.com/5457/30487004472_406c67db28_b.jpg
-    text: O antes e o depois de Bento Rodrigues
+    text: El antes y el después de Bento Rodrigues
 
   - type: multimedia
     embed: <iframe class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=9a91474c-88df-11e5-a524-0e7075bba956" width="100%" height="747px" frameborder="0"></iframe>
@@ -54,8 +54,8 @@ sections:
     title: Foto pintada de casal com vidro despedaçado encrustada na lama
 
   - type: text
-    text: "<p>Os sons em Bento Rodrigues aos finais de semana eram tradicionais: crianças brincando pelas ruas, pequenos bate-papos com vizinhos e amigos em frente de casa, festas e reuniões familiares. Com tudo debaixo da lama, o dia 6 de novembro era para ser o mais silencioso do pequeno povoado mineiro. Mas, dessa vez, o ambiente de Bento Rodrigues foi preenchido pelo barulho de helicópteros e grupos de resgate, que circulavam pelo vilarejo à procura de sobreviventes.</p>
-    <p>Segundo o relatório \"Antes fosse mais leve a carga: Avaliação dos aspectos econômicos, políticos e sociais do desastre da Samarco/Vale/BHP em Mariana (MG)\", do Grupo Política, Economia, Mineração, Ambiente e Sociedade (PoEMAS), a lama de rejeito causou uma \"destruição socioambiental por 663 km nos rios Gualaxo do Norte, Carmo e Doce até chegar na foz do último, onde adentrou 80 km2 ao mar\".</p>"
+    text: "<p>Los sonidos en Bento durante los fines de semana eran tradicionales: niños jugando por las calles, pequeñas charlas con vecinos y amigos en los frentes de las casas, fiestas y reuniones familiares. Con todo bajo el barro, el 6 de noviembre era para ser el día más silencioso del pequeño pueblo minero. Pero esta vez el ambiente de Bento Rodrigues se llenó de ruido de helicópteros y grupos de rescate, que circulaban en busca de sobrevivientes.</p>
+    <p>Según el informe “Antes la carga era más ligera: evaluación de los aspectos económicos, políticos y sociales del desastre de la Samarco/Vale/BHP en Mariana (MG)”, del Grupo Política, Economía, Minería, Ambiente y Sociedad (PoEMAS), el barro de desechos causó “destrucción socioambiental por 663 km en los ríos Gualaxo del Norte, Carmo, y Doce, hasta llegar a la desembocadura del último, donde entró 80 km2 en el mar”.</p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5720/30466295692_e1628aaa8a_b.jpg
@@ -63,7 +63,7 @@ sections:
     title: "Mapa demarcando a barragem, Bento Rodrigues e Mariana em Minas Gerais"
 
   - type: text
-    text: "<p>O distrito de Bento Rodrigues, hoje totalmente destruído, foi apenas o primeiro local atingido e, portanto, uma das paradas da reportagem para o especial <b>Marcas da Lama - Um ano de resistência na Bacia do Rio Doce</b>.</p><p>\"Ali era a casa de Paulo César, ali era a casa de Dona Geralda, ali o terreno do meu sogro, mais ali o bar da Sandra, aqui era a casa de Joaquim\". É assim que Joana D'arc Norberto, 43 anos, inicia a conversa com a equipe do <b>Brasil de Fato</b>, enquanto percorre o que restou de Bento Rodrigues, quase um ano depois do ocorrido.</p>"
+    text: "<p>El distrito de Bento Rodrigues, hoy totalmente destruido, fue apenas el primer lugar afectado, y por lo tanto, una de las paradas del equipo de Brasil de Fato para el especial Las marcas del barro – Un año de resistencia en la cuenca del Río Doce.</p><p>“Ahí era la casa de Paulo César, ahí la de Doña Geralda, ahí el terreno de mi suegro, un poco más allá el bar de la Sandra, y aquí la casa de Joaquim”, dice Joana D'arc Norberto, de 43 años, al comenzar la charla, mientras recorre lo que quedó de Bento Rodrigues, casi un año después de lo ocurrido.</p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5799/30715424255_f06dc0c18c_b.jpg
@@ -71,17 +71,17 @@ sections:
     title: "Foto de Joana D'arc Norberto, de 43 anos, com sua fala \"Não estava em casa quando tudo aconteceu. Um genro me ligou e disse: 'ei, Joana, acabou Bento, morreu todo mundo'\""
 
   - type: text
-    text: "<p>Mesmo que muitos imóveis ainda estejam marcados pela destruição da lama ou tenham desaparecido completamente do mapa, os mais de vinte anos morando no distrito garantiram à dona-de-casa minuciosidade na memória. Os locais exatos das casas dos amigos ainda são lembrados.</p><p>Foram poucos os pertences recuperados por Joana e sua família. Embora sua casa tenha sido uma das poucas que não foram atingidas diretamente pela enxurrada, por se localizar na parte alta do povoado, se passaram dias até que ela e os vizinhos pudessem voltar ao local, e muitos pertences foram saqueados.</p><p>\"A gente sempre pedia pra entrar lá, pra tirar alguma coisa e poder levar – pra quando Deus abençoar, e a gente tiver uma nova casa –, poder levar. A gente queria conseguir tirar alguma coisa, mas não podia entrar. Hoje, não tem mais nada, porque os outros saquearam tudo\", lamenta.</p><p>Mãe de seis filhos, Joana caminha pela antiga casa lembrando como ela foi um dia (ver vídeo). \"Toda vez que eu volto aqui é uma tristeza\", diz, garantindo que, mesmo assim, faz questão de retornar sempre que possível a Bento Rodrigues. Ela ainda tem esperança de resgatar algum pertence, alguma memória.</p>"
+    text: "<p>Más allá de que muchos inmuebles fueron destruidos por el barro, o han desaparecido completamente del mapa, los más de veinte años viviendo en el distrito le garantizan a la dueña de casa la minuciosidad en la memoria. Los lugares exactos de las casas de los afectados todavía son recordados.</p><p>Fueron pocas las pertenencias recuperadas por Joana y su familia. Aunque su casa haya sido una de las pocas que no fue afectada directamente por el aluvión – ya que se ubica en la parte alta del poblado –, pasaron días hasta que ella y sus vecinos pudieron volver al lugar, y muchas de sus pertenencias fueron robadas.</p><p>\"Nosotros siempre pedíamos para entrar allá, para sacar alguna cosa, pensando en que cuando Dios nos bendijera y tuviéramos una nueva casa, pudiéramos llevar algo. Pero no se podía entrar. Hoy no tenemos más nada, porque los otros saquearon todo\", se lamenta.</p><p>Madre de seis hijos, Joana camina por la antigua casa recordando cómo fue algún día. (ver video). Cada vez que vuelvo aquí es una tristeza\", dice, aunque asegura que igual trata de volver siempre que es posible a Bento Rodrigues. Todavía tiene la esperanza de rescatar alguna esperanza, alguna memoria.</p>"
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/z1yucpZvuL8" frameborder="0" allowfullscreen></iframe>
 
   - type: text
-    text: "<p>Quando Joana se mudou para Bento Rodrigues, com pouco mais de 20 anos, ela estava grávida do primeiro filho. A vida no pequeno povoado logo se tornou a vida que sempre quis. Das lembranças mais felizes, se destacam os passeios a cavalo. O trajeto do distrito até o centro de Mariana durava cerca de duas horas de carroça, quando se podia admirar a paisagem, da qual ela lembra com gosto.</p>
-    <p>Hoje, ela conta que a rotina é totalmente outra. A imposição do abandono da vida rural, devido ao rompimento da barragem, fez com que Joana e a família ficassem por mais de um mês morando em um hotel. Em dezembro de 2015, se mudaram para um pequeno sítio em Mariana, onde, aos poucos, eles têm conseguido recuperar parte da antiga rotina. \"Algumas coisas a gente conseguiu recuperar, mas outras não\", diz, lembrando-se dos cavalos, mulas, galinhas e plantações que foram embora com a lama.</p>
-    <p>Com a decisão de que Bento Rodrigues deixará de existir – tomada em uma assembleia realizada em setembro –, uma comunidade será construída pela Samarco em um novo terreno. \"Eles estão mexendo aqui e nós estamos ficando para trás. Isso que eles estão mexendo, eu acho que deve ser para nos dar as nossas casas. E todos nós ainda estamos esperando as nossas casas\", desabafa a matriarca, enquanto passeia pelo que sobrou do povoado, vendo vários caminhões transitarem (ver capítulo 2).</p>
-    <p>Em nota, a Samarco informou que já iniciou o processo de realocação e reconstrução das comunidades afetadas em Bento Rodrigues, Paracatu de Baixo e Gesteira. \"As famílias já escolheram os terrenos onde os novos distritos serão erguidos. As obras serão entregues até 2019\", afirma a mineradora.</p>
-    <p>Quando questionada sobre o que deveria ser feito em relação a Bento, Joana é categórica: \"eu acho que deveria deixar para ser uma cidade histórica, preservar a memória de todo mundo\".</p>"
+    text: "<p>Cuando Joana se mudó para Bento, con poco más de 20 años, estaba embarazada de su primer hijo. La vida en el pequeño pueblo se convirtió en la vida que siempre quiso. Uno de sus recuerdos más felices es pasear a caballo.  El trayecto de dos horas hasta el centro de Mariana, que hacía en carroza, le permitía admirar el paisaje, que recuerda lindo.</p>
+    <p>Hoy, su rutina es diferente. La ruptura del dique la obligó a abandonar la vida rural, y a vivir junto a su familia en un hotel por más de un mes. En diciembre de 2015, se mudaron para una chacra en Mariana, donde, de a poco, han conseguido recuperar parte de la antigua rutina.  “Algunas cosas conseguimos recuperar, pero otras no”, dice, recordando los caballos, las mulas, gallinas y plantaciones que se llevó el barro.</p>
+    <p>Tras la decisión de que Bento Rodrigues dejará de existir – tomada en una asamblea realizada en setiembre –, una comunidad será construida por la Samarco en un nuevo terreno. “Ellos están moviendo aquí, y nosotros estamos quedando para atrás. Eso que ellos están moviendo, yo creo que debe ser para darnos nuestras casas. Y todos nosotros todavía las estamos esperando”, se desahoga la matriarca, mientras camina entre los restos y ve camiones que pasan (ver capítulo 2).</p>
+    <p>En una nota, la Samarco informó que ya inició el proceso de realojamiento y reconstrucción de las comunidades afectadas en Bento Rodrigues, Paracatu de Baixo y Gesteira. “Las familias ya eligieron los terrenos donde los nuevos distritos serán construidos. Las obras serán entregadas de aquí a 2019”, afirma la minera.</p>
+    <p>Consultada sobre lo que debería hacerse en relación a Bento, Joana es categórica: “yo creo que se debería dejar para ser una ciudad histórica, para preservar la memoria de todo el mundo”.</p>"
 
 
   - type: multimedia
@@ -93,17 +93,16 @@ sections:
     title: "Foto de Manuel Marcos Muniz, de 52 anos, com sua fala \"A gente acha que já passou, que já acabou, mas tem dia que a gente só vive em função da tragédia da Samarco, do rompimento da barragem\""
 
   - type: text
-    text: "<p>As lembranças de infância de Manuel Marcos Muniz, mais conhecido como Marquinhos, são de Bento Rodrigues. Os ensinamentos da roça vieram dos pais, que se mudaram para o pequeno vilarejo quando ele ainda era um menino. A rotina da família era guiada pelas criações de animais e plantações ao redor da casa.</p><p>As transformações do povoado mineiro ocorreram ao compasso das mudanças em sua vida. Início dos estudos, primeira namorada, casamento, o nascimento da única filha. Aposentado e com 52 anos, hoje, a cada lembrança vasculhada na memória, um relato sobre Bento. “As raízes estavam todas ali”, diz.</p><p>Para acomodar a vida familiar, o trabalho da esposa e os estudos da filha, no início dos anos 2000, a rotina passou a ser dividida entre Bento Rodrigues e o centro do município de Mariana, onde também construiu uma casa. As criações de galinhas, porcos e a lavoura permaneceram no pequeno distrito e ficavam aos cuidados de um de seus irmãos. Já aos finais de semana, o próprio Marquinhos se responsabilizava pelo roçado e aproveitava a vida no campo com a família.</p>"
+    text: "<p>Los recuerdos de la infancia de Manuel Marcos Muniz, más conocido como Marquinhos, son de Bento Rodrigues. Los aprendizajes del campo vinieron de sus padres, que se mudaron para el pequeño poblado cuando él todavía era un niño. La rutina de la familia era guiada por la crianza de animales y las plantaciones alrededor de la casa.</p><p>Las transformaciones del poblado minero ocurrieron al compás de los cambios en su vida. Inicio de los estudios, la primera novia, el casamiento, el nacimiento de su única hija. Jubilado y con 52 años, a cada recuerdo rastreado en su memoria, un relato sobre Bento. “Las raíces estaban todas ahí”, dice.</p>
+    <p>Para acomodar la vida familiar, el trabajo de su esposa y los estudios de su hija, al inicio de los años 2000 la rutina pasó a dividirse entre Bento Rodrigues y el centro del municipio de Mariana, donde también construyeron una casa. La crianza de gallinas, cerdos y el cultivo permanecieron en el pequeño distrito, al cuidado de uno de sus hermanos. Los fines de semana el propio Marquinhos se responsabilizaba de la plantación, y aprovechaba la vida en el campo con su familia.</p>
+    <p>En Bento Rodrigues, Marquinhos tenía tres propiedades. La casa de sus padres, como herencia dividida entre él y siete hermanos, y dos terrenos. Una vez jubilado, y con su hija crecida, el plan era volver, ya que pretendía pasar el resto de su vida. Ver la destrucción después de que el barro pasó es “un sueño interrumpido”, se lamenta. Una marca para toda la vida; dice del momento en el que supo que Bento no existiría más (ver video).</p>"
 
-
-  - type: text
-    text: "<p>Em Bento Rodrigues, Marquinhos tinha três propriedades. A casa dos pais, como uma herança dividida entre ele e sete irmãos, e dois terrenos. Uma vez aposentado e com a filha crescida, o plano era voltar para o vilarejo, no qual pretendia passar o resto da vida. Ver a destruição após a passagem da lama foi “um sonho interrompido”, lamenta. Uma marca para a vida inteira; assim ele qualifica o momento em que soube que Bento não existiria mais (ver vídeo).</p>"
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/Gii1uTncPxE" frameborder="0" allowfullscreen></iframe>
 
   - type: text
-    text: "<p>Felizmente, conta ele, os registros dessa rotina ficaram preservados nas fotografias guardadas na casa em Mariana. Nem tudo foi perdido na lama.</p>"
+    text: "<p>Felizmente, cuenta, los registros de aquella rutina quedaron a salvo en las fotografías que guardaban en su casa en Mariana. No todo se perdió en el barro.</p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5806/30586453595_2b4d32bd3a_b.jpg
@@ -112,12 +111,12 @@ sections:
     link: https://www.flickr.com/photos/brasildefato/albums/72157675597652176
 
   - type: text
-    text: "<p>Foram 29 anos e dez meses. Este foi o tempo dedicado por Manuel Marcos ao trabalho na Samarco, na qual foi operador-mantenedor de bombas no mineroduto. Passado um ano do rompimento, a sua posição é de crítica à mineradora.</p>
-<p>Segundo ele, pelo fato de possuir uma residência em Mariana, a empresa não o reconhece como atingido direto de Bento Rodrigues. Ainda que Marquinhos receba o cartão de auxílio financeiro, que tem sido pago mensalmente, o aposentado não foi enquadrado no grupo de moradores atingidos que receberam R$ 20 mil de indenização antecipada por morarem na comunidade.</p>
-<p>De acordo com a Samarco, ele foi classificado no grupo de pessoas que apenas tinha terreno ou imóvel, ou seja, não moravam em Bento Rodrigues. Estes proprietários receberam o valor de R$ 10 mil cada como uma indenização antecipada. Marquinhos se recusou a ser enquadrado neste grupo por não concordar com o entendimento da empresa, uma vez que mantinha uma vida regular no distrito.</p>
-<p>Para além disso, o terreno herdado dos pais foi desapropriado pelo governador de Minas Gerais, Fernando Pimentel (PT), que, em setembro deste ano, assinou uma requisição administrativa de terrenos no distrito de Bento Rodrigues para que a mineradora construa o dique S4.</p>
-<p>À reportagem, a Samarco informou que a construção do dique S4 foi autorizada por decreto do governo de Minas Gerais, que, \"na prática, estabelece a requisição administrativa dos terrenos, que afeta a posse, mas não a propriedade. Caberá à Samarco repassar ao Estado as verbas para a indenização pelo uso da área, de acordo com os procedimentos a serem definidos pelo governo\".</p>
-<p>Na ocasião, o Movimento do Atingidos por Barragens (MAB) se posicionou dizendo que a ação do governo estadual apenas \"simboliza um Estado refém dos interesses privados das mineradoras transnacionais\".</p>"
+    text: "<p>29 años y diez meses. Ese fue el tiempo dedicado por Manuel Marcos a trabajar para la Samarco, empresa en la que fue operador e hizo el mantenimiento de bombas en el mineroducto. Un año después de la ruptura del dique, tiene una posición crítica hacia la minera.</p>
+<p>Según él, por el hecho de tener una residencia en Mariana, la empresa no lo reconoce como afectado directo de Bento Rodrigues. A pesar de que Marquinhos recibe la tarjeta de auxilio financiero, paga mensualmente, el jubilado no fue incluido en el grupo de pobladores afectados que recibieron 20 mil reales de indemnización por vivir en la comunidad.</p>
+<p>De acuerdo con la Samarco, él fue clasificado en el grupo de personas que apenas tenían terrenos o inmuebles, o sea, no vivían en Bento Rodrigues. Estos propietarios recibieron el valor de 10 mil reales como indemnización anticipada. Marquinhos se negó a ser incluido en ese grupo, por discrepar con la empresa, ya que mantenía una vida regular en el distrito.</p>
+<p>Además, el terreno que heredó de sus padres fue expropiado por el gobernador de Minas Gerais, Fernando Pimentel (PT) que, en setiembre de este año, firmó un requerimiento administrativo de terrenos en el distrito de Bento Rodrigues para que la minera construya el dique S4.</p>
+<p>Desde Samarco informaron a Brasil de Fato que la construcción del dique S4 fue autorizada por decreto del gobierno de Minas Gerais, y que, “en la práctica, establece el requerimiento administrativo de los terrenos, que afecta la posesión pero no la propiedad”. Y agregan, que “corresponderá a Samarco dar al Estado los recursos para la indemnización por el uso del área, de acuerdo con los procedimientos que sean definidos por el gobierno”.</p>
+<p>Al respecto, el Movimiento de Afectados por Represas (MAB, por su nombre en portugués), se posicionó diciendo que la acción del gobierno estadual apenas simboliza “un Estado rehén de los intereses privados de las mineras trasnacionales”.</p>"
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/u-ddXSEut9A" frameborder="0" allowfullscreen></iframe>
