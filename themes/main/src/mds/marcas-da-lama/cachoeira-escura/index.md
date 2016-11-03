@@ -122,4 +122,14 @@ sections:
     mobile: "//farm6.staticflickr.com/5670/30060011074_04678bd8d1_z.jpg"
     title: "Dois homens carregando um balde de água"  
 
+  - type: navigationLinks
+    title: "Marcas da Lama: Leia mais"
+    links:
+      - title: "Barra Longa: a cidade canteiro de obras"
+        url: /marcas-da-lama/barra-longa/
+        cover: //farm6.staticflickr.com/5596/30417032270_3558ae4375_b.jpg
+      - title: "Mascarenhas: a morte do Rio Doce"
+        url: /marcas-da-lama/mascarenhas/
+        cover: //farm6.staticflickr.com/5535/30718512145_1f1dda95f8_z.jpg
+
 ---
