@@ -31,7 +31,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5804/30638917962_141d924d24_b.jpg
     mobile: //farm6.staticflickr.com/5498/30718896906_16c582fda6_b.jpg
-    title: ""
+    title: "Mapa: Caminho barragem do fundão até a cidade de Mascarenhas"
 
   - type: text
     text: "<p></p>"
