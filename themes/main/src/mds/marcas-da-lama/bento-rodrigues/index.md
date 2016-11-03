@@ -131,14 +131,13 @@ sections:
     mobile: //farm6.staticflickr.com/5471/29967477173_4e42af1d3e_b.jpg
     title: Única parede de pé de uma casa
 
-  - type: navigationLinks
-    title: "Marcas da Lama: Leia mais"
+  - type: links
+    title: "Mais do especial"
     links:
-      - title: Marcas da Lama
-        url: /marcas-da-lama/
-        cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
-      - title: "Barra Longa: a cidade canteiro de obras"
-        url: /marcas-da-lama/barra-longa/
-        cover: //farm6.staticflickr.com/5596/30417032270_3558ae4375_b.jpg
-
+    - title: Início - Marcas da Lama
+      url: /marcas-da-lama/
+      cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
+    - title: "Próxima - Barra Longa: a cidade canteiro de obras"
+      url: /marcas-da-lama/barra-longa/
+      cover: //farm6.staticflickr.com/5596/30417032270_3558ae4375_b.jpg
 ---
