@@ -81,7 +81,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5622/30756752975_1cc1a5c42d_b.jpg
     mobile: //farm6.staticflickr.com/5647/30720032276_82df49a448_b.jpg
-    title: "Aspas Neto Barros"
+    title: "Foto de José de Barros Neto, prefeito de Baixo Guandu, e seu relato: O que nos importa, e o que a gente sempre está cobrando, é que isso não pode entrar no rol dos tantos casos no Brasil e no mundo que caíram na impunidade"
 
   - type: text
     text: ""  
