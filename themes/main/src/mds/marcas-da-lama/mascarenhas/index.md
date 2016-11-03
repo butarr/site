@@ -25,7 +25,7 @@ published_at: 2016-10-28T22:58:23.677Z
 
 sections:
   - type: text
-    text: "<p></p>"
+    text: "<p>A lama de rejeito da barragem de Fundão, da mineradora Samarco (pertencente à Vale S.A. e BHP Billiton), chegou no estado do Espírito Santo no dia 16 de novembro. A comunidade de Mascarenhas, no município de Baixo Guandu, foi uma das primeiras atingidas no estado capixaba.</p><p>Com a principal fonte de renda sendo a atividade pesqueira, a tragédia socioambiental mudou radicalmente a região. Hoje, o que se vê são redes de pesca amontoadas, trabalhadores e trabalhadoras em busca de alternativas para sobrevivência, além da constatação, repetida em diversos relatos, de que: \"o Rio Doce morreu\". </p>"
 
 
   - type: image
