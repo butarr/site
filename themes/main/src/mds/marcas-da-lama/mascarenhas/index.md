@@ -31,7 +31,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5804/30638917962_141d924d24_b.jpg
     mobile: //farm6.staticflickr.com/5498/30718896906_16c582fda6_b.jpg
-    title: "Mapa: Caminho barragem de Fundão em Minas Gerais até a cidade de Mascarenhas no Espírito Santo"
+    title: "Mapa mostrando a localização da cidade de Mascarenhas no Espírito Santo em relação à barragem de Fundão em Minas Gerais"
 
   - type: text
     text: "<p>Nascido e criado em Mascarenhas, o pescador Fábio Carlos Batista, 37 anos, sempre teve na rotina as aventuras pelo Rio Doce. Pescando desde os 12 anos de idade, a paixão pela profissão foi passada de pai para filho. Antes da tragédia, era o que ele buscava ensinar para a filha, levando a menina para a beira do rio sempre que possível.</p>
@@ -79,7 +79,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5829/30642325052_91cb15d0ff_b.jpg
     mobile: //farm6.staticflickr.com/5554/30722167136_f9090bc829_b.jpg
-    title: "Infografico produçao da agua"
+    title: "Gráfico com dados sobre o acesso à água: No município de Baixo Guandu: 80,9% da população tem abastecimento de água e 17,4% usa água de poço. Em Colatina, 87,6% têm abastecimento de água e 11,2% usam água de poço. Em Linhares, 84,4% têm abastecimento de água e 13,6% usam água de poço. Fonte: IJSN, 2010."
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/T_6qI9VItKM" frameborder="0" allowfullscreen></iframe>
