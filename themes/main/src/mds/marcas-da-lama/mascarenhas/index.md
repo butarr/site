@@ -62,7 +62,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5542/30124399444_aa2eb8e3d6_b.jpg
     mobile: //farm6.staticflickr.com/5492/30639790952_a87c8e298b_b.jpg
-    title: "Aspas Jonatan"
+    title: "Foto de Jonatan Brown de 35 anos e seu relato: A população quer justiça."
 
   - type: text
     text: ""
