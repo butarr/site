@@ -60,9 +60,9 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/7rlv5I7_VwY" frameborder="0" allowfullscreen></iframe>
 
   - type: image
-    desktop: ""
-    mobile: ""
-    title: ""
+    desktop: //farm6.staticflickr.com/5542/30124399444_aa2eb8e3d6_b.jpg
+    mobile: //farm6.staticflickr.com/5492/30639790952_a87c8e298b_b.jpg
+    title: "Aspas Jonatan"
 
   - type: text
     text: ""
@@ -90,7 +90,7 @@ sections:
     desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
     mobile: //farm6.staticflickr.com/5727/29973631194_29d8bcc5d2_b.jpg
     title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
-    
+
   - type: image
     desktop: //farm6.staticflickr.com/5547/30693213985_af1794d26b_b.jpg
     mobile: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
