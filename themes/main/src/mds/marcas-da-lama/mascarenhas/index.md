@@ -41,9 +41,9 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/W7tWVzFeQ5M" frameborder="0" allowfullscreen></iframe>
 
   - type: image
-    desktop: //farm6.staticflickr.com/5804/30638917962_141d924d24_b.jpg
-    mobile: //farm6.staticflickr.com/5498/30718896906_16c582fda6_b.jpg
-    title: ""
+    desktop: //farm6.staticflickr.com/5461/30456424160_57311c721e_b.jpg
+    mobile: //farm6.staticflickr.com/5666/30456470000_06a754f128_b.jpg
+    title: "Foto de Fábio Carlos Batista de 27 anos e seu relato: Eu preferia o rio correndo normal, sem dano nenhum, do que estar recebendo esse dinheiro da Samarco"
 
   - type: text
     text: ""
