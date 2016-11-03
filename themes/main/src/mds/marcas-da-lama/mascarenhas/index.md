@@ -31,7 +31,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5804/30638917962_141d924d24_b.jpg
     mobile: //farm6.staticflickr.com/5498/30718896906_16c582fda6_b.jpg
-    title: "Mapa: Caminho barragem do fundão até a cidade de Mascarenhas"
+    title: "Mapa: Caminho barragem de Fundão em Minas Gerais até a cidade de Mascarenhas no Espírito Santo"
 
   - type: text
     text: "<p></p>"
@@ -96,7 +96,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5547/30693213985_af1794d26b_b.jpg
-    mobile: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
+    mobile: //farm6.staticflickr.com/5547/30693213985_af1794d26b_b.jpg
     title: Imagem do Rio Doce
 
 ---
