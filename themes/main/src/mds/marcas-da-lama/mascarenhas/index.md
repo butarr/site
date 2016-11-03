@@ -70,7 +70,7 @@ sections:
   - type: image
     desktop: ""
     mobile: ""
-    title: ""
+    title: "Infografico produçao da agua"
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/T_6qI9VItKM" frameborder="0" allowfullscreen></iframe>
