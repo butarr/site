@@ -3,7 +3,7 @@ layout: static_special
 area: especial
 url: /marcas-da-lama/mascarenhas/
 title: "Mascarenhas: a morte do Rio Doce"
-description: O dia 5 de novembro de 2015 ficou marcado na história com o maior desastre ambiental do país
+description: Pescadores atingidos pelo desequilíbrio ecológico que devastou o rio e seus afluentes continuam sem a sua principal fonte de renda
 author: Redação Brasil de Fato
 tags:
   - especial
