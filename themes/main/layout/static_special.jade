@@ -42,16 +42,22 @@ mixin displayLinks(section)
                         
 mixin displayNavigationLinks(section)
   section.links.verticalSpacing
-    h2.links-headline= section.title
+    h2.links-headline Mais do Especial
     ul.links-container.links-container-navigation(itemscope itemtype="https://schema.org/ItemList")
-      each item, category in section.links
-        li.link.link-navigation(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-          meta(itemprop="position" content=category)
-          if item.url
-            a(itemprop="url" href=item.url)
-              +displayLinksPicture(item)
-          else
-            +displayLinksPicture(item)
+      li.link.link-navigation(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+        meta(itemprop="position" content=category)
+        if section.anterior.url
+          a(itemprop="url" href=section.anterior.url)
+            +displayLinksPicture(section.anterior)
+        else
+          +displayLinksPicture(section.anterior)
+      li.link.link-navigation(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+        meta(itemprop="position" content=category)
+        if section.proximo.url
+          a(itemprop="url" href=section.proximo.url)
+            +displayLinksPicture(section.proximo)
+        else
+          +displayLinksPicture(section.proximo)
 
 mixin displayMultimedia(section)
   section.multimedia.verticalSpacing
