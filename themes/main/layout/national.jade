@@ -108,6 +108,8 @@ append content
       .top
         if page.spotlight_03
           +spotlight_03_desktop(page.spotlight_03)
+        else if site.data.advertisings.advertising_01
+          +spotlight_01_desktop(site.data.advertisings.advertising_01, "http://schema.org/WPAdBlock")
 
         if page.spotlight_03
           +spotlight_03_mobile(page.spotlight_03)
