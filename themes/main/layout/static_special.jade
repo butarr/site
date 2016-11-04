@@ -46,6 +46,7 @@ mixin displayNavigationLinks(section)
     ul.links-container.links-container-navigation(itemscope itemtype="https://schema.org/ItemList")
       li.link.link-navigation(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
         meta(itemprop="position" content=category)
+        h3.links-headline Anterior
         if section.anterior.url
           a(itemprop="url" href=section.anterior.url)
             +displayLinksPicture(section.anterior)
@@ -53,6 +54,7 @@ mixin displayNavigationLinks(section)
           +displayLinksPicture(section.anterior)
       li.link.link-navigation(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
         meta(itemprop="position" content=category)
+        h3.links-headline Próximo
         if section.proximo.url
           a(itemprop="url" href=section.proximo.url)
             +displayLinksPicture(section.proximo)
