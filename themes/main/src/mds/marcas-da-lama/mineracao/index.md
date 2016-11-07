@@ -46,13 +46,19 @@ sections:
     title: "Mensagens interceptadas pela Polícia Federal, de 29 de agosto de 2014, iniciada às 15h56: Kléber Terra, então diretor de Operações da Samarco: \"Em Fundão aparecem umas trincas no maciço onde desviamos o eixo\". Ricardo Vescovi, então presidente da Samarco: \"O quê??? Ai, ai, ai... Fica esperto\". Ricardo Vescovi: \"Que tipo de trinca? Só no maciço, ou conecta com o interior da barragem?\" Kléber Terra: \"Só no maciço. O ITRB na última reunião já havia falado que teremos de fazer uma drenagem intermediária no maciço. Com o alargamento da boca do vale, o tapete drenante anterior não pega todo o maciço no topo\""
 
   - type: multimedia
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/KWlRqtRHNAo" frameborder="0" allowfullscreen></iframe>
-
-  - type: text
-    text: ""
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/OuMoiCbuoy0" frameborder="0" allowfullscreen></iframe>
 
   - type: multimedia
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/1ghhXZGNRCY" frameborder="0" allowfullscreen></iframe>
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/Rri-i3UUgAA" frameborder="0" allowfullscreen></iframe>
+
+  - type: multimedia
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/A1jES20TqDg" frameborder="0" allowfullscreen></iframe>
+
+  - type: multimedia
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/V7ZAPnNxVXE" frameborder="0" allowfullscreen></iframe>  
+
+  - type: multimedia
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/RyN1jJ3k4m4" frameborder="0" allowfullscreen></iframe>    
 
   - type: text
     text: ""
@@ -72,8 +78,7 @@ sections:
     mobile: ""
     title: ""
 
-  - type: multimedia
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/T_6qI9VItKM" frameborder="0" allowfullscreen></iframe>
+
 
   - type: image
     desktop: ""
@@ -88,8 +93,7 @@ sections:
   - type: text
     text: ""  
 
-  - type: multimedia
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/E1NpEKxfXOg" frameborder="0" allowfullscreen></iframe>   
+
 
   - type: image
     desktop: ""
@@ -99,8 +103,7 @@ sections:
   - type: text
     text: ""  
 
-  - type: multimedia
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/nERWksYhIcI" frameborder="0" allowfullscreen></iframe>     
+
 
   - type: text
     text: ""
