@@ -45,6 +45,11 @@ sections:
     mobile: //farm6.staticflickr.com/5738/30725486572_9795169750_z.jpg
     title: "Mensagens interceptadas pela Polícia Federal, de 29 de agosto de 2014, iniciada às 15h56: Kléber Terra, então diretor de Operações da Samarco: \"Em Fundão aparecem umas trincas no maciço onde desviamos o eixo\". Ricardo Vescovi, então presidente da Samarco: \"O quê??? Ai, ai, ai... Fica esperto\". Ricardo Vescovi: \"Que tipo de trinca? Só no maciço, ou conecta com o interior da barragem?\" Kléber Terra: \"Só no maciço. O ITRB na última reunião já havia falado que teremos de fazer uma drenagem intermediária no maciço. Com o alargamento da boca do vale, o tapete drenante anterior não pega todo o maciço no topo\""
 
+  - type: image
+    desktop: //farm6.staticflickr.com/5730/30809316976_2c43021307_b.jpg
+    mobile: //farm6.staticflickr.com/5508/30210681573_5f4f967471_z.jpg
+    title: ""
+
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/OuMoiCbuoy0" frameborder="0" allowfullscreen></iframe>
 
@@ -68,10 +73,7 @@ sections:
   - type: text
     text: ""
 
-  - type: image
-    desktop: ""
-    mobile: ""
-    title: ""
+
 
   - type: image
     desktop: ""
@@ -113,9 +115,9 @@ sections:
     mobile: ""
     title: ""  
   - type: image
-    desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
-    mobile: //farm6.staticflickr.com/5727/29973631194_29d8bcc5d2_b.jpg
-    title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
+    desktop: //farm6.staticflickr.com/5796/30809249946_e53a4913df_b.jpg
+    mobile: //farm6.staticflickr.com/5796/30809249946_e53a4913df_b.jpg
+    title: "Créditos da reportagem. Texto: Guilherme Weimann, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes, Arte: Wilcker Morais"
   - type: image
     desktop: //farm6.staticflickr.com/5446/30206831453_739b3d63a4_b.jpg
     mobile: //farm6.staticflickr.com/5446/30206831453_739b3d63a4_z.jpg
