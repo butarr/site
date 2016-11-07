@@ -40,18 +40,25 @@ sections:
     title: "Infográfico citando tragédias de mineração. 1986 Itabiro - Grupo Itaminas: Rompimento de Barragem causando a morte de 7 pessoas; 2001 Nova Lima - Mineração Rio Verde: Rompimento de Barragem Causando morte de 5 pessoas; 2006 Miraí - Rio Pomba Caraguases: Vazamento de 1,2 milhões de m3 de Rejeitos; 2007 Miraí - Rio Pomba Cataguases: Vazamento de 2,28 milhões de m3 de rejeitos inundando as cidades de Miraí e Muriaé; 2008 Congonhas - Companhia Siderúrgica nacional: Rompimento de Estrutura levando ao aumento do nível do Rio Maranhão. 2008 Itabira - Não disponibilizado pelo Ibama: Rompimento da Barragem com rejeitos químicos de extração de ouro; 2014 Itabiro - Herculano Mineração: Rompimento de Barragem matando 3 pessoas e ferindo uma."
 
   - type: image
+    centralized: true
     desktop: //farm6.staticflickr.com/5738/30725486572_9795169750_b.jpg
     mobile: //farm6.staticflickr.com/5738/30725486572_9795169750_z.jpg
     title: "Mensagens interceptadas pela Polícia Federal, de 29 de agosto de 2014, iniciada às 15h56: Kléber Terra, então diretor de Operações da Samarco: \"Em Fundão aparecem umas trincas no maciço onde desviamos o eixo\". Ricardo Vescovi, então presidente da Samarco: \"O quê??? Ai, ai, ai... Fica esperto\". Ricardo Vescovi: \"Que tipo de trinca? Só no maciço, ou conecta com o interior da barragem?\" Kléber Terra: \"Só no maciço. O ITRB na última reunião já havia falado que teremos de fazer uma drenagem intermediária no maciço. Com o alargamento da boca do vale, o tapete drenante anterior não pega todo o maciço no topo\""
 
   - type: multimedia
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/KWlRqtRHNAo" frameborder="0" allowfullscreen></iframe>
-
-  - type: text
-    text: ""
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/OuMoiCbuoy0" frameborder="0" allowfullscreen></iframe>
 
   - type: multimedia
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/1ghhXZGNRCY" frameborder="0" allowfullscreen></iframe>
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/Rri-i3UUgAA" frameborder="0" allowfullscreen></iframe>
+
+  - type: multimedia
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/A1jES20TqDg" frameborder="0" allowfullscreen></iframe>
+
+  - type: multimedia
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/V7ZAPnNxVXE" frameborder="0" allowfullscreen></iframe>  
+
+  - type: multimedia
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/RyN1jJ3k4m4" frameborder="0" allowfullscreen></iframe>    
 
   - type: text
     text: ""
@@ -71,8 +78,7 @@ sections:
     mobile: ""
     title: ""
 
-  - type: multimedia
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/T_6qI9VItKM" frameborder="0" allowfullscreen></iframe>
+
 
   - type: image
     desktop: ""
@@ -87,8 +93,7 @@ sections:
   - type: text
     text: ""  
 
-  - type: multimedia
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/E1NpEKxfXOg" frameborder="0" allowfullscreen></iframe>   
+
 
   - type: image
     desktop: ""
@@ -98,8 +103,7 @@ sections:
   - type: text
     text: ""  
 
-  - type: multimedia
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/nERWksYhIcI" frameborder="0" allowfullscreen></iframe>     
+
 
   - type: text
     text: ""
@@ -113,8 +117,8 @@ sections:
     mobile: //farm6.staticflickr.com/5727/29973631194_29d8bcc5d2_b.jpg
     title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
   - type: image
-    desktop: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
-    mobile: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
+    desktop: //farm6.staticflickr.com/5446/30206831453_739b3d63a4_b.jpg
+    mobile: //farm6.staticflickr.com/5446/30206831453_739b3d63a4_z.jpg
     title: Corvo no topo de uma montanha de lama
 
 ---
