@@ -117,13 +117,13 @@ sections:
     title: Corvo no topo de uma montanha de lama
 
   - type: navigationLinks
-    title: "Marcas da Lama: Leia mais"
-    links:
-      - title: "O adeus a Bento Rodrigues"
-        url: /marcas-da-lama/bento-rodrigues
-        cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
-      - title: "Cachoeira Escura: o direito à água"
-        url: /marcas-da-lama/cachoeira-escura/
-        cover: //farm6.staticflickr.com/5764/30739150495_a213b7c124_b.jpg
+    previous:
+      title: "O adeus a Bento Rodrigues"
+      url: /marcas-da-lama/bento-rodrigues
+      cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
+    next:
+      title: "Cachoeira Escura: o direito à água"
+      url: /marcas-da-lama/cachoeira-escura/
+      cover: //farm6.staticflickr.com/5764/30739150495_a213b7c124_b.jpg
 
 ---
