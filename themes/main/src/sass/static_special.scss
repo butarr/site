@@ -195,7 +195,6 @@
     }
 
     .link-navigation {
-      max-width: (1.333 * $COLUMN-WIDTH);
       @include image-rounded-responsive(200px);
     }
   }
