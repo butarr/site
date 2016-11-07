@@ -197,6 +197,12 @@
     .link-navigation {
       @include image-rounded-responsive(200px);
     }
+
+    .link-navigation-title {
+      text-align: center;
+      font: bold 24px $family-serif;
+      color: $link-color;
+    }
   }
 
   .share-special-top {

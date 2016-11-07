@@ -44,18 +44,18 @@ mixin displayNavigationLinks(section)
   section.links.verticalSpacing
     h2.links-headline Mais do Especial
     ul.links-container.links-container-navigation(itemscope itemtype="https://schema.org/ItemList")
-        +displayNavigation(section.previous, "Anterior")
-        +displayNavigation(section.next, "Próximo")
+        +displayNavigation(section.previous, "< Anterior")
+        +displayNavigation(section.next, "Próximo >")
           
-mixin displayNavigation(section, title)
+mixin displayNavigation(item, title)
   li.link.link-navigation(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
     meta(itemprop="position" content=category)
-    h3.links-headline= title
-    if section.url
-      a(itemprop="url" href=section.url)
-        +displayLinksPicture(section)
+    h3.link-navigation-title= title
+    if item.url
+      a(itemprop="url" href=item.url)
+        +displayLinksPicture(item)
     else
-      +displayLinksPicture(section)  
+      +displayLinksPicture(item)  
 
 mixin displayMultimedia(section)
   section.multimedia.verticalSpacing
