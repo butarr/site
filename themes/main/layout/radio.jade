@@ -1,3 +1,24 @@
+mixin audio-player(position, post)
+  .audio-item(id="item_#{position}")
+    .loader
+    .player
+      iframe.widget(src="https://w.soundcloud.com/player/?url=#{post.audio}&color=8c191f&auto_play=false&show_artwork=false&show_comments=false&show_playcount=true&hide_related=true&show_user=false&show_reposts=false&liking=false&visual=false&buying=false&sharing=false&download=true&following=false")
+      .controls
+        a.play(onclick="play(#{position});")
+          img(src="/img/icons/play.svg")
+        a.pause(onclick="pause(#{position});")
+          img(src="/img/icons/pause.svg")
+        .progress-and-source
+          .progress-bar
+            span.timeProgress 0:00
+            progress(min='0', max='100', value='0')
+            span.duration 0:00
+          a(href=post.audio target="_blank")
+            p via SoundCloud
+      a.download 
+        img(src="/img/icons/download.svg")
+        h4 Baixar
+
 extends base
 
 block title
@@ -22,7 +43,7 @@ append content
 
     section#radio(class= "list" itemscope itemtype="http://schema.org/ItemList" lang= language)
       h1(class="page-name" itemprop="name")= page.area
-
+      
       - var position= 0
       each post in page.news
         - var published_at = utc_to_brt(post.date)
@@ -43,29 +64,26 @@ append content
                 meta(itemprop="height" content="60")
               meta(itemprop="name" content="Brasil de Fato")
               link(itemprop="sameAs" href="https://www.brasildefato.com.br")
-
-          a.news-radio-link(href=post.path)
-            h2.title(itemprop= "headline")= post.title
-            h3.description(itemprop="description")= post.description
           
-          .audio-item(id="item_#{position}")
-            .loader
-            .player
-              iframe.widget(src="https://w.soundcloud.com/player/?url=#{post.audio}&color=8c191f&auto_play=false&show_artwork=false&show_comments=false&show_playcount=true&hide_related=true&show_user=false&show_reposts=false&liking=false&visual=false&buying=false&sharing=false&download=true&following=false")
-              .controls
-                a.play(onclick="play(#{position});")
-                  img(src="/img/icons/play.svg")
-                a.pause(onclick="pause(#{position});")
-                  img(src="/img/icons/pause.svg")
-                .progress-and-source
-                  .progress-bar
-                    span.timeProgress 0:00
-                    progress(min='0', max='100', value='0')
-                    span.duration 0:00
-                  a(href=post.audio target="_blank")
-                    p via SoundCloud
-              a.download 
-                img(src="/img/icons/download.svg")
-                h4 Baixar
+          if position == 1 && post.cover
+            div#featured-audio-news
+              .photo
+                - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+                figure(itemscope itemtype="https://schema.org/ImageObject")
+                  img(itemprop="image" src=post.cover.medium alt=imageDescription title=imageDescription)
+                    
+              .audio
+                a.news-radio-link(href=post.path)
+                  h2.title-featured(itemprop= "headline")= post.title
+                  p.description(itemprop="description")= post.description
+                
+            +audio-player(position, post)
+
+          else
+            a.news-radio-link(href=post.path)
+              h2.title(itemprop= "headline")= post.title
+              p.description(itemprop="description")= post.description
+            
+            +audio-player(position, post)
 
       include _partial/pagination

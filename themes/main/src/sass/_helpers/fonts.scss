@@ -21,6 +21,7 @@ $standalone-text-size: 1.1rem;
 $text-size: 1rem;
 $details-size: 0.9rem;
 $title-size: 1.1rem;
+$title-featured-size: 1.7rem;
 $section-name-size: 1rem;
 $audio-info-size: 0.8rem;
 
@@ -835,6 +836,10 @@ $number-size: 1.3rem;
     p, span {
       font: normal #{$audio-info-size}/#{$line-separation-small} $family-sans;
     }
+  }
+
+  .title-featured {
+    font: bold #{$title-featured-size}/#{$line-separation-small} $family-serif;
   }
 }
 
