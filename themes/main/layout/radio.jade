@@ -5,18 +5,18 @@ mixin audio-player(position, post)
       iframe.widget(src="https://w.soundcloud.com/player/?url=#{post.audio}")
       .controls
         a.play(onclick="play(#{position});")
-          img(src="/img/icons/play.svg")
+          img(src="/img/icons/play.svg" alt="Play")
         a.pause(onclick="pause(#{position});")
-          img(src="/img/icons/pause.svg")
+          img(src="/img/icons/pause.svg" alt="Pausar")
         .progress-bar
           span.timeProgress 0:00
           .progress-and-source
-            progress(min='0', max='100', value='0')
+            progress(max='100', value='0')
             a(href=post.audio target="_blank")
               p via SoundCloud
           span.duration 0:00
       a.download 
-        img(src="/img/icons/download.svg")
+        img(src="/img/icons/download.svg" alt="Baixar")
         h4 Baixar
 
 extends base
