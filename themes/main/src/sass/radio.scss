@@ -23,12 +23,21 @@
 
 #featured-audio-news {
   display: flex;
+  flex-direction: column;
   margin-bottom: $VERTICAL-SPACE;
+
+  @include media-query(THREE){
+    flex-direction: row;
+  }
 }
 
-#radio .audio {
+#radio .info-news {
+  width: 100%;
   padding-left: $VERTICAL-SPACE;
-  width: $COLUMN-WIDTH + ($COLUMN-WIDTH/2);
+
+  @include media-query(THREE){
+    width: $COLUMN-WIDTH + ($COLUMN-WIDTH/2);
+  }
 }
 
 #radio .loader {
@@ -126,8 +135,14 @@
 }
 
 #radio .photo {
-  width: $COLUMN-WIDTH + ($COLUMN-WIDTH/2);
-  @include image-rounded-responsive(230px);
+  width: 100%;
+  @include image-rounded-responsive(300px);
+  margin-bottom: $VERTICAL-SPACE;
+
+  @include media-query(THREE){
+    width: $COLUMN-WIDTH + ($COLUMN-WIDTH/2);
+    @include image-rounded-responsive(230px);
+  }
 
   figure {
     width: 100%;
