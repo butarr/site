@@ -29,9 +29,9 @@ sections:
 
 
   - type: image
-    desktop: ""
-    mobile: ""
-    title: ""
+    desktop: "//farm6.staticflickr.com/5589/30804707886_33e49b6a07_b.jpg"
+    mobile: "//farm6.staticflickr.com/5694/30804722046_d47c2f0ebf_z.jpg"
+    title: "Gráfico comparando a produção de minério da Samarco, em 2010: 22,7 Toneladas; em 2011: 23T; 2012: 22,3T e 2014: 25T, com a produção de rejeitos: 2010: 16,3T; 2011: 15,6T; 2012: 16,7T; 2013: 16,5T e 2014: 22T."
 
 
   - type: multimedia
