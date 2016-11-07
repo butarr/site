@@ -24,10 +24,12 @@
 #featured-audio-news {
   display: -webkit-flex; //Old Safari
   display: flex;
+  -webkit-flex-direction: column; //Old Safari
   flex-direction: column;
   margin-bottom: $VERTICAL-SPACE;
 
   @include media-query(THREE){
+    -webkit-flex-direction: row; //Old Safari
     flex-direction: row;
   }
 }
@@ -94,6 +96,7 @@
 #radio .progress-bar {
   display: -webkit-flex; //Old Safari
   display: flex;
+  -webkit-align-items: center; //Old Safari
   align-items: center;
   padding-left: $LATERAL-COLUMN-SPACE;
 
@@ -128,8 +131,11 @@
   height: 52px;
   display: -webkit-flex; //Old Safari
   display: flex;
+  -webkit-align-items: center; //Old Safari
   align-items: center;
+  -webkit-flex-direction: column; //Old Safari
   flex-direction: column;
+  -webkit-justify-content: space-between; //Old Safari
   justify-content: space-between;
   padding-left: 20px;
 
