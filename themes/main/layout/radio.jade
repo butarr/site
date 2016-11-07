@@ -8,13 +8,13 @@ mixin audio-player(position, post)
           img(src="/img/icons/play.svg")
         a.pause(onclick="pause(#{position});")
           img(src="/img/icons/pause.svg")
-        .progress-and-source
-          .progress-bar
-            span.timeProgress 0:00
+        .progress-bar
+          span.timeProgress 0:00
+          .progress-and-source
             progress(min='0', max='100', value='0')
-            span.duration 0:00
-          a(href=post.audio target="_blank")
-            p via SoundCloud
+            a(href=post.audio target="_blank")
+              p via SoundCloud
+          span.duration 0:00
       a.download 
         img(src="/img/icons/download.svg")
         h4 Baixar
