@@ -29,9 +29,15 @@ sections:
 
 
   - type: image
-    desktop: "//farm6.staticflickr.com/5589/30804707886_33e49b6a07_b.jpg"
-    mobile: "//farm6.staticflickr.com/5694/30804722046_d47c2f0ebf_z.jpg"
+    desktop: //farm6.staticflickr.com/5589/30804707886_33e49b6a07_b.jpg
+    mobile: //farm6.staticflickr.com/5694/30804722046_d47c2f0ebf_z.jpg
     title: "Gráfico comparando a produção de minério da Samarco, em 2010: 22,7 Toneladas; em 2011: 23T; 2012: 22,3T e 2014: 25T, com a produção de rejeitos: 2010: 16,3T; 2011: 15,6T; 2012: 16,7T; 2013: 16,5T e 2014: 22T."
+
+
+  - type: image
+    desktop: //farm6.staticflickr.com/5799/30841723575_f77bf665d8_b.jpg
+    mobile: //farm6.staticflickr.com/5575/30841734755_ba65c073fe_z.jpg
+    title: "Infográfico citando tragédias de mineração. 1986 Itabiro - Grupo Itaminas: Rompimento de Barragem causando a morte de 7 pessoas; 2001 Nova Lima - Mineração Rio Verde: Rompimento de Barragem Causando morte de 5 pessoas; 2006 Miraí - Rio Pomba Caraguases: Vazamento de 1,2 milhões de m3 de Rejeitos; 2007 Miraí - Rio Pomba Cataguases: Vazamento de 2,28 milhões de m3 de rejeitos inundando as cidades de Miraí e Muriaé; 2008 Congonhas - Companhia Siderúrgica nacional: Rompimento de Estrutura levando ao aumento do nível do Rio Maranhão. 2008 Itabira - Não disponibilizado pelo Ibama: Rompimento da Barragem com rejeitos químicos de extração de ouro; 2014 Itabiro - Herculano Mineração: Rompimento de Barragem matando 3 pessoas e ferindo uma."
 
 
   - type: multimedia
