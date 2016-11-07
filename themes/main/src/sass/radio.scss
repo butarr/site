@@ -22,6 +22,7 @@
 }
 
 #featured-audio-news {
+  display: -webkit-flex; //Old Safari
   display: flex;
   flex-direction: column;
   margin-bottom: $VERTICAL-SPACE;
@@ -65,6 +66,7 @@
 }
 
 #radio .controls {
+  display: -webkit-flex; //Old Safari
   display: flex;
   width: 100%;
 
@@ -90,6 +92,7 @@
 }
 
 #radio .progress-bar {
+  display: -webkit-flex; //Old Safari
   display: flex;
   align-items: center;
   padding-left: $LATERAL-COLUMN-SPACE;
@@ -123,6 +126,7 @@
 
 #radio .download {
   height: 52px;
+  display: -webkit-flex; //Old Safari
   display: flex;
   align-items: center;
   flex-direction: column;
