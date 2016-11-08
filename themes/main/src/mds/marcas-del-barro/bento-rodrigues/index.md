@@ -110,7 +110,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5503/30735269056_1e26cd2b6b_b.jpg
     mobile: //farm6.staticflickr.com/5503/30735269056_1e26cd2b6b_b.jpg
-    text: Haga clic para ver el álbum 
+    text: Haga clic para ver el álbum
     link: https://www.flickr.com/photos/brasildefato/albums/72157675597652176
 
   - type: text
@@ -132,4 +132,16 @@ sections:
     desktop: //farm6.staticflickr.com/5471/29967477173_4e42af1d3e_b.jpg
     mobile: //farm6.staticflickr.com/5471/29967477173_4e42af1d3e_b.jpg
     title: Única parede de pé de uma casa
+
+  - type: navigation
+    title: "Más del especial"
+    previous:
+      title:
+      url:
+      cover:
+    next:
+      title: "Barra Longa: zona de obras"
+      url: /marcas-del-barro/barra-longa
+      cover: //farm6.staticflickr.com/5582/30653716696_a26908ca95_b.jpg
+
 ---
