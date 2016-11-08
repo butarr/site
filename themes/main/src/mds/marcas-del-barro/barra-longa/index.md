@@ -33,7 +33,7 @@ sections:
   - type: image
     desktop: //farm9.staticflickr.com/8601/29992512434_5021a23dfd_b.jpg
     mobile: //farm6.staticflickr.com/5594/29990595293_56ac787198_b.jpg
-    title: "Mapa com a localização de Barra longa um pouco mais distante da Barragem do que Bento Rodrigues"
+    title: "Mapa con la ubicación de Barra Longa, un poco más allá del dique que el distrito de Bento Rodrigues"
 
 
   - type: multimedia
@@ -54,7 +54,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5746/30564042500_54f541eb6c_b.jpg
     mobile: //farm6.staticflickr.com/5746/30564042500_54f541eb6c_b.jpg
-    title: "Estatística de que o atendimento nos centros de saúde de Barra Longa em 2015 foi de 22 pessoas antendidas e em 2016 289 pacientes, um aumento de mais de 1000%"
+    title: "Estadística sobre los atendidos en los centros de salud de Barra Longa, que aumentaran más del mil por ciento."
 
   - type: text
     text: "<p>Uno de los casos de impacto en la salud es el de Anna Clara Oliveira Coelho, de cuatro años. Ella es hija de Edvania de Oliveira, de 36 años, y José Eduardo Coelho, de 54. El 5 de noviembre, el barro invadió el garage de la casa de la familia, alcanzando un metro de altura. Anna Clara vio todo.</p>
@@ -63,7 +63,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5608/30864768255_30324a333a_b.jpg
     mobile: //farm6.staticflickr.com/5608/30864768255_30324a333a_b.jpg
-    title: "Edvania de Oliveira, 36 anos, habla: Todas las veces que mi hija vá al psicólogo, ella dibuja la misma cosa: nuestra casa, el barro llegando y la casa yéndose."
+    title: "Edvania de Oliveira, 36 anos, dice: Todas las veces que mi hija vá al psicólogo, ella dibuja la misma cosa: nuestra casa, el barro llegando y la casa yéndose."
 
   - type: text
     text: "<p>El acompañamiento psicológico de la niña está siendo realizado desde enero por la psicóloga Luiza Laura Lanna, en el Sistema Único de Salud (SUS). En el relato del acompañamiento, ella señala que la paciente \"siempre está asustada y diciendo que se va a mudar para otra ciudad. Anna Clara debe continuar el tratamiento hasta que consiga librarse del trauma\".</p>
@@ -75,7 +75,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5811/30625043265_f995207599_b.jpg
     mobile: //farm6.staticflickr.com/5811/30625043265_f995207599_b.jpg
-    title: Foto do Laudo Médico da Ana
+    title: "Foto del informe médico de la niña Anna."
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/T_6qI9VItKM" frameborder="0" allowfullscreen></iframe>
@@ -110,11 +110,11 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5759/30683572111_349b6a5712_b.jpg
     mobile: //farm6.staticflickr.com/5759/30683572111_349b6a5712_b.jpg
-    title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
+    title: "Créditos del reportaje. Texto, Simone Freire. Edición, Vivian Fernandes. Video y foto, José Eduardo Bernardes y Guilherme Weimann. Arte, Wilcker Morais."
   - type: image
     desktop: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
     mobile: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
-    title: Corvo no topo de uma montanha de lama
+    title: "Cuervo en el tope de un morro de barro."
 
   - type: navigation
     title: "Más del especial"
