@@ -35,7 +35,7 @@ sections:
     title: "Mapa da Bacia do Rio Doce "
 
   - type: text
-    text: "<p>Menos de 24 horas após o rompimento da barragem, a teoria de que abalos sísmicos motivaram a tragédia figurava em portais de notícias. Naquela quinta-feira, a Rede Sismográfica Brasileira havia registrado quatro tremores de pequena intensidade entre as 14h12 e 15h59, em Minas Gerais. Um deles, de 2.6 de magnitude, ocorreu a 5 quilômetros do Complexo da Samarco.</p>
+    text: "<p>Menos de 24 horas após o rompimento da barragem, a teoria de que abalos sísmicos motivaram a tragédia figurava em portais de notícias. Naquela quinta-feira, a Rede Sismográfica Brasileira havia registrado quatro tremores de pequena intensidade entre às 14h12 e às 15h59, em Minas Gerais. Um deles, de 2.6 de magnitude, ocorreu a 5 quilômetros do Complexo da Samarco.</p>
     <p>Contrapondo essa hipótese, o Centro de Sismologia da USP divulgou um relatório, no dia 6 de novembro, no qual afirmava que \"tremores de terra de pequena magnitude só em casos muito especiais poderiam causar danos diretos a qualquer construção civil ou barragem\". Ainda de acordo com o material, \"tremores de terra nessa parte de Minas Gerais são relativamente comuns e não se trata de um fenômeno anormal\".</p>
     <p>Apesar disso, o presidente afastado da Samarco, Ricardo Vescovi, reafirmou o caráter acidental do ocorrido nas coletivas de imprensa que se sucederam à ruptura de Fundão. Nesse período, ele também frisou a qualidade das políticas de segurança da mineradora e o cumprimento das legislações ambientais referentes às barragens.</p>
     <p>Na mesma linha, o diretor de operações e infraestrutura da Samarco, Kleber Terra, disse, em coletiva de imprensa realizada no dia 17 de novembro, que \"não é o caso de pedir desculpas à população de Mariana\".</p>"
@@ -46,9 +46,9 @@ sections:
     title: "Fachada da Samarco - reprodução/youtube"
 
   - type: text
-    text: "<p>A Samarco Mineração S.A., fundada em 1977, é um empreendimento conjunto (joint venture) controlado por duas gigantes do setor: a brasileira Vale e a anglo-australiana BHP Billiton. Cada uma detém 50% de suas ações. As duas são detentoras das taxas de lucro e participam do Conselho Administrativo da Samarco. Apesar disso, a mineradora brasileira negou qualquer responsabilidade diante do rompimento da barragem de Fundão.</p>
+    text: "<p>A Samarco Mineração S.A., fundada em 1977, é um empreendimento conjunto (<i>joint venture</i>) controlado por duas gigantes do setor: a brasileira Vale e a anglo-australiana BHP Billiton. Cada uma detém 50% de suas ações. As duas são detentoras das taxas de lucro e participam do Conselho Administrativo da Samarco. Apesar disso, a mineradora brasileira negou qualquer responsabilidade diante do rompimento da barragem de Fundão.</p>
     <p>Privatizada em 1997 pela gestão do ex-presidente Fernando Henrique Cardoso (PSDB), a Vale foi categórica ao se eximir de qualquer \"responsabilidade pelo infeliz e triste acidente que  ocorreu em Mariana\". Na declaração, enviada ao jornal norte-americano The Wall Street Journal uma semana depois do rompimento, a mineradora afirmou ser \"mera acionista da Samarco, sem qualquer interferência operacional na gestão da empresa, direta ou indiretamente, de perto ou à distância\".</p>
-    <p>Nesse contexto, a Samarco iniciou uma campanha publicitária que trazia depoimentos de funcionários e atingidos elogiando as ações de mitigação dos impactos do maior desastre socioambiental da história do país. De acordo com levantamento do Comitê em Defesa dos Territórios Frente à Mineração, em apenas três inserções de um minuto cada da campanha no Fantástico, programa da Rede Globo, no dia 14 de fevereiro, a mineradora desembolsou o valor estimado de R$ 3 milhões. A peça publicitária levava o slogan: \"É sempre bom olhar para todos os lados\".</p>"
+    <p>Nesse contexto, a Samarco iniciou uma campanha publicitária que trazia depoimentos de funcionários e atingidos elogiando as ações de mitigação dos impactos do maior desastre socioambiental da história do país. De acordo com levantamento do Comitê em Defesa dos Territórios Frente à Mineração, em apenas três inserções, de um minuto cada, da campanha no Fantástico, programa da Rede Globo, no dia 14 de fevereiro, a mineradora desembolsou o valor estimado de R$ 3 milhões. A peça publicitária levava o slogan: \"É sempre bom olhar para todos os lados\".</p>"
 
   - type: image
     desktop: "//farm6.staticflickr.com/5546/30232967034_19cb3a6949_b.jpg"
@@ -78,7 +78,7 @@ sections:
     title: "Lucros da Samarco entre 2010 e 2014"
 
   - type: text
-    text: "<p>Ainda de acordo com o integrante do MAB, a expansão da produção de minério não foi acompanhada de ações para estocar também o aumento de rejeitos. Opinião semelhante é demonstrada pela integrante da coordenação do Movimento pela Soberania Popular Frente à Mineração (MAM), Maria Júlia Zanon.Ela afirma que é possível associar o período posterior ao superciclo das commodities com o rompimento da barragem de Fundão.</p>"
+    text: "<p>Ainda de acordo com o integrante do MAB, a expansão da produção de minério não foi acompanhada de ações para estocar também o aumento de rejeitos. Opinião semelhante é demonstrada pela integrante da coordenação do Movimento pela Soberania Popular Frente à Mineração (MAM), Maria Júlia Zanon. Ela afirma que é possível associar o período posterior ao superciclo das commodities com o rompimento da barragem de Fundão.</p>"
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/Rri-i3UUgAA" frameborder="0" allowfullscreen></iframe>
@@ -87,7 +87,7 @@ sections:
     text: "A culpa é de quem?"
 
   - type: text
-    text: "<p>No dia 20 de outubro, o Ministério Público Federal (MPF) apresentou, em Belo Horizonte (MG), as conclusões da investigação sobre o rompimento de Fundão. \"O que tivemos foi um sequestro da segurança, de uma política mais responsável de segurança da barragem, por uma busca incessante de lucro, num cenário em que houve um declínio significativo no preço do minério de ferro\", afirmou, em coletiva de imprensa, o procurador da República José Adércio Leite Sampaio.</p>
+    text: "<p>No último dia 20 de outubro, o Ministério Público Federal (MPF) apresentou, em Belo Horizonte (MG), as conclusões da investigação sobre o rompimento de Fundão. \"O que tivemos foi um sequestro da segurança, de uma política mais responsável de segurança da barragem, por uma busca incessante de lucro, num cenário em que houve um declínio significativo no preço do minério de ferro\", afirmou, em coletiva de imprensa, o procurador da República José Adércio Leite Sampaio.</p>
     <p>Quatro meses após a sua inauguração, em dezembro de 2008, a barragem de Fundão foi paralisada, e a deposição de rejeitos foi interrompida devido a problemas no seu sistema de drenagem. De acordo com o MPF, esse problema levou a uma investigação interna da Samarco, que apontou falhas na sua construção. Além disso, uma das concepções originais da barragem – a separação clara entre rejeitos arenosos e lama – foi deixada de lado pela mineradora.</p>
     <p>A partir disso, diversos problemas estruturais aconteceram. Em 2012, surgiu um “buraco” que fez com que a Samarco recuasse o eixo da barragem em relação à ombreira esquerda – o ponto em que tinha contato com a pilha de estéril (rochas sem minério) da Vale. Ou seja, a proximidade entre a barragem de Fundão, onde eram descartados os rejeitos da mineração, e o local em que a Mina de Fábrica Nova depositava rochas sem minério (pilha de estéril), era um risco para as duas estruturas.</p>"
 
@@ -123,10 +123,10 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/A1jES20TqDg" frameborder="0" allowfullscreen></iframe>
 
   - type: text
-    text: "<p>Além de Bento Rodrigues, toda a região afetada pela lama vive uma incerteza em relação ao futuro. No dia 2 de março deste ano, governo federal, governos do Espírito Santo e de Minas Gerais, BHP Billiton, Vale e Samarco firmaram um ‘acordo’ extrajudicial para a reparação dos danos causados pelo rompimento da barragem de Fundão na bacia do Rio Doce.</p>
+    text: "<p>Além de Bento Rodrigues, toda a região afetada pela lama vive uma incerteza em relação ao futuro. No dia 2 de março deste ano, governo federal, governos do Espírito Santo e de Minas Gerais, BHP Billiton, Vale e Samarco firmaram um acordo extrajudicial para a reparação dos danos causados pelo rompimento da barragem de Fundão na bacia do Rio Doce.</p>
     <p>A medida, firmada em um Termo de Transação de Ajustamento de Conduta (TTAC), prevê investimento de R$ 20 bilhões ao longo dos próximos 15 anos, geridos por uma fundação privada. Denominada como Fundação Renova, a entidade exclui de seus conselhos deliberativos a participação de pessoas e municípios atingidos pela lama de Fundão.</p>
     <p>No dia 1º de julho, o acordo foi suspenso temporariamente pelo Superior Tribunal de Justiça (STJ), que alegou falta de legitimidade por não ter consultado os sujeitos diretamente afetadas pelo rompimento da barragem. Apesar disso, o Conselho Curador da Fundação Renova realizou sua primeira reunião, no dia 12 de agosto.</p>
-    <p>Para a integrante da coordenação do MAM, Maria Júlia Zanon, esse acordo reflete a subordinação do Estado diante dos empreendimentos e empresas de mineração.</p>"
+    <p>Para a integrante da coordenação do MAM, Maria Júlia Zanon, esse acordo reflete a subordinação do Estado diante dos empreendimentos e empresas de mineração. (Ver vídeo)</p>"
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/RyN1jJ3k4m4" frameborder="0" allowfullscreen></iframe>
