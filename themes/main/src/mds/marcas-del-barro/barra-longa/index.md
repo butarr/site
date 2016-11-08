@@ -52,8 +52,8 @@ sections:
     <p>En el mismo período, Samarco afirmó en su portal web que sus desechos \"no son tóxicos y que no representan peligrosidad alguna para la salud humana, teniendo en que cuenta que no dispensan contaminantes para el agua, mismo en condiciones de exposición a lluvias\".</p><p>Sin embargo, los impactos en la salud son el principal reclamo de los pobladores.</p>"
 
   - type: image
-    desktop: //farm6.staticflickr.com/5321/30324862390_31d00d10ac_b.jpg
-    mobile: //farm6.staticflickr.com/5597/30507915122_0721cbaf6e_b.jpg
+    desktop: //farm6.staticflickr.com/5746/30564042500_54f541eb6c_b.jpg
+    mobile: //farm6.staticflickr.com/5746/30564042500_54f541eb6c_b.jpg
     title: "Estatística de que o atendimento nos centros de saúde de Barra Longa em 2015 foi de 22 pessoas antendidas e em 2016 289 pacientes, um aumento de mais de 1000%"
 
   - type: text
@@ -93,9 +93,9 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/E1NpEKxfXOg" frameborder="0" allowfullscreen></iframe>   
 
   - type: image
-    desktop: //farm6.staticflickr.com/5766/30537162311_37aeec1b93_b.jpg
-    mobile: //farm6.staticflickr.com/5518/30537172131_5d8618aaa4_z.jpg
-    title: "Simone Maria Silva Marques de 39 anos, fala que: A Samarco é muito omissa. A cada volta que eu dou nas ruas de Barra Longa, eu volto mais revoltada."   
+    desktop: //farm6.staticflickr.com/5598/30564074810_863791df00_b.jpg
+    mobile: //farm6.staticflickr.com/5598/30564074810_863791df00_b.jpg
+    title: "Simone Maria Silva Marques de 39 anos, dice: La Samarco es muy irresponsable. Cada vez que doy una volta por las calles de Barra Longa vuelvo más indignada."   
 
   - type: text
     text: "<p>Con las calles rotas, las cañerías tapadas, y saneamiento a cielo abierto, el aumento de personas infectadas con dengue en Barra Longa fue significativo al inicio de este año. Según la Secretaría Municipal de Salud, en todo el año de 2015 fueron registrados apenas dos casos. Y en 2016, hasta el día dos de marzo, fueron confirmados 128 casos. En aquel momento, Samarco divulgó una nota informando que, en conjunto con la municipalidad, creó grupos de trabajo para inspecciones en las casas de la región.</p>
