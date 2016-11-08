@@ -42,7 +42,7 @@ mixin displayLinks(section)
                         
 mixin displayNavigation(section)
   section.links.verticalSpacing
-    h2.links-headline Mais do Especial
+    h2.links-headline= section.title
     ul.links-container.links-container-navigation(itemscope itemtype="https://schema.org/ItemList")
         +displayNavigationLink(section.previous, "< Anterior")
         +displayNavigationLink(section.next, "Próximo >")
