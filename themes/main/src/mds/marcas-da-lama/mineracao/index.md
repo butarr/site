@@ -30,8 +30,8 @@ sections:
     <p>Na véspera do aniversário de um ano do episódio, uma das versões começa a se impor diante das investigações.</p>"
 
   - type: image
-    desktop: //farm6.staticflickr.com/5589/30804707886_33e49b6a07_b.jpg
-    mobile: //farm6.staticflickr.com/5694/30804722046_d47c2f0ebf_z.jpg
+    desktop: //farm6.staticflickr.com/5600/30776965291_008da4c710_b.jpg
+    mobile: //farm6.staticflickr.com/5644/30828745756_a185b56a84_b.jpg
     title: "Mapa da Bacia do Rio Doce "
 
   - type: text
@@ -153,9 +153,9 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/OuMoiCbuoy0" frameborder="0" allowfullscreen></iframe>
 
   - type: image
-    desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
-    mobile: //farm6.staticflickr.com/5727/29973631194_29d8bcc5d2_b.jpg
-    title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
+    desktop: //farm6.staticflickr.com/5601/30865311925_fdcbbc1108_b.jpg
+    mobile: //farm6.staticflickr.com/5321/30866038125_b7aea80eb5_b.jpg
+    title: "Créditos da reportagem. Texto: Guilherme Weimann, Edição: Vivian Fernandes, Vídeo e Foto: José Eduardo Bernardes, Arte: Wilcker Morais"
   - type: image
     desktop: //farm6.staticflickr.com/5446/30206831453_739b3d63a4_b.jpg
     mobile: //farm6.staticflickr.com/5446/30206831453_739b3d63a4_z.jpg
