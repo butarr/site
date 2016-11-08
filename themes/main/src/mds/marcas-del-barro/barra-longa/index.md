@@ -17,7 +17,7 @@ cover:
   thumbnail: //farm6.staticflickr.com/5582/30653716696_a26908ca95_t.jpg
   medium: //farm6.staticflickr.com/5582/30653716696_a26908ca95_z.jpg
   small: //farm6.staticflickr.com/5582/30653716696_a26908ca95_n.jpg
-  title: Pórtico da entrada da cidade de Barra Longa em meio a lama
+  title: Pórtico en la entrada del distrito de Barra Longa en medio del barro
   credits: Lucas Bois
   subtitle: Bento Rodrigues
 date: 2016-10-28T22:58:23.677Z
