@@ -34,7 +34,7 @@ sections:
   - type: text
     text: "<p>Ollas en el fuego, ropas, documentos, fotos, autos, animales, todo quedó atrás para llegar a las partes más altas del pueblo. En medio de la desolación y la búsqueda de noticias sobre el paradero de amigos, parientes y vecinos, hubo quienes pudieron parar y entre lágrimas observar como la avalancha de barro destruía calles, casas, la escuela y el centro de salud.</p>
     <p>Ya no era posible ver lo que hasta hacía un rato era Bento Rodrigues. Salvo por algunos autos y techos que se movían sin rumbo en el río de barro. De las 200 casas, poco más de veinte quedaron en pie. Entre pobladores y trabajadores de la minera murieron 19 personas. En pocos minutos, tragados por el barro, se hundieron y perdieron objetos personales, plantaciones, hogares, memorias y vidas. Fue el adiós a Bento Rodrigues.</p>"
-    
+
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/cy-1G6Js3cc" frameborder="0" allowfullscreen></iframe>
