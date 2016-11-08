@@ -111,4 +111,13 @@ sections:
     mobile: //farm6.staticflickr.com/5547/30693213985_af1794d26b_b.jpg
     title: Imagem do Rio Doce
 
+  - type: navigation
+    previous:
+      title: "Cachoeira Escura: o direito à água"
+      url: /marcas-da-lama/cachoeira-escura/
+      cover: http://farm6.staticflickr.com/5338/30681655266_c68529395a_z.jpg
+    next:
+      title: "Lucro a todo custo: acidente ou tragédia"
+      url: /marcas-da-lama/mineracao
+      cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
 ---

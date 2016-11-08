@@ -41,8 +41,8 @@ sections:
     <p>Na mesma linha, o diretor de operações e infraestrutura da Samarco, Kleber Terra, disse, em coletiva de imprensa realizada no dia 17 de novembro, que \"não é o caso de pedir desculpas à população de Mariana\".</p>"
 
   - type: image
-    desktop:
-    mobile:
+    desktop: "//farm6.staticflickr.com/5647/30232873254_b2fff1b74a_b.jpg"
+    mobile: "//farm6.staticflickr.com/5647/30232873254_b2fff1b74a_b.jpg"
     title: "Fachada da Samarco - reprodução/youtube"
 
   - type: text
@@ -51,9 +51,9 @@ sections:
     <p>Nesse contexto, a Samarco iniciou uma campanha publicitária que trazia depoimentos de funcionários e atingidos elogiando as ações de mitigação dos impactos do maior desastre socioambiental da história do país. De acordo com levantamento do Comitê em Defesa dos Territórios Frente à Mineração, em apenas três inserções de um minuto cada da campanha no Fantástico, programa da Rede Globo, no dia 14 de fevereiro, a mineradora desembolsou o valor estimado de R$ 3 milhões. A peça publicitária levava o slogan: \"É sempre bom olhar para todos os lados\".</p>"
 
   - type: image
-    desktop:
-    mobile:
-    title: "Aspas Thiago"
+    desktop: "//farm6.staticflickr.com/5546/30232967034_19cb3a6949_b.jpg"
+    mobile: "//farm6.staticflickr.com/5565/30747936202_3b76f24df5_b.jpg"
+    title: "Thiago Alves, integrante do Movimento dos Atingidos por Barragens (MAB)"
 
   - type: text
     text: "<p>Em meio ao caos e à perplexidade dos primeiros dias, moradores tratavam o ocorrido como uma \"tragédia anunciada\". Segundo Thiago da Silva, integrante da coordenação nacional do Movimento dos Atingidos por Barragens (MAB), a expressão surgiu logo após o desastre, a partir de uma visão coletiva dos moradores de Bento Rodrigues (ver vídeo).</p>
@@ -103,9 +103,18 @@ sections:
     <p>Como resultado dessas omissões, o MPF denunciou 22 pessoas, além das empresas Samarco, BHP Billiton, Vale e VogBR pelo rompimento da barragem de Fundão. Entre os denunciados, 21 são acusados de homicídio qualificado com dolo eventual, ou seja, quando se assume o risco de matar.</p>"
 
   - type: image
-    desktop:
-    mobile:
-    title: "Faltando imagem"
+    desktop: "//farm6.staticflickr.com/5501/30828663106_13dc78aa48_b.jpg"
+    mobile: "//farm6.staticflickr.com/5501/30828663106_13dc78aa48_b.jpg"
+    title: "Bento Rodrigues, após a destruição de 5 de novembro de 2015"
+
+  - type: text
+    text: "<p>Apesar desses indícios que, se comprovados, caracterizarão o rompimento da barragem de Fundão como um crime, o governador de Minas Gerais, Fernando Pimentel (PT), emitiu um decreto, no dia 21 de setembro deste ano, que desapropria 56 hectares de Bento Rodrigues para a construção do dique S4, da Samarco. A decisão foi realizada por meio de um Termo de Ajustamento de Conduta (TAC) entre a Secretaria de Estado do Meio Ambiente (Semad), Samarco, BHP Billiton e Vale.</p>
+    <p>O dique S4 é uma barreira que, segundo a Samarco, evitaria um novo derramamento de lama no período chuvoso. A obra terá capacidade para suportar um volume de 1,05 milhão de m³ de rejeitos. Além dele, a Samarco já conta com os diques S1-A, S2-A e S3, com reservatórios de 15 mil m³, 45 mil m³ e 2,1 milhões de m³, respectivamente.</p>"
+
+  - type: image
+    desktop: "//farm6.staticflickr.com/5511/30865067155_bca8d70ed2_b.jpg"
+    mobile: "//farm6.staticflickr.com/5511/30865067155_bca8d70ed2_b.jpg"
+    title: "A construção do Dique S4 Foto: Isis Medeiros"
 
   - type: text
     text: "<p>O dique S4, entretanto, enfrenta a resistência de ex-moradores de Bento Rodrigues. No total, 55 proprietários serão afetados com a construção da obra, que inundará praticamente metade de toda a extensão da comunidade de rejeitos de minério de ferro. Um deles é o aposentado Manuel Marcos Muniz, de 52 anos. Ele possui um terreno que será inundado pelo empreendimento da Samarco.</p>"
@@ -152,4 +161,13 @@ sections:
     mobile: //farm6.staticflickr.com/5446/30206831453_739b3d63a4_z.jpg
     title: Corvo no topo de uma montanha de lama
 
+  - type: navigation
+    previous:
+      title: "Mascarenhas: a morte do Rio Doce"
+      url: /marcas-da-lama/barra-longa/
+      cover: http://farm6.staticflickr.com/5535/30718512145_1f1dda95f8_z.jpg
+    next:
+      title: Marcas da Lama
+      url: /marcas-da-lama/
+      cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
 ---

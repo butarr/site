@@ -47,8 +47,8 @@ sections:
     title: "Capítulo 2: Mineração"
     links:
       - title: "Lucro a todo custo: acidente ou tragédia"
-        url:
-        cover: //farm6.staticflickr.com/5728/30061760584_8c503b0e10_z.jpg
+        url: /marcas-da-lama/mineracao
+        cover: //farm6.staticflickr.com/5606/30776352001_74fcd8629c_b.jpg
 
   - type: links
     title: "Capítulo 3: Luta"
