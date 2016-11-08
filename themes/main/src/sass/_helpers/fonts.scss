@@ -814,13 +814,30 @@ $number-size: 1.3rem;
   section.links {
     .links-headline {
       text-align: center;
-      font: bold 24px $family-serif;
+      font: bold 1.1rem/1 $family-serif;
       color: $text-color;
     }
 
     .link-figure-title {
       text-align: center;
-      font: bold 18px $family-serif;
+      font: bold 1.0rem/1 $family-serif;
+
+      @include media-query(THREE) {
+        font: bold 1.1rem/1 $family-serif;
+      }
+    }
+
+    .link-navigation-title {
+      color: $link-color;
+      font: bold 1.1rem/1 $family-serif;
+
+      &:visited {
+        color: $link-visited-color;
+      }
+
+      &:hover {
+        color: $link-hover-color;
+      }
     }
   }
 }

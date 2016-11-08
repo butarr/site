@@ -122,7 +122,7 @@ sections:
     mobile: "//farm6.staticflickr.com/5670/30060011074_04678bd8d1_z.jpg"
     title: "Dois homens carregando um balde de água"  
 
-  - type: navigationLinks
+  - type: navigation
     previous:
       title: "Barra Longa: a cidade canteiro de obras"
       url: /marcas-da-lama/barra-longa/

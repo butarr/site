@@ -31,23 +31,23 @@ sections:
     title: "Capítulo 1: Los afectados"
     links:
       - title: El adiós a Bento Rodrigues
-        url: //marcas-del-barro/bento-rodrigues/
+        url: /marcas-del-barro/bento-rodrigues/
         cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
       - title: "Barra Longa: zona de obras"
-        url: //marcas-del-barro/barra-longa/
+        url: /marcas-del-barro/barra-longa/
         cover: //farm6.staticflickr.com/5766/30082446503_8bc15cebc2_z.jpg
       - title: "Cachoeira Escura: el derecho al agua"
-        url: //marcas-del-barro/cachoeira-escura/
+        url: /marcas-del-barro/cachoeira-escura/
         cover: //farm6.staticflickr.com/5338/30681655266_c68529395a_z.jpg
       - title: "Mascarenhas: la muerte del río Doce"
-        url: //marcas-del-barro/mascarenhas/
+        url: /marcas-del-barro/mascarenhas/
         cover: //farm6.staticflickr.com/5535/30718512145_1f1dda95f8_z.jpg
 
   - type: links
     title: "Capítulo 2: Minería"
     links:
       - title: "Lucro a cualquier costo: accidente o tragedia"
-        url: //marcas-del-barro/mineria/
+        url: /marcas-del-barro/mineria/
         cover: //farm6.staticflickr.com/5728/30061760584_8c503b0e10_z.jpg
 
   - type: links

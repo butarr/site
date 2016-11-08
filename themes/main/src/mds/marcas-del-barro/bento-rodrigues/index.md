@@ -39,6 +39,9 @@ sections:
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/cy-1G6Js3cc" frameborder="0" allowfullscreen></iframe>
 
+  - type: text
+    text: "<p>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</p>"
+
   - type: subtitle
     desktop: //farm6.staticflickr.com/5457/30487004472_406c67db28_b.jpg
     mobile: //farm6.staticflickr.com/5457/30487004472_406c67db28_b.jpg
@@ -105,9 +108,9 @@ sections:
     text: "<p>Felizmente, cuenta, los registros de aquella rutina quedaron a salvo en las fotografías que guardaban en su casa en Mariana. No todo se perdió en el barro.</p>"
 
   - type: image
-    desktop: //farm6.staticflickr.com/5806/30586453595_2b4d32bd3a_b.jpg
-    mobile: //farm6.staticflickr.com/5537/29966502163_9c882af9e6_b.jpg
-    text: Clique aqui para ver o álbum
+    desktop: //farm6.staticflickr.com/5503/30735269056_1e26cd2b6b_b.jpg
+    mobile: //farm6.staticflickr.com/5503/30735269056_1e26cd2b6b_b.jpg
+    text: Haga clic para ver el álbum 
     link: https://www.flickr.com/photos/brasildefato/albums/72157675597652176
 
   - type: text
@@ -122,8 +125,8 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/u-ddXSEut9A" frameborder="0" allowfullscreen></iframe>
 
   - type: image
-    desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
-    mobile: //farm6.staticflickr.com/5727/29973631194_29d8bcc5d2_b.jpg
+    desktop: //farm6.staticflickr.com/5759/30683572111_349b6a5712_b.jpg
+    mobile: //farm6.staticflickr.com/5759/30683572111_349b6a5712_b.jpg
     title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
   - type: image
     desktop: //farm6.staticflickr.com/5471/29967477173_4e42af1d3e_b.jpg
