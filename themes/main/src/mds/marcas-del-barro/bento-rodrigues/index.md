@@ -69,7 +69,7 @@ sections:
     text: "<p>El distrito de Bento Rodrigues, hoy totalmente destruido, fue apenas el primer lugar afectado, y por lo tanto, una de las paradas del equipo de Brasil de Fato para el especial Las marcas del barro – Un año de resistencia en la cuenca del Río Doce.</p><p>“Ahí era la casa de Paulo César, ahí la de Doña Geralda, ahí el terreno de mi suegro, un poco más allá el bar de la Sandra, y aquí la casa de Joaquim”, dice Joana D'arc Norberto, de 43 años, al comenzar la charla, mientras recorre lo que quedó de Bento Rodrigues, casi un año después de lo ocurrido.</p>"
 
   - type: image
-    desktop: //farm6.staticflickr.com/5799/30715424255_f06dc0c18c_b.jpg
+    desktop: //farm6.staticflickr.com/5650/30230520213_bf45060c30_b.jpg
     mobile: //farm6.staticflickr.com/5799/30715424255_f06dc0c18c_b.jpg
     title: "Foto de Joana D'arc Norberto, de 43 anos, com sua fala \"Não estava em casa quando tudo aconteceu. Um genro me ligou e disse: 'ei, Joana, acabou Bento, morreu todo mundo'\""
 
@@ -91,7 +91,7 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/4j2PAsEEKOs" frameborder="0" allowfullscreen></iframe>
 
   - type: image
-    desktop: //farm6.staticflickr.com/5830/30598753452_5eb424f796_b.jpg
+    desktop: //farm6.staticflickr.com/5445/30778001271_b284cda198_b.jpg
     mobile: //farm6.staticflickr.com/5830/30598753452_5eb424f796_b.jpg
     title: "Foto de Manuel Marcos Muniz, de 52 anos, com sua fala \"A gente acha que já passou, que já acabou, mas tem dia que a gente só vive em função da tragédia da Samarco, do rompimento da barragem\""
 
