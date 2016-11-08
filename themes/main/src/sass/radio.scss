@@ -7,8 +7,21 @@
 #radio {
   @include get-font(RADIO);
 
+  .container {
+    display: -webkit-flex; //Old Safari
+    display: flex;
+  }
+
+  .main {
+    width: 3 * $COLUMN-WIDTH;
+  }
+
   .page-name {
     @include page-name();
+  }
+
+  .section-name {
+    @include section-name();
   }
 
   .divisor {
@@ -167,4 +180,10 @@
     height: 30px;
     margin-bottom: 5px;
   }
+}
+
+#radio .sidebar {
+  display: inline-block;
+  width: $COLUMN-WIDTH;
+  @include column-lateral-spacing();
 }

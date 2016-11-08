@@ -39,51 +39,52 @@ block open_graph
   meta(property="og:image" content="#{config.url}/img/share-logo.png")
 
 append content
-  main.grid-3-columns
-
+  main.grid-4-columns
     section#radio(class= "list" itemscope itemtype="http://schema.org/ItemList" lang= language)
       h1(class="page-name" itemprop="name")= page.area
-      
-      - var position= 0
-      each post in page.news
-        - var published_at = utc_to_brt(post.date)
+      .container
+        .main
+          - var position= 0
+          each post in page.news
+            - var published_at = utc_to_brt(post.date)
 
-        .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
-          meta(itemprop="url" content="https://www.brasildefato.com.br/#{post.path}")
-          meta(itemprop="position" content="#{++position}")
+            .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
+              meta(itemprop="url" content="https://www.brasildefato.com.br/#{post.path}")
+              meta(itemprop="position" content="#{++position}")
 
-          span(itemscope itemtype="https://schema.org/NewsArticle")
-            meta(itemprop="author" content= post.author)
-            meta(itemprop="dateModified" content=post.updated_at)
-            meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{sitepath}/")
+              span(itemscope itemtype="https://schema.org/NewsArticle")
+                meta(itemprop="author" content= post.author)
+                meta(itemprop="dateModified" content=post.updated_at)
+                meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{sitepath}/")
 
-            span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
-              span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
-                meta(itemprop="url" content="https://www.brasildefato.com.br/img/logo-microdata.jpg")
-                meta(itemprop="width" content="600")
-                meta(itemprop="height" content="60")
-              meta(itemprop="name" content="Brasil de Fato")
-              link(itemprop="sameAs" href="https://www.brasildefato.com.br")
-          
-          if position == 1 && post.cover
-            div#featured-audio-news
-              .photo
-                - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-                figure(itemscope itemtype="https://schema.org/ImageObject")
-                  img(itemprop="image" src=post.cover.medium alt=imageDescription title=imageDescription)
+                span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
+                  span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
+                    meta(itemprop="url" content="https://www.brasildefato.com.br/img/logo-microdata.jpg")
+                    meta(itemprop="width" content="600")
+                    meta(itemprop="height" content="60")
+                  meta(itemprop="name" content="Brasil de Fato")
+                  link(itemprop="sameAs" href="https://www.brasildefato.com.br")
+              
+              if position == 1 && post.cover
+                div#featured-audio-news
+                  .photo
+                    - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+                    figure(itemscope itemtype="https://schema.org/ImageObject")
+                      img(itemprop="image" src=post.cover.medium alt=imageDescription title=imageDescription)
+                        
+                  .info-news
+                    a.news-radio-link(href=post.path)
+                      h2.title-featured(itemprop= "headline")= post.title
+                      p.description(itemprop="description")= post.description
                     
-              .info-news
+                +audio-player(position, post)
+
+              else
                 a.news-radio-link(href=post.path)
-                  h2.title-featured(itemprop= "headline")= post.title
+                  h2.title(itemprop= "headline")= post.title
                   p.description(itemprop="description")= post.description
                 
-            +audio-player(position, post)
+                +audio-player(position, post)
 
-          else
-            a.news-radio-link(href=post.path)
-              h2.title(itemprop= "headline")= post.title
-              p.description(itemprop="description")= post.description
-            
-            +audio-player(position, post)
-
-      include _partial/pagination
+        aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
+          h3.section-name Colunistas
