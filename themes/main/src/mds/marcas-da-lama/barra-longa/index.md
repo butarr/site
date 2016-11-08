@@ -116,7 +116,7 @@ sections:
     mobile: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
     title: Corvo no topo de uma montanha de lama
 
-  - type: navigationLinks
+  - type: navigation
     previous:
       title: "O adeus a Bento Rodrigues"
       url: /marcas-da-lama/bento-rodrigues

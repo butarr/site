@@ -195,13 +195,16 @@
     }
 
     .link-navigation {
-      @include image-rounded-responsive(200px);
+      @include image-rounded-responsive(75px);
+
+      @include media-query(THREE) {
+        @include image-rounded-responsive(150px);
+      }
     }
 
     .link-navigation-title {
+      padding-bottom: 5px;
       text-align: center;
-      font: bold 24px $family-serif;
-      color: $link-color;
     }
   }
 
