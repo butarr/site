@@ -152,4 +152,13 @@ sections:
     mobile: //farm6.staticflickr.com/5446/30206831453_739b3d63a4_z.jpg
     title: Corvo no topo de uma montanha de lama
 
+  - type: navigation
+    previous:
+      title: "Mascarenhas: a morte do Rio Doce"
+      url: /marcas-da-lama/barra-longa/
+      cover: http://farm6.staticflickr.com/5535/30718512145_1f1dda95f8_z.jpg
+    next:
+      title: Marcas da Lama
+      url: /marcas-da-lama/
+      cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
 ---
