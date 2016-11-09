@@ -4,16 +4,47 @@
 @import '_helpers/fonts';
 @import '_helpers/mixins';
 
+
+
 #radio {
   @include get-font(RADIO);
+  @include columnist;
 
-  .container {
-    display: -webkit-flex; //Old Safari
-    display: flex;
+  display: -webkit-flex; //Old Safari
+  display: flex;
+  -webkit-flex-direction: column; //Old Safari
+  flex-direction: column;
+
+
+  @include media-query (TWO){
+    width: 2 * $COLUMN-WIDTH;
+  }
+  @include media-query (THREE){
+    width: 3 * $COLUMN-WIDTH;
+  }
+  @include media-query (FOUR){
+    width: 4 * $COLUMN-WIDTH;
+    -webkit-flex-direction: row; //Old Safari
+    flex-direction: row;
+    -webkit-justify-content: space-around; //Old Safari
+    justify-content: space-around;
+  }
+  @include media-query (FIVE){
+    width: 5 * $COLUMN-WIDTH;
   }
 
   .main {
-    width: 3 * $COLUMN-WIDTH;
+    width: 100%;
+    padding-right: 30px;
+
+    @include media-query(FOUR) {
+      width: 2 * $COLUMN-WIDTH + ($COLUMN-WIDTH/2);
+    }
+
+    @include media-query(FIVE){
+      width: 3 * $COLUMN-WIDTH;
+      padding: 0;
+    }
   }
 
   .page-name {
