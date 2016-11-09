@@ -1,0 +1,100 @@
+mixin audio-player(position, post)
+  .audio-item(id="item_#{position}")
+    .loader
+    .player
+      iframe.widget(src="https://w.soundcloud.com/player/?url=#{post.audio}")
+      .controls
+        a.play(onclick="play(#{position});")
+          img(src="/img/icons/play.svg" alt="Play")
+        a.pause(onclick="pause(#{position});")
+          img(src="/img/icons/pause.svg" alt="Pausar")
+        .progress-bar
+          span.timeProgress 0:00
+          .progress-and-source
+            progress(max='100', value='0')
+            a(href=post.audio target="_blank")
+              p via SoundCloud
+          span.duration 0:00
+        a.download 
+          img(src="/img/icons/download.svg" alt="Baixar")
+          h4 Baixar
+
+extends base
+
+block title
+  title #{titlecase(page.area)} #{config.separator} #{config.title}
+
+block description
+  meta(name="description" content="As notícias do Brasil de Fato em áudio e texto para rádios do Brasil e da América Latina em nossa Radioagência BdF. Página #{page.current +1}")
+
+block canonical
+  link(href="https://www.brasildefato.com.br/radioagencia/" rel="canonical")
+
+block keywords
+  meta(name="keywords" content="#{page.area}")
+
+block open_graph
+  meta(property="og:title" content="#{page.area.toUpperCase()} | #{config.title}")
+  meta(property="og:description" content=config.description)
+  meta(property="og:image" content="#{config.url}/img/share-logo.png")
+
+append content
+  main.grid-5-columns
+    section#radio(class= "list" itemscope itemtype="http://schema.org/ItemList" lang= language)
+      .main
+        - var position= 0
+        each post in page.news
+          - var published_at = utc_to_brt(post.date)
+
+          .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
+            meta(itemprop="url" content="https://www.brasildefato.com.br/#{post.path}")
+            meta(itemprop="position" content="#{++position}")
+
+            span(itemscope itemtype="https://schema.org/NewsArticle")
+              meta(itemprop="author" content= post.author)
+              meta(itemprop="dateModified" content=post.updated_at)
+              meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{sitepath}/")
+
+              span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
+                span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
+                  meta(itemprop="url" content="https://www.brasildefato.com.br/img/logo-microdata.jpg")
+                  meta(itemprop="width" content="600")
+                  meta(itemprop="height" content="60")
+                meta(itemprop="name" content="Brasil de Fato")
+                link(itemprop="sameAs" href="https://www.brasildefato.com.br")
+            
+            if position == 1 && post.cover
+              div#featured-audio-news
+                .image
+                  - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+                  figure(itemscope itemtype="https://schema.org/ImageObject")
+                    img(itemprop="image" src=post.cover.medium alt=imageDescription title=imageDescription)
+                      
+                .info-news
+                  a.news-radio-link(href=post.path)
+                    h2.title-featured(itemprop= "headline")= post.title
+                    p.description(itemprop="description")= post.description
+                  
+              +audio-player(position, post)
+
+            else
+              a.news-radio-link(href=post.path)
+                h2.title(itemprop= "headline")= post.title
+                p.description(itemprop="description")= post.description
+              
+              +audio-player(position, post)
+
+      aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
+        h3.section-name Coluna
+        - var column = page.column
+        - var columnist = site.data.columnists[column.columnist];
+        .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
+          .photo
+            a(href=column.path, title="link para a pagina do colunista")
+              img(alt="Foto de #{columnist.name}" src=columnist.photo itemprop="image")
+          .column
+            a(href=column.path, title="link para a pagina do colunista")
+              span.name(itemprop="name")= columnist.name
+            a(href=column.path itemprop="url")
+              h2.title= column.title
+        +audio-player(555, column)
