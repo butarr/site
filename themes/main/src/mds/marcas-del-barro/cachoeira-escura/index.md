@@ -126,10 +126,10 @@ sections:
     previous:
       title: "Barra Longa: zona de obras"
       url: /marcas-del-barro/barra-longa
-      cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
+      cover: //farm6.staticflickr.com/5596/30417032270_3558ae4375_b.jpg
     next:
       title: "Mascarenhas: la muerte del Río Doce"
       url: /marcas-del-barro/mascarenhas/
-      cover: //farm6.staticflickr.com/5764/30739150495_a213b7c124_b.jpg
+      cover: //farm6.staticflickr.com/5535/30718512145_1f1dda95f8_z.jpg
 
 ---

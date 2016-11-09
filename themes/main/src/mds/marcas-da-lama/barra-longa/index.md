@@ -117,6 +117,7 @@ sections:
     title: Corvo no topo de uma montanha de lama
 
   - type: navigation
+    title: "Mais do especial"
     previous:
       title: "O adeus a Bento Rodrigues"
       url: /marcas-da-lama/bento-rodrigues

@@ -1,8 +1,8 @@
 ---
 layout: static_special
 area: especial
-url: /marcas-da-lama/barra-longa/
-title: "Mascarenhas: a morte do Rio Doce"
+url: /marcas-del-barro/mascarenhas/
+title: "Mascarenhas: la muerte del río Doce"
 description: O dia 5 de novembro de 2015 ficou marcado na história com o maior desastre ambiental do país
 author: Redação Brasil de Fato
 tags:
@@ -110,4 +110,14 @@ sections:
     mobile: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
     title: Imagem do Rio Doce
 
+  - type: navigation
+    title: "Más del especial"
+    previous:
+      title: "Cachoeira Escura: el derecho al agua"
+      url: /marcas-del-barro/cachoeira-escura/
+      cover: http://farm6.staticflickr.com/5338/30681655266_c68529395a_z.jpg
+    next:
+      title: "Lucro a cualquier costo: ¿accidente o tragedia anunciada?"
+      url: /marcas-del-barro/mineria
+      cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
 ---
