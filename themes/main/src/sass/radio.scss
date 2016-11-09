@@ -9,6 +9,7 @@
 #radio {
   @include get-font(RADIO);
   @include columnist;
+  @include button;
 
   display: -webkit-flex; //Old Safari
   display: flex;
@@ -37,11 +38,7 @@
     width: 100%;
     padding-right: 30px;
 
-    @include media-query(FOUR) {
-      width: 2 * $COLUMN-WIDTH + ($COLUMN-WIDTH/2);
-    }
-
-    @include media-query(FIVE){
+    @include media-query(FOUR){
       width: 3 * $COLUMN-WIDTH;
       padding: 0;
     }
@@ -53,6 +50,7 @@
 
   .section-name {
     @include section-name();
+    padding-top: $VERTICAL-SPACE;
   }
 
   .divisor {
@@ -70,6 +68,15 @@
 
   .title, .description, .title-featured {
     margin-bottom: $VERTICAL-SPACE;
+  }
+
+  .button {
+    width: 100%;
+    padding-top: $VERTICAL-SPACE;
+  }
+
+  .facebook {
+    padding-top: $VERTICAL-SPACE;
   }
 }
 
