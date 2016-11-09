@@ -22,19 +22,19 @@ mixin audio-player(position, post)
 extends base
 
 block title
-  title #{titlecase(page.area)} #{config.separator} #{config.title}
+  title Radioagência #{config.separator} #{config.title}
 
 block description
-  meta(name="description" content="As notícias do Brasil de Fato em áudio e texto para rádios do Brasil e da América Latina em nossa Radioagência BdF. Página #{page.current +1}")
+  meta(name="description" content="As notícias do Brasil de Fato em áudio e texto para rádios do Brasil e da América Latina em nossa Radioagência BdF.")
 
 block canonical
   link(href="https://www.brasildefato.com.br/radioagencia/" rel="canonical")
 
 block keywords
-  meta(name="keywords" content="#{page.area}")
+  meta(name="keywords" content="Radioagência")
 
 block open_graph
-  meta(property="og:title" content="#{page.area.toUpperCase()} | #{config.title}")
+  meta(property="og:title" content="Radioagência | #{config.title}")
   meta(property="og:description" content=config.description)
   meta(property="og:image" content="#{config.url}/img/share-logo.png")
 
