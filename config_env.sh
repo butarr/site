@@ -56,6 +56,7 @@ theme: main
 
 #Toggles
 toggles:
+  radio_sidebar: ${RADIO_SIDEBAR:-false}
 
 feed:
   type: rss2

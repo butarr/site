@@ -56,61 +56,56 @@ block open_graph
   meta(property="og:image" content="#{config.url}/img/share-logo.png")
 
 append content
-  main.grid-5-columns
+  main.grid-radio
     section#radio(class= "list" itemscope itemtype="http://schema.org/ItemList" lang= language)
-      .main
+      - var sidebar = 'sidebar_disabled'
+      if config.toggles.radio_sidebar
+        - sidebar = 'sidebar_enabled'
+      div(class="main_#{sidebar}")
         - var featured = page.featured_01
         .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
           +metadata(featured)
-
           div#featured-audio-news
             .image
               - var imageDescription= featured.cover.subtitle + ' - Créditos: ' + featured.cover.credits
               figure(itemscope itemtype="https://schema.org/ImageObject")
                 img(itemprop="image" src=featured.cover.medium alt=imageDescription title=imageDescription)
-                  
             .info-news
               a.news-radio-link(href=featured.path)
                 h2.title-featured(itemprop= "headline")= featured.title
                 p.description(itemprop="description")= featured.description
-            
           +audio-player(0, featured)
 
         - var position= 0
         each post in page.latest_news
           - var published_at = utc_to_brt(post.date)
-
           .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
             +metadata(post)
-
             a.news-radio-link(href=post.path)
               h2.title(itemprop= "headline")= post.title
               p.description(itemprop="description")= post.description
-
             +audio-player(position, post)
 
-      aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
-        h3.section-name Coluna
-        - var column = page.column
-        - var columnist = site.data.columnists[column.columnist];
-
-        .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
-          .photo
-            a(href=column.path, title="link para a pagina do colunista")
-              img(alt="Foto de #{columnist.name}" src=columnist.photo itemprop="image")
-          .column
-            a(href=column.path, title="link para a pagina do colunista")
-              span.name(itemprop="name")= columnist.name
-            a(href=column.path itemprop="url")
-              h2.title= column.title
-        +audio-player(555, column)
-
-        h3.section-name Serviço do dia
-        h4.button Clima
-        h4.button Alimento é saúde
-        h4.button Notícias
-        h3.section-name Newsletter
-        h4.button Cadastre-se já! :)
-
-        .facebook
-          include _partial/modules/module_facebook
+      if config.toggles.radio_sidebar
+        aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
+          h3.section-name Coluna
+          - var column = page.column
+          - var columnist = site.data.columnists[column.columnist];
+          .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
+            .photo
+              a(href=column.path, title="link para a pagina do colunista")
+                img(alt="Foto de #{columnist.name}" src=columnist.photo itemprop="image")
+            .column
+              a(href=column.path, title="link para a pagina do colunista")
+                span.name(itemprop="name")= columnist.name
+              a(href=column.path itemprop="url")
+                h2.title= column.title
+          +audio-player(555, column)
+          h3.section-name Serviço do dia
+          h4.button Clima
+          h4.button Alimento é saúde
+          h4.button Notícias
+          h3.section-name Newsletter
+          h4.button Cadastre-se já! :)
+          .facebook
+            include _partial/modules/module_facebook

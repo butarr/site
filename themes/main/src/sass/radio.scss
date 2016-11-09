@@ -4,42 +4,42 @@
 @import '_helpers/fonts';
 @import '_helpers/mixins';
 
-
-
 #radio {
   @include get-font(RADIO);
   @include columnist;
   @include button;
-
+  width: 100%;
   display: -webkit-flex; //Old Safari
   display: flex;
   -webkit-flex-direction: column; //Old Safari
   flex-direction: column;
+  -webkit-align-items: center; //Old Safari
+  align-items: center;
 
-
-  @include media-query (TWO){
-    width: 2 * $COLUMN-WIDTH;
-  }
-  @include media-query (THREE){
-    width: 3 * $COLUMN-WIDTH;
-  }
   @include media-query (FOUR){
-    width: 4 * $COLUMN-WIDTH;
     -webkit-flex-direction: row; //Old Safari
     flex-direction: row;
-    -webkit-justify-content: space-around; //Old Safari
-    justify-content: space-around;
-  }
-  @include media-query (FIVE){
-    width: 5 * $COLUMN-WIDTH;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: flex-start; //Old Safari
+    align-items: flex-start;
   }
 
-  .main {
+  .main_sidebar_enabled {
     width: 100%;
-    padding-right: 30px;
 
-    @include media-query(FOUR){
-      width: 3 * $COLUMN-WIDTH;
+    @include media-query(FOUR) {
+      max-width: 3 * $COLUMN-WIDTH;
+      padding-right: 40px;
+    }
+  }
+
+  .main_sidebar_disabled {
+    width: 100%;
+
+    @include media-query(FOUR) {
+      width: 4 * $COLUMN-WIDTH-RADIO;
+      margin: 0 auto;
       padding: 0;
     }
   }
