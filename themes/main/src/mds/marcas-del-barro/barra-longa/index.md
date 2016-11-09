@@ -53,7 +53,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5746/30564042500_54f541eb6c_b.jpg
-    mobile: //farm6.staticflickr.com/5746/30564042500_54f541eb6c_b.jpg
+    mobile: //farm6.staticflickr.com/5746/30876810505_ec74e7f5a5_b.jpg
     title: "Estadística sobre los atendidos en los centros de salud de Barra Longa, que aumentaran más del mil por ciento."
 
   - type: text
@@ -62,7 +62,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5608/30864768255_30324a333a_b.jpg
-    mobile: //farm6.staticflickr.com/5608/30864768255_30324a333a_b.jpg
+    mobile: //farm6.staticflickr.com/5616/30575374300_6086d4310c_b.jpg
     title: "Edvania de Oliveira, 36 años, dice: Todas las veces que mi hija vá al psicólogo, ella dibuja la misma cosa: nuestra casa, el barro llegando y la casa yéndose."
 
   - type: text
@@ -82,7 +82,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5570/30776651051_7144805a27_b.jpg
-    mobile: //farm6.staticflickr.com/5570/30776651051_7144805a27_b.jpg
+    mobile: //farm6.staticflickr.com/5700/30575366950_da71f1f366_b.jpg
     title: "José Eduardo Coelho Filho de 54 años, dice: La marca del barro no se va a borrar tan rápido. Creo que quizás no se borre nunca."
 
   - type: text
@@ -94,7 +94,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5598/30564074810_863791df00_b.jpg
-    mobile: //farm6.staticflickr.com/5598/30564074810_863791df00_b.jpg
+    mobile: //farm6.staticflickr.com/5595/30241270623_b7f6b12aae_b.jpg
     title: "Simone Maria Silva Marques de 39 años, dice: La Samarco es muy irresponsable. Cada vez que doy una volta por las calles de Barra Longa vuelvo más indignada."   
 
   - type: text
@@ -109,8 +109,9 @@ sections:
     text: "<p>Con la intención de denunciar la realidad local, de intercambiar experiencias, evaluar y proponer alternativas, desde setiembre cerca de quince pobladores y militantes del MAB formaron el Colectivo de Salud.</p><p>Todavía no hay ningún documento oficial que evalúe y compare la situación de los pobladores antes y después de la ruptura del dique, lo que dificulta a la población la posibilidad de reclamar efectivamente a la empresa y proponer iniciativas en políticas públicas. Teniendo en cuenta esta situación, uno de los objetivos centrales del grupo es reclamar a las mineras y a los organismos públicos investigaciones independientes enfocadas en la ciudad.</p><p>\"Exigimos que la Samarco deje de darnos respuestas evasivas ante la situación de salud de la población de Barra Longa. Precisamos estudios independientes que indiquen el número de enfermos, los tipos de enfermedades, y que hagan la comparación entre la cantidad de enfermos que tenemos ahora y cómo era nuestra realidad antes de la ruptura. Que se estudien mejor las consecuencias de la exposición diaria al polvo de desechos y a las obras en curso\", enfatiza el colectivo en una <a href=\"http://tragedianunciada.mabnacional.org.br/2016/10/27/carta-dos-atingidos-pela-samarco-pelo-direito-a-saude\" target=\"_blank\" />carta pública</a> lanzada a fines de octubre de este año.</p><p>En nota, Samarco informó que luego de la tragedia disponibilizó diversos tipos de insumos hospitalarios, tanto como profesionales de salud y una ambulancia tripulada. La empresa también alegó que el aumento de la cantidad de diagnósticos en la ciudad se dio porque hubo un aumento de la atención. Además de eso, afirmó que \"no se puede establecer relación entre el número de atenciones médicas y la ruptura del dique\".</p><p>A pesar de que no reconozca la relación entre la ruptura del dique y el crecimiento del número de diagnósticos en las ciudades afectadas, en compromisos firmados por la minera en los Términos de Transacción y de Ajuste de Conducta (TTAC), un año después de la tragedia, está en marcha la creación de un estudio epidemiológico y toxicológico para identificar el perfil de los problemas de salud de los afectados, desde Mariana hasta la desembocadura del Río Doce. El objetivo es evaluar el vínculo de los problemas de salud con las consecuencias generadas por este desastre socioambiental. </p><p>Al cierre de esta publicación, la minera no respondió a las preguntas de Brasil de Fato sobre la situación de la hija de Simone Maria da Silva, que solicita ayuda financiera para comprar los medicamentos a la niña.</p>"
   - type: image
     desktop: //farm6.staticflickr.com/5759/30683572111_349b6a5712_b.jpg
-    mobile: //farm6.staticflickr.com/5759/30683572111_349b6a5712_b.jpg
+    mobile: //farm6.staticflickr.com/5814/30742765622_31ccb1c090_b.jpg
     title: "Créditos del reportaje. Texto, Simone Freire. Edición, Vivian Fernandes. Video y foto, José Eduardo Bernardes y Guilherme Weimann. Arte, Wilcker Morais."
+    
   - type: image
     desktop: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
     mobile: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
