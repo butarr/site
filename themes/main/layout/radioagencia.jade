@@ -19,6 +19,23 @@ mixin audio-player(position, post)
           img(src="/img/icons/download.svg" alt="Baixar")
           h4 Baixar
 
+mixin metadata(post)
+  meta(itemprop="url" content="https://www.brasildefato.com.br/#{post.path}")
+  meta(itemprop="position" content="#{++position}")
+
+  span(itemscope itemtype="https://schema.org/NewsArticle")
+    meta(itemprop="author" content= post.author)
+    meta(itemprop="dateModified" content=post.updated_at)
+    meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{sitepath}/")
+
+    span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
+      span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
+        meta(itemprop="url" content="https://www.brasildefato.com.br/img/logo-microdata.jpg")
+        meta(itemprop="width" content="600")
+        meta(itemprop="height" content="60")
+      meta(itemprop="name" content="Brasil de Fato")
+      link(itemprop="sameAs" href="https://www.brasildefato.com.br")
+
 extends base
 
 block title
@@ -44,22 +61,8 @@ append content
       .main
         - var featured = page.featured_01
         .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
-          meta(itemprop="url" content="https://www.brasildefato.com.br/#{featured.path}")
-          meta(itemprop="position" content="#{++position}")
+          +metadata(featured)
 
-          span(itemscope itemtype="https://schema.org/NewsArticle")
-            meta(itemprop="author" content= featured.author)
-            meta(itemprop="dateModified" content=featured.updated_at)
-            meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{sitepath}/")
-
-            span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
-              span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
-                meta(itemprop="url" content="https://www.brasildefato.com.br/img/logo-microdata.jpg")
-                meta(itemprop="width" content="600")
-                meta(itemprop="height" content="60")
-              meta(itemprop="name" content="Brasil de Fato")
-              link(itemprop="sameAs" href="https://www.brasildefato.com.br")
-      
           div#featured-audio-news
             .image
               - var imageDescription= featured.cover.subtitle + ' - Créditos: ' + featured.cover.credits
@@ -72,38 +75,25 @@ append content
                 p.description(itemprop="description")= featured.description
             
           +audio-player(0, featured)
-      
+
         - var position= 0
         each post in page.latest_news
           - var published_at = utc_to_brt(post.date)
 
           .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
-            meta(itemprop="url" content="https://www.brasildefato.com.br/#{post.path}")
-            meta(itemprop="position" content="#{++position}")
+            +metadata(post)
 
-            span(itemscope itemtype="https://schema.org/NewsArticle")
-              meta(itemprop="author" content= post.author)
-              meta(itemprop="dateModified" content=post.updated_at)
-              meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{sitepath}/")
-
-              span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
-                span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
-                  meta(itemprop="url" content="https://www.brasildefato.com.br/img/logo-microdata.jpg")
-                  meta(itemprop="width" content="600")
-                  meta(itemprop="height" content="60")
-                meta(itemprop="name" content="Brasil de Fato")
-                link(itemprop="sameAs" href="https://www.brasildefato.com.br")
-                
             a.news-radio-link(href=post.path)
               h2.title(itemprop= "headline")= post.title
               p.description(itemprop="description")= post.description
-            
+
             +audio-player(position, post)
 
       aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
         h3.section-name Coluna
         - var column = page.column
         - var columnist = site.data.columnists[column.columnist];
+
         .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
           .photo
             a(href=column.path, title="link para a pagina do colunista")
@@ -114,11 +104,13 @@ append content
             a(href=column.path itemprop="url")
               h2.title= column.title
         +audio-player(555, column)
+
         h3.section-name Serviço do dia
         h4.button Clima
         h4.button Alimento é saúde
         h4.button Notícias
         h3.section-name Newsletter
         h4.button Cadastre-se já! :)
+
         .facebook
           include _partial/modules/module_facebook
