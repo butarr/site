@@ -96,7 +96,7 @@
 
   @include media-query(THREE){
     margin: 0;
-    width: $COLUMN-WIDTH + ($COLUMN-WIDTH/2);
+    max-width: 2 * $COLUMN-WIDTH;
     @include image-rounded-responsive(230px);
   }
 
@@ -111,7 +111,7 @@
 
   @include media-query(THREE){
     padding-left: 15px;
-    width: $COLUMN-WIDTH + ($COLUMN-WIDTH/2);
+    max-width: 2 * $COLUMN-WIDTH;
   }
 }
 
