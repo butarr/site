@@ -63,7 +63,11 @@
   }
 
   section.subtitle.verticalSpacing + section.text.verticalSpacing  {
-    padding-top: 0;
+    padding-top: 30px;
+
+    @include media-query(THREE) {
+      padding-top: 50px;
+    }
   }
 
   section.links.verticalSpacing + section.links.verticalSpacing  {
@@ -73,9 +77,9 @@
   .verticalSpacing {
     padding-top: 30px;
 
-      @include media-query(THREE) {
-        padding-top: 50px;
-      }
+    @include media-query(THREE) {
+      padding-top: 50px;
+    }
   }
 
   section.text, section.subtitle {
@@ -154,6 +158,14 @@
   }
 
   section.imageCentralized {
+    img {
+      width: 100%;
+
+      @include media-query(THREE) {
+        width: auto;
+      }
+    }
+
     display: flex;
     justify-content: center;
   }

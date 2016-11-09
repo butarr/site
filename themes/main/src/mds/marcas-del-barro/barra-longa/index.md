@@ -1,7 +1,7 @@
 ---
 layout: static_special
 area: especial
-url: /marcas-da-lama/barra-longa/
+url: /marcas-del-barro/barra-longa/
 title: "Barra Longa: zona de obras"
 description: Polvareda, ruido excesivo y constante, trastornos psicológicos y enfermedades respiratorias en la rutina de los pobladores
 author: Redação Brasil de Fato
@@ -17,7 +17,7 @@ cover:
   thumbnail: //farm6.staticflickr.com/5582/30653716696_a26908ca95_t.jpg
   medium: //farm6.staticflickr.com/5582/30653716696_a26908ca95_z.jpg
   small: //farm6.staticflickr.com/5582/30653716696_a26908ca95_n.jpg
-  title: Pórtico da entrada da cidade de Barra Longa em meio a lama
+  title: Pórtico en la entrada del distrito de Barra Longa en medio del barro
   credits: Lucas Bois
   subtitle: Bento Rodrigues
 date: 2016-10-28T22:58:23.677Z
@@ -33,7 +33,7 @@ sections:
   - type: image
     desktop: //farm9.staticflickr.com/8601/29992512434_5021a23dfd_b.jpg
     mobile: //farm6.staticflickr.com/5594/29990595293_56ac787198_b.jpg
-    title: "Mapa com a localização de Barra longa um pouco mais distante da Barragem do que Bento Rodrigues"
+    title: "Mapa con la ubicación de Barra Longa, un poco más allá del dique que el distrito de Bento Rodrigues"
 
 
   - type: multimedia
@@ -52,18 +52,18 @@ sections:
     <p>En el mismo período, Samarco afirmó en su portal web que sus desechos \"no son tóxicos y que no representan peligrosidad alguna para la salud humana, teniendo en que cuenta que no dispensan contaminantes para el agua, mismo en condiciones de exposición a lluvias\".</p><p>Sin embargo, los impactos en la salud son el principal reclamo de los pobladores.</p>"
 
   - type: image
-    desktop: //farm6.staticflickr.com/5321/30324862390_31d00d10ac_b.jpg
-    mobile: //farm6.staticflickr.com/5597/30507915122_0721cbaf6e_b.jpg
-    title: "Estatística de que o atendimento nos centros de saúde de Barra Longa em 2015 foi de 22 pessoas antendidas e em 2016 289 pacientes, um aumento de mais de 1000%"
+    desktop: //farm6.staticflickr.com/5746/30564042500_54f541eb6c_b.jpg
+    mobile: //farm6.staticflickr.com/5746/30564042500_54f541eb6c_b.jpg
+    title: "Estadística sobre los atendidos en los centros de salud de Barra Longa, que aumentaran más del mil por ciento."
 
   - type: text
     text: "<p>Uno de los casos de impacto en la salud es el de Anna Clara Oliveira Coelho, de cuatro años. Ella es hija de Edvania de Oliveira, de 36 años, y José Eduardo Coelho, de 54. El 5 de noviembre, el barro invadió el garage de la casa de la familia, alcanzando un metro de altura. Anna Clara vio todo.</p>
     <p>Pocos meses después de la tragedia, la niña comenzó a presentar síntomas de depresión, problemas respiratorios y manchas en la piel. \"Creo que el principal problema de Anna Clara fue quedarse por acá arriba y ver toda la lama que había\", relata su madre. \"Los niños también tienen eso no, todo el mundo hablando, nervioso, con miedo, y ella escuchando todo. Para una niña es un trauma bien grande\", complementa José Eduardo.</p>"
 
   - type: image
-    desktop: //farm6.staticflickr.com/5831/30536803841_686cca6176_b.jpg
-    mobile: //farm6.staticflickr.com/5610/30536814551_b1de9359a8_b.jpg
-    title: "Edvania de Oliveira, 36 anos, fala: Era umas 22h quando a lama começou a chegar aqui. Todo mundo ficou acordado. A gente deu sorte que chegou à noite. Se tivesse chegado durante o dia, muita gente ia morrer."
+    desktop: //farm6.staticflickr.com/5608/30864768255_30324a333a_b.jpg
+    mobile: //farm6.staticflickr.com/5608/30864768255_30324a333a_b.jpg
+    title: "Edvania de Oliveira, 36 años, dice: Todas las veces que mi hija vá al psicólogo, ella dibuja la misma cosa: nuestra casa, el barro llegando y la casa yéndose."
 
   - type: text
     text: "<p>El acompañamiento psicológico de la niña está siendo realizado desde enero por la psicóloga Luiza Laura Lanna, en el Sistema Único de Salud (SUS). En el relato del acompañamiento, ella señala que la paciente \"siempre está asustada y diciendo que se va a mudar para otra ciudad. Anna Clara debe continuar el tratamiento hasta que consiga librarse del trauma\".</p>
@@ -75,15 +75,15 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5811/30625043265_f995207599_b.jpg
     mobile: //farm6.staticflickr.com/5811/30625043265_f995207599_b.jpg
-    title: Foto do Laudo Médico da Ana
+    title: "Foto del informe médico de la niña Anna."
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/T_6qI9VItKM" frameborder="0" allowfullscreen></iframe>
 
   - type: image
-    desktop: //farm6.staticflickr.com/5701/30589248196_1fd4c91d64_b.jpg
-    mobile: //farm9.staticflickr.com/8640/30537129191_2380ba37d5_z.jpg
-    title: "José Eduardo Coelho Filho de 54 anos, fala que: A marca da lama não vai se apagar tão cedo. Acho que talvez nem apaque mais."
+    desktop: //farm6.staticflickr.com/5570/30776651051_7144805a27_b.jpg
+    mobile: //farm6.staticflickr.com/5570/30776651051_7144805a27_b.jpg
+    title: "José Eduardo Coelho Filho de 54 años, dice: La marca del barro no se va a borrar tan rápido. Creo que quizás no se borre nunca."
 
   - type: text
     text: "<p>Cuestiones similares a las de José Eduardo y Edvania son enfrentadas por Simone Maria da Silva, de 39 años, y su marido José Márcio Marques, de 38. Así como el parte médico de Anna Clara, el de su hija Sofya Silva Marques, de un año y ocho meses, firmado por el mismo médico, dice que su problema respiratorio es \"desencadenado por inhalaciones (factores desencadenantes e irritantes relacionados a la exposición de polvo proveniente de desechos de minería) resultado de la ruptura del dique en Mariana, que afectan el medio ambiente de la ciudad de Barra Longa, donde reside la menor\".</p>
@@ -93,9 +93,9 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/E1NpEKxfXOg" frameborder="0" allowfullscreen></iframe>   
 
   - type: image
-    desktop: //farm6.staticflickr.com/5766/30537162311_37aeec1b93_b.jpg
-    mobile: //farm6.staticflickr.com/5518/30537172131_5d8618aaa4_z.jpg
-    title: "Simone Maria Silva Marques de 39 anos, fala que: A Samarco é muito omissa. A cada volta que eu dou nas ruas de Barra Longa, eu volto mais revoltada."   
+    desktop: //farm6.staticflickr.com/5598/30564074810_863791df00_b.jpg
+    mobile: //farm6.staticflickr.com/5598/30564074810_863791df00_b.jpg
+    title: "Simone Maria Silva Marques de 39 años, dice: La Samarco es muy irresponsable. Cada vez que doy una volta por las calles de Barra Longa vuelvo más indignada."   
 
   - type: text
     text: "<p>Con las calles rotas, las cañerías tapadas, y saneamiento a cielo abierto, el aumento de personas infectadas con dengue en Barra Longa fue significativo al inicio de este año. Según la Secretaría Municipal de Salud, en todo el año de 2015 fueron registrados apenas dos casos. Y en 2016, hasta el día dos de marzo, fueron confirmados 128 casos. En aquel momento, Samarco divulgó una nota informando que, en conjunto con la municipalidad, creó grupos de trabajo para inspecciones en las casas de la región.</p>
@@ -108,22 +108,23 @@ sections:
   - type: text
     text: "<p>Con la intención de denunciar la realidad local, de intercambiar experiencias, evaluar y proponer alternativas, desde setiembre cerca de quince pobladores y militantes del MAB formaron el Colectivo de Salud.</p><p>Todavía no hay ningún documento oficial que evalúe y compare la situación de los pobladores antes y después de la ruptura del dique, lo que dificulta a la población la posibilidad de reclamar efectivamente a la empresa y proponer iniciativas en políticas públicas. Teniendo en cuenta esta situación, uno de los objetivos centrales del grupo es reclamar a las mineras y a los organismos públicos investigaciones independientes enfocadas en la ciudad.</p><p>\"Exigimos que la Samarco deje de darnos respuestas evasivas ante la situación de salud de la población de Barra Longa. Precisamos estudios independientes que indiquen el número de enfermos, los tipos de enfermedades, y que hagan la comparación entre la cantidad de enfermos que tenemos ahora y cómo era nuestra realidad antes de la ruptura. Que se estudien mejor las consecuencias de la exposición diaria al polvo de desechos y a las obras en curso\", enfatiza el colectivo en una <a href=\"http://tragedianunciada.mabnacional.org.br/2016/10/27/carta-dos-atingidos-pela-samarco-pelo-direito-a-saude\" target=\"_blank\" />carta pública</a> lanzada a fines de octubre de este año.</p><p>En nota, Samarco informó que luego de la tragedia disponibilizó diversos tipos de insumos hospitalarios, tanto como profesionales de salud y una ambulancia tripulada. La empresa también alegó que el aumento de la cantidad de diagnósticos en la ciudad se dio porque hubo un aumento de la atención. Además de eso, afirmó que \"no se puede establecer relación entre el número de atenciones médicas y la ruptura del dique\".</p><p>A pesar de que no reconozca la relación entre la ruptura del dique y el crecimiento del número de diagnósticos en las ciudades afectadas, en compromisos firmados por la minera en los Términos de Transacción y de Ajuste de Conducta (TTAC), un año después de la tragedia, está en marcha la creación de un estudio epidemiológico y toxicológico para identificar el perfil de los problemas de salud de los afectados, desde Mariana hasta la desembocadura del Río Doce. El objetivo es evaluar el vínculo de los problemas de salud con las consecuencias generadas por este desastre socioambiental. </p><p>Al cierre de esta publicación, la minera no respondió a las preguntas de Brasil de Fato sobre la situación de la hija de Simone Maria da Silva, que solicita ayuda financiera para comprar los medicamentos a la niña.</p>"
   - type: image
-    desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
-    mobile: //farm6.staticflickr.com/5727/29973631194_29d8bcc5d2_b.jpg
-    title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
+    desktop: //farm6.staticflickr.com/5759/30683572111_349b6a5712_b.jpg
+    mobile: //farm6.staticflickr.com/5759/30683572111_349b6a5712_b.jpg
+    title: "Créditos del reportaje. Texto, Simone Freire. Edición, Vivian Fernandes. Video y foto, José Eduardo Bernardes y Guilherme Weimann. Arte, Wilcker Morais."
   - type: image
     desktop: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
     mobile: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
-    title: Corvo no topo de uma montanha de lama
+    title: "Cuervo en el tope de un morro de barro."
 
   - type: navigation
-    title: "Marcas da Lama: Leia mais"
-    links:
-      - title: "O adeus a Bento Rodrigues"
-        url: /marcas-da-lama/bento-rodrigues
-        cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
-      - title: "Cachoeira Escura: o direito à água"
-        url: /marcas-da-lama/cachoeira-escura/
-        cover: //farm6.staticflickr.com/5764/30739150495_a213b7c124_b.jpg
+    title: "Más del especial"
+    previous:
+      title: "El adiós a Bento Rodrigues"
+      url: /marcas-del-barro/bento-rodrigues
+      cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
+    next:
+      title: "Cachoeira Escura: el derecho al agua"
+      url: /marcas-del-barro/cachoeira-escura/
+      cover: //farm6.staticflickr.com/5764/30739150495_a213b7c124_b.jpg
 
 ---
