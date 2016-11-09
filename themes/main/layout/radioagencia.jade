@@ -42,8 +42,39 @@ append content
   main.grid-5-columns
     section#radio(class= "list" itemscope itemtype="http://schema.org/ItemList" lang= language)
       .main
+        - var featured = page.featured_01
+        .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
+          meta(itemprop="url" content="https://www.brasildefato.com.br/#{featured.path}")
+          meta(itemprop="position" content="#{++position}")
+
+          span(itemscope itemtype="https://schema.org/NewsArticle")
+            meta(itemprop="author" content= featured.author)
+            meta(itemprop="dateModified" content=featured.updated_at)
+            meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{sitepath}/")
+
+            span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
+              span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
+                meta(itemprop="url" content="https://www.brasildefato.com.br/img/logo-microdata.jpg")
+                meta(itemprop="width" content="600")
+                meta(itemprop="height" content="60")
+              meta(itemprop="name" content="Brasil de Fato")
+              link(itemprop="sameAs" href="https://www.brasildefato.com.br")
+      
+          div#featured-audio-news
+            .image
+              - var imageDescription= featured.cover.subtitle + ' - Créditos: ' + featured.cover.credits
+              figure(itemscope itemtype="https://schema.org/ImageObject")
+                img(itemprop="image" src=featured.cover.medium alt=imageDescription title=imageDescription)
+                  
+            .info-news
+              a.news-radio-link(href=featured.path)
+                h2.title-featured(itemprop= "headline")= featured.title
+                p.description(itemprop="description")= featured.description
+            
+          +audio-player(0, featured)
+      
         - var position= 0
-        each post in page.news
+        each post in page.latest_news
           - var published_at = utc_to_brt(post.date)
 
           .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
@@ -62,27 +93,12 @@ append content
                   meta(itemprop="height" content="60")
                 meta(itemprop="name" content="Brasil de Fato")
                 link(itemprop="sameAs" href="https://www.brasildefato.com.br")
+                
+            a.news-radio-link(href=post.path)
+              h2.title(itemprop= "headline")= post.title
+              p.description(itemprop="description")= post.description
             
-            if position == 1 && post.cover
-              div#featured-audio-news
-                .image
-                  - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-                  figure(itemscope itemtype="https://schema.org/ImageObject")
-                    img(itemprop="image" src=post.cover.medium alt=imageDescription title=imageDescription)
-                      
-                .info-news
-                  a.news-radio-link(href=post.path)
-                    h2.title-featured(itemprop= "headline")= post.title
-                    p.description(itemprop="description")= post.description
-                  
-              +audio-player(position, post)
-
-            else
-              a.news-radio-link(href=post.path)
-                h2.title(itemprop= "headline")= post.title
-                p.description(itemprop="description")= post.description
-              
-              +audio-player(position, post)
+            +audio-player(position, post)
 
       aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
         h3.section-name Coluna
