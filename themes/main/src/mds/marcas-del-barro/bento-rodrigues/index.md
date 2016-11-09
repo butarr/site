@@ -136,9 +136,9 @@ sections:
   - type: navigation
     title: "Más del especial"
     previous:
-      title:
-      url:
-      cover:
+      title: Marcas del Barro
+      url: /marcas-del-barro/
+      cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
     next:
       title: "Barra Longa: zona de obras"
       url: /marcas-del-barro/barra-longa

@@ -1,8 +1,8 @@
 ---
 layout: static_special
 area: especial
-url: /marcas-da-lama/barra-longa/
-title: "A resistência na Bacia do Rio Doce"
+url: /marcas-del-barro/lucha-de-los-afectados/
+title: "La resistencia en la cuenca del Río Doce"
 description: O dia 5 de novembro de 2015 ficou marcado na história com o maior desastre ambiental do país
 author: Redação Brasil de Fato
 tags:
@@ -109,5 +109,16 @@ sections:
     desktop: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
     mobile: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
     title: Corvo no topo de uma montanha de lama
+
+  - type: navigation
+    title: "Más del especial"
+    previous:
+      title: "Lucro a cualquier costo: ¿accidente o tragedia anunciada?"
+      url: /marcas-del-barro/mineria/
+      cover: //farm6.staticflickr.com/5606/30776352001_74fcd8629c_b.jpg
+    next:
+      title: "Las Marcas del Barro"
+      url: /marcas-del-barro/
+      cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
 
 ---

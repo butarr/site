@@ -1,7 +1,7 @@
 ---
 layout: static_special
 area: especial
-url: /marcas-da-lama/mineracao/
+url: /marcas-del-barro/mineria/
 title: "Lucro a cualquier costo: ¿accidente o tragedia anunciada?"
 description: O dia 5 de novembro de 2015 ficou marcado na história com o maior desastre ambiental do país
 author: Redação Brasil de Fato
@@ -106,5 +106,16 @@ sections:
     desktop: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
     mobile: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
     title: Corvo no topo de uma montanha de lama
+
+  - type: navigation
+    title: "Más del especial"
+    previous:
+      title: "Mascarenhas: la muerte del río Doce"
+      url: /marcas-del-barro/mascarenhas/
+      cover: http://farm6.staticflickr.com/5535/30718512145_1f1dda95f8_z.jpg
+    next:
+      title: "La resistencia en la cuenca del Río Doce"
+      url: /marcas-del-barro/lucha-de-los-afectados/
+      cover: //farm6.staticflickr.com/5731/30605469151_672db47378_z.jpg
 
 ---

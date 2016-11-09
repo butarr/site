@@ -56,6 +56,7 @@ sections:
       - title: "La resistencia en la cuenca del Río Doce"
         url: /marcas-del-barro/lucha-de-los-afectados
         cover: //farm6.staticflickr.com/5723/30242940493_38d4e90f0e_b.jpg
+
   - type: image
     centralized: true
     desktop: //farm6.staticflickr.com/5513/30083375303_fbf49eb6c5_z.jpg
