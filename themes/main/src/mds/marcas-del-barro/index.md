@@ -46,16 +46,16 @@ sections:
   - type: links
     title: "Capítulo 2: Minería"
     links:
-      - title: "Lucro a cualquier costo: accidente o tragedia"
+      - title: "Lucro a cualquier costo: ¿accidente o tragedia anunciada?"
         url: /marcas-del-barro/mineria/
-        cover: //farm6.staticflickr.com/5728/30061760584_8c503b0e10_z.jpg
+        cover: //farm6.staticflickr.com/5606/30776352001_74fcd8629c_b.jpg
 
   - type: links
     title: "Capítulo 3: Lucha"
     links:
       - title: "La resistencia en la cuenca del Río Doce"
-        url: /marcas-del-barro/lucha/
-        cover: //farm6.staticflickr.com/5731/30605469151_672db47378_z.jpg
+        url: /marcas-del-barro/lucha-de-los-afectados
+        cover: //farm6.staticflickr.com/5723/30242940493_38d4e90f0e_b.jpg
   - type: image
     centralized: true
     desktop: //farm6.staticflickr.com/5513/30083375303_fbf49eb6c5_z.jpg
@@ -63,6 +63,5 @@ sections:
     title: "Marcas da Lama"
 
   - type: text
-    text: "<p style=\"text-align: center;\"><b>Reportaje:</b> Simone Freire, José Eduardo Bernardes e Guilherme Weimann<br><b>Edición:</b> Vivian Fernandes<br><b>Video y foto:</b> José Eduardo Bernardes, Guilherme Weimann e Thiago Hersan<br><b>Edición de video:</b> Marcelo Cruz <br><b>Diseño y edición fotográfica:</b> Wilcker Morais<br><b>Coordinación de arte:</b> José Bruno Lima<br><b>Desarrollo web:</b> Giuliana Marquesi, Michael Feitosa, Nicholas Pereira, Ricardo Retamal, Thiago Hersan e Wandecleya Martins<br><b>Traducción al español:</b> Marcelo Aguilar y María Julia Giménez<br><b>Apoyo:</b> Nadine Nascimento, Júlia Dolce, Norma Odara, Rute Pina e Rafael Tatemoto<br><b>Coordinación periodística:</b> Simone Freire<br><b>Agradecimientos:</b> Regiane, Jonatan, Fabiana, Ellen, Camila, Thiago, Diane, Valcileno, Binho, Débora, Maria Julia, além do Movimento pela Soberania Popular na Mineração (MAM) e do Movimento dos Atingidos por Barragens (MAB)</p><p></p>"
-
+    text: "<p style=\"text-align: center;\"><b>Reportaje:</b> Simone Freire, José Eduardo Bernardes y Guilherme Weimann<br><b>Edición:</b> Vivian Fernandes<br><b>Video y foto:</b> José Eduardo Bernardes, Guilherme Weimann y Thiago Hersan<br><b>Edición de video:</b> Marcelo Cruz <br><b>Diseño y edición fotográfica:</b> Wilcker Morais<br><b>Coordinación de arte:</b> José Bruno Lima<br><b>Desarrollo web:</b> Giuliana Marquesi, Michael Feitosa, Nicholas Pereira, Ricardo Retamal, Thiago Hersan y Wandecleya Martins<br><b>Traducción al español:</b> Marcelo Aguilar y María Julia Giménez<br><b>Apoyo:</b> Nadine Nascimento, Júlia Dolce, Norma Odara, Rute Pina y Rafael Tatemoto<br><b>Coordinación periodística:</b> Simone Freire<br><b>Agradecimientos:</b> Regiane, Jonatan, Fabiana, Ellen, Camila, Thiago, Diane, Valcileno, Binho, Débora, Maria Julia, además del Movimiento por la Soberanía Popular Frente a la Minería (MAM) y del Movimiento de los Afectados por Represas (MAB)</p><p></p>"
 ---
