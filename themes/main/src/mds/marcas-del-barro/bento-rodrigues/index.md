@@ -70,7 +70,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5650/30230520213_bf45060c30_b.jpg
-    mobile: //farm6.staticflickr.com/5799/30715424255_f06dc0c18c_b.jpg
+    mobile: //farm6.staticflickr.com/5624/30859139335_725867f989_b.jpg
     title: "Foto de Joana D'arc Norberto, de 43 anos, com sua fala \"Não estava em casa quando tudo aconteceu. Um genro me ligou e disse: 'ei, Joana, acabou Bento, morreu todo mundo'\""
 
   - type: text
@@ -92,7 +92,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5445/30778001271_b284cda198_b.jpg
-    mobile: //farm6.staticflickr.com/5830/30598753452_5eb424f796_b.jpg
+    mobile: //farm6.staticflickr.com/5681/30771234131_75c4ff806a_b.jpg
     title: "Foto de Manuel Marcos Muniz, de 52 anos, com sua fala \"A gente acha que já passou, que já acabou, mas tem dia que a gente só vive em função da tragédia da Samarco, do rompimento da barragem\""
 
   - type: text
@@ -109,7 +109,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5503/30735269056_1e26cd2b6b_b.jpg
-    mobile: //farm6.staticflickr.com/5503/30735269056_1e26cd2b6b_b.jpg
+    mobile: //farm6.staticflickr.com/5328/30223669793_b047354860_b.jpg
     text: Haga clic para ver el álbum
     link: https://www.flickr.com/photos/brasildefato/albums/72157675597652176
 
@@ -126,7 +126,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5759/30683572111_349b6a5712_b.jpg
-    mobile: //farm6.staticflickr.com/5759/30683572111_349b6a5712_b.jpg
+    mobile: //farm6.staticflickr.com/5488/30788679551_b57a48aefa_b.jpg
     title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
   - type: image
     desktop: //farm6.staticflickr.com/5471/29967477173_4e42af1d3e_b.jpg
@@ -142,6 +142,6 @@ sections:
     next:
       title: "Barra Longa: zona de obras"
       url: /marcas-del-barro/barra-longa
-      cover: //farm6.staticflickr.com/5582/30653716696_a26908ca95_b.jpg
+      cover: //farm6.staticflickr.com/5596/30417032270_3558ae4375_b.jpg
 
 ---
