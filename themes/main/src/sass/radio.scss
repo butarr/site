@@ -62,6 +62,10 @@
     &:first-child {
       padding-top: $VERTICAL-SPACE;
     }
+
+    &:last-child {
+      border: 0;
+    }
   }
 
   .title, .description, .title-featured {
