@@ -2,7 +2,7 @@
 layout: static_special
 area: especial
 url: /marcas-da-lama/mineracao/
-title: "Lucro a todo custo: acidente ou tragédia"
+title: "Lucro a cualquier costo: ¿accidente o tragedia anunciada?"
 description: O dia 5 de novembro de 2015 ficou marcado na história com o maior desastre ambiental do país
 author: Redação Brasil de Fato
 tags:
@@ -101,7 +101,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5796/30809249946_e53a4913df_b.jpg
     mobile: //farm6.staticflickr.com/5796/30809249946_e53a4913df_b.jpg
-    title: "Créditos da reportagem. Texto: Guilherme Weimann, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes, Arte: Wilcker Morais"
+    title: "Créditos da reportagem. Texto: Guilherme Weimann, Edição: Viviana Fernandes, Vídeo y Foto: José Eduardo Bernardes, Arte: Wilcker Morais"
   - type: image
     desktop: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
     mobile: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
