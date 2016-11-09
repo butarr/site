@@ -863,6 +863,23 @@ $number-size: 1.3rem;
     font: bold #{$list-title-size}/#{$line-separation-small} $family-serif;
     color: $title-color;
   }
+
+  .columnist {
+    .title {
+      font: bold #{$title-size}/#{$line-separation-small} $family-serif;
+    }
+
+    .name {
+      font: bold #{$details-size}/#{$line-separation-small} $family-sans;
+      color: $columnist-name-color;
+    }
+
+    a:hover {
+      .name {
+        color: $link-hover-color;
+      }
+    }
+  }
 }
 
 @mixin get-font($type){
