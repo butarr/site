@@ -82,7 +82,7 @@
   }
 }
 
-#radio .photo {
+#radio .image {
   width: 100%;
   @include image-rounded-responsive(300px);
   margin-bottom: $VERTICAL-SPACE;
@@ -218,7 +218,49 @@
 }
 
 #radio .sidebar {
+  width: 100%;
   display: inline-block;
-  width: $COLUMN-WIDTH;
   @include column-lateral-spacing();
+
+  @include media-query(FOUR) {
+    padding-top: $VERTICAL-SPACE;
+    width: $COLUMN-WIDTH + $COLUMN-WIDTH/2;
+  }
+
+  .progress-bar {
+    span, p  {
+      font-size: 0.6rem;
+    }
+  }
+
+  .download {
+    padding-left: 10px;
+
+    img {
+      height: 28px;
+    }
+
+    h4 {
+      font-size: 0.7rem;
+    }
+  }
+
+  .title {
+    margin-bottom: 0;
+  }
+
+  .progress-and-source {
+    height: 38px;
+  }
+
+  .play img {
+    height: 30px;
+  }
+
+  .pause {
+    display: none;
+    img {
+      height: 30px;
+    }
+  }
 }
