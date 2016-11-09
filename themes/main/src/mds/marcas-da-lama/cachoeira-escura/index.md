@@ -123,6 +123,7 @@ sections:
     title: "Dois homens carregando um balde de água"  
 
   - type: navigation
+    title: "Mais do especial"
     previous:
       title: "Barra Longa: a cidade canteiro de obras"
       url: /marcas-da-lama/barra-longa/

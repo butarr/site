@@ -112,6 +112,7 @@ sections:
     title: Imagem do Rio Doce
 
   - type: navigation
+    title: "Mais do especial"
     previous:
       title: "Cachoeira Escura: o direito à água"
       url: /marcas-da-lama/cachoeira-escura/

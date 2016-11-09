@@ -132,6 +132,7 @@ sections:
     title: Única parede de pé de uma casa
 
   - type: navigation
+    title: "Mais do especial"
     previous:
       title: Marcas da Lama
       url: /marcas-da-lama/

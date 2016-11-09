@@ -3,7 +3,7 @@ layout: static_special
 area: especial
 url: /marcas-da-lama/mineracao/
 title: "Lucro a todo custo: acidente ou tragédia"
-description: Completando um ano do episódio, uma das versões começa a se impor diante das investigações
+description: Os prejuízos deixados na vida dos atingidos são incontáveis e chegaram a todos de maneiras peculiares
 author: Redação Brasil de Fato
 tags:
   - especial
@@ -162,12 +162,13 @@ sections:
     title: Corvo no topo de uma montanha de lama
 
   - type: navigation
+    title: "Mais do especial"
     previous:
       title: "Mascarenhas: a morte do Rio Doce"
       url: /marcas-da-lama/barra-longa/
       cover: http://farm6.staticflickr.com/5535/30718512145_1f1dda95f8_z.jpg
     next:
-      title: Marcas da Lama
-      url: /marcas-da-lama/
-      cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
+      title: "A resistência na Bacia do Rio Doce"
+      url: /marcas-da-lama/luta-dos-atingidos/
+      cover: //farm6.staticflickr.com/5731/30605469151_672db47378_z.jpg
 ---

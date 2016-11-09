@@ -54,8 +54,8 @@ sections:
     title: "Capítulo 3: Luta"
     links:
       - title: "A resistência na Bacia do Rio Doce"
-        url:
-        cover: //farm6.staticflickr.com/5731/30605469151_672db47378_z.jpg
+        url: /marcas-da-lama/luta-dos-atingidos/
+        cover: //farm6.staticflickr.com/5723/30242940493_38d4e90f0e_b.jpg
   - type: image
     centralized: true
     desktop: //farm6.staticflickr.com/5711/30400424460_019a285f99_b.jpg

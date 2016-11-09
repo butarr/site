@@ -110,4 +110,14 @@ sections:
     mobile: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
     title: Corvo no topo de uma montanha de lama
 
+  - type: navigation
+    title: "Mais do especial"
+    previous:
+      title: "Lucro a todo custo: acidente ou tragédia"
+      url: /marcas-da-lama/mineracao/
+      cover: //farm6.staticflickr.com/5606/30776352001_74fcd8629c_b.jpg
+    next:
+      title: "As Marcas da Lama"
+      url: /marcas-da-lama/
+      cover: //farm9.staticflickr.com/8647/30607235435_7847d04e20_b.jpg
 ---
