@@ -3,7 +3,7 @@ layout: static_special
 area: especial
 url: /marcas-da-lama/luta-dos-atingidos/
 title: "A resistência na Bacia do Rio Doce"
-description: Os prejuízos deixados na vida dos atingidos são incontáveis e chegaram a todos de maneiras peculiares
+description: Os prejuízos deixados na vida dos atingidos são incontáveis, e a luta tornou-se parte do dia a dia de centenas deles
 author: Redação Brasil de Fato
 tags:
   - especial
@@ -69,7 +69,7 @@ sections:
     <p>No documento, a mineradora deveria se comprometer a realizar medidas como a distribuição de água potável, a contratação de laboratórios para coleta e análise da água do Rio Doce e do mar e o custeio de transporte e alimentação a servidores atuantes em ações emergenciais. Quase um ano depois, Regiane revela que os compromissos ficaram só no papel.</p>"
 
   - type: multimedia
-    embed:
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/z7vGJhamcS8" frameborder="0" allowfullscreen></iframe>
 
   - type: text
     text: "<p>Pressionar a Samarco, detentora de tamanho poderio financeiro, a cumprir os termos acordados com a justiça, sempre foi um grande desafio para os atingidos. Em Mascarenhas, a tática utilizada pelos manifestantes para levar a empresa à mesa de negociação foi bloquear os trilhos que margeiam a cidade e que diariamente carregam os minérios extraídos pela mineradora Vale.</p>
