@@ -49,8 +49,8 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5724/30234208204_9d8714357e_b.jpg
-    mobile: //farm6.staticflickr.com/5450/30865459366_8aa95f4b3c_b.jpg
-    title: "Foto de Yrani Salviana Venuto de 34 anos, dice: Ellos [la empresa y el gobierno] dicen que el agua está apta para beber, pero no está. Cuando la tomamos pasamos mal, nos duele la panza y nos dan mareos"
+    mobile: //farm6.staticflickr.com/5718/30901192535_4f0d54780c_b.jpg
+    title: "Foto de Yrani Salviana Venuto de 34 años, dice: Ellos [la empresa y el gobierno] dicen que el agua está apta para beber, pero no está. Cuando la tomamos pasamos mal, nos duele la panza y nos dan mareos"
 
   - type: text
     text: "<p>Son más de veinte bidones de agua distribuidos por la quinta de la casa de Yrani Salviana Venuto, de 34 años, donde también viven sus tres hermanas, además de hijos, sobrinos y su madre. Ubicada en la parte alta de la ciudad, la casa queda a cuarenta minutos de la boca de manantial más próxima, de la que puede sacar agua gratis. </p>
@@ -60,7 +60,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5481/30565160810_5323ebceec_b.jpg
     mobile: //farm6.staticflickr.com/5598/30812949921_99dd599f52_b.jpg
-    title: "Foto de Yvanildes Salviano Venuto de 39 anos, dice: “El otro día salimos de casa a las once y media de la noche, para aprovechar que hay poca gente en la naciente del manantial y juntar agua. Volvimos a la una de la mañana"
+    title: "Foto de Yvanildes Salviano Venuto de 39 años, dice: El otro día salimos de casa a las once y media de la noche, para aprovechar que hay poca gente en la naciente del manantial y juntar agua. Volvimos a la una de la mañana"
 
   - type: text
     text: "<p>Yrani paga a su vecino una parte de su cuenta de luz para captar agua de una fuente privada. Su hermana, Yvanildes Salviano Venuto Teotônio, de 39 años, tiene auto, y consigue más fácilmente bajar el cerro y llenar algunos bidones de agua para consumo: son cerca de seis por semana.</p>
@@ -78,7 +78,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5635/30565258450_4b6c790d94_b.jpg
     mobile: //farm6.staticflickr.com/5481/30600166990_a90cb960ab_b.jpg
-    title: "Foto de Silvana Rodrigues do Nascimento de 49 anos, dice: Ahora, con lo dañado que quedó el río, no hay cómo mantener a la familia"
+    title: "Foto de Silvana Rodrigues do Nascimento de 49 años, dice: Ahora, con lo dañado que quedó el río, no hay cómo mantener a la familia"
 
   - type: text
     text: "<p>Silvana Rodrigues do Nascimento, de 49 años, es una de las afectadas en el distrito. Con una antigua relación con el Río Doce, los recuerdos de la vida que un día tuvo son sustituidas hoy por el barro que ve todos los días en la quinta de su casa.</p>
@@ -91,7 +91,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5733/30866597165_f34cf6a543_b.jpg
     mobile: //farm6.staticflickr.com/5496/30901136745_dcefe883dd_b.jpg
-    title: "Foto de Sebastião Cirilo de Souza de 72 anos, dice: La venta de arena disminuyó mucho por culpa del barro que bajó"
+    title: "Foto de Sebastião Cirilo de Souza de 72 años, dice: La venta de arena disminuyó mucho por culpa del barro que bajó"
 
   - type: text
     text: "<p>Quién también consigue su sustento en las márgenes del Río Doce es Sebastião Cirilo de Souza, de 72 años. \"La edad que tengo es el tiempo que hace que estoy en la orilla de este río\", bromea.</p>
