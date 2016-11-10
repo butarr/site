@@ -73,7 +73,7 @@ append content
                 figure(itemscope itemtype="https://schema.org/ImageObject")
                   img(itemprop="image" src=featured.cover.medium alt=imageDescription title=imageDescription)
               .info-news
-                a.news-radio-link(href=featured.path)
+                a(href=featured.url itemprop="url" class="news-radio-link")
                   h2.title-featured(itemprop= "headline")= featured.title
                   p.description(itemprop="description")= featured.description
             +audio-player(0, featured)
@@ -83,7 +83,7 @@ append content
           - var published_at = utc_to_brt(post.date)
           .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
             +metadata(post)
-            a.news-radio-link(href=post.path)
+            a(href=post.url itemprop="url" class="news-radio-link")
               h2.title(itemprop= "headline")= post.title
               p.description(itemprop="description")= post.description
             +audio-player(position, post)
