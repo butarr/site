@@ -63,19 +63,20 @@ append content
       if config.toggles.radio_sidebar
         - sidebar = 'sidebar_enabled'
       div(class="main_#{sidebar}")
-        - var featured = page.featured_01
-        .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
-          +metadata(featured)
-          div#featured-audio-news
-            .image
-              - var imageDescription= featured.cover.subtitle + ' - Créditos: ' + featured.cover.credits
-              figure(itemscope itemtype="https://schema.org/ImageObject")
-                img(itemprop="image" src=featured.cover.medium alt=imageDescription title=imageDescription)
-            .info-news
-              a.news-radio-link(href=featured.path)
-                h2.title-featured(itemprop= "headline")= featured.title
-                p.description(itemprop="description")= featured.description
-          +audio-player(0, featured)
+        if page.featured_01
+          - var featured = page.featured_01
+          .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
+            +metadata(featured)
+            div#featured-audio-news
+              .image
+                - var imageDescription= featured.cover.subtitle + ' - Créditos: ' + featured.cover.credits
+                figure(itemscope itemtype="https://schema.org/ImageObject")
+                  img(itemprop="image" src=featured.cover.medium alt=imageDescription title=imageDescription)
+              .info-news
+                a.news-radio-link(href=featured.path)
+                  h2.title-featured(itemprop= "headline")= featured.title
+                  p.description(itemprop="description")= featured.description
+            +audio-player(0, featured)
 
         - var position= 0
         each post in page.latest_news
