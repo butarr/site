@@ -17,7 +17,7 @@ cover:
   thumbnail: //farm6.staticflickr.com/5672/30654955286_c1f88324e5_t.jpg
   medium: //farm6.staticflickr.com/5672/30654955286_c1f88324e5_z.jpg
   small: //farm6.staticflickr.com/5672/30654955286_c1f88324e5_n.jpg
-  title: Galões de água sendo enchidos com mangueira
+  title: Galones de agua siendo llenados con manguera
   credits: Lucas Bois
   subtitle: Bento Rodrigues
 date: 2016-10-28T22:58:23.677Z
@@ -31,7 +31,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5515/30716437945_2f876abaa9_b.jpg
     mobile: //farm6.staticflickr.com/5616/30628038951_01286d791d_b.jpg
-    title: "Mapa mostrando a localização de Cachoeira Escura em relação à Barragem de Fundão, mais distante que Mariana, Bentos Rodrigues e Barra Longa. E um pouco antes de Belo Oriente"
+    title: "Mapa mostrando la localización de Cachoeira Escura en relación con el Dique de Fundão, mas distante que Mariana, Bentos Rodrigues y Barra Longa. Y un poco antes de Belo Oriente."
 
 
   - type: multimedia
@@ -69,7 +69,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5508/30417636370_3d26d496cd_b.jpg
     mobile: //farm6.staticflickr.com/5508/30417636370_3d26d496cd_b.jpg
-    title: "Foto de bica enchendo galão de água"
+    title: "Foto de surtidor llenando galón de agua"
 
   - type: text
     text: "<p>El trabajo cotidiano, y las fuentes de ingresos de los agricultores, ribereños, pescadores e indígenas que viven a lo largo de toda la extensión del Río Doce fueron comprometidos. En ese escenario tan difícil para la calidad del agua y del suelo \"propiedades campesinas, dependientes de la crianza de ganado, y de los ríos próximos para su reproducción social fueron directamente afectados\". Eso es lo que apunta el informe \"Antes era más liviana la carga: Evaluación de los aspectos económicos, políticos y sociales del desastre de Samarco/Vale/BHP en Mariana (MG)\", del grupo Política, Economía, Minería, Ambiente y Sociedad (PoeMAS).</p>
@@ -104,7 +104,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5821/30104016374_b85f49bc9c_b.jpg
     mobile: //farm6.staticflickr.com/5821/30104016374_b85f49bc9c_b.jpg
-    title: "Placa do Areial Avenida, com trator e monte de areia ao fundo"  
+    title: "Placa de Areial Avenida, con tractor y pila de arena al fondo"  
 
   - type: text
     text: "<p>En octubre de este año, la municipalidad de Belo Oriente informó en su página de internet, que firmó un acuerdo con la minera Samarco para mejorar el abastecimiento de agua en la ciudad. La empresa realiza la excavación de un pozo artesiano en un lugar próximo a la Estación de Tratamiento de Agua (ETA) de Cachoeira Escura.</p>
@@ -119,7 +119,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5670/30060011074_04678bd8d1_b.jpg"
     mobile: "//farm6.staticflickr.com/5670/30060011074_04678bd8d1_z.jpg"
-    title: "Dois homens carregando um balde de água"
+    title: "Dos hombres cargando un balde de agua"
 
   - type: navigation
     title: "Más del especial"
