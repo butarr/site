@@ -30,7 +30,7 @@ sections:
   - type: image
     desktop: //farm9.staticflickr.com/8623/30543256616_5d5d0faafb_b.jpg
     mobile: //farm9.staticflickr.com/8623/30543256616_5d5d0faafb_b.jpg
-    title: Casa em escombros e carro sob montanhas de lama
+    title: Escombros de una casa, y un auto abajo del morro del barro
   - type: text
     text: "<p>Ollas en el fuego, ropas, documentos, fotos, autos, animales, todo quedó atrás para llegar a las partes más altas del pueblo. En medio de la desolación y la búsqueda de noticias sobre el paradero de amigos, parientes y vecinos, hubo quienes pudieron parar y entre lágrimas observar como la avalancha de barro destruía calles, casas, la escuela y el centro de salud.</p>
     <p>Ya no era posible ver lo que hasta hacía un rato era Bento Rodrigues. Salvo por algunos autos y techos que se movían sin rumbo en el río de barro. De las 200 casas, poco más de veinte quedaron en pie. Entre pobladores y trabajadores de la minera murieron 19 personas. En pocos minutos, tragados por el barro, se hundieron y perdieron objetos personales, plantaciones, hogares, memorias y vidas. Fue el adiós a Bento Rodrigues.</p>"
@@ -54,7 +54,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5561/30462672872_206d860330_b.jpg
     mobile: //farm6.staticflickr.com/5561/30462672872_206d860330_b.jpg
-    title: Foto pintada de casal com vidro despedaçado encrustada na lama
+    title: Retrato de una pareja con un vidrio roto arriba
 
   - type: text
     text: "<p>Los sonidos en Bento durante los fines de semana eran tradicionales: niños jugando por las calles, pequeñas charlas con vecinos y amigos en los frentes de las casas, fiestas y reuniones familiares. Con todo bajo el barro, el 6 de noviembre era para ser el día más silencioso del pequeño pueblo minero. Pero esta vez el ambiente de Bento Rodrigues se llenó de ruido de helicópteros y grupos de rescate, que circulaban en busca de sobrevivientes.</p>
@@ -63,7 +63,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5720/30466295692_e1628aaa8a_b.jpg
     mobile: //farm6.staticflickr.com/5728/29966542273_910518cce9_b.jpg
-    title: "Mapa demarcando a barragem, Bento Rodrigues e Mariana em Minas Gerais"
+    title: "Mapa ubicando el dique, el distrito de Bento Rodrigues y la ciudad de Mariana, en Minas Gerais"
 
   - type: text
     text: "<p>El distrito de Bento Rodrigues, hoy totalmente destruido, fue apenas el primer lugar afectado, y por lo tanto, una de las paradas del equipo de Brasil de Fato para el especial Las marcas del barro – Un año de resistencia en la cuenca del Río Doce.</p><p>“Ahí era la casa de Paulo César, ahí la de Doña Geralda, ahí el terreno de mi suegro, un poco más allá el bar de la Sandra, y aquí la casa de Joaquim”, dice Joana D'arc Norberto, de 43 años, al comenzar la charla, mientras recorre lo que quedó de Bento Rodrigues, casi un año después de lo ocurrido.</p>"
@@ -71,7 +71,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5650/30230520213_bf45060c30_b.jpg
     mobile: //farm6.staticflickr.com/5624/30859139335_725867f989_b.jpg
-    title: "Foto de Joana D'arc Norberto, de 43 anos, com sua fala \"Não estava em casa quando tudo aconteceu. Um genro me ligou e disse: 'ei, Joana, acabou Bento, morreu todo mundo'\""
+    title: "Foto de Joana D'arc Norberto, de 43 años, que dice: \"Yo no estaba en la casa cuando todo ocurrió. Mi yerno me llamó y dijo: 'oye, Joana, acabó Bento, morrieron todos'\""
 
   - type: text
     text: "<p>Más allá de que muchos inmuebles fueron destruidos por el barro, o han desaparecido completamente del mapa, los más de veinte años viviendo en el distrito le garantizan a la dueña de casa la minuciosidad en la memoria. Los lugares exactos de las casas de los afectados todavía son recordados.</p><p>Fueron pocas las pertenencias recuperadas por Joana y su familia. Aunque su casa haya sido una de las pocas que no fue afectada directamente por el aluvión – ya que se ubica en la parte alta del poblado –, pasaron días hasta que ella y sus vecinos pudieron volver al lugar, y muchas de sus pertenencias fueron robadas.</p><p>\"Nosotros siempre pedíamos para entrar allá, para sacar alguna cosa, pensando en que cuando Dios nos bendijera y tuviéramos una nueva casa, pudiéramos llevar algo. Pero no se podía entrar. Hoy no tenemos más nada, porque los otros saquearon todo\", se lamenta.</p><p>Madre de seis hijos, Joana camina por la antigua casa recordando cómo fue algún día. (ver video). Cada vez que vuelvo aquí es una tristeza\", dice, aunque asegura que igual trata de volver siempre que es posible a Bento Rodrigues. Todavía tiene la esperanza de rescatar alguna esperanza, alguna memoria.</p>"
@@ -93,7 +93,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5445/30778001271_b284cda198_b.jpg
     mobile: //farm6.staticflickr.com/5681/30771234131_75c4ff806a_b.jpg
-    title: "Foto de Manuel Marcos Muniz, de 52 anos, com sua fala \"A gente acha que já passou, que já acabou, mas tem dia que a gente só vive em função da tragédia da Samarco, do rompimento da barragem\""
+    title: "Foto de Manuel Marcos Muniz, de 52 años, que afirma: \"Nosotros pensamos que ya había pasado, que ya había acabado, pero hay días que nosotros sólo vivimos alrededor de la tragedia de la Samarco, de la ruptura del dique.\""
 
   - type: text
     text: "<p>Los recuerdos de la infancia de Manuel Marcos Muniz, más conocido como Marquinhos, son de Bento Rodrigues. Los aprendizajes del campo vinieron de sus padres, que se mudaron para el pequeño poblado cuando él todavía era un niño. La rutina de la familia era guiada por la crianza de animales y las plantaciones alrededor de la casa.</p><p>Las transformaciones del poblado minero ocurrieron al compás de los cambios en su vida. Inicio de los estudios, la primera novia, el casamiento, el nacimiento de su única hija. Jubilado y con 52 años, a cada recuerdo rastreado en su memoria, un relato sobre Bento. “Las raíces estaban todas ahí”, dice.</p>
@@ -127,7 +127,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5759/30683572111_349b6a5712_b.jpg
     mobile: //farm6.staticflickr.com/5488/30788679551_b57a48aefa_b.jpg
-    title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
+    title: "Creditos del reportaje. Texto: Simone Freire, Edición: Vivian Fernandes, Video y Foto: José Eduardo Bernardes y Guilherme Weimann, Arte: Wilcker Morais"
   - type: image
     desktop: //farm6.staticflickr.com/5471/29967477173_4e42af1d3e_b.jpg
     mobile: //farm6.staticflickr.com/5471/29967477173_4e42af1d3e_b.jpg
