@@ -49,7 +49,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5724/30234208204_9d8714357e_b.jpg
-    mobile: //farm6.staticflickr.com/5450/30865459366_8aa95f4b3c_b.jpg
+    mobile: //farm6.staticflickr.com/5718/30901192535_4f0d54780c_b.jpg
     title: "Foto de Yrani Salviana Venuto de 34 anos, dice: Ellos [la empresa y el gobierno] dicen que el agua está apta para beber, pero no está. Cuando la tomamos pasamos mal, nos duele la panza y nos dan mareos"
 
   - type: text
