@@ -49,7 +49,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5724/30234208204_9d8714357e_b.jpg
-    mobile: //farm6.staticflickr.com/5716/30601409772_de73e5f836_b.jpg
+    mobile: //farm6.staticflickr.com/5450/30865459366_8aa95f4b3c_b.jpg
     title: "Foto de Yrani Salviana Venuto de 34 anos, dice: Ellos [la empresa y el gobierno] dicen que el agua está apta para beber, pero no está. Cuando la tomamos pasamos mal, nos duele la panza y nos dan mareos"
 
   - type: text
@@ -59,7 +59,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5481/30565160810_5323ebceec_b.jpg
-    mobile: //farm6.staticflickr.com/5576/30718699485_ed687f156a_b.jpg
+    mobile: //farm6.staticflickr.com/5598/30812949921_99dd599f52_b.jpg
     title: "Foto de Yvanildes Salviano Venuto de 39 anos, dice: “El otro día salimos de casa a las once y media de la noche, para aprovechar que hay poca gente en la naciente del manantial y juntar agua. Volvimos a la una de la mañana"
 
   - type: text
@@ -77,7 +77,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5635/30565258450_4b6c790d94_b.jpg
-    mobile: //farm6.staticflickr.com/5697/30717728885_23a347747f_b.jpg
+    mobile: //farm6.staticflickr.com/5481/30600166990_a90cb960ab_b.jpg
     title: "Foto de Silvana Rodrigues do Nascimento de 49 anos, dice: Ahora, con lo dañado que quedó el río, no hay cómo mantener a la familia"
 
   - type: text
@@ -90,7 +90,7 @@ sections:
 
   - type: image
     desktop: //farm6.staticflickr.com/5733/30866597165_f34cf6a543_b.jpg
-    mobile: //farm6.staticflickr.com/5482/30600997672_4213ae9033_b.jpg
+    mobile: //farm6.staticflickr.com/5496/30901136745_dcefe883dd_b.jpg
     title: "Foto de Sebastião Cirilo de Souza de 72 anos, dice: La venta de arena disminuyó mucho por culpa del barro que bajó"
 
   - type: text
