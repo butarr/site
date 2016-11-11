@@ -17,9 +17,9 @@ cover:
   thumbnail: //farm6.staticflickr.com/5757/30065321114_e26ce77ee2_t.jpg
   medium: //farm6.staticflickr.com/5757/30065321114_e26ce77ee2_z.jpg
   small: //farm6.staticflickr.com/5757/30065321114_e26ce77ee2_n.jpg
-  title: Pórtico da entrada da cidade de Barra Longa em meio a lama
+  title: Vía de tren
   credits: Lucas Bois
-  subtitle: Trilhos de trem
+  subtitle: Minería
 date: 2016-10-28T22:58:23.677Z
 published_at: 2016-10-28T22:58:23.677Z
 
@@ -28,13 +28,10 @@ sections:
     text: "<p>Las toneladas de desechos apenas habían comenzado su rastro de destrucción – que se extendería hasta la costa del estado de Espíritu Santo –, cuando una batalla de narrativas ya se libraba. Diversos actores se posicionaban respecto de las causas y los posibles culpables por la ruptura del dique de Fundão, ocurrido el 5 de noviembre de 2015 em Mariana, Minas Gerais (MG).</p>
     <p>\"No fue un accidente\" y \"tragedia anunciada\" fueron las frases más usadas por los pobladores del distrito de Bento Rodrigues, apenas después de que el tsunami de barro tóxico devastara su comunidad. Del otro lado, \"desastre ambiental\" y \"accidente\" fueron los conceptos utilizados por la Samarco (emprendimiento conjunto de Vale y BHP Billiton), que fueron reforzados por sectores del Estado y ampliamente divulgados por los medios de comunicación. En momentos en que se cumple un año del episodio, una de las versiones comienza a imponerse frente a las investigaciones.</p>"
 
-
   - type: image
     desktop: //farm9.staticflickr.com/8601/29992512434_5021a23dfd_b.jpg
     mobile: //farm6.staticflickr.com/5594/29990595293_56ac787198_b.jpg
-    title: ""
-
-
+    title: "Mapa de la Cuenca del Río Doce"
 
   - type: text
     text: "<p>Menos de 24 horas después de la ruptura del dique, la teoría de que temblores sísmicos habían motivado la tragedia ya figuraba en portales de noticias. En aquel jueves, la Red Sismográfica Brasileña había registrado cuatro temblores de pequeña intensidad entre las 14h12 y las 15hs59, en Minas Gerais. Uno de ellos, de 2.6 de magnitud, ocurrió a 5 kilómetros del Complejo minero de la Samarco.</p>
@@ -56,14 +53,14 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5522/30576721360_ff92fc4699_b.jpg
     mobile: //farm6.staticflickr.com/5792/30576733740_6b3f9db09e_b.jpg
-    title: ""
+    title: "Thiago da Silva, integrante del Movimiento de los Afectados por Represas, dice: La ruptura del dique de Fundão no fue un accidente, una casualidad o un hecho aislado en el contexto de la minería en Minas Gerais. Fue el resultado de la negligencia asumida por la Samarco, con la solidaridad del Estado, porque sus órganos no fiscalizaron, no hacieron su parte."
 
   - type: text
     text: "<p>En medio del caos, perplejos, los pobladores hablaban de lo ocurrido como una \"tragedia anunciada\". Según Thiago da Silva, integrante de la coordinación nacional del Movimiento de los Afectados por Represas (MAB, por sus siglas en portugués), la expresión surgió enseguida del desastre, a partir de una visión colectiva de los pobladores de Bento Rodrigues (ver video).</p>
     <p>El militante recuerda que la denuncia comenzó a ganar fuerza, incluso con análisis técnicas de sectores de la sociedad civil. \"Son muchos los factores que comprueban la responsabilidad de Samarco, de Vale y de BHP Billiton en este crimen, que es el mayor crimen socioambiental de la historia de Brasil\", afirma.</p>"
 
   - type: multimedia
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/1ghhXZGNRCY" frameborder="0" allowfullscreen></iframe>
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/V7ZAPnNxVXE"" frameborder="0" allowfullscreen></iframe>
 
 
   - type: text
@@ -73,12 +70,11 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5723/30761250292_ffce3f1d06_b.jpg
     mobile: //farm6.staticflickr.com/5710/30242062433_556a9a425e_b.jpg
-    title: ""
-
+    title: "Datos que relacionan el aumento de la producción de hierro con la producción de de desechos entre 2010 y 2014. Producción de hierro y producción de residuos respectivamente en toneladas por año:  22,7 y 16,3 en 2010; 23 y 15,6 en 2011; 22,3 y 16,7 en 2012; 21,7 y 16,5 en 2013; 25 y 22 en 2013. "
   - type: image
     desktop: //farm6.staticflickr.com/5344/30576403600_d5b91f0964_b.jpg
     mobile: //farm6.staticflickr.com/5579/30245531674_9f46d9784f_b.jpg
-    title: ""
+    title: "Lucro de Samarco entre 2010 e 2014. Ingresos netos y ganancia neta respectivamente en toneladas por año: 6,24 y 2,25 en 2010; 7,06 y 2,91 en 2011; 6,55 y 2,65 en 2012; 7,20 y 2,73 en 2013; 7,54 y 2,80 en 2014"
 
   - type: text
     text: "<p>Todavía de acuerdo con el integrante del MAB, la expansión de la producción minera no fue acompañada de acciones para depositar los desechos. Una opinión semejante tiene Maria Júlia Zanon, integrante de la coordinación del Movimiento por la Soberanía Popular frente a la Minería (MAM). Zanon afirma que es posible asociar el período posterior al boom minero con la ruptura del dique de Fundão (ver video).</p>"
@@ -88,19 +84,12 @@ sections:
 
 
   - type: subtitle
-    text: "<p>¿De quién es la culpa?</p>"
+    text: "¿De quién es la culpa?"
 
   - type: text
     text: "<p>El día 20 de octubre, el Ministerio Público Federal (MPF) presentó, en Belo Horizonte (MG), las conclusiones sobre la ruptura del dique de Fundão. \"Lo que tuvimos fue un secuestro de la seguridad, y de una política más responsable de seguridad en el dique, causada por una búsqueda incesante de lucro, en un escenario en el que hubo una caída significativa en el precio del hierro\", afirmó, en conferencia de prensa, el procurador de la República José Adércio Leite Sampaio.</p>
     <p>Cuatro meses después de su inauguración, en diciembre de 2008, el dique de Fundão fue paralizado, y el depósito de residuos interrumpido, a causa de problemas en su sistema de drenaje. De acuerdo con el MPF, ese problema desencadenó una investigación interna de Samarco, que señaló fallas en la construcción del dique. Además, una de las intenciones originales del dique, la separación clara entre desechos arenosos y barro, fue dejada de lado por la minera.</p>
     <p>A partir de ahí, distintos problemas estructurales se sucedieron. En 2012, apareció un \"agujero\" que hizo que la Samarco retirase el eje del dique de su parte superior izquierda – un punto en el que tenía contacto con la pila de estériles (piedras sin mineral) de Vale. O sea, la proximidad entre el dique de  Fundão, donde eran descartados los desechos de la minería, y el lugar en el que la Mina de Fábrica Nueva dejaba también piedras sin mineral, era un riesgo para las dos estructuras.</p>"
-
-  - type: image
-    desktop: //farm6.staticflickr.com/5672/30560263080_2d286ef76f_b.jpg
-    mobile: //farm6.staticflickr.com/5672/30560263080_2d286ef76f_b.jpg
-    centralized: true
-    title: "Conversa entre presidente e diretor da Samarco"
-
 
   - type: text
     text: "<p>Según las informaciones del MPF, un documento interno de Samarco, fechado en abril de 2015, previa la posibilidad de que ocurriesen de dos a 20 muertes en caso de que se rompiese el dique de Fundão. Además, enumeraba las consecuencias ambientales y previa la interrupción de las actividades de la minera por un período de hasta dos años.</p>
@@ -111,7 +100,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5501/30828663106_13dc78aa48_b.jpg"
     mobile: "//farm6.staticflickr.com/5501/30828663106_13dc78aa48_b.jpg"
-    title: "Bento Rodrigues, após a destruição de 5 de novembro de 2015"
+    title: "Bento Rodrigues, después de la destrucción el 5 de noviembre del 2015 "
 
 
   - type: text
@@ -121,7 +110,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5511/30865067155_bca8d70ed2_b.jpg"
     mobile: "//farm6.staticflickr.com/5511/30865067155_bca8d70ed2_b.jpg"
-    title: "A construção do Dique S4 Foto: Isis Medeiros"  
+    title: "La construcción del Dique S4 Foto: Isis Medeiros "  
 
 
   - type: text
@@ -139,26 +128,27 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/RyN1jJ3k4m4" frameborder="0" allowfullscreen></iframe>
 
   - type: subtitle
-    text: "<p>Bomba de tiempo</p>"
+    text: "Bomba de tiempo"
 
   - type: text
-    text: "<p>La ruptura de Fundão no parece ser un caso aislado en el contexto de los diques de desechos. El grupo Política, Economía, Minería, Ambiente y Sociedad (PoEMAS), formado por académicos de diversas universidades brasileñas, reseñó siete rupturas de diques en los últimos treinta años, sólo en el estado de Minas Gerais. Además de los daños ambientales, esos desastres causaron la muerte de 15 personas.</p>"
-
-
-  - type: image
-    desktop: //farm6.staticflickr.com/5808/30824947916_129a04fa0c_b.jpg
-    mobile: //farm6.staticflickr.com/5514/30229444034_098e256830_b.jpg
-    title: "Tragédias na Mineração"
-
-  - type: text
-    text: "<p>Una de las causas de que estos desastres sean tan recurrentes puede rastrearse en las deficiencias de las políticas de fiscalización. En Minas Gerais, la Fundación Estadual de Medio Ambiente (Feam) es el órgano responsable por el inventario y la inspección de los diques en el estado. En su banco de Declaraciones Ambientales, consta la existencia de 754 diques de emprendimientos minerales o industriales destinados al almacenamiento de agua o de residuos y desechos. De éstas, apenas el 34% fueron supervisadas en 2014.</p>
+    text: "<p>La ruptura de Fundão no parece ser un caso aislado en el contexto de los diques de desechos. El grupo Política, Economía, Minería, Ambiente y Sociedad (PoEMAS), formado por académicos de diversas universidades brasileñas, reseñó siete rupturas de diques en los últimos treinta años, sólo en el estado de Minas Gerais. Además de los daños ambientales, esos desastres causaron la muerte de 15 personas.</p>
+    <p>Una de las causas de que estos desastres sean tan recurrentes puede rastrearse en las deficiencias de las políticas de fiscalización. En Minas Gerais, la Fundación Estadual de Medio Ambiente (Feam) es el órgano responsable por el inventario y la inspección de los diques en el estado. En su banco de Declaraciones Ambientales, consta la existencia de 754 diques de emprendimientos minerales o industriales destinados al almacenamiento de agua o de residuos y desechos. De éstas, apenas el 34% fueron supervisadas en 2014.</p>
     <p>En el caso de los diques de desechos, la tarea se realiza en conjunto con el Departamento Nacional de Producción Mineral (DNPM), entidad federal a la que le corresponde la fiscalización del plan de seguridad de diques. Solamente en suelo minero, aparecen listados 450 diques destinados a minería. Del total, 49 no presentan estabilidad garantida, o no hay conclusión presentada por la Feam, o todavía no existe ninguna clasificación del órgano ambiental. O sea, más del 10% de los diques de desechos en Minas Gerais corren riesgos de romperse, o no fueron fiscalizados.</p>"
 
   - type: subtitle
-    text: "<p>Minería: ¿para qué y para quién? </p>"
+    text: "Minería: ¿para qué y para quién?"
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/OuMoiCbuoy0" frameborder="0" allowfullscreen></iframe>
+
+  - type: image
+    desktop: //farm6.staticflickr.com/5759/30683572111_349b6a5712_b.jpg
+    mobile: //farm6.staticflickr.com/5488/30788679551_b57a48aefa_b.jpg
+    title: "Créditos del reportaje. Texto, Simone Freire. Edición, Vivian Fernandes. Video y foto, José Eduardo Bernardes y Guilherme Weimann. Arte, Wilcker Morais."
+  - type: image
+    desktop: //farm6.staticflickr.com/5446/30206831453_739b3d63a4_b.jpg
+    mobile: //farm6.staticflickr.com/5446/30206831453_739b3d63a4_z.jpg
+    title: Vía de tren
 
   - type: navigation
     title: "Más del especial"
