@@ -42,7 +42,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5647/30232873254_b2fff1b74a_b.jpg"
     mobile: "//farm6.staticflickr.com/5647/30232873254_b2fff1b74a_b.jpg"
-    title: "Fachada da Samarco - reprodução/youtube"
+    title: "Fachada de Samarco - reproducción / youtube"
 
   - type: text
     text: "<p>La Samarco Minería S.A, fundada en 1977, es un emprendimiento conjunto (join venture) controlado por dos gigantes del sector: la brasilera Vale y la anglo-australiana BHP Billiton. Cada una tiene el 50% de las acciones, detentan las tazas de lucro y participan del Consejo Administrativo de Samarco. A pesar de esto, la minera brasilera Vale negó cualquier responsabilidad sobre la ruptura del dique de  Fundão.</p>
