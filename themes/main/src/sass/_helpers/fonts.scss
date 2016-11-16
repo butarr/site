@@ -708,7 +708,7 @@ $number-size: 1.3rem;
     }
 
     .description {
-      font: 400 italic 1.3rem/1.2 $family-serif;
+      font: 400 italic 1.3rem/#{$line-separation-big} $family-serif;
       text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
 
       @include media-query(FOUR){
@@ -820,10 +820,10 @@ $number-size: 1.3rem;
 
     .link-figure-title {
       text-align: center;
-      font: bold 1.0rem/1 $family-serif;
+      font: bold 1.0rem/#{$line-separation-big} $family-serif;
 
       @include media-query(THREE) {
-        font: bold 1.1rem/1 $family-serif;
+        font: bold 1.1rem/#{$line-separation-big} $family-serif;
       }
     }
 

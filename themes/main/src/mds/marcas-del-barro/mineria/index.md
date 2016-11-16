@@ -3,7 +3,7 @@ layout: static_special
 area: especial
 url: /marcas-del-barro/mineria/
 title: "Lucro a cualquier costo: ¿accidente o tragedia anunciada?"
-description: O dia 5 de novembro de 2015 ficou marcado na história com o maior desastre ambiental do país
+description: "El 5 de noviembre de 2015 quedó marcado en la historia como el día de la mayor catástrofe ambiental de Brasil"
 author: Redação Brasil de Fato
 tags:
   - especial
@@ -64,7 +64,7 @@ sections:
 
 
   - type: text
-    text: "<p>Al inicio de 2010, hubo un boom en los valores internacionales del hierro, que llegó a ser vendido por 150 dólares la tonelada. Distintos motivos explican el alza del precio de esta  commodity, entre ellos la demanda de la economía china, en plena expansión. Sin embargo, ese pico no se mantuvo por mucho tiempo, y en menos de dos años los precios cayeron prácticamente a la mitad.</p>
+    text: "<p><i>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</i></p><p>Al inicio de 2010, hubo un boom en los valores internacionales del hierro, que llegó a ser vendido por 150 dólares la tonelada. Distintos motivos explican el alza del precio de esta  commodity, entre ellos la demanda de la economía china, en plena expansión. Sin embargo, ese pico no se mantuvo por mucho tiempo, y en menos de dos años los precios cayeron prácticamente a la mitad.</p>
     <p>Para Thiago da Silva, la caída abrupta de los precios del hierro está en el centro de las causas de la ruptura del dique de Fundão. En un documento, el MAB señala la relación entre la disminución de los precios de la materia prima en el escenario internacional, y el aumento de la producción de Samarco a partir de 2011. \"El dique de Fundão no soportó en su estructura los desechos porque de 2013 a 2014, hubo un crecimiento exponencial de la cantidad de desechos derramados ahí dentro. La Vale y la BHP Billiton, dueñas de Samarco, decidieron aumentar su producción de mineral en el momento en el que el precio estaba cayendo, para mantener los niveles de lucro a cualquier precio\", explica.</p>"
 
   - type: image
@@ -81,6 +81,9 @@ sections:
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/Rri-i3UUgAA" frameborder="0" allowfullscreen></iframe>
+
+  - type: text
+    text: "<p><i>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</i></p>"
 
 
   - type: subtitle
@@ -120,12 +123,15 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/A1jES20TqDg" frameborder="0" allowfullscreen></iframe>     
 
   - type: text
-    text: "<p>Además de Bento Rodrigues, toda la región afectada por el barro vive con incertidumbre respecto al futuro. El 2 de marzo de este año, el gobierno federal, los gobiernos de Espíritu Santo y Minas Gerais, BHP Billiton, Vale y Samarco firmaron un acuerdo extrajudicial para la reparación de los daños causados por la ruptura del dique de Fundão en la cuenca del río Doce.</p>
+    text: "<p><i>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</i></p><p>Además de Bento Rodrigues, toda la región afectada por el barro vive con incertidumbre respecto al futuro. El 2 de marzo de este año, el gobierno federal, los gobiernos de Espíritu Santo y Minas Gerais, BHP Billiton, Vale y Samarco firmaron un acuerdo extrajudicial para la reparación de los daños causados por la ruptura del dique de Fundão en la cuenca del río Doce.</p>
     <p>La medida, firmada en un Término de Negociación de Ajuste de Conducta (TTAC), prevé una inversión por 20 billones de reales durante los próximos 15 años, administrados por una fundación privada. Denominada Fundación Renova, la entidad excluyó de sus consejos deliberativos la participación de personas y municipios afectados.</p>
     <p>El 1 de julio, el acuerdo fue suspendido temporalmente por el Supremo Tribunal de Justicia (STJ), que alegó falta de legitimidad, por no haber consultado a los sujetos directamente afectados por la ruptura del dique. A pesar de esto, el Consejo Curador de la Fundación Renova realizó su primera reunión el día 12 de agosto. Para la integrante de la coordinación del MAM, María Júlia Zanon, este acuerdo refleja la subordinación del Estado frente a los emprendimientos de las empresas mineras.</p>"
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/RyN1jJ3k4m4" frameborder="0" allowfullscreen></iframe>
+
+  - type: text
+    text: "<p><i>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</i></p>"
 
   - type: subtitle
     text: "Bomba de tiempo"
@@ -140,6 +146,9 @@ sections:
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/OuMoiCbuoy0" frameborder="0" allowfullscreen></iframe>
+
+  - type: text
+    text: "<p><i>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</i></p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5759/30683572111_349b6a5712_b.jpg

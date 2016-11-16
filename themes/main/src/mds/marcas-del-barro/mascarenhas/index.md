@@ -2,7 +2,7 @@
 layout: static_special
 area: especial
 url: /marcas-del-barro/mascarenhas/
-title: "Mascarenhas: la muerte del río Doce"
+title: "Mascarenhas: la muerte del Río Doce"
 description: Pescadores afectados por el desequilibrio ecológico que devastó el río y sus afluentes continúan sin su principal fuente de ingresos
 author: Redação Brasil de Fato
 tags:
@@ -41,6 +41,9 @@ sections:
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/W7tWVzFeQ5M" frameborder="0" allowfullscreen></iframe>
 
+  - type: text
+    text: "<p><i>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</i></p>"
+
   - type: image
     desktop: //farm6.staticflickr.com/5790/30742451252_87412d7ee3_b.jpg
     mobile: //farm6.staticflickr.com/5624/30761122402_51a742b3d5_b.jpg
@@ -67,6 +70,8 @@ sections:
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/7rlv5I7_VwY" frameborder="0" allowfullscreen></iframe>
 
+  - type: text
+    text: "<p><i>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</i></p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5576/30770757911_c01eea9a22_b.jpg
@@ -88,7 +93,7 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/Fnc-za_A6ao" frameborder="0" allowfullscreen></iframe>
 
   - type: text
-    text: "<p>Jonatan y su familia también reciben la tarjeta de auxilio de Samarco. Para ellos, conseguirlo fue posible gracias a las protestas con las que presionaron a la empresa, como el bloqueo de las vías del tren en la región. Sin embargo, dice que el futuro es incierto, ya que no se sabe hasta cuándo la tarjeta estará disponible, ni si algún día el río se va a recuperar y volverá a ser posible pescar en él.</p>
+    text: "<p><i>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</i></p><p>Jonatan y su familia también reciben la tarjeta de auxilio de Samarco. Para ellos, conseguirlo fue posible gracias a las protestas con las que presionaron a la empresa, como el bloqueo de las vías del tren en la región. Sin embargo, dice que el futuro es incierto, ya que no se sabe hasta cuándo la tarjeta estará disponible, ni si algún día el río se va a recuperar y volverá a ser posible pescar en él.</p>
     <p>La misma desconfianza es compartida por el alcalde reelecto de Baixo Guandu, José de Barros Neto (PCdoB). \"Aquí en Guandu, ellos (Samarco) distribuyeron algunas tarjetas, que de alguna forma ayudaron a la economía a sobrevivir frente a esta crisis que vivimos. Eso no se puede negar. Es casi un millón de reales distribuido entre nuestra población,  entre pescadores y no pescadores afectados directa e indirectamente por la tragedia. Pero nosotros también sabemos que esas tarjetas se van a vencer, y también que no representan la realidad de las familias. Algunas recibían más de 3 mil o 4 mil reales al mes, y ahora están recibiendo mil y algo, que actúa únicamente como paliativo\", argumenta.</p>"
 
   - type: image
@@ -102,7 +107,10 @@ sections:
     <p>El cambio en el pensamiento y en la convivencia con el medio ambiente también es algo que cambió en la comunidad afectada. \"La tragedia reforzó nuestra convicción de que tenemos que mudar muchas cosas en este mundo si queremos vivir un poco más de tiempo en este planeta\", opina el alcalde de Baixo Guandu.</p>"  
 
   - type: multimedia
-    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/7cPx00ESy3k" frameborder="0" allowfullscreen></iframe>     
+    embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/7cPx00ESy3k" frameborder="0" allowfullscreen></iframe>  
+
+  - type: text
+    text: "<p><i>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</i></p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5759/30683572111_349b6a5712_b.jpg

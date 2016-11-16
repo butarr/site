@@ -80,7 +80,7 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/z1yucpZvuL8" frameborder="0" allowfullscreen></iframe>
 
   - type: text
-    text: "<p>Cuando Joana se mudó para Bento, con poco más de 20 años, estaba embarazada de su primer hijo. La vida en el pequeño pueblo se convirtió en la vida que siempre quiso. Uno de sus recuerdos más felices es pasear a caballo.  El trayecto de dos horas hasta el centro de Mariana, que hacía en carroza, le permitía admirar el paisaje, que recuerda lindo.</p>
+    text: "<p><i>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</i></p><p>Cuando Joana se mudó para Bento, con poco más de 20 años, estaba embarazada de su primer hijo. La vida en el pequeño pueblo se convirtió en la vida que siempre quiso. Uno de sus recuerdos más felices es pasear a caballo.  El trayecto de dos horas hasta el centro de Mariana, que hacía en carroza, le permitía admirar el paisaje, que recuerda lindo.</p>
     <p>Hoy, su rutina es diferente. La ruptura del dique la obligó a abandonar la vida rural, y a vivir junto a su familia en un hotel por más de un mes. En diciembre de 2015, se mudaron para una chacra en Mariana, donde, de a poco, han conseguido recuperar parte de la antigua rutina.  “Algunas cosas conseguimos recuperar, pero otras no”, dice, recordando los caballos, las mulas, gallinas y plantaciones que se llevó el barro.</p>
     <p>Tras la decisión de que Bento Rodrigues dejará de existir – tomada en una asamblea realizada en setiembre –, una comunidad será construida por la Samarco en un nuevo terreno. “Ellos están moviendo aquí, y nosotros estamos quedando para atrás. Eso que ellos están moviendo, yo creo que debe ser para darnos nuestras casas. Y todos nosotros todavía las estamos esperando”, se desahoga la matriarca, mientras camina entre los restos y ve camiones que pasan (ver capítulo 2).</p>
     <p>En una nota, la Samarco informó que ya inició el proceso de realojamiento y reconstrucción de las comunidades afectadas en Bento Rodrigues, Paracatu de Baixo y Gesteira. “Las familias ya eligieron los terrenos donde los nuevos distritos serán construidos. Las obras serán entregadas de aquí a 2019”, afirma la minera.</p>
@@ -89,6 +89,9 @@ sections:
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/4j2PAsEEKOs" frameborder="0" allowfullscreen></iframe>
+
+  - type: text
+    text: "<p><i>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</i></p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5445/30778001271_b284cda198_b.jpg
@@ -105,7 +108,7 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/Gii1uTncPxE" frameborder="0" allowfullscreen></iframe>
 
   - type: text
-    text: "<p>Felizmente, cuenta, los registros de aquella rutina quedaron a salvo en las fotografías que guardaban en su casa en Mariana. No todo se perdió en el barro.</p>"
+    text: "<p><i>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</i></p><p>Felizmente, cuenta, los registros de aquella rutina quedaron a salvo en las fotografías que guardaban en su casa en Mariana. No todo se perdió en el barro.</p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5503/30735269056_1e26cd2b6b_b.jpg
@@ -123,6 +126,9 @@ sections:
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/u-ddXSEut9A" frameborder="0" allowfullscreen></iframe>
+
+  - type: text
+    text: "<p><i>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</i></p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5759/30683572111_349b6a5712_b.jpg

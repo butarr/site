@@ -38,7 +38,7 @@ sections:
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/1Yfj8eOU9-U" frameborder="0" allowfullscreen></iframe>
 
   - type: text
-    text: "<p>El temor de los habitantes en relación a la contaminación es constatado en partes oficiales. En agosto de este año, el Ministerio Público de Minas Gerais, el Ministerio Público Federal y la Defensoría Pública de la Unión divulgaron un informe técnico sobre la calidad del agua tratada del Río Doce que es distribuida en la ciudad de Gobernador Valadares, a 70 km de Belo Oriente.</p>
+    text: "<p><i>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</i></p><p>El temor de los habitantes en relación a la contaminación es constatado en partes oficiales. En agosto de este año, el Ministerio Público de Minas Gerais, el Ministerio Público Federal y la Defensoría Pública de la Unión divulgaron un informe técnico sobre la calidad del agua tratada del Río Doce que es distribuida en la ciudad de Gobernador Valadares, a 70 km de Belo Oriente.</p>
     <p>De acuerdo con el documento, que presenta análisis de muestras recogidas en julio de este año, la Central de Apoyo Técnico (Ceat) concluyó que el agua que llega al municipio no es potable, o sea, que no está apta para consumo de la población, ya que presenta un nivel elevado de aluminio y turbiedad por encima del límite establecido por el Ministerio de Salud, lo que puede causar enfermedades.</p>
     <p>\"Fue constatado que, a partir de valores superiores o iguales a 0,1 mg por litro de aluminio en el agua producida para abastecimiento público, el riesgo de demencia y descenso cognitivo aumenta. Además, incontables estudios demuestran que la presencia de aluminio en el agua, en concentraciones superiores al patrón de potabilidad, pueden contribuir al surgimiento de algunas afectaciones al organismo humano como la osteoporosis, enfermedades neurológicas y alteraciones en el comportamiento neurológico, cono encefalopatías, esclerosis lateral amiotrófica, mal de Parkinson, demencia dialítica y mal de Alzheimer\", apunta el texto.</p>
     <p>\"Nuestra población no confía en esa agua. Pero la Samarco y la Vale simplemente ignoran el hecho e insisten en que el agua es de calidad. Aquí en Cachoeira Escura, nosotros tenemos la misma agua de allá [Gobernador Valadares]. Un poco peor, porque aquí estamos más próximos del dique y nuestro tratamiento es bien más precario que el de ellos, a pesar de ser de la misma red, que es del Servicio de Abastecimiento de Agua y Saneamiento Esgoto de Belo Oriente, pero el de allá está mucho mejor equipado\", relata la militante del Movimiento de los Afectados por Represas (MAB, por su sigla en portugués), Ellen Dutra de Oliveira, que vive en la región.</p>
@@ -46,6 +46,9 @@ sections:
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/tIY-QqcXUDw" frameborder="0" allowfullscreen></iframe>
+
+  - type: text
+    text: "<p><i>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</i></p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5724/30234208204_9d8714357e_b.jpg
@@ -88,6 +91,9 @@ sections:
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/-q2CWrnPmrE" frameborder="0" allowfullscreen></iframe>
 
+  - type: text
+    text: "<p><i>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</i></p>"
+
   - type: image
     desktop: //farm6.staticflickr.com/5733/30866597165_f34cf6a543_b.jpg
     mobile: //farm6.staticflickr.com/5496/30901136745_dcefe883dd_b.jpg
@@ -100,6 +106,9 @@ sections:
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/nTiIbUPMO_M" frameborder="0" allowfullscreen></iframe>  
+
+  - type: text
+    text: "<p><i>(para ver los subtítulos en español haga clic en el botón abajo al lado de configuraciones)</i></p>"
 
   - type: image
     desktop: //farm6.staticflickr.com/5821/30104016374_b85f49bc9c_b.jpg
