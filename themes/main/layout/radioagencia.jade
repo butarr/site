@@ -3,9 +3,9 @@ mixin audio-player(position, post)
     .audio-item(id="item_#{position}")
       .loader
       .player
-        iframe.widget(src="https://w.soundcloud.com/player/?url=#{post.audio}")
+        iframe.widget(id="frame_#{position}" src="")
         .controls
-          a.play(onclick="play(#{position});")
+          a.play(onclick="play(#{position},'#{post.audio}');")
             img(src="/img/icons/play.svg" alt="Play")
           a.pause(onclick="pause(#{position});")
             img(src="/img/icons/pause.svg" alt="Pausar")
