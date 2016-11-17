@@ -116,6 +116,7 @@
 }
 
 #radio .loader {
+  display: none;
   border: 5px solid $loader-background;
   border-top: 6px solid $loader-color;
   border-radius: 50%;
@@ -131,7 +132,6 @@
 }
 
 #radio .player {
-  display: none;
   width: 100%;
 
   .widget {
