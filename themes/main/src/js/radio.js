@@ -1,6 +1,28 @@
-function getWidget(id) {
-  var iframe = $('#item_' + id + ' .widget')[0];
+function play(id, audioUrl) {
+  setSource(id, audioUrl);
+  var widget = getWidget(id);
+  setup(widget, id);
+  widget.bind(SC.Widget.Events.READY, function() { widget.play(); });
+  $('#item_' + id + ' .play').hide();
+  $('#item_' + id + ' .pause').show();
+}
+
+function getWidget(id, audioUrl) {
+  var iframe = $('#frame_' + id)[0];
   return SC.Widget(iframe);
+}
+
+function setSource(id, audioUrl) {
+  var iframe = $('#frame_' + id)[0];
+  if($(iframe).attr('src') == ''){
+    $(iframe).attr('src', 'https://w.soundcloud.com/player/?url=' + audioUrl);
+  }
+}
+
+function pause(id) {
+  getWidget(id).pause();
+  $('#item_' + id + ' .pause').hide();
+  $('#item_' + id + ' .play').show();
 }
 
 function handleProgressBarClick(widget) {
@@ -21,18 +43,6 @@ function setUpdateProgressHandler(playerDiv) {
     progressBar.value = sound.relativePosition * 100;
     timeProgress.text(toMinutesAndSeconds(sound.currentPosition));
   };
-}
-
-function play(id) {
-  getWidget(id).play();
-  $('#item_' + id + ' .play').hide();
-  $('#item_' + id + ' .pause').show();
-}
-
-function pause(id) {
-  getWidget(id).pause();
-  $('#item_' + id + ' .pause').hide();
-  $('#item_' + id + ' .play').show();
 }
 
 function setDownloadLink(widget, playerDiv) {
@@ -75,25 +85,11 @@ function setResetPlayerHandler(playerDiv) {
   }
 }
 
-function setShowPlayer(playerDiv) {
-  return function() {
-    playerDiv.find('.loader').hide();
-    playerDiv.find('.player').css('display', 'flex');
-  };
-}
-
-function setup() {
-  $('.audio-item').each(function(index) {
-    var playerDiv = $(this);
-    var widget = SC.Widget(playerDiv.find('.widget')[0]);
-
-    widget.bind(SC.Widget.Events.READY, setDownloadLink(widget, playerDiv));
-    widget.bind(SC.Widget.Events.READY, setProgressBarHandler(widget, playerDiv));
-    widget.bind(SC.Widget.Events.READY, setDurationCount(widget, playerDiv));
-    widget.bind(SC.Widget.Events.READY, setShowPlayer(playerDiv));
-    widget.bind(SC.Widget.Events.FINISH, setResetPlayerHandler(playerDiv));
-    widget.bind(SC.Widget.Events.PLAY_PROGRESS, setUpdateProgressHandler(playerDiv));
-  });
+function setup(widget, id) {
+  var playerDiv = $('#item_' + id);
+  widget.bind(SC.Widget.Events.READY, setDownloadLink(widget, playerDiv));
+  widget.bind(SC.Widget.Events.READY, setProgressBarHandler(widget, playerDiv));
+  widget.bind(SC.Widget.Events.READY, setDurationCount(widget, playerDiv));
+  widget.bind(SC.Widget.Events.FINISH, setResetPlayerHandler(playerDiv));
+  widget.bind(SC.Widget.Events.PLAY_PROGRESS, setUpdateProgressHandler(playerDiv));
 };
-
-$(document).ready(setup);
