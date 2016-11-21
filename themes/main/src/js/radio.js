@@ -1,22 +1,24 @@
 function play(id, audioUrl) {
-  setSource(id, audioUrl);
-  var widget = getWidget(id);
-  setup(widget, id);
+  var widget = getWidget(id, audioUrl);
   widget.bind(SC.Widget.Events.READY, function() { widget.play(); });
   $('#item_' + id + ' .play').hide();
   $('#item_' + id + ' .pause').show();
 }
 
-function getWidget(id, audioUrl) {
+function getWidget(id) {
   var iframe = $('#frame_' + id)[0];
   return SC.Widget(iframe);
 }
 
-function setSource(id, audioUrl) {
+function getWidget(id, audioUrl) {
   var iframe = $('#frame_' + id)[0];
-  if($(iframe).attr('src') == ''){
+  if($(iframe).attr('src') == '') {
     $(iframe).attr('src', 'https://w.soundcloud.com/player/?url=' + audioUrl);
+    var widget = SC.Widget(iframe);
+    setup(widget, id);
+    return widget;
   }
+  return SC.Widget(iframe);
 }
 
 function pause(id) {
