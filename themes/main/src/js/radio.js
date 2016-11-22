@@ -28,7 +28,7 @@ function getWidget(id) {
 function getWidget(id, audioUrl) {
   var iframe = $('#frame_' + id)[0];
   if($(iframe).attr('src') == '') {
-    $(iframe).load('https://w.soundcloud.com/player/?url=' + audioUrl);
+    $(iframe).attr('src', 'https://w.soundcloud.com/player/?url=' + audioUrl);
     var widget = SC.Widget(iframe);
     setup(widget, id);
     return widget;
