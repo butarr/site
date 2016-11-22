@@ -115,13 +115,17 @@
   }
 }
 
+#radio .buttons {
+  width: 50px;
+}
+
 #radio .loader {
   display: none;
   border: 5px solid $loader-background;
   border-top: 6px solid $loader-color;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 37px;
+  height: 37px;
   margin: auto;
   animation: spin 1.5s linear infinite;
 }

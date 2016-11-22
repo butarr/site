@@ -1,14 +1,15 @@
 mixin audio-player(position, post)
   if post.audio
     .audio-item(id="item_#{position}")
-      .loader
       .player
         iframe.widget(id="frame_#{position}" src="")
         .controls
-          a.play(onclick="play(#{position},'#{post.audio}');")
-            img(src="/img/icons/play.svg" alt="Play")
-          a.pause(onclick="pause(#{position});")
-            img(src="/img/icons/pause.svg" alt="Pausar")
+          .buttons
+            .loader
+            a.play(onclick="play(#{position},'#{post.audio}');")
+              img(src="/img/icons/play.svg" alt="Play")
+            a.pause(onclick="pause(#{position});")
+              img(src="/img/icons/pause.svg" alt="Pausar")
           .progress-bar
             span.timeProgress 0:00
             .progress-and-source
