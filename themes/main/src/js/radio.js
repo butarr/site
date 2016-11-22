@@ -1,8 +1,17 @@
 function play(id, audioUrl) {
-  var widget = getWidget(id, audioUrl);
-  widget.bind(SC.Widget.Events.READY, function() { widget.play(); });
   $('#item_' + id + ' .play').hide();
-  $('#item_' + id + ' .pause').show();
+  $('#item_' + id + ' .loader').show();
+  var widget = getWidget(id, audioUrl);
+  var playerDiv = $('#item_' + id);
+  widget.bind(SC.Widget.Events.READY, setAudioReady(playerDiv));
+  widget.bind(SC.Widget.Events.READY, function(){ widget.play(); });
+}
+
+function setAudioReady(playerDiv) {
+  return function() {
+    playerDiv.find('.loader').hide();
+    playerDiv.find('.pause').show();
+  };
 }
 
 function getWidget(id) {
