@@ -2,7 +2,7 @@ mixin audio-player(position, post)
   if post.audio
     .audio-item(id="item_#{position}")
       .player
-        iframe.widget(id="frame_#{position}")
+        iframe.widget(id="frame_#{position}" src="")
         .controls
           .buttons
             .loader
