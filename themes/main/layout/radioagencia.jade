@@ -17,7 +17,7 @@ mixin audio-player(position, post)
               a(href=post.audio target="_blank")
                 p via SoundCloud
             span.duration 0:00
-          a.download 
+          a.download(onclick="downloadAudio(#{position},'#{post.audio}');")
             img(src="/img/icons/download.svg" alt="Baixar")
             h4 Baixar
 

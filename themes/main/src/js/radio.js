@@ -7,6 +7,12 @@ function play(id, audioUrl) {
   widget.bind(SC.Widget.Events.READY, function(){ widget.play(); });
 }
 
+function downloadAudio(id, audioUrl) {
+  var widget = getWidget(id, audioUrl);
+  var playerDiv = $('#item_' + id);
+  widget.bind(SC.Widget.Events.READY, setDownloadLink(widget, playerDiv));
+}
+
 function setAudioReady(playerDiv) {
   return function() {
     playerDiv.find('.loader').hide();
