@@ -1,38 +1,12 @@
-function play(id, audioUrl) {
+function play(id) {
+  getWidget(id).play();
   $('#item_' + id + ' .play').hide();
-  $('#item_' + id + ' .loader').show();
-  var widget = getWidget(id, audioUrl);
-  var playerDiv = $('#item_' + id);
-  widget.bind(SC.Widget.Events.READY, setAudioReady(playerDiv));
-  widget.bind(SC.Widget.Events.READY, function(){ widget.play(); });
-}
-
-function downloadAudio(id, audioUrl) {
-  var widget = getWidget(id, audioUrl);
-  var playerDiv = $('#item_' + id);
-  widget.bind(SC.Widget.Events.READY, setDownloadLink(widget, playerDiv));
-}
-
-function setAudioReady(playerDiv) {
-  return function() {
-    playerDiv.find('.loader').hide();
-    playerDiv.find('.pause').show();
-  };
+  $('#item_' + id + ' .loader').hide();
+  $('#item_' + id + ' .pause').show();
 }
 
 function getWidget(id) {
   var iframe = $('#frame_' + id)[0];
-  return SC.Widget(iframe);
-}
-
-function getWidget(id, audioUrl) {
-  var iframe = $('#frame_' + id)[0];
-  if($(iframe).attr('src') == '') {
-    $(iframe).attr('src', 'https://w.soundcloud.com/player/?url=' + audioUrl);
-    var widget = SC.Widget(iframe);
-    setup(widget, id);
-    return widget;
-  }
   return SC.Widget(iframe);
 }
 
@@ -67,6 +41,8 @@ function setDownloadLink(widget, playerDiv) {
     widget.getCurrentSound(function(sound) {
       var link = playerDiv.find('.download')[0];
       link.href = sound.download_url + "?client_id=cUa40O3Jg3Emvp6Tv4U6ymYYO50NUGpJ";
+      $(link).removeAttr('onclick');
+      $(link).trigger('linkready');
     });
   };
 }
@@ -102,11 +78,41 @@ function setResetPlayerHandler(playerDiv) {
   }
 }
 
-function setup(widget, id) {
+function setWidgetSrc(id, url, source) {
+  if(source == 'play') {
+    $('#item_' + id + ' .play').hide();
+    $('#item_' + id + ' .loader').show();
+  }
+
+  var iframe = $('#frame_' + id)[0];
+  $(iframe).attr('src', 'https://w.soundcloud.com/player/?url=' + url);
+
+  $(iframe).ready(function() {
+    var widget = SC.Widget(iframe);
+    bindWidgetEventsHandlers(id, widget, source);
+  });
+}
+
+function setPlayHandler(id, playerDiv) {
+  return function() {
+    playerDiv.find('.play').attr('onclick', 'play(' + id + ')');
+  };
+}
+
+function bindWidgetEventsHandlers(id, widget, source) {
   var playerDiv = $('#item_' + id);
+
+  if(source == 'play') {
+    widget.bind(SC.Widget.Events.READY, function(){ play(id); });
+  } else if(source == 'download') {
+    var downloadLink = playerDiv.find('.download');
+    downloadLink.on('linkready', function(){ downloadLink.click(); });
+  }
+
   widget.bind(SC.Widget.Events.READY, setDownloadLink(widget, playerDiv));
   widget.bind(SC.Widget.Events.READY, setProgressBarHandler(widget, playerDiv));
   widget.bind(SC.Widget.Events.READY, setDurationCount(widget, playerDiv));
+  widget.bind(SC.Widget.Events.READY, setPlayHandler(id, playerDiv));
   widget.bind(SC.Widget.Events.FINISH, setResetPlayerHandler(playerDiv));
   widget.bind(SC.Widget.Events.PLAY_PROGRESS, setUpdateProgressHandler(playerDiv));
-};
+}

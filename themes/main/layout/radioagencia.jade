@@ -6,7 +6,7 @@ mixin audio-player(position, post)
         .controls
           .buttons
             .loader
-            a.play(onclick="play(#{position},'#{post.audio}');")
+            a.play(onclick="setWidgetSrc(#{position},'#{post.audio}', 'play');")
               img(src="/img/icons/play.svg" alt="Play")
             a.pause(onclick="pause(#{position});")
               img(src="/img/icons/pause.svg" alt="Pausar")
@@ -17,7 +17,7 @@ mixin audio-player(position, post)
               a(href=post.audio target="_blank")
                 p via SoundCloud
             span.duration 0:00
-          a.download(onclick="downloadAudio(#{position},'#{post.audio}');")
+          a.download(onclick="setWidgetSrc(#{position},'#{post.audio}', 'download');")
             img(src="/img/icons/download.svg" alt="Baixar")
             h4 Baixar
 
