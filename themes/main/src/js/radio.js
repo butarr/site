@@ -105,8 +105,8 @@ function bindWidgetEventsHandlers(id, widget, source) {
   if(source == 'play') {
     widget.bind(SC.Widget.Events.READY, function(){ play(id); });
   } else if(source == 'download') {
-    var downloadLink = playerDiv.find('.download');
-    downloadLink.on('linkready', function(){ downloadLink.click(); });
+    var downloadLink = playerDiv.find('.download')[0];
+    $(downloadLink).on('linkready', function(){ downloadLink.click(); });
   }
 
   widget.bind(SC.Widget.Events.READY, setDownloadLink(widget, playerDiv));
