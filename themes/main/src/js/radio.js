@@ -95,7 +95,9 @@ function setWidgetSrc(id, url, source) {
 
 function setPlayHandler(id, playerDiv) {
   return function() {
-    playerDiv.find('.play').attr('onclick', 'play(' + id + ')');
+    var playButton = playerDiv.find('.play');
+    playButton.attr('onclick', 'play(' + id + ')');
+    playButton.trigger('playready');
   };
 }
 
@@ -103,7 +105,8 @@ function bindWidgetEventsHandlers(id, widget, source) {
   var playerDiv = $('#item_' + id);
 
   if(source == 'play') {
-    widget.bind(SC.Widget.Events.READY, function(){ play(id); });
+    var playButton = playerDiv.find('.play')[0];
+    $(playButton).on('playready', function(){ playButton.click(); });
   } else if(source == 'download') {
     var downloadLink = playerDiv.find('.download')[0];
     $(downloadLink).on('linkready', function(){ downloadLink.click(); });
