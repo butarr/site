@@ -191,7 +191,7 @@
   }
 }
 
-#home .advertising-01 {
+#home .advertising-01, .spotlight-03-desktop {
   display: none;
 
   @include media-query(THREE) {
@@ -223,7 +223,7 @@
   }
 }
 
-#home .advertising-03 {
+#home .advertising-03, .spotlight-03-mobile {
   display: flex;
   justify-content: center;
 
