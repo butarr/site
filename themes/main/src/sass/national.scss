@@ -275,6 +275,29 @@
   }
 }
 
+#home .adsense_desktop_03 {
+  display: none;
+
+  @include media-query(FOUR) {
+    @include column-lateral-spacing();
+
+    display: block;
+  }
+}
+
+#home .adsense_mobile_03 {
+  display: block;
+  margin-bottom: 10px;
+
+  @include media-query(FOUR) {
+    display: none;
+  }
+
+  @media (max-width: 320px) {
+    display: none;
+  }
+}
+
 #home .featured-big-picture {
   width: 100%;
   @include picture-with-caption();
