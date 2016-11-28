@@ -6,7 +6,7 @@ mixin audio-player(position, post)
         .controls
           .buttons
             .loader
-            a.play(onclick="setWidgetSrc(#{position},'#{post.audio}', 'play');")
+            a.play(id="play_#{position}" onclick="setWidgetSrc(#{position},'#{post.audio}', 'play');")
               img(src="/img/icons/play.svg" alt="Play")
             a.pause(onclick="pause(#{position});")
               img(src="/img/icons/pause.svg" alt="Pausar")
