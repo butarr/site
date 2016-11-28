@@ -501,6 +501,11 @@ $number-size: 1.3rem;
     color: $text-color;
   }
 
+  .image-subtitle {
+    font: bold $details-size $family-sans;
+    color: $text-color;
+  }
+
   .share-title {
     font: bold $page-name-size $family-sans;
     text-transform: uppercase;
