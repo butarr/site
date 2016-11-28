@@ -116,3 +116,10 @@ function bindWidgetEventsHandlers(id, widget, source) {
   widget.bind(SC.Widget.Events.FINISH, setResetPlayerHandler(playerDiv));
   widget.bind(SC.Widget.Events.PLAY_PROGRESS, setUpdateProgressHandler(playerDiv));
 }
+
+$(document).ready(function() {
+  if(document.URL.indexOf("radioagencia") != -1){
+    var menu = $('a[href="/radioagencia/"]');
+    menu.closest('li').css({"background-color": "rgba(177,32,40,1)"});
+  }
+});
