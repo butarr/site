@@ -191,7 +191,7 @@
   }
 }
 
-#home .advertising-01 {
+#home .advertising-01, .spotlight-03-desktop {
   display: none;
 
   @include media-query(THREE) {
@@ -223,7 +223,7 @@
   }
 }
 
-#home .advertising-03 {
+#home .advertising-03, .spotlight-03-mobile {
   display: flex;
   justify-content: center;
 
@@ -272,6 +272,29 @@
       height: 100%;
       max-height: 90px;
     }
+  }
+}
+
+#home .adsense_desktop_03 {
+  display: none;
+
+  @include media-query(FOUR) {
+    @include column-lateral-spacing();
+
+    display: block;
+  }
+}
+
+#home .adsense_mobile_03 {
+  display: block;
+  margin-bottom: 10px;
+
+  @include media-query(FOUR) {
+    display: none;
+  }
+
+  @media (max-width: 320px) {
+    display: none;
   }
 }
 
