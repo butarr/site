@@ -45,6 +45,18 @@ append content
         meta(itemprop="name" content="Brasil de Fato")
         link(itemprop="sameAs" href="https://www.brasildefato.com.br")
         
+        - var area_field= page.area
+        - var sitepath = page.area
+        case area_field
+          when "opiniao"
+            - var sitepath= "opinião"
+          when "politica"
+            - var sitepath= "política"
+          when "direitos_humanos"
+            - var sitepath= "direitos humanos"
+          when "espanol"
+            - var sitepath= "español"
+
       div#breadcrumb
         ol(itemscope itemtype="http://schema.org/BreadcrumbList")
           li(itemprop="itemListElement" ) 
@@ -54,7 +66,8 @@ append content
             i(class="fa fa-chevron-right fa-lg")
           li(itemprop="itemListElement")
             a(href="https://www.brasildefato.com.br/#{page.area}/")
-              p.breadcrumb-last #{page.area}
+              p.breadcrumb-last #{sitepath}
+              
       header
         - var published_at = utc_to_brt(page.date)
         h3.hat(itemprop="about")= page.hat
