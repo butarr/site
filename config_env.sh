@@ -58,7 +58,7 @@ theme: main
 toggles:
   radio_sidebar: ${RADIO_SIDEBAR:-false}
   _D6fenTno_adsense: ${TOGGLE_D6fenTno_ADSENSE:-false}
-
+  _yEE1E9Vp_breadcrumb: ${TOGGLE_yEE1E9Vp_BREADCRUMB:-false}
 feed:
   type: rss2
   limit: 20
