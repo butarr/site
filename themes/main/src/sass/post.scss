@@ -96,6 +96,13 @@
   }
 }
 
+#post .adsense_desktop_04 {
+  display: none;
+  @include media-query(THREE) {
+    display: block;
+  }
+}
+
 #post .share-bar {
   .share-title {
     margin: 0;

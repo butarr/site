@@ -9,6 +9,19 @@ mixin news_list(title, list)
             a(itemprop="url" href=p.url)
               h3.other-article-title(itemprop="headline")= p.title
 
+mixin adsense_desktop_04()
+  if config.toggles._D6fenTno_adsense
+    div.adsense_desktop_04(align="center")
+      != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
+      != '<!-- desktop_04 -->'
+      != '<ins class="adsbygoogle"'
+      !=      'style="display:inline-block;width:200px;height:200px"'
+      !=      'data-ad-client="ca-pub-9026445537434187"'
+      !=      'data-ad-slot="8095415750"></ins>'
+      != '<script>'
+      != '(adsbygoogle = window.adsbygoogle || []).push({});'
+      != '</script>'
+
 extends base
 
 block title
@@ -110,6 +123,8 @@ append content
             .advertising_06(itemscope itemtype="http://schema.org/WPAdBlock")
               a(itemprop="url" href=post.link target="_blank")
                 img(src=post.image alt=post.title title=post.title itemprop="image")
+          else
+            +adsense_desktop_04()
 
           if page.other_news && page.other_news.length
             +news_list('Outras notícias', page.other_news)

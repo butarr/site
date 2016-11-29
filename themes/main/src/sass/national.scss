@@ -312,21 +312,6 @@
   }
 }
 
-#home .adsense_mobile_02 {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 10px;
-
-  @include media-query(THREE) {
-    display: none;
-  }
-
-  @media (max-width: 340px) {
-    display: none;
-  }
-}
-
 #home .adsense_desktop_03 {
   display: none;
 
