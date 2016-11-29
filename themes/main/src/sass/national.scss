@@ -279,7 +279,7 @@
   justify-content: center;
   width: 100%;
 
-  @include media-query(THREE) {
+  @include media-query(FOUR) {
     display: none;
   }
 
@@ -294,7 +294,7 @@
   -webkit-order: -6; //Old Safari
   order: -6;
 
-  @include media-query(THREE) {
+  @include media-query(FOUR) {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
