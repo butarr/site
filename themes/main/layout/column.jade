@@ -26,6 +26,17 @@ append content
           meta(itemprop="height" content="60")
         meta(itemprop="name" content="Brasil de Fato")
         link(itemprop="sameAs" href="https://www.brasildefato.com.br")
+        
+      div#breadcrumb
+        ol(itemscope itemtype="http://schema.org/BreadcrumbList")
+          li(itemprop="itemListElement" ) 
+            a( href="/")
+              p Início
+          li
+            i(class="fa fa-chevron-right fa-lg")
+          li(itemprop="itemListElement")
+            a(href="/colunistas/")
+              p.breadcrumb-last Colunistas
   
       span.hat Coluna
       
