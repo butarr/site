@@ -104,9 +104,9 @@ mixin spotlight_03_mobile(post, type)
     a(itemprop="url" href=post.link target="_blank")
       img(src=post.image alt=post.title title=post.title itemprop="image")
 
-mixin adsense_desktop_01()
+mixin adsense_01_desktop()
   if config.toggles._D6fenTno_adsense
-    div.adsense_desktop_01(align="center")
+    div.adsense-01-desktop(align="center")
       !=  '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
       !=  '<!-- desktop_01 -->'
       !=  '<ins class="adsbygoogle"'
@@ -117,9 +117,9 @@ mixin adsense_desktop_01()
       !=  '(adsbygoogle = window.adsbygoogle || []).push({});'
       !=  '</script>'
 
-mixin adsense_mobile_01()
+mixin adsense_01_mobile()
   if config.toggles._D6fenTno_adsense
-    div.adsense_mobile_01(align="center")
+    div.adsense-01-mobile(align="cen")
       !=  '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
       !=  '<!-- mobile_01 -->'
       !=  '<ins class="adsbygoogle"'
@@ -130,9 +130,9 @@ mixin adsense_mobile_01()
       !=  '(adsbygoogle = window.adsbygoogle || []).push({});'
       !=  '</script>'
 
-mixin adsense_desktop_02()
+mixin adsense_02_desktop()
   if config.toggles._D6fenTno_adsense
-    div.adsense_desktop_02(align="center")
+    div.adsense-02-desktop(align="center")
       != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
       != '<!-- desktop-02 -->'
       != '<ins class="adsbygoogle"'
@@ -143,9 +143,9 @@ mixin adsense_desktop_02()
       != '(adsbygoogle = window.adsbygoogle || []).push({});'
       != '</script>'
 
-mixin adsense_desktop_03()
+mixin adsense_03_desktop()
   if config.toggles._D6fenTno_adsense
-    div.adsense_desktop_03(align="center")
+    div.adsense-03-desktop(align="center")
       != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
       != '<!-- desktop_03 -->'
       != '<ins class="adsbygoogle"'
@@ -156,9 +156,9 @@ mixin adsense_desktop_03()
       != '(adsbygoogle = window.adsbygoogle || []).push({});'
       != '</script>'
 
-mixin adsense_mobile_03()
+mixin adsense_03_mobile()
   if config.toggles._D6fenTno_adsense
-    div.adsense_mobile_03(align="center")
+    div.adsense-03-mobile(align="center")
       != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
       != '<!-- mobile_03 -->'
       != '<ins class="adsbygoogle"'
@@ -181,14 +181,14 @@ append content
         else if site.data.advertisings.advertising_01
           +spotlight_01_desktop(site.data.advertisings.advertising_01, "http://schema.org/WPAdBlock")
         else
-          +adsense_desktop_03()
+          +adsense_03_desktop()
 
         if page.spotlight_03
           +spotlight_03_mobile(page.spotlight_03)
         else if site.data.advertisings.advertising_03
           +spotlight_03_mobile(site.data.advertisings.advertising_03, "http://schema.org/WPAdBlock")
         else
-          +adsense_mobile_03()
+          +adsense_03_mobile()
 
         if page.last_news
           section#last-news-dynamic.last-news(itemscope itemtype="https://schema.org/ItemList" class="spacing" hidden)
@@ -229,7 +229,7 @@ append content
             else if site.data.advertisings.advertising_04
               +spotlight_01_mobile(site.data.advertisings.advertising_04, "http://schema.org/WPAdBlock")
             else
-              +adsense_mobile_01()
+              +adsense_01_mobile()
 
             if page.featured_04
               - var post=page.featured_04
@@ -254,7 +254,7 @@ append content
           else if site.data.advertisings.advertising_05
             +spotlight_01_desktop(site.data.advertisings.advertising_05, "http://schema.org/WPAdBlock")
           else
-            +adsense_desktop_01()
+            +adsense_01_desktop()
 
           figure(class= "radar" class= "spacing")
             a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar de Movimentos Populares")
@@ -332,7 +332,7 @@ append content
           else if site.data.advertisings.advertising_02
             +spotlight_02_desktop(site.data.advertisings.advertising_02, "http://schema.org/WPAdBlock")
           else
-            +adsense_desktop_02()
+            +adsense_02_desktop()
 
           section.printed-news(class="spacing")
             +printed-news(page)

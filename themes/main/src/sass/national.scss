@@ -274,7 +274,7 @@
   }
 }
 
-#home .adsense_mobile_01 {
+#home .adsense-01-mobile {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -288,7 +288,7 @@
   }
 }
 
-#home .adsense_desktop_01 {
+#home .adsense-01-desktop {
   display: none;
   width: 100%;
   -webkit-order: -6; //Old Safari
@@ -302,7 +302,7 @@
   }
 }
 
-#home .adsense_desktop_02 {
+#home .adsense-02-desktop {
   display: none;
 
   @include media-query(THREE) {
@@ -312,7 +312,7 @@
   }
 }
 
-#home .adsense_desktop_03 {
+#home .adsense-03-desktop {
   display: none;
 
   @include media-query(FOUR) {
@@ -322,7 +322,7 @@
   }
 }
 
-#home .adsense_mobile_03 {
+#home .adsense-03-mobile {
   display: block;
   margin-bottom: 10px;
 
