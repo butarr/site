@@ -57,6 +57,7 @@ theme: main
 #Toggles
 toggles:
   radio_sidebar: ${RADIO_SIDEBAR:-false}
+  _D6fenTno_adsense: ${TOGGLE_D6fenTno_ADSENSE:-false}
 
 feed:
   type: rss2

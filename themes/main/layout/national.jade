@@ -104,29 +104,57 @@ mixin spotlight_03_mobile(post, type)
     a(itemprop="url" href=post.link target="_blank")
       img(src=post.image alt=post.title title=post.title itemprop="image")
 
+mixin adsense_desktop_02()
+  if config.toggles._D6fenTno_adsense
+    div.adsense_desktop_02(align="center")
+      != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
+      != '<!-- desktop-02 -->'
+      != '<ins class="adsbygoogle"'
+      !=     'style="display:inline-block;width:200px;height:200px"'
+      !=     'data-ad-client="ca-pub-9026445537434187"'
+      !=     'data-ad-slot="8771570159"></ins>'
+      != '<script>'
+      != '(adsbygoogle = window.adsbygoogle || []).push({});'
+      != '</script>'
+
+mixin adsense_mobile_02()
+  if config.toggles._D6fenTno_adsense
+    div.adsense_mobile_02(align="center")
+      != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
+      != '<!-- mobile_02 -->'
+      != '<ins class="adsbygoogle"'
+      !=     'style="display:inline-block;width:320px;height:100px"'
+      !=     'data-ad-client="ca-pub-9026445537434187"'
+      !=     'data-ad-slot="5538902158"></ins>'
+      != '<script>'
+      != '(adsbygoogle = window.adsbygoogle || []).push({});'
+      != '</script>'
+
 mixin adsense_desktop_03()
-  div.adsense_desktop_03(align="center")
-    != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
-    != '<!-- desktop_03 -->'
-    != '<ins class="adsbygoogle"'
-    !=    'style="display:inline-block;width:728px;height:90px"'
-    !=    'data-ad-client="ca-pub-9026445537434187"'
-    !=    'data-ad-slot="4687950959"></ins>'
-    != '<script>'
-    != '(adsbygoogle = window.adsbygoogle || []).push({});'
-    != '</script>'
+  if config.toggles._D6fenTno_adsense
+    div.adsense_desktop_03(align="center")
+      != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
+      != '<!-- desktop_03 -->'
+      != '<ins class="adsbygoogle"'
+      !=    'style="display:inline-block;width:728px;height:90px"'
+      !=    'data-ad-client="ca-pub-9026445537434187"'
+      !=    'data-ad-slot="4687950959"></ins>'
+      != '<script>'
+      != '(adsbygoogle = window.adsbygoogle || []).push({});'
+      != '</script>'
 
 mixin adsense_mobile_03()
-  div.adsense_mobile_03(align="center")
-    != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
-    != '<!-- mobile_03 -->'
-    != '<ins class="adsbygoogle"'
-    !=      'style="display:inline-block;width:320px;height:100px"'
-    !=      'data-ad-client="ca-pub-9026445537434187"'
-    !=      'data-ad-slot="1176081356"></ins>'
-    != '<script>'
-    != '(adsbygoogle = window.adsbygoogle || []).push({});'
-    != '</script>'
+  if config.toggles._D6fenTno_adsense
+    div.adsense_mobile_03(align="center")
+      != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
+      != '<!-- mobile_03 -->'
+      != '<ins class="adsbygoogle"'
+      !=      'style="display:inline-block;width:320px;height:100px"'
+      !=      'data-ad-client="ca-pub-9026445537434187"'
+      !=      'data-ad-slot="1176081356"></ins>'
+      != '<script>'
+      != '(adsbygoogle = window.adsbygoogle || []).push({});'
+      != '</script>'
 
 extends base
 append content
@@ -197,6 +225,8 @@ append content
                   
             if page.spotlight_02
               +spotlight_02_mobile(page.spotlight_02)
+            else
+              +adsense_mobile_02()
                         
             if page.featured_05
               - var post=page.featured_05
@@ -286,6 +316,8 @@ append content
             +spotlight_02_desktop(page.spotlight_02)
           else if site.data.advertisings.advertising_02
             +spotlight_02_desktop(site.data.advertisings.advertising_02, "http://schema.org/WPAdBlock")
+          else
+            +adsense_desktop_02()
 
           section.printed-news(class="spacing")
             +printed-news(page)
