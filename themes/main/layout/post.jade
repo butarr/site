@@ -46,13 +46,13 @@ append content
         link(itemprop="sameAs" href="https://www.brasildefato.com.br")
         
       div#breadcrumb
-        ul
-          li 
-            a(href="/")
+        ol(itemscope itemtype="http://schema.org/BreadcrumbList")
+          li(itemprop="itemListElement" ) 
+            a( href="/")
               p Início
           li
             i(class="fa fa-chevron-right fa-lg")
-          li 
+          li(itemprop="itemListElement")
             a(href="https://www.brasildefato.com.br/#{page.area}/")
               p.breadcrumb-last #{page.area}
       header
