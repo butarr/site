@@ -73,22 +73,22 @@ mixin footer-article(field, post, imageDescription)
     a(href=post.path itemprop="url")
       figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription)
       h3.title(itemprop="headline")= post.title
-      
+
 mixin spotlight_01_mobile(post, type)
   div.spotlight-01-mobile(class="spacing" itemscope itemtype=type)
     a(itemprop="url" href=post.link target="_blank")
       img(src=post.image alt=post.title title=post.title itemprop="image")
-      
+
 mixin spotlight_01_desktop(post, type)
   div.spotlight-01-desktop(class= "spacing" itemscope itemtype=type )
     a(itemprop="url" href=post.link target="_blank")
       img(src=post.image alt=post.title title=post.title itemprop="image")
-      
+
 mixin spotlight_02_desktop(post, type)
   div.spotlight-02-desktop(class="spacing" itemscope itemtype=type)
     a(itemprop="url" href=post.link target="_blank")
       img(src=post.image alt=post.title title=post.title itemprop="image")
-      
+
 mixin spotlight_02_mobile(post, type)
   div.spotlight-02-mobile(class="spacing" itemscope itemtype=type)
     a(itemprop="url" href=post.link target="_blank")
@@ -103,6 +103,32 @@ mixin spotlight_03_mobile(post, type)
   div.spotlight-03-mobile(class="spacing" itemscope itemtype=type)
     a(itemprop="url" href=post.link target="_blank")
       img(src=post.image alt=post.title title=post.title itemprop="image")
+
+mixin adsense_desktop_01()
+  if config.toggles._D6fenTno_adsense
+    div.adsense_desktop_01(align="center")
+      !=  '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
+      !=  '<!-- desktop_01 -->'
+      !=  '<ins class="adsbygoogle"'
+      !=       'style="display:inline-block;width:728px;height:90px"'
+      !=       'data-ad-client="ca-pub-9026445537434187"'
+      !=       'data-ad-slot="3444890153"></ins>'
+      !=  '<script>'
+      !=  '(adsbygoogle = window.adsbygoogle || []).push({});'
+      !=  '</script>'
+
+mixin adsense_mobile_01()
+  if config.toggles._D6fenTno_adsense
+    div.adsense_mobile_01(align="center")
+      !=  '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
+      !=  '<!-- mobile_01 -->'
+      !=  '<ins class="adsbygoogle"'
+      !=     'style="display:inline-block;width:320px;height:100px"'
+      !=     'data-ad-client="ca-pub-9026445537434187"'
+      !=     'data-ad-slot="5979554159"></ins>'
+      !=  '<script>'
+      !=  '(adsbygoogle = window.adsbygoogle || []).push({});'
+      !=  '</script>'
 
 mixin adsense_desktop_02()
   if config.toggles._D6fenTno_adsense
@@ -215,7 +241,9 @@ append content
               +spotlight_01_mobile(page.spotlight_01)
             else if site.data.advertisings.advertising_04
               +spotlight_01_mobile(site.data.advertisings.advertising_04, "http://schema.org/WPAdBlock")
-                
+            else
+              +adsense_mobile_01()
+
             if page.featured_04
               - var post=page.featured_04
               div(class="featured-text-and-title" class= "spacing")
@@ -240,6 +268,8 @@ append content
             +spotlight_01_desktop(page.spotlight_01) 
           else if site.data.advertisings.advertising_05
             +spotlight_01_desktop(site.data.advertisings.advertising_05, "http://schema.org/WPAdBlock")
+          else
+            +adsense_desktop_01()
 
           figure(class= "radar" class= "spacing")
             a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar de Movimentos Populares")
