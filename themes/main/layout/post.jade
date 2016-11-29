@@ -54,7 +54,7 @@ append content
             i(class="fa fa-chevron-right fa-lg")
           li 
             a(href="https://www.brasildefato.com.br/#{page.area}/")
-              p #{page.area}
+              p.breadcrumb-last #{page.area}
       header
         - var published_at = utc_to_brt(page.date)
         h3.hat(itemprop="about")= page.hat

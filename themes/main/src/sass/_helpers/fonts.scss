@@ -128,13 +128,19 @@ $number-size: 1.3rem;
   p {
     font: bold $section-name-size $family-sans;
     text-transform: uppercase;
+
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+  p.breadcrumb-last {
     color: $link-color;
 
     &:hover {
       color: $link-hover-color;
     }
   }
-  
+
   i {
     color: $link-neutral-color;
   }
