@@ -124,6 +124,22 @@ $number-size: 1.3rem;
   }
 }
 
+@mixin __breadcrumb(){
+  p {
+    font: bold $section-name-size $family-sans;
+    text-transform: uppercase;
+    color: $link-color;
+
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+  
+  i {
+    color: $link-neutral-color;
+  }
+}
+
 @mixin __national(){
   .section-name, .hat {
     font: bold $section-name-size $family-sans;
@@ -941,5 +957,8 @@ $number-size: 1.3rem;
   }
   @else if( $type == RADIO ){
     @include __radio();
+  }
+  @else if( $type == BREADCRUMB ){
+    @include __breadcrumb();
   }
 }

@@ -45,6 +45,16 @@ append content
         meta(itemprop="name" content="Brasil de Fato")
         link(itemprop="sameAs" href="https://www.brasildefato.com.br")
         
+      div#breadcrumb
+        ul
+          li 
+            a(href="/")
+              p Início
+          li
+            i(class="fa fa-chevron-right fa-lg")
+          li 
+            a(href="https://www.brasildefato.com.br/#{page.area}/")
+              p #{page.area}
       header
         - var published_at = utc_to_brt(page.date)
         h3.hat(itemprop="about")= page.hat
