@@ -29,7 +29,7 @@ append content
         .details-bar
           .place-and-time
             time(datetime=published_at.toISOString())= date(published_at)
-            meta(content="#{page.updated_at}")
+            meta(content=published_at.toISOString())
           include _partial/social-media-share
 
       .content

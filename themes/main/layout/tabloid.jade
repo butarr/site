@@ -90,8 +90,8 @@ append content
                   
                   span(itemscope itemtype="https://schema.org/NewsArticle")
                     meta(itemprop="author" content= post.author)
-                    meta(itemprop="dateModified" content=post.updated_at)
-                    meta(itemprop="datePublished" content=post.published_at)
+                    meta(itemprop="dateModified" content=published_at.toISOString())
+                    meta(itemprop="datePublished" content=published_at.toISOString())
                     meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br#{post.url}")
                     
                     span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")

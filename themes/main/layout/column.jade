@@ -36,8 +36,8 @@ append content
           .name-and-time
             span.name(itemprop="author")= columnist.name
             time(datetime=published_at.toISOString())= full_date(published_at)
-            meta(itemprop="datePublished", content=published_at)
-            meta(itemprop="dateModified", content=page.updated_at)
+            meta(itemprop="datePublished", content=published_at.toISOString())
+            meta(itemprop="dateModified", content=published_at.toISOString())
             
       if page.cover
         figure(itemscope itemprop="image" itemtype="https://schema.org/ImageObject")
