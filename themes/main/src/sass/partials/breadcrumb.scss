@@ -1,0 +1,17 @@
+@import '_helpers/fonts';
+
+#breadcrumb {
+  ol {
+    @include get-font(BREADCRUMB);
+    display: flex;
+    margin-bottom: -15px;
+  }
+
+  li {
+    padding: 10px 10px 0 0;
+  }
+
+  i {
+    padding-top: 6px;
+  }
+}
