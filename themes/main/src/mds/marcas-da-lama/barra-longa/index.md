@@ -5,7 +5,7 @@ url: /marcas-da-lama/barra-longa/
 title: "Barra Longa: a cidade canteiro de obras"
 description: Poeira, barulho excessivo e ininterrupto, transtornos psicológicos e doenças respiratórias permanecem na rotina dos moradores
 author: Redação Brasil de Fato
-tags:
+labels:
   - especial
   - lama
   - mariana

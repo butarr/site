@@ -5,7 +5,7 @@ url: /marcas-da-lama/luta-dos-atingidos/
 title: "A resistência na Bacia do Rio Doce"
 description: Os prejuízos deixados na vida dos atingidos são incontáveis, e a luta tornou-se parte do dia a dia de centenas deles
 author: Redação Brasil de Fato
-tags:
+labels:
   - especial
   - lama
   - mariana

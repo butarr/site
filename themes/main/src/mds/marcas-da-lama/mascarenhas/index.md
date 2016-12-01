@@ -5,7 +5,7 @@ url: /marcas-da-lama/mascarenhas/
 title: "Mascarenhas: a morte do Rio Doce"
 description: Pescadores atingidos pelo desequilíbrio ecológico que devastou o rio e seus afluentes continuam sem a sua principal fonte de renda
 author: Redação Brasil de Fato
-tags:
+labels:
   - especial
   - lama
   - mariana

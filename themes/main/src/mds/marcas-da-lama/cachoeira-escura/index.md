@@ -5,7 +5,7 @@ url: /marcas-da-lama/cachoeira-escura/
 title: "Cachoeira Escura: o direito à água"
 description: A falta de qualidade no recurso hídrico ainda é um dos principais problemas das cidades atingidas pela lama da Samarco
 author: Redação Brasil de Fato
-tags:
+labels:
   - especial
   - lama
   - mariana

@@ -5,7 +5,7 @@ url: /marcas-del-barro/barra-longa/
 title: "Barra Longa: zona de obras"
 description: Polvareda, ruido excesivo y constante, trastornos psicológicos y enfermedades respiratorias en la rutina de los pobladores
 author: Redação Brasil de Fato
-tags:
+labels:
   - especial
   - lama
   - mariana

@@ -5,7 +5,7 @@ url: /marcas-del-barro/mineria/
 title: "Lucro a cualquier costo: ¿accidente o tragedia anunciada?"
 description: "El 5 de noviembre de 2015 quedó marcado en la historia como el día de la mayor catástrofe ambiental de Brasil"
 author: Redação Brasil de Fato
-tags:
+labels:
   - especial
   - lama
   - mariana

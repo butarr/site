@@ -5,7 +5,7 @@ url: /marcas-da-lama/
 title: "Marcas da Lama"
 description: "Um ano de resistência na Bacia do Rio Doce"
 author: Redação Brasil de Fato
-tags:
+labels:
   - especial
   - lama
   - mariana

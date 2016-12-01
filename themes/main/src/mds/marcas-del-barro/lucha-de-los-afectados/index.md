@@ -5,7 +5,7 @@ url: /marcas-del-barro/lucha-de-los-afectados/
 title: "La resistencia en la cuenca del Río Doce"
 description: Los perjuicios en la vida de los afectados son incontables, e hicieron que la lucha se tornase parte del día a día de centenas de ellos
 author: Redação Brasil de Fato
-tags:
+labels:
   - especial
   - lama
   - mariana

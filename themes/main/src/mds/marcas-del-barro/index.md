@@ -5,7 +5,7 @@ url: /marcas-del-barro/
 title: "Las Marcas del Barro"
 description: "Un año de resistencia en la cuenca del Río Doce"
 author: Redação Brasil de Fato
-tags:
+labels:
   - especial
   - lama
   - mariana

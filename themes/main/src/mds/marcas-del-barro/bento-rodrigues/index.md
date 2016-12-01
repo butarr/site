@@ -5,7 +5,7 @@ url: /marcas-del-barro/bento-rodrigues
 title: "El adiós a Bento Rodrigues"
 description: El 5 de noviembre de 2015 quedó marcado en la historia como el día del mayor desastre ambiental de Brasil
 author: Redação Brasil de Fato
-tags:
+labels:
   - especial
   - lama
   - mariana

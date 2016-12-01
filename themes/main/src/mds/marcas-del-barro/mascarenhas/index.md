@@ -5,7 +5,7 @@ url: /marcas-del-barro/mascarenhas/
 title: "Mascarenhas: la muerte del Río Doce"
 description: Pescadores afectados por el desequilibrio ecológico que devastó el río y sus afluentes continúan sin su principal fuente de ingresos
 author: Redação Brasil de Fato
-tags:
+labels:
   - especial
   - lama
   - mariana

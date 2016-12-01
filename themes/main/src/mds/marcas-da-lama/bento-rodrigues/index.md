@@ -5,7 +5,7 @@ url: /marcas-da-lama/bento-rodrigues
 title: "O adeus a Bento Rodrigues"
 description: O dia 5 de novembro de 2015 ficou marcado na história como o maior desastre ambiental do país
 author: Redação Brasil de Fato
-tags:
+labels:
   - especial
   - lama
   - mariana

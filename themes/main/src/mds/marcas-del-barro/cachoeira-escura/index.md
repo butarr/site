@@ -5,7 +5,7 @@ url: /marcas-del-barro/cachoeira-escura/
 title: "Cachoeira Escura: el derecho al agua"
 description: La falta de calidad del recurso hídrico todavía es uno de los principales problemas de las ciudades afectadas por el barro de la Samarco
 author: Redação Brasil de Fato
-tags:
+labels:
   - especial
   - lama
   - mariana

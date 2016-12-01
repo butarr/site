@@ -5,7 +5,7 @@ url: /marcas-da-lama/mineracao/
 title: "Lucro a todo custo: acidente ou tragédia"
 description: Os prejuízos deixados na vida dos atingidos são incontáveis e chegaram a todos de maneiras peculiares
 author: Redação Brasil de Fato
-tags:
+labels:
   - especial
   - lama
   - mariana
