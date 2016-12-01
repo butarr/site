@@ -27,6 +27,7 @@ mixin metadata(post)
 
   span(itemscope itemtype="https://schema.org/NewsArticle")
     meta(itemprop="author" content= post.author)
+    - var published_at = utc_to_brt(page.date)
     meta(itemprop="dateModified" content=published_at.toISOString())
     meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{sitepath}/")
 
