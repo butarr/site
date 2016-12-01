@@ -13,35 +13,35 @@ block title
       - var state= "Rio de Janeiro"
     when "tabloid_pr"
       - var state= "Paraná"
-        
+
   if page.edition
-    title Edição #{page.edition} #{config.separator} #{state} #{config.separator} #{config.title}
+    title= `Edição ${page.edition} ${config.separator} ${state} ${config.separator} ${config.title}`
   else
-    title #{page.title}
-  
+    title= page.title
+
 block description
   if page.edition
     - var area_field = page.display_area
     case area_field
       when "tabloid_mg"
-        meta(name="description" content="Notícias da edição impressa #{page.edition} de Minas Gerais, com o que acontece na politica, cultura e dia a dia das cidades.")
+        meta(name="description" content=`Notícias da edição impressa ${page.edition} de Minas Gerais, com o que acontece na politica, cultura e dia a dia das cidades.`)
       when "tabloid_ce"
-        meta(name="description" content="Notícias da edição impressa #{page.edition} do Ceará, com o que acontece na politica, cultura e dia a dia das cidades.")
+        meta(name="description" content=`Notícias da edição impressa ${page.edition} do Ceará, com o que acontece na politica, cultura e dia a dia das cidades.`)
       when "tabloid_pe"
-        meta(name="description" content="Notícias da edição impressa #{page.edition} de Pernambuco, com o que acontece na politica, cultura e dia a dia das cidades.")
+        meta(name="description" content=`Notícias da edição impressa ${page.edition} de Pernambuco, com o que acontece na politica, cultura e dia a dia das cidades.`)
       when "tabloid_rj"
-        meta(name="description" content="Notícias da edição impressa #{page.edition} do Rio de Janeiro, com o que acontece na politica, cultura e dia a dia das cidades.")
+        meta(name="description" content=`Notícias da edição impressa ${page.edition} do Rio de Janeiro, com o que acontece na politica, cultura e dia a dia das cidades.`)
       when "tabloid_pr"
-        meta(name="description" content="Notícias da edição impressa #{page.edition} do Paraná, com o que acontece na politica, cultura e dia a dia das cidades.")
+        meta(name="description" content=`Notícias da edição impressa ${page.edition} do Paraná, com o que acontece na politica, cultura e dia a dia das cidades.`)
   else
     meta(name="description" content=page.title)
-      
+
 block canonical
-  link(href="https://www.brasildefato.com.br#{page.path}" rel="canonical")
-  
+  link(href=`https://www.brasildefato.com.br${page.path}` rel="canonical")
+
 block keywords
-  meta(name="keywords" content="#{page.display_area}")
-          
+  meta(name="keywords" content=page.display_area)
+
 append content
   - var area_field = page.display_area
   case area_field
@@ -55,13 +55,13 @@ append content
       - var acronym= "RJ"
     when "tabloid_pr"
       - var acronym= "PR"
-    
+
   main.grid-3-columns
     section#tabloid(itemscope itemtype="https://bib.schema.org/Newspaper")
       - var published_at = utc_to_brt(page.date)
       - var title = page.title
       h1.title(itemprop="headline")= title
-      
+
       time(datetime=published_at.toISOString())= full_date(published_at)
       if page.cover
         .issuu
@@ -78,22 +78,22 @@ append content
         each area in page.areas
           section(class= "list" itemscope itemtype="http://schema.org/ItemList")
             h2(class="section-name" itemprop="name")= area.name
-            
+
             - var position= 0
             each post in area.news
               - var published_at = utc_to_brt(post.date)
               a.news-item-link(href=post.url)
                 .news-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"  class= "divisor")
                   h3.offscreen= post.title
-                  meta(itemprop="url" content="https://www.brasildefato.com.br/#{post.url}")
-                  meta(itemprop="position" content="#{++position}")
-                  
+                  meta(itemprop="url" content=`https://www.brasildefato.com.br/${post.url}`)
+                  meta(itemprop="position" content= ++position)
+
                   span(itemscope itemtype="https://schema.org/NewsArticle")
                     meta(itemprop="author" content= post.author)
                     meta(itemprop="dateModified" content=published_at.toISOString())
                     meta(itemprop="datePublished" content=published_at.toISOString())
-                    meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br#{post.url}")
-                    
+                    meta(itemprop="mainEntityOfPage" content=`https://www.brasildefato.com.br${post.url}`)
+
                     span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
                       span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
                         meta(itemprop="url" content="https://www.brasildefato.com.br/img/logo-microdata.jpg")
@@ -101,14 +101,14 @@ append content
                         meta(itemprop="height" content="60")
                       meta(itemprop="name" content="Brasil de Fato")
                       link(itemprop="sameAs" href="https://www.brasildefato.com.br")
-                      
+
                     if post.cover
                       .image
                         - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-                        figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemscope itemtype="http://schema.org/ImageObject" itemprop="image")
+                        figure(style=`background-image: url(${post.cover.small});` aria-label=imageDescription title=imageDescription itemscope itemtype="http://schema.org/ImageObject" itemprop="image")
                           meta(itemprop="width" content="696")
                           meta(itemprop="height" content="464")
-                          meta(itemprop="url" content="http:#{post.cover.small}")
+                          meta(itemprop="url" content=`http:${post.cover.small}`)
                     .content(class="no-image" class= "divisor")
                       p.title(itemprop= "headline")= post.title
                       p.description(itemprop="description")= post.description

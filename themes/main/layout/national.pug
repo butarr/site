@@ -1,3 +1,5 @@
+extends base
+
 mixin columnist_item(column)
   if column
     - var columnist=site.data.columnists[column.columnist]
@@ -5,22 +7,22 @@ mixin columnist_item(column)
       .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
         .photo
           a(href=column.path, title="link para a pagina do colunista")
-            img(alt="Foto de #{columnist.name}" src=columnist.photo itemprop="image")
+            img(alt=`Foto de ${columnist.name}` src=columnist.photo itemprop="image")
         .column
           a(href=column.path, title="link para a pagina do colunista")
             span.name(itemprop="name")= columnist.name
           a(href=column.path itemprop="url")
             h2.title= column.title
-            
+
 mixin columnists_list
   a(href="/colunistas/", title="link para a pagina de colunistas")
     h2.section-name Colunistas
   +columnist_item(page.column_01)
   +columnist_item(page.column_02)
-  +columnist_item(page.column_03)      
-  a(href="/colunistas/" class="button" title="link para a pagina de colunistas") 
+  +columnist_item(page.column_03)
+  a(href="/colunistas/" class="button" title="link para a pagina de colunistas")
     span Leia Mais
-    
+
 mixin printed-news(page)
   h2.section-name Edições Impressas
   img(src="/img/newspaper.png" alt="jornal")
@@ -39,14 +41,14 @@ mixin printed-news(page)
   if page.rio_de_janeiro
     a(href= page.rio_de_janeiro.path itemprop="url")
       h3.button Rio de Janeiro
-      
+
 mixin newsletter(inputId)
   h2.section-name Boletim BdF
   p Receba notícias via e-mail
   #newsletter-input
     input(type=text id=inputId placeholder="Digite seu e-mail..." class="email")
     script(src="//i.btg360.com.br/lc.js")
-    a(class="button" onclick="registerOnAllIn('##{inputId}');")
+    a(class="button" onclick=`registerOnAllIn('#${inputId}');`)
       span Assinar
   .thanks-message
     i(class="fa fa-check" aria-hidden="true")
@@ -58,7 +60,7 @@ mixin newsletter(inputId)
 mixin small-picture (field, post, imageDescription)
   div(id=field class="featured-small-picture" class="divisor" class="spacing")
     a(itemprop="url" href=post.path)
-      figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image")
+      figure(style=`background-image: url(${post.cover.small});` aria-label=imageDescription title=imageDescription itemprop="image")
       h3.title(itemprop="headline")= post.title
 
 mixin featured-text-box (post)
@@ -66,12 +68,12 @@ mixin featured-text-box (post)
     div(class="featured-text-box")
       a(href=post.path itemprop="url")
         h3.title(itemprop="headline")= post.title
-        
+
 mixin footer-article(field, post, imageDescription)
   div(id=field class="article-footer" class="spacing")
     span.hat= post.hat
     a(href=post.path itemprop="url")
-      figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription)
+      figure(style=`background-image: url(${post.cover.small});` aria-label=imageDescription title=imageDescription)
       h3.title(itemprop="headline")= post.title
 
 mixin spotlight_01_mobile(post, type)
@@ -169,7 +171,6 @@ mixin adsense_03_mobile()
       != '(adsbygoogle = window.adsbygoogle || []).push({});'
       != '</script>'
 
-extends base
 append content
   h1.offscreen Brasil de Fato
   main.grid-5-columns
@@ -192,7 +193,7 @@ append content
 
         if page.last_news
           section#last-news-dynamic.last-news(itemscope itemtype="https://schema.org/ItemList" class="spacing" hidden)
-            a(itemprop="url" href="/ultimas_noticias/")  
+            a(itemprop="url" href="/ultimas_noticias/")
               h2.section-name Últimas notícias:
             ol
               each post in page.last_news
@@ -201,7 +202,7 @@ append content
                     p.title= post.title
 
       .container
-        .main    
+        .main
           if page.featured_01
             - var post=page.featured_01
             - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
@@ -221,7 +222,7 @@ append content
           if page.featured_03
             - var post=page.featured_03
             - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-            +small-picture("featured-3", post, imageDescription)   
+            +small-picture("featured-3", post, imageDescription)
 
           #featured-text-container(class="divisor" class= "spacing")
             if page.spotlight_01
@@ -237,20 +238,20 @@ append content
                 a(href=post.path itemprop="url")
                   h3.title(itemprop="headline")= post.title
                   p.description(itemprop="description")= post.description
-                  
+
             if page.spotlight_02
               +spotlight_02_mobile(page.spotlight_02)
-                        
+
             if page.featured_05
               - var post=page.featured_05
               +featured-text-box(post)
 
             if page.featured_06
               - var post=page.featured_06
-              +featured-text-box(post)  
+              +featured-text-box(post)
 
           if page.spotlight_01
-            +spotlight_01_desktop(page.spotlight_01) 
+            +spotlight_01_desktop(page.spotlight_01)
           else if site.data.advertisings.advertising_05
             +spotlight_01_desktop(site.data.advertisings.advertising_05, "http://schema.org/WPAdBlock")
           else
@@ -274,7 +275,7 @@ append content
             iframe(src="//www.youtube.com/embed?listType=playlist&list=PLytfbsQYLZpB5uDo8LRdjf9X9RfOlFw4d" allowfullscreen)
 
           section#images(itemscope itemtype="https://schema.org/ImageObject" class= "gallery-images" class="spacing")
-            h2.section-name Fotos    
+            h2.section-name Fotos
             iframe(itemprop="image" src="//www.flickr.com/slideShow/index.gne?user_id=brasildefato&set_id=72157665304017756", width="450", height="337")
 
           if page.featured_07
@@ -286,7 +287,7 @@ append content
             - var post=page.featured_08
             - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
             +footer-article("featured-8", post, imageDescription)
-          
+
           if page.photo_caption
             .photo-caption(class= "spacing")
               a(itemprop="url" href="/charges/")
@@ -299,7 +300,7 @@ append content
                   figcaption
                     p.subtitle(itemprop="caption")= post.cover.subtitle
                     p.credits(itemprop="author")= post.cover.credits
-           
+
           if page.last_news
             section.last-news#last-news-mobile(class= "spacing" itemscope itemtype="https://schema.org/ItemList")
               meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")

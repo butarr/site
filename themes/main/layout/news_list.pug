@@ -1,30 +1,30 @@
 extends base
 
 block title
-  title #{titlecase(page.area)} #{config.separator} #{config.title}
-  
+  title= `${titlecase(page.area)} ${config.separator} ${config.title}`
+
 block description
   - var area_field = page.area
   case area_field
     when "opinião"
-      meta(name="description" content="Artigos de personalidades e colaboradores de movimentos populares, organizações sociais e sindicais. Página #{page.current + 1}")
+      meta(name="description" content=`Artigos de personalidades e colaboradores de movimentos populares, organizações sociais e sindicais. Página ${page.current + 1}`)
     when "política"
-      meta(name="description" content="O que acontece na política e na economia do Brasil. Página #{page.current + 1}")
+      meta(name="description" content=`O que acontece na política e na economia do Brasil. Página ${page.current + 1}`)
     when "direitos humanos"
-      meta(name="description" content="Cobertura de violações de direitos fundamentais e da luta pelos direitos das classes oprimidas. Página #{page.current + 1}")
+      meta(name="description" content=`Cobertura de violações de direitos fundamentais e da luta pelos direitos das classes oprimidas. Página ${page.current + 1}`)
     when "cultura"
-      meta(name="description" content="Artes, cinema, música, teatro e diversas expressões e reflexões das culturas locais e nacionais. Página #{page.current + 1}")
+      meta(name="description" content=`Artes, cinema, música, teatro e diversas expressões e reflexões das culturas locais e nacionais. Página ${page.current + 1}`)
     when "geral"
-      meta(name="description" content="Notícias sobre educação, saúde, meio-ambiente, ciência, religião e mais. Página #{page.current + 1}")
+      meta(name="description" content=`Notícias sobre educação, saúde, meio-ambiente, ciência, religião e mais. Página ${page.current + 1}`)
     when "internacional"
-      meta(name="description" content="Notícias, entrevistas e artigos de diversos países ao redor do mundo, com enfoque para América Latina. Página #{page.current + 1}")
+      meta(name="description" content=`Notícias, entrevistas e artigos de diversos países ao redor do mundo, com enfoque para América Latina. Página ${page.current + 1}`)
     when "especiais"
-      meta(name="description" content="Coberturas multimídia de temas da atualidade e de fatos históricos que marcaram o Brasil e o mundo. Página #{page.current + 1}")
+      meta(name="description" content=`Coberturas multimídia de temas da atualidade e de fatos históricos que marcaram o Brasil e o mundo. Página ${page.current + 1}`)
     when "español"
-      meta(name="description" content="Las noticias, entrevistas y artículos de Brasil de Fato traducidas al español. Notas en parceria con medios populares y alternativos de América Latina. Página #{page.current + 1}")      
+      meta(name="description" content=`Las noticias, entrevistas y artículos de Brasil de Fato traducidas al español. Notas en parceria con medios populares y alternativos de América Latina. Página ${page.current + 1}`)
     when "radio"
-      meta(name="description" content="As notícias do Brasil de Fato em áudio e texto para rádios do Brasil e da América Latina em nossa Radioagência BdF. Página #{page.current +1}")
-     
+      meta(name="description" content=`As notícias do Brasil de Fato em áudio e texto para rádios do Brasil e da América Latina em nossa Radioagência BdF. Página ${page.current +1}`)
+
 block canonical
   - var area_field= page.area
   case area_field
@@ -47,20 +47,19 @@ block canonical
     when "radio"
       - var sitepath= "radio"
 
-  link(href="https://www.brasildefato.com.br/#{sitepath}/" rel="canonical")
-    
+  link(href=`https://www.brasildefato.com.br/${sitepath}/` rel="canonical")
+
 block keywords
-  meta(name="keywords" content="#{page.area}")
-      
+  meta(name="keywords" content=page.area)
+
 block open_graph
-  meta(property="og:title" content="#{page.area.toUpperCase()} | #{config.title}")
+  meta(property="og:title" content=`${page.area.toUpperCase()} | ${config.title}`)
   meta(property="og:description" content=config.description)
-  meta(property="og:image" content="#{config.url}/img/share-logo.png")
+  meta(property="og:image" content=`${config.url}/img/share-logo.png`)
 
-if page.area == "radio"
-  block bannerLogo
+block bannerLogo
+  if page.area == "radio"
     .banner-logo.banner-logo-radio
-
 
 append content
   main.grid-3-columns
@@ -68,24 +67,24 @@ append content
       - var language= "es"
     else
       - var language= null
-      
+
     section#news-list(class= "list" itemscope itemtype="http://schema.org/ItemList" lang= language)
       h1(class="page-name" itemprop="name")= page.area
-      
+
       - var position= 0
       each post in page.news
         - var published_at = utc_to_brt(post.date)
-        
+
         a.news-item-link(href=post.path)
           .news-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
-            meta(itemprop="url" content="https://www.brasildefato.com.br/#{post.path}")
-            meta(itemprop="position" content="#{++position}")
-            
+            meta(itemprop="url" content=`https://www.brasildefato.com.br/${post.path}`)
+            meta(itemprop="position" content= ++position)
+
             span(itemscope itemtype="https://schema.org/NewsArticle")
               meta(itemprop="author" content= post.author)
               meta(itemprop="dateModified" content=published_at.toISOString())
-              meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{sitepath}/")
-              
+              meta(itemprop="mainEntityOfPage" content=`https://www.brasildefato.com.br/${sitepath}/`)
+
               span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
                 span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
                   meta(itemprop="url" content="https://www.brasildefato.com.br/img/logo-microdata.jpg")
@@ -93,18 +92,18 @@ append content
                   meta(itemprop="height" content="60")
                 meta(itemprop="name" content="Brasil de Fato")
                 link(itemprop="sameAs" href="https://www.brasildefato.com.br")
-                
+
               if post.cover
                 .image
                   - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-                  figure(style="background-image: url(#{post.cover.small});" aria-label=imageDescription title=imageDescription itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
+                  figure(style=`background-image: url(${post.cover.small});` aria-label=imageDescription title=imageDescription itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
                     meta(itemprop="width" content="696")
                     meta(itemprop="height" content="464")
-                    meta(itemprop="url" content="http://www.brasildefato.com.br/#{post.cover.url}")
-                  
+                    meta(itemprop="url" content=`http://www.brasildefato.com.br/${post.cover.url}`)
+
               .content(class="no-image" class= "divisor")
                 h3.title(itemprop= "headline")= post.title
                 p.description(itemprop="description")= post.description
                 time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
-                
+
       include _partial/pagination

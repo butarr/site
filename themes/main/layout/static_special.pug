@@ -1,3 +1,5 @@
+extends base
+
 mixin picture(section)
   picture(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
     source(srcset=section.desktop media="(min-width: 690px)")
@@ -39,14 +41,14 @@ mixin displayLinks(section)
               +displayLinksPicture(item)
           else
             +displayLinksPicture(item)
-                        
+
 mixin displayNavigation(section)
   section.links.verticalSpacing
     h2.links-headline= section.title
     ul.links-container.links-container-navigation(itemscope itemtype="https://schema.org/ItemList")
         +displayNavigationLink(section.previous, "< Anterior")
         +displayNavigationLink(section.next, "Próximo >")
-          
+
 mixin displayNavigationLink(item, title)
   li.link.link-navigation(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
     meta(itemprop="position" content=category)
@@ -56,12 +58,12 @@ mixin displayNavigationLink(item, title)
         +displayLinksPicture(item)
     else
       h3.link-navigation-title= title
-      +displayLinksPicture(item)  
+      +displayLinksPicture(item)
 
 mixin displayMultimedia(section)
   section.multimedia.verticalSpacing
     .container
-      .video-wrapper.content-wrapper(style="padding-bottom: #{section.ratio};") !{section.embed}
+      .video-wrapper.content-wrapper(style=`padding-bottom: ${section.ratio};`) !{section.embed}
 
 mixin displayQuote(section)
   section.quote
@@ -70,18 +72,16 @@ mixin displayQuote(section)
       h3.quote-source= section.source
       h3.quote-source-info= section.source_info
 
-extends base
-
 block title
   block vars
   title= page.title
-  
+
 block description
   meta(name="description" content=page.description)
 
 block canonical
-  link(href="https://www.brasildefato.com.br#{page.url}" rel="canonical")
-  
+  link(href=`https://www.brasildefato.com.br${page.url}` rel="canonical")
+
 block keywords
   meta(name="keywords" content=page.labels)
 
@@ -96,7 +96,7 @@ block header
 append content
   main.special
     article(itemscope itemtype="http://schema.org/NewsArticle")
-      meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br#{page.url}")
+      meta(itemprop="mainEntityOfPage" content=`https://www.brasildefato.com.br${page.url}`)
       meta(itemprop="dateModified" content=published_at.toISOString())
       address(rel="author" itemprop="author")= page.author
       time(itemprop="datePublished" datetime=published_at.toISOString())= full_date(published_at)
@@ -110,7 +110,7 @@ append content
         link(itemprop="sameAs" href="https://www.brasildefato.com.br")
 
       figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
-        section#cover(style="background-image: url(#{page.cover.link});")
+        section#cover(style=`background-image: url(${page.cover.link});`)
         link(itemprop="url" href=page.cover.link)
         meta(itemprop="width" content="1200")
         meta(itemprop="height" content="800")
@@ -141,9 +141,9 @@ append content
               +displayNavigation(section)
 
         #share-special.share-special-top
-          a.share-icon(href='https://www.facebook.com/sharer/sharer.php?u=#{config.url}#{page.url}%3Freferer=bdf_button_facebook' target='_blank' title='Compartilhe no Facebook')
+          a.share-icon(href=`https://www.facebook.com/sharer/sharer.php?u=${config.url}${page.url}%3Freferer=bdf_button_facebook` target='_blank' title='Compartilhe no Facebook')
             img(src="/img/social-media/share-facebook.svg" alt="Compartilhe no Facebook")
-          a.share-icon(href='https://twitter.com/share?url=#{config.url}#{page.url}%3Freferer=bdf_button_twitter' target='_blank' title='Compartilhe no Twitter')
+          a.share-icon(href=`https://twitter.com/share?url=${config.url}${page.url}%3Freferer=bdf_button_twitter` target='_blank' title='Compartilhe no Twitter')
             img(src="/img/social-media/share-twitter.svg" alt="Compartilhe no Twitter")
-          a.share-icon.share-mobile(href='whatsapp://send?text=#{config.url}#{page.url}%3Freferer=bdf_button_whatsapp' data-action='share/whatsapp/share' title='Compartilhe no whatsapp')
+          a.share-icon.share-mobile(href=`whatsapp://send?text=${config.url}${page.url}%3Freferer=bdf_button_whatsapp` data-action='share/whatsapp/share' title='Compartilhe no whatsapp')
             img(src="/img/social-media/share-whatsapp.svg" alt="Compartilhe no WhatsApp")

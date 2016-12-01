@@ -1,3 +1,5 @@
+extends base
+
 mixin news_list(title, list)
   .other-bar
     h2.other-title= title
@@ -22,19 +24,17 @@ mixin adsense_04_desktop()
       != '(adsbygoogle = window.adsbygoogle || []).push({});'
       != '</script>'
 
-extends base
-
 block title
-  title #{titlecase(page.title)} #{config.separator} #{config.title}
+  title= `${titlecase(page.title)} ${config.separator} ${config.title}`
 
 block description
   meta(name="description" content=page.description)
-  
+
 block canonical
-  link(href="https://www.brasildefato.com.br#{page.url}" rel="canonical")
-  
+  link(href=`https://www.brasildefato.com.br${page.url}` rel="canonical")
+
 block keywords
-  meta(name="keywords" content="#{page.hat}, #{page.area}")
+  meta(name="keywords" content=`${page.hat}, ${page.area}`)
 
 block open_graph
   include _partial/open_graph_page
@@ -48,8 +48,8 @@ append content
       - var language= null
 
     article#post(itemscope itemtype="http://schema.org/NewsArticle" lang= language)
-      
-      meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br#{page.url}")
+
+      meta(itemprop="mainEntityOfPage" content=`https://www.brasildefato.com.br${page.url}`)
       div(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
         div(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
           meta(itemprop="url" content="https://brasildefato.com.br/img/logo-microdata.jpg")
@@ -57,7 +57,7 @@ append content
           meta(itemprop="height" content="60")
         meta(itemprop="name" content="Brasil de Fato")
         link(itemprop="sameAs" href="https://www.brasildefato.com.br")
-        
+
         - var area_field= page.area
         - var sitepath = page.area
         case area_field
@@ -72,21 +72,21 @@ append content
       if config.toggles._yEE1E9Vp_breadcrumb
         div#breadcrumb
           ol(itemscope itemtype="http://schema.org/BreadcrumbList")
-            li(itemprop="itemListElement" ) 
-              a( href="/")
+            li(itemprop="itemListElement")
+              a(href="/")
                 p Início
             li
               i(class="fa fa-chevron-right fa-lg")
             li(itemprop="itemListElement")
-              a(href="https://www.brasildefato.com.br/#{page.area}/")
-                p.breadcrumb-last #{sitepath}
-              
+              a(href=`https://www.brasildefato.com.br/${page.area}/`)
+                p.breadcrumb-last= sitepath
+
       header
         - var published_at = utc_to_brt(page.date)
         h3.hat(itemprop="about")= page.hat
         h1.title(itemprop="headline")= page.title
         h2.description(itemprop="description")= page.description
-        
+
         .details-bar
           .author-time
             address.author(rel="author" itemprop="author")= page.author

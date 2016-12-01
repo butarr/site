@@ -1,3 +1,5 @@
+extends base
+
 mixin audio-player(position, post)
   if post.audio
     .audio-item(id="item_#{position}")
@@ -38,8 +40,6 @@ mixin metadata(post)
         meta(itemprop="height" content="60")
       meta(itemprop="name" content="Brasil de Fato")
       link(itemprop="sameAs" href="https://www.brasildefato.com.br")
-
-extends base
 
 block title
   title Radioagência #{config.separator} #{config.title}

@@ -1,13 +1,13 @@
 extends base
 
 block title
-  title #{titlecase(page.title)} #{config.separator} Coluna #{config.separator} #{config.title}
-  
+  title= `${titlecase(page.title)} ${config.separator} Coluna ${config.separator} ${config.title}`
+
 block description
   meta(name="description" content=page.description)
-  
+
 block canonical
-  link(href="https://www.brasildefato.com.br#{page.url}" rel="canonical")
+  link(href=`https://www.brasildefato.com.br${page.url}` rel="canonical")
 
 block open_graph
   include _partial/open_graph_page
@@ -17,8 +17,8 @@ append content
     - var published_at = utc_to_brt(page.date)
     - var columnist = site.data.columnists[page.columnist]
     article#column(itemscope, itemtype="http://schema.org/BlogPosting")
-    
-      meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br#{page.url}")
+
+      meta(itemprop="mainEntityOfPage" content=`https://www.brasildefato.com.br${page.url}`)
       div(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
         div(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
           meta(itemprop="url" content="https://brasildefato.com.br/img/logo-microdata.jpg")
@@ -26,11 +26,11 @@ append content
           meta(itemprop="height" content="60")
         meta(itemprop="name" content="Brasil de Fato")
         link(itemprop="sameAs" href="https://www.brasildefato.com.br")
-        
+
       if config.toggles._yEE1E9Vp_breadcrumb
         div#breadcrumb
           ol(itemscope itemtype="http://schema.org/BreadcrumbList")
-            li(itemprop="itemListElement" ) 
+            li(itemprop="itemListElement" )
               a( href="/")
                 p Início
             li
@@ -38,19 +38,19 @@ append content
             li(itemprop="itemListElement")
               a(href="/colunistas/")
                 p.breadcrumb-last Colunistas
-  
+
       span.hat Coluna
-      
+
       .column-header
         h1.title(itemprop="headline")= page.title
-        .person 
+        .person
           img.profile-image(alt="Imagem de perfil do Colunista", src=columnist.photo)
           .name-and-time
             span.name(itemprop="author")= columnist.name
             time(datetime=published_at.toISOString())= full_date(published_at)
             meta(itemprop="datePublished", content=published_at.toISOString())
             meta(itemprop="dateModified", content=published_at.toISOString())
-            
+
       if page.cover
         figure(itemscope itemprop="image" itemtype="https://schema.org/ImageObject")
           - var imageCaption = page.cover.subtitle + ' / ' + page.cover.credits
@@ -59,8 +59,7 @@ append content
           figcaption(itemprop="caption")= imageCaption
           meta(itemprop="width" content="696")
           meta(itemprop="height" content="434")
-          
+
       .content(itemprop="articleBody")
         blockquote.description(itemprop="description")= page.description
         != page.content
-      

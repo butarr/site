@@ -1,0 +1,9 @@
+.share-bar
+  p.share-title()= 'Compartilhe'
+  .share-icons-container
+    a.share-icon(href=`https://www.facebook.com/sharer/sharer.php?u=${config.url}${page.url}%3Freferer=bdf_button_facebook` target='_blank' title='Compartilhe no Facebook')
+      img(src="/img/social-media/share-facebook.svg" alt="Compartilhe no Facebook")
+    a.share-icon(href=`https://twitter.com/share?url=${config.url}${page.url}%3Freferer=bdf_button_twitter` target='_blank' title='Compartilhe no Twitter')
+      img(src="/img/social-media/share-twitter.svg" alt="Compartilhe no Twitter")
+    a.share-icon.share-mobile(href=`whatsapp://send?text=${config.url}${page.url}%3Freferer=bdf_button_whatsapp` data-action='share/whatsapp/share' title='Compartilhe no whatsapp')
+      img(src="/img/social-media/share-whatsapp.svg" alt="Compartilhe no WhatsApp")

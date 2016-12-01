@@ -5,6 +5,6 @@
       if n > 0
         - var thisUrl= 'pagina' + (n+1) + '.html'
       if n != page.current
-        a.pagination.button(href=thisUrl) #{n+1}
+        a.pagination.button(href=thisUrl)= n + 1
       else
-        a.pagination.button.button-selected(href=thisUrl) #{n+1}
+        a.pagination.button.button-selected(href=thisUrl)= n + 1

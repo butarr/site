@@ -1,7 +1,7 @@
 - var published_at = utc_to_brt(page.date)
 
 meta(property="og:url" content=url)
-meta(property="og:title" content="#{page.title} #{config.separator} #{config.title}")
+meta(property="og:title" content=`${page.title} ${config.separator} ${config.title}`)
 meta(property="og:type" content="article")
 meta(property="article:published_time" content=published_at.toISOString())
 meta(property="article:publisher" content="https://".concat(facebook_url))
@@ -16,6 +16,6 @@ if page.area
   meta(property="article:section" content=page.area)
 
 if page.cover
-  meta(property="og:image" content="https:#{page.cover.link}")
+  meta(property="og:image" content=`https:${page.cover.link}`)
 else
-  meta(property="og:image" content="#{config.url}/img/share-logo.png")
+  meta(property="og:image" content=`${config.url}/img/share-logo.png`)
