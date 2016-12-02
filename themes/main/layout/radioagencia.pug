@@ -2,15 +2,15 @@ extends base
 
 mixin audio-player(position, post)
   if post.audio
-    .audio-item(id="item_#{position}")
+    .audio-item(id=`item_${position}`)
       .player
-        iframe.widget(id="frame_#{position}" src="")
+        iframe.widget(id=`frame_${position}` src="")
         .controls
           .buttons
             .loader
-            a.play(id="play_#{position}" onclick="setWidgetSrc(#{position},'#{post.audio}', 'play');")
+            a.play(id=`play_${position}` onclick=`setWidgetSrc(${position},'${post.audio}', 'play');`)
               img(src="/img/icons/play.svg" alt="Play")
-            a.pause(onclick="pause(#{position});")
+            a.pause(onclick=`pause(${position});`)
               img(src="/img/icons/pause.svg" alt="Pausar")
           .progress-bar
             span.timeProgress 0:00
@@ -19,19 +19,19 @@ mixin audio-player(position, post)
               a(href=post.audio target="_blank")
                 p via SoundCloud
             span.duration 0:00
-          a.download(onclick="setWidgetSrc(#{position},'#{post.audio}', 'download');")
+          a.download(onclick=`setWidgetSrc(${position},'${post.audio}', 'download');`)
             img(src="/img/icons/download.svg" alt="Baixar")
             h4 Baixar
 
 mixin metadata(post)
-  meta(itemprop="url" content="https://www.brasildefato.com.br/#{post.path}")
-  meta(itemprop="position" content="#{++position}")
+  meta(itemprop="url" content=`https://www.brasildefato.com.br/${post.path}`)
+  meta(itemprop="position" content=`${++position}`)
 
   span(itemscope itemtype="https://schema.org/NewsArticle")
     meta(itemprop="author" content= post.author)
     - var published_at = utc_to_brt(page.date)
     meta(itemprop="dateModified" content=published_at.toISOString())
-    meta(itemprop="mainEntityOfPage" content="https://www.brasildefato.com.br/#{sitepath}/")
+    meta(itemprop="mainEntityOfPage" content=`https://www.brasildefato.com.br/${sitepath}/`)
 
     span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
       span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
@@ -42,7 +42,7 @@ mixin metadata(post)
       link(itemprop="sameAs" href="https://www.brasildefato.com.br")
 
 block title
-  title Radioagência #{config.separator} #{config.title}
+  title=`Radioagência ${config.separator} ${config.title}`
 
 block description
   meta(name="description" content="As notícias do Brasil de Fato em áudio e texto para rádios do Brasil e da América Latina em nossa Radioagência BdF.")
@@ -54,9 +54,9 @@ block keywords
   meta(name="keywords" content="Radioagência")
 
 block open_graph
-  meta(property="og:title" content="Radioagência | #{config.title}")
+  meta(property="og:title" content=`Radioagência | ${config.title}`)
   meta(property="og:description" content=config.description)
-  meta(property="og:image" content="#{config.url}/img/share-logo.png")
+  meta(property="og:image" content=`${config.url}/img/share-logo.png`)
 
 append content
   main.grid-radio
@@ -64,7 +64,7 @@ append content
       - var sidebar = 'sidebar_disabled'
       if config.toggles.radio_sidebar
         - sidebar = 'sidebar_enabled'
-      div(class="main_#{sidebar}")
+      div(class=`main_${sidebar}`)
         if page.featured_01
           - var featured = page.featured_01
           .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
@@ -98,7 +98,7 @@ append content
           .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
             .photo
               a(href=column.path, title="link para a pagina do colunista")
-                img(alt="Foto de #{columnist.name}" src=columnist.photo itemprop="image")
+                img(alt=`Foto de ${columnist.name}` src=columnist.photo itemprop="image")
             .column
               a(href=column.path, title="link para a pagina do colunista")
                 span.name(itemprop="name")= columnist.name
