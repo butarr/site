@@ -2,6 +2,10 @@ var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var YAML = require('js-yaml');
 var fs = require('fs');
+var events = require('events');
+
+//remove warning about max events listeners
+events.EventEmitter.prototype._maxListeners = 20;
 
 module.exports = function (baseDir) {
     return function() {
