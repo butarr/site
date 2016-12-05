@@ -7,14 +7,17 @@ function setResetPlayerHandler(playerDiv) {
   }
 }
 
-function handleProgressBarClick(widget) {
+function handleProgressBarClick(audioElement) {
   return function(e) {
-    widget.getDuration(function(duration) {
-      var offsetX = e.pageX - $(e.target).offset().left;
-      var offset = offsetX / e.target.offsetWidth;
-      widget.seekTo(duration * offset);
-    });
+    var offsetX = e.pageX - $(e.target).offset().left;
+    var offset = offsetX / e.target.offsetWidth;
+    audioElement.currentTime = audioElement.duration * offset;
   };
+}
+
+function setProgressBarHandler(audioElement, playerDiv) {
+  var progressBar = playerDiv.find('progress')[0];
+  progressBar.addEventListener('click', handleProgressBarClick(audioElement));
 }
 
 function setUpdateProgressHandler(audioElement, playerDiv) {
@@ -25,13 +28,6 @@ function setUpdateProgressHandler(audioElement, playerDiv) {
     progressBar.value = (audioElement.currentTime / audioElement.duration) * 100;
     timeProgress.text(toMinutesAndSeconds(audioElement.currentTime * 1000));
   };
-}
-
-function setProgressBarHandler(widget, playerDiv) {
-  return function() {
-    var progressBar = playerDiv.find('progress')[0];
-    progressBar.addEventListener('click', handleProgressBarClick(widget));
-  }
 }
 
 function toMinutesAndSeconds(durationMilliseconds) {
@@ -92,6 +88,7 @@ function setup(){
     audioElement.oncanplay = showPlayButton(index);
     audioElement.ontimeupdate = setUpdateProgressHandler(audioElement, $(this));
     audioElement.onended = setResetPlayerHandler($(this));
+    setProgressBarHandler(audioElement, $(this));
   });
 }
 
