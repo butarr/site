@@ -39,18 +39,18 @@ function toMinutesAndSeconds(durationMilliseconds) {
 }
 
 function play(id) {
-  document.getElementById('audio_' + id).play();
   $('#item_' + id + ' .play').hide();
   $('#item_' + id + ' .pause').show();
+  $('#audio_' + id).play();
 }
 
 function pause(id) {
-  document.getElementById('audio_' + id).pause();
   $('#item_' + id + ' .pause').hide();
   $('#item_' + id + ' .play').show();
+  $('#audio_' + id).pause();
 }
 
-function showPlayButton(id){
+function showPlayer(id){
   $('#item_' + id + ' .loader').hide();
   $('#item_' + id + ' .player').show();
 }
@@ -83,9 +83,10 @@ function setup(){
       duration.text(toMinutesAndSeconds(track.duration));
     };
 
-    SC.resolve(trackUrl).then(getStreamUrl);
+    SC.resolve(trackUrl).then(getStreamUrl).then(function() {
+      audioElement.oncanplay = showPlayer(index);
+    });
 
-    audioElement.oncanplay = showPlayButton(index);
     audioElement.ontimeupdate = setUpdateProgressHandler(audioElement, $(this));
     audioElement.onended = setResetPlayerHandler($(this));
     setProgressBarHandler(audioElement, $(this));
