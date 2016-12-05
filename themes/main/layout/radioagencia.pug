@@ -5,10 +5,11 @@ mixin audio-player(position, post)
     .audio-item(id=`item_${position}`)
       .player
         iframe.widget(id=`frame_${position}` src="")
+        audio.audio(src=post.audio id=`audio_${position}`)
         .controls
           .buttons
             .loader
-            a.play(id=`play_${position}` onclick=`setWidgetSrc(${position},'${post.audio}', 'play');`)
+            a.play(id=`play_${position}` onclick=`play(${position});`)
               img(src="/img/icons/play.svg" alt="Play")
             a.pause(onclick=`pause(${position});`)
               img(src="/img/icons/pause.svg" alt="Pausar")
@@ -19,7 +20,7 @@ mixin audio-player(position, post)
               a(href=post.audio target="_blank")
                 p via SoundCloud
             span.duration 0:00
-          a.download(onclick=`setWidgetSrc(${position},'${post.audio}', 'download');`)
+          a.download
             img(src="/img/icons/download.svg" alt="Baixar")
             h4 Baixar
 
