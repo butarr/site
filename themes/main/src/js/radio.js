@@ -77,15 +77,14 @@ function setup(){
     var duration = $(this).find('.duration');
     var trackUrl = $(audioElement).data('soundcloudLink');
 
-    var getStreamUrl = function (track) {
+    var setupAudioTag = function (track) {
+      audioElement.oncanplay = showPlayer(index);
       audioElement.src = track.stream_url + '?client_id=' + clientId;
       download.href = track.download_url + '?client_id=' + clientId;
       duration.text(toMinutesAndSeconds(track.duration));
     };
 
-    SC.resolve(trackUrl).then(getStreamUrl).then(function() {
-      audioElement.oncanplay = showPlayer(index);
-    });
+    SC.resolve(trackUrl).then(setupAudioTag);
 
     audioElement.ontimeupdate = setUpdateProgressHandler(audioElement, $(this));
     audioElement.onended = setResetPlayerHandler($(this));
