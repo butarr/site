@@ -5,7 +5,7 @@ mixin audio-player(position, post)
     .audio-item(id=`item_${position}`)
       .loader
       .player
-        audio.audio(src=post.audio id=`audio_${position}`)
+        audio.audio(data-soundcloud-link=post.audio id=`audio_${position}`)
         .controls
           .buttons
             a.play(id=`play_${position}` onclick=`play(${position});`)

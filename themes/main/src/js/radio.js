@@ -75,7 +75,7 @@ function setup(){
     var audioElement = $(this).find('.audio')[0];
     var download = $(this).find('.download')[0];
     var duration = $(this).find('.duration');
-    var trackUrl = audioElement.src;
+    var trackUrl = $(audioElement).data('soundcloudLink');
 
     var getStreamUrl = function (track) {
       audioElement.src = track.stream_url + '?client_id=' + clientId;
