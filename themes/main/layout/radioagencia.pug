@@ -3,11 +3,11 @@ extends base
 mixin audio-player(position, post)
   if post.audio
     .audio-item(id=`item_${position}`)
+      .loader
       .player
         audio.audio(src=post.audio id=`audio_${position}`)
         .controls
           .buttons
-            .loader
             a.play(id=`play_${position}` onclick=`play(${position});`)
               img(src="/img/icons/play.svg" alt="Play")
             a.pause(onclick=`pause(${position});`)

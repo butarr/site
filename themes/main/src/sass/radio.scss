@@ -89,6 +89,13 @@
   }
 }
 
+#radio .audio-item {
+  display: -webkit-flex; //Old Safari
+  display: flex;
+  -webkit-justify-content: center; //Old Safari
+  justify-content: center;
+}
+
 #radio .image {
   width: 100%;
   @include image-rounded-responsive(300px);
@@ -136,11 +143,8 @@
 }
 
 #radio .player {
+  display: none;
   width: 100%;
-
-  .widget {
-    display: none;
-  }
 }
 
 #radio .controls {
@@ -151,7 +155,6 @@
   width: 100%;
 
   .play {
-    display: none;
     img {
       height: 40px;
     }

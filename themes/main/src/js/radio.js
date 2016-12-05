@@ -52,7 +52,7 @@ function pause(id) {
 
 function showPlayButton(id){
   $('#item_' + id + ' .loader').hide();
-  $('#play_' + id).show();
+  $('#item_' + id + ' .player').show();
 }
 
 function highlightsPageOnFocus(){
