@@ -120,7 +120,7 @@
 }
 
 #radio .loader {
-  display: none;
+  display: inline-block;
   border: 5px solid $loader-background;
   border-top: 6px solid $loader-color;
   border-radius: 50%;
@@ -150,8 +150,11 @@
   align-items: center;
   width: 100%;
 
-  .play img {
-    height: 40px;
+  .play {
+    display: none;
+    img {
+      height: 40px;
+    }
   }
 
   .pause {
