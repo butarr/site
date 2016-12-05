@@ -89,6 +89,13 @@
   }
 }
 
+#radio .audio-item {
+  display: -webkit-flex; //Old Safari
+  display: flex;
+  -webkit-justify-content: center; //Old Safari
+  justify-content: center;
+}
+
 #radio .image {
   width: 100%;
   @include image-rounded-responsive(300px);
@@ -120,7 +127,7 @@
 }
 
 #radio .loader {
-  display: none;
+  display: inline-block;
   border: 5px solid $loader-background;
   border-top: 6px solid $loader-color;
   border-radius: 50%;
@@ -136,11 +143,8 @@
 }
 
 #radio .player {
+  display: none;
   width: 100%;
-
-  .widget {
-    display: none;
-  }
 }
 
 #radio .controls {
@@ -150,8 +154,10 @@
   align-items: center;
   width: 100%;
 
-  .play img {
-    height: 40px;
+  .play {
+    img {
+      height: 40px;
+    }
   }
 
   .pause {
