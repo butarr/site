@@ -1,3 +1,12 @@
+function setResetPlayerHandler(playerDiv) {
+  return function() {
+    playerDiv.find('.pause').hide();
+    playerDiv.find('.play').show();
+    playerDiv.find('progress')[0].value = 0;
+    playerDiv.find('.timeProgress').text('0:00');
+  }
+}
+
 function handleProgressBarClick(widget) {
   return function(e) {
     widget.getDuration(function(duration) {
@@ -82,6 +91,7 @@ function setup(){
 
     audioElement.oncanplay = showPlayButton(index);
     audioElement.ontimeupdate = setUpdateProgressHandler(audioElement, $(this));
+    audioElement.onended = setResetPlayerHandler($(this));
   });
 }
 
