@@ -78,10 +78,10 @@ function setup(){
     var trackUrl = $(audioElement).data('soundcloudLink');
 
     var setupAudioTag = function (track) {
-      audioElement.oncanplay = showPlayer(index);
       audioElement.src = track.stream_url + '?client_id=' + clientId;
       download.href = track.download_url + '?client_id=' + clientId;
       duration.text(toMinutesAndSeconds(track.duration));
+      showPlayer(index);
     };
 
     SC.resolve(trackUrl).then(setupAudioTag);
