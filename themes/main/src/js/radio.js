@@ -8,13 +8,13 @@ function handleProgressBarClick(widget) {
   };
 }
 
-function setUpdateProgressHandler(playerDiv) {
+function setUpdateProgressHandler(audioElement, playerDiv) {
   var progressBar = playerDiv.find('progress')[0];
   var timeProgress = playerDiv.find('.timeProgress');
 
-  return function(sound) {
-    progressBar.value = sound.relativePosition * 100;
-    timeProgress.text(toMinutesAndSeconds(sound.currentPosition));
+  return function() {
+    progressBar.value = (audioElement.currentTime / audioElement.duration) * 100;
+    timeProgress.text(toMinutesAndSeconds(audioElement.currentTime * 1000));
   };
 }
 
@@ -81,6 +81,7 @@ function setup(){
     SC.resolve(trackUrl).then(getStreamUrl);
 
     audioElement.oncanplay = showPlayButton(index);
+    audioElement.ontimeupdate = setUpdateProgressHandler(audioElement, $(this));
   });
 }
 
