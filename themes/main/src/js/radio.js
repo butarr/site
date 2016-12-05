@@ -33,15 +33,6 @@ function toMinutesAndSeconds(durationMilliseconds) {
   return durationMinutes + ':' + durationSeconds;
 }
 
-function setDurationCount(widget, playerDiv) {
-  return function() {
-    widget.getDuration(function(duration) {
-      var durationCount = playerDiv.find('.duration');
-      durationCount.text(toMinutesAndSeconds(duration));
-    });
-  }
-}
-
 function play(id) {
   document.getElementById('audio_' + id).play();
   $('#item_' + id + ' .play').hide();
@@ -78,12 +69,13 @@ function setup(){
   $('.audio-item').each(function(index) {
     var audioElement = $(this).find('.audio')[0];
     var download = $(this).find('.download')[0];
+    var duration = $(this).find('.duration');
     var trackUrl = audioElement.src;
 
     var getStreamUrl = function (track) {
       audioElement.src = track.stream_url + '?client_id=' + clientId;
       download.href = track.download_url + '?client_id=' + clientId;
-      var duration = track.duration;
+      duration.text(toMinutesAndSeconds(track.duration));
     };
 
     SC.resolve(trackUrl).then(getStreamUrl);
