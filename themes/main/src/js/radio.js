@@ -39,15 +39,15 @@ function toMinutesAndSeconds(durationMilliseconds) {
 }
 
 function play(id) {
+  $('#audio_' + id)[0].play();
   $('#item_' + id + ' .play').hide();
   $('#item_' + id + ' .pause').show();
-  $('#audio_' + id).play();
 }
 
 function pause(id) {
+  $('#audio_' + id)[0].pause();
   $('#item_' + id + ' .pause').hide();
   $('#item_' + id + ' .play').show();
-  $('#audio_' + id).pause();
 }
 
 function showPlayer(id){
