@@ -75,7 +75,7 @@ append content
                 a(href=featured.url itemprop="url" class="news-radio-link")
                   h2.title-featured(itemprop= "headline")= featured.title
                   p.description(itemprop="description")= featured.description
-            if post.audio
+            if featured.audio
               +audio-player(0, featured)
 
         - var position= 1
