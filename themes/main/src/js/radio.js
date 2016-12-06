@@ -50,9 +50,9 @@ function pause(id) {
   $('#item_' + id + ' .play').show();
 }
 
-function showPlayer(id){
-  $('#item_' + id + ' .loader').hide();
-  $('#item_' + id + ' .player').show();
+function showPlayer(playerDiv){
+  playerDiv.find('.loader').hide();
+  playerDiv.find('.player').show();
 }
 
 function highlightsPageOnFocus(){
@@ -67,28 +67,27 @@ function setup(){
   var clientId = 'cUa40O3Jg3Emvp6Tv4U6ymYYO50NUGpJ';
 
   // Initializes SounCloud SDK
-  SC.initialize({
-    client_id: clientId
-  });
+  SC.initialize({ client_id: clientId });
 
   $('.audio-item').each(function(index) {
-    var audioElement = $(this).find('.audio')[0];
-    var download = $(this).find('.download')[0];
-    var duration = $(this).find('.duration');
+    var playerDiv = $(this);
+    var audioElement = playerDiv.find('.audio')[0];
+    var download = playerDiv.find('.download')[0];
+    var duration = playerDiv.find('.duration');
     var trackUrl = $(audioElement).data('soundcloudLink');
 
     var setupAudioTag = function (track) {
       audioElement.src = track.stream_url + '?client_id=' + clientId;
       download.href = track.download_url + '?client_id=' + clientId;
       duration.text(toMinutesAndSeconds(track.duration));
-      showPlayer(index);
+      showPlayer(playerDiv);
     };
 
     SC.resolve(trackUrl).then(setupAudioTag);
 
-    audioElement.ontimeupdate = setUpdateProgressHandler(audioElement, $(this));
-    audioElement.onended = setResetPlayerHandler($(this));
-    setProgressBarHandler(audioElement, $(this));
+    audioElement.ontimeupdate = setUpdateProgressHandler(audioElement, playerDiv);
+    audioElement.onended = setResetPlayerHandler(playerDiv);
+    setProgressBarHandler(audioElement, playerDiv);
   });
 }
 
