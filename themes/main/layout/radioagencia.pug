@@ -23,9 +23,9 @@ mixin audio-player(position, post)
             img(src="/img/icons/download.svg" alt="Baixar")
             h4 Baixar
 
-mixin metadata(post)
+mixin metadata(position, post)
   meta(itemprop="url" content=`https://www.brasildefato.com.br/${post.path}`)
-  meta(itemprop="position" content=`${++position}`)
+  meta(itemprop="position" content=position)
 
   span(itemscope itemtype="https://schema.org/NewsArticle")
     - var published_at = utc_to_brt(page.date)
@@ -66,7 +66,7 @@ append content
         if page.featured_01
           - var featured = page.featured_01
           .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
-            +metadata(featured)
+            +metadata(0, featured)
             div#featured-audio-news
               .image
                 - var imageDescription= featured.cover.subtitle + ' - Créditos: ' + featured.cover.credits
@@ -78,15 +78,16 @@ append content
                   p.description(itemprop="description")= featured.description
             +audio-player(0, featured)
 
-        - var position= 0
+        - var position= 1
         each post in page.latest_news
           - var published_at = utc_to_brt(post.date)
           .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
-            +metadata(post)
+            +metadata(position, post)
             a(href=post.url itemprop="url" class="news-radio-link")
               h2.title(itemprop= "headline")= post.title
               p.description(itemprop="description")= post.description
             +audio-player(position, post)
+            - position++
 
       if config.toggles.radio_sidebar
         aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
