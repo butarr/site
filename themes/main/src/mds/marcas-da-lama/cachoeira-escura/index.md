@@ -1,5 +1,5 @@
 ---
-layout: static_special
+layout: special
 area: especial
 url: /marcas-da-lama/cachoeira-escura/
 title: "Cachoeira Escura: o direito à água"

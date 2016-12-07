@@ -1,5 +1,5 @@
 ---
-layout: static_special
+layout: special
 area: especial
 url: /marcas-del-barro/bento-rodrigues
 title: "El adiós a Bento Rodrigues"

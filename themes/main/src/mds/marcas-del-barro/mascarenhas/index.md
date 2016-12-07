@@ -1,5 +1,5 @@
 ---
-layout: static_special
+layout: special
 area: especial
 url: /marcas-del-barro/mascarenhas/
 title: "Mascarenhas: la muerte del Río Doce"

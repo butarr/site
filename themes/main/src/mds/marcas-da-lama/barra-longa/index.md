@@ -1,5 +1,5 @@
 ---
-layout: static_special
+layout: special
 area: especial
 url: /marcas-da-lama/barra-longa/
 title: "Barra Longa: a cidade canteiro de obras"

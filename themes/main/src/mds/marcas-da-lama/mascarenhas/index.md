@@ -1,5 +1,5 @@
 ---
-layout: static_special
+layout: special
 area: especial
 url: /marcas-da-lama/mascarenhas/
 title: "Mascarenhas: a morte do Rio Doce"
