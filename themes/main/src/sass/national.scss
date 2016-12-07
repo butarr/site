@@ -326,7 +326,7 @@
   display: block;
   margin-bottom: 10px;
 
-  @include media-query(FOUR) {
+  @include media-query(THREE) {
     display: none;
   }
 
