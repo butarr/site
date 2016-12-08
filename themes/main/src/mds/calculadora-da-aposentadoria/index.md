@@ -24,7 +24,7 @@ date: 2016-10-28T22:58:23.677Z
 published_at: 2016-10-28T22:58:23.677Z
 
 sections:
-  - type: multimedia
+  - type: code
     embed: "
     <style>
       .label {

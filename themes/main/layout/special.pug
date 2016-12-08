@@ -65,6 +65,10 @@ mixin displayMultimedia(section)
     .container
       .video-wrapper.content-wrapper(style=`padding-bottom: ${section.ratio};`) !{section.embed}
 
+mixin displayCode(section)
+  section.multimedia.verticalSpacing
+    .container !{section.embed}
+
 mixin displayQuote(section)
   section.quote
     blockquote(itemprop="description")= section.text
@@ -139,6 +143,8 @@ append content
               +displayQuote(section)
             when 'navigation'
               +displayNavigation(section)
+            when 'code'
+              +displayCode(section)
 
         #share-special.share-special-top
           a.share-icon(href=`https://www.facebook.com/sharer/sharer.php?u=${config.url}${page.url}%3Freferer=bdf_button_facebook` target='_blank' title='Compartilhe no Facebook')
