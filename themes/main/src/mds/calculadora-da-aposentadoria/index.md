@@ -162,8 +162,8 @@ sections:
         message('retired', retired);
       }
       else {
-        message('new_value', result_new);
-        message('old_value', result_old);
+        message('new_value', result_new, gender_input);
+        message('old_value', result_old, gender_input);
       }
 
     }
@@ -271,12 +271,18 @@ sections:
      return Math.round(result_old);
     };
 
-    function message(element, text){
-      if (element == 'new_value') {
+    function message(element, text, gender){
+      if ((element == 'new_value') && (gender == 'F')) {
         document.getElementById(element).innerHTML = '<p class=\"result_text\">Se a reforma for aprovada,  você se aposentará com</p>' + '<p id=\"newrulevalue\">' + text + '</p>' + '<p class=\"result_text\">anos</p>' + '<img src=\"//farm1.staticflickr.com/372/31398257901_d881d27df4_b.jpg\" height=\"200px\">';
       }
-      else if (element == 'old_value') {
+      else if ((element == 'old_value') && (gender== 'F')){
         document.getElementById(element).innerHTML = '<p class=\"result_text\">Pela legislação atual, você se aposentará com</p>' + '<p id=\"oldrulevalue\">' + text  + '</p>' + '<p class=\"result_text\">anos</p>' + '<img src=\"//farm1.staticflickr.com/548/31142760470_f12634f473_b.jpg\" height=\"200px\">';
+      }
+      else if((element == 'new_value') && (gender == 'M')) {
+        document.getElementById(element).innerHTML = '<p class=\"result_text\">Se a reforma for aprovada,  você se aposentará com</p>' + '<p id=\"newrulevalue\">' + text + '</p>' + '<p class=\"result_text\">anos</p>' + '<img src=\"//farm6.staticflickr.com/5779/31398530051_535089e55c_b.jpg\" height=\"200px\">';
+      }
+      else if ((element == 'old_value') && (gender== 'M')){
+        document.getElementById(element).innerHTML = '<p class=\"result_text\">Pela legislação atual, você se aposentará com</p>' + '<p id=\"oldrulevalue\">' + text  + '</p>' + '<p class=\"result_text\">anos</p>' + '<img src=\"//farm1.staticflickr.com/143/31514149425_55beb2c8c4_b.jpg\" height=\"200px\">';
       }
       else {
         document.getElementById(element).innerHTML = '<p class=\"result_text\">' + text + '</p>';
