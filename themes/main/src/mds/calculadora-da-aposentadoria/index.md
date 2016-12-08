@@ -106,12 +106,12 @@ sections:
         margin-bottom: 10px;
       }
 
-
       .result_text {
         font-weight: bold;
         text-transform: uppercase;
         color: #99999;
         text-align: center;
+        padding-top: 10px;
       }
 
     </style>
@@ -151,7 +151,7 @@ sections:
       var result_old = calculadoraOld(gender_input, age_input, contribution_input, sector_input);
       var result_new = calculadoraNew(gender_input, age_input, contribution_input, sector_input);
       if(result_old <= age_input){
-        var retired = 'Você já pode se aposentar! As novas Regras não se aplicam.';
+        var retired = 'Você já pode se aposentar!<br> As novas Regras não se aplicam.';
         message('retired', retired);
       }
       else {
