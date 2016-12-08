@@ -68,7 +68,7 @@ sections:
         flex-wrap: wrap;
         justify-content: center;
         font-weight: bold;
-        margin: 50px;
+        margin: 30px 10px;
       }
 
       @media screen and (min-width: 690px) {
@@ -82,7 +82,7 @@ sections:
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+        padding: 30px 10px;
         flex-grow: 1;
       }
 
@@ -91,11 +91,13 @@ sections:
       #newrulevalue {
         color: rgba(195, 59, 83, 1);
         font-size: 10rem;
+        line-height: 1.1;
       }
 
       #oldrulevalue {
         color: #8dc2c9;
         font-size: 10rem;
+        line-height: 1.1;
       }
 
       .foot-note {
@@ -104,11 +106,6 @@ sections:
         margin-bottom: 10px;
       }
 
-      .date {
-        text-align: right;
-        text-transform: italic;
-        font-size: 1rem;
-      }
 
       .result_text {
         font-weight: bold;
@@ -138,7 +135,7 @@ sections:
       <p id='retired'></p>
     </div>
     <p class='foot-note'>*Está é uma simulação que faz o cálculo aproximado tendo como base idade e tempo de contribuição. </p>
-    <p class='date'>Atualizado em: 8 de Dezembro de 2016</p>
+    <p class='foot-note'>Atualizado em: 8 de Dezembro de 2016</p>
 
 
     <script>
