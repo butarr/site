@@ -273,10 +273,10 @@ sections:
 
     function message(element, text){
       if (element == 'new_value') {
-        document.getElementById(element).innerHTML = '<p class=\"result_text\">Se a reforma for aprovada,  você se aposentará com</p>' + '<p id=\"newrulevalue\">' + text + '</p>' + '<p class=\"result_text\">anos</p>';
+        document.getElementById(element).innerHTML = '<p class=\"result_text\">Se a reforma for aprovada,  você se aposentará com</p>' + '<p id=\"newrulevalue\">' + text + '</p>' + '<p class=\"result_text\">anos</p>' + '<img src=\"//farm1.staticflickr.com/372/31398257901_d881d27df4_b.jpg\" height=\"200px\">';
       }
       else if (element == 'old_value') {
-        document.getElementById(element).innerHTML = '<p class=\"result_text\">Pela legislação atual, você se aposentará com</p>' + '<p id=\"oldrulevalue\">' + text  + '</p>' + '<p class=\"result_text\">anos</p>';
+        document.getElementById(element).innerHTML = '<p class=\"result_text\">Pela legislação atual, você se aposentará com</p>' + '<p id=\"oldrulevalue\">' + text  + '</p>' + '<p class=\"result_text\">anos</p>' + '<img src=\"//farm1.staticflickr.com/548/31142760470_f12634f473_b.jpg\" height=\"200px\">';
       }
       else {
         document.getElementById(element).innerHTML = '<p class=\"result_text\">' + text + '</p>';
