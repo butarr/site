@@ -3,7 +3,7 @@ layout: special
 area: especial
 url: /calculadora-da-aposentadoria/
 title: "Calculadora da Aposentadoria"
-description: Comparação entre a atual legislação e a proposta da reforma da previdência
+description: Saiba o que muda em relação a atual legislação e a Reforma da Previdência de Temer
 author: Laboratório de Tecnologia do Brasil de Fato
 labels:
   - previdência
@@ -67,17 +67,25 @@ sections:
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        font-weight: bold;
       }
 
+      @media screen and (min-width: 690px) {
+        .results {
+          flex-wrap: nowrap;
+        }
+      }
 
 
       #new_value, #old_value {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 40px;
-        min-width: 200px;
+        padding: 20px;
+        flex-grow: 1;
       }
+
+
 
       #newrulevalue {
         color: rgba(195, 59, 83, 1);
@@ -87,6 +95,25 @@ sections:
       #oldrulevalue {
         color: #8dc2c9;
         font-size: 10rem;
+      }
+
+      .foot-note {
+        font-style: italic;
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+
+      .date {
+        text-align: right;
+        text-transform: italic;
+        font-size: 1rem;
+      }
+
+      .result_text {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #99999;
+        text-align: center;
       }
 
     </style>
@@ -105,10 +132,13 @@ sections:
     </div>
 
     <div class='results' id='id_results'>
-      <p id='new_value'></p>
       <p id='old_value'></p>
+      <p id='new_value'></p>
       <p id='retired'></p>
     </div>
+    <p class='foot-note'>*Está é uma simulação que faz o cálculo aproximado tendo como base idade e tempo de contribuição. </p>
+    <p class='date'>Atualizado em: 8 de Dezembro de 2016</p>
+
 
     <script>
     function initialize_calculation(){
@@ -238,10 +268,10 @@ sections:
 
     function message(element, text){
       if (element == 'new_value') {
-        document.getElementById(element).innerHTML = '<p>Se a reforma for aprovada, você</p>' + '<p id=\"newrulevalue\">' + text + '</p>' + '<p>anos</p>';
+        document.getElementById(element).innerHTML = '<p class=\"result_text\">Se a reforma for aprovada,  você se aposentará com</p>' + '<p id=\"newrulevalue\">' + text + '</p>' + '<p class=\"result_text\">anos</p>';
       }
       else if (element == 'old_value') {
-        document.getElementById(element).innerHTML = '<p>Pelas legislação atual:</p>' + '<p id=\"oldrulevalue\">' + text  + '</p>' + '<p>anos</p>';
+        document.getElementById(element).innerHTML = '<p class=\"result_text\">Pelas legislação atual, você se aposentará com</p>' + '<p id=\"oldrulevalue\">' + text  + '</p>' + '<p class=\"result_text\">anos</p>';
       }
       else {
         document.getElementById(element).innerHTML = '<p>' + text + '</p>';
