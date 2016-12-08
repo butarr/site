@@ -13,10 +13,10 @@ labels:
   - simulador
   - temer
 cover:
-  link: //farm6.staticflickr.com/5461/30680878693_f14be850d9_b.jpg
-  thumbnail: //farm6.staticflickr.com/5461/30680878693_f14be850d9_t.jpg
-  medium: //farm6.staticflickr.com/5461/30680878693_f14be850d9_z.jpg
-  small: //farm6.staticflickr.com/5461/30680878693_f14be850d9_n.jpg
+  link: //farm1.staticflickr.com/133/31474160716_d719eb3a8d_b.jpg
+  thumbnail: //farm1.staticflickr.com/133/31474160716_d719eb3a8d_t.jpg
+  medium: //farm1.staticflickr.com/133/31474160716_d719eb3a8d_z.jpg
+  small: //farm1.staticflickr.com/133/31474160716_d719eb3a8d_n.jpg
   title: Pórtico da entrada da cidade de Barra Longa em meio a lama
   credits: Lucas Bois
   subtitle: Trilhos de trem
