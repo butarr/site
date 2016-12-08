@@ -294,5 +294,14 @@ sections:
 
     </script>
 "
-    ratio: 350%
+
+  - type: links
+    title: "Matérias sobre a Reforma da Previdência"
+    links:
+      - title: "Reforma da Previdência: deputados analisam pontos prejudiciais à classe trabalhadora"
+        url: /2016/12/07/deputados-da-oposicao-criticam-reforma-da-previdencia/
+        cover: //farm6.staticflickr.com/5478/31446092906_39165dc1a8_z.jpg
+      - title: "Está sobrando (muito) dinheiro na Previdência; entenda os números"
+        url: /2016/07/22/esta-sobrando-muito-dinheiro-na-previdencia-entenda-os-numeros/
+        cover: //farm9.staticflickr.com/8611/27855260333_de7e65813b_z.jpg
 ---
