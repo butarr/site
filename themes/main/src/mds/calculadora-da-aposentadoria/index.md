@@ -3,7 +3,7 @@ layout: special
 area: especial
 url: /calculadora-da-aposentadoria/
 title: "Calculadora da Aposentadoria"
-description: Saiba o que muda em relação a atual legislação e a Reforma da Previdência de Temer
+description: Saiba o que muda em relação a atual legislação e a Reforma da Previdência pelo governo de Michel Temer (PMDB)
 author: Laboratório de Tecnologia do Brasil de Fato
 labels:
   - previdência
@@ -12,6 +12,7 @@ labels:
   - calculadora
   - simulador
   - temer
+  - PMDB
 cover:
   link: //farm1.staticflickr.com/133/31474160716_d719eb3a8d_b.jpg
   thumbnail: //farm1.staticflickr.com/133/31474160716_d719eb3a8d_t.jpg
