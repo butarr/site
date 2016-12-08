@@ -114,8 +114,13 @@ sections:
         padding-top: 10px;
       }
 
+      .descriptive {
+        padding-bottom: 20px;
+      }
+
     </style>
     <div class='form'>
+      <p class='descriptive'>A proposta de reforma da Previdência editada pelo governo não eleito de Michel Temer começou a tramitar oficialmente na Câmara nesta terça-feira (6).</p><p class='descriptive'>Batizada de Proposta de Emenda Constitucional (PEC) 287/2016, entre as alterações, ela pretende implementar: a contribuição mínima de 25 anos e idade mínima de 65 anos para aposentadoria, igualmente para homens e mulheres; a contribuição de 49 anos para ter direito à aposentadoria integral; e a proibição do acúmulo de benefícios, como pensão e aposentadoria.</p><p class='descriptive'>Se aprovada, a nova forma valerá para mulheres de até 45 anos e homens com idade até 50. Os contribuintes que se encontram acima dessa faixa etária ficarão sujeitos a regras especiais de transição.</p><p class='descriptive'>Para exemplificar as mudanças que a proposta quer implementar na atual legislação, o Brasil de Fato lança nesta quinta-feira (8) a Calculadora da Aposentadoria. Nela, o leitor poderá comparar as idades mínimas de contribuição para ter direito ao benefício. Confira!</p>
       <p class='label'>Você é:<p/>
       <input class='radio' type='radio' name='gender' value='F' checked> Mulher
       <input class='radio' type='radio' name='gender' value='M'> Homem<br>
