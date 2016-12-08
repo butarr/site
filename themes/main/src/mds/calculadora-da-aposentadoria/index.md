@@ -68,6 +68,7 @@ sections:
         flex-wrap: wrap;
         justify-content: center;
         font-weight: bold;
+        margin: 50px;
       }
 
       @media screen and (min-width: 690px) {
@@ -274,7 +275,7 @@ sections:
         document.getElementById(element).innerHTML = '<p class=\"result_text\">Pelas legislação atual, você se aposentará com</p>' + '<p id=\"oldrulevalue\">' + text  + '</p>' + '<p class=\"result_text\">anos</p>';
       }
       else {
-        document.getElementById(element).innerHTML = '<p>' + text + '</p>';
+        document.getElementById(element).innerHTML = '<p class=\"result_text\">' + text + '</p>';
       }
     };
 
@@ -289,5 +290,5 @@ sections:
 
     </script>
 "
-    ratio: 300%
+    ratio: 350%
 ---
