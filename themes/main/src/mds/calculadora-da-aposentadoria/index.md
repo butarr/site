@@ -63,13 +63,30 @@ sections:
 
       }
 
+      .results {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+
+
+      #new_value, #old_value {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        min-width: 200px;
+      }
+
       #newrulevalue {
         color: rgba(195, 59, 83, 1);
         font-size: 10rem;
       }
 
       #oldrulevalue {
-        color:
+        color: #8dc2c9;
+        font-size: 10rem;
       }
 
     </style>
@@ -242,5 +259,5 @@ sections:
 
     </script>
 "
-    ratio: 200%
+    ratio: 300%
 ---
