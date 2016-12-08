@@ -128,7 +128,7 @@ sections:
       <input class='radio' type='radio' name='gender' value='M'> Homem<br>
       <p class='label'>Sua idade:</p>
       <input class='number' type='number' id='age' min='16' max='120' value='16'><br>
-      <p class='label'>Quantos anos trabalhou com carteira assinada:</p>
+      <p class='label'>Quantos anos trabalhou com carteira assinada ou contribuiu para o INSS:</p>
       <input class='number' type='number' id='contribution' min='0' max='104' value='0'><br>
       <p class='label'>Qual seu regime de trabalho:<p/>
       <input class='radio' type='radio' name='sector' value='PRIVATE' checked> CLT
