@@ -30,7 +30,7 @@ body {
 
     @include site-top-spacing($HEADER-HEIGHT-CONTRACTED);
 
-    @include media-query (FOUR) {
+    @include media-query (THREE) {
         @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-TWO-LINES-DESKTOP);
     }
 

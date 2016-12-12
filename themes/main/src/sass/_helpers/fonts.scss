@@ -738,7 +738,7 @@ $number-size: 1.3rem;
       font: 400 italic 1.3rem/#{$line-separation-big} $family-serif;
       text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
 
-      @include media-query(FOUR){
+      @include media-query(THREE){
         font-size: 1.5rem;
       }
     }

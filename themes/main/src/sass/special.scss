@@ -29,7 +29,7 @@
     position: fixed;
     z-index: -1;
 
-    @include media-query(FOUR) {
+    @include media-query(THREE) {
       height: 450px;
     }
   }
@@ -52,9 +52,8 @@
     height: 370px;
     padding: 30px;
 
-    @include media-query(FOUR) {
+    @include media-query(THREE) {
       height: 450px;
-      padding: 122px;
     }
 
     div.description {
@@ -108,7 +107,7 @@
 
     p + p {
       padding-top: 20px;
-      @include media-query(FOUR){
+      @include media-query(THREE){
         padding-top: 30px;
       }
     }
@@ -236,7 +235,7 @@
   .share-special-top {
     position: fixed;
     bottom: -60px;
-    @include media-query(FOUR) {
+    @include media-query(THREE) {
       top: -100px;
       bottom: auto;
     }
@@ -245,7 +244,7 @@
   .share-special-middle {
     position: fixed;
     bottom: 0;
-    @include media-query(FOUR) {
+    @include media-query(THREE) {
       top: 130px;
       bottom: auto;
     }
@@ -253,7 +252,7 @@
 
   .share-special-bottom {
     position: relative;
-    @include media-query(FOUR) {
+    @include media-query(THREE) {
       position: fixed;
     }
   }
@@ -281,7 +280,7 @@
       margin: 0 8px;
     }
 
-    @include media-query(FOUR) {
+    @include media-query(THREE) {
       -webkit-flex-direction: column; //Old Safari
       flex-direction: column;
       -webkit-flex-wrap: wrap; //Old Safari
@@ -305,7 +304,7 @@
       }
     }
 
-    @include media-query(FOUR) {
+    @include media-query(THREE) {
       width: 55px;
       margin-left: 32px;
     }
