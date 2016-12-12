@@ -114,7 +114,11 @@ append content
         link(itemprop="sameAs" href="https://www.brasildefato.com.br")
 
       figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
-        section#cover(style=`background-image: url(${page.cover.link});`)
+        section#cover.cover-desktop(style=`background-image: url(${page.cover.link});`)
+        if page.cover.mobile
+          section#cover.cover-mobile(style=`background-image: url(${page.cover.mobile.link});`)
+        else
+          section#cover.cover-mobile(style=`background-image: url(${page.cover.link});`)
         link(itemprop="url" href=page.cover.link)
         meta(itemprop="width" content="1200")
         meta(itemprop="height" content="800")
