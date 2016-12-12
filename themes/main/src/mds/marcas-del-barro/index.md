@@ -1,5 +1,5 @@
 ---
-layout: static_special
+layout: special
 area: especial
 url: /marcas-del-barro/
 title: "Las Marcas del Barro"

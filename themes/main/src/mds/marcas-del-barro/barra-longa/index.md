@@ -1,5 +1,5 @@
 ---
-layout: static_special
+layout: special
 area: especial
 url: /marcas-del-barro/barra-longa/
 title: "Barra Longa: zona de obras"

@@ -1,5 +1,5 @@
 ---
-layout: static_special
+layout: special
 area: especial
 url: /marcas-del-barro/lucha-de-los-afectados/
 title: "La resistencia en la cuenca del Río Doce"

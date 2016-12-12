@@ -1,5 +1,5 @@
 ---
-layout: static_special
+layout: special
 area: especial
 url: /marcas-del-barro/cachoeira-escura/
 title: "Cachoeira Escura: el derecho al agua"

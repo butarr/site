@@ -1,5 +1,5 @@
 ---
-layout: static_special
+layout: special
 area: especial
 url: /marcas-da-lama/luta-dos-atingidos/
 title: "A resistência na Bacia do Rio Doce"

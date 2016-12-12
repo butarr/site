@@ -1,5 +1,5 @@
 ---
-layout: static_special
+layout: special
 area: especial
 url: /marcas-del-barro/mineria/
 title: "Lucro a cualquier costo: ¿accidente o tragedia anunciada?"

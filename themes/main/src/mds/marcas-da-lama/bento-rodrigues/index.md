@@ -1,5 +1,5 @@
 ---
-layout: static_special
+layout: special
 area: especial
 url: /marcas-da-lama/bento-rodrigues
 title: "O adeus a Bento Rodrigues"

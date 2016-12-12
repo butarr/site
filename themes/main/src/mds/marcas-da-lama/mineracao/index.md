@@ -1,5 +1,5 @@
 ---
-layout: static_special
+layout: special
 area: especial
 url: /marcas-da-lama/mineracao/
 title: "Lucro a todo custo: acidente ou tragédia"
