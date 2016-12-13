@@ -3,7 +3,7 @@
 const http = require('http');
 const notifyValimate = require('valimate-notifier');
 var Hexo = require('hexo');
-var hexo = new Hexo (process.cwd(), {});
+var hexo = new Hexo(process.cwd(), {});
 
 hexo.init().then(function(){
   hexo.call('generate',{}).then(function(){

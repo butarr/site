@@ -42,10 +42,10 @@ mixin printed-news(page)
     a(href= page.rio_de_janeiro.path itemprop="url")
       h3.button Rio de Janeiro
 
-mixin newsletter(inputId)
+mixin newsletter(inputClass)
   h2.section-name Boletim BdF
   p Receba notícias via e-mail
-  #newsletter-input
+  .newsletter-input
     input(type=text id=inputId placeholder="Digite seu e-mail..." class="email")
     script(src="//i.btg360.com.br/lc.js")
     a(class="button" onclick=`registerOnAllIn('#${inputId}');`)
