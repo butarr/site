@@ -38,6 +38,8 @@
   "devDependencies": {
     "gulp-clean-css": "^2.0.6",
     "pug-lint": "^2.2.2",
-    "sass-lint": "^1.8.2"
+    "sass-lint": "^1.8.2",
+    "valimate": "^2.2.2",
+    "valimate-notifier": "^1.0.2"
   }
 }
