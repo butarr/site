@@ -1,6 +1,6 @@
 {
     "localAppServer": {
-        "entryPoint": "app.js",
+        "entryPoint": "valimate-config.js",
 
         "env": {
             "TEST": "true"

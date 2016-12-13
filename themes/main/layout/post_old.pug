@@ -1,16 +1,16 @@
 extends base
 
 block title
-  title #{titlecase(page.title)} #{config.separator} #{config.title}
+  title= `${titlecase(page.title)} ${config.separator} ${config.title}`
 
 block description
   meta(name="description" content=page.description)
   
 block canonical
-  link(href="https://www.brasildefato.com.br#{page.url}" rel="canonical")
+  link(href=`https://www.brasildefato.com.br${page.url}` rel="canonical")
 
 block keywords
-  meta(name="keywords" content="#{page.area}")
+  meta(name="keywords" content=`${page.area}`)
 
 block open_graph
   include _partial/open_graph_page
