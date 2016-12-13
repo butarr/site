@@ -1,21 +1,21 @@
 extends base
 
 block title
-  title #{titlecase(page.area)} #{config.separator} #{config.title}
+  title= `${titlecase(page.area)} ${config.separator} ${config.title}`
   
 block description
   meta(name="description" content="Charges e ilustrações com a análise política dos acontecimentos")
   
 block canonical
-  link(href="https://www.brasildefato.com.br/#{page.area}/" rel="canonical")
+    link(href=`https://www.brasildefato.com.br/${page.area}/` rel="canonical")
   
 block keywords
   meta(name="keywords" content="crítica, ironia, humor, sátira, caricatura, cartoon, ilustração, política, economia, direitos humanos, cotidiano")
 
 block open_graph
-  meta(property="og:title" content="#{titlecase(page.area)} | #{config.title}")
+  meta(property="og:title" content=`${titlecase(page.area)} | ${config.title}`)
   meta(property="og:description" content=config.description)
-  meta(property="og:image" content="#{config.url}/img/share-logo.png")
+  meta(property="og:image" content=`${config.url}/img/share-logo.png`)
   
 append content
   main.grid-4-columns
@@ -28,12 +28,12 @@ append content
         
         each item in page.list
           .image-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement")
-            meta(itemprop="url" content="https://www.brasildefato.com.br/#{item.url}")
-            meta(itemprop="position" content="#{++position}")
+            meta(itemprop="url" content=`https://www.brasildefato.com.br/${item.url}`)
+            meta(itemprop="position" content=`${++position}`)
             
             - var imageDescription= item.cover.subtitle + " - Créditos: " + item.cover.credits
             
-            a(itemprop="url" href="#{config.url}#{item.url}")
+            a(itemprop="url" href=`${config.url}${item.url}`)
               figure(itemscope itemtype="https://schema.org/ImageObject")
                 img(src=item.cover.medium alt=imageDescription title=imageDescription itemprop="image")
                 figcaption

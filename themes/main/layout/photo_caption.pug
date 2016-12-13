@@ -1,7 +1,7 @@
 extends base
 
 block title
-  title #{titlecase(page.cover.subtitle)} #{config.separator} #{config.title}
+  title= `${titlecase(page.cover.subtitle)} ${config.separator} ${config.title}`
   
 block description
   meta(name="description" content="Charges e ilustrações com a análise política dos acontecimentos")
