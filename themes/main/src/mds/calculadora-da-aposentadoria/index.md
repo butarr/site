@@ -194,8 +194,9 @@ sections:
       var age_time = 65 - age;
       var contribution_time = 25 - contribution;
       var time_left = Math.max(age_time, contribution_time);
-      var time_left_100 = time_left + 24;
-      var result = [time_left, time_left_100];
+
+      var time_left_maximum  = Number(49) - Number(contribution);
+      var result = [time_left, time_left_maximum];
       return result;
     };
 
@@ -225,9 +226,16 @@ sections:
     function calcularCLTPorContribuicao(age, contribution, gender) {
       var gender_age = (gender == 'F' ? 30 : 35 );
       var gender_contribution = (gender == 'F' ? 85 : 95 );
+
       var time_left_minimum = Number(gender_age) - Number(contribution);
-      var time_left_maximum = Math.round((Number(gender_contribution) - Number(age) - Number(contribution))/Number(2));
+      time_left_minimum = Math.max(0, time_left_minimum);
+
+      var time_left_maximum = Number(gender_contribution) - Number(age) - Number(contribution);
+      time_left_maximum = Math.round(Number(time_left_maximum)/Number(2));
+      time_left_maximum = Math.max(0, time_left_maximum);
+
       var time_left = [time_left_minimum, time_left_maximum];
+
       return time_left;
     };
 
@@ -251,10 +259,10 @@ sections:
      }
      else {
        var partial = calculadoraOld(gender, age, contribution, service);
-       var result_new = [];
-       for(var i=0; i<2; i++){
-         result_new[i] = (Number(1.5) * Math.abs(Number(age) - Number(partial[i])));
-       }
+       var minimum = (Number(1.5) * Math.abs(Number(age) - Number(partial[0])));
+       var integral = calculateNewRules(age, contribution);
+       var maximum = integral[1];
+       var result_new = [minimum, maximum];
      }
 
      result_new = retorna_idade(result_new, age);
@@ -332,6 +340,7 @@ sections:
     }
 
     </script>
+
 "
 
   - type: links
