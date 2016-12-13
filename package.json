@@ -32,7 +32,7 @@
   "scripts": {
     "start": "gulp",
     "test": "npm run sass-lint; npm run pug-lint; valimate",
-    "sass-lint": "./node_modules/sass-lint/bin/sass-lint.js '**/*.scss' -v -q",
+    "sass-lint": "./node_modules/sass-lint/bin/sass-lint.js 'themes/**/*.scss' -v -q",
     "pug-lint": "./node_modules/pug-lint/bin/pug-lint themes/main/layout/**/*"
   },
   "devDependencies": {
