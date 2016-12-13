@@ -29,6 +29,7 @@ mixin metadata(position, post)
   span(itemscope itemtype="https://schema.org/NewsArticle")
     - var published_at = utc_to_brt(page.date)
     meta(itemprop="mainEntityOfPage" content=`https://www.brasildefato.com.br/${sitepath}/`)
+    meta(itemprop="dateModified" content=published_at.toISOString())
 
     span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
       span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
@@ -64,6 +65,7 @@ append content
       div(class=`main_${sidebar}`)
         if page.featured_01
           - var featured = page.featured_01
+          - var published_at_featured = utc_to_brt(featured.date)
           .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
             +metadata(0, featured)
             div#featured-audio-news
@@ -75,19 +77,19 @@ append content
                 a(href=featured.url itemprop="url" class="news-radio-link")
                   h2.title-featured(itemprop= "headline")= featured.title
                   p.description(itemprop="description")= featured.description
-                time.date(datetime=featured.published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+                time.date(datetime=published_at_featured.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at_featured)
             if featured.audio
               +audio-player(0, featured)
 
         - var position= 1
         each post in page.latest_news
-          - var published_at = utc_to_brt(post.date)
+          - var published_at_post = utc_to_brt(post.date)
           .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
             +metadata(position, post)
             a(href=post.url itemprop="url" class="news-radio-link")
               h2.title(itemprop= "headline")= post.title
               p.description(itemprop="description")= post.description
-            time.date(datetime=post.published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+            time.date(datetime=published_at_post.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at_post)
             if post.audio
               +audio-player(position, post)
             - position++
