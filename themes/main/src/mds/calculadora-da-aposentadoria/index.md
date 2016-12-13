@@ -226,7 +226,7 @@ sections:
       var gender_age = (gender == 'F' ? 30 : 35 );
       var gender_contribution = (gender == 'F' ? 85 : 95 );
       var time_left_minimum = Number(gender_age) - Number(contribution);
-      var time_left_maximum = Number(gender_contribution) - (Number(age) + Number(contribution) );
+      var time_left_maximum = Math.round((Number(gender_contribution) - Number(age) - Number(contribution))/Number(2));
       var time_left = [time_left_minimum, time_left_maximum];
       return time_left;
     };
