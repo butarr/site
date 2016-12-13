@@ -550,6 +550,17 @@ $number-size: 1.3rem;
       color:$link-neutral-color-hover;
     }
   }
+
+  .progress-bar {
+    p, span {
+      font: normal #{$audio-info-size}/#{$line-separation-small} $family-sans;
+    }
+  }
+
+  h4 {
+    font: bold #{$details-size}/#{$line-separation-small} $family-sans;
+    color: $download-link;
+  }
 }
 
 @mixin __column(){
