@@ -119,7 +119,7 @@ sections:
     </style>
     <div class='form'>
       <p class='descriptive'>A proposta de reforma da Previdência editada pelo governo não eleito de Michel Temer começou a tramitar oficialmente na Câmara nesta terça-feira (6).</p>
-      <p class='descriptive'>Para exemplificar as mudanças que a proposta quer implementar na atual legislação, o Brasil de Fato lança nesta quinta-feira (8) a Calculadora da Aposentadoria. Nela, o leitor poderá comparar as idades mínimas de contribuição para ter direito ao benefício parcial. Confira!</p>
+      <p class='descriptive'>Para exemplificar as mudanças que a proposta quer implementar na atual legislação, o Brasil de Fato lança nesta quinta-feira (8) a Calculadora da Aposentadoria. Confira!</p>
       <p class='label'>Você é:<p/>
       <input class='radio' type='radio' name='gender' value='F' checked> Mulher
       <input class='radio' type='radio' name='gender' value='M'> Homem<br>
