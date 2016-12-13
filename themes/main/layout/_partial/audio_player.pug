@@ -1,0 +1,21 @@
+mixin audio-player(position, audio)
+  .audio-item(id=`item_${position}`)
+    .loader
+    .player
+      audio.audio(preload="none" data-soundcloud-link=audio id=`audio_${position}`)
+      .controls
+        .buttons
+          a.play(onclick=`play(${position});`)
+            img(src="/img/icons/play.svg" alt="Play")
+          a.pause(onclick=`pause(${position});`)
+            img(src="/img/icons/pause.svg" alt="Pausar")
+        .progress-bar
+          span.timeProgress 0:00
+          .progress-and-source
+            progress(max='100', value='0')
+            a(href=audio target="_blank")
+              p via SoundCloud
+          span.duration 0:00
+        a.download
+          img#download(src="/img/icons/download.svg" alt="Baixar")
+          h4 Baixar
