@@ -159,3 +159,11 @@
     display: inline-block;
   }
 }
+
+#post .audio-item {
+  margin-bottom: $PARAGRAPH-SPACE;
+
+  p {
+    margin: 0;
+  }
+}
