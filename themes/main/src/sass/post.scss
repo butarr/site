@@ -15,11 +15,6 @@
   p {
     margin-bottom: $PARAGRAPH-SPACE;
   }
-
-  img {
-    width: 100% !important;
-    height: inherit !important;
-  }
 }
 
 #post .content {
@@ -36,6 +31,11 @@
   .text-content {
     width: 100%;
     @include column-lateral-spacing();
+  }
+
+  img {
+    width: 100% !important;
+    height: inherit !important;
   }
 }
 
@@ -58,6 +58,11 @@
     @include media-query(THREE) {
       @include site-lateral-spacing();
       max-width: 3 * $COLUMN-WIDTH;
+    }
+
+    img {
+      width: 100%;
+      height: inherit;
     }
 
     .img-container {
