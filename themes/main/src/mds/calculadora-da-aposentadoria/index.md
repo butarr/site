@@ -242,8 +242,8 @@ sections:
       time_left_maximum = Math.round(Number(time_left_maximum)/Number(2));
       time_left_maximum = Math.max(0, time_left_maximum);
 
-      if(time_left_minimum > time_left_maximum){
-        time_left_minimum = time_left_maximum;
+      if(time_left_maximum < time_left_minimum){
+        time_left_maximum = time_left_minimum;
       }
 
       var time_left = [time_left_minimum, time_left_maximum];
