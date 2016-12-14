@@ -100,7 +100,8 @@ append content
           .share-mobile
             include _partial/social-media-share
 
-        +audio-player(0, page.audio)
+        if page.audio
+          +audio-player(0, page.audio)
 
         if page.cover
           figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
