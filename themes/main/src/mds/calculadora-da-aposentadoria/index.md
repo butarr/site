@@ -193,10 +193,14 @@ sections:
     function calculateNewRules(age, contribution) {
       var age_time = 65 - age;
       var contribution_time = 25 - contribution;
-      var time_left = Math.max(age_time, contribution_time);
+      var time_left_minimum = Math.max(age_time, contribution_time);
 
       var time_left_maximum  = Number(49) - Number(contribution);
-      var result = [time_left, time_left_maximum];
+
+      if(time_left_minimum > time_left_maximum){
+        time_left_minimum = time_left_maximum;
+      }
+      var result = [time_left_minimum, time_left_maximum];
       return result;
     };
 
@@ -218,6 +222,10 @@ sections:
         time_left_maximum = gender_limit;
       }
 
+      if(time_left_minimum > time_left_maximum){
+        time_left_minimum = time_left_maximum;
+      }
+
       var time_left = [time_left_minimum, time_left_maximum];
 
       return time_left;
@@ -234,6 +242,10 @@ sections:
       time_left_maximum = Math.round(Number(time_left_maximum)/Number(2));
       time_left_maximum = Math.max(0, time_left_maximum);
 
+      if(time_left_minimum > time_left_maximum){
+        time_left_minimum = time_left_maximum;
+      }
+
       var time_left = [time_left_minimum, time_left_maximum];
 
       return time_left;
@@ -247,6 +259,11 @@ sections:
       var time_left_minimum = Math.max(age_time, age_contribution_time);
 
       var time_left_maximum = Number(time_left_minimum) + Number(30);
+
+      if(time_left_minimum > time_left_maximum){
+        time_left_minimum = time_left_maximum;
+      }
+
       var time_left = [time_left_minimum, time_left_maximum];
       return time_left;
     }
@@ -340,7 +357,6 @@ sections:
     }
 
     </script>
-
 "
 
   - type: links
