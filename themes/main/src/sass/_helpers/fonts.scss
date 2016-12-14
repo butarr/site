@@ -550,7 +550,9 @@ $number-size: 1.3rem;
       color:$link-neutral-color-hover;
     }
   }
+}
 
+@mixin __audio_player() {
   .progress-bar {
     p, span {
       font: normal #{$audio-info-size}/#{$line-separation-small} $family-sans;
@@ -881,16 +883,6 @@ $number-size: 1.3rem;
 }
 
 @mixin __radio() {
-  h4 {
-    font: bold #{$details-size}/#{$line-separation-small} $family-sans;
-    color: $download-link;
-  }
-
-  .progress-bar {
-    p, span {
-      font: normal #{$audio-info-size}/#{$line-separation-small} $family-sans;
-    }
-  }
 
   .title-featured {
     font: bold 1.6rem/#{$line-separation-small} $family-serif;
@@ -977,5 +969,8 @@ $number-size: 1.3rem;
   }
   @else if( $type == BREADCRUMB ){
     @include __breadcrumb();
+  }
+  @else if( $type == AUDIO_PLAYER ){
+    @include __audio_player();
   }
 }

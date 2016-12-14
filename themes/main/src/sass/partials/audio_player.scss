@@ -5,6 +5,7 @@
 @import '../_helpers/mixins';
 
 .audio-item {
+  @include get-font(AUDIO_PLAYER);
   display: -webkit-flex; //Old Safari
   display: flex;
   -webkit-justify-content: center; //Old Safari
