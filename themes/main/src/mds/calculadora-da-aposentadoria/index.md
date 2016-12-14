@@ -200,7 +200,7 @@ sections:
       return result;
     };
 
-    function calcularEstatutarioPorContribuicao(age, contribution, gender) {
+    function calcularEstatutario(age, contribution, gender) {
       var gender_age_minimum = (gender == 'F' ? 60 : 65 );
       var age_time_minimum = Number(gender_age_minimum) - Number(age);
       var contribution_minimum = Number(10) - Number(contribution);
@@ -213,8 +213,8 @@ sections:
       var age_time = Number(gender_age) - Number(age);
       var contribution_time = Number(gender_contribution) - Number(contribution);
       var time_left_maximum = Math.max(Number(age_time), Number(contribution_time));
-
-      if((time_left_maximum + age) >= gender_limit) {
+      var age_maximum = Number(time_left_maximum) + Number(age);
+      if((age_maximum) >= gender_limit) {
         time_left_maximum = gender_limit;
       }
 
@@ -281,7 +281,7 @@ sections:
        }
 
        else {
-         var result_old = calcularEstatutarioPorContribuicao(age, contribution, gender);
+         var result_old = calcularEstatutario(age, contribution, gender);
        }
 
       result_old = retorna_idade(result_old, age);
