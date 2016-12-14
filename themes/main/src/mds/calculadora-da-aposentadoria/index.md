@@ -47,7 +47,7 @@ sections:
       .number {
         height: 40px;
         font-size: 1.1rem;
-        margin: 10px 0 20px;  
+        margin: 10px 0 20px;
       }
 
       .radio {
@@ -79,15 +79,13 @@ sections:
       }
 
 
-      #new_value, #old_value {
+      #new_value, #old_value, #new_value_partial, #old_value_partial {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 30px 10px;
+        padding: 30px 1px;
         flex-grow: 1;
       }
-
-
 
       #newrulevalue {
         color: rgba(195, 59, 83, 1);
@@ -108,7 +106,6 @@ sections:
       }
 
       .result_text {
-        font-weight: bold;
         text-transform: uppercase;
         color: #99999;
         text-align: center;
@@ -122,7 +119,7 @@ sections:
     </style>
     <div class='form'>
       <p class='descriptive'>A proposta de reforma da Previdência editada pelo governo não eleito de Michel Temer começou a tramitar oficialmente na Câmara nesta terça-feira (6).</p>
-      <p class='descriptive'>Para exemplificar as mudanças que a proposta quer implementar na atual legislação, o Brasil de Fato lança nesta quinta-feira (8) a Calculadora da Aposentadoria. Nela, o leitor poderá comparar as idades mínimas de contribuição para ter direito ao benefício parcial. Confira!</p>
+      <p class='descriptive'>Para exemplificar as mudanças que a proposta quer implementar na atual legislação, o Brasil de Fato lança nesta quinta-feira (8) a Calculadora da Aposentadoria. Confira!</p>
       <p class='label'>Você é:<p/>
       <input class='radio' type='radio' name='gender' value='F' checked> Mulher
       <input class='radio' type='radio' name='gender' value='M'> Homem<br>
@@ -136,14 +133,14 @@ sections:
       <input class= 'button' type='button' value='Calcule' onclick='initialize_calculation()'>
     </div>
 
-    <div class='results' id='id_results'>
-      <p id='old_value'></p>
-      <p id='new_value'></p>
-      <p id='retired'></p>
-    </div>
-  <p class='descriptive'>Batizada de Proposta de Emenda Constitucional (PEC) 287/2016, entre as alterações, ela pretende implementar: a contribuição mínima de 25 anos e idade mínima de 65 anos para aposentadoria, igualmente para homens e mulheres; a contribuição de 49 anos para ter direito à aposentadoria integral; e a proibição do acúmulo de benefícios, como pensão e aposentadoria.</p><p class='descriptive'>Se aprovada, a nova forma valerá para mulheres de até 45 anos e homens com idade até 50. Os contribuintes que se encontram acima dessa faixa etária ficarão sujeitos a regras especiais de transição.</p>
-  <p class='foot-note'>*Está é uma simulação que faz o cálculo aproximado tendo como base idade e tempo de contribuição. </p>
-  <p class='foot-note'>Atualizado em: 8 de Dezembro de 2016.</p>
+    <div class='results' id='id_results_maximum'></div>
+    <div class='results' id='id_results_minimum'></div>
+
+    <p class='descriptive'>Batizada de Proposta de Emenda Constitucional (PEC) 287/2016, entre as alterações, ela pretende implementar: a contribuição mínima de 25 anos e idade mínima de 65 anos para aposentadoria, igualmente para homens e mulheres; a contribuição de 49 anos para ter direito à aposentadoria integral; e a proibição do acúmulo de benefícios, como pensão e aposentadoria.</p><p class='descriptive'>Se aprovada, a nova forma valerá para mulheres de até 45 anos e homens com idade até 50. Os contribuintes que se encontram acima dessa faixa etária ficarão sujeitos a regras especiais de transição.</p>
+    <p class='foot-note'>*O cálculo da legislação atual não é válido para quem tem aposentadoria especial, como professores, policiais, trabalhadores rurais e profissionais que recebem adicional de insalubridade ou de periculosidade.</p>
+    <p class='foot-note'>**O cálculo das duas regras não é válido para militares, que, até o momento, não serão afetados pela reforma da Previdência.</p>
+    <p class='foot-note'>***Para valer essa regra, o servidor tem que cumprir 20 anos de efetivo exercício no serviço público, dentre eles cinco no cargo em que vai se aposentar</p>
+    <p class='foot-note'>Atualizado em: 13 de Dezembro de 2016.</p>
 
 
     <script>
@@ -159,24 +156,24 @@ sections:
       var result_old = calculadoraOld(gender_input, age_input, contribution_input, sector_input);
       var result_new = calculadoraNew(gender_input, age_input, contribution_input, sector_input);
       if(result_old <= age_input){
-        var retired = 'Você já pode se aposentar!<br> As novas Regras não se aplicam.';
+        var retired = 'Você já pode se aposentar! As novas regras não se aplicam';
         message('retired', retired);
       }
       else {
-        message('new_value', result_new, gender_input);
-        message('old_value', result_old, gender_input);
+        message('id_results_maximum', 'old_value', result_old[1], gender_input);
+        message('id_results_maximum', 'new_value', result_new[1], gender_input);
+        message('id_results_minimum', 'old_value_partial', result_old[0], gender_input);
+        message('id_results_minimum', 'new_value_partial', result_new[0], gender_input);
       }
-
     }
 
     function newRules(gender, age) {
-
-     if((gender == 'F') && (age <=45) || (gender == 'M') && (age <=50)){
-       return 'new';
-     }
-     else {
-       return 'old';
-     }
+       if((gender == 'F') && (age <=45) || (gender == 'M') && (age <=50)){
+         return 'new';
+       }
+       else {
+         return 'old';
+       }
     }
 
     function oldRules(service, gender) {
@@ -189,53 +186,87 @@ sections:
         }
       }
       else{
-        if (gender == 'F') {
-          return 'private_woman';
-        }
-        else if (gender == 'M') {
-          return 'private_man';
-        }
+        return 'private';
       }
     }
 
     function calculateNewRules(age, contribution) {
       var age_time = 65 - age;
       var contribution_time = 25 - contribution;
-      var time_left = Math.max(age_time, contribution_time);
+      var time_left_minimum = Math.max(age_time, contribution_time);
+
+      var time_left_maximum  = Number(49) - Number(contribution);
+
+      if(time_left_minimum > time_left_maximum){
+        time_left_minimum = time_left_maximum;
+      }
+      var result = [time_left_minimum, time_left_maximum];
+      return result;
+    };
+
+    function calcularEstatutario(age, contribution, gender) {
+      var gender_age_minimum = (gender == 'F' ? 60 : 65 );
+      var age_time_minimum = Number(gender_age_minimum) - Number(age);
+      var contribution_minimum = Number(10) - Number(contribution);
+      var time_left_minimum = Math.max(Number(age_time_minimum), Number(contribution_minimum));
+
+      var gender_age = (gender == 'F' ? 55 : 60 );
+      var gender_contribution = (gender == 'F' ? 30 : 35 );
+      var gender_limit = (gender == 'F' ? 70 : 75 );
+
+      var age_time = Number(gender_age) - Number(age);
+      var contribution_time = Number(gender_contribution) - Number(contribution);
+      var time_left_maximum = Math.max(Number(age_time), Number(contribution_time));
+      var age_maximum = Number(time_left_maximum) + Number(age);
+      if((age_maximum) >= gender_limit) {
+        time_left_maximum = gender_limit;
+      }
+
+      if(time_left_minimum > time_left_maximum){
+        time_left_minimum = time_left_maximum;
+      }
+
+      var time_left = [time_left_minimum, time_left_maximum];
+
+      return time_left;
+    }
+
+    function calcularCLTPorContribuicao(age, contribution, gender) {
+      var gender_age = (gender == 'F' ? 30 : 35 );
+      var gender_contribution = (gender == 'F' ? 85 : 95 );
+
+      var time_left_minimum = Number(gender_age) - Number(contribution);
+      time_left_minimum = Math.max(0, time_left_minimum);
+
+      var time_left_maximum = Number(gender_contribution) - Number(age) - Number(contribution);
+      time_left_maximum = Math.round(Number(time_left_maximum)/Number(2));
+      time_left_maximum = Math.max(0, time_left_maximum);
+
+      if(time_left_minimum > time_left_maximum){
+        time_left_minimum = time_left_maximum;
+      }
+
+      var time_left = [time_left_minimum, time_left_maximum];
+
       return time_left;
     };
 
-    function calculatePublicOldRulesWoman(age, contribution) {
-      var age_time = 55 - age;
-      var contribution_time = 30 - contribution;
-      var time_left = Math.max(age_time, contribution_time);
-      return time_left;
-    };
+    function calcularCLTPorIdade(age, contribution, gender) {
+      var gender_age = (gender == 'F' ? 60 : 65 );
 
-    function calculatePublicOldRulesMan(age, contribution) {
-      var age_time = 60 - age;
-      var contribution_time = 35 - contribution;
-      var time_left = Math.max(age_time, contribution_time);
-      return time_left;
-    };
-
-    function calculatePrivateOldRulesWoman(age, contribution) {
-      var age_time = 60 - age;
+      var age_time = gender_age - age;
       var age_contribution_time = 15 - contribution;
-      var contribution_time = 30 - contribution;
-      var age_time_left = Math.max(age_time, age_contribution_time);
-      var time_left = Math.min(age_time_left, contribution_time);
-      return time_left;
-    };
+      var time_left_minimum = Math.max(age_time, age_contribution_time);
 
-    function calculatePrivateOldRulesMan(age, contribution) {
-      var age_time = 65 - age;
-      var age_contribution_time = 15 - contribution;
-      var contribution_time = 35 - contribution;
-      var age_time_left = Math.max(age_time, age_contribution_time);
-      var time_left = Math.min(age_time_left, contribution_time);
+      var time_left_maximum = Number(time_left_minimum) + Number(30);
+
+      if(time_left_minimum > time_left_maximum){
+        time_left_minimum = time_left_maximum;
+      }
+
+      var time_left = [time_left_minimum, time_left_maximum];
       return time_left;
-    };
+    }
 
     function calculadoraNew(gender, age, contribution, service) {
      var rules = newRules(gender, age);
@@ -245,49 +276,57 @@ sections:
      }
      else {
        var partial = calculadoraOld(gender, age, contribution, service);
-       var result_new = (1.5 * Math.abs(age - partial));
+       var minimum = (Number(1.5) * Math.abs(Number(age) - Number(partial[0])));
+       var integral = calculateNewRules(age, contribution);
+       var maximum = integral[1];
+       var result_new = [minimum, maximum];
      }
 
-     result_new = Number(result_new) + Number(age);
-     return Math.round(result_new);
+     result_new = retorna_idade(result_new, age);
+     return result_new;
 
     };
 
     function calculadoraOld(gender, age, contribution, service) {
-     var rules = oldRules(service, gender);
+       var rules = oldRules(service, gender);
 
-     if (rules == 'public_woman') {
-       var result_old = calculatePublicOldRulesWoman(age, contribution);
-     }
-     else if (rules == 'public_man') {
-       var result_old = calculatePublicOldRulesMan(age, contribution);
-     }
-     else if (rules == 'private_woman') {
-       var result_old = calculatePrivateOldRulesWoman(age, contribution);
-     }
-     else if (rules == 'private_man') {
-       var result_old = calculatePrivateOldRulesMan(age, contribution);
-     }
-     result_old = Number(result_old) + Number(age);
-     return Math.round(result_old);
+       if (rules == 'private') {
+         var por_idade = calcularCLTPorIdade(age, contribution, gender);
+         var por_contribuicao = calcularCLTPorContribuicao(age, contribution, gender);
+
+         var result_old = minimo_de_duas_listas(por_idade, por_contribuicao);
+       }
+
+       else {
+         var result_old = calcularEstatutario(age, contribution, gender);
+       }
+
+      result_old = retorna_idade(result_old, age);
+
+      return result_old;
     };
 
-    function message(element, text, gender){
-      if ((element == 'new_value') && (gender == 'F')) {
-        document.getElementById(element).innerHTML = '<p class=\"result_text\">Se a reforma for aprovada,  você se aposentará com</p>' + '<p id=\"newrulevalue\">' + text + '</p>' + '<p class=\"result_text\">anos</p>' + '<img src=\"//farm1.staticflickr.com/372/31398257901_d881d27df4_b.jpg\" height=\"200px\">';
+    function message(id_results, id_value, text, gender){
+      var element = id_results;
+      var pai = document.getElementById(element);
+      var newParagraph = document.createElement('p');
+      newParagraph.id= id_value;
+      pai.appendChild(newParagraph);
+
+      if(id_value == 'new_value') {
+        document.getElementById(id_value).innerHTML = '<p class=\"result_text\">Se a reforma for aprovada com</p>' + '<p id=\"newrulevalue\">' + text + '</p>' + '<p class=\"result_text\">anos você receberá sua <br><b>aposentadoria integral</b></p>';
       }
-      else if ((element == 'old_value') && (gender== 'F')){
-        document.getElementById(element).innerHTML = '<p class=\"result_text\">Pela legislação atual, você se aposentará com</p>' + '<p id=\"oldrulevalue\">' + text  + '</p>' + '<p class=\"result_text\">anos</p>' + '<img src=\"//farm1.staticflickr.com/548/31142760470_f12634f473_b.jpg\" height=\"200px\">';
+      else if (id_value == 'old_value'){
+        document.getElementById(id_value).innerHTML = '<p class=\"result_text\">Pela legislação atual com</p>' + '<p id=\"oldrulevalue\">' + text  + '</p>' + '<p class=\"result_text\">anos você receberá sua <br><b>aposentadoria integral</b></p>';
       }
-      else if((element == 'new_value') && (gender == 'M')) {
-        document.getElementById(element).innerHTML = '<p class=\"result_text\">Se a reforma for aprovada,  você se aposentará com</p>' + '<p id=\"newrulevalue\">' + text + '</p>' + '<p class=\"result_text\">anos</p>' + '<img src=\"//farm6.staticflickr.com/5779/31398530051_535089e55c_b.jpg\" height=\"200px\">';
+      else if(id_value == 'new_value_partial') {
+        document.getElementById(id_value).innerHTML = '<p class=\"result_text\">Se a reforma for aprovada com</p>' + '<p id=\"newrulevalue\">' + text + '</p>' + '<p class=\"result_text\">anos você receberá <br><b>aposentadoria proporcional</b></p>';
       }
-      else if ((element == 'old_value') && (gender== 'M')){
-        document.getElementById(element).innerHTML = '<p class=\"result_text\">Pela legislação atual, você se aposentará com</p>' + '<p id=\"oldrulevalue\">' + text  + '</p>' + '<p class=\"result_text\">anos</p>' + '<img src=\"//farm1.staticflickr.com/143/31514149425_55beb2c8c4_b.jpg\" height=\"200px\">';
+      else if (id_value == 'old_value_partial'){
+        document.getElementById(id_value).innerHTML = '<p class=\"result_text\">Pela legislação atual com</p>' + '<p id=\"oldrulevalue\">' + text  + '</p>' + '<p class=\"result_text\">anos você receberá <br><b>aposentadoria proporcional</b></p>';
       }
-      else {
-        document.getElementById(element).innerHTML = '<p class=\"result_text\">' + text + '</p>';
-      }
+
+
     };
 
     function clear_results(div){
@@ -298,6 +337,24 @@ sections:
         };
       };
     };
+
+    function minimo_de_duas_listas(lista_1, lista_2) {
+      var result = [];
+
+      for (var i=0; i <2; i++) {
+        result[i] = Math.min(Number(lista_1[i]), Number(lista_2[i]));
+      }
+
+      return result;
+    }
+
+    function retorna_idade (lista, idade_atual) {
+      var result = [];
+      for (var i=0; i <2; i++) {
+        result[i] = Math.round(Number(lista[i]) + Number(idade_atual));
+      }
+      return result;
+    }
 
     </script>
 "
