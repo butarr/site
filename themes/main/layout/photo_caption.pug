@@ -2,10 +2,10 @@ extends base
 
 block title
   title= `${titlecase(page.cover.subtitle)} ${config.separator} ${config.title}`
-  
+
 block description
   meta(name="description" content="Charges e ilustrações com a análise política dos acontecimentos")
-  
+
 block canonical
   link(href=url rel="canonical")
 
@@ -18,8 +18,21 @@ block open_graph
 append content
   main(class='grid-4-columns')
     section#photo-caption
+      if config.toggles._yEE1E9Vp_breadcrumb
+        div#breadcrumb
+          ol(itemscope itemtype="http://schema.org/BreadcrumbList")
+            li(itemprop="itemListElement" )
+              a( href="/")
+                p Início
+            li
+              i(class="fa fa-chevron-right fa-lg")
+            li(itemprop="itemListElement")
+              a(href="/charges/")
+                p.breadcrumb-last Charges
+
       h1.hat(itemprop="about") Charge
       h2.title(itemprop="headline")= page.title
+
       figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
         - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
         .img-container
@@ -30,10 +43,7 @@ append content
           p.subtitle(itemprop="caption")= page.cover.subtitle
           p.credits(itemprop="author")= page.cover.credits
       include _partial/social-media-share
-    
-      a(href="/charges/" class="button" title="link para a pagina de charges") 
-        span Todas as charges
-      
+
       section#other-photo-captions
         h3.section-name Outras charges
         if page.related_photo_captions
@@ -47,4 +57,3 @@ append content
                     figcaption
                       p.subtitle(itemprop="caption")= related.cover.subtitle
                       p.credits(itemprop="author")= related.cover.credits
-        
