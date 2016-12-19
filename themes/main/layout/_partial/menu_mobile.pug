@@ -17,9 +17,9 @@ nav#menu-mobile(itemscope itemtype="http://schema.org/SiteNavigationElement")
         li
           a(itemprop="url" href="/" + index + "/")= val
           meta(itemprop="name" content=val)
-      each val, index in {quem_somos:"Quem Somos", parceiros:"Parceiros", publicidade:"Publicidade", contato:"Contato"}
+      each val, index in {"quem-somos":"Quem Somos", parceiros:"Parceiros", publicidade:"Publicidade", contato:"Contato", "mapa-do-site": "Mapa do Site"}
         li
-          a(itemprop="url" href="/" + index + ".html")= val
+          a(itemprop="url" href="/" + index + "/")= val
           meta(itemprop="name" content=val)
           
     include social-media-icons
