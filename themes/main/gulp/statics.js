@@ -12,7 +12,7 @@ module.exports = function (baseDir) {
     return function() {
       var doc = YAML.safeLoad(fs.readFileSync(path.normalize(baseDir+'/../../../_config.yml'), 'utf8'));
       var sourceDir = doc.source_dir;
-      if(!sourceDir.startsWith("/")) {
+      if(!path.isAbsolute(sourceDir)) {
         sourceDir = path.normalize(baseDir+'/../../../'+sourceDir);
       }
       return gulp.src('src/mds/**/*.md')
