@@ -2,7 +2,6 @@
 @import '../_helpers/constants';
 @import '../_helpers/colors';
 @import '../_helpers/fonts';
-@import '../_helpers/mixins';
 
 .audio-item {
   @include get-font(AUDIO_PLAYER);
