@@ -73,17 +73,16 @@ append content
           when "radioagencia"
             - var sitepath= "radioagência"
 
-      if config.toggles._yEE1E9Vp_breadcrumb
-        div#breadcrumb
-          ol(itemscope itemtype="http://schema.org/BreadcrumbList")
-            li(itemprop="itemListElement")
-              a(href="/")
-                p Início
-            li
-              i(class="fa fa-chevron-right fa-lg")
-            li(itemprop="itemListElement")
-              a(href=`/${page.area}/`)
-                p.breadcrumb-last= sitepath
+      div#breadcrumb
+        ol(itemscope itemtype="http://schema.org/BreadcrumbList")
+          li(itemprop="itemListElement")
+            a(href="/")
+              p Início
+          li
+            i(class="fa fa-chevron-right fa-lg")
+          li(itemprop="itemListElement")
+            a(href=`/${page.area}/`)
+              p.breadcrumb-last= sitepath
 
       header
         - var published_at = utc_to_brt(page.date)
