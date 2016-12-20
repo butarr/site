@@ -39,6 +39,12 @@
   #featured-1 {
     -webkit-order: -10; //Old Safari
     order: -10;
+
+    @include image-rounded(100%, 227px);
+
+    @include media-query(TWO){
+      @include image-rounded(100%, 300px);
+    }
   }
 
   #featured-2 {
