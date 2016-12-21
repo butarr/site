@@ -910,6 +910,17 @@ $number-size: 1.3rem;
       }
     }
   }
+
+  .service {
+    h4 {
+      font: bold #{$details-size}/#{$line-separation-small} $family-sans;
+      text-transform: uppercase;
+    }
+
+    h5 {
+      font: bold #{$title-size}/#{$line-separation-small} $family-serif;
+    }
+  }
 }
 
 @mixin get-font($type){

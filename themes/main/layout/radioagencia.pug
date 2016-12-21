@@ -75,24 +75,65 @@ append content
 
       if config.toggles.radio_sidebar
         aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
-          h3.section-name Coluna
-          - var column = page.column
-          - var columnist = site.data.columnists[column.columnist];
-          .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
-            .photo
-              a(href=column.path, title="link para a pagina do colunista")
-                img(alt=`Foto de ${columnist.name}` src=columnist.photo itemprop="image")
-            .column
-              a(href=column.path, title="link para a pagina do colunista")
-                span.name(itemprop="name")= columnist.name
-              a(href=column.path itemprop="url")
-                h2.title= column.title
-          if column.audio
-            +audio-player(555, column.audio)
-          h3.section-name Serviço do dia
-          h4.button Clima
-          h4.button Alimento é saúde
-          h4.button Notícias
+          if page.column
+            h3.section-name Coluna
+            - var column = page.column
+            - var columnist = site.data.columnists[column.columnist];
+            .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
+              .photo
+                a(href=column.path, title="link para a pagina do colunista")
+                  img(alt=`Foto de ${columnist.name}` src=columnist.photo itemprop="image")
+              .column
+                a(href=column.path, title="link para a pagina do colunista")
+                  span.name(itemprop="name")= columnist.name
+                a(href=column.path itemprop="url")
+                  h2.title= column.title
+            if column.audio
+              +audio-player(555, column.audio)
+          h3.section-name Serviços
+
+          .service
+            - var service = page.service_01
+            - var published_at = utc_to_brt(service.date)
+            h4(style="color:#845c7d;") Hoje na História
+            h5=service.title
+            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+            if service.audio
+              +audio-player(101, service.audio)
+          .service
+            - service = page.service_02
+            - published_at = utc_to_brt(service.date)
+            h4(style="color:#419b9b;") Alimento é saúde
+            h5=service.title
+            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+            if service.audio
+              +audio-player(102, service.audio)
+          .service
+            - service = page.service_03
+            - published_at = utc_to_brt(service.date)
+            h4(style="color:#c33b53;") Nossos direitos
+            h5=service.title
+            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+            if service.audio
+              +audio-player(103, service.audio)
+          .service
+            - service = page.service_04
+            - published_at = utc_to_brt(service.date)
+            h4(style="color:#af61a4;") Fatos Curiosos da História
+            h5=service.title
+            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+            if service.audio
+              +audio-player(104, service.audio)
+          .service
+            - service = page.service_05
+            - published_at = utc_to_brt(service.date)
+            h4(style="color:#d2a64c;") Mosaico Cultural
+            h5=service.title
+            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+            if service.audio
+              +audio-player(105, service.audio)
+
+
           h3.section-name Newsletter
           h4.button Cadastre aqui
           .facebook
