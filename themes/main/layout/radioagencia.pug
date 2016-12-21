@@ -1,5 +1,6 @@
 extends base
 include _partial/audio_player
+include _partial/modules/module_facebook
 
 mixin metadata(position, post)
   meta(itemprop="url" content=`https://www.brasildefato.com.br/${post.path}`)
@@ -137,4 +138,4 @@ append content
           h3.section-name Newsletter
           h4.button Cadastre aqui
           .facebook
-            include _partial/modules/module_facebook
+            +facebook-widget(facebook_url_radioagency)

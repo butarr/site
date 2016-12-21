@@ -1,5 +1,6 @@
-.module-facebook(class="spacing")
-  .fb-page(data-href='https://'.concat(facebook_url), data-small-header='true', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true')
-    .fb-xfbml-parse-ignore
-      blockquote(cite='https://'.concat(facebook_url))
-        a(href='https://'.concat(facebook_url))
+mixin facebook-widget(url)
+  .module-facebook(class="spacing")
+    .fb-page(data-href='https://'.concat(url), data-small-header='true', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true')
+      .fb-xfbml-parse-ignore
+        blockquote(cite='https://'.concat(url))
+          a(href='https://'.concat(url))

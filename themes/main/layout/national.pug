@@ -1,4 +1,5 @@
 extends base
+include _partial/modules/module_facebook
 
 mixin columnist_item(column)
   if column
@@ -344,6 +345,6 @@ append content
           section(class= "columnists" class="spacing" itemscope itemtype="http://schema.org/ItemList")
             +columnists_list
 
-          include _partial/modules/module_facebook
+          +facebook-widget(facebook_url)
 block footer
   include _partial/home_footer
