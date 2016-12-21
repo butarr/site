@@ -1,0 +1,20 @@
+extends base
+
+block title
+  title= `${titlecase(page.title)} ${config.separator} ${config.title}`
+
+block description
+  meta(name="description" content=page.description)
+
+block canonical
+  link(href=`https://www.brasildefato.com.br${page.url}` rel="canonical")
+
+block keywords
+  meta(name="keywords" content=page.keywords)
+
+append content
+  main.grid-3-columns
+    article.institutional(itemprop="mainContentOfPage")
+      h2.page-name
+        != `${titlecase(page.title)}`
+      != page.content

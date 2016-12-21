@@ -18,17 +18,16 @@ block open_graph
 append content
   main(class='grid-4-columns')
     section#photo-caption
-      if config.toggles._yEE1E9Vp_breadcrumb
-        div#breadcrumb
-          ol(itemscope itemtype="http://schema.org/BreadcrumbList")
-            li(itemprop="itemListElement" )
-              a( href="/")
-                p Início
-            li
-              i(class="fa fa-chevron-right fa-lg")
-            li(itemprop="itemListElement")
-              a(href="/charges/")
-                p.breadcrumb-last Charges
+      div#breadcrumb
+        ol(itemscope itemtype="http://schema.org/BreadcrumbList")
+          li(itemprop="itemListElement" )
+            a( href="/")
+              p Início
+          li
+            i(class="fa fa-chevron-right fa-lg")
+          li(itemprop="itemListElement")
+            a(href="/charges/")
+              p.breadcrumb-last Charges
 
       h1.hat(itemprop="about") Charge
       h2.title(itemprop="headline")= page.title
