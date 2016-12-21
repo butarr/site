@@ -74,16 +74,15 @@
     padding-top: 0;
   }
 
-  section.subtitle.verticalSpacing + section.text.verticalSpacing  {
-    padding-top: 30px;
-
-    @include media-query(THREE) {
-      padding-top: 50px;
-    }
-  }
-
   section.links.verticalSpacing + section.links.verticalSpacing  {
     padding-top: 25px;
+  }
+
+  section:last-of-type {
+    padding-bottom: 25px;
+  }
+  section.image:last-of-type {
+    padding-bottom: 0;
   }
 
   .verticalSpacing {
@@ -130,7 +129,7 @@
     .content-wrapper {
       padding-bottom: ratio(16, 9);
       position: relative;
-      margin: 1rem auto;
+      margin: 0 auto;
       height: 0;
       overflow: hidden;
 
@@ -202,7 +201,7 @@
     }
 
     .link {
-      padding: 0 5px 25px;
+      padding: 0 5px;
       max-width: (2 * $COLUMN-WIDTH);
       width: 100%;
 
