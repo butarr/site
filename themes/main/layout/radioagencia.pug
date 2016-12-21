@@ -97,7 +97,7 @@ append content
             - var published_at = utc_to_brt(service.date)
             h4(style="color:#845c7d;") Hoje na História
             h5=service.title
-            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
             if service.audio
               +audio-player(101, service.audio)
           .service
@@ -105,7 +105,7 @@ append content
             - published_at = utc_to_brt(service.date)
             h4(style="color:#419b9b;") Alimento é saúde
             h5=service.title
-            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
             if service.audio
               +audio-player(102, service.audio)
           .service
@@ -113,7 +113,7 @@ append content
             - published_at = utc_to_brt(service.date)
             h4(style="color:#c33b53;") Nossos direitos
             h5=service.title
-            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
             if service.audio
               +audio-player(103, service.audio)
           .service
@@ -121,7 +121,7 @@ append content
             - published_at = utc_to_brt(service.date)
             h4(style="color:#af61a4;") Fatos Curiosos da História
             h5=service.title
-            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
             if service.audio
               +audio-player(104, service.audio)
           .service
@@ -129,7 +129,7 @@ append content
             - published_at = utc_to_brt(service.date)
             h4(style="color:#d2a64c;") Mosaico Cultural
             h5=service.title
-            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
             if service.audio
               +audio-player(105, service.audio)
 

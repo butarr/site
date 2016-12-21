@@ -20,6 +20,7 @@ $standalone-text-size: 1.1rem;
 
 $text-size: 1rem;
 $details-size: 0.9rem;
+$details-size-sidebar: 0.8rem;
 $title-size: 1.1rem;
 $section-name-size: 1rem;
 $audio-info-size: 0.8rem;
@@ -911,6 +912,11 @@ $number-size: 1.3rem;
   }
 
   .service {
+    .date {
+      font: $details-size-sidebar $family-sans;
+      color: $details-color;
+    }
+
     h4 {
       font: bold #{$details-size}/#{$line-separation-small} $family-sans;
       text-transform: uppercase;
