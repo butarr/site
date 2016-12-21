@@ -56,7 +56,7 @@ append content
                 a(href=featured.url itemprop="url" class="news-radio-link")
                   h2.title-featured(itemprop= "headline")= featured.title
                   p.description(itemprop="description")= featured.description
-                time.date(datetime=published_at_featured.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at_featured)
+                time.date(datetime=published_at_featured.toISOString(), itemprop="datePublished")= full_date(published_at_featured)
             if featured.audio
               +audio-player(0, featured.audio)
 
@@ -68,7 +68,7 @@ append content
             a(href=post.url itemprop="url" class="news-radio-link")
               h2.title(itemprop= "headline")= post.title
               p.description(itemprop="description")= post.description
-            time.date(datetime=published_at_post.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at_post)
+            time.date(datetime=published_at_post.toISOString(), itemprop="datePublished")= full_date(published_at_post)
             if post.audio
               +audio-player(position, post.audio)
             - position++
