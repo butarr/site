@@ -93,46 +93,16 @@ append content
               +audio-player(555, column.audio)
           h3.section-name Serviços
 
-          .service
-            - var service = page.service_01
-            - var published_at = utc_to_brt(service.date)
-            h4#service_01 Hoje na História
-            h5=service.title
-            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
-            if service.audio
-              +audio-player(101, service.audio)
-          .service
-            - service = page.service_02
-            - published_at = utc_to_brt(service.date)
-            h4#service_02 Alimento é saúde
-            h5=service.title
-            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
-            if service.audio
-              +audio-player(102, service.audio)
-          .service
-            - service = page.service_03
-            - published_at = utc_to_brt(service.date)
-            h4#service_03 Nossos direitos
-            h5=service.title
-            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
-            if service.audio
-              +audio-player(103, service.audio)
-          .service
-            - service = page.service_04
-            - published_at = utc_to_brt(service.date)
-            h4#service_04 Fatos Curiosos da História
-            h5=service.title
-            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
-            if service.audio
-              +audio-player(104, service.audio)
-          .service
-            - service = page.service_05
-            - published_at = utc_to_brt(service.date)
-            h4#service_05 Mosaico Cultural
-            h5=service.title
-            time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
-            if service.audio
-              +audio-player(105, service.audio)
+          - var audio_index = 101;
+          each service_name,service_index in {service_01:'Hoje na História', service_02:'Alimento é saúde', service_03:'Nossos direitos', service_04:'Fatos Curiosos da História', service_05:'Mosaico Cultural'}
+            .service
+              - var service = page[service_index]
+              - var published_at = utc_to_brt(service.date)
+              h4(id=service_index)=service_name
+              h5=service.title
+              time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
+              if service.audio
+                +audio-player(audio_index++, service.audio)
 
           .facebook
             +facebook-widget(facebook_url_radioagency)
