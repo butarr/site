@@ -44,6 +44,38 @@ content: |
     </li>
   </ul>
 
+  <h3 class="title">Radioagência Brasil de Fato</h3>
+  <ul class="list">
+    <li class="item">
+      <i class="fa fa-envelope-square fa-lg">
+        <a class="text" target="_blank" href="mailto:radioagenciabdf@gmail.com">
+          radioagenciabdf@gmail.com
+        </a>
+      </i>
+    </li>
+    <li class="item">
+      <i class="fa fa-facebook-official fa-lg">
+        <a class="text" target="_blank" href="//www.facebook.com/radioagenciabdf">
+          www.facebook.com/radioagenciabdf
+        </a>
+      </i>
+    </li>
+    <li class="item">
+      <i class="fa fa-twitter-square fa-lg">
+        <a class="text" target="_blank" href="//www.twitter.com/radioagenciabdf">
+          www.twitter.com/radioagenciabdf
+        </a>
+      </i>
+    </li>
+    <li class="item">
+      <i class="fa fa-soundcloud fa-lg">
+        <a class="text" target="_blank" href="//soundcloud.com/radioagenciabdf">
+          www.soundcloud.com/radioagenciabdf
+        </a>
+      </i>
+    </li>
+  </ul>
+
   <h3 class="title">Impresso Minas Gerais</h3>
   <ul class="list">
     <li class="item">
