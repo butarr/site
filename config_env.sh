@@ -58,6 +58,7 @@ theme: main
 toggles:
   radio_sidebar: ${RADIO_SIDEBAR:-false}
   _D6fenTno_adsense: ${TOGGLE_D6fenTno_ADSENSE:-false}
+  _ez3dfNWC_new_tabloid_listings: ${TOGGLE_ez3dfNWC_NEW_TABLOID_LISTINGS:-false}
 feed:
   type: rss2
   limit: 20
