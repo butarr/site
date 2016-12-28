@@ -282,10 +282,7 @@ append content
               img#radar_mobile(src="/img/radar_mobile.png" alt="Radar de Movimentos Populares")
 
           section.printed-news(class="spacing")
-            if config.toggles._ez3dfNWC_new_tabloid_listings
-              +printed-news-listings(page)
-            else
-              +printed-news(page)
+            +printed-news-listings(page)
 
           section.newsletter(class="spacing")
             +newsletter("emailInputSingleColumnLayout")
@@ -359,10 +356,7 @@ append content
             +adsense_02_desktop()
 
           section.printed-news(class="spacing")
-            if config.toggles._ez3dfNWC_new_tabloid_listings
-              +printed-news-listings(page)
-            else
-              +printed-news(page)
+            +printed-news-listings(page)
 
           section.newsletter(class="spacing")
             +newsletter("emailInputMultipleColumnLayout")
