@@ -24,6 +24,25 @@ mixin columnists_list
   a(href="/colunistas/" class="button" title="link para a pagina de colunistas")
     span Leia Mais
 
+mixin printed-news-listings(page)
+  h2.section-name Edições Impressas
+  img(src="/img/newspaper.png" alt="jornal")
+  if page.ceara
+    a(href="/ceara/" itemprop="url")
+      h3.button Ceará
+  if page.minas_gerais
+    a(href="/minas-gerais/" itemprop="url")
+      h3.button Minas Gerais
+  if page.parana
+    a(href="/parana/" itemprop="url")
+      h3.button Paraná
+  if page.pernambuco
+    a(href="/pernambuco/" itemprop="url")
+      h3.button Pernambuco
+  if page.rio_de_janeiro
+    a(href="/rio-de-janeiro/" itemprop="url")
+      h3.button Rio de Janeiro
+
 mixin printed-news(page)
   h2.section-name Edições Impressas
   img(src="/img/newspaper.png" alt="jornal")
@@ -263,7 +282,7 @@ append content
               img#radar_mobile(src="/img/radar_mobile.png" alt="Radar de Movimentos Populares")
 
           section.printed-news(class="spacing")
-            +printed-news(page)
+            +printed-news-listings(page)
 
           section.newsletter(class="spacing")
             +newsletter("emailInputSingleColumnLayout")
@@ -337,7 +356,7 @@ append content
             +adsense_02_desktop()
 
           section.printed-news(class="spacing")
-            +printed-news(page)
+            +printed-news-listings(page)
 
           section.newsletter(class="spacing")
             +newsletter("emailInputMultipleColumnLayout")

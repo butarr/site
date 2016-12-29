@@ -59,19 +59,39 @@ append content
         meta(itemprop="name" content="Brasil de Fato")
         link(itemprop="sameAs" href="https://www.brasildefato.com.br")
 
-        - var area_field= page.area
-        - var sitepath = page.area
-        case area_field
-          when "opiniao"
-            - var sitepath= "opinião"
-          when "politica"
-            - var sitepath= "política"
-          when "direitos_humanos"
-            - var sitepath= "direitos humanos"
-          when "espanol"
-            - var sitepath= "español"
-          when "radioagencia"
-            - var sitepath= "radioagência"
+        if page.region
+          - var area_field= page.region
+          - var sitepath= page.region
+          case sitepath
+            when "tabloid_rj"
+              - var sitepath= "rio-de-janeiro"
+              - var area_field= "rio de janeiro"
+            when "tabloid_mg"
+              - var sitepath= "minas-gerais"
+              - var area_field= "minas gerais"
+            when "tabloid_pe"
+              - var sitepath= "pernambuco"
+              - var area_field= "pernambuco"
+            when "tabloid_ce"
+              - var sitepath= "ceara"
+              - var area_field= "ceará"
+            when "tabloid_pr"
+              - var sitepath= "parana"
+              - var area_field= "paraná"
+        else
+          - var area_field= page.area
+          - var sitepath = page.area
+          case sitepath
+            when "opiniao"
+              - var area_field= "opinião"
+            when "politica"
+              - var area_field= "política"
+            when "direitos_humanos"
+              - var area_field= "direitos humanos"
+            when "espanol"
+              - var area_field= "español"
+            when "radioagencia"
+              - var area_field= "radioagência"
 
       div#breadcrumb
         ol(itemscope itemtype="http://schema.org/BreadcrumbList")
@@ -81,8 +101,8 @@ append content
           li
             i(class="fa fa-chevron-right fa-lg")
           li(itemprop="itemListElement")
-            a(href=`/${page.area}/`)
-              p.breadcrumb-last= sitepath
+            a(href=`/${sitepath}/`)
+              p.breadcrumb-last= area_field
 
       header
         - var published_at = utc_to_brt(page.date)
