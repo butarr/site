@@ -15,14 +15,13 @@ mixin columnist_item(column)
           a(href=column.path itemprop="url")
             h2.title= column.title
 
-mixin columnists_list
-  a(href="/colunistas/", title="link para a pagina de colunistas")
-    h2.section-name Colunistas
+mixin columnists_list  
+  h2.section-name Colunistas
   +columnist_item(page.column_01)
   +columnist_item(page.column_02)
   +columnist_item(page.column_03)
   a(href="/colunistas/" class="button" title="link para a pagina de colunistas")
-    span Leia Mais
+    span Mais Colunas
 
 mixin printed-news-listings(page)
   h2.section-name Edições Impressas
