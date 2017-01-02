@@ -43,7 +43,7 @@ content: |
     <dt>Comercial:</dt>
     <dd>Raíssa Lazarini</dd>
     <dt>Estagiários:</dt>
-    <dd>Julia Dolce, Laura Viana, Nadine Nascimento Nicholas Neto, Gabriela Lucena e Giuliana Marquesi</dd>
+    <dd>Julia Dolce, Laura Viana, Nadine Nascimento, Nicholas Neto, Gabriela Lucena e Giuliana Marquesi</dd>
   </dl>
   <h3 class="title underline">Impresso Minas Gerais</h3>
   <dl class="list">
@@ -71,11 +71,19 @@ content: |
     <dt>Jornalista responsável:</dt>
     <dd>Ednubia Ghisi</dd>
     <dt>Edição:</dt>
-    <dd>Camilla Hoshino Reportagem: Laís Melo, Carolina Goetten e Franciele Petry Schramm</dd>
+    <dd>Camilla Hoshino</dd>
+    <dt>Reportagem:</dt>
+    <dd>Laís Melo, Carolina Goetten e Franciele Petry Schramm</dd>
     <dt>Articulistas:</dt>
-    <dd>Júlio Carignano, Gibran Mendes Revisão: Paula Zarth Padilha, Maurini Souza Fotógrafos: Joka Madruga e Leandro Taques</dd>
+    <dd>Júlio Carignano, Gibran Mendes</dd> 
+    <dt>Revisão:</dt>
+    <dd>Paula Zarth Padilha e Maurini Souza<dd> 
+    <dt>Fotógrafos:</dt>
+    <dd>Joka Madruga e Leandro Taques</dd>
     <dt>Diagramação:</dt>
-    <dd>Vanda de Moraes Conselho Operativo: Pedro Carrano , Gustavo Erwin Kuss, Daniel Mittelbach e Luiz Fernando Rodrigues</dd>
+    <dd>Vanda de Moraes<dd>
+    <dt>Conselho Operativo:</dt>
+    <dd>Pedro Carrano , Gustavo Erwin Kuss, Daniel Mittelbach e Luiz Fernando Rodrigues</dd>
     <dt>Administração:</dt>
     <dd>Clara Lume</dd>
   </dl>
