@@ -498,7 +498,27 @@
     width: 2 * $COLUMN-WIDTH;
   }
 
-  figure {
+  .charge_mobile {
+
+      @include media-query(THREE) {
+        display: none;
+      }
+  }
+
+  .charge_desktop {
+    display: none;
+
+    @include media-query(THREE) {
+      display: block;
+    }
+  }
+
+  .image_charge_mobile {
+   width: 100%;
+   max-width: 2 * $COLUMN-WIDTH;
+  }
+
+  figure.charge_desktop {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
