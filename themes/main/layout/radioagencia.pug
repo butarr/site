@@ -99,7 +99,8 @@ append content
               - var service = page[service_index]
               - var published_at = utc_to_brt(service.date)
               h4(id=service_index)=service_name
-              h5=service.title
+              a(href=service.url, itemprop="url")
+                h5=service.title
               time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
               if service.audio
                 +audio-player(audio_index++, service.audio)

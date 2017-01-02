@@ -31,6 +31,7 @@ append content
 
       h1.hat(itemprop="about") Charge
       h2.title(itemprop="headline")= page.title
+      p.credits(itemprop="author")= page.cover.credits
 
       figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
         - var imageDescription = page.cover.subtitle + ' - Créditos: ' + page.cover.credits
@@ -38,9 +39,7 @@ append content
           img(itemprop="url" alt=imageDescription src=page.cover['medium'])
           meta(itemprop="width" content="696")
           meta(itemprop="height" content="464")
-        figcaption
-          p.subtitle(itemprop="caption")= page.cover.subtitle
-          p.credits(itemprop="author")= page.cover.credits
+
       include _partial/social-media-share
 
       section#other-photo-captions

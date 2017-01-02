@@ -492,7 +492,6 @@
 }
 
 #home .photo-caption {
-  @include picture-with-caption();
   @include image-rounded-responsive(300px);
   width: 100%;
 

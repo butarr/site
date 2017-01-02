@@ -7,6 +7,7 @@
   @include get-font(PHOTO_CAPTION_LIST);
   max-width: 2 * $COLUMN-WIDTH;
   @include site-lateral-spacing();
+  padding-bottom: 20px;
 
   @include media-query(THREE) {
     max-width: 3 * $COLUMN-WIDTH;
@@ -32,7 +33,6 @@
 }
 
 #photo-caption-list .image-item {
-  @include picture-with-caption();
   @include image-rounded-responsive(300px);
   width: 100%;
   margin-top: $VERTICAL-SPACE;
