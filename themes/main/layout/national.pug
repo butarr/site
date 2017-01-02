@@ -313,11 +313,7 @@ append content
               - var post=page.photo_caption
               - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
               a(itemprop="url" href=post.path)
-                figure(itemscope itemtype="https://schema.org/ImageObject")
-                  img#charge_image_analytics(src=post.cover.medium alt=imageDescription title=imageDescription itemprop="image")
-                  figcaption
-                    p.subtitle(itemprop="caption")= post.cover.subtitle
-                    p.credits(itemprop="author")= post.cover.credits
+                figure#charge_image_analytics(style=`background-image: url(${post.cover.medium});` itemscope itemtype="https://schema.org/ImageObject")
 
           if page.last_news
             section.last-news#last-news-mobile(class= "spacing" itemscope itemtype="https://schema.org/ItemList")
