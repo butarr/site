@@ -38,7 +38,14 @@ content: |
     <li class="item">
       <i class="fa fa-phone-square fa-lg">
         <span class="text">
-          +55 11 2131-0814 | +55 11 94594-3576 (WhatsApp)
+          +55 11 2131-0814
+        </span>
+      </i>
+    </li>
+    <li class="item">
+      <i class="fa fa-whatsapp fa-lg">
+        <span class="text">
+          +55 11 94594-3576
         </span>
       </i>
     </li>
