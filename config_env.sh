@@ -58,6 +58,7 @@ theme: main
 toggles:
   radio_sidebar: ${RADIO_SIDEBAR:-false}
   _D6fenTno_adsense: ${TOGGLE_D6fenTno_ADSENSE:-false}
+  _yhCw8OOd_last_news_animation: ${TOGGLE_yhCw8OOd_LAST_NEWS_ANIMATION:-false}
 feed:
   type: rss2
   limit: 20

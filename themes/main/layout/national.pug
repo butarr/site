@@ -214,7 +214,7 @@ append content
           section#last-news-dynamic.last-news(itemscope itemtype="https://schema.org/ItemList" class="spacing" hidden)
             a(itemprop="url" href="/ultimas_noticias/")
               h2.section-name Últimas notícias:
-            ol
+            ol(id=`last-news-animation-${config.toggles._yhCw8OOd_last_news_animation}`)
               each post in page.last_news
                 li.inactive.last-news-analytics(itemprop="itemListElement")
                   a(href=post.path itemprop="url")
