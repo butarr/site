@@ -5,7 +5,7 @@ mixin columnist_item(column)
   if column
     - var columnist=site.data.columnists[column.columnist]
     if columnist
-      .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
+      .columnist.columnist-analytics(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
         .photo
           a(href=column.path, title="link para a pagina do colunista")
             img(alt=`Foto de ${columnist.name}` src=columnist.photo itemprop="image")
