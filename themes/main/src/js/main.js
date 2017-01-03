@@ -90,7 +90,7 @@ $(document).ready(function() {
       }
       activeLastNews.hide();
 
-      activeLastNewsFullText = next.find('p.title').html()+'       ';
+      activeLastNewsFullText = next.find('p.title').html()+Array(16).join(' ');
       next.find('p.title').html('');
       next.show();
       activeLastNews = next;
@@ -101,7 +101,7 @@ $(document).ready(function() {
   }
 
   if($('#last-news-animation-true').length) {
-    setInterval(addCharacterToLastNews, 200);
+    setInterval(addCharacterToLastNews, 100);
   }
   else {
     setInterval(toggleLastNews, 6000);
