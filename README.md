@@ -38,3 +38,12 @@ This will start a container with the project directory from your host machine sh
 - `npm start`
 
 The site will be running on localhost:4000
+
+## Running HTML CSS tests
+### For the first time
+
+- Run `node lib/cli/frida.js seeds` in folder Frida-backend (Is necessary one post fixed).
+- `npm install`
+
+### For all the times
+- `npm test`
