@@ -216,7 +216,7 @@ append content
               h2.section-name Últimas notícias:
             ol
               each post in page.last_news
-                li.inactive(itemprop="itemListElement")
+                li.inactive.last-news-analytics(itemprop="itemListElement")
                   a(href=post.path itemprop="url")
                     p.title= post.title
 
