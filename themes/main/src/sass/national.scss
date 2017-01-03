@@ -528,17 +528,14 @@
 
     @include media-query(THREE) {
       height: 300px;
-      width: 2 * $COLUMN-WIDTH;
     }
 
     @include media-query(FOUR) {
       height: 450px;
-      width: 3 * $COLUMN-WIDTH;
     }
 
     @include media-query(FIVE){
       height: 300px;
-      width: 2 * $COLUMN-WIDTH;
     }
   }
 
