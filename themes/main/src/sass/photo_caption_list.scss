@@ -33,7 +33,6 @@
 }
 
 #photo-caption-list .image-item {
-  @include image-rounded-responsive(300px);
   width: 100%;
   margin-top: $VERTICAL-SPACE;
   max-width: 2 * $COLUMN-WIDTH;
@@ -46,4 +45,31 @@
   @include media-query(FOUR) {
     max-width: 2 * $COLUMN-WIDTH;
   }
+}
+
+.charge_figure_mobile {
+    @include media-query(THREE) {
+      display: none;
+    }
+}
+
+.charge_figure_desktop {
+  display: none;
+
+  @include media-query(THREE) {
+    display: block;
+  }
+}
+
+.charge_image_mobile {
+ width: 100%;
+ max-width: 2 * $COLUMN-WIDTH;
+}
+
+figure.charge_figure_desktop {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  height: 300px;
+  width: 100%;
 }

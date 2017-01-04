@@ -499,7 +499,6 @@
   }
 
   .charge_mobile {
-
       @include media-query(THREE) {
         display: none;
       }
@@ -522,7 +521,6 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
-    border-radius: 5px;
     height: 300px;
     width: 100%;
 
