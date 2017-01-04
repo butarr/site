@@ -73,4 +73,12 @@ figure.charge_figure_desktop {
   background-color: $box-background;
   height: 300px;
   width: 100%;
+
+  @include media-query(THREE) {
+    height: 223px;
+  }
+
+  @include media-query(FOUR) {
+    height: 300px;
+  }
 }
