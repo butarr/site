@@ -502,7 +502,7 @@ $number-size: 1.3rem;
     color: $title-color;
   }
 
-  .place, time, figcaption {
+  .place, time, figcaption, .ckeditor-img-caption {
     font: $text-size $family-serif;
     color: $details-color;
   }

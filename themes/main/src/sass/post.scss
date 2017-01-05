@@ -37,6 +37,14 @@
     width: 100% !important;
     height: inherit !important;
   }
+
+  .ckeditor-img-caption {
+    text-align: right;
+    margin-top: -$PARAGRAPH-SPACE;
+  }
+  figcaption {
+    text-align: right;
+  }
 }
 
 #post header {
