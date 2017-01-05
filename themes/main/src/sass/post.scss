@@ -38,12 +38,12 @@
     height: inherit !important;
   }
 
-  .ckeditor-img-caption {
+  .ckeditor-img-caption, figcaption {
     text-align: right;
-    margin-top: -$PARAGRAPH-SPACE;
   }
-  figcaption {
-    text-align: right;
+
+  p + .ckeditor-img-caption {
+    margin-top: -$PARAGRAPH-SPACE;
   }
 }
 
