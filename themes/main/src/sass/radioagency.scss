@@ -123,32 +123,32 @@
   @include media-query(FOUR) {
     padding-top: $VERTICAL-SPACE;
     width: 2 * $COLUMN-WIDTH;
-  }
 
-  .download {
-    padding-left: 10px;
-
-    img {
-      height: 28px;
+    .progress-and-source {
+      height: 38px;
     }
-  }
 
-  .title {
-    margin-bottom: 0;
-  }
-
-  .progress-and-source {
-    height: 38px;
-  }
-
-  .play img {
-    height: 30px;
-  }
-
-  .pause {
-    display: none;
-    img {
+    .play img {
       height: 30px;
+    }
+
+    .pause {
+      display: none;
+      img {
+        height: 30px;
+      }
+    }
+
+    .download {
+      padding-left: 10px;
+
+      img {
+        height: 28px;
+      }
+    }
+
+    .title {
+      margin-bottom: 0;
     }
   }
 }

@@ -560,7 +560,7 @@ $number-size: 1.3rem;
     }
   }
 
-  .dowload-description {
+  .download-description {
     font: bold #{$details-size}/#{$line-separation-small} $family-sans;
     color: $download-link;
   }
@@ -928,15 +928,13 @@ $number-size: 1.3rem;
   }
 
   .sidebar {
-
-    .progress-bar {
-      span, p  {
-        font-size: 0.6rem;
-      }
-    }
-
     @include media-query(FOUR) {
-      span {
+      .progress-bar {
+        span, p  {
+          font-size: 0.6rem;
+        }
+      }
+      .download-description {
         font-size: 0.8rem;
       }
     }
