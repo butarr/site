@@ -197,7 +197,7 @@
   }
 }
 
-#home .advertising-01, .spotlight-03-desktop {
+#home .advertising-02, .spotlight-01-desktop {
   display: none;
 
   @include media-query(THREE) {
@@ -212,7 +212,7 @@
   }
 }
 
-#home .spotlight-02-desktop {
+#home .spotlight-03-desktop {
   display: none;
 
   @include media-query(THREE) {
@@ -228,7 +228,7 @@
   }
 }
 
-#home .advertising-03, .spotlight-03-mobile {
+#home .advertising-01, .spotlight-01-mobile {
   display: flex;
   justify-content: center;
 
@@ -243,7 +243,7 @@
   }
 }
 
-#home .spotlight-01-mobile, .spotlight-02-mobile {
+#home .spotlight-02-mobile, .spotlight-03-mobile {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -259,7 +259,7 @@
   }
 }
 
-#home .spotlight-01-desktop {
+#home .spotlight-02-desktop {
   display: none;
   width: 100%;
   -webkit-order: -6; //Old Safari
@@ -279,7 +279,7 @@
   }
 }
 
-#home .adsense-01-mobile {
+#home .adsense-02-mobile {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -293,7 +293,7 @@
   }
 }
 
-#home .adsense-01-desktop {
+#home .adsense-02-desktop {
   display: none;
   width: 100%;
   -webkit-order: -6; //Old Safari
@@ -307,7 +307,7 @@
   }
 }
 
-#home .adsense-02-desktop {
+#home .adsense-03-desktop {
   display: none;
 
   @include media-query(THREE) {
@@ -317,7 +317,7 @@
   }
 }
 
-#home .adsense-03-desktop {
+#home .adsense-01-desktop {
   display: none;
 
   @include media-query(FOUR) {
@@ -327,7 +327,7 @@
   }
 }
 
-#home .adsense-03-mobile {
+#home .adsense-01-mobile {
   display: block;
   margin-bottom: 10px;
 

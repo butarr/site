@@ -101,12 +101,7 @@ mixin spotlight_01_mobile(post, type)
       img(src=post.image alt=post.title title=post.title itemprop="image")
 
 mixin spotlight_01_desktop(post, type)
-  div.spotlight-01-desktop(class= "spacing" itemscope itemtype=type )
-    a(itemprop="url" href=post.link target="_blank")
-      img(src=post.image alt=post.title title=post.title itemprop="image")
-
-mixin spotlight_02_desktop(post, type)
-  div.spotlight-02-desktop(class="spacing" itemscope itemtype=type)
+  div.spotlight-01-desktop(class="spacing" itemscope itemtype=type)
     a(itemprop="url" href=post.link target="_blank")
       img(src=post.image alt=post.title title=post.title itemprop="image")
 
@@ -115,8 +110,8 @@ mixin spotlight_02_mobile(post, type)
     a#spotlight_02_mobile(itemprop="url" href=post.link target="_blank")
       img(src=post.image alt=post.title title=post.title itemprop="image")
 
-mixin spotlight_03_desktop(post, type)
-  div.spotlight-03-desktop(class="spacing" itemscope itemtype=type)
+mixin spotlight_02_desktop(post, type)
+  div.spotlight-02-desktop(class= "spacing" itemscope itemtype=type )
     a(itemprop="url" href=post.link target="_blank")
       img(src=post.image alt=post.title title=post.title itemprop="image")
 
@@ -125,24 +120,42 @@ mixin spotlight_03_mobile(post, type)
     a#spotlight_03_mobile(itemprop="url" href=post.link target="_blank")
       img(src=post.image alt=post.title title=post.title itemprop="image")
 
-mixin adsense_01_desktop()
-  if config.toggles._D6fenTno_adsense
-    div.adsense-01-desktop(align="center")
-      !=  '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
-      !=  '<!-- desktop_01 -->'
-      !=  '<ins class="adsbygoogle"'
-      !=       'style="display:inline-block;width:728px;height:90px"'
-      !=       'data-ad-client="ca-pub-9026445537434187"'
-      !=       'data-ad-slot="3444890153"></ins>'
-      !=  '<script>'
-      !=  '(adsbygoogle = window.adsbygoogle || []).push({});'
-      !=  '</script>'
+mixin spotlight_03_desktop(post, type)
+  div.spotlight-03-desktop(class="spacing" itemscope itemtype=type)
+    a(itemprop="url" href=post.link target="_blank")
+      img(src=post.image alt=post.title title=post.title itemprop="image")
 
 mixin adsense_01_mobile()
   if config.toggles._D6fenTno_adsense
-    div.adsense-01-mobile(align="cen")
+    div.adsense-01-mobile(align="center")
+      != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
+      != '<!-- mobile_01 -->'
+      != '<ins class="adsbygoogle"'
+      !=      'style="display:inline-block;width:320px;height:100px"'
+      !=      'data-ad-client="ca-pub-9026445537434187"'
+      !=      'data-ad-slot="1176081356"></ins>'
+      != '<script>'
+      != '(adsbygoogle = window.adsbygoogle || []).push({});'
+      != '</script>'
+
+mixin adsense_01_desktop()
+  if config.toggles._D6fenTno_adsense
+    div.adsense-01-desktop(align="center")
+      != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
+      != '<!-- desktop_01 -->'
+      != '<ins class="adsbygoogle"'
+      !=    'style="display:inline-block;width:728px;height:90px"'
+      !=    'data-ad-client="ca-pub-9026445537434187"'
+      !=    'data-ad-slot="4687950959"></ins>'
+      != '<script>'
+      != '(adsbygoogle = window.adsbygoogle || []).push({});'
+      != '</script>'
+
+mixin adsense_02_mobile()
+  if config.toggles._D6fenTno_adsense
+    div.adsense-02-mobile(align="cen")
       !=  '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
-      !=  '<!-- mobile_01 -->'
+      !=  '<!-- mobile_02 -->'
       !=  '<ins class="adsbygoogle"'
       !=     'style="display:inline-block;width:320px;height:100px"'
       !=     'data-ad-client="ca-pub-9026445537434187"'
@@ -154,38 +167,25 @@ mixin adsense_01_mobile()
 mixin adsense_02_desktop()
   if config.toggles._D6fenTno_adsense
     div.adsense-02-desktop(align="center")
-      != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
-      != '<!-- desktop-02 -->'
-      != '<ins class="adsbygoogle"'
-      !=     'style="display:inline-block;width:200px;height:200px"'
-      !=     'data-ad-client="ca-pub-9026445537434187"'
-      !=     'data-ad-slot="8771570159"></ins>'
-      != '<script>'
-      != '(adsbygoogle = window.adsbygoogle || []).push({});'
-      != '</script>'
+      !=  '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
+      !=  '<!-- desktop_02 -->'
+      !=  '<ins class="adsbygoogle"'
+      !=       'style="display:inline-block;width:728px;height:90px"'
+      !=       'data-ad-client="ca-pub-9026445537434187"'
+      !=       'data-ad-slot="3444890153"></ins>'
+      !=  '<script>'
+      !=  '(adsbygoogle = window.adsbygoogle || []).push({});'
+      !=  '</script>'
 
 mixin adsense_03_desktop()
   if config.toggles._D6fenTno_adsense
     div.adsense-03-desktop(align="center")
       != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
-      != '<!-- desktop_03 -->'
+      != '<!-- desktop-03 -->'
       != '<ins class="adsbygoogle"'
-      !=    'style="display:inline-block;width:728px;height:90px"'
-      !=    'data-ad-client="ca-pub-9026445537434187"'
-      !=    'data-ad-slot="4687950959"></ins>'
-      != '<script>'
-      != '(adsbygoogle = window.adsbygoogle || []).push({});'
-      != '</script>'
-
-mixin adsense_03_mobile()
-  if config.toggles._D6fenTno_adsense
-    div.adsense-03-mobile(align="center")
-      != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
-      != '<!-- mobile_03 -->'
-      != '<ins class="adsbygoogle"'
-      !=      'style="display:inline-block;width:320px;height:100px"'
-      !=      'data-ad-client="ca-pub-9026445537434187"'
-      !=      'data-ad-slot="1176081356"></ins>'
+      !=     'style="display:inline-block;width:200px;height:200px"'
+      !=     'data-ad-client="ca-pub-9026445537434187"'
+      !=     'data-ad-slot="8771570159"></ins>'
       != '<script>'
       != '(adsbygoogle = window.adsbygoogle || []).push({});'
       != '</script>'
@@ -196,19 +196,19 @@ append content
     #fb-root
     #home
       .top
-        if page.spotlight_03
-          +spotlight_03_desktop(page.spotlight_03)
-        else if site.data.advertisings.advertising_01
-          +spotlight_01_desktop(site.data.advertisings.advertising_01, "http://schema.org/WPAdBlock")
+        if page.spotlight_01
+          +spotlight_01_desktop(page.spotlight_01)
+        else if page.advertising_02
+          +spotlight_01_desktop(page.advertising_02, "http://schema.org/WPAdBlock")
         else
-          +adsense_03_desktop()
+          +adsense_01_desktop()
 
-        if page.spotlight_03
-          +spotlight_03_mobile(page.spotlight_03)
-        else if site.data.advertisings.advertising_03
-          +spotlight_03_mobile(site.data.advertisings.advertising_03, "http://schema.org/WPAdBlock")
+        if page.spotlight_01
+          +spotlight_01_mobile(page.spotlight_01)
+        else if page.advertising_01
+          +spotlight_01_mobile(page.advertising_01, "http://schema.org/WPAdBlock")
         else
-          +adsense_03_mobile()
+          +adsense_01_mobile()
 
         if page.last_news
           section#last-news-dynamic.last-news(itemscope itemtype="https://schema.org/ItemList" class="spacing" hidden)
@@ -244,12 +244,12 @@ append content
             +small-picture("featured-3", post, imageDescription)
 
           #featured-text-container(class="divisor" class= "spacing")
-            if page.spotlight_01
-              +spotlight_01_mobile(page.spotlight_01)
-            else if site.data.advertisings.advertising_04
-              +spotlight_01_mobile(site.data.advertisings.advertising_04, "http://schema.org/WPAdBlock")
+            if page.spotlight_02
+              +spotlight_02_mobile(page.spotlight_02)
+            else if page.advertising_03
+              +spotlight_02_mobile(page.advertising_03, "http://schema.org/WPAdBlock")
             else
-              +adsense_01_mobile()
+              +adsense_02_mobile()
 
             if page.featured_04
               - var post=page.featured_04
@@ -258,8 +258,10 @@ append content
                   h3.title(itemprop="headline")= post.title
                   p.description(itemprop="description")= post.description
 
-            if page.spotlight_02
-              +spotlight_02_mobile(page.spotlight_02)
+            if page.spotlight_03
+              +spotlight_03_mobile(page.spotlight_03)
+            else if page.advertising_05
+              +spotlight_03_mobile(page.advertising_05, "http://schema.org/WPAdBlock")
 
             if page.featured_05
               - var post=page.featured_05
@@ -269,12 +271,12 @@ append content
               - var post=page.featured_06
               +featured-text-box(post)
 
-          if page.spotlight_01
-            +spotlight_01_desktop(page.spotlight_01)
-          else if site.data.advertisings.advertising_05
-            +spotlight_01_desktop(site.data.advertisings.advertising_05, "http://schema.org/WPAdBlock")
+          if page.spotlight_02
+            +spotlight_02_desktop(page.spotlight_02)
+          else if page.advertising_04
+            +spotlight_02_desktop(page.advertising_04, "http://schema.org/WPAdBlock")
           else
-            +adsense_01_desktop()
+            +adsense_02_desktop()
 
           figure(class= "radar" class= "spacing")
             a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar de Movimentos Populares")
@@ -345,12 +347,12 @@ append content
             a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar dos Movimentos")
               img(src="/img/radar.png" alt="Radar de movimentos populares")
 
-          if page.spotlight_02
-            +spotlight_02_desktop(page.spotlight_02)
-          else if site.data.advertisings.advertising_02
-            +spotlight_02_desktop(site.data.advertisings.advertising_02, "http://schema.org/WPAdBlock")
+          if page.spotlight_03
+            +spotlight_03_desktop(page.spotlight_03)
+          else if page.advertising_06
+            +spotlight_03_desktop(page.advertising_06, "http://schema.org/WPAdBlock")
           else
-            +adsense_02_desktop()
+            +adsense_03_desktop()
 
           section.printed-news(class="spacing")
             +printed-news-listings(page)
