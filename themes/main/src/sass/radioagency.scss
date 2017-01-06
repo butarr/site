@@ -125,21 +125,11 @@
     width: 2 * $COLUMN-WIDTH;
   }
 
-  .progress-bar {
-    span, p  {
-      font-size: 0.6rem;
-    }
-  }
-
   .download {
     padding-left: 10px;
 
     img {
       height: 28px;
-    }
-
-    h4 {
-      font-size: 0.7rem;
     }
   }
 

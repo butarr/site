@@ -926,6 +926,21 @@ $number-size: 1.3rem;
       font: bold #{$title-size}/#{$line-separation-small} $family-serif;
     }
   }
+
+  .sidebar {
+
+    .progress-bar {
+      span, p  {
+        font-size: 0.6rem;
+      }
+    }
+
+    @include media-query(FOUR) {
+      span {
+        font-size: 0.8rem;
+      }
+    }
+  }
 }
 
 @mixin get-font($type){
