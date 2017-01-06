@@ -180,3 +180,25 @@
 #post .listen-audio {
   margin: 0;
 }
+
+#post .download {
+  height: 100%;
+
+  span {
+    margin: auto;
+  }
+
+  img {
+    height: 40px;
+  }
+}
+
+#post .audio-post {
+  margin: 0;
+  width: 100%;
+  max-width: 4 * $COLUMN-WIDTH;
+}
+
+#post .player {
+  height: 65px;
+}
