@@ -183,13 +183,20 @@
 
 #post .download {
   height: 100%;
+  max-width: 80px;
 
   span {
     margin: auto;
   }
 
   img {
-    height: 40px;
+    height: 33px;
+  }
+
+  @include media-query (THREE){
+    img {
+      height: 40px;
+    }
   }
 }
 
