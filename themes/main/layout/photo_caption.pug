@@ -52,9 +52,6 @@ append content
                 a(itemprop="url", href=related.url)
                   figure(itemscope itemtype="https://schema.org/ImageObject")
                     img(src=related.cover.small alt=imageDescription title=imageDescription itemprop="image")
-                    figcaption
-                      p.subtitle(itemprop="caption")= related.cover.subtitle
-                      p.credits(itemprop="author")= related.cover.credits
 
 block footer
   include _partial/footer_photo_caption_list

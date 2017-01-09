@@ -106,7 +106,6 @@
     }
 
     .photo-caption-smaller {
-      @include picture-with-caption();
       @include image-rounded-responsive(300px);
       @include column-lateral-spacing();
       max-width: 2 * $COLUMN-WIDTH;
