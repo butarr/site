@@ -38,10 +38,17 @@ function toMinutesAndSeconds(durationMilliseconds) {
   return durationMinutes + ':' + durationSeconds;
 }
 
+var currentPlayingId;
+
 function play(id) {
+  if(currentPlayingId >= 0) {
+    pause(currentPlayingId);
+  }
+
   $('#audio_' + id)[0].play();
   $('#item_' + id + ' .play').hide();
   $('#item_' + id + ' .pause').show();
+  currentPlayingId = id;
 }
 
 function pause(id) {
