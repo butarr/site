@@ -55,7 +55,7 @@ append content
                   img(itemprop="image" src=featured.cover.medium alt=imageDescription title=imageDescription)
               .info-news
                 a(href=featured.url itemprop="url" class="news-radio-link")
-                  h2.title-featured(itemprop= "headline")= featured.title
+                  h1.title-featured(itemprop= "headline")= featured.title
                   p.description(itemprop="description")= featured.description
                 time.date(datetime=published_at_featured.toISOString(), itemprop="datePublished")= full_date(published_at_featured)
             if featured.audio
@@ -88,7 +88,7 @@ append content
                 a(href=column.path, title="link para a pagina do colunista")
                   span.name(itemprop="name")= columnist.name
                 a(href=column.path itemprop="url")
-                  h2.title= column.title
+                  h4.title= column.title
             if column.audio
               +audio-player(555, column.audio)
           h3.section-name Serviços
@@ -98,9 +98,9 @@ append content
             .service
               - var service = page[service_index]
               - var published_at = utc_to_brt(service.date)
-              h4(id=service_index)=service_name
+              h3.service-name(id=service_index)=service_name
               a(href=service.url, itemprop="url")
-                h5=service.title
+                h4.service-title=service.title
               time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
               if service.audio
                 +audio-player(audio_index++, service.audio)

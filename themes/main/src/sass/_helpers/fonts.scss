@@ -911,20 +911,18 @@ $number-size: 1.3rem;
     }
   }
 
-  .service {
-    .date {
+  .service .date {
       font: $details-size-sidebar $family-sans;
       color: $details-color;
-    }
+  }
 
-    h4 {
-      font: bold #{$details-size}/#{$line-separation-small} $family-sans;
-      text-transform: uppercase;
-    }
+  .service-name {
+    font: bold #{$details-size}/#{$line-separation-small} $family-sans;
+    text-transform: uppercase;
+  }
 
-    h5 {
-      font: bold #{$title-size}/#{$line-separation-small} $family-serif;
-    }
+  .service-title {
+    font: bold #{$title-size}/#{$line-separation-small} $family-serif;
   }
 
   .sidebar {
