@@ -1,4 +1,5 @@
 extends base
+include _partial/audio_player
 
 block title
   title= `${titlecase(page.title)} ${config.separator} Coluna ${config.separator} ${config.title}`
@@ -49,6 +50,11 @@ append content
             time(datetime=published_at.toISOString())= full_date(published_at)
             meta(itemprop="datePublished", content=published_at.toISOString())
             meta(itemprop="dateModified", content=published_at.toISOString())
+
+      if page.audio
+        p.listen-audio Ouça a matéria:
+        figure.audio-post
+          +audio-player(0, page.audio)
 
       if page.cover
         figure(itemscope itemprop="image" itemtype="https://schema.org/ImageObject")
