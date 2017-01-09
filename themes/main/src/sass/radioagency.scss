@@ -77,15 +77,11 @@
 }
 
 #featured-audio-news {
-  display: -webkit-flex; //Old Safari
-  display: flex;
-  -webkit-flex-direction: column; //Old Safari
-  flex-direction: column;
   margin-bottom: $VERTICAL-SPACE;
 
   @include media-query(THREE){
-    -webkit-flex-direction: row; //Old Safari
-    flex-direction: row;
+    display: -webkit-flex; //Old Safari
+    display: flex;
   }
 }
 
