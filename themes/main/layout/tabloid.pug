@@ -67,7 +67,7 @@ append content
         .issuu
           figure(itemprop="image", itemscope, itemtype="http://schema.org/ImageObject")
             a(href=page.issuu target="_blank")
-              img(itemprop="thumbnail", alt=page.title, src=page.cover['medium'])
+              img(itemprop="thumbnail" alt=page.title title=page.title src=page.cover['medium'])
       if page.issuu
         a(itemprop="url" href=page.issuu target="_blank")
           span(class="button")="Leia a versão impressa"
