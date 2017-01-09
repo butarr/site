@@ -77,9 +77,9 @@ append content
 
       if config.toggles.radio_sidebar
         aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
-          if page.column
+          if page.column_01
             h3.section-name Coluna
-            - var column = page.column
+            - var column = page.column_01
             - var columnist = site.data.columnists[column.columnist];
             .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
               .photo
