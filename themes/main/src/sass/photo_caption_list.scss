@@ -34,16 +34,19 @@
 
 #photo-caption-list .image-item {
   width: 100%;
-  margin-top: $VERTICAL-SPACE;
   max-width: 2 * $COLUMN-WIDTH;
+  margin-top: 2 * $VERTICAL-SPACE;
 
   @include media-query(THREE) {
-    @include column-lateral-spacing();
-    max-width: 345px;
+    @include column-lateral-spacing(5px);
+    max-width: 340px;
+    margin-top: $VERTICAL-SPACE;
   }
 
   @include media-query(FOUR) {
+    @include column-lateral-spacing(10px);
     max-width: 2 * $COLUMN-WIDTH;
+    margin-top: 2 * $VERTICAL-SPACE;
   }
 }
 
@@ -71,14 +74,14 @@ figure.charge_figure_desktop {
   background-position: center center;
   background-size: contain;
   background-color: $box-background;
-  height: 300px;
+  height: 293px;
   width: 100%;
 
   @include media-query(THREE) {
-    height: 223px;
+    height: 220px;
   }
 
   @include media-query(FOUR) {
-    height: 300px;
+    height: 293px;
   }
 }
