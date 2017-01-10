@@ -64,28 +64,6 @@
     margin: 20px 0 10px 0;
   }
 
-
-  .other_charge_figure {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    background-color: $box-background;
-    height: 300px;
-    width: 100%;
-
-    @include media-query(THREE) {
-      height: 300px;
-    }
-
-    @include media-query(FOUR) {
-      height: 450px;
-    }
-
-    @include media-query(FIVE){
-      height: 300px;
-    }
-  }
-
   figure {
     @include media-query(THREE) {
       @include site-lateral-spacing();
@@ -135,7 +113,6 @@
       max-width: 2 * $COLUMN-WIDTH;
       padding-top: $VERTICAL-SPACE;
       width: 100%;
-      @include image-rounded-responsive(200px);
 
       @include media-query(THREE) {
         @include column-lateral-spacing();
@@ -145,6 +122,23 @@
       @include media-query(FOUR) {
         max-width: 2 * $COLUMN-WIDTH;
       }
+    }
+  }
+
+  .other_charge_figure {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: $box-background;
+    width: 100%;
+    height: 300px;
+
+    @include media-query(THREE) {
+      height: 147px;
+    }
+
+    @include media-query(FOUR) {
+      height: 200px;
     }
   }
 }
