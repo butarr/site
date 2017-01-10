@@ -21,6 +21,8 @@ $social-margin: 10px;
 }
 
 #page-footer .footer-container {
+  padding: 0 20px;
+
   @include media-query(THREE) {
     width: 3 * $COLUMN-WIDTH;
     margin: 0 auto;
@@ -37,6 +39,8 @@ $social-margin: 10px;
 }
 
 #page-footer .footer-container-post {
+  padding: 0 20px;
+
   @include media-query(THREE) {
     width: 100%;
     margin: 0 auto;
@@ -50,6 +54,8 @@ $social-margin: 10px;
 }
 
 #page-footer .footer-photo-caption-list {
+  padding: 0 20px;
+
   @include media-query(THREE) {
     width: 3 * $COLUMN-WIDTH;
     padding: 20px 0;
@@ -63,6 +69,8 @@ $social-margin: 10px;
 
 
 #page-footer .footer-container-internal {
+  padding: 0 20px;
+
   @include media-query(THREE) {
     width: 100%;
     max-width: (3 * $COLUMN-WIDTH) + (2 * $LATERAL-PAGE-SPACE);
@@ -72,6 +80,12 @@ $social-margin: 10px;
 
 #page-footer .footer-header {
   margin-bottom: 10px;
+
+  text-align: center;
+  @include media-query(THREE) {
+    text-align: inherit;
+  }
+
   img {
     height: 35px;
 
@@ -91,8 +105,8 @@ $social-margin: 10px;
     display: none;
 
     @include media-query(THREE) {
-      display: inline-block;
-      width: 120px;
+      display: block;
+      width: 180px;
     }
 
     li {
@@ -103,7 +117,7 @@ $social-margin: 10px;
 
 #page-footer .footer-social-block {
   @include media-query(THREE) {
-    margin-left: 130px;
+    margin-left: 100px;
   }
 
   p {
@@ -140,6 +154,7 @@ $social-margin: 10px;
   margin-top: 25px;
 
   @include media-query(THREE) {
+    width: 50%;
     text-align: left;
     margin-left: 80px;
     margin-top: 0;
