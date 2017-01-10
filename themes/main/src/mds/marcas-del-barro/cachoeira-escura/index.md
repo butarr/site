@@ -14,6 +14,7 @@ labels:
   - "cachoeira escura"
 cover:
   link: //farm6.staticflickr.com/5672/30654955286_c1f88324e5_b.jpg
+  original: //farm6.staticflickr.com/5672/30654955286_c1f88324e5_b.jpg
   thumbnail: //farm6.staticflickr.com/5672/30654955286_c1f88324e5_t.jpg
   medium: //farm6.staticflickr.com/5672/30654955286_c1f88324e5_z.jpg
   small: //farm6.staticflickr.com/5672/30654955286_c1f88324e5_n.jpg

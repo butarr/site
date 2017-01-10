@@ -14,6 +14,7 @@ labels:
   - "barra longa"
 cover:
   link: //farm6.staticflickr.com/5582/30653716696_a26908ca95_b.jpg
+  original: //farm6.staticflickr.com/5582/30653716696_a26908ca95_b.jpg
   thumbnail: //farm6.staticflickr.com/5582/30653716696_a26908ca95_t.jpg
   medium: //farm6.staticflickr.com/5582/30653716696_a26908ca95_z.jpg
   small: //farm6.staticflickr.com/5582/30653716696_a26908ca95_n.jpg

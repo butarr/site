@@ -14,6 +14,7 @@ labels:
   - mascarenhas
 cover:
   link: //farm6.staticflickr.com/5474/30393304060_48514415ea_b.jpg
+  original: //farm6.staticflickr.com/5474/30393304060_48514415ea_b.jpg
   thumbnail: //farm6.staticflickr.com/5474/30393304060_48514415ea_t.jpg
   medium: //farm6.staticflickr.com/5474/30393304060_48514415ea_z.jpg
   small: //farm6.staticflickr.com/5474/30393304060_48514415ea_n.jpg

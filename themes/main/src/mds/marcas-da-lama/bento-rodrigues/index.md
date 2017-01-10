@@ -14,6 +14,7 @@ labels:
   - "bento rodrigues"
 cover:
   link: //farm6.staticflickr.com/5792/30542012446_8096cd26b0_b.jpg
+  original: //farm6.staticflickr.com/5792/30542012446_8096cd26b0_b.jpg
   thumbnail: //farm6.staticflickr.com/5792/30542012446_8096cd26b0_t.jpg
   medium: //farm6.staticflickr.com/5792/30542012446_8096cd26b0_z.jpg
   small: //farm6.staticflickr.com/5792/30542012446_8096cd26b0_n.jpg

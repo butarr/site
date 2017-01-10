@@ -14,6 +14,7 @@ labels:
   - mineração
 cover:
   link: //farm6.staticflickr.com/5709/30793986241_9a04c3840c_b.jpg
+  original: //farm6.staticflickr.com/5709/30793986241_9a04c3840c_b.jpg
   thumbnail: //farm6.staticflickr.com/5709/30793986241_9a04c3840c_t.jpg
   medium: //farm6.staticflickr.com/5709/30793986241_9a04c3840c_z.jpg
   small: //farm6.staticflickr.com/5709/30793986241_9a04c3840c_n.jpg

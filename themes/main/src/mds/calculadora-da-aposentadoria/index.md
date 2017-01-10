@@ -15,6 +15,7 @@ labels:
   - PMDB
 cover:
   link: //farm1.staticflickr.com/133/31474160716_d719eb3a8d_b.jpg
+  original: //farm1.staticflickr.com/133/31474160716_d719eb3a8d_b.jpg
   thumbnail: //farm1.staticflickr.com/133/31474160716_d719eb3a8d_t.jpg
   medium: //farm1.staticflickr.com/133/31474160716_d719eb3a8d_z.jpg
   small: //farm1.staticflickr.com/133/31474160716_d719eb3a8d_n.jpg
