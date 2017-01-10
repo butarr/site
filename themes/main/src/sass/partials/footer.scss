@@ -134,3 +134,32 @@ $social-margin: 10px;
     }
   }
 }
+
+#page-footer .footer-cc-block {
+  text-align: center;
+  margin-top: 25px;
+
+  @include media-query(THREE) {
+    text-align: left;
+    margin-left: 80px;
+    margin-top: 0;
+    max-width: (2 * $COLUMN-WIDTH) + (2 * $LATERAL-PAGE-SPACE);
+  }
+  @include media-query(THREE) {
+    margin-left: 100px;
+  }
+
+  .cc-icon {
+    height: 25px;
+    @include media-query(THREE) {
+      height: 20px;
+    }
+  }
+  .cc-icon + .cc-icon {
+    margin-left: 8px;
+  }
+
+  .cc-text {
+    padding-top: 8px;
+  }
+}
