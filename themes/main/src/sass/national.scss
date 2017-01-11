@@ -216,15 +216,14 @@
   display: none;
 
   @include media-query(THREE) {
-    display: flex;
+    display: block;
     justify-content: center;
+    max-height: 100%;
 
     img {
       width: 220px;
       height: 100%;
     }
-
-    display: block;
   }
 }
 
