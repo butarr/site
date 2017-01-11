@@ -4,11 +4,13 @@
 ## Requirements
 
 - Node.js v0.12.7 or newer
+- frida-backend repo
+- mongodb running
 
 ## Running
 
 - `npm install`
-- Rename `_config.yml.example` to `_config.yml`
+- duplicate the file `_config.yml.example` and rename the copy to `_config.yml`
 
 - `npm start`
 The site will be running on http://localhost:4000
