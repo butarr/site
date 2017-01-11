@@ -555,7 +555,7 @@ $number-size: 1.3rem;
 
 @mixin __audio_player() {
   .progress-bar {
-    p, span {
+    span {
       font: normal #{$audio-info-size}/#{$line-separation-small} $family-sans;
     }
   }
