@@ -122,8 +122,7 @@ append content
 
         if page.audio
           p.listen-audio Ouça a matéria:
-          figure.audio-post
-            +audio-player(0, page.audio)
+          +audio-player(0, page.audio)
 
         if page.cover
           figure(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
