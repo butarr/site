@@ -7,6 +7,7 @@
   @include get-font(POST);
   @include page-blockquotes;
   @include other-news;
+  @include button;
 
   iframe {
     width: 100%;
@@ -147,6 +148,78 @@
     display: -webkit-flex; //Old Safari
     justify-content: flex-end;
     -webkit-jutify-content: flex-end; //Old Safari
+  }
+}
+
+#post .tabloid-link-section {
+  display: flex;
+  display: -webkit-flex; //Old Safari
+  flex-direction: column;
+  -webkit-flex-direction: column; //Old Safari
+  align-items: center;
+  -webkit-align-items: center; //Old Safari
+
+  @include media-query (THREE) {
+    flex-direction: row;
+    -webkit-flex-direction: row; //Old Safari
+    align-items: flex-start;
+    -webkit-align-items: flex-start; //Old Safari
+  }
+
+  border-top: 3px solid $title-underline;
+  padding-top: 10px;
+  margin: 32px auto 20px;
+
+  .tabloid-link-img {
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0; //Old Safari
+    width: 220px;
+
+    @include media-query (THREE) {
+      width: 150px;
+    }
+
+    @include media-query (FOUR) {
+      width: 220px;
+    }
+  }
+
+  .tabloid-link-text-container {
+    display: flex;
+    display: -webkit-flex; //Old Safari
+    flex-direction: column;
+    -webkit-flex-direction: column; //Old Safari
+    justify-content: center;
+    -webkit-justify-content: center; //Old Safari
+    align-self: center;
+    -webkit-align-self: center; //Old Safari
+
+    padding: 0 30px;
+    max-width: $two_columns;
+    margin-top: 5px;
+    @include media-query (THREE) {
+      margin-top: 0;
+    }
+  }
+
+  .tabloid-link-text {
+    text-align: center;
+    @include media-query (THREE) {
+      text-align: left;
+    }
+  }
+
+  .tabloid-link-button.button {
+    width: 100%;
+    margin: 20px 0;
+
+    @include media-query (THREE) {
+      padding: 8px;
+    }
+
+    @include media-query (FOUR) {
+      max-width: 300px;
+    }
   }
 }
 

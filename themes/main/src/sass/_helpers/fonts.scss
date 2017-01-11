@@ -507,6 +507,18 @@ $number-size: 1.3rem;
     color: $details-color;
   }
 
+  .tabloid-link-text {
+    font: $text-size $family-serif;
+    color: $details-color;
+
+    @include media-query (THREE) {
+      font-size: $details-size;
+    }
+    @include media-query (FOUR) {
+      font-size: $text-size;
+    }
+  }
+
   a {
       color: $link-color;
       font-weight: bold;
@@ -549,6 +561,26 @@ $number-size: 1.3rem;
 
     &:hover {
       color:$link-neutral-color-hover;
+    }
+  }
+
+  .button {
+    font: bold $text-size $family-sans;
+    color: $link-color;
+
+    @include media-query (THREE) {
+      font-size: $details-size;
+    }
+    @include media-query (FOUR) {
+      font-size: $text-size;
+    }
+
+    &:visited {
+      color: $link-visited-color;
+    }
+
+    &:hover {
+      color: $link-hover-color;
     }
   }
 }

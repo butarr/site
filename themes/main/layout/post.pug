@@ -65,19 +65,19 @@ append content
           case sitepath
             when "tabloid_rj"
               - var sitepath= "rio-de-janeiro"
-              - var area_field= "rio de janeiro"
+              - var area_field= "Rio de Janeiro"
             when "tabloid_mg"
               - var sitepath= "minas-gerais"
-              - var area_field= "minas gerais"
+              - var area_field= "Minas Gerais"
             when "tabloid_pe"
               - var sitepath= "pernambuco"
-              - var area_field= "pernambuco"
+              - var area_field= "Pernambuco"
             when "tabloid_ce"
               - var sitepath= "ceara"
-              - var area_field= "ceará"
+              - var area_field= "Ceará"
             when "tabloid_pr"
               - var sitepath= "parana"
-              - var area_field= "paraná"
+              - var area_field= "Paraná"
         else
           - var area_field= page.area
           - var sitepath = page.area
@@ -139,6 +139,18 @@ append content
           != page.content
           .content-footer
             include _partial/social-media-share
+
+          if config.toggles._wzLpg6HH_tabloid_link_in_tabloid_news
+            if page.issuu
+              .tabloid-link-section
+                .tabloid-link-img
+                  img(src="/img/newspaper.png" alt="jornal")
+                .tabloid-link-text-container
+                  .tabloid-link-text
+                    != `Este conteúdo foi originalmente publicado na versão impressa (Edição ${page.edition}) do Brasil de Fato ${area_field}.`
+                  a.tabloid-link-button.button(href= page.issuu)
+                    != `Confira a edição completa`
+
         aside.sidebar(itemscope itemtype="http://schema.org/WPSideBar")
           include _partial/social-media-share
 
