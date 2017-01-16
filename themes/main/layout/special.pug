@@ -25,8 +25,9 @@ mixin displayImage(section)
       +picture(section)
 
 mixin displayLinksPicture(item)
-  figure
+  figure.special-link-mobile
     img(src=item.cover  alt=item.title title=item.title itemprop="image")
+  figure.special-link-desktop(style=`background-image: url(${item.cover});` alt=item.title title=item.title itemprop="image")
   h3.link-figure-title(itemprop="name")= item.title
 
 mixin displayLinks(section)

@@ -229,6 +229,35 @@
       padding-bottom: 5px;
       text-align: center;
     }
+
+    .special-link-mobile {
+        @include media-query(FOUR) {
+          display: none;
+        }
+    }
+
+    .special-link-desktop {
+      display: none;
+
+      @include media-query(FOUR) {
+        display: block;
+      }
+    }
+
+    .special-link-mobile {
+      width: 100%;
+      max-width: 2 * $COLUMN-WIDTH;
+    }
+
+    figure.special-link-desktop {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      border: 2px solid $box-border-neutral;
+      border-radius: 5px;
+      height: 300px;
+      width: 100%;
+    }
   }
 
   .share-special-top {
