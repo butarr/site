@@ -85,6 +85,7 @@ mixin small-picture (field, post, imageDescription)
 mixin featured-text-box (post)
   .box-container(class= "spacing")
     div(class="featured-text-box")
+      span.hat= post.hat
       a(href=post.path itemprop="url")
         h3.title(itemprop="headline")= post.title
 
@@ -254,6 +255,7 @@ append content
             if page.featured_04
               - var post=page.featured_04
               div(class="featured-text-and-title" class= "spacing")
+                span.hat= post.hat
                 a(href=post.path itemprop="url")
                   h3.title(itemprop="headline")= post.title
                   p.description(itemprop="description")= post.description
