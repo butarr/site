@@ -71,6 +71,8 @@ function highlightsPageOnFocus(){
 
 function setup(){
   highlightsPageOnFocus();
+  showServicesOnMobile();
+
   var clientId = 'cUa40O3Jg3Emvp6Tv4U6ymYYO50NUGpJ';
 
   // Initializes SounCloud SDK
@@ -96,6 +98,15 @@ function setup(){
     audioElement.onended = setResetPlayerHandler(playerDiv);
     setProgressBarHandler(audioElement, playerDiv);
   });
+
+}
+
+function showServicesOnMobile() {
+  $('#services-mobile').insertAfter($('#news_2'));
+  
+  if ($('#services-mobile').css('display') == 'block'){
+    $('#news_2').css('border-bottom','0');
+  }
 }
 
 $(document).ready(setup);
