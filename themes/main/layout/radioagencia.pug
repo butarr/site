@@ -19,6 +19,20 @@ mixin metadata(position, post)
       meta(itemprop="name" content="Brasil de Fato")
       link(itemprop="sameAs" href="https://www.brasildefato.com.br")
 
+mixin services
+  h3.section-name Serviços
+  - var audio_index = 101;
+  each service_name,service_index in {service_01:'Hoje na História', service_02:'Alimento é saúde', service_03:'Nossos direitos', service_04:'Fatos Curiosos da História', service_05:'Mosaico Cultural'}
+    .service
+      - var service = page[service_index]
+      - var published_at = utc_to_brt(service.date)
+      h3.service-name(id=service_index)=service_name
+      a(href=service.url, itemprop="url")
+        h4.service-title=service.title
+      time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
+      if service.audio
+        +audio-player(audio_index++, service.audio)
+
 block title
   title=`Radioagência ${config.separator} ${config.title}`
 
@@ -92,19 +106,13 @@ append content
                   h4.title= column.title
             if column.audio
               +audio-player(555, column.audio)
-          h3.section-name Serviços
 
-          - var audio_index = 101;
-          each service_name,service_index in {service_01:'Hoje na História', service_02:'Alimento é saúde', service_03:'Nossos direitos', service_04:'Fatos Curiosos da História', service_05:'Mosaico Cultural'}
-            .service
-              - var service = page[service_index]
-              - var published_at = utc_to_brt(service.date)
-              h3.service-name(id=service_index)=service_name
-              a(href=service.url, itemprop="url")
-                h4.service-title=service.title
-              time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
-              if service.audio
-                +audio-player(audio_index++, service.audio)
+          .services
+            +services
 
           .facebook
             +facebook-widget(facebook_url_radioagency)
+
+        #services-mobile
+          +services
+          h3.section-name Mais Notícias
