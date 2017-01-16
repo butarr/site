@@ -61,6 +61,10 @@
     }
   }
 
+  .service + .service {
+    border-top: 1px solid #ccc;
+  }
+
   .title, .description, .title-featured {
     margin-bottom: $VERTICAL-SPACE;
   }
@@ -150,7 +154,6 @@
 
 #radio .service {
   padding: 10px 0;
-  border-bottom: 1px solid #ccc;
 
   .service-name {
     margin-bottom: 5px;
@@ -180,4 +183,22 @@
 #radio .progress-and-source a {
   float: right;
   color: $neutral-base;
+}
+
+.services {
+  display: none;
+
+  @include media-query(FOUR){
+    display: block;
+  }
+}
+
+#services-mobile {
+  h3 {
+    padding-top: $VERTICAL-SPACE;
+  }
+
+  @include media-query(FOUR) {
+    display: none;
+  }
 }
