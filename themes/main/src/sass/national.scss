@@ -520,6 +520,8 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
+    border: 2px solid $box-border-neutral;
+    border-radius: 5px;
     height: 300px;
     width: 100%;
 

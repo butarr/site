@@ -73,7 +73,8 @@ figure.charge_figure_desktop {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  background-color: $box-background;
+  border: 2px solid $box-border-neutral;
+  border-radius: 5px;
   height: 293px;
   width: 100%;
 

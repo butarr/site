@@ -64,6 +64,29 @@
     margin: 20px 0 10px 0;
   }
 
+  .other_charge_figure {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    border-color: $box-background;
+    border-width: 2px;
+    border-style: solid;
+    height: 300px;
+    width: 100%;
+
+    @include media-query(THREE) {
+      height: 300px;
+    }
+
+    @include media-query(FOUR) {
+      height: 450px;
+    }
+
+    @include media-query(FIVE){
+      height: 300px;
+    }
+  }
+
   figure {
     @include media-query(THREE) {
       @include site-lateral-spacing();
@@ -129,7 +152,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    background-color: $box-background;
+    border: 2px solid $box-border-neutral;
+    border-radius: 5px;
     width: 100%;
     height: 300px;
 
