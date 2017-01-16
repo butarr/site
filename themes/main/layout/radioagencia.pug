@@ -61,7 +61,7 @@ append content
         if page.featured_01
           - var featured = page.featured_01
           - var published_at_featured = utc_to_brt(featured.date)
-          .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
+          .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor" id=`news_featured`)
             +metadata(0, featured)
             div#featured-audio-news
               .image
@@ -79,7 +79,7 @@ append content
         - var position= 1
         each post in page.latest_news
           - var published_at_post = utc_to_brt(post.date)
-          .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
+          .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor" id=`news_${position}`)
             +metadata(position, post)
             a(href=post.url itemprop="url" class="news-radio-link")
               h2.title(itemprop= "headline")= post.title
