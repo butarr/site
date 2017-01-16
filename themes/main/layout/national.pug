@@ -76,12 +76,6 @@ mixin newsletter(inputClass)
     i(aria-hidden="true")
     p Email inválido!
 
-mixin small-picture (field, post, imageDescription)
-  div(id=field class="featured-small-picture" class="divisor" class="spacing")
-    a(itemprop="url" href=post.path)
-      figure(style=`background-image: url(${post.cover.small});` aria-label=imageDescription title=imageDescription itemprop="image")
-      h3.title(itemprop="headline")= post.title
-
 mixin featured-text-box (post)
   .box-container(class= "spacing")
     div(class="featured-text-box")
@@ -237,12 +231,12 @@ append content
           if page.featured_02
             - var post=page.featured_02
             - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-            +small-picture("featured-2", post, imageDescription)
+            +footer-article("featured-2", post, imageDescription)
 
           if page.featured_03
             - var post=page.featured_03
             - var imageDescription=post.cover.subtitle + ' - Créditos: ' + post.cover.credits
-            +small-picture("featured-3", post, imageDescription)
+            +footer-article("featured-3", post, imageDescription)
 
           #featured-text-container(class="divisor" class= "spacing")
             if page.spotlight_02
