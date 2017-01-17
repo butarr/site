@@ -1,0 +1,74 @@
+extends base
+
+
+block title
+  - var columnist = site.data.columnists[page.columnist];
+
+  title= `${titlecase(columnist.name)} ${config.separator} ${config.title}`
+
+block description
+  meta(name="description" content= columnist.description)
+
+block canonical
+    link(href=`https://www.brasildefato.com.br/${columnist.path}/` rel="canonical")
+
+block keywords
+  meta(name="keywords" content=columnist.name)
+
+block open_graph
+  meta(property="og:title" content=`${columnist.name.toUpperCase()} | ${config.title}`)
+  meta(property="og:description" content=config.description)
+  meta(property="og:image" content=`${config.url}/img/share-logo.png`)
+
+block bannerLogo
+  .banner-logo.banner-logo-default
+
+append content
+  main.grid-3-columns
+
+    section#news-list(class= "list" itemscope itemtype="http://schema.org/ItemList")
+      h1(class="page-name" itemprop="name")= columnist.name
+
+      .person-cell(itemscope itemtype="http://schema.org/Person")
+        .person-container
+          a(href=page.path title="link para a pagina do colunista")
+            img.profile-image(itemprop="image" alt="Imagem de perfil do Colunista" src=columnist.photo )
+          a(href=page.path title="link para a pagina do colunista")
+            span.name(itemprop="name")= columnist.name
+
+      - var position= 0
+      each post in page.news
+        - var published_at = utc_to_brt(post.date)
+
+        a.news-item-link(href=post.path)
+          .news-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
+            meta(itemprop="url" content=`https://www.brasildefato.com.br/${post.path}`)
+            meta(itemprop="position" content= ++position)
+
+            div(itemscope itemtype="https://schema.org/NewsArticle")
+              meta(itemprop="author" content= post.author)
+              meta(itemprop="dateModified" content=published_at.toISOString())
+              meta(itemprop="mainEntityOfPage" content=`https://www.brasildefato.com.br/${sitepath}/`)
+
+              span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
+                span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
+                  meta(itemprop="url" content="https://www.brasildefato.com.br/img/logo-microdata.jpg")
+                  meta(itemprop="width" content="600")
+                  meta(itemprop="height" content="60")
+                meta(itemprop="name" content="Brasil de Fato")
+                link(itemprop="sameAs" href="https://www.brasildefato.com.br")
+
+              if post.cover
+                .image
+                  - var imageDescription= post.cover.subtitle + ' - Créditos: ' + post.cover.credits
+                  figure(style=`background-image: url(${post.cover.small});` aria-label=imageDescription title=imageDescription itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
+                    meta(itemprop="width" content="696")
+                    meta(itemprop="height" content="464")
+                    meta(itemprop="url" content=`http://www.brasildefato.com.br/${post.cover.url}`)
+
+              .content(class="no-image" class= "divisor")
+                h3.title(itemprop= "headline")= post.title
+                p.description(itemprop="description")= post.description
+                time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+
+      include _partial/pagination
