@@ -32,13 +32,13 @@
 
 #home {
   #last-news-dynamic {
-    -webkit-order: -11; //Old Safari
-    order: -11;
+    -webkit-order: -15; //Old Safari
+    order: -15;
   }
 
   #featured-1 {
-    -webkit-order: -10; //Old Safari
-    order: -10;
+    -webkit-order: -14; //Old Safari
+    order: -14;
 
     @include image-rounded(100%, 227px);
 
@@ -48,11 +48,77 @@
   }
 
   #featured-2 {
-    -webkit-order: -9; //Old Safari
-    order: -9;
+    -webkit-order: -13; //Old Safari
+    order: -13;
   }
 
   #featured-3 {
+    -webkit-order: -12; //Old Safari
+    order: -12;
+
+    @include media-query(FOUR){
+      -webkit-order: -11; //Old Safari
+      order: -11;
+    }
+
+    @include media-query(FIVE){
+      -webkit-order: -12; //Old Safari
+      order: -12;
+    }
+  }
+
+  #featured-text-container {
+    display: -webkit-flex; //Old Safari
+    display: flex;
+    -webkit-flex-wrap: wrap; //Old Safari
+    flex-wrap: wrap;
+    -webkit-order: -11; //Old Safari
+    order: -11;
+
+    @include media-query(FOUR){
+      width: 2 * $COLUMN-WIDTH;
+      -webkit-order: -12; //Old Safari
+      order: -12;
+    }
+
+    @include media-query(FIVE){
+      width: 4 * $COLUMN-WIDTH;
+      -webkit-order: -11; //Old Safari
+      order: -11;
+    }
+  }
+
+  #featured-7 {
+    -webkit-order: -10; //Old Safari
+    order: -10;
+
+    @include media-query(FOUR){
+      -webkit-order: -9; //Old Safari
+      order: -9;
+    }
+
+    @include media-query(FIVE){
+      -webkit-order: -10; //Old Safari
+      order: -10;
+    }
+  }
+
+  #featured-8 {
+    -webkit-order: -9; //Old Safari
+    order: -9;
+
+    @include media-query(FOUR){
+      -webkit-order: -8; //Old Safari
+      order: -8;
+    }
+
+    @include media-query(FIVE){
+      -webkit-order: -9; //Old Safari
+      order: -9;
+    }
+  }
+
+  #featured-9 {
     -webkit-order: -8; //Old Safari
     order: -8;
 
@@ -67,33 +133,42 @@
     }
   }
 
-  #featured-text-container {
-    display: -webkit-flex; //Old Safari
-    display: flex;
-    -webkit-flex-wrap: wrap; //Old Safari
-    flex-wrap: wrap;
+  #featured-10 {
     -webkit-order: -7; //Old Safari
     order: -7;
 
     @include media-query(FOUR){
-      width: 2 * $COLUMN-WIDTH;
-      -webkit-order: -8; //Old Safari
-      order: -8;
+      -webkit-order: -5; //Old Safari
+      order: -5;
     }
 
     @include media-query(FIVE){
-      width: 4 * $COLUMN-WIDTH;
       -webkit-order: -7; //Old Safari
       order: -7;
     }
   }
 
   #videos {
-    -webkit-order: -5; //Old Safari
-    order: -5;
+    -webkit-order: -6; //Old Safari
+    order: -6;
   }
 
   #images {
+    -webkit-order: -5; //Old Safari
+    order: -5;
+
+    @include media-query(FOUR){
+      -webkit-order: -4; //Old Safari
+      order: -4;
+    }
+
+    @include media-query(FIVE){
+      -webkit-order: -5; //Old Safari
+      order: -5;
+    }
+  }
+
+  #featured-11 {
     -webkit-order: -4; //Old Safari
     order: -4;
 
@@ -108,24 +183,17 @@
     }
   }
 
-  #featured-7 {
+  #featured-12 {
     -webkit-order: -3; //Old Safari
     order: -3;
 
     @include media-query(FOUR){
-      -webkit-order: -4; //Old Safari
-      order: -4;
+      display: none;
     }
 
     @include media-query(FIVE){
-      -webkit-order: -3; //Old Safari
-      order: -3;
+      display: block;
     }
-  }
-
-  #featured-8 {
-    -webkit-order: -2; //Old Safari
-    order: -2;
   }
 }
 
@@ -261,8 +329,8 @@
 #home .spotlight-02-desktop {
   display: none;
   width: 100%;
-  -webkit-order: -6; //Old Safari
-  order: -6;
+  -webkit-order: -10; //Old Safari
+  order: -10;
 
   @include media-query(THREE) {
     display: flex;

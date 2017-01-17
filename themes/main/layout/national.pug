@@ -231,11 +231,6 @@ append content
                   h3.title(itemprop="headline")= post.title
                   p.description(itemprop="description")= post.description
 
-            if page.spotlight_03
-              +spotlight_03_mobile(page.spotlight_03)
-            else if page.advertising_05
-              +spotlight_03_mobile(page.advertising_05, "http://schema.org/WPAdBlock")
-
             if page.featured_05
               - var post=page.featured_05
               +featured-text-box(post)
@@ -244,12 +239,37 @@ append content
               - var post=page.featured_06
               +featured-text-box(post)
 
+            if page.spotlight_03
+              +spotlight_03_mobile(page.spotlight_03)
+            else if page.advertising_05
+              +spotlight_03_mobile(page.advertising_05, "http://schema.org/WPAdBlock")
+
           if page.spotlight_02
             +spotlight_02_desktop(page.spotlight_02)
           else if page.advertising_04
             +spotlight_02_desktop(page.advertising_04, "http://schema.org/WPAdBlock")
           else
             +adsense_02_desktop()
+
+          if page.featured_07
+            - var post=page.featured_07
+            - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
+            +footer-article("featured-7", post, imageDescription)
+
+          if page.featured_08
+            - var post=page.featured_08
+            - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
+            +footer-article("featured-8", post, imageDescription)
+
+          if page.featured_09
+            - var post=page.featured_09
+            - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
+            +footer-article("featured-9", post, imageDescription)
+
+          if page.featured_10
+            - var post=page.featured_10
+            - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
+            +footer-article("featured-10", post, imageDescription)
 
           figure(class= "radar" class= "spacing")
             a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar de Movimentos Populares")
@@ -272,15 +292,15 @@ append content
             h2.section-name Fotos
             iframe(itemprop="image" src="//www.flickr.com/slideShow/index.gne?user_id=brasildefato&set_id=72157665304017756", width="450", height="337")
 
-          if page.featured_07
-            - var post=page.featured_07
+          if page.featured_11
+            - var post=page.featured_11
             - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
-            +footer-article("featured-7", post, imageDescription)
+            +footer-article("featured-11", post, imageDescription)
 
-          if page.featured_08
-            - var post=page.featured_08
+          if page.featured_12
+            - var post=page.featured_12
             - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
-            +footer-article("featured-8", post, imageDescription)
+            +footer-article("featured-12", post, imageDescription)
 
           if page.photo_caption
             .photo-caption(class= "spacing")
