@@ -4,14 +4,19 @@ block title
   - var area_field = page.display_area
   case area_field
     when "tabloid_mg"
+      - var sitepath= "minas-gerais"
       - var state= "Minas Gerais"
     when "tabloid_ce"
+      - var sitepath= "ceara"
       - var state= "Ceará"
     when "tabloid_pe"
+      - var sitepath= "pernambuco"
       - var state= "Pernambuco"
     when "tabloid_rj"
+      - var sitepath= "rio-de-janeiro"
       - var state= "Rio de Janeiro"
     when "tabloid_pr"
+      - var sitepath= "parana"
       - var state= "Paraná"
 
   if page.edition
@@ -43,21 +48,19 @@ block keywords
   meta(name="keywords" content=page.display_area)
 
 append content
-  - var area_field = page.display_area
-  case area_field
-    when "tabloid_mg"
-      - var acronym= "MG"
-    when "tabloid_ce"
-      - var acronym= "CE"
-    when "tabloid_pe"
-      - var acronym= "PE"
-    when "tabloid_rj"
-      - var acronym= "RJ"
-    when "tabloid_pr"
-      - var acronym= "PR"
-
   main.grid-3-columns
     section#tabloid(itemscope itemtype="https://bib.schema.org/Newspaper")
+      div#breadcrumb
+        ol(itemscope itemtype="http://schema.org/BreadcrumbList")
+          li(itemprop="itemListElement")
+            a(href="/")
+              p Início
+          li
+            i(class="fa fa-chevron-right fa-lg")
+          li(itemprop="itemListElement")
+            a(href=`/${sitepath}/`)
+              p.breadcrumb-last= state
+
       - var published_at = utc_to_brt(page.date)
       - var title = page.title
       h1.title(itemprop="headline")= title
