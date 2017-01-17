@@ -29,37 +29,14 @@ mixin printed-news-listings(page)
   if page.ceara
     a(href="/ceara/" itemprop="url")
       h3.button Ceará
-  if page.minas_gerais
-    a(href="/minas-gerais/" itemprop="url")
-      h3.button Minas Gerais
-  if page.parana
-    a(href="/parana/" itemprop="url")
-      h3.button Paraná
-  if page.pernambuco
-    a(href="/pernambuco/" itemprop="url")
-      h3.button Pernambuco
-  if page.rio_de_janeiro
-    a(href="/rio-de-janeiro/" itemprop="url")
-      h3.button Rio de Janeiro
-
-mixin printed-news(page)
-  h2.section-name Edições Impressas
-  img(src="/img/newspaper.png" alt="jornal")
-  if page.ceara
-    a(href= page.ceara.path itemprop="url")
-      h3.button Ceará
-  if page.minas_gerais
-    a(href= page.minas_gerais.path itemprop="url")
-      h3.button Minas Gerais
-  if page.parana
-    a(href= page.parana.path itemprop="url")
-      h3.button Paraná
-  if page.pernambuco
-    a(href= page.pernambuco.path itemprop="url")
-      h3.button Pernambuco
-  if page.rio_de_janeiro
-    a(href= page.rio_de_janeiro.path itemprop="url")
-      h3.button Rio de Janeiro
+  a(href="/minas-gerais/" itemprop="url")
+    h3.button Minas Gerais
+  a(href="/parana/" itemprop="url")
+    h3.button Paraná
+  a(href="/pernambuco/" itemprop="url")
+    h3.button Pernambuco
+  a(href="/rio-de-janeiro/" itemprop="url")
+    h3.button Rio de Janeiro
 
 mixin newsletter(inputClass)
   h2.section-name Boletim BdF
