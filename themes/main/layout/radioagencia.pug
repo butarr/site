@@ -28,7 +28,7 @@ mixin services
       - var published_at = utc_to_brt(service.date)
       h3.service-name(id=service_index)=service_name
       a(href=service.url, itemprop="url")
-        h4.service-title=service.title
+        h4.title=service.title
       time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
       if service.audio
         +audio-player(audio_index++, service.audio)

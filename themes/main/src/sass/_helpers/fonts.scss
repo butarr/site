@@ -927,10 +927,6 @@ $number-size: 1.3rem;
   }
 
   .columnist {
-    .title {
-      font: bold #{$title-size}/#{$line-separation-small} $family-serif;
-    }
-
     .name {
       font: bold #{$details-size}/#{$line-separation-small} $family-sans;
       color: $columnist-name-color;
@@ -949,24 +945,21 @@ $number-size: 1.3rem;
   }
 
   .service-name {
-    font: bold #{$details-size}/#{$line-separation-small} $family-sans;
+    font: bold $section-name-size $family-sans;
     text-transform: uppercase;
   }
 
-  .service-title {
-    font: bold #{$title-size}/#{$line-separation-small} $family-serif;
-  }
-
-  .sidebar {
-    @include media-query(FOUR) {
-      .progress-bar {
-        span, p  {
-          font-size: 0.6rem;
-        }
+  @include media-query(FOUR) {
+    .progress-bar {
+      span, p  {
+        font-size: 0.6rem;
       }
-      .download-description {
-        font-size: 0.8rem;
-      }
+    }
+    .download-description {
+      font-size: 0.8rem;
+    }
+    .sidebar .title {
+      font: bold #{$title-size}/#{$line-separation-small} $family-serif;
     }
   }
 }
