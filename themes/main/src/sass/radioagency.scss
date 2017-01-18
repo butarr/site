@@ -195,7 +195,9 @@
 }
 
 #services-mobile {
-
+  .title {
+    margin-bottom: 0;
+  }
 
   @include media-query(FOUR) {
     display: none;

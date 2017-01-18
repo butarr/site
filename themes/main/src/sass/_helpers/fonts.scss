@@ -939,27 +939,28 @@ $number-size: 1.3rem;
     }
   }
 
-  .service .date {
-      font: $details-size-sidebar $family-sans;
-      color: $details-color;
-  }
-
   .service-name {
     font: bold $section-name-size $family-sans;
     text-transform: uppercase;
   }
 
-  @include media-query(FOUR) {
+  .sidebar {
+    .title {
+      font: bold #{$title-size}/#{$line-separation-small} $family-serif;
+    }
+
     .progress-bar {
       span, p  {
         font-size: 0.6rem;
       }
     }
+
+    .date {
+      font-size: $details-size-sidebar;
+    }
+
     .download-description {
       font-size: 0.8rem;
-    }
-    .sidebar .title {
-      font: bold #{$title-size}/#{$line-separation-small} $family-serif;
     }
   }
 }
