@@ -178,3 +178,24 @@ $social-margin: 10px;
     padding-top: 8px;
   }
 }
+
+.div-env-test {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7%;
+  background-color: rgba(0,0,0,0.75);
+  z-index: 999;
+  opacity: 1;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.message-test {
+  padding: 15px;
+  text-align: center;
+  color: #fcfcfc;
+  font: 700 1rem Merriweather, "Times New Roman";
+}
