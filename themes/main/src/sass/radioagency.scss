@@ -3,8 +3,8 @@
 @import '_helpers/fonts';
 @import '_helpers/mixins';
 
-#radio {
-  @include get-font(RADIO);
+#radioagency {
+  @include get-font(RADIOAGENCY);
   @include columnist;
   @include button;
   width: 100%;
@@ -88,7 +88,7 @@
   }
 }
 
-#radio .image {
+#radioagency .image {
   width: 100%;
   @include image-rounded-responsive(300px);
   margin-bottom: $VERTICAL-SPACE;
@@ -105,7 +105,7 @@
   }
 }
 
-#radio .info-news {
+#radioagency .info-news {
   width: 100%;
 
   @include media-query(THREE){
@@ -114,7 +114,7 @@
   }
 }
 
-#radio .sidebar {
+#radioagency .sidebar {
   width: 100%;
   display: inline-block;
   @include column-lateral-spacing();
@@ -152,7 +152,7 @@
   }
 }
 
-#radio .service {
+#radioagency .service {
   padding: 10px 0;
 
   .service-name {
@@ -180,7 +180,7 @@
   }
 }
 
-#radio .progress-and-source a {
+#radioagency .progress-and-source a {
   float: right;
   color: $neutral-base;
 }
