@@ -102,9 +102,9 @@ function setup(){
 }
 
 function showServicesOnMobile() {
-  $('#services-mobile').insertAfter($('#news_2'));
-  
-  if ($('#services-mobile').css('display') == 'block'){
+  $('#sidebar-mobile').insertAfter($('#news_2'));
+
+  if ($('#sidebar-mobile').css('display') == 'block'){
     $('#news_2').css('border-bottom','0');
   }
 }
