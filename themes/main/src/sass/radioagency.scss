@@ -50,6 +50,7 @@
   .section-name {
     @include section-name();
     padding-top: $VERTICAL-SPACE;
+    margin-bottom: 0;
   }
 
   .divisor {
@@ -194,9 +195,7 @@
 }
 
 #services-mobile {
-  h3 {
-    padding-top: $VERTICAL-SPACE;
-  }
+
 
   @include media-query(FOUR) {
     display: none;
