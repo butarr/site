@@ -148,10 +148,16 @@ $number-size: 1.3rem;
 }
 
 @mixin __national(){
-  .section-name, .hat {
+  .section-name {
     font: bold $section-name-size $family-sans;
     color: $title-color;
     text-transform: uppercase;
+  }
+
+  .hat {
+    font: bold $section-name-size $family-sans;
+    text-transform: uppercase;
+    color: $link-color;
   }
 
   .title {

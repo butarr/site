@@ -486,7 +486,7 @@
   }
 
   .hat{
-    @include section-name();
+    @include hat-name();
   }
 }
 
@@ -496,7 +496,7 @@
   width: 100%;
 
   .hat{
-    @include section-name();
+    @include hat-name();
     margin-bottom: 10px;
   }
 
@@ -528,7 +528,7 @@
   }
 
   .hat{
-    @include section-name();
+    @include hat-name();
   }
 
   img{
