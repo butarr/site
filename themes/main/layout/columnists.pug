@@ -23,9 +23,9 @@ append content
 
           .person-cell(itemscope itemtype="http://schema.org/Person")
             .person-container
-              a(href=post.path title="link para a pagina do colunista")
+              a(href=columnist.path title="link para a pagina do colunista")
                 img.profile-image(itemprop="image" alt="Imagem de perfil do Colunista" src=columnist.photo )
-              a(href=post.path title="link para a pagina do colunista")
+              a(href=columnist.path title="link para a pagina do colunista")
                 span.name(itemprop="name")= columnist.name
 
           .text(itemscope itemtype="http://schema.org/BlogPosting")
