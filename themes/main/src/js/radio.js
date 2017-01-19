@@ -69,6 +69,14 @@ function highlightsPageOnFocus(){
   }
 }
 
+function showServicesOnMobile() {
+  $('#sidebar-mobile').insertAfter($('#news_2'));
+
+  if ($('#sidebar-mobile').css('display') == 'block'){
+    $('#news_2').css('border-bottom','0');
+  }
+}
+
 function setup(){
   highlightsPageOnFocus();
   showServicesOnMobile();
@@ -98,15 +106,6 @@ function setup(){
     audioElement.onended = setResetPlayerHandler(playerDiv);
     setProgressBarHandler(audioElement, playerDiv);
   });
-
-}
-
-function showServicesOnMobile() {
-  $('#sidebar-mobile').insertAfter($('#news_2'));
-
-  if ($('#sidebar-mobile').css('display') == 'block'){
-    $('#news_2').css('border-bottom','0');
-  }
 }
 
 $(document).ready(setup);
