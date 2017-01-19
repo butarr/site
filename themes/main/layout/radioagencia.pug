@@ -66,8 +66,8 @@ append content
             div#featured-audio-news
               .image
                 - var imageDescription= featured.cover.subtitle + ' - Créditos: ' + featured.cover.credits
-                figure(itemscope itemtype="https://schema.org/ImageObject")
-                  img(itemprop="image" src=featured.cover.medium alt=imageDescription title=imageDescription)
+                a(href=featured.url itemprop="url" class="news-radio-link")
+                  figure(style=`background-image: url(${featured.cover.medium});` alt=imageDescription title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
               .info-news
                 a(href=featured.url itemprop="url" class="news-radio-link")
                   h2.title-featured(itemprop= "headline")= featured.title
