@@ -34,8 +34,9 @@ block description
 block canonical
   link(href=`https://www.brasildefato.com.br${page.url}` rel="canonical")
 
+
 block keywords
-  meta(name="keywords" content=`${page.hat}, ${page.area}`)
+  meta(name="keywords" content=`${page.hat}, ${page.area}, ${page.labels.join(', ')}`)
 
 block open_graph
   include _partial/open_graph_page
