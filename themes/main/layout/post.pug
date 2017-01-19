@@ -36,7 +36,10 @@ block canonical
 
 
 block keywords
-  meta(name="keywords" content=`${page.hat}, ${page.area}, ${page.labels.join(', ')}`)
+  if page.labels
+    meta(name="keywords" content=`${page.hat}, ${page.area},  ${page.labels.join(', ')}`)
+  else
+    meta(name="keywords" content=`${page.hat}, ${page.area}`)
 
 block open_graph
   include _partial/open_graph_page
