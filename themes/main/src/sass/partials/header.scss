@@ -130,6 +130,11 @@ $logo-big-height: 5.2rem;
 
   .social-media-icons {
     display: none;
+    i {
+      color: #fff;
+      padding: 4px;
+    }
+
 
     @include media-query(FOUR) {
       display: -webkit-flex; //Old Safari
