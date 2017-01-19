@@ -55,8 +55,8 @@ content: |
   <ul class="list">
     <li class="item">
       <i class="fa fa-envelope-square fa-lg">
-        <a class="text" target="_blank" href="mailto:radioagenciabdf@gmail.com">
-          radioagenciabdf@gmail.com
+        <a class="text" target="_blank" href="mailto:radioagencia@brasildefato.com.br">
+          radioagencia@brasildefato.com.br
         </a>
       </i>
     </li>
