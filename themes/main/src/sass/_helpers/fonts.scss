@@ -939,7 +939,7 @@ $number-size: 1.3rem;
     }
   }
 
-  .service-name {
+  .service-name, .section-name {
     font: bold $section-name-size $family-sans;
     text-transform: uppercase;
   }
