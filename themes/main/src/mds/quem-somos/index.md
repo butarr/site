@@ -107,7 +107,7 @@ content: |
   <h3 class="title underline">Impresso Rio de Janeiro</h3>
   <dl class="list">
     <dt>Conselho Editorial:</dt>
-    <dd>Alexania Rossato, Antonio Neiva (in memoriam), Joaquín Piñero, Kleybson Andrade, Mario Augusto Jakobskind, Nicolle Berti, Rodrigo Marcelino, Vito Giannotti (in memoriam)</dd>
+    <dd>Alexania Rossato, Antonio Neiva (in memoriam), Joaquín Piñero, Kleybson Andrade, Mário Augusto Jakobskind, Nicolle Berti, Rodrigo Marcelino, Vito Giannotti (in memoriam)</dd>
     <dt>Edição:</dt>
     <dd>Vivian Virissimo</dd>
     <dt>Co-edição:</dt>
