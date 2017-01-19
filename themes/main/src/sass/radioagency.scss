@@ -86,12 +86,8 @@
   }
 
   figure {
-    height: 200px;
+    height: 293px;
     width: 100%;
-
-    @include media-query(TWO){
-      height: 293px;
-    }
 
     @include media-query(THREE) {
       height: 220px;
