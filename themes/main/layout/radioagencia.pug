@@ -53,11 +53,8 @@ block open_graph
 append content
   h1.offscreen Radioagência Brasil de Fato
   main.grid-radio
-    section#radioagency(class= "list" itemscope itemtype="http://schema.org/ItemList" lang= language)
-      - var sidebar = 'sidebar_disabled'
-      if config.toggles.radio_sidebar
-        - sidebar = 'sidebar_enabled'
-      div(class=`main_${sidebar}`)
+    #radioagency
+      section#radioagency-list(class= "list" itemscope itemtype="http://schema.org/ItemList" lang= language)
         if page.featured_01
           - var featured = page.featured_01
           - var published_at_featured = utc_to_brt(featured.date)
@@ -89,30 +86,30 @@ append content
               +audio-player(position, post.audio)
             - position++
 
-      if config.toggles.radio_sidebar
-        aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
-          if page.column_01
-            h3.section-name Coluna
-            - var column = page.column_01
-            - var columnist = site.data.columnists[column.columnist];
-            .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
-              .photo
-                a(href=column.path, title="link para a pagina do colunista")
-                  img(alt=`Foto de ${columnist.name}` src=columnist.photo itemprop="image")
-              .column
-                a(href=column.path, title="link para a pagina do colunista")
-                  span.name(itemprop="name")= columnist.name
-                a(href=column.path itemprop="url")
-                  h4.title= column.title
-            if column.audio
-              +audio-player(555, column.audio)
 
-          .services
-            +services
+      aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
+        if page.column_01
+          h3.section-name Coluna
+          - var column = page.column_01
+          - var columnist = site.data.columnists[column.columnist];
+          .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
+            .photo
+              a(href=column.path, title="link para a pagina do colunista")
+                img(alt=`Foto de ${columnist.name}` src=columnist.photo itemprop="image")
+            .column
+              a(href=column.path, title="link para a pagina do colunista")
+                span.name(itemprop="name")= columnist.name
+              a(href=column.path itemprop="url")
+                h4.title= column.title
+          if column.audio
+            +audio-player(555, column.audio)
 
-          .facebook
-            +facebook-widget(facebook_url_radioagency)
-
-        #sidebar-mobile
+        .services
           +services
-          h3.section-name Mais Notícias
+
+        .facebook
+          +facebook-widget(facebook_url_radioagency)
+
+      #sidebar-mobile
+        +services
+        h3.section-name Mais Notícias
