@@ -23,35 +23,6 @@
     align-items: flex-start;
   }
 
-  .main_sidebar_enabled {
-    width: 100%;
-
-    @include media-query(FOUR) {
-      max-width: 3 * $COLUMN-WIDTH;
-      padding-right: 40px;
-    }
-  }
-
-  .main_sidebar_disabled {
-    width: 100%;
-
-    @include media-query(FOUR) {
-      width: 4 * $COLUMN-WIDTH-RADIO;
-      margin: 0 auto;
-      padding: 0;
-    }
-  }
-
-  .page-name {
-    @include page-name();
-  }
-
-  .section-name {
-    @include section-name();
-    padding-top: $VERTICAL-SPACE;
-    margin-bottom: 0;
-  }
-
   .divisor {
     padding: 20px 0;
     border-bottom: 1px solid $content-divisor;
@@ -59,6 +30,12 @@
     &:last-child {
       border: 0;
     }
+  }
+
+  .section-name {
+    @include section-name();
+    padding-top: $VERTICAL-SPACE;
+    margin-bottom: 0;
   }
 
   .service + .service {
@@ -85,6 +62,15 @@
   @include media-query(THREE){
     display: -webkit-flex; //Old Safari
     display: flex;
+  }
+}
+
+#radioagency-list {
+  width: 100%;
+
+  @include media-query(FOUR) {
+    max-width: 3 * $COLUMN-WIDTH;
+    padding-right: 40px;
   }
 }
 
