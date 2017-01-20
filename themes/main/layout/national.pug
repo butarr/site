@@ -271,9 +271,10 @@ append content
             - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
             +footer-article("featured-10", post, imageDescription)
 
-          figure(class= "radar" class= "spacing")
-            a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar de Movimentos Populares")
-              img#radar_mobile(src="/img/radar_mobile.png" alt="Radar de Movimentos Populares")
+          if config.toggles._b6dbKQsE_radar
+            figure(class= "radar" class= "spacing")
+              a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar de Movimentos Populares")
+                img#radar_mobile(src="/img/radar_mobile.png" alt="Radar de Movimentos Populares")
 
           section.printed-news(class="spacing")
             +printed-news-listings(page)
@@ -336,9 +337,10 @@ append content
                       h3.title(id="most_read_"+cont++)= post.title
 
         aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
-          figure(class= "radar" class= "spacing")
-            a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar dos Movimentos")
-              img(src="/img/radar.png" alt="Radar de movimentos populares")
+          if config.toggles._b6dbKQsE_radar
+            figure(class= "radar" class= "spacing")
+              a(itemprop="url" target="_blank" href="http://radar.brasildefato.com.br" title="Radar dos Movimentos")
+                img(src="/img/radar.png" alt="Radar de movimentos populares")
 
           if page.spotlight_03
             +spotlight_03_desktop(page.spotlight_03)
