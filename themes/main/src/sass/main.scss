@@ -50,16 +50,6 @@ body {
   }
 }
 
-.grid-4-columns {
-  @include site-lateral-spacing();
-  @include column-lateral-spacing($LATERAL-PAGE-SPACE-SMALL);
-
-  @include media-query(TWO) {
-    max-width: $four_columns;
-    @include column-lateral-spacing($LATERAL-PAGE-SPACE);
-  }
-}
-
 .grid-5-columns {
   max-width: 2 * $COLUMN-WIDTH;
   @include column-lateral-spacing($LATERAL-PAGE-SPACE-SMALL);
@@ -68,10 +58,6 @@ body {
   @include media-query (THREE) {
     max-width: $three_columns;
     @include column-lateral-spacing($LATERAL-PAGE-SPACE);
-  }
-
-  @include media-query (FOUR) {
-    max-width: $four_columns;
   }
 
   @include media-query(FIVE) {
@@ -89,9 +75,6 @@ body {
     @include column-lateral-spacing($LATERAL-PAGE-SPACE);
   }
 
-  @include media-query (FOUR) {
-    max-width: 4 * $COLUMN-WIDTH;
-  }
 
   @include media-query(FIVE) {
     max-width: 5 * $COLUMN-WIDTH-RADIO;
