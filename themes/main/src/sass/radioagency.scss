@@ -69,7 +69,7 @@
   width: 100%;
 
   @include media-query(FOUR) {
-    max-width: 3 * $COLUMN-WIDTH;
+    max-width: 730px;
     padding-right: 40px;
   }
 }
