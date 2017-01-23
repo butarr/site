@@ -80,31 +80,35 @@
   margin-bottom: $VERTICAL-SPACE;
 
   @include media-query(THREE){
-    margin: 0;
-    max-width: 2 * $COLUMN-WIDTH;
-    @include image-rounded-responsive(230px);
+    @include image-rounded-responsive(250px);
   }
 
   figure {
-    height: 293px;
+    height: 227px;
     width: 100%;
+
+    @include media-query(TWO) {
+      height: 293px;
+    }
 
     @include media-query(THREE) {
       height: 220px;
     }
 
     @include media-query(FOUR) {
-      height: 293px;
+      height: 245px;
     }
   }
 }
 
 #radioagency .info-news {
   width: 100%;
+  
 
   @include media-query(THREE){
     padding-left: 15px;
-    max-width: 2 * $COLUMN-WIDTH;
+    max-width: 320px;
+    padding-top: 0;
   }
 }
 
@@ -115,7 +119,7 @@
 
   @include media-query(FOUR) {
     padding-top: $VERTICAL-SPACE;
-    width: 2 * $COLUMN-WIDTH;
+    width: 400px;
 
     .progress-and-source {
       height: 38px;
