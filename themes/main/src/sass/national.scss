@@ -22,7 +22,6 @@
   @include media-query (THREE){
     width: 3 * $COLUMN-WIDTH;
   }
-
   @include media-query (FIVE){
     width: 5 * $COLUMN-WIDTH;
   }
@@ -53,11 +52,6 @@
   #featured-3 {
     -webkit-order: -12; //Old Safari
     order: -12;
-
-    @include media-query(FIVE){
-      -webkit-order: -12; //Old Safari
-      order: -12;
-    }
   }
 
   #featured-text-container {
@@ -78,41 +72,21 @@
   #featured-7 {
     -webkit-order: -10; //Old Safari
     order: -10;
-
-    @include media-query(FIVE){
-      -webkit-order: -10; //Old Safari
-      order: -10;
-    }
   }
 
   #featured-8 {
     -webkit-order: -9; //Old Safari
     order: -9;
-
-    @include media-query(FIVE){
-      -webkit-order: -9; //Old Safari
-      order: -9;
-    }
   }
 
   #featured-9 {
     -webkit-order: -8; //Old Safari
     order: -8;
-
-    @include media-query(FIVE){
-      -webkit-order: -8; //Old Safari
-      order: -8;
-    }
   }
 
   #featured-10 {
     -webkit-order: -7; //Old Safari
     order: -7;
-
-    @include media-query(FIVE){
-      -webkit-order: -7; //Old Safari
-      order: -7;
-    }
   }
 
   #videos {
@@ -123,30 +97,16 @@
   #images {
     -webkit-order: -5; //Old Safari
     order: -5;
-
-    @include media-query(FIVE){
-      -webkit-order: -5; //Old Safari
-      order: -5;
-    }
   }
 
   #featured-11 {
     -webkit-order: -4; //Old Safari
     order: -4;
-
-    @include media-query(FIVE){
-      -webkit-order: -4; //Old Safari
-      order: -4;
-    }
   }
 
   #featured-12 {
     -webkit-order: -3; //Old Safari
     order: -3;
-
-    @include media-query(FIVE){
-      display: block;
-    }
   }
 }
 
@@ -221,7 +181,9 @@
 
   @include media-query(THREE) {
     display: flex;
+    display: -webkit-flex; //Old Safari
     justify-content: center;
+
     @include column-lateral-spacing();
 
     img {
@@ -404,6 +366,7 @@
     display: flex;
     -webkit-flex-direction: row; //Old Safari
     flex-direction: row;
+
     @include media-query(THREE) {
       -webkit-flex-direction: column; //Old Safari
       flex-direction: column;
@@ -543,14 +506,6 @@
     border-radius: 5px;
     height: 300px;
     width: 100%;
-
-    @include media-query(THREE) {
-      height: 300px;
-    }
-
-    @include media-query(FIVE){
-      height: 300px;
-    }
   }
 
   .section-name {
@@ -560,8 +515,6 @@
   @include media-query(THREE) {
     @include column-lateral-spacing();
   }
-
-
 }
 
 #home .most-read, .last-news#last-news-mobile {
