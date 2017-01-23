@@ -8,7 +8,7 @@
   @include columnist;
   width: 100%;
 
-  @include media-query (FOUR){
+  @include media-query (FIVE){
     display: -webkit-flex; //Old Safari
     display: flex;
   }
@@ -58,7 +58,7 @@
 #radioagency-list {
   width: 100%;
 
-  @include media-query(FOUR) {
+  @include media-query(FIVE) {
     max-width: 770px;
     padding-right: 40px;
   }
@@ -107,7 +107,7 @@
   width: 100%;
   display: inline-block;
 
-  @include media-query(FOUR) {
+  @include media-query(FIVE) {
     padding-top: $VERTICAL-SPACE;
     max-width: 380px;
 
@@ -176,7 +176,7 @@
 .services {
   display: none;
 
-  @include media-query(FOUR){
+  @include media-query(FIVE){
     display: block;
   }
 }
@@ -186,7 +186,7 @@
     margin-bottom: 0;
   }
 
-  @include media-query(FOUR) {
+  @include media-query(FIVE) {
     display: none;
   }
 }
