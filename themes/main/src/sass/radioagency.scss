@@ -59,7 +59,7 @@
   width: 100%;
 
   @include media-query(FOUR) {
-    max-width: 730px;
+    max-width: 770px;
     padding-right: 40px;
   }
 }
@@ -86,14 +86,15 @@
     }
 
     @include media-query(FOUR) {
-      height: 245px;
+      height: 260px;
+      max-height: 260px;
     }
   }
 }
 
 #radioagency .info-news {
   width: 100%;
-  
+
 
   @include media-query(THREE){
     padding-left: 15px;
@@ -105,11 +106,10 @@
 #radioagency .sidebar {
   width: 100%;
   display: inline-block;
-  @include column-lateral-spacing();
 
   @include media-query(FOUR) {
     padding-top: $VERTICAL-SPACE;
-    width: 400px;
+    max-width: 380px;
 
     .progress-and-source {
       height: 38px;
