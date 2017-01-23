@@ -7,20 +7,10 @@
   @include get-font(RADIOAGENCY);
   @include columnist;
   width: 100%;
-  display: -webkit-flex; //Old Safari
-  display: flex;
-  -webkit-flex-direction: column; //Old Safari
-  flex-direction: column;
-  -webkit-align-items: center; //Old Safari
-  align-items: center;
 
   @include media-query (FOUR){
-    -webkit-flex-direction: row; //Old Safari
-    flex-direction: row;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    -webkit-align-items: flex-start; //Old Safari
-    align-items: flex-start;
+    display: -webkit-flex; //Old Safari
+    display: flex;
   }
 
   .divisor {
