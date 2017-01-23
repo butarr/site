@@ -64,7 +64,7 @@ append content
               .image
                 - var imageDescription= featured.cover.subtitle + ' - Créditos: ' + featured.cover.credits
                 a(href=featured.url itemprop="url" class="news-radio-link")
-                  figure(style=`background-image: url(${featured.cover.medium});` alt=imageDescription title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
+                  figure(style=`background-image: url(${featured.cover.medium});` title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
               .info-news
                 a(href=featured.url itemprop="url" class="news-radio-link")
                   h2.title-featured(itemprop= "headline")= featured.title
