@@ -962,7 +962,8 @@ $number-size: 1.3rem;
     }
 
     .date {
-      font-size: $details-size-sidebar;
+      font: $details-size-sidebar $family-sans;
+      color: $details-color;
     }
 
     .download-description {
