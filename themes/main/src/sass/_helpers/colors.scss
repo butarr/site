@@ -1,12 +1,12 @@
 //Color variables to use only in this file to make it easier maintainence
-$neutral-base: black;
+$neutral-base: #000;
 
-$red-base: rgba(140,25,31,1);
-$red-light: rgba(177,32,40,1);
+$red-base: rgba(140, 25, 31, 1);
+$red-light: rgba(177, 32, 40, 1);
 $red-dark: rgba(110, 16, 16, 1);
 $red-pinker: rgba(195, 59, 83, 1);
 
-$green-base: rgba(0,128,0,1);
+$green-base: rgba(0, 128, 0, 1);
 
 //Color Variables to use externally
 $background: $red-base;
