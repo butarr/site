@@ -56,10 +56,7 @@ theme: main
 
 #Toggles
 toggles:
-  radio_sidebar: ${RADIO_SIDEBAR:-false}
   _D6fenTno_adsense: ${TOGGLE_D6fenTno_ADSENSE:-false}
-  _yhCw8OOd_last_news_animation: ${TOGGLE_yhCw8OOd_LAST_NEWS_ANIMATION:-false}
-  _wzLpg6HH_tabloid_link_in_tabloid_news: ${TOGGLE_wzLpg6HH_TABLOID_LINK_IN_TABLOID_NEWS:-false}
   _test_environment: ${TOGGLE_TEST_ENVIROMENT:-false}
 feed:
   type: rss2

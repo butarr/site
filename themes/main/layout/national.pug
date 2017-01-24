@@ -15,7 +15,7 @@ mixin columnist_item(column)
           a(href=column.path itemprop="url")
             h2.title= column.title
 
-mixin columnists_list  
+mixin columnists_list
   h2.section-name Colunistas
   +columnist_item(page.column_01)
   +columnist_item(page.column_02)
@@ -186,7 +186,7 @@ append content
           section#last-news-dynamic.last-news(itemscope itemtype="https://schema.org/ItemList" class="spacing" hidden)
             a(itemprop="url" href="/ultimas_noticias/")
               h2.section-name Últimas notícias:
-            ol(id=`last-news-animation-${config.toggles._yhCw8OOd_last_news_animation}`)
+            ol(id="last-news-animation-true")
               each post in page.last_news
                 li.inactive.last-news-analytics(itemprop="itemListElement")
                   a(href=post.path itemprop="url")
