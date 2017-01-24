@@ -1,0 +1,38 @@
+@import '_helpers/query';
+@import '_helpers/mixins';
+@import '_helpers/constants';
+
+#columnist-list {
+  @include column-lateral-spacing(10px);
+  @include pagination;
+  @include button;
+  @include get-font(COLUMNIST_LIST);
+  display: block;
+
+  .page-name {
+    @include page-name;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+#columnist-list .columnist-section {
+  display:flex;
+
+  img {
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 50%;
+  }
+
+  .columnist-name {
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
+  .description {
+    margin-left: 15px;
+  }
+}
