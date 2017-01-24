@@ -50,6 +50,16 @@ body {
   }
 }
 
+.grid-4-columns {
+  @include site-lateral-spacing();
+  @include column-lateral-spacing($LATERAL-PAGE-SPACE-SMALL);
+
+  @include media-query(TWO) {
+    max-width: $four_columns;
+    @include column-lateral-spacing($LATERAL-PAGE-SPACE);
+  }
+}
+
 .grid-5-columns {
   max-width: 2 * $COLUMN-WIDTH;
   @include column-lateral-spacing($LATERAL-PAGE-SPACE-SMALL);
