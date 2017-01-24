@@ -4,7 +4,7 @@ extends base
 block title
   - var columnist = site.data.columnists[page.columnist];
 
-  title= `${titlecase(columnist.name)} ${config.separator} ${config.title}`
+  title= `${titlecase('colunista')} ${config.separator} ${config.title}`
 
 block description
   meta(name="description" content= columnist.description)
@@ -26,16 +26,27 @@ block bannerLogo
 append content
   main.grid-3-columns
 
+    section#columnist-list(itemscope itemtype="http://schema.org/Person")
+      div#breadcrumb
+        ol(itemscope itemtype="http://schema.org/BreadcrumbList")
+          li(itemprop="itemListElement" )
+            a( href="/")
+              p Início
+          li
+            i(class="fa fa-chevron-right fa-lg")
+          li(itemprop="itemListElement")
+            a(href="/colunistas/")
+              p.breadcrumb-last=columnist.name
+
+      h2.page-name= 'colunista'
+      header.columnist-section
+        - var imageDescription= columnist.name
+        img(class="profile-image" itemprop="image" alt="Imagem de perfil do Colunista" src=columnist.photo)
+        .columnist-name-description
+          h3.columnist-name(itemprop="name")= columnist.name
+          p.description(itemprop="description")= columnist.description
+
     section#news-list(class= "list" itemscope itemtype="http://schema.org/ItemList")
-      h1(class="page-name" itemprop="name")= columnist.name
-
-      .person-cell(itemscope itemtype="http://schema.org/Person")
-        .person-container
-          a(href=page.path title="link para a pagina do colunista")
-            img.profile-image(itemprop="image" alt="Imagem de perfil do Colunista" src=columnist.photo )
-          a(href=page.path title="link para a pagina do colunista")
-            span.name(itemprop="name")= columnist.name
-
       - var position= 0
       each post in page.news
         - var published_at = utc_to_brt(post.date)

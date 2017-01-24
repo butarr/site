@@ -126,7 +126,7 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __breadcrumb(){
+@mixin __breadcrumb() {
   p {
     font: bold $section-name-size $family-sans;
     text-transform: uppercase;
@@ -1005,6 +1005,21 @@ $number-size: 1.3rem;
   }
 }
 
+@mixin __columnist_list {
+  .columnist-name {
+    font: bold $page-name-size $family-sans;
+    color: $columnist-name-color;
+  }
+  .page-name {
+    font: bold $page-name-size $family-sans;
+    text-transform: uppercase;
+    color: $page-title-color;
+  }
+  .description {
+    font: normal #{$text-size}/#{$line-separation-small} $family-sans;
+  }
+}
+
 @mixin get-font($type){
   @if( $type == POST ){
     @include __post();
@@ -1065,5 +1080,8 @@ $number-size: 1.3rem;
   }
   @else if( $type == AUDIO_PLAYER ){
     @include __audio_player();
+  }
+  @else if( $type == COLUMNIST_LIST) {
+    @include __columnist_list();
   }
 }
