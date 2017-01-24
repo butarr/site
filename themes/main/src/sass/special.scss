@@ -78,6 +78,13 @@
     padding-top: 25px;
   }
 
+  section.subtitle + section.text {
+    padding-top: 10px;
+    @include media-query(THREE) {
+      padding-top: 15px;
+    }
+  }
+
   section:last-of-type {
     padding-bottom: 25px;
   }
