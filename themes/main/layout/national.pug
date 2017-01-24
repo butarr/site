@@ -310,9 +310,9 @@ append content
               - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
               a(itemprop="url" href=post.path)
                 figure.charge_mobile(itemscope itemtype="https://schema.org/ImageObject")
-                  img.image_charge_mobile.charge_image_analytics(src=post.cover.medium title=imageDescription itemprop="image")
+                  img.image_charge_mobile.charge_image_analytics(src=post.cover.medium alt="" itle=imageDescription itemprop="image")
               a(itemprop="url" href=post.path)
-                figure.charge_desktop.charge_image_analytics(style=`background-image: url(${post.cover.medium});` title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
+                figure.charge_desktop.charge_image_analytics(style=`background-image: url(${post.cover.medium});` alt = "" title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
 
           if page.last_news
             section.last-news#last-news-mobile(class= "spacing" itemscope itemtype="https://schema.org/ItemList")
