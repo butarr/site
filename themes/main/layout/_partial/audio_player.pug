@@ -6,9 +6,9 @@ mixin audio-player(position, audio)
       .controls
         .buttons
           a.play(onclick=`play(${position});`)
-            img(src="/img/icons/play.svg" alt="Play")
+            img#play-button(src="/img/icons/play.svg" alt="Play")
           a.pause(onclick=`pause(${position});`)
-            img(src="/img/icons/pause.svg" alt="Pausar")
+            img#pause-button(src="/img/icons/pause.svg" alt="Pausar")
         .progress-bar
           span.timeProgress 0:00
           .progress-and-source
@@ -17,5 +17,5 @@ mixin audio-player(position, audio)
               span via SoundCloud
           span.duration 0:00
         a.download
-          img(src="/img/icons/download.svg" alt="Baixar")
-          span.download-description Baixar
+          img#download-button(src="/img/icons/download.svg" alt="Baixar")
+          span#download-text.download-description Baixar
