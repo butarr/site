@@ -876,6 +876,22 @@ $number-size: 1.3rem;
     }
   }
 
+  section.imageCentralized {
+    .subtitle p {
+      color: $text-color;
+      font: bold 1.2rem/1 $family-serif;
+
+      @include media-query(THREE) {
+        font: bold 1.5rem/1 $family-serif;
+      }
+
+      em, b, i {
+        color: $red-base;
+        font-style: normal;
+      }
+    }
+  }
+
   section.image {
     text-align: center;
 
@@ -889,6 +905,20 @@ $number-size: 1.3rem;
 
       &:hover {
         color: $link-special-hover-color;
+      }
+    }
+
+    .subtitle p {
+      color: $text-color;
+      font: bold 1.2rem/1 $family-serif;
+
+      @include media-query(THREE) {
+        font: bold 1.5rem/1 $family-serif;
+      }
+
+      em, b, i {
+        color: $red-base;
+        font-style: normal;
       }
     }
   }

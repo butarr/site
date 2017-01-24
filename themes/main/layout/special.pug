@@ -1,6 +1,12 @@
 extends base
 
+mixin pictureSubtitle(section)
+  if section.subtitle
+    h2.subtitle
+      != section.subtitle
+
 mixin picture(section)
+  +pictureSubtitle(section)
   picture(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
     source(srcset=section.desktop media="(min-width: 690px)")
     img(itemprop="url" src=section.mobile  alt=section.title title=section.title)
