@@ -47,5 +47,10 @@ The site will be running on localhost:4000
 - Run `node lib/cli/frida.js seeds` in folder Frida-backend (Is necessary one post fixed).
 - `npm install`
 
-### For all the times
+### Running local test
 - `npm test`
+
+### Running test environment
+
+- `npm run validation-test	`
+

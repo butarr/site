@@ -31,8 +31,8 @@
   },
   "scripts": {
     "start": "gulp",
-    "lint": "npm run sass-lint; npm run pug-lint",
-    "test": "valimate",
+    "test": "npm run sass-lint; valimate",
+    "validation-test": "valimate valimate-test.json",
     "sass-lint": "./node_modules/sass-lint/bin/sass-lint.js 'themes/**/*.scss' -v -q",
     "pug-lint": "./node_modules/pug-lint/bin/pug-lint themes/main/layout/**/*"
   },
