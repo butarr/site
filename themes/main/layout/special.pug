@@ -1,15 +1,15 @@
 extends base
 
-mixin pictureSubtitle(section)
-  if section.subtitle
-    h2.subtitle
-      != section.subtitle
+mixin pictureTitle(section)
+  if section.title
+    h2.title
+      != section.title
 
 mixin picture(section)
-  +pictureSubtitle(section)
+  +pictureTitle(section)
   picture(itemprop="image" itemscope itemtype="http://schema.org/ImageObject")
     source(srcset=section.desktop media="(min-width: 690px)")
-    img(itemprop="url" src=section.mobile  alt=section.title title=section.title)
+    img(itemprop="url" src=section.mobile  alt=section.description title=section.description)
     meta(itemprop="width" content="960")
     meta(itemprop="height" content="640")
   if section.link
