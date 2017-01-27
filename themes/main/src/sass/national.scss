@@ -688,17 +688,17 @@
 }
 
 #home .radioagency-banner-mobile {
-  display: none;
   width: 100%;
-  height: 450px;
   margin-top: $VERTICAL-SPACE;
 
-  figure {
-    width: 100%;
-    background-size: cover;
+  @include image-rounded(100%, 70px);
+
+  @include media-query(TWO){
+    @include image-rounded(100%, 100px);
   }
 
   @include media-query(THREE) {
+    display: none;
     margin-top: 0;
   }
 }
