@@ -40,16 +40,15 @@ append content
           li
             i(class="fa fa-chevron-right fa-lg")
           li(itemprop="itemListElement")
-            a(href="/colunistas/" + columnist.path)
-              p.breadcrumb-last=columnist.name
+            p.breadcrumb-last=columnist.name
 
       h2.page-name= 'colunista'
-      header.columnist-section
+      header.columnist-section.divisor
         - var imageDescription= columnist.name
-        img(class="profile-image" itemprop="image" alt="Imagem de perfil do Colunista" src=columnist.photo)
-        .columnist-name-description
+        .columnist-photo-name
+          img(itemprop="image" alt="Imagem de perfil do Colunista" src=columnist.photo)
           h3.columnist-name(itemprop="name")= columnist.name
-          p.description(itemprop="description")= columnist.description
+        p.description(itemprop="description")= columnist.description
 
     section#news-list(class= "list" itemscope itemtype="http://schema.org/ItemList")
       - var position= 0

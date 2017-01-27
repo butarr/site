@@ -14,25 +14,46 @@
     margin-bottom: 15px;
   }
 
+  .divisor {
+    padding: 20px 0;
+    border-bottom: 1px solid $content-divisor;
+  }
+
   p {
     margin-bottom: 20px;
   }
 }
 
 #columnist-list .columnist-section {
-  display:flex;
+  display: table;
+  justify-content: flex-start;
+  padding: 10px 0;
 
-  img {
-    max-height: 150px;
-    max-width: 150px;
-    border-radius: 50%;
-  }
+  .columnist-photo-name{
+    display: table-cell;
+    min-width: 90px;
+    padding-right: 10px;
+    text-align: center;
 
-  .columnist-name {
-    margin-bottom: 15px;
-    margin-left: 15px;
+    @include media-query(TWO) {
+      min-width: 160px;
+    }
+
+    img {
+      width: 70px;
+      border-radius: 50%;
+    }
+
+    .columnist-name {
+      margin-top: 10px;
+      display: inline-block;
+
+    }
   }
   .description {
-    margin-left: 15px;
+    display: table-cell;
+    width: 100%;
+    vertical-align: top;
+
   }
 }
