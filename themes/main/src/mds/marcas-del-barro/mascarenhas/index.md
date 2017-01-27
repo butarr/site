@@ -33,7 +33,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5804/30638917962_141d924d24_b.jpg
     mobile: //farm6.staticflickr.com/5498/30718896906_16c582fda6_b.jpg
-    title: "Mapa mostrando la localización de la ciudad de Mascarenhas en el estado Espírito Santo en relación al dique Fundão en Minas Gerais"
+    description: "Mapa mostrando la localización de la ciudad de Mascarenhas en el estado Espírito Santo en relación al dique Fundão en Minas Gerais"
 
   - type: text
     text: "<p>Nacido y criado en Mascarenhas, Fábio Carlos Batista, pescador de 37 años, siempre tuvo en su rutina aventuras por el Río Doce. Pesca desde los doce años, gracias a que su padre le transmitió la pasión por ese oficio. Antes de la tragedia, buscaba transmitir lo mismo a su hija, llevándola a la orilla del río siempre que podía.</p>
@@ -48,7 +48,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5790/30742451252_87412d7ee3_b.jpg
     mobile: //farm6.staticflickr.com/5624/30761122402_51a742b3d5_b.jpg
-    title: "Foto de Fábio Carlos Batista de 27 años, dice:Yo prefería el río corriendo normal, sin ningún daño, que estar recibiendo esa plata de la Samarco"
+    description: "Foto de Fábio Carlos Batista de 27 años, dice:Yo prefería el río corriendo normal, sin ningún daño, que estar recibiendo esa plata de la Samarco"
 
   - type: text
     text: "<p>Cumpliendo uno de los Términos de Ajuste de Conducta (TAC) acordados con los Ministerios Públicos de Trabajo de los estados de Minas Gerais y Espíritu Santo, Samarco distribuyó tarjetas de auxilio financiero a las familias que tuvieron sus ingresos afectados por la ruptura del dique.</p>
@@ -61,7 +61,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5505/30822204386_6e3b56e704_b.jpg
     mobile: //farm6.staticflickr.com/5532/30576273440_8b5b357566_b.jpg
-    title: "Foto de Nelci Maria de Andrade de 67 años, dice: Siento mucho la falta del Río Doce. No lo vamos a ver nunca más, salvo que ocurra un milagro"
+    description: "Foto de Nelci Maria de Andrade de 67 años, dice: Siento mucho la falta del Río Doce. No lo vamos a ver nunca más, salvo que ocurra un milagro"
 
 
   - type: text
@@ -77,7 +77,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5576/30770757911_c01eea9a22_b.jpg
     mobile: //farm6.staticflickr.com/5801/30245406124_d9a1d66694_b.jpg
-    title: "Foto de Jonatan Brown de 35 años, dice: La población quiere justicia"
+    description: "Foto de Jonatan Brown de 35 años, dice: La población quiere justicia"
 
   - type: text
     text: "<p>La lucha por justicia es motivada, principalmente, por la voluntad de recuperar la vida que se tenía antes del barro. \"Hace un año el agua estaba bien limpia, cristalina. Hoy, todo es diferente\", dice Jonatan Brown, pescador de 34 años.</p>
@@ -88,7 +88,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5441/30822184256_2a89bf4d1b_b.jpg
     mobile: //farm6.staticflickr.com/5806/30761100172_0e66e845c3_b.jpg
-    title: "Gráfico con datos sobre el acceso al agua: en el municipio de Baixo Guandu: el 80,9% de la población es abastecida de agua y el 17,4% usa agua de pozo. En Colatina, el 87,6% de la población es abastecida de agua y el 11,2% usa agua de pozo. En Linhares, el 84,4% de la población es abastecida de agua y el 13,6% usa agua de pozo. Fuente: IJSN, 2010.  "
+    description: "Gráfico con datos sobre el acceso al agua: en el municipio de Baixo Guandu: el 80,9% de la población es abastecida de agua y el 17,4% usa agua de pozo. En Colatina, el 87,6% de la población es abastecida de agua y el 11,2% usa agua de pozo. En Linhares, el 84,4% de la población es abastecida de agua y el 13,6% usa agua de pozo. Fuente: IJSN, 2010.  "
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/Fnc-za_A6ao" frameborder="0" allowfullscreen></iframe>
@@ -100,7 +100,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5528/30807519851_9d2a82869a_b.jpg
     mobile: //farm6.staticflickr.com/5813/30807543931_6ca58fbd6a_b.jpg
-    title: "Foto de José de Barros Neto, alcalde de Baixo Guandu, dice: Lo que nos importa, y es lo que siempre estamos reclamando, es que este caso no entre entre los casos de Brasil y el mundo que cayeron en la impunidad·"  
+    description: "Foto de José de Barros Neto, alcalde de Baixo Guandu, dice: Lo que nos importa, y es lo que siempre estamos reclamando, es que este caso no entre entre los casos de Brasil y el mundo que cayeron en la impunidad·"  
 
   - type: text
     text: "<p>Además de los impactos financieros a la población, la mayor tragedia socioambiental del país dejó en el municipio la convicción de que el mundo es dominado por el capital y por los intereses de una minoría, en detrimento de los intereses de la mayoría de las personas, de la protección del medio ambiente y los animales, apunta José de Barros Neto.</p>
@@ -116,11 +116,11 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5759/30683572111_349b6a5712_b.jpg
     mobile: //farm6.staticflickr.com/5488/30788679551_b57a48aefa_b.jpg
-    title: "Créditos del reportaje. Texto, Simone Freire. Edición, Vivian Fernandes. Video y foto, José Eduardo Bernardes y Guilherme Weimann. Arte, Wilcker Morais."
+    description: "Créditos del reportaje. Texto, Simone Freire. Edición, Vivian Fernandes. Video y foto, José Eduardo Bernardes y Guilherme Weimann. Arte, Wilcker Morais."
   - type: image
     desktop: //farm6.staticflickr.com/5547/30693213985_af1794d26b_b.jpg
     mobile: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
-    title: Imagen del Río Doce
+    description: Imagen del Río Doce
 
   - type: navigation
     title: "Más del especial"

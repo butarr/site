@@ -62,7 +62,7 @@ sections:
     centralized: true
     desktop: //farm6.staticflickr.com/5513/30083375303_fbf49eb6c5_z.jpg
     mobile: //farm6.staticflickr.com/5462/30681162986_834e79a321_z.jpg
-    title: "Marcas da Lama"
+    description: "Marcas da Lama"
 
   - type: text
     text: "<p style=\"text-align: center;\"><b>Reportaje:</b> Simone Freire, José Eduardo Bernardes y Guilherme Weimann<br><b>Edición:</b> Vivian Fernandes<br><b>Video y foto:</b> José Eduardo Bernardes, Guilherme Weimann y Thiago Hersan<br><b>Edición de video:</b> Marcelo Cruz <br><b>Diseño y edición fotográfica:</b> Wilcker Morais<br><b>Coordinación de arte:</b> José Bruno Lima<br><b>Desarrollo web:</b> Giuliana Marquesi, Michael Feitosa, Nicholas Pereira, Ricardo Retamal, Thiago Hersan y Wandecleya Martins<br><b>Traducción al español:</b> Marcelo Aguilar y María Julia Giménez<br><b>Apoyo:</b> Nadine Nascimento, Júlia Dolce, Norma Odara, Rute Pina y Rafael Tatemoto<br><b>Coordinación periodística:</b> Simone Freire<br><b>Agradecimientos:</b> Regiane, Jonatan, Fabiana, Ellen, Camila, Thiago, Diane, Valcileno, Binho, Débora, Maria Julia, además del Movimiento por la Soberanía Popular Frente a la Minería (MAM) y del Movimiento de los Afectados por Represas (MAB)</p><p></p>"

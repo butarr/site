@@ -33,7 +33,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5600/30776965291_008da4c710_b.jpg
     mobile: //farm6.staticflickr.com/5644/30828745756_a185b56a84_b.jpg
-    title: "Mapa da Bacia do Rio Doce "
+    description: "Mapa da Bacia do Rio Doce "
 
   - type: text
     text: "<p>Menos de 24 horas após o rompimento da barragem, a teoria de que abalos sísmicos motivaram a tragédia figurava em portais de notícias. Naquela quinta-feira, a Rede Sismográfica Brasileira havia registrado quatro tremores de pequena intensidade entre às 14h12 e às 15h59, em Minas Gerais. Um deles, de 2.6 de magnitude, ocorreu a 5 quilômetros do Complexo da Samarco.</p>
@@ -44,7 +44,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5647/30232873254_b2fff1b74a_b.jpg"
     mobile: "//farm6.staticflickr.com/5647/30232873254_b2fff1b74a_b.jpg"
-    title: "Fachada da Samarco - reprodução/youtube"
+    description: "Fachada da Samarco - reprodução/youtube"
 
   - type: text
     text: "<p>A Samarco Mineração S.A., fundada em 1977, é um empreendimento conjunto (<i>joint venture</i>) controlado por duas gigantes do setor: a brasileira Vale e a anglo-australiana BHP Billiton. Cada uma detém 50% de suas ações. As duas são detentoras das taxas de lucro e participam do Conselho Administrativo da Samarco. Apesar disso, a mineradora brasileira negou qualquer responsabilidade diante do rompimento da barragem de Fundão.</p>
@@ -54,7 +54,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5546/30232967034_19cb3a6949_b.jpg"
     mobile: "//farm6.staticflickr.com/5565/30747936202_3b76f24df5_b.jpg"
-    title: "Thiago Alves, integrante do Movimento dos Atingidos por Barragens (MAB)"
+    description: "Thiago Alves, integrante do Movimento dos Atingidos por Barragens (MAB)"
 
   - type: text
     text: "<p>Em meio ao caos e à perplexidade dos primeiros dias, moradores tratavam o ocorrido como uma \"tragédia anunciada\". Segundo Thiago da Silva, integrante da coordenação nacional do Movimento dos Atingidos por Barragens (MAB), a expressão surgiu logo após o desastre, a partir de uma visão coletiva dos moradores de Bento Rodrigues (ver vídeo).</p>
@@ -71,12 +71,12 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5825/30225561563_e8c60927e4_b.jpg
     mobile: //farm6.staticflickr.com/5736/30744867292_54a1daee9b_b.jpg
-    title: "Dados produção de minério de ferro com a produção de rejeitoss"
+    description: "Dados produção de minério de ferro com a produção de rejeitoss"
 
   - type: image
     desktop: //farm6.staticflickr.com/5830/30225828973_b1d6063831_b.jpg
     mobile: //farm6.staticflickr.com/5547/30773353081_8b652b67e7_b.jpg
-    title: "Lucros da Samarco entre 2010 e 2014"
+    description: "Lucros da Samarco entre 2010 e 2014"
 
   - type: text
     text: "<p>Ainda de acordo com o integrante do MAB, a expansão da produção de minério não foi acompanhada de ações para estocar também o aumento de rejeitos. Opinião semelhante é demonstrada pela integrante da coordenação do Movimento pela Soberania Popular Frente à Mineração (MAM), Maria Júlia Zanon. Ela afirma que é possível associar o período posterior ao superciclo das commodities com o rompimento da barragem de Fundão.</p>"
@@ -96,7 +96,7 @@ sections:
     desktop: //farm6.staticflickr.com/5672/30560263080_2d286ef76f_b.jpg
     mobile: //farm6.staticflickr.com/5672/30560263080_2d286ef76f_b.jpg
     centralized: true
-    title: "Conversa entre presidente e diretor da Samarco"
+    description: "Conversa entre presidente e diretor da Samarco"
 
   - type: text
     text: "<p>Ainda segundo a apuração do MPF, um documento interno da Samarco, datado de abril de 2015, previa a possibilidade de 2 a 20 mortes no caso de rompimento da barragem de Fundão. Além disso, listava as consequências ambientais e previa a interrupção das atividades da mineradora pelo período de até dois anos.</p>
@@ -106,7 +106,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5501/30828663106_13dc78aa48_b.jpg"
     mobile: "//farm6.staticflickr.com/5501/30828663106_13dc78aa48_b.jpg"
-    title: "Bento Rodrigues, após a destruição de 5 de novembro de 2015"
+    description: "Bento Rodrigues, após a destruição de 5 de novembro de 2015"
 
   - type: text
     text: "<p>Apesar desses indícios que, se comprovados, caracterizarão o rompimento da barragem de Fundão como um crime, o governador de Minas Gerais, Fernando Pimentel (PT), emitiu um decreto, no dia 21 de setembro deste ano, que desapropria 56 hectares de Bento Rodrigues para a construção do dique S4, da Samarco. A decisão foi realizada por meio de um Termo de Ajustamento de Conduta (TAC) entre a Secretaria de Estado do Meio Ambiente (Semad), Samarco, BHP Billiton e Vale.</p>
@@ -115,7 +115,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5511/30865067155_bca8d70ed2_b.jpg"
     mobile: "//farm6.staticflickr.com/5511/30865067155_bca8d70ed2_b.jpg"
-    title: "A construção do Dique S4 Foto: Isis Medeiros"
+    description: "A construção do Dique S4 Foto: Isis Medeiros"
 
   - type: text
     text: "<p>O dique S4, entretanto, enfrenta a resistência de ex-moradores de Bento Rodrigues. No total, 55 proprietários serão afetados com a construção da obra, que inundará praticamente metade de toda a extensão da comunidade de rejeitos de minério de ferro. Um deles é o aposentado Manuel Marcos Muniz, de 52 anos. Ele possui um terreno que será inundado pelo empreendimento da Samarco.</p>"
@@ -141,7 +141,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5808/30824947916_129a04fa0c_b.jpg
     mobile: //farm6.staticflickr.com/5514/30229444034_098e256830_b.jpg
-    title: "Tragédias na Mineração"
+    description: "Tragédias na Mineração"
 
   - type: text
     text: "<p>Uma das causas da recorrência desses desastres pode estar nas deficiências das políticas de fiscalização. Em Minas Gerais, a Fundação Estadual do Meio Ambiente (Feam) é o órgão responsável pelo inventário e inspeção das barragens no estado. No seu Banco de Declarações Ambientais, consta a existência de 754 barragens de empreendimentos minerais ou industriais destinados ao armazenamento de água ou contenção de resíduos ou rejeitos. Destas, apenas 34% foram vistoriadas no ano de 2014.</p>
@@ -156,11 +156,11 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5601/30865311925_fdcbbc1108_b.jpg
     mobile: //farm6.staticflickr.com/5321/30866038125_b7aea80eb5_b.jpg
-    title: "Créditos da reportagem. Texto: Guilherme Weimann, Edição: Vivian Fernandes, Vídeo e Foto: José Eduardo Bernardes, Arte: Wilcker Morais"
+    description: "Créditos da reportagem. Texto: Guilherme Weimann, Edição: Vivian Fernandes, Vídeo e Foto: José Eduardo Bernardes, Arte: Wilcker Morais"
   - type: image
     desktop: //farm6.staticflickr.com/5446/30206831453_739b3d63a4_b.jpg
     mobile: //farm6.staticflickr.com/5446/30206831453_739b3d63a4_z.jpg
-    title: Corvo no topo de uma montanha de lama
+    description: Corvo no topo de uma montanha de lama
 
   - type: navigation
     title: "Mais do especial"

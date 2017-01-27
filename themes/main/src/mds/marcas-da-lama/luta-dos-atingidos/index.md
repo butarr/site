@@ -34,7 +34,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5694/30766453532_58a2182830_b.jpg"
     mobile: "//farm6.staticflickr.com/5473/30794021461_b540de07af_b.jpg"
-    title: "Aspas Camila Brito"
+    description: "Aspas Camila Brito"
 
   - type: text
     text: "<p>Para mitigar os primeiros impactos do desastre, o promotor Guilherme Meneghini, que representa o Ministério Público de Minas Gerais (MPF-MG) na cidade de Mariana, ingressou, em 8 de novembro, três dias após a tragédia, com uma ação cautelar para bloquear R$ 300 milhões em recursos da Samarco. Embora a companhia tenha alegado não ter dinheiro em caixa, descobriu-se, mais tarde, que grande parte de seu capital estava fora do país.</p>
@@ -45,7 +45,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5823/30794119401_fce7c14f86_b.jpg"
     mobile: "//farm6.staticflickr.com/5694/30846490356_930b694617_b.jpg"
-    title: "NÚMEROS DA LAMA EM MARIANA"
+    description: "NÚMEROS DA LAMA EM MARIANA"
 
   - type: text
     text: "<p>Para o promotor, as ações relacionadas à Samarco quebraram alguns paradigmas no que até então se tinha na luta pela reparação e direitos dos atingidos. \"Um deles é que em outros desastres, grande parte das famílias não recebeu nada. Elas lutam na justiça até hoje, tentando receber alguma coisa. Nós invertemos essa lógica. As famílias já foram parcialmente indenizadas, já recebem o auxílio financeiro, enquanto não vem a reparação final e a reconstrução”, opina o promotor. Isso foi possível, destaca ele, porque os atingidos ingressaram com ações coletivas e não individuais.</p>
@@ -62,7 +62,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5691/30794058521_28ba739fa3_b.jpg"
     mobile: "//farm6.staticflickr.com/5633/30581410160_a221917905_b.jpg"
-    title: "Aspas Regiane"
+    description: "Aspas Regiane"
 
   - type: text
     text: "<p>O cartão, segundo Regiane, é importante, mas não resolve os problemas da região. “A gente precisa de trabalho, de reconstituição da comunidade, de estudo. Eles não estão nem aí! O negócio é voltar a empresa a funcionar, gerar o lucro estipulado por ela”, lamenta.</p>
@@ -81,7 +81,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5665/30846473196_d6e469d5f1_b.jpg"
     mobile: "//farm6.staticflickr.com/5539/30766524182_6b3e8f9fdf_b.jpg"
-    title: "Magno"
+    description: "Magno"
 
   - type: subtitle
     text: Cachoeira Escura contra a perseguição e a falta de água
@@ -113,7 +113,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5765/30766488302_ee7dc654f9_b.jpg"
     mobile: "//farm6.staticflickr.com/5782/30846453296_926d25ed32_b.jpg"
-    title: "Guilherme Meneghini"
+    description: "Guilherme Meneghini"
 
   - type: text
     text: "<p>Essa perseguição tem colocado, inclusive, os próprios moradores das cidades atingidas em conflito. Como a pressão da empresa para evitar a organização só tem aumentado, é comum que alguns se voltem contra o movimento e contra pessoas de referências em cada cidade.</p>
@@ -125,11 +125,11 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5505/30845934505_4b6a05bcd6_b.jpg
     mobile: //farm6.staticflickr.com/5505/30845934505_4b6a05bcd6_b.jpg
-    title: "Créditos da reportagem. Texto: José Eduardo Bernardes, Edição: Simone Freire, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
+    description: "Créditos da reportagem. Texto: José Eduardo Bernardes, Edição: Simone Freire, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
   - type: image
     desktop: //farm6.staticflickr.com/5547/30882809595_0d04a17a4b_b.jpg
     mobile: //farm6.staticflickr.com/5547/30882809595_0d04a17a4b_b.jpg
-    title: Corvo no topo de uma montanha de lama
+    description: Corvo no topo de uma montanha de lama
 
   - type: navigation
     title: "Mais do especial"

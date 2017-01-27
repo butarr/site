@@ -35,7 +35,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5507/30805588381_e426a43e65_b.jpg"
     mobile: "//farm6.staticflickr.com/5638/30777832002_487e8b48cb_b.jpg"
-    title: "Camila Brito de Movimiento de los Afectados por las Represas, dice: Ese barro ha dejado un rastro de destrucción. Y cuando se habla de destrucción no es solo de la producción, del modo de vida, sino de la destrucción del vínculo de las personas con el río."
+    description: "Camila Brito de Movimiento de los Afectados por las Represas, dice: Ese barro ha dejado un rastro de destrucción. Y cuando se habla de destrucción no es solo de la producción, del modo de vida, sino de la destrucción del vínculo de las personas con el río."
 
   - type: text
     text: "<p>Para mitigar los primeros impactos del desastre, el promotor Guilherme Meneghini, que representa al Ministerio Público de Minas Gerais (MPG-MG) en la ciudad de Mariana, ingresó, el 8 de noviembre, tres días después de la tragedia, una acción cautelar para bloquear 300 millones de reales de las cuentas de Samarco. Aunque la compañía haya alegado no tener dinero en caja, se descubrió más tarde que gran parte de su capital estaba fuera del país.</p>
@@ -46,7 +46,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5823/30261982784_bbb36045dd_b.jpg"
     mobile: "//farm6.staticflickr.com/5807/30806009302_94f64959a0_b.jpg"
-    title: "Después de la tragedia. Número de afectados en Mariana: 1500. Inmuebles alquilados: 285. Tarjetas emitidas: 345. Familias que recibieron indemnización anticipadamente: 290. Fuente: MPE-MG"
+    description: "Después de la tragedia. Número de afectados en Mariana: 1500. Inmuebles alquilados: 285. Tarjetas emitidas: 345. Familias que recibieron indemnización anticipadamente: 290. Fuente: MPE-MG"
 
   - type: text
     text: "<p>Para el promotor, las acciones relacionadas a la Samarco quebraron algunos paradigmas en lo que hasta entonces existía en la lucha por la reparación de los afectados. \"Uno de ellos es que en otros desastres gran parte de las familias no recibieron nada. Están luchando en la justicia hasta hoy, intentando recibir algo. Nosotros invertimos esa lógica. Las familias ya fueron parcialmente indemnizadas, ya recibieron auxilio financiero, mientras tanto no se concrete la reparación final y la reconstrucción\", opina el promotor. Eso fue posible, destaca, porque los afectados ingresaron con acciones colectivas y no individuales.</p>
@@ -63,7 +63,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5323/30858936586_7e03cba6bb_b.jpg"
     mobile: "//farm6.staticflickr.com/5830/30593860330_8a2a999ea1_b.jpg"
-    title: "Regiane Soares de Movimiento de los Afectados por Represas, dice: Nosotros no queremos sólo  tarjeta de auxilio; nosotros necesitamos del río de vuelta."
+    description: "Regiane Soares de Movimiento de los Afectados por Represas, dice: Nosotros no queremos sólo  tarjeta de auxilio; nosotros necesitamos del río de vuelta."
 
   - type: text
     text: "<p>La tarjeta, según Regiane, es importante, pero no resuelve los problemas de la región. \"Nosotros precisamos trabajo, reconstrucción de la comunidad, estudio. Ellos no están ni ahí con eso, lo que quieren es que la empresa vuelva a funcionar, y genere el lucro que estiman\", lamenta.</p>
@@ -82,7 +82,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5329/30777816572_e2d93b0e6e_b.jpg"
     mobile: "//farm6.staticflickr.com/5727/30620428040_86427c045f_b.jpg"
-    title: "Magno, morador de Cachoeira Escura, dice: No solo mi vida, sino la vida de miles de personas que fueron damnificadas por esta tragedia. Una tragedia que no fue causada por algo sobrenatural, fue una tragedia causada por hombres."
+    description: "Magno, morador de Cachoeira Escura, dice: No solo mi vida, sino la vida de miles de personas que fueron damnificadas por esta tragedia. Una tragedia que no fue causada por algo sobrenatural, fue una tragedia causada por hombres."
 
   - type: subtitle
     text: Cachoeira Escura contra la persecución y falta de agua
@@ -113,7 +113,7 @@ sections:
   - type: image
     desktop: "//farm6.staticflickr.com/5718/30805595521_abb992f7d0_b.jpg"
     mobile: "//farm6.staticflickr.com/5782/30857840726_3026023849_b.jpg"
-    title: "Guilherme Meneghini promotor de la Fiscalía de Mariana, dice: La mejor forma de no poner esas comunidades en peligro es cambiar el sistema de explotación de minerales en el país y prohibir esos diques."
+    description: "Guilherme Meneghini promotor de la Fiscalía de Mariana, dice: La mejor forma de no poner esas comunidades en peligro es cambiar el sistema de explotación de minerales en el país y prohibir esos diques."
 
   - type: text
     text: "<p>Esa persecución ha puesto, incluso, a los propios habitantes de las ciudades afectadas en conflicto. Como la presión de la empresa para evitar la organización ha aumentado, es común que algunos se vuelquen contra el movimiento y personas que son referencias de él en la ciudad.</p>
@@ -128,11 +128,11 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5759/30683572111_349b6a5712_b.jpg
     mobile: //farm6.staticflickr.com/5828/30258508873_8c841c6d90_b.jpg
-    title: "Créditos del reportaje. Texto, Simone Freire. Edición, Vivian Fernandes. Video y foto, José Eduardo Bernardes y Guilherme Weimann. Arte, Wilcker Morais."
+    description: "Créditos del reportaje. Texto, Simone Freire. Edición, Vivian Fernandes. Video y foto, José Eduardo Bernardes y Guilherme Weimann. Arte, Wilcker Morais."
   - type: image
     desktop: //farm6.staticflickr.com/5828/30258508873_8c841c6d90_b.jpg
     mobile: //farm6.staticflickr.com/5488/30894040315_e464477253_b.jpg
-    title: Vía de tren
+    description: Vía de tren
 
   - type: navigation
     title: "Más del especial"

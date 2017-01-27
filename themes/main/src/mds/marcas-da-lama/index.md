@@ -61,7 +61,7 @@ sections:
     centralized: true
     desktop: //farm6.staticflickr.com/5711/30400424460_019a285f99_b.jpg
     mobile: //farm6.staticflickr.com/5662/30612499501_c8908eef71_z.jpg
-    title: "Marcas da Lama"
+    description: "Marcas da Lama"
 
   - type: text
     text: "<p style=\"text-align: center;\"><b>Reportagem:</b> Simone Freire, José Eduardo Bernardes e Guilherme Weimann<br><b>Edição:</b> Vivian Fernandes<br><b>Vídeo e foto:</b> José Eduardo Bernardes, Guilherme Weimann e Thiago Hersan<br><b>Edição de vídeo:</b> Marcelo Cruz <br><b>Design e edição de foto:</b> Wilcker Morais<br><b>Coordenação de arte:</b> José Bruno Lima<br><b>Desenvolvimento:</b> Giuliana Marquesi, Michael Feitosa, Nicholas Pereira, Ricardo Retamal, Thiago Hersan e Wandecleya Martins<br><b>Apoio:</b> Nadine Nascimento, Júlia Dolce, Norma Odara, Rute Pina e Rafael Tatemoto<br><b>Coordenação de jornalismo:</b> Simone Freire<br><b>Agradecimentos:</b> Regiane, Jonatan, Fabiana, Ellen, Camila, Thiago, Diane, Valcileno, Binho, Débora, Maria Julia, além do Movimento pela Soberania Popular na Mineração (MAM) e do Movimento dos Atingidos por Barragens (MAB)</p><p></p>"

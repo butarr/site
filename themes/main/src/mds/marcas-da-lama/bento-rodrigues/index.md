@@ -31,7 +31,7 @@ sections:
   - type: image
     desktop: //farm9.staticflickr.com/8623/30543256616_5d5d0faafb_b.jpg
     mobile: //farm9.staticflickr.com/8623/30543256616_5d5d0faafb_b.jpg
-    title: Casa em escombros e carro sob montanhas de lama
+    description: Casa em escombros e carro sob montanhas de lama
   - type: text
     text: "<p>Panelas no fogo, roupas, documentos, fotografias, carros, animais… Tudo precisou ser deixado para trás para se chegar às partes mais altas do vilarejo. Em meio à desolação e busca por notícias sobre o paradeiro de amigos, parentes e vizinhos, houve quem conseguisse parar e, entre lágrimas, observar a enxurrada de lama destruir ruas, casas, escola e posto de saúde. </p>
     <p>Já não era mais possível enxergar o que até pouco antes era Bento Rodrigues, a não ser por alguns carros e telhados que se deslocavam pelo distrito, flutuando sem rumo nesse rio de barro. Das 200 casas, pouco mais de 20 ficaram em pé. Entre moradores e trabalhadores da mineradora, morreram 19 pessoas. </p>
@@ -52,7 +52,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5561/30462672872_206d860330_b.jpg
     mobile: //farm6.staticflickr.com/5561/30462672872_206d860330_b.jpg
-    title: Foto pintada de casal com vidro despedaçado encrustada na lama
+    description: Foto pintada de casal com vidro despedaçado encrustada na lama
 
   - type: text
     text: "<p>Os sons em Bento Rodrigues aos finais de semana eram tradicionais: crianças brincando pelas ruas, pequenos bate-papos com vizinhos e amigos em frente de casa, festas e reuniões familiares. Com tudo debaixo da lama, o dia 6 de novembro era para ser o mais silencioso do pequeno povoado mineiro. Mas, dessa vez, o ambiente de Bento Rodrigues foi preenchido pelo barulho de helicópteros e grupos de resgate, que circulavam pelo vilarejo à procura de sobreviventes.</p>
@@ -61,7 +61,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5720/30466295692_e1628aaa8a_b.jpg
     mobile: //farm6.staticflickr.com/5728/29966542273_910518cce9_b.jpg
-    title: "Mapa demarcando a barragem, Bento Rodrigues e Mariana em Minas Gerais"
+    description: "Mapa demarcando a barragem, Bento Rodrigues e Mariana em Minas Gerais"
 
   - type: text
     text: "<p>O distrito de Bento Rodrigues, hoje totalmente destruído, foi apenas o primeiro local atingido e, portanto, uma das paradas da reportagem para o especial <b>Marcas da Lama - Um ano de resistência na Bacia do Rio Doce</b>.</p><p>\"Ali era a casa de Paulo César, ali era a casa de Dona Geralda, ali o terreno do meu sogro, mais ali o bar da Sandra, aqui era a casa de Joaquim\". É assim que Joana D'arc Norberto, 43 anos, inicia a conversa com a equipe do <b>Brasil de Fato</b>, enquanto percorre o que restou de Bento Rodrigues, quase um ano depois do ocorrido.</p>"
@@ -69,7 +69,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5444/29944612863_5838d974d8_b.jpg
     mobile: //farm6.staticflickr.com/5759/30600188485_c69d155d48_b.jpg
-    title: "Foto de Joana D'arc Norberto, de 43 anos, com sua fala \"Não estava em casa quando tudo aconteceu. Um genro me ligou e disse: 'ei, Joana, acabou Bento, morreu todo mundo'\""
+    description: "Foto de Joana D'arc Norberto, de 43 anos, com sua fala \"Não estava em casa quando tudo aconteceu. Um genro me ligou e disse: 'ei, Joana, acabou Bento, morreu todo mundo'\""
 
   - type: text
     text: "<p>Mesmo que muitos imóveis ainda estejam marcados pela destruição da lama ou tenham desaparecido completamente do mapa, os mais de vinte anos morando no distrito garantiram à dona-de-casa minuciosidade na memória. Os locais exatos das casas dos amigos ainda são lembrados.</p><p>Foram poucos os pertences recuperados por Joana e sua família. Embora sua casa tenha sido uma das poucas que não foram atingidas diretamente pela enxurrada, por se localizar na parte alta do povoado, se passaram dias até que ela e os vizinhos pudessem voltar ao local, e muitos pertences foram saqueados.</p><p>\"A gente sempre pedia pra entrar lá, pra tirar alguma coisa e poder levar – pra quando Deus abençoar, e a gente tiver uma nova casa –, poder levar. A gente queria conseguir tirar alguma coisa, mas não podia entrar. Hoje, não tem mais nada, porque os outros saquearam tudo\", lamenta.</p><p>Mãe de seis filhos, Joana caminha pela antiga casa lembrando como ela foi um dia (ver vídeo). \"Toda vez que eu volto aqui é uma tristeza\", diz, garantindo que, mesmo assim, faz questão de retornar sempre que possível a Bento Rodrigues. Ela ainda tem esperança de resgatar algum pertence, alguma memória.</p>"
@@ -91,7 +91,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5680/29946540724_c36059779d_b.jpg
     mobile: //farm6.staticflickr.com/5697/29968095974_36bf78bc65_b.jpg
-    title: "Foto de Manuel Marcos Muniz, de 52 anos, com sua fala \"A gente acha que já passou, que já acabou, mas tem dia que a gente só vive em função da tragédia da Samarco, do rompimento da barragem\""
+    description: "Foto de Manuel Marcos Muniz, de 52 anos, com sua fala \"A gente acha que já passou, que já acabou, mas tem dia que a gente só vive em função da tragédia da Samarco, do rompimento da barragem\""
 
   - type: text
     text: "<p>As lembranças de infância de Manuel Marcos Muniz, mais conhecido como Marquinhos, são de Bento Rodrigues. Os ensinamentos da roça vieram dos pais, que se mudaram para o pequeno vilarejo quando ele ainda era um menino. A rotina da família era guiada pelas criações de animais e plantações ao redor da casa.</p><p>As transformações do povoado mineiro ocorreram ao compasso das mudanças em sua vida. Início dos estudos, primeira namorada, casamento, o nascimento da única filha. Aposentado e com 52 anos, hoje, a cada lembrança vasculhada na memória, um relato sobre Bento. “As raízes estavam todas ali”, diz.</p><p>Para acomodar a vida familiar, o trabalho da esposa e os estudos da filha, no início dos anos 2000, a rotina passou a ser dividida entre Bento Rodrigues e o centro do município de Mariana, onde também construiu uma casa. As criações de galinhas, porcos e a lavoura permaneceram no pequeno distrito e ficavam aos cuidados de um de seus irmãos. Já aos finais de semana, o próprio Marquinhos se responsabilizava pelo roçado e aproveitava a vida no campo com a família.</p>"
@@ -126,11 +126,11 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
     mobile: //farm6.staticflickr.com/5727/29973631194_29d8bcc5d2_b.jpg
-    title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
+    description: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
   - type: image
     desktop: //farm6.staticflickr.com/5471/29967477173_4e42af1d3e_b.jpg
     mobile: //farm6.staticflickr.com/5471/29967477173_4e42af1d3e_b.jpg
-    title: Única parede de pé de uma casa
+    description: Única parede de pé de uma casa
 
   - type: navigation
     title: "Mais do especial"

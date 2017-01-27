@@ -34,7 +34,7 @@ sections:
   - type: image
     desktop: //farm9.staticflickr.com/8601/29992512434_5021a23dfd_b.jpg
     mobile: //farm6.staticflickr.com/5594/29990595293_56ac787198_b.jpg
-    title: "Mapa com a localização de Barra longa um pouco mais distante da Barragem do que Bento Rodrigues"
+    description: "Mapa com a localização de Barra longa um pouco mais distante da Barragem do que Bento Rodrigues"
 
 
   - type: multimedia
@@ -55,7 +55,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5321/30324862390_31d00d10ac_b.jpg
     mobile: //farm6.staticflickr.com/5597/30507915122_0721cbaf6e_b.jpg
-    title: "Estatística de que o atendimento nos centros de saúde de Barra Longa em 2015 foi de 22 pessoas antendidas e em 2016 289 pacientes, um aumento de mais de 1000%"
+    description: "Estatística de que o atendimento nos centros de saúde de Barra Longa em 2015 foi de 22 pessoas antendidas e em 2016 289 pacientes, um aumento de mais de 1000%"
 
   - type: text
     text: "<p>Um dos casos de impacto na saúde é o de Anna Clara Oliveira Coelho, 4 anos. Ela é filha de Edvania de Oliveira, 36 anos, e José Eduardo Coelho, 54 anos. No dia 5 de novembro, a lama invadiu cerca de 1 metro de altura na garagem da casa da família. Anna Clara presenciou tudo.</p>
@@ -64,7 +64,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5831/30536803841_686cca6176_b.jpg
     mobile: //farm6.staticflickr.com/5610/30536814551_b1de9359a8_b.jpg
-    title: "Edvania de Oliveira, 36 anos, fala: Era umas 22h quando a lama começou a chegar aqui. Todo mundo ficou acordado. A gente deu sorte que chegou à noite. Se tivesse chegado durante o dia, muita gente ia morrer."
+    description: "Edvania de Oliveira, 36 anos, fala: Era umas 22h quando a lama começou a chegar aqui. Todo mundo ficou acordado. A gente deu sorte que chegou à noite. Se tivesse chegado durante o dia, muita gente ia morrer."
 
   - type: text
     text: "<p>O acompanhamento psicológico da menina está sendo realizado desde janeiro pela psicóloga Luiza Laura Lanna, no Sistema Único de Saúde (SUS). No relato do acompanhamento, ela sinaliza que \"a paciente está sempre assustada e dizendo que vai mudar para outra cidade. Anna Clara deve continuar o tratamento até que consiga se livrar do trauma\".</p>
@@ -76,7 +76,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5811/30625043265_f995207599_b.jpg
     mobile: //farm6.staticflickr.com/5811/30625043265_f995207599_b.jpg
-    title: Foto do Laudo Médico da Ana
+    description: Foto do Laudo Médico da Ana
 
   - type: multimedia
     embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/T_6qI9VItKM" frameborder="0" allowfullscreen></iframe>
@@ -84,7 +84,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5701/30589248196_1fd4c91d64_b.jpg
     mobile: //farm9.staticflickr.com/8640/30537129191_2380ba37d5_z.jpg
-    title: "José Eduardo Coelho Filho de 54 anos, fala que: A marca da lama não vai se apagar tão cedo. Acho que talvez nem apaque mais."
+    description: "José Eduardo Coelho Filho de 54 anos, fala que: A marca da lama não vai se apagar tão cedo. Acho que talvez nem apaque mais."
 
   - type: text
     text: "<p>Questões semelhantes às de José Eduardo e Edvania são enfrentadas por Simone Maria da Silva, 39 anos, e seu marido José Márcio Marques, 38 anos. Assim como no laudo de Anna Clara, o quadro clínico da filha do casal, Sofya Silva Marques, de 1 ano e 8 meses, assinado pelo mesmo médico, diz que seu problema respiratório \"é desencadeado por inalantes (fatores desencadeantes e irritativos relacionados à exposição da poeira proveniente dos rejeitos de minérios) resultado do rompimento da barragem de Mariana, afetando o meio ambiente da cidade de Barra Longa, cidade onde reside a menor\".</p>
@@ -96,7 +96,7 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5766/30537162311_37aeec1b93_b.jpg
     mobile: //farm6.staticflickr.com/5518/30537172131_5d8618aaa4_z.jpg
-    title: "Simone Maria Silva Marques de 39 anos, fala que: A Samarco é muito omissa. A cada volta que eu dou nas ruas de Barra Longa, eu volto mais revoltada."   
+    description: "Simone Maria Silva Marques de 39 anos, fala que: A Samarco é muito omissa. A cada volta que eu dou nas ruas de Barra Longa, eu volto mais revoltada."   
 
   - type: text
     text: "<p>Com ruas estragadas, encanamento entupido ou esgoto a céu aberto, o aumento do número de pessoas infectadas com dengue em Barra Longa foi significativo no início deste ano. Segundo a Secretaria Municipal de Saúde, em todo o ano de 2015, foram registrados apenas dois casos; já em 2016, até o dia 2 de março, 128 casos foram confirmados. Na época, a Samarco divulgou nota informando que, em conjunto com a prefeitura, criou grupos de trabalho para vistorias nas residências da região.</p>
@@ -111,11 +111,11 @@ sections:
   - type: image
     desktop: //farm6.staticflickr.com/5501/29946865184_77f2a0fbf5_b.jpg
     mobile: //farm6.staticflickr.com/5727/29973631194_29d8bcc5d2_b.jpg
-    title: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
+    description: "Créditos da reportagem. Texto: Simone Freire, Edição: Viviana Fernandes, Vídeo e Foto: José Eduardo Bernardes e Guilherme Weimann, Arte: Wilcker Morais"
   - type: image
     desktop: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
     mobile: //farm6.staticflickr.com/5807/29988831843_30edf0192a_b.jpg
-    title: Corvo no topo de uma montanha de lama
+    description: Corvo no topo de uma montanha de lama
 
   - type: navigation
     title: "Mais do especial"
