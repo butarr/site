@@ -1048,7 +1048,7 @@ $number-size: 1.3rem;
 
 @mixin __columnist_list {
   .columnist-name {
-    font: bold $page-name-size $family-sans;
+    font: bold $list-title-size $family-sans;
     color: $columnist-name-color;
   }
   .page-name {
@@ -1058,6 +1058,7 @@ $number-size: 1.3rem;
   }
   .description {
     font: normal #{$text-size}/#{$line-separation-small} $family-sans;
+    color: $details-color;
   }
 }
 
