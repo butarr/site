@@ -526,6 +526,11 @@ $number-size: 1.3rem;
 
   .ckeditor-info-subtitle {
     text-decoration: underline;
+    margin-bottom: 6px;
+
+    @include media-query (THREE) {
+      margin-bottom: 8px;
+    }
   }
 
   .ckeditor-info-highlight {
