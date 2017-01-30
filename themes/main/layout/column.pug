@@ -33,30 +33,41 @@ append content
           li(itemprop="itemListElement" )
             a( href="/")
               p Início
-          li
-            i(class="fa fa-chevron-right fa-lg")
-          li(itemprop="itemListElement")
-            a(href="/colunistas/")
-              p Colunistas
-          li
-            i(class="fa fa-chevron-right fa-lg")
-          li(itemprop="itemListElement")
-            a(href="/colunistas/" + columnist.path)
-              p.breadcrumb-last=columnist.name
+          if config.toggles._iftEQfOR_columnist_page
+            li
+              i(class="fa fa-chevron-right fa-lg")
+            li(itemprop="itemListElement")
+              a(href="/colunistas/")
+                p Colunistas
+            li
+              i(class="fa fa-chevron-right fa-lg")
+            li(itemprop="itemListElement")
+              a(href="/colunistas/" + columnist.path)
+                p.breadcrumb-last=columnist.name
 
       span.hat Coluna
 
       .column-header
         h1.title(itemprop="headline")= page.title
         .person
-          a(href="/colunistas/" + columnist.path title="link para a pagina do colunista")
-            img.profile-image(alt="Imagem de perfil do Colunista", src=columnist.photo)
-          .name-and-time
-            a(href= "/colunistas/" + columnist.path title="link para a pagina do colunista")
-              span.name(itemprop="author")= columnist.name
-            time(datetime=published_at.toISOString())= full_date(published_at)
-            meta(itemprop="datePublished", content=published_at.toISOString())
-            meta(itemprop="dateModified", content=published_at.toISOString())
+          if config.toggles._iftEQfOR_columnist_page
+            a(href="/colunistas/" + columnist.path title="link para a pagina do colunista")
+              img.profile-image(alt="Imagem de perfil do Colunista", src=columnist.photo)
+            .name-and-time
+              a(href= "/colunistas/" + columnist.path title="link para a pagina do colunista")
+                span.name(itemprop="author")= columnist.name
+              time(datetime=published_at.toISOString())= full_date(published_at)
+              meta(itemprop="datePublished", content=published_at.toISOString())
+              meta(itemprop="dateModified", content=published_at.toISOString())
+          else
+            a()
+              img.profile-image(alt="Imagem de perfil do Colunista", src=columnist.photo)
+            .name-and-time
+              a()
+                span.name(itemprop="author")= columnist.name
+              time(datetime=published_at.toISOString())= full_date(published_at)
+              meta(itemprop="datePublished", content=published_at.toISOString())
+              meta(itemprop="dateModified", content=published_at.toISOString())
 
       if page.audio
         p.listen-audio Ouça a matéria:
