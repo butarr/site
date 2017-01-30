@@ -514,6 +514,24 @@ $number-size: 1.3rem;
     color: $details-color;
   }
 
+  .ckeditor-subtitle {
+    font: bold 1.21rem $family-serif;
+    color: $text-color;
+    text-align: center;
+
+    @include media-query (THREE) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .ckeditor-info-subtitle {
+    text-decoration: underline;
+  }
+
+  .ckeditor-info-highlight {
+    color: $red-base;
+  }
+
   .tabloid-link-text {
     font: $text-size $family-serif;
     color: $details-color;
@@ -642,6 +660,24 @@ $number-size: 1.3rem;
 
   p {
     color: $text-color;
+  }
+
+  .ckeditor-subtitle {
+    font: bold 1.21rem $family-serif;
+    color: $text-color;
+    text-align: center;
+
+    @include media-query (THREE) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .ckeditor-info-subtitle {
+    text-decoration: underline;
+  }
+
+  .ckeditor-info-highlight {
+    color: $red-base;
   }
 }
 
@@ -1062,9 +1098,6 @@ $number-size: 1.3rem;
   }
   @else if( $type == TABLOID ){
     @include __tabloid();
-  }
-  @else if( $type == OTHER ){
-    @include __other();
   }
   @else if( $type == OTHER ){
     @include __other();
