@@ -11,11 +11,10 @@
 
   .page-name {
     @include page-name;
-    margin-bottom: 15px;
   }
 
   .divisor {
-    padding: 20px 0;
+    padding-bottom: 20px;
     border-bottom: 1px solid $content-divisor;
   }
 
@@ -25,35 +24,24 @@
 }
 
 #columnist-list .columnist-section {
-  display: table;
-  justify-content: flex-start;
-  padding: 10px 0;
+  justify-content:center;
 
   .columnist-photo-name{
-    display: table-cell;
-    min-width: 90px;
-    padding-right: 10px;
+    padding-bottom: 10px;
     text-align: center;
 
-    @include media-query(TWO) {
-      min-width: 160px;
-    }
-
     img {
-      width: 70px;
+      width: 100px;
       border-radius: 50%;
     }
 
     .columnist-name {
       margin-top: 10px;
-      display: inline-block;
+
 
     }
   }
   .description {
-    display: table-cell;
-    width: 100%;
-    vertical-align: top;
-
+    text-align: center;
   }
 }
