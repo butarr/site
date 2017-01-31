@@ -552,6 +552,40 @@
   }
 }
 
+#home .last-news#last-news-desktop {
+  width: 100%;
+  @include image-rounded(110px, 100px);
+
+  .section-name {
+    width: 100%;
+    @include section-name();
+  }
+
+  ol {
+    display: -webkit-flex; //Old Safari
+    display: flex;
+    -webkit-flex-wrap: wrap; //Old Safari
+    flex-wrap: wrap;
+  }
+
+  li {
+    display: -webkit-flex; //Old Safari
+    display: flex;
+    height: 100px;
+    width: 2 * $COLUMN-WIDTH;
+    margin: 5px 0;
+  }
+
+  figure {
+    background-size: cover;
+  }
+
+  .title {
+    width: 330px;
+    padding-left: $LATERAL-COLUMN-SPACE;
+  }
+}
+
 #home .last-news#last-news-dynamic {
   display: none;
 

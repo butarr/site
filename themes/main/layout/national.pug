@@ -327,7 +327,7 @@ append content
 
           if config.toggles.last_news
             if page.last_news
-              section.last-news(class= "spacing" itemscope itemtype="https://schema.org/ItemList")
+              section.last-news#last-news-desktop(class= "spacing" itemscope itemtype="https://schema.org/ItemList")
                 meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
                 a(itemprop="url" href="/ultimas_noticias/")
                   h2.section-name Últimas Notícias
@@ -336,6 +336,8 @@ append content
                   - var index = 0;
                   each post in page.last_news
                     li(itemprop="itemListElement")
+                      a(itemprop="url" href=post.path)
+                        figure(style=`background-image: url(${post.cover.small});` title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
                       a(itemprop="url" href=post.path)
                         h3.title= post.title
 
