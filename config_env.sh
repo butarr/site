@@ -57,6 +57,7 @@ theme: main
 #Toggles
 toggles:
   banner_radioagencia: ${BANNER_RADIOAGENCIA:-false}
+  last_news: ${TOGGLE_LAST_NEWS:-false}
   _D6fenTno_adsense: ${TOGGLE_D6fenTno_ADSENSE:-false}
   _test_environment: ${TOGGLE_TEST_ENVIROMENT:-false}
   _iftEQfOR_columnist_page: ${TOGGLE_iftEQfOR_COLUMNIST_PAGE:-false}

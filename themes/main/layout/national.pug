@@ -325,6 +325,20 @@ append content
                     a(itemprop="url" href=post.path)
                       h3.title= post.title
 
+          if config.toggles.last_news
+            if page.last_news
+              section.last-news(class= "spacing" itemscope itemtype="https://schema.org/ItemList")
+                meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
+                a(itemprop="url" href="/ultimas_noticias/")
+                  h2.section-name Últimas Notícias
+
+                ol
+                  - var index = 0;
+                  each post in page.last_news
+                    li(itemprop="itemListElement")
+                      a(itemprop="url" href=post.path)
+                        h3.title= post.title
+
           if page.most_read
             section.most-read(class="spacing" itemscope itemtype="https://schema.org/ItemList")
               meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
