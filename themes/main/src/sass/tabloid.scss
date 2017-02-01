@@ -32,7 +32,7 @@
     margin-right: auto;
     width: 100%;
 
-    @include media-query(TWO){
+    @include media-query(TWO) {
       width: 80%;
     }
   }

@@ -363,10 +363,10 @@ sections:
   - type: links
     title: "Matérias sobre a Reforma da Previdência"
     links:
-      - title: "Reforma da Previdência: deputados analisam pontos prejudiciais à classe trabalhadora"
-        url: /2016/12/07/deputados-da-oposicao-criticam-reforma-da-previdencia/
-        cover: //farm6.staticflickr.com/5478/31446092906_39165dc1a8_z.jpg
-      - title: "Está sobrando (muito) dinheiro na Previdência; entenda os números"
-        url: /2016/07/22/esta-sobrando-muito-dinheiro-na-previdencia-entenda-os-numeros/
-        cover: //farm9.staticflickr.com/8611/27855260333_de7e65813b_z.jpg
+      - title: "Auditores fiscais publicam cartilha da Previdência que contrapõe discurso de déficit"
+        url: /2016/08/23/auditores-fiscais-publicam-cartilha-da-previdencia-que-contrapoe-discurso-de-deficit/
+        cover: //farm9.staticflickr.com/8345/29154138366_6506891794_z.jpg
+      - title: "\"Perguntas e Respostas\": homens e mulheres devem se aposentar com idades diferentes?"
+        url: /2017/01/31/serie-perguntas-e-respostas-explica-como-funciona-a-previdencia-social/
+        cover: //farm1.staticflickr.com/377/32591722146_98122d5da4_z.jpg
 ---
