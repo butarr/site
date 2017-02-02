@@ -182,15 +182,16 @@ append content
         else
           +adsense_01_mobile()
 
-        if page.last_news
-          section#last-news-dynamic.last-news(itemscope itemtype="https://schema.org/ItemList" class="spacing" hidden)
-            a(itemprop="url" href="/ultimas_noticias/")
-              h2.section-name Últimas notícias:
-            ol(id="last-news-animation-true")
-              each post in page.last_news
-                li.inactive.last-news-analytics(itemprop="itemListElement")
-                  a(href=post.path itemprop="url")
-                    p.title= post.title
+        if !config.toggles.last_news
+          if page.last_news
+            section#last-news-dynamic.last-news(itemscope itemtype="https://schema.org/ItemList" class="spacing" hidden)
+              a(itemprop="url" href="/ultimas_noticias/")
+                h2.section-name Últimas notícias:
+              ol(id="last-news-animation-true")
+                each post in page.last_news
+                  li.inactive.last-news-analytics(itemprop="itemListElement")
+                    a(href=post.path itemprop="url")
+                      p.title= post.title
 
       .container
         .main
@@ -314,30 +315,29 @@ append content
               a(itemprop="url" href=post.path)
                 figure.charge_desktop.charge_image_analytics(style=`background-image: url(${post.cover.medium});` title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
 
-          if page.last_news
-            section.last-news#last-news-mobile(class= "spacing" itemscope itemtype="https://schema.org/ItemList")
-              meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
-              a(itemprop="url" href="/ultimas_noticias/")
-                h2.section-name Últimas Notícias
-              ol
-                each post in page.last_news
-                  li(itemprop="itemListElement")
-                    a(itemprop="url" href=post.path)
-                      h3.title= post.title
-
           if config.toggles.last_news
             if page.last_news
               section.last-news#last-news-desktop(class= "spacing" itemscope itemtype="https://schema.org/ItemList")
                 meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
                 a(itemprop="url" href="/ultimas_noticias/")
                   h2.section-name Últimas Notícias
-
                 ol
                   - var index = 0;
                   each post in page.last_news
                     li(itemprop="itemListElement")
                       a(itemprop="url" href=post.path)
                         figure(style=`background-image: url(${post.cover.small});` title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
+                      a(itemprop="url" href=post.path)
+                        h3.title= post.title
+          else
+            if page.last_news
+              section.last-news#last-news-mobile(class= "spacing" itemscope itemtype="https://schema.org/ItemList")
+                meta(itemprop="itemListOrder" content="http://schema.org/ItemListOrderAscending")
+                a(itemprop="url" href="/ultimas_noticias/")
+                  h2.section-name Últimas Notícias
+                ol
+                  each post in page.last_news
+                    li(itemprop="itemListElement")
                       a(itemprop="url" href=post.path)
                         h3.title= post.title
 
