@@ -329,6 +329,8 @@ append content
                         figure(style=`background-image: url(${post.cover.small});` title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
                       a(itemprop="url" href=post.path)
                         h3.title= post.title
+                a(href="/ultimas_noticias/" class="button" title="link para mais notícias")
+                  span Mais Notícias
           else
             if page.last_news
               section.last-news#last-news-mobile(class= "spacing" itemscope itemtype="https://schema.org/ItemList")
