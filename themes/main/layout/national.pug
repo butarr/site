@@ -323,6 +323,7 @@ append content
                 ol
                   - var index = 0;
                   each post in page.last_news
+                    - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
                     li(itemprop="itemListElement")
                       a(itemprop="url" href=post.path)
                         figure(style=`background-image: url(${post.cover.small});` title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
