@@ -572,7 +572,7 @@
     display: -webkit-flex; //Old Safari
     display: flex;
     height: 100px;
-    width: 2 * $COLUMN-WIDTH;
+    width: 100%;
     margin: 5px 0;
   }
 
@@ -581,8 +581,17 @@
   }
 
   .title {
-    width: 330px;
     padding-left: $LATERAL-COLUMN-SPACE;
+  }
+
+  @include media-query(FIVE){
+    .title {
+      width: 330px;
+    }
+
+    li {
+      width: 2 * $COLUMN-WIDTH;
+    }
   }
 }
 
