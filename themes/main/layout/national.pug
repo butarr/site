@@ -7,10 +7,10 @@ mixin columnist_item(column)
     if columnist
       .columnist.columnist-analytics(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
         .photo
-          a(href=column.path, title="link para a pagina do colunista")
+          a(href=`colunistas/${columnist.path}`, title="link para a pagina do colunista")
             img(alt=`Foto de ${columnist.name}` src=columnist.photo itemprop="image")
         .column
-          a(href=column.path, title="link para a pagina do colunista")
+          a(href=`colunistas/${columnist.path}`, title="link para a pagina do colunista")
             span.name(itemprop="name")= columnist.name
           a(href=column.path itemprop="url")
             h2.title= column.title
