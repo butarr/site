@@ -5,7 +5,7 @@ SITE_DEST=$2
 SHOULD_CLEAN=$3
 HEXO=$SITE_HOME/node_modules/hexo/bin/hexo
 
-if [ ! -z "$(pgrep "hexo")" ] ; then
+if [ ! -z "$(pgrep -x "hexo")" ] ; then
   echo "Hexo did not start because was already processing."
 else
   if [ ${SHOULD_CLEAN:-clean} == "clean" ]; then
