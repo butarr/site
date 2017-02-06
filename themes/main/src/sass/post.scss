@@ -226,9 +226,9 @@
 #post .sidebar {
   padding-left: 15px;
   @include media-query(THREE) {
-    min-width: $COLUMN-WIDTH;
-    max-width: $COLUMN-WIDTH;
-    min-height: $COLUMN-WIDTH;
+    min-width: $COLUMN-WIDTH + $COLUMN-WIDTH/2;
+    max-width: $COLUMN-WIDTH + $COLUMN-WIDTH/2;
+    min-height: $COLUMN-WIDTH + $COLUMN-WIDTH/2;
   }
 }
 

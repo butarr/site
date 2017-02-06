@@ -242,17 +242,18 @@
 
   .other-article {
     width: 100%;
+    @include image-rounded(110px, 100px);
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
 
-    a {
+    li{
       display: -webkit-flex; //Old Safari
       display: flex;
-      -webkit-flex-wrap: nowrap; //Old Safari
-      flex-wrap: nowrap;
-      -webkit-flex-direction: row; //Old Safari
-      flex-direction: row;
-      justify-content: flex-start;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 10px;
+    }
+
+    .other-article-image {
+      background-size: cover;
+      margin-right: 0.25em;
     }
   }
 }
