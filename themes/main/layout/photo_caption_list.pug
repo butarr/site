@@ -35,7 +35,7 @@ append content
 
             a(itemprop="url" href=`${config.url}${item.url}`)
               figure.charge_figure_mobile(itemscope itemtype="https://schema.org/ImageObject")
-                img.charge_image_mobile(src=item.cover.medium title=imageDescription itemprop="image")
+                img.charge_image_mobile(src=item.cover.medium alt=imageDescription title=imageDescription itemprop="image")
             a(itemprop="url" href=`${config.url}${item.url}`)
               figure.charge_figure_desktop(style=`background-image: url(${item.cover.medium});` title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
 
