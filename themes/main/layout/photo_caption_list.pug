@@ -16,31 +16,30 @@ block open_graph
   meta(property="og:title" content=`${titlecase(page.area)} | ${config.title}`)
   meta(property="og:description" content=config.description)
   meta(property="og:image" content=`${config.url}/img/share-logo.png`)
-  
+
 append content
   main.grid-4-columns
-    
+
     section#photo-caption-list(itemscope itemtype="http://schema.org/ImageGallery")
       h1(class="page-name" itemprop="name")= page.area
-      
+
       .image-list(itemscope itemtype="http://schema.org/ItemList")
         - var position= 0
-        
+
         each item in page.list
           .image-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement")
             meta(itemprop="url" content=`https://www.brasildefato.com.br/${item.url}`)
             meta(itemprop="position" content=`${++position}`)
-            
+
             - var imageDescription= item.cover.subtitle + " - Créditos: " + item.cover.credits
-            
+
             a(itemprop="url" href=`${config.url}${item.url}`)
               figure.charge_figure_mobile(itemscope itemtype="https://schema.org/ImageObject")
-                img.charge_image_mobile(src=item.cover.medium alt=imageDescription title=imageDescription itemprop="image")
+                img.charge_image_mobile(src=item.cover.medium title=imageDescription itemprop="image")
             a(itemprop="url" href=`${config.url}${item.url}`)
-              figure.charge_figure_desktop(style=`background-image: url(${item.cover.medium});` alt=imageDescription title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
-      
+              figure.charge_figure_desktop(style=`background-image: url(${item.cover.medium});` title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
+
       include _partial/pagination
-      
+
 block footer
   include _partial/footer_photo_caption_list
-                
