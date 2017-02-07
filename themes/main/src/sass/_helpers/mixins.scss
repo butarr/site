@@ -249,6 +249,10 @@
     li{
       display: -webkit-flex; //Old Safari
       display: flex;
+
+      a + a h3 {
+        padding-left: 5px;
+      }
     }
 
     .other-article-image {
