@@ -35,7 +35,7 @@ $item-padding: 5px 18px;
 
 .full-menu-list {
   @include get-font(MENU_DESKTOP);
-    width: 3 * $COLUMN-WIDTH;
+    width: 3 * $column-width;
     height: 80px;
     display: -webkit-flex; //Old Safari
     display: flex;

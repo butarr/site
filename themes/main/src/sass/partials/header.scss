@@ -23,10 +23,10 @@ $logo-big-height: 5.2rem;
   justify-content: center;
   -webkit-align-items: center; //Old Safari
   align-items: center;
-  height: $HEADER-HEIGHT-CONTRACTED;
+  height: $header-height-contracted;
 
   @include media-query(FOUR) {
-    height: $HEADER-HEIGHT-DESKTOP;
+    height: $header-height-desktop;
     border-bottom: 2px solid $menu-divisor-desktop;
   }
 }
@@ -38,7 +38,7 @@ $logo-big-height: 5.2rem;
   justify-content: center;
   -webkit-align-items: center; //Old Safari
   align-items: center;
-  height: $HEADER-HEIGHT-CONTRACTED;
+  height: $header-height-contracted;
 }
 
 .menu-options{
@@ -93,7 +93,7 @@ $logo-big-height: 5.2rem;
 
 #page-header .contracted, #page-header .always-contracted {
   @include media-query(FOUR) {
-    height: $HEADER-HEIGHT-CONTRACTED;
+    height: $header-height-contracted;
     margin-bottom: 3px;
 
     .banner-logo{

@@ -5,23 +5,23 @@
 
 #photo-caption-list {
   @include get-font(PHOTO_CAPTION_LIST);
-  max-width: 2 * $COLUMN-WIDTH;
+  max-width: 2 * $column-width;
   @include site-lateral-spacing();
   padding-bottom: 20px;
 
   @include media-query(THREE) {
-    max-width: 3 * $COLUMN-WIDTH;
-    width:  3 * $COLUMN-WIDTH;
+    max-width: 3 * $column-width;
+    width:  3 * $column-width;
   }
 
   @include media-query(FOUR) {
-    max-width: 4 * $COLUMN-WIDTH;
-    width: 4 * $COLUMN-WIDTH;
+    max-width: 4 * $column-width;
+    width: 4 * $column-width;
   }
 
   .page-name{
     @include page-name();
-    margin-bottom: $VERTICAL-SPACE;
+    margin-bottom: $vertical-space;
   }
 }
 
@@ -34,19 +34,19 @@
 
 #photo-caption-list .image-item {
   width: 100%;
-  max-width: 2 * $COLUMN-WIDTH;
-  margin-top: 2 * $VERTICAL-SPACE;
+  max-width: 2 * $column-width;
+  margin-top: 2 * $vertical-space;
 
   @include media-query(THREE) {
     @include column-lateral-spacing(5px);
     max-width: 340px;
-    margin-top: $VERTICAL-SPACE;
+    margin-top: $vertical-space;
   }
 
   @include media-query(FOUR) {
     @include column-lateral-spacing(10px);
-    max-width: 2 * $COLUMN-WIDTH;
-    margin-top: 2 * $VERTICAL-SPACE;
+    max-width: 2 * $column-width;
+    margin-top: 2 * $vertical-space;
   }
 }
 
@@ -66,7 +66,7 @@
 
 .charge_image_mobile {
  width: 100%;
- max-width: 2 * $COLUMN-WIDTH;
+ max-width: 2 * $column-width;
 }
 
 figure.charge_figure_desktop {

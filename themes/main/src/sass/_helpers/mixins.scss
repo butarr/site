@@ -31,7 +31,7 @@
   transition:  left 0.1s ease-in-out;
 }
 
-@mixin column-lateral-spacing($value: $LATERAL-COLUMN-SPACE) {
+@mixin column-lateral-spacing($value: $lateral-column-space) {
   padding-left: $value;
   padding-right: $value;
 }
@@ -120,7 +120,7 @@
 
 @mixin page-blockquotes() {
   blockquote {
-    max-width: 2 * $COLUMN-WIDTH;
+    max-width: 2 * $column-width;
     width: 100%;
     quotes: "\201C""\201D""\2018""\2019";
     padding: 20px 0;

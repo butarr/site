@@ -57,7 +57,7 @@
   display: flex;
   -webkit-align-items: center; //Old Safari
   align-items: center;
-  padding-left: $LATERAL-COLUMN-SPACE;
+  padding-left: $lateral-column-space;
 
   .timeProgress, .duration {
     width: 33px;
@@ -74,7 +74,7 @@
   flex-direction: column;
   -webkit-justify-content: flex-end; //Old Safari
   justify-content: flex-end;
-  padding: 0 $LATERAL-COLUMN-SPACE;
+  padding: 0 $lateral-column-space;
 
   span {
     padding-top: 5px;

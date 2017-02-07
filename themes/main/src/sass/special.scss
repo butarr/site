@@ -9,7 +9,7 @@
 
 .special {
   @include get-font(SPECIAL);
-  @include site-top-spacing($HEADER-HEIGHT-CONTRACTED);
+  @include site-top-spacing($header-height-contracted);
   padding-top: 0;
 
   section {
@@ -108,7 +108,7 @@
     @include media-query(THREE) {
       padding-left: 0;
       padding-right: 0;
-      max-width: (3*$COLUMN-WIDTH);
+      max-width: (3*$column-width);
     }
 
     p + p {
@@ -137,7 +137,7 @@
 
   section.multimedia {
     .container {
-      max-width: (3*$COLUMN-WIDTH);
+      max-width: (3*$column-width);
       margin: 0 auto;
     }
     .content-wrapper {
@@ -213,7 +213,7 @@
     margin: 0 auto;
     position: relative;
     background-color: $special-background;
-    max-width: ((4 * $COLUMN-WIDTH) + (4 * $LATERAL-PAGE-SPACE));
+    max-width: ((4 * $column-width) + (4 * $lateral-page-space-desktop));
 
     .links-container {
       display: -webkit-flex; //Old Safari
@@ -229,7 +229,7 @@
 
     .link {
       padding: 0 5px;
-      max-width: (2 * $COLUMN-WIDTH);
+      max-width: (2 * $column-width);
       width: 100%;
 
       @include image-rounded-responsive(300px);
@@ -273,7 +273,7 @@
 
     .special-link-mobile {
       width: 100%;
-      max-width: 2 * $COLUMN-WIDTH;
+      max-width: 2 * $column-width;
     }
 
     figure.special-link-desktop {

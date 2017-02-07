@@ -7,11 +7,11 @@
   @include button;
 
   p {
-    margin-bottom: $PARAGRAPH-SPACE;
+    margin-bottom: $paragraph-space;
   }
 
   h1 {
-    @include page-name();
+    @include page-name;
   }
 
   h2.title {
@@ -45,7 +45,7 @@
     padding: 20px 0;
   }
 
-  .section-name{
-    @include section-name();
+  .section-name {
+    @include section-name;
   }
 }

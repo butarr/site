@@ -29,17 +29,17 @@ $social-margin: 10px;
   padding: 0 20px;
 
   @include media-query(THREE) {
-    width: 3 * $COLUMN-WIDTH;
+    width: 3 * $column-width;
     margin: 0 auto;
     padding: 20px 0;
   }
 
   @include media-query(FOUR) {
-    width: 4 * $COLUMN-WIDTH;
+    width: 4 * $column-width;
   }
 
   @include media-query(FIVE) {
-    width: 5 * $COLUMN-WIDTH;
+    width: 5 * $column-width;
   }
 }
 
@@ -53,7 +53,7 @@ $social-margin: 10px;
   }
 
   @include media-query(FOUR) {
-    width: 4 * $COLUMN-WIDTH;
+    width: 4 * $column-width;
     padding: 20px 0;
   }
 }
@@ -62,13 +62,13 @@ $social-margin: 10px;
   padding: 0 20px;
 
   @include media-query(THREE) {
-    width: 3 * $COLUMN-WIDTH;
+    width: 3 * $column-width;
     padding: 20px 0;
     margin: 0 auto;
   }
 
   @include media-query(FOUR) {
-    width: 4 * $COLUMN-WIDTH;
+    width: 4 * $column-width;
   }
 }
 
@@ -78,8 +78,8 @@ $social-margin: 10px;
 
   @include media-query(THREE) {
     width: 100%;
-    max-width: (3 * $COLUMN-WIDTH) + (2 * $LATERAL-PAGE-SPACE);
-    @include column-lateral-spacing($LATERAL-PAGE-SPACE);
+    max-width: (3 * $column-width) + (2 * $lateral-page-space-desktop);
+    @include column-lateral-spacing($lateral-page-space-desktop);
   }
 }
 
@@ -163,7 +163,7 @@ $social-margin: 10px;
     text-align: left;
     margin-left: 80px;
     margin-top: 0;
-    max-width: (2 * $COLUMN-WIDTH) + (2 * $LATERAL-PAGE-SPACE);
+    max-width: (2 * $column-width) + (2 * $lateral-page-space-desktop);
   }
   @include media-query(THREE) {
     margin-left: 100px;

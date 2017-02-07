@@ -23,9 +23,9 @@ $lateral-margin: 10px;
   display: none;
   width: 100%;
   position: fixed;
-  top: $HEADER-HEIGHT-CONTRACTED;
+  top: $header-height-contracted;
   right: 0;
-  padding: 0 $VERTICAL-SPACE;
+  padding: 0 $vertical-space;
   background-color: $background;
   @include get-font(SEARCH);
 

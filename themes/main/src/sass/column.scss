@@ -9,7 +9,7 @@
   @include get-font(COLUMN);
 
   p {
-    margin-bottom: $PARAGRAPH-SPACE;
+    margin-bottom: $paragraph-space;
   }
 
   .hat {
@@ -21,7 +21,7 @@
   }
 
   @include media-query(THREE){
-    max-width: 3 * $COLUMN-WIDTH;
+    max-width: 3 * $column-width;
     @include column-lateral-spacing();
   }
 

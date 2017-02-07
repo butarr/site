@@ -14,7 +14,7 @@
   }
 
   p {
-    margin-bottom: $PARAGRAPH-SPACE;
+    margin-bottom: $paragraph-space;
   }
 }
 
@@ -44,7 +44,7 @@
   }
 
   p + .ckeditor-img-caption {
-    margin-top: -$PARAGRAPH-SPACE;
+    margin-top: -$paragraph-space;
   }
 }
 
@@ -66,7 +66,7 @@
 
     @include media-query(THREE) {
       @include site-lateral-spacing();
-      max-width: 3 * $COLUMN-WIDTH;
+      max-width: 3 * $column-width;
     }
 
     img {
@@ -226,9 +226,9 @@
 #post .sidebar {
   padding-left: 15px;
   @include media-query(THREE) {
-    min-width: $COLUMN-WIDTH + $COLUMN-WIDTH/2;
-    max-width: $COLUMN-WIDTH + $COLUMN-WIDTH/2;
-    min-height: $COLUMN-WIDTH + $COLUMN-WIDTH/2;
+    min-width: $column-width + $column-width/2;
+    max-width: $column-width + $column-width/2;
+    min-height: $column-width + $column-width/2;
   }
 }
 
@@ -243,7 +243,7 @@
 
 #post .audio-item {
   margin-top: 5px;
-  margin-bottom: $PARAGRAPH-SPACE;
+  margin-bottom: $paragraph-space;
 
   p {
     margin: 0;

@@ -24,7 +24,7 @@
 
   .section-name {
     @include section-name();
-    padding-top: $VERTICAL-SPACE;
+    padding-top: $vertical-space;
     margin-bottom: 0;
   }
 
@@ -33,21 +33,21 @@
   }
 
   .title, .description, .title-featured {
-    margin-bottom: $VERTICAL-SPACE;
+    margin-bottom: $vertical-space;
   }
 
   .button {
     width: 100%;
-    padding-top: $VERTICAL-SPACE;
+    padding-top: $vertical-space;
   }
 
   .facebook {
-    padding-top: $VERTICAL-SPACE;
+    padding-top: $vertical-space;
   }
 }
 
 #featured-audio-news {
-  margin-bottom: $VERTICAL-SPACE;
+  margin-bottom: $vertical-space;
 
   @include media-query(THREE){
     display: -webkit-flex; //Old Safari
@@ -67,7 +67,7 @@
 #radioagency .image {
   width: 100%;
   @include image-rounded-responsive(300px);
-  margin-bottom: $VERTICAL-SPACE;
+  margin-bottom: $vertical-space;
 
   @include media-query(THREE){
     @include image-rounded-responsive(250px);
@@ -108,7 +108,7 @@
   display: inline-block;
 
   @include media-query(FIVE) {
-    padding-top: $VERTICAL-SPACE;
+    padding-top: $vertical-space;
     max-width: 380px;
 
     .progress-and-source {

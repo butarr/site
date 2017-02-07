@@ -1,15 +1,15 @@
-$DESKTOP-WIDTH-SITE: 1150px;
-$COLUMNS-QUANTITY: 5;
-$COLUMN-WIDTH: $DESKTOP-WIDTH-SITE/$COLUMNS-QUANTITY;
+$desktop-width-site: 1150px;
+$columns-quantity: 5;
+$column-width: $desktop-width-site / $columns-quantity;
 
-$LATERAL-COLUMN-SPACE: 5px;
-$LATERAL-PAGE-SPACE: 30px;
-$LATERAL-PAGE-SPACE-SMALL: 10px;
-$VERTICAL-SPACE: 10px;
-$PARAGRAPH-SPACE: 20px;
+$lateral-column-space: 5px;
+$lateral-page-space-desktop: 30px;
+$lateral-page-space-mobile: 10px;
+$vertical-space: 10px;
+$paragraph-space: 20px;
 
-$HEADER-HEIGHT-DESKTOP: 120px;
-$MENU-HEIGHT-DESKTOP: 40px;
-$OPEN-SEARCH-TOOL: 30px;
-$MENU-HEIGHT-TWO-LINES-DESKTOP: 80px;
-$HEADER-HEIGHT-CONTRACTED: 60px;
+$header-height-desktop: 120px;
+$menu-height-desktop: 40px;
+$search-tool-open: 30px;
+$menu-height-two-lines: 80px;
+$header-height-contracted: 60px;

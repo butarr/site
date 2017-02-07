@@ -41,19 +41,19 @@
   @include get-font(PHOTO_CAPTION);
   @include button;
   @include site-lateral-spacing();
-  max-width: 2 * $COLUMN-WIDTH;
+  max-width: 2 * $column-width;
   padding-bottom: 20px;
 
 
   @include media-query(THREE) {
-    max-width: 3 * $COLUMN-WIDTH;
-    width:  3 * $COLUMN-WIDTH;
+    max-width: 3 * $column-width;
+    width:  3 * $column-width;
     padding-bottom: 40px;
   }
 
   @include media-query(FOUR) {
-    max-width: 4 * $COLUMN-WIDTH;
-    width: 4 * $COLUMN-WIDTH;
+    max-width: 4 * $column-width;
+    width: 4 * $column-width;
   }
 
   .hat {
@@ -118,7 +118,7 @@
   }
 
   .related_photo_captions {
-    padding-top: $VERTICAL-SPACE;
+    padding-top: $vertical-space;
     display: -webkit-flex; //Old Safari
     display: flex;
     -webkit-flex-wrap: wrap; //Old Safari
@@ -133,8 +133,8 @@
 
     .photo-caption-smaller {
       @include column-lateral-spacing();
-      max-width: 2 * $COLUMN-WIDTH;
-      padding-top: $VERTICAL-SPACE;
+      max-width: 2 * $column-width;
+      padding-top: $vertical-space;
       width: 100%;
 
       @include media-query(THREE) {
@@ -143,7 +143,7 @@
       }
 
       @include media-query(FOUR) {
-        max-width: 2 * $COLUMN-WIDTH;
+        max-width: 2 * $column-width;
       }
     }
   }

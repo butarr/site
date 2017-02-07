@@ -20,7 +20,7 @@ body {
 
     #home {
       &.open-search {
-        @include site-top-spacing($OPEN-SEARCH-TOOL);
+        @include site-top-spacing($search-tool-open);
 
         @include media-query (FOUR) {
           margin-top: 0;
@@ -28,46 +28,46 @@ body {
       }
     }
 
-    @include site-top-spacing($HEADER-HEIGHT-CONTRACTED);
+    @include site-top-spacing($header-height-contracted);
 
     @include media-query (FOUR) {
-        @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-TWO-LINES-DESKTOP);
+        @include site-top-spacing($header-height-desktop + $menu-height-two-lines);
     }
 
     @include media-query (FIVE) {
-        @include site-top-spacing($HEADER-HEIGHT-DESKTOP + $MENU-HEIGHT-DESKTOP);
+        @include site-top-spacing($header-height-desktop + $menu-height-desktop);
     }
   }
 }
 
 .grid-3-columns {
   @include site-lateral-spacing();
-  @include column-lateral-spacing($LATERAL-PAGE-SPACE-SMALL);
+  @include column-lateral-spacing($lateral-page-space-mobile);
 
   @include media-query(TWO) {
     max-width: $three_columns;
-    @include column-lateral-spacing($LATERAL-PAGE-SPACE);
+    @include column-lateral-spacing($lateral-page-space-desktop);
   }
 }
 
 .grid-4-columns {
   @include site-lateral-spacing();
-  @include column-lateral-spacing($LATERAL-PAGE-SPACE-SMALL);
+  @include column-lateral-spacing($lateral-page-space-mobile);
 
   @include media-query(TWO) {
     max-width: $four_columns;
-    @include column-lateral-spacing($LATERAL-PAGE-SPACE);
+    @include column-lateral-spacing($lateral-page-space-desktop);
   }
 }
 
 .grid-5-columns {
-  max-width: 2 * $COLUMN-WIDTH;
-  @include column-lateral-spacing($LATERAL-PAGE-SPACE-SMALL);
+  max-width: 2 * $column-width;
+  @include column-lateral-spacing($lateral-page-space-mobile);
   @include site-lateral-spacing();
 
   @include media-query (THREE) {
     max-width: $three_columns;
-    @include column-lateral-spacing($LATERAL-PAGE-SPACE);
+    @include column-lateral-spacing($lateral-page-space-desktop);
   }
 
   @include media-query(FIVE) {

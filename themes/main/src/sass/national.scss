@@ -17,13 +17,13 @@
   }
 
   @include media-query (TWO){
-    width: 2 * $COLUMN-WIDTH;
+    width: 2 * $column-width;
   }
   @include media-query (THREE){
-    width: 3 * $COLUMN-WIDTH;
+    width: 3 * $column-width;
   }
   @include media-query (FIVE){
-    width: 5 * $COLUMN-WIDTH;
+    width: 5 * $column-width;
   }
 }
 
@@ -63,7 +63,7 @@
     order: -11;
 
     @include media-query(FIVE){
-      width: 4 * $COLUMN-WIDTH;
+      width: 4 * $column-width;
       -webkit-order: -11; //Old Safari
       order: -11;
     }
@@ -111,7 +111,7 @@
 }
 
 .spacing {
-  margin-bottom: $VERTICAL-SPACE;
+  margin-bottom: $vertical-space;
 }
 
 #home .main {
@@ -124,17 +124,17 @@
   width: 100%;
 
   @include media-query (THREE){
-    width: 2 * $COLUMN-WIDTH;
+    width: 2 * $column-width;
     flex-flow: row wrap;
   }
 
   @include media-query (FIVE){
-    width: 4 * $COLUMN-WIDTH;
+    width: 4 * $column-width;
   }
 
   .divisor + .divisor {
     border-top: 1px solid $content-divisor;
-    padding-top: $VERTICAL-SPACE;
+    padding-top: $vertical-space;
 
     @include media-query(THREE){
       border-top: 0;
@@ -320,7 +320,7 @@
   @include image-rounded-responsive(300px);
 
   @include media-query(THREE) {
-    width: 2 * $COLUMN-WIDTH;
+    width: 2 * $column-width;
     @include column-lateral-spacing();
   }
 }
@@ -333,7 +333,7 @@
   @include image-rounded(150px, 150px);
 
   @include media-query(THREE) {
-    width: $COLUMN-WIDTH;
+    width: $column-width;
     -webkit-flex-direction: column-reverse; //Old Safari
     flex-direction: column-reverse;
     -webkit-align-self: flex-start; //Old Safari
@@ -357,7 +357,7 @@
     .title {
       border-left: 3px solid $vertical-bar;
       padding-left: 10px;
-      margin-top: $VERTICAL-SPACE;
+      margin-top: $vertical-space;
     }
   }
 
@@ -381,12 +381,12 @@
   padding-top: 10px;
 
   @include media-query(THREE) {
-    width: 2 * $COLUMN-WIDTH;
+    width: 2 * $column-width;
     @include column-lateral-spacing();
   }
 
   .title {
-    margin-top: $VERTICAL-SPACE;
+    margin-top: $vertical-space;
   }
 
   .description {
@@ -409,7 +409,7 @@
   }
 
   @include media-query(THREE){
-    width: $COLUMN-WIDTH;
+    width: $column-width;
     @include column-lateral-spacing();
   }
 
@@ -425,14 +425,14 @@
   @include image-rounded(100%, 150px);
 
   @include media-query (THREE){
-    width: $COLUMN-WIDTH;
+    width: $column-width;
     @include column-lateral-spacing();
   }
 
   .title {
     border-left: 3px solid $vertical-bar;
     padding-left: 10px;
-    margin-top: $VERTICAL-SPACE;
+    margin-top: $vertical-space;
   }
 
   .hat{
@@ -461,7 +461,7 @@
 }
 
 #home .gallery-images, .gallery-videos{
-  width: 2 * $COLUMN_WIDTH;
+  width: 2 * $column-width;
 
   .section-name {
     @include section-name();
@@ -476,7 +476,7 @@
   width: 100%;
 
   @include media-query(FIVE){
-    width: 2 * $COLUMN-WIDTH;
+    width: 2 * $column-width;
   }
 
   .charge_mobile {
@@ -495,7 +495,7 @@
 
   .image_charge_mobile {
    width: 100%;
-   max-width: 2 * $COLUMN-WIDTH;
+   max-width: 2 * $column-width;
   }
 
   figure.charge_desktop {
@@ -581,7 +581,7 @@
   }
 
   .title {
-    padding-left: $LATERAL-COLUMN-SPACE;
+    padding-left: $lateral-column-space;
   }
 
   @include media-query(FIVE){
@@ -590,7 +590,7 @@
     }
 
     li {
-      width: 2 * $COLUMN-WIDTH;
+      width: 2 * $column-width;
     }
   }
 }
@@ -626,12 +626,12 @@
 
   @include media-query(THREE) {
     display: inline-block;
-    width: $COLUMN-WIDTH;
+    width: $column-width;
     @include column-lateral-spacing();
   }
 
   section + section {
-    margin-top: $VERTICAL-SPACE;
+    margin-top: $vertical-space;
   }
 }
 
@@ -732,7 +732,7 @@
 
 #home .radioagency-banner-mobile {
   width: 100%;
-  margin-top: $VERTICAL-SPACE;
+  margin-top: $vertical-space;
 
   @include image-rounded(100%, 70px);
 
