@@ -18,9 +18,6 @@
         "http://localhost:4000/radioagencia/",
         "http://localhost:4000/colunistas/",
         "http://localhost:4000/charges/",
-        "http://localhost:4000/pernambuco/",
-        "http://localhost:4000/ultimas_noticias/",
-        "http://localhost:4000/colunistas/ricardo-gebrim/",
         "http://localhost:4000/2001/03/01/titulo-fake/"
     ]
 }
