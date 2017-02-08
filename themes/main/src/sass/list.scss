@@ -16,13 +16,13 @@
   }
 
   .news-item-link:last-child .news-item.divisor {
-    border: none;
+    border: 0;
   }
 }
 
-.list .news-item{
+.list .news-item {
   display: block;
-  @include clearfix();
+  @include clearfix;
 
   .image {
     margin: 0 10px 5px 0;

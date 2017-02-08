@@ -18,3 +18,4 @@ rules:
     style: stroustrup
   property-sort-order: 0
   force-element-nesting: 0
+  no-ids: 0
