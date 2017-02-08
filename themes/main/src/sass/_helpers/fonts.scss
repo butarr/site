@@ -20,23 +20,23 @@ $standalone-description-size: 1.2rem;
 $standalone-text-size: 1.1rem;
 
 $text-size: 1rem;
-$details-size: 0.9rem;
-$details-size-sidebar: 0.8rem;
+$details-size: .9rem;
+$details-size-sidebar: .8rem;
 $title-size: 1.1rem;
 $section-name-size: 1rem;
-$audio-info-size: 0.8rem;
+$audio-info-size: .8rem;
 
 $number-size: 1.3rem;
 
 //Mixins matching each scss file
 
-@mixin __main {
+@mixin main {
   html {
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    @include media-query(THREE){
+    @include media-query(THREE) {
       font-size: 16px;
     }
   }
@@ -54,20 +54,22 @@ $number-size: 1.3rem;
   h6 { font-size: .75rem; }
 
   p {
-    font: #{$standalone-text-size}/#{$line-separation-big} $family-serif;
+    font: #{$standalone-text-size} / #{$line-separation-big} $family-serif;
     word-spacing: 2px;
   }
 
-  strong, b {
+  strong,
+  b {
     font-weight: bold;
   }
 
-  em, i {
+  em,
+  i {
     font-style: italic;
   }
 
   s {
-    text-decoration:line-through;
+    text-decoration: line-through;
   }
 
   a {
@@ -85,35 +87,36 @@ $number-size: 1.3rem;
   }
 
   blockquote {
-    font: italic bold 1.3rem/#{$line-separation-big} $family-serif;
+    font: italic bold 1.3rem / #{$line-separation-big} $family-serif;
     word-wrap: break-word;
     word-spacing: 2px;
 
-    &:before, &:after {
+    &::before,
+    &::after {
       color: $quote-color;
       font-size: 3.5em;
-      line-height: 0.1em;
+      line-height: .1em;
     }
   }
 }
 
-@mixin __menu_mobile(){
+@mixin menu-mobile {
   a {
     font: bold $title-size $family-serif;
     color: $link-inverted-color;
   }
 }
 
-@mixin __menu_desktop(){
+@mixin menu-desktop {
   a {
     font: bold $text-size $family-serif;
     color: $link-inverted-color;
   }
 }
 
-@mixin __footer(){
+@mixin footer {
   p {
-    font: #{$text-size}/1.0 $family-sans;
+    font: #{$text-size} / 1 $family-sans;
     color: $link-inverted-color;
   }
 
@@ -126,7 +129,7 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __breadcrumb() {
+@mixin breadcrumb  {
   p {
     font: bold $section-name-size $family-sans;
     text-transform: uppercase;
@@ -135,7 +138,8 @@ $number-size: 1.3rem;
       color: $link-hover-color;
     }
   }
-  p.breadcrumb-last {
+
+  .breadcrumb-last {
     color: $link-color;
 
     &:hover {
@@ -148,11 +152,11 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __national(){
+@mixin national {
   .section-name {
     font: bold $section-name-size $family-sans;
-    color: $title-color;
     text-transform: uppercase;
+    color: $title-color;
   }
 
   .hat {
@@ -162,40 +166,45 @@ $number-size: 1.3rem;
   }
 
   .title {
-    font: bold #{$title-size}/#{$line-separation-small} $family-serif;
+    font: bold #{$title-size} / #{$line-separation-small} $family-serif;
   }
 
   .big-title {
-    font: bold 1.5rem/#{$line-separation-small} $family-serif;
+    font: bold 1.5rem / #{$line-separation-small} $family-serif;
     color: $link-inverted-color;
   }
 
-  a:hover {
-    .big-title {
-      color: $link-inverted-color-hover;
-    }
-  }
-
-  .description {
-    font: normal #{$text-size}/#{$line-separation-small} $family-sans;
-  }
-
-  .most-read, .last-news#last-news-mobile{
-    li:before {
-      font: bold $number-size $family-sans;
-      color: $number-color;
-    }
-
-    .title {
-      font: normal #{$title-size}/#{$line-separation-big} $family-serif;
-
-      @include media-query(THREE) {
-        font-weight: bold;
+  a {
+    &:hover {
+      .big-title {
+        color: $link-inverted-color-hover;
       }
     }
   }
 
-  .last-news#last-news-dynamic {
+  .description {
+    font: normal #{$text-size} / #{$line-separation-small} $family-sans;
+  }
+
+  .most-read,
+  .last-news {
+    #last-news-mobile {
+      li::before {
+        font: bold $number-size $family-sans;
+        color: $number-color;
+      }
+
+      .title {
+        font: normal #{$title-size} / #{$line-separation-big} $family-serif;
+
+        @include media-query(THREE) {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  #last-news-dynamic {
     .section-name {
       font: bold $title-size $family-sans;
       color: $link-color;
@@ -206,22 +215,22 @@ $number-size: 1.3rem;
     }
 
     .title {
-      font: normal #{$text-size}/#{$line-separation-small} $family-sans;
+      font: normal #{$text-size} / #{$line-separation-small} $family-sans;
     }
   }
 
   .columnists {
     .title {
-      font: bold #{$title-size}/#{$line-separation-small} $family-serif;
+      font: bold #{$title-size} / #{$line-separation-small} $family-serif;
     }
 
     .name {
-      font: bold #{$details-size}/#{$line-separation-small} $family-sans;
+      font: bold #{$details-size} / #{$line-separation-small} $family-sans;
       color: $columnist-name-color;
     }
 
     a:hover {
-      .section-name{
+      .section-name {
         color: $link-neutral-color-hover;
       }
 
@@ -233,7 +242,7 @@ $number-size: 1.3rem;
 
   .photo-caption {
     a:hover {
-      .section-name{
+      .section-name {
         color: $link-neutral-color-hover;
       }
     }
@@ -243,11 +252,11 @@ $number-size: 1.3rem;
     }
 
     .subtitle {
-      font: bold #{$title-size}/#{$line-separation-small} $family-serif;
+      font: bold #{$title-size} / #{$line-separation-small} $family-serif;
     }
 
     .credits {
-      font: #{$details-size}/#{$line-separation-small} $family-sans;
+      font: #{$details-size} / #{$line-separation-small} $family-sans;
     }
   }
 
@@ -269,11 +278,11 @@ $number-size: 1.3rem;
       font-size: $details-size;
     }
 
-    .thanks-message p {
+    .thanks-message {
       color: $green-base;
     }
 
-    .fail-message p {
+    .fail-message {
       color: $red-base;
     }
 
@@ -283,13 +292,13 @@ $number-size: 1.3rem;
     }
 
     input,
-    input::-webkit-input-placeholder {
-      font-size: 0.75rem;
+    input:-webkit-input-placeholder {
+      font-size: .75rem;
     }
   }
 }
 
-@mixin __list(){
+@mixin list {
   .page-name {
     font: bold $page-name-size $family-sans;
     text-transform: uppercase;
@@ -303,11 +312,11 @@ $number-size: 1.3rem;
   }
 
   .title {
-    font: bold #{$list-title-size}/#{$line-separation-small} $family-serif;
+    font: bold #{$list-title-size} / #{$line-separation-small} $family-serif;
   }
 
   .description {
-    font: normal #{$text-size}/#{$line-separation-small} $family-sans;
+    font: normal #{$text-size} / #{$line-separation-small} $family-sans;
   }
 
   .date {
@@ -322,7 +331,7 @@ $number-size: 1.3rem;
   }
 
   .button {
-    font: bold #{$text-size}/#{$line-separation-small} $family-sans;
+    font: bold #{$text-size} / #{$line-separation-small} $family-sans;
     color: $link-neutral-color;
 
     &:visited {
@@ -330,25 +339,25 @@ $number-size: 1.3rem;
     }
 
     &:hover {
-      color:$link-neutral-color-hover;
+      color: $link-neutral-color-hover;
     }
   }
 
   .button-selected {
-    font: bold #{$text-size}/#{$line-separation-small} $family-sans;
-    color:$link-color;
+    font: bold #{$text-size} / #{$line-separation-small} $family-sans;
+    color: $link-color;
 
     &:visited {
-      color:$link-color;
+      color: $link-color;
     }
 
     &:hover {
-      color:$link-color;
+      color: $link-color;
     }
   }
 }
 
-@mixin __photo_caption_list(){
+@mixin photo-caption-list {
   .page-name {
     font: bold $page-name-size $family-sans;
     text-transform: uppercase;
@@ -363,19 +372,19 @@ $number-size: 1.3rem;
     color: $link-inverted-color;
 
     .subtitle {
-      font: bold #{$title-size}/#{$line-separation-small} $family-serif;
+      font: bold #{$title-size} / #{$line-separation-small} $family-serif;
     }
 
     .credits {
-      font: #{$details-size}/#{$line-separation-small} $family-sans;
+      font: #{$details-size} / #{$line-separation-small} $family-sans;
     }
   }
 }
 
-@mixin __photo_caption(){
+@mixin photo-caption {
   .title {
-      font: bold #{$standalone-title-size}/#{$line-separation-small} $family-serif;
-      color: $title-color;
+    font: bold #{$standalone-title-size} / #{$line-separation-small} $family-serif;
+    color: $title-color;
   }
 
   .hat {
@@ -385,12 +394,12 @@ $number-size: 1.3rem;
   }
 
   .subtitle {
-    font: bold #{$title-size}/#{$line-separation-small} $family-serif;
+    font: bold #{$title-size} / #{$line-separation-small} $family-serif;
     color: $link-neutral-color;
   }
 
   .credits {
-    font: #{$details-size}/#{$line-separation-small} $family-sans;
+    font: #{$details-size} / #{$line-separation-small} $family-sans;
     color: $link-neutral-color;
   }
 
@@ -417,25 +426,26 @@ $number-size: 1.3rem;
     .subtitle {
       color: $link-inverted-color;
     }
+
     .credits {
       color: $link-inverted-color;
     }
   }
 }
 
-@mixin __columnists(){
+@mixin columnists {
   .page-name {
     font: bold $page-name-size $family-sans;
     text-transform: uppercase;
     color: $page-title-color;
   }
 
-  .title{
-    font: bold #{$list-title-size}/#{$line-separation-small} $family-serif;
+  .title {
+    font: bold #{$list-title-size} / #{$line-separation-small} $family-serif;
   }
 
   .description {
-    font: normal #{$text-size}/#{$line-separation-small} $family-sans;
+    font: normal #{$text-size} / #{$line-separation-small} $family-sans;
   }
 
   .date {
@@ -444,7 +454,7 @@ $number-size: 1.3rem;
   }
 
   .name {
-    font: bold #{$title-size}/#{$line-separation-small} $family-sans;
+    font: bold #{$title-size} / #{$line-separation-small} $family-sans;
     color: $columnist-name-color;
   }
 
@@ -461,7 +471,7 @@ $number-size: 1.3rem;
   }
 
   .button {
-    font: bold #{$text-size}/#{$line-separation-small} $family-sans;
+    font: bold #{$text-size} / #{$line-separation-small} $family-sans;
     color: $link-neutral-color;
 
     &:visited {
@@ -469,25 +479,25 @@ $number-size: 1.3rem;
     }
 
     &:hover {
-      color:$link-neutral-color-hover;
+      color: $link-neutral-color-hover;
     }
   }
 
   .button-selected {
-    font: bold #{$text-size}/#{$line-separation-small} $family-sans;
-    color:$link-color;
+    font: bold #{$text-size} / #{$line-separation-small} $family-sans;
+    color: $link-color;
 
     &:visited {
-      color:$link-color;
+      color: $link-color;
     }
 
     &:hover {
-      color:$link-color;
+      color: $link-color;
     }
   }
 }
 
-@mixin __post(){
+@mixin post {
   .hat {
     font: bold $page-name-size $family-sans;
     text-transform: uppercase;
@@ -495,21 +505,25 @@ $number-size: 1.3rem;
   }
 
   .title {
-      font: bold #{$standalone-title-size}/#{$line-separation-small} $family-serif;
-      color: $title-color;
-  }
-
-  .description {
-    font: #{$standalone-description-size}/#{$line-separation-small} $family-sans;
+    font: bold #{$standalone-title-size} / #{$line-separation-small} $family-serif;
     color: $title-color;
   }
 
-  .author, .listen-audio {
+  .description {
+    font: #{$standalone-description-size} / #{$line-separation-small} $family-sans;
+    color: $title-color;
+  }
+
+  .author,
+  .listen-audio {
     font: $text-size $family-serif;
     color: $title-color;
   }
 
-  .place, time, figcaption, .ckeditor-img-caption {
+  .place,
+  time,
+  figcaption,
+  .ckeditor-img-caption {
     font: $text-size $family-serif;
     color: $details-color;
   }
@@ -550,16 +564,16 @@ $number-size: 1.3rem;
   }
 
   a {
-      color: $link-color;
-      font-weight: bold;
+    color: $link-color;
+    font-weight: bold;
 
-      &:visited {
-        color: $link-visited-color;
-      }
+    &:visited {
+      color: $link-visited-color;
+    }
 
-      &:hover {
-        color: $link-hover-color;
-      }
+    &:hover {
+      color: $link-hover-color;
+    }
   }
 
   p {
@@ -590,7 +604,7 @@ $number-size: 1.3rem;
     }
 
     &:hover {
-      color:$link-neutral-color-hover;
+      color: $link-neutral-color-hover;
     }
   }
 
@@ -615,20 +629,20 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __audio_player() {
+@mixin audio-player  {
   .progress-bar {
     span {
-      font: normal #{$audio-info-size}/#{$line-separation-small} $family-sans;
+      font: normal #{$audio-info-size} / #{$line-separation-small} $family-sans;
     }
   }
 
   .download-description {
-    font: bold #{$details-size}/#{$line-separation-small} $family-sans;
+    font: bold #{$details-size} / #{$line-separation-small} $family-sans;
     color: $download-link;
   }
 }
 
-@mixin __column(){
+@mixin column {
   .hat {
     font: bold $page-name-size $family-sans;
     text-transform: uppercase;
@@ -636,30 +650,31 @@ $number-size: 1.3rem;
   }
 
   .title {
-      font: bold #{$standalone-title-size}/#{$line-separation-small} $family-serif;
-      color: $title-color;
+    font: bold #{$standalone-title-size} / #{$line-separation-small} $family-serif;
+    color: $title-color;
   }
 
-  time, figcaption {
+  time,
+  figcaption {
     font: $text-size $family-serif;
     color: $details-color;
   }
 
   a {
-      color: $link-color;
-      font-weight: bold;
+    color: $link-color;
+    font-weight: bold;
 
-      &:visited {
-        color: $link-visited-color;
-      }
+    &:visited {
+      color: $link-visited-color;
+    }
 
-      &:hover {
-        color: $link-hover-color;
-      }
+    &:hover {
+      color: $link-hover-color;
+    }
   }
 
   .name {
-    font: bold #{$text-size}/#{$line-separation-small} $family-sans;
+    font: bold #{$text-size} / #{$line-separation-small} $family-sans;
     color: $columnist-name-color;
   }
 
@@ -686,7 +701,7 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __institutional(){
+@mixin institutional {
   .page-name {
     font: bold $page-name-size $family-sans;
     text-transform: uppercase;
@@ -700,7 +715,7 @@ $number-size: 1.3rem;
   }
 
   .list {
-    font: #{$standalone-text-size}/#{$line-separation-big} $family-serif;
+    font: #{$standalone-text-size} / #{$line-separation-big} $family-serif;
     color: $text-color;
 
     dt {
@@ -724,7 +739,7 @@ $number-size: 1.3rem;
   .text {
     font: bold $details-size $family-sans;
 
-    @include media-query(THREE){
+    @include media-query(THREE) {
       font-size: $text-size;
     }
   }
@@ -734,7 +749,7 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __search(){
+@mixin search {
   // Sets search box font
   .gsc-input {
     font-size: $text-size;
@@ -742,28 +757,28 @@ $number-size: 1.3rem;
   }
 
   // Sets font snippet of search results
-   .gs-snippet {
-     font: normal #{$details-size}/#{$line-separation-small} $family-sans;
-   }
+  .gs-snippet {
+    font: normal #{$details-size} / #{$line-separation-small} $family-sans;
+  }
 
-   // Sets font title of search results
-   .gs-title {
-     font: bold #{$title-size}/#{$line-separation-small} $family-serif;
-     color: $link-color;
-   }
+  // Sets font title of search results
+  .gs-title {
+    font: bold #{$title-size} / #{$line-separation-small} $family-serif;
+    color: $link-color;
+  }
 
-   // Sets font from page cursor of search results
-   .gsc-cursor-page {
-     font-size: 1.2rem;
-     font-family: $family-serif;
-   }
+  // Sets font from page cursor of search results
+  .gsc-cursor-page {
+    font-size: 1.2rem;
+    font-family: $family-serif;
+  }
 }
 
-@mixin __tabloid(){
-  h2.title {
-      font: bold #{$standalone-title-size}/#{$line-separation-small} $family-serif;
-      color: $title-color;
-      text-align: center;
+@mixin tabloid {
+  .title {
+    font: bold #{$standalone-title-size} / #{$line-separation-small} $family-serif;
+    color: $title-color;
+    text-align: center;
   }
 
   time {
@@ -773,7 +788,7 @@ $number-size: 1.3rem;
   }
 
   .button {
-    font: bold #{$text-size}/#{$line-separation-small} $family-sans;
+    font: bold #{$text-size} / #{$line-separation-small} $family-sans;
     color: $link-color;
 
     &:visited {
@@ -786,7 +801,7 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __other(){
+@mixin other {
   .other-title {
     font: bold $page-name-size $family-sans;
     text-transform: uppercase;
@@ -795,7 +810,7 @@ $number-size: 1.3rem;
 
   .other-decorator {
     color: $link-color;
-    padding-top: 0.4rem;
+    padding-top: .4rem;
   }
 
   a:hover {
@@ -814,36 +829,36 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __special(){
-  section.title {
+@mixin special {
+  .title {
     text-align: center;
     color: $link-inverted-color;
 
-    .pageTitle {
-      font: normal 1.8rem/1.2 $family-special-titles;
+    .page-title {
+      font: normal 1.8rem / 1.2 $family-special-titles;
       text-transform: uppercase;
-      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+      text-shadow: 2px 2px 3px $title-special-color;
 
-      @include media-query(THREE){
+      @include media-query(THREE) {
         font-size: 3rem;
       }
     }
 
     .description {
-      font: 400 italic 1.3rem/#{$line-separation-big} $family-serif;
-      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+      font: 400 italic 1.3rem / #{$line-separation-big} $family-serif;
+      text-shadow: 2px 2px 3px $description-special-color;
 
-      @include media-query(THREE){
+      @include media-query(THREE) {
         font-size: 1.5rem;
       }
     }
   }
 
-  section.subtitle {
+  .subtitle {
     color: $text-color;
 
     .text {
-      font: normal 1.8rem/1.2 $family-special-titles;
+      font: normal 1.8rem / 1.2 $family-special-titles;
       text-transform: uppercase;
       text-align: center;
 
@@ -853,92 +868,96 @@ $number-size: 1.3rem;
     }
   }
 
-  section.text {
+  .text {
     color: $text-color;
 
     p {
-      font: 1.1rem/1.63 $family-serif;
+      font: 1.1rem / 1.63 $family-serif;
     }
 
     a {
-        color: $link-special-color;
-        font: bold 1.1rem/1 $family-serif;
+      color: $link-special-color;
+      font: bold 1.1rem / 1 $family-serif;
 
-        &:visited {
-          color: $link-special-visited-color;
-        }
+      &:visited {
+        color: $link-special-visited-color;
+      }
 
-        &:hover {
-          color: $link-special-hover-color;
-        }
+      &:hover {
+        color: $link-special-hover-color;
+      }
     }
   }
 
-  section.quote {
+  .quote {
     blockquote {
-      font: italic bold 2rem/#{$line-separation-big} $family-serif;
+      font: italic bold 2rem / #{$line-separation-big} $family-serif;
       word-wrap: break-word;
       word-spacing: 2px;
 
-      &:before, &:after {
+      &::before,
+      &::after {
         color: $quote-color;
         font-size: 2.5em;
-        line-height: 0.1em;
+        line-height: .1em;
       }
 
       @include media-query(THREE) {
-        font: italic bold 2.5rem/#{$line-separation-big} $family-serif;
+        font: italic bold 2.5rem / #{$line-separation-big} $family-serif;
         word-spacing: 4px;
 
-        &:before, &:after {
+        &::before,
+        &::after {
           font-size: 3.5em;
         }
       }
     }
 
     .quote-source {
-      font: bold 0.9rem/1 $family-sans;
+      font: bold .9rem / 1 $family-sans;
 
       @include media-query(THREE) {
-        font: bold 1rem/1 $family-sans;
+        font: bold 1rem / 1 $family-sans;
       }
     }
 
     .quote-source-info {
-      font: normal 0.9rem/1 $family-sans;
+      font: normal .9rem / 1 $family-sans;
 
       @include media-query(THREE) {
-        font: normal 1rem/1 $family-sans;
+        font: normal 1rem / 1 $family-sans;
       }
     }
 
-    .quote-source-info:before {
-      content: ", ";
+    .quote-source-info::before {
+      content: ', ';
     }
   }
 
-  section.imageCentralized {
-    .title p {
+  .image-centralized {
+    .title {
       color: $text-color;
-      font: bold 1.2rem/1 $family-serif;
+      font: bold 1.2rem / 1 $family-serif;
 
       @include media-query(THREE) {
-        font: bold 1.5rem/1 $family-serif;
+        font: bold 1.5rem / 1 $family-serif;
       }
 
-      em, b, i {
+      em,
+      b,
+      i {
         color: $red-base;
         font-style: normal;
       }
     }
   }
 
-  section.image {
+  .image {
     text-align: center;
 
     .link-text {
       color: $link-special-color;
-      font: bold 1.1rem/1 $family-sans;
+      font: bold 1.1rem / 1 $family-sans;
 
       &:visited {
         color: $link-special-visited-color;
@@ -949,40 +968,42 @@ $number-size: 1.3rem;
       }
     }
 
-    .title p {
+    .title {
       color: $text-color;
-      font: bold 1.2rem/1 $family-serif;
+      font: bold 1.2rem / 1 $family-serif;
 
       @include media-query(THREE) {
-        font: bold 1.5rem/1 $family-serif;
+        font: bold 1.5rem / 1 $family-serif;
       }
 
-      em, b, i {
+      em,
+      b,
+      i {
         color: $red-base;
         font-style: normal;
       }
     }
   }
 
-  section.links {
+  .links {
     .links-headline {
+      font: bold 1.1rem / 1 $family-serif;
       text-align: center;
-      font: bold 1.1rem/1 $family-serif;
       color: $text-color;
     }
 
     .link-figure-title {
+      font: bold 1rem / #{$line-separation-big} $family-serif;
       text-align: center;
-      font: bold 1.0rem/#{$line-separation-big} $family-serif;
 
       @include media-query(THREE) {
-        font: bold 1.1rem/#{$line-separation-big} $family-serif;
+        font: bold 1.1rem / #{$line-separation-big} $family-serif;
       }
     }
 
     .link-navigation-title {
+      font: bold 1.1rem / 1 $family-serif;
       color: $link-color;
-      font: bold 1.1rem/1 $family-serif;
 
       &:visited {
         color: $link-visited-color;
@@ -995,20 +1016,20 @@ $number-size: 1.3rem;
   }
 }
 
-@mixin __radioagency() {
+@mixin radioagency  {
   .title-featured {
-    font: bold 1.6rem/#{$line-separation-small} $family-serif;
+    font: bold 1.6rem / #{$line-separation-small} $family-serif;
     color: $title-color;
   }
 
   .title {
-    font: bold #{$list-title-size}/#{$line-separation-small} $family-serif;
+    font: bold #{$list-title-size} / #{$line-separation-small} $family-serif;
     color: $title-color;
   }
 
   .columnist {
     .name {
-      font: bold #{$details-size}/#{$line-separation-small} $family-sans;
+      font: bold #{$details-size} / #{$line-separation-small} $family-sans;
       color: $columnist-name-color;
     }
 
@@ -1019,19 +1040,21 @@ $number-size: 1.3rem;
     }
   }
 
-  .service-name, .section-name {
+  .service-name,
+  .section-name {
     font: bold $section-name-size $family-sans;
     text-transform: uppercase;
   }
 
   .sidebar {
     .title {
-      font: bold #{$title-size}/#{$line-separation-small} $family-serif;
+      font: bold #{$title-size} / #{$line-separation-small} $family-serif;
     }
 
     .progress-bar {
-      span, p  {
-        font-size: 0.6rem;
+      span,
+      p  {
+        font-size: .6rem;
       }
     }
 
@@ -1041,86 +1064,88 @@ $number-size: 1.3rem;
     }
 
     .download-description {
-      font-size: 0.8rem;
+      font-size: .8rem;
     }
   }
 }
 
-@mixin __columnist_list {
+@mixin columnist-list {
   .columnist-name {
     font: bold $list-title-size $family-sans;
     color: $columnist-name-color;
   }
+
   .page-name {
     font: bold $page-name-size $family-sans;
     text-transform: uppercase;
     color: $page-title-color;
   }
+
   .description {
-    font: normal #{$text-size}/#{$line-separation-small} $family-sans;
+    font: normal #{$text-size} / #{$line-separation-small} $family-sans;
     color: $details-color;
   }
 }
 
-@mixin get-font($type){
-  @if( $type == POST ){
-    @include __post();
+@mixin get-font($type) {
+  @if($type == POST) {
+    @include post;
   }
-  @else if( $type == MAIN ){
-    @include __main();
+  @else if($type == MAIN) {
+    @include main;
   }
-  @else if( $type == LIST ){
-    @include __list();
+  @else if($type == LIST) {
+    @include list;
   }
-  @else if( $type == PHOTO_CAPTION_LIST ){
-    @include __photo_caption_list();
+  @else if($type == PHOTO_CAPTION_LIST) {
+    @include photo-caption-list;
   }
-  @else if( $type == PHOTO_CAPTION ){
-    @include __photo_caption();
+  @else if($type == PHOTO_CAPTION) {
+    @include photo-caption;
   }
-  @else if( $type == COLUMN ){
-    @include __column();
+  @else if($type == COLUMN) {
+    @include column;
   }
-  @else if( $type == NATIONAL ){
-    @include __national();
+  @else if($type == NATIONAL) {
+    @include national;
   }
-  @else if( $type == FOOTER ){
-    @include __footer();
+  @else if($type == FOOTER) {
+    @include footer;
   }
-  @else if( $type == MENU_MOBILE ){
-    @include __menu_mobile();
+  @else if($type == MENU_MOBILE) {
+    @include menu-mobile;
   }
-  @else if( $type == MENU_DESKTOP ){
-    @include __menu_desktop();
+  @else if($type == MENU_DESKTOP) {
+    @include menu-desktop;
   }
-  @else if( $type == COLUMNISTS ){
-    @include __columnists();
+  @else if($type == COLUMNISTS) {
+    @include columnists;
   }
-  @else if( $type == INSTITUTIONAL ){
-    @include __institutional();
+  @else if($type == INSTITUTIONAL) {
+    @include institutional;
   }
-  @else if( $type == SEARCH ){
-    @include __search();
+  @else if($type == SEARCH) {
+    @include search;
   }
-  @else if( $type == TABLOID ){
-    @include __tabloid();
+  @else if($type == TABLOID) {
+    @include tabloid;
   }
-  @else if( $type == OTHER ){
-    @include __other();
+  @else if($type == OTHER) {
+    @include other;
   }
-  @else if( $type == SPECIAL ){
-    @include __special();
+  @else if($type == SPECIAL) {
+    @include special;
   }
-  @else if( $type == RADIOAGENCY ){
-    @include __radioagency();
+  @else if($type == RADIOAGENCY) {
+    @include radioagency;
   }
-  @else if( $type == BREADCRUMB ){
-    @include __breadcrumb();
+  @else if($type == BREADCRUMB) {
+    @include breadcrumb;
   }
-  @else if( $type == AUDIO_PLAYER ){
-    @include __audio_player();
+  @else if($type == AUDIO_PLAYER) {
+    @include audio-player;
   }
-  @else if( $type == COLUMNIST_LIST) {
-    @include __columnist_list();
+  @else if($type == COLUMNIST_LIST) {
+    @include columnist-list;
   }
 }

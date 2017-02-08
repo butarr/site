@@ -32,6 +32,8 @@ $special-base: #2a1c16;
 $link-special-color: lighten($special-base, 10%);
 $link-special-visited-color: lighten($special-base, 30%);
 $link-special-hover-color: lighten($special-base, 50%);
+$description-special-color: rgba(0, 0, 0, .9);
+$title-special-color: rgba(0, 0, 0, .9);
 
 $link-neutral-color: lighten($neutral-base, 10%);
 $link-neutral-color-visited: lighten($neutral-base, 30%);

@@ -24,7 +24,7 @@ mixin displaySubtitle(section)
 
 mixin displayImage(section)
   if section.centralized
-    section.imageCentralized.verticalSpacing
+    section.image-centralized.verticalSpacing
       +picture(section)
   else
     section.image.verticalSpacing
@@ -132,7 +132,7 @@ append content
 
       section.title
         div.description
-          h1.pageTitle(itemprop="headline")= page.title
+          h1.page-title(itemprop="headline")= page.title
           p.description(itemprop="description")= page.description
 
       div.blocks(itemprop="articleBody")
