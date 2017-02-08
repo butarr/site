@@ -16,18 +16,16 @@
     display: flex;
   }
 
-  @include media-query (TWO){
+  @include media-query (TWO) {
     width: 2 * $column-width;
   }
-  @include media-query (THREE){
+  @include media-query (THREE) {
     width: 3 * $column-width;
   }
-  @include media-query (FIVE){
+  @include media-query (FIVE) {
     width: 5 * $column-width;
   }
-}
 
-#home {
   #last-news-dynamic {
     -webkit-order: -15; //Old Safari
     order: -15;
@@ -39,7 +37,7 @@
 
     @include image-rounded(100%, 227px);
 
-    @include media-query(TWO){
+    @include media-query(TWO) {
       @include image-rounded(100%, 300px);
     }
   }
@@ -62,7 +60,7 @@
     -webkit-order: -11; //Old Safari
     order: -11;
 
-    @include media-query(FIVE){
+    @include media-query(FIVE) {
       width: 4 * $column-width;
       -webkit-order: -11; //Old Safari
       order: -11;
@@ -123,12 +121,12 @@
   flex-wrap: wrap;
   width: 100%;
 
-  @include media-query (THREE){
+  @include media-query (THREE) {
     width: 2 * $column-width;
     flex-flow: row wrap;
   }
 
-  @include media-query (FIVE){
+  @include media-query (FIVE) {
     width: 4 * $column-width;
   }
 
@@ -136,23 +134,23 @@
     border-top: 1px solid $content-divisor;
     padding-top: $vertical-space;
 
-    @include media-query(THREE){
+    @include media-query(THREE) {
       border-top: 0;
       padding-top: 0;
     }
   }
 
-  .description{
+  .description {
     margin-top: 10px;
   }
 
   .columnists {
-      @include media-query(THREE) {
-        display: none;
-      }
+    @include media-query(THREE) {
+      display: none;
+    }
   }
 
-  .printed-news{
+  .printed-news {
     width: 100%;
 
     @include media-query(THREE) {
@@ -170,13 +168,14 @@
     width: 100%;
     height: 263px;
 
-    @include media-query(THREE){
+    @include media-query(THREE) {
       height: 337px;
     }
   }
 }
 
-#home .advertising-02, .spotlight-01-desktop {
+#home .advertising-02,
+.spotlight-01-desktop {
   display: none;
 
   @include media-query(THREE) {
@@ -184,7 +183,7 @@
     display: -webkit-flex; //Old Safari
     justify-content: center;
 
-    @include column-lateral-spacing();
+    @include column-lateral-spacing;
 
     img {
       width: 100%;
@@ -208,7 +207,8 @@
   }
 }
 
-#home .advertising-01, .spotlight-01-mobile {
+#home .advertising-01,
+.spotlight-01-mobile {
   display: flex;
   justify-content: center;
 
@@ -223,7 +223,8 @@
   }
 }
 
-#home .spotlight-02-mobile, .spotlight-03-mobile {
+#home .spotlight-02-mobile,
+.spotlight-03-mobile {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -248,7 +249,7 @@
   @include media-query(THREE) {
     display: flex;
     justify-content: center;
-    @include column-lateral-spacing();
+    @include column-lateral-spacing;
 
     img {
       width: 100%;
@@ -283,7 +284,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-    @include column-lateral-spacing();
+    @include column-lateral-spacing;
   }
 }
 
@@ -293,7 +294,6 @@
   @include media-query(THREE) {
     display: flex;
     justify-content: center;
-    display: block;
   }
 }
 
@@ -316,12 +316,12 @@
 
 #home .featured-big-picture {
   width: 100%;
-  @include picture-with-caption();
+  @include picture-with-caption;
   @include image-rounded-responsive(300px);
 
   @include media-query(THREE) {
     width: 2 * $column-width;
-    @include column-lateral-spacing();
+    @include column-lateral-spacing;
   }
 }
 
@@ -339,7 +339,7 @@
     -webkit-align-self: flex-start; //Old Safari
     align-self: flex-start;
     @include image-rounded(220px, 150px);
-    @include column-lateral-spacing();
+    @include column-lateral-spacing;
   }
 
   figure {
@@ -376,13 +376,13 @@
   }
 }
 
-#home .featured-text-and-title{
+#home .featured-text-and-title {
   width: 100%;
   padding-top: 10px;
 
   @include media-query(THREE) {
     width: 2 * $column-width;
-    @include column-lateral-spacing();
+    @include column-lateral-spacing;
   }
 
   .title {
@@ -393,8 +393,8 @@
     margin-top: 5px;
   }
 
-  .hat{
-    @include hat-name();
+  .hat {
+    @include hat-name;
   }
 }
 
@@ -403,14 +403,14 @@
   display: flex;
   width: 100%;
 
-  .hat{
-    @include hat-name();
+  .hat {
+    @include hat-name;
     margin-bottom: 10px;
   }
 
-  @include media-query(THREE){
+  @include media-query(THREE) {
     width: $column-width;
-    @include column-lateral-spacing();
+    @include column-lateral-spacing;
   }
 
   .featured-text-box {
@@ -424,9 +424,9 @@
   width: 50%;
   @include image-rounded(100%, 150px);
 
-  @include media-query (THREE){
+  @include media-query (THREE) {
     width: $column-width;
-    @include column-lateral-spacing();
+    @include column-lateral-spacing;
   }
 
   .title {
@@ -435,11 +435,11 @@
     margin-top: $vertical-space;
   }
 
-  .hat{
-    @include hat-name();
+  .hat {
+    @include hat-name;
   }
 
-  img{
+  img {
     border-radius: 5px;
     width: 100%;
   }
@@ -450,79 +450,80 @@
 }
 
 #home .gallery-videos {
-  iframe, img, a{
+  iframe,
+  img,
+  a {
     height: 263px;
     width: 100%;
 
-    @include media-query(THREE){
+    @include media-query(THREE) {
       height: 337px;
     }
   }
 }
 
-#home .gallery-images, .gallery-videos{
+#home .gallery-images,
+.gallery-videos {
   width: 2 * $column-width;
 
   .section-name {
-    @include section-name();
+    @include section-name;
   }
 
   @include media-query(THREE) {
-    @include column-lateral-spacing();
+    @include column-lateral-spacing;
   }
 }
 
 #home .photo-caption {
   width: 100%;
 
-  @include media-query(FIVE){
+  @include media-query(FIVE) {
     width: 2 * $column-width;
   }
 
-  .charge_mobile {
-      @include media-query(THREE) {
-        display: none;
-      }
+  .charge-mobile {
+    @include media-query(THREE) {
+      display: none;
+    }
   }
 
-  .charge_desktop {
+  .charge-desktop {
     display: none;
 
     @include media-query(THREE) {
       display: block;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain;
+      border: 2px solid $box-border-neutral;
+      border-radius: 5px;
+      height: 300px;
+      width: 100%;
     }
   }
 
-  .image_charge_mobile {
-   width: 100%;
-   max-width: 2 * $column-width;
-  }
-
-  figure.charge_desktop {
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-    border: 2px solid $box-border-neutral;
-    border-radius: 5px;
-    height: 300px;
+  .image-charge-mobile {
     width: 100%;
+    max-width: 2 * $column-width;
   }
 
   .section-name {
-    @include section-name();
+    @include section-name;
   }
 
   @include media-query(THREE) {
-    @include column-lateral-spacing();
+    @include column-lateral-spacing;
   }
 }
 
-#home .most-read, .last-news#last-news-mobile {
+#home .most-read,
+.last-news#last-news-mobile {
   width: 100%;
-  @include column-lateral-spacing();
+  @include column-lateral-spacing;
 
   .section-name {
-    @include section-name();
+    @include section-name;
   }
 
   ol {
@@ -539,8 +540,8 @@
     }
   }
 
-  ol > li:before{
-    content: counter(li) ".";
+  ol > li::before {
+    content: counter(li) '.';
     counter-increment: li;
     margin: 0 10px 0 -30px;
   }
@@ -558,7 +559,7 @@
 
   .section-name {
     width: 100%;
-    @include section-name();
+    @include section-name;
   }
 
   ol {
@@ -584,7 +585,7 @@
     padding-left: $lateral-column-space;
   }
 
-  @include media-query(FIVE){
+  @include media-query(FIVE) {
     .title {
       width: 330px;
     }
@@ -602,8 +603,8 @@
     display: -webkit-flex; //Old Safari
     display: flex;
     width: 100%;
-    padding : 5px 0;
-    @include column-lateral-spacing();
+    padding: 5px 0;
+    @include column-lateral-spacing;
 
     .section-name {
       white-space: nowrap;
@@ -627,7 +628,7 @@
   @include media-query(THREE) {
     display: inline-block;
     width: $column-width;
-    @include column-lateral-spacing();
+    @include column-lateral-spacing;
   }
 
   section + section {
@@ -642,7 +643,7 @@
   flex-direction: column;
 
   .section-name {
-    @include section-name();
+    @include section-name;
   }
 
   img {
@@ -656,7 +657,7 @@
   @include get-font(NEWSLETTER);
 
   .section-name {
-    @include section-name();
+    @include section-name;
     margin-bottom: 10px;
   }
 
@@ -705,7 +706,7 @@
   @include columnist;
 
   .section-name {
-    @include section-name();
+    @include section-name;
   }
 
   .columnist + .columnist {
@@ -736,7 +737,7 @@
 
   @include image-rounded(100%, 70px);
 
-  @include media-query(TWO){
+  @include media-query(TWO) {
     @include image-rounded(100%, 100px);
   }
 

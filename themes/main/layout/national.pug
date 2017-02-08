@@ -309,10 +309,10 @@ append content
               - var post=page.photo_caption
               - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
               a(itemprop="url" href=post.path)
-                figure.charge_mobile(itemscope itemtype="https://schema.org/ImageObject")
-                  img.image_charge_mobile.charge_image_analytics(src=post.cover.medium alt="" title=imageDescription itemprop="image")
+                figure.charge-mobile(itemscope itemtype="https://schema.org/ImageObject")
+                  img.image-charge-mobile.charge_image_analytics(src=post.cover.medium alt="" title=imageDescription itemprop="image")
               a(itemprop="url" href=post.path)
-                figure.charge_desktop.charge_image_analytics(style=`background-image: url(${post.cover.medium});` title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
+                figure.charge-desktop.charge_image_analytics(style=`background-image: url(${post.cover.medium});` title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
 
           if config.toggles.last_news
             if page.last_news

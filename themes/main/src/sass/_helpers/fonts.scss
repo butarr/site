@@ -187,19 +187,17 @@ $number-size: 1.3rem;
   }
 
   .most-read,
-  .last-news {
-    #last-news-mobile {
-      li::before {
-        font: bold $number-size $family-sans;
-        color: $number-color;
-      }
+  .last-news#last-news-mobile {
+    li::before {
+      font: bold $number-size $family-sans;
+      color: $number-color;
+    }
 
-      .title {
-        font: normal #{$title-size} / #{$line-separation-big} $family-serif;
+    .title {
+      font: normal #{$title-size} / #{$line-separation-big} $family-serif;
 
-        @include media-query(THREE) {
-          font-weight: bold;
-        }
+      @include media-query(THREE) {
+        font-weight: bold;
       }
     }
   }
