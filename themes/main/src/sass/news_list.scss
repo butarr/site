@@ -12,8 +12,8 @@
     @include image-rounded(150px, 150px);
   }
 
-  .page-name{
-    @include page-name();
+  .page-name {
+    @include page-name;
     @include media-query(TWO) {
       margin-bottom: 15px;
     }
