@@ -1,0 +1,20 @@
+rules:
+  no-duplicate-properties:
+  - 1
+  -
+    exclude:
+      - display
+  no-vendor-prefixes:
+  - 1
+  -
+    excluded-identifiers:
+      - webkit
+      - moz
+  mixins-before-declarations: 0
+  force-pseudo-nesting: 0
+  brace-style:
+  - 1
+  -
+    style: stroustrup
+  property-sort-order: 0
+  force-element-nesting: 0
