@@ -9,7 +9,7 @@ mixin news_list(title, list)
         - var articleId = "other-" + i
         ul(id=articleId itemprop="itemListElement" class="other-article" class="spacing")
           li
-            if title == 'Relacionadas'
+            if (title == 'Relacionadas') && p.cover && p.cover.link
               a(itemprop="url" href=p.url)
                 figure.other-article-image(style=`background-image: url(${p.cover.link});` title="Imagem da notícia relacionada" itemscope itemtype="https://schema.org/ImageObject")
             a(itemprop="url" href=p.url)
