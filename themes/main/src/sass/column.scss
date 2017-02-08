@@ -1,7 +1,7 @@
 @import '_helpers/query';
 @import '_helpers/colors';
 @import '_helpers/mixins';
-@import "_helpers/constants";
+@import '_helpers/constants';
 
 
 #column {
@@ -13,30 +13,30 @@
   }
 
   .hat {
-    @include page-name();
+    @include page-name;
   }
 
-  .title{
-    margin: 20px 0 10px 0;
+  .title {
+    margin: 20px 0 10px;
   }
 
-  @include media-query(THREE){
+  @include media-query(THREE) {
     max-width: 3 * $column-width;
-    @include column-lateral-spacing();
+    @include column-lateral-spacing;
   }
 
   figure {
     margin: 20px 0;
 
-    @include media-query(THREE){
+    @include media-query(THREE) {
       margin-top: 20px;
     }
 
-    img{
+    img {
       width: 100%;
     }
 
-    figcaption{
+    figcaption {
       text-align: right;
       margin-top: 10px;
     }
@@ -60,10 +60,10 @@
   height: 100%;
   padding-right: 20px;
 
-  .profile-image{
+  .profile-image {
     width: 50px;
 
-    @include media-query(TWO){
+    @include media-query(TWO) {
       width: 60px;
     }
   }
@@ -81,7 +81,7 @@
   }
 }
 
-#column .description{
+#column .description {
   padding-bottom: 15px;
 
   @include media-query(THREE) {
