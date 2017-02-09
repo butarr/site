@@ -1,4 +1,5 @@
 rules:
+  no-color-literals: 2
   no-duplicate-properties:
   - 1
   -
