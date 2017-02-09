@@ -8,7 +8,7 @@
   @include button;
 
   .page-name {
-    @include page-name();
+    @include page-name;
   }
 
   .column.divisor {
@@ -17,7 +17,7 @@
   }
 }
 
-#columnists .column{
+#columnists .column {
   display: table;
   justify-content: flex-start;
   padding: 20px 0;
@@ -32,19 +32,17 @@
       min-width: 160px;
     }
 
-    .person-container {
-      .profile-image {
-        border-radius: 50%;
-        width: 70px;
-      }
+    .person-container .profile-image {
+      border-radius: 50%;
+      width: 70px;
+    }
 
-      .name {
-        display: none;
+    .person-container .name {
+      display: none;
 
-        @include media-query(TWO) {
-          margin-top: 10px;
-          display: inline-block;
-        }
+      @include media-query(TWO) {
+        margin-top: 10px;
+        display: inline-block;
       }
     }
   }
