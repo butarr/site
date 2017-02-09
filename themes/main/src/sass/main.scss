@@ -8,7 +8,7 @@
 @include get-font(MAIN);
 
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -18,30 +18,28 @@ body {
 
     padding-top: 10px;
 
-    #home {
-      &.open-search {
-        @include site-top-spacing($search-tool-open);
+    #home.open-search {
+      @include site-top-spacing($search-tool-open);
 
-        @include media-query (FOUR) {
-          margin-top: 0;
-        }
+      @include media-query (FOUR) {
+        margin-top: 0;
       }
     }
 
     @include site-top-spacing($header-height-contracted);
 
     @include media-query (FOUR) {
-        @include site-top-spacing($header-height-desktop + $menu-height-two-lines);
+      @include site-top-spacing($header-height-desktop + $menu-height-two-lines);
     }
 
     @include media-query (FIVE) {
-        @include site-top-spacing($header-height-desktop + $menu-height-desktop);
+      @include site-top-spacing($header-height-desktop + $menu-height-desktop);
     }
   }
 }
 
 .grid-3-columns {
-  @include site-lateral-spacing();
+  @include site-lateral-spacing;
   @include column-lateral-spacing($lateral-page-space-mobile);
 
   @include media-query(TWO) {
@@ -51,11 +49,11 @@ body {
 }
 
 .grid-4-columns {
-  @include site-lateral-spacing();
+  @include site-lateral-spacing;
   @include column-lateral-spacing($lateral-page-space-mobile);
 
   @include media-query(TWO) {
-    max-width: $four_columns + $column-width/2;
+    max-width: $four-columns + $column-width / 2;
     @include column-lateral-spacing($lateral-page-space-desktop);
   }
 }
@@ -63,7 +61,7 @@ body {
 .grid-5-columns {
   max-width: 2 * $column-width;
   @include column-lateral-spacing($lateral-page-space-mobile);
-  @include site-lateral-spacing();
+  @include site-lateral-spacing;
 
   @include media-query (THREE) {
     max-width: $three-columns;
@@ -77,7 +75,7 @@ body {
 
 .offscreen {
   position: absolute;
-  clip: rect(1px 1px 1px 1px); /* for Internet Explorer */
+  clip: rect(1px 1px 1px 1px); // for Internet Explorer
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0;
   border: 0;

@@ -5,6 +5,7 @@ rules:
   -
     exclude:
       - display
+      - clip
   no-vendor-prefixes:
   - 1
   -
