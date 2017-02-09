@@ -529,23 +529,26 @@ $number-size: 1.3rem;
   .ckeditor-subtitle {
     font: bold 1.21rem $family-serif;
     color: $text-color;
-    text-align: center;
 
     @include media-query (THREE) {
       font-size: 1.5rem;
     }
   }
 
-  .ckeditor-info-subtitle {
+  .ckeditor-infographic-subtitle {
+    font: bold 1.21rem $family-serif;
+    color: $text-color;
+    text-align: center;
     text-decoration: underline;
     margin-bottom: 6px;
 
     @include media-query (THREE) {
+      font-size: 1.5rem;
       margin-bottom: 8px;
     }
   }
 
-  .ckeditor-info-highlight {
+  .ckeditor-infographic-highlight {
     color: $red-base;
   }
 
@@ -683,18 +686,26 @@ $number-size: 1.3rem;
   .ckeditor-subtitle {
     font: bold 1.21rem $family-serif;
     color: $text-color;
-    text-align: center;
 
     @include media-query (THREE) {
       font-size: 1.5rem;
     }
   }
 
-  .ckeditor-info-subtitle {
+  .ckeditor-infographic-subtitle {
+    font: bold 1.21rem $family-serif;
+    color: $text-color;
+    text-align: center;
     text-decoration: underline;
+    margin-bottom: 6px;
+
+    @include media-query (THREE) {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
   }
 
-  .ckeditor-info-highlight {
+  .ckeditor-infographic-highlight {
     color: $red-base;
   }
 }
