@@ -15,20 +15,20 @@
 //
 // Source: http://nicolasgallagher.com/micro-clearfix-hack/
 
-
-@mixin clearfix() {
-  &:before,
-  &:after {
-    content: " ";
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: ' ';
     display: table;
   }
-  &:after {
+
+  &::after {
     clear: both;
   }
 }
 
-@mixin transition-left(){
-  transition:  left 0.1s ease-in-out;
+@mixin transition-left {
+  transition:  left .1s ease-in-out;
 }
 
 @mixin column-lateral-spacing($value: $lateral-column-space) {
@@ -45,7 +45,7 @@
   margin-right: $value;
 }
 
-@mixin picture-with-caption() {
+@mixin picture-with-caption {
   figure {
     position: relative;
 
@@ -57,11 +57,11 @@
   figcaption {
     width: 100%;
     position: absolute;
-    bottom: 0px;
-    text-shadow: 2px 2px 0px #000, 0 0 0 #fff, 1px 1px 0px #000;
-    padding: 5px 20px 20px 20px;
+    bottom: 0;
+    text-shadow: 2px 2px 0 $text-shadow-color, 1px 1px 0 $text-shadow-color;
+    padding: 5px 20px 20px;
     border-radius: 5px;
-    background: linear-gradient(to bottom, rgba(19,19,19,0) 0%, rgba(0,0,0,.6) 85%);
+    background: linear-gradient(to bottom, $gradient-initial-color 0%, $gradient-final-color 85%);
   }
 }
 
@@ -81,19 +81,20 @@
     max-height: $max-height;
     overflow: hidden;
     border-radius: 5px;
+
     img {
       width: 100%;
     }
   }
 }
 
-@mixin section-name() {
+@mixin section-name {
   display: block;
   border-bottom: 3px solid $title-underline;
   margin-bottom: 5px;
 }
 
-@mixin hat-name() {
+@mixin hat-name {
   display: block;
   margin-bottom: 8px;
 }
@@ -104,7 +105,7 @@
   padding-top: 5px;
 }
 
-@mixin person() {
+@mixin person {
   padding: 10px 0;
 
   .profile-image {
@@ -118,23 +119,23 @@
   }
 }
 
-@mixin page-blockquotes() {
+@mixin page-blockquotes {
   blockquote {
     max-width: 2 * $column-width;
     width: 100%;
-    quotes: "\201C""\201D""\2018""\2019";
+    quotes: '\201C''\201D''\2018''\2019';
     padding: 20px 0;
   }
 
-  blockquote:before {
+  blockquote::before {
     content: open-quote;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
+    margin-right: .25em;
+    vertical-align: -.4em;
   }
 
-  blockquote:after {
+  blockquote::after {
     content: close-quote;
-    vertical-align: -0.6em;
+    vertical-align: -.6em;
   }
 
   blockquote p {
@@ -142,24 +143,24 @@
   }
 }
 
-@mixin special-blockquotes() {
+@mixin special-blockquotes {
   blockquote {
-    quotes: "\201C""\201D""\2018""\2019";
+    quotes: '\201C''\201D''\2018''\2019';
   }
 
-  blockquote:before {
+  blockquote::before {
     content: open-quote;
-    margin-right: 0.25em;
-    vertical-align: -0.2em;
+    margin-right: .25em;
+    vertical-align: -.2em;
   }
 
-  blockquote:after {
+  blockquote::after {
     content: close-quote;
-    vertical-align: -0.8em;
+    vertical-align: -.8em;
   }
 }
 
-@mixin button(){
+@mixin button {
   .pagination-button-container .button {
     width: auto;
     padding: 8px 16px;
@@ -170,7 +171,7 @@
     display: block;
     border: 1px solid $button-border;
     border-radius: 3px;
-    box-shadow: 0px 1px 1px $button-border;
+    box-shadow: 0 1px 1px $button-border;
     padding: 8px 0;
     text-align: center;
     width: 100%;
@@ -195,9 +196,10 @@
   }
 }
 
-@mixin pagination(){
+@mixin pagination {
   .pagination-container {
     margin-top: 5px;
+
     .pagination-title {
       text-align: center;
     }
@@ -213,7 +215,7 @@
   }
 }
 
-@mixin other-news() {
+@mixin other-news {
   @include get-font(OTHER);
 
   .other-bar {
@@ -221,7 +223,7 @@
   }
 
   .other-title {
-    @include page-name();
+    @include page-name;
     margin: 0;
     margin-bottom: 10px;
   }
@@ -243,10 +245,10 @@
   .other-article {
     width: 100%;
     @include image-rounded(110px, 100px);
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $box-border-neutral;
     padding-bottom: 10px;
 
-    li{
+    li {
       display: -webkit-flex; //Old Safari
       display: flex;
 
@@ -257,12 +259,12 @@
 
     .other-article-image {
       background-size: cover;
-      margin-right: 0.25em;
+      margin-right: .25em;
     }
   }
 }
 
-@mixin columnist() {
+@mixin columnist {
   .columnist {
     display: -webkit-flex; //Old Safari
     display: flex;
