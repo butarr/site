@@ -29,30 +29,31 @@
   }
 
   .page-name {
-    @include page-name();
+    @include page-name;
     margin-bottom: 30px;
   }
 
   .title {
     white-space: nowrap;
-    margin: 30px 0 20px 0;
+    margin: 30px 0 20px;
   }
 
   .underline {
-    @include section-name();
+    @include section-name;
     margin-bottom: 10px;
   }
 
-  img.stats {
+  .stats {
     width: 100%;
   }
-  img.stats+img.stats {
+
+  .stats+.stats {
     margin-top: 2rem;
   }
 
   .list {
     white-space: nowrap;
-    margin: 15px 0 40px 0;
+    margin: 15px 0 40px;
 
     .item {
       margin: 10px 0;
