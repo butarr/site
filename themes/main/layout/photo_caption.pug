@@ -44,13 +44,13 @@ append content
 
       section#other-photo-captions
         h3.section-name Outras charges
-        if page.related_photo_captions
-          .related_photo_captions
-            each related in page.related_photo_captions
+        if page.related-photo-captions
+          .related-photo-captions
+            each related in page.related-photo-captions
               .photo-caption-smaller
                 - var imageDescription=related.cover.subtitle + " - Créditos: " + related.cover.credits
                 a(itemprop="url", href=related.url)
-                  figure.other_charge_figure(style=`background-image: url(${related.cover.small});` alt=imageDescription title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
+                  figure.other-charge-figure(style=`background-image: url(${related.cover.small});` alt=imageDescription title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
 
 block footer
   include _partial/footer_photo_caption_list
