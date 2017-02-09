@@ -8,13 +8,13 @@
 @include get-font(MAIN);
 
 * {
-  box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 body {
   & > main {
     width: 100%;
-    @include clearfix();
+    @include clearfix;
 
     padding-top: 10px;
 
@@ -45,7 +45,7 @@ body {
   @include column-lateral-spacing($lateral-page-space-mobile);
 
   @include media-query(TWO) {
-    max-width: $three_columns;
+    max-width: $three-columns;
     @include column-lateral-spacing($lateral-page-space-desktop);
   }
 }
@@ -55,7 +55,7 @@ body {
   @include column-lateral-spacing($lateral-page-space-mobile);
 
   @include media-query(TWO) {
-    max-width: $four_columns;
+    max-width: $four-columns;
     @include column-lateral-spacing($lateral-page-space-desktop);
   }
 }
@@ -66,12 +66,12 @@ body {
   @include site-lateral-spacing();
 
   @include media-query (THREE) {
-    max-width: $three_columns;
+    max-width: $three-columns;
     @include column-lateral-spacing($lateral-page-space-desktop);
   }
 
   @include media-query(FIVE) {
-    max-width: $five_columns;
+    max-width: $five-columns;
   }
 }
 

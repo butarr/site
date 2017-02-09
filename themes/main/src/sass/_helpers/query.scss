@@ -1,22 +1,22 @@
 @import 'constants';
 
-$two_columns: (2 * $column-width) + (2 * $lateral-page-space-desktop);
-$three_columns: (3 * $column-width) + (2 * $lateral-page-space-desktop);
-$four_columns: (4 * $column-width) + (2 * $lateral-page-space-desktop);
-$five_columns: (5 * $column-width) + (2 * $lateral-page-space-desktop);
+$two-columns: (2 * $column-width) + (2 * $lateral-page-space-desktop);
+$three-columns: (3 * $column-width) + (2 * $lateral-page-space-desktop);
+$four-columns: (4 * $column-width) + (2 * $lateral-page-space-desktop);
+$five-columns: (5 * $column-width) + (2 * $lateral-page-space-desktop);
 
 
 @mixin media-query($canvas) {
   @if $canvas == TWO {
-   @media only screen and (min-width: $two_columns) { @content; }
+    @media only screen and (min-width: $two-columns) { @content; }
   }
   @else if $canvas == THREE {
-   @media only screen and (min-width: $three_columns) { @content; }
+    @media only screen and (min-width: $three-columns) { @content; }
   }
   @else if $canvas == FOUR {
-   @media only screen and (min-width: $four_columns) { @content; }
+    @media only screen and (min-width: $four-columns) { @content; }
   }
   @else if $canvas == FIVE {
-   @media only screen and (min-width: $five_columns) { @content; }
+    @media only screen and (min-width: $five-columns) { @content; }
   }
 }

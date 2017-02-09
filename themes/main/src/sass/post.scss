@@ -195,7 +195,7 @@
     -webkit-align-self: center; //Old Safari
 
     padding: 0 30px;
-    max-width: $two_columns;
+    max-width: $two-columns;
     margin-top: 5px;
     @include media-query (THREE) {
       margin-top: 0;
