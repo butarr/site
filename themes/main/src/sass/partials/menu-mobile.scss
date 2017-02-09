@@ -3,7 +3,7 @@
 @import '../_helpers/colors';
 @import '../_helpers/fonts';
 
-#menu-mobile{
+#menu-mobile {
   top: 5px;
   left: -270px;
   width: 260px;
@@ -11,16 +11,17 @@
   @include get-font(MENU_MOBILE);
   box-sizing: border-box;
   background-color: $menu-over;
-  box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.42);
+  box-shadow: 0 0 19px 6px $menu-shadow-color;
   position: fixed;
-  @include transition-left();
+  @include transition-left;
   z-index: 101;
 
   &.open {
     left: 0;
   }
+
   i {
-    color: #fff;
+    color: $social-media-icons-color;
     padding: 4px;
     font-size: 1.5rem;
   }
@@ -34,7 +35,7 @@
   -webkit-align-items: center; //Old Safari
   align-items: center;
   height: 60px;
-  padding: 10px 20px 0 20px;
+  padding: 10px 20px 0;
 
   #close-button {
     height: 20px;
@@ -66,7 +67,7 @@
   }
 }
 
-#menu-mobile ul > li{
+#menu-mobile ul > li {
   position: relative;
   border-top: 2px solid $menu-divisor-mobile;
 

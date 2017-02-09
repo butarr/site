@@ -1,5 +1,7 @@
 rules:
+  no-misspelled-properties: 2
   no-color-literals: 2
+  no-qualifying-elements: 2
   no-duplicate-properties:
   - 1
   -
