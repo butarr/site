@@ -74,8 +74,9 @@ append content
       h1(class="page-name" itemprop="name")= page.area
 
       - var position= 0
-      each post in page.news
-        - var published_at = utc_to_brt(post.date)
+      - var list = page.news ? page.news : page.list
+      each post in list
+        - var published_at = utc_to_brt(post.date || post.published_at)
 
         a.news-item-link(href=post.path)
           .news-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
