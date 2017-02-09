@@ -512,6 +512,10 @@ $number-size: 1.3rem;
     color: $title-color;
   }
 
+  .editor {
+    font-style: italic;
+  }
+
   .author,
   .listen-audio {
     font: $text-size $family-serif;

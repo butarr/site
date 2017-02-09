@@ -34,6 +34,10 @@
     @include column-lateral-spacing();
   }
 
+  .editor {
+    padding-top: 20px;
+  }
+
   img {
     width: 100% !important;
     height: inherit !important;

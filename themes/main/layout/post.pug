@@ -144,6 +144,11 @@ append content
       .content(itemprop="articleBody")
         .text-content
           != page.content
+          if page.editor
+            if page.area=="espanol"
+              p.editor= `Edición: ${page.editor}`
+            else
+              p.editor= `Edição: ${page.editor}`
           .content-footer
             include _partial/social-media-share
 
