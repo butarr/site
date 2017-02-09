@@ -55,7 +55,7 @@ body {
   @include column-lateral-spacing($lateral-page-space-mobile);
 
   @include media-query(TWO) {
-    max-width: $four-columns;
+    max-width: $four_columns + $column-width/2;
     @include column-lateral-spacing($lateral-page-space-desktop);
   }
 }
