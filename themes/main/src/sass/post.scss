@@ -2,7 +2,6 @@
 @import '_helpers/mixins';
 @import '_helpers/constants';
 
-
 #post {
   @include get-font(POST);
   @include page-blockquotes;
@@ -31,7 +30,7 @@
 
   .text-content {
     width: 100%;
-    @include column-lateral-spacing();
+    @include column-lateral-spacing;
   }
 
   .editor {
@@ -43,7 +42,8 @@
     height: inherit !important;
   }
 
-  .ckeditor-img-caption, figcaption {
+  .ckeditor-img-caption,
+  figcaption {
     text-align: right;
   }
 
@@ -54,11 +54,11 @@
 
 #post header {
   .hat {
-    @include page-name();
+    @include page-name;
   }
 
-  .title{
-    margin: 20px 0 10px 0;
+  .title {
+    margin: 20px 0 10px;
   }
 
   .description {
@@ -69,7 +69,7 @@
     margin-bottom: 20px;
 
     @include media-query(THREE) {
-      @include site-lateral-spacing();
+      @include site-lateral-spacing;
       max-width: 3 * $column-width;
     }
 
@@ -83,7 +83,7 @@
       overflow: hidden;
     }
 
-    figcaption{
+    figcaption {
       text-align: right;
       margin-top: 10px;
     }
@@ -92,7 +92,7 @@
   .details-bar {
     display: -webkit-flex; //Old Safari
     display: flex;
-    -webkit-jutify-content: space-between; //Old Safari
+    -webkit-justify-content: space-between; //Old Safari
     justify-content: space-between;
     margin-bottom: 10px;
   }
@@ -102,11 +102,11 @@
   display: none;
   @include media-query(THREE) {
     display: block;
-    @include page-name();
+    @include page-name;
   }
 }
 
-#post .advertising_07 {
+#post .advertising-07 {
   display: none;
   height: 150px;
   @include media-query(THREE) {
@@ -130,11 +130,11 @@
     display: flex;
     display: -webkit-flex; //Old Safari
     justify-content: flex-start;
-    -webkit-jutify-content: flex-start; //Old Safari
+    -webkit-justify-content: flex-start; //Old Safari
   }
 
   .share-icon {
-    margin: 0.4rem;
+    margin: .4rem;
     margin-left: 0;
     width: 2.2rem;
   }
@@ -151,7 +151,7 @@
     display: flex;
     display: -webkit-flex; //Old Safari
     justify-content: flex-end;
-    -webkit-jutify-content: flex-end; //Old Safari
+    -webkit-justify-content: flex-end; //Old Safari
   }
 }
 
@@ -230,13 +230,14 @@
 #post .sidebar {
   padding-left: 15px;
   @include media-query(THREE) {
-    min-width: $column-width + $column-width/2;
-    max-width: $column-width + $column-width/2;
-    min-height: $column-width + $column-width/2;
+    min-width: $column-width + $column-width / 2;
+    max-width: $column-width + $column-width / 2;
+    min-height: $column-width + $column-width / 2;
   }
 }
 
-#post header .place-and-time, time {
+#post header .place-and-time,
+time {
   padding-bottom: 10px;
   display: block;
 
@@ -270,7 +271,7 @@
     height: 33px;
   }
 
-  @include media-query (THREE){
+  @include media-query(THREE) {
     img {
       height: 40px;
     }
