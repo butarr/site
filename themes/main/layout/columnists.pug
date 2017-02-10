@@ -15,7 +15,8 @@ append content
       h1.page-name Colunistas
 
       - var position= 0
-      each post in page.columns
+      - var list = page.columns || page.list
+      each post in list
         .column(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="divisor")
           meta(itemprop="position" content=`${++position}`)
           - var columnist = site.data.columnists[post.columnist];

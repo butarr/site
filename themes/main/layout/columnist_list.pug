@@ -2,7 +2,7 @@ extends base
 
 
 block title
-  - var columnist = site.data.columnists[page.columnist];
+  - var columnist = site.data.columnists[page.columnist || page.list[0].columnist];
 
   title= `${titlecase('colunista')} ${config.separator} ${config.title}`
 
@@ -48,7 +48,8 @@ append content
 
     section#news-list(class= "list" itemscope itemtype="http://schema.org/ItemList")
       - var position= 0
-      each post in page.news
+      - var list = page.columns || page.list
+      each post in list
         - var published_at = utc_to_brt(post.date)
 
         a.news-item-link(href=post.path)
