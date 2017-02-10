@@ -1,5 +1,6 @@
 //Color variables to use only in this file to make it easier maintainence
 $neutral-base: #000;
+$inverted-base: #fff;
 
 $red-base: rgba(140, 25, 31, 1);
 $red-light: rgba(177, 32, 40, 1);
@@ -13,7 +14,7 @@ $background: $red-base;
 $menu-over: $red-light;
 $menu-divisor-desktop: $red-dark;
 $menu-divisor-mobile: $red-base;
-$social-media-icons-color: #fff;
+$social-media-icons-color: $inverted-base;
 $menu-shadow-color: rgba(0, 0, 0, .42);
 
 $text-color: lighten($neutral-base, 25%);
@@ -59,6 +60,7 @@ $content-divisor: lighten($neutral-base, 70%);
 $button-border: lighten($neutral-base, 72%);
 $button-border-selected: lighten($neutral-base, 57%);
 $text-shadow-color: #000;
+$test-background: rgba(0, 0, 0, .75);
 
 $number-color: $red-base;
 $quote-color: $red-base;

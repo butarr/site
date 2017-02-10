@@ -127,6 +127,11 @@ $number-size: 1.3rem;
       }
     }
   }
+
+  .message-test {
+    font: bold $title-size $family-serif;
+    color: $inverted-base;
+  }
 }
 
 @mixin breadcrumb  {
