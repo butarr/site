@@ -24,11 +24,11 @@
 
 #old_post header {
   .hat {
-    @include page-name();
+    @include page-name;
   }
 
-  .title{
-    margin: 20px 0 10px 0;
+  .title {
+    margin: 20px 0 10px;
   }
 
   .description {
@@ -38,7 +38,7 @@
   figure {
     margin-bottom: 20px;
 
-    figcaption{
+    figcaption {
       text-align: right;
       margin-top: 10px;
     }
@@ -47,7 +47,7 @@
   .details-bar {
     display: -webkit-flex; //Old Safari
     display: flex;
-    -webkit-jutify-content: space-between; //Old Safari
+    -webkit-justify-content: space-between; //Old Safari
     justify-content: space-between;
     margin-bottom: 10px;
   }
@@ -66,6 +66,7 @@
   @include media-query(THREE) {
     min-width: 75%;
     padding-bottom: 65px;
+
     footer .share-bar {
       width: 100%;
       position: absolute;
@@ -76,7 +77,8 @@
 }
 
 
-#old_post header, #old_post footer {
+#old_post header,
+#old_post footer {
   .share-title {
     margin: 0;
   }
@@ -85,11 +87,11 @@
     display: flex;
     display: -webkit-flex; //Old Safari
     justify-content: flex-start;
-    -webkit-jutify-content: flex-start; //Old Safari
+    -webkit-justify-content: flex-start; //Old Safari
   }
 
   .share-icon {
-    margin: 0.4rem;
+    margin: .4rem;
     margin-left: 0;
     width: 2.2rem;
   }
@@ -102,7 +104,8 @@
 }
 
 
-#old_post header .place-and-time, time {
+#old_post header .place-and-time,
+time {
   padding-bottom: 10px;
   display: block;
 
