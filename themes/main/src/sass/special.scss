@@ -190,6 +190,14 @@
   .image-centralized {
     img {
       width: 100%;
+      display: -webkit-flex; //Old Safari
+      display: flex;
+      -webkit-flex-direction: column; //Old Safari
+      flex-direction: column;
+      -webkit-justify-content: center; //Old Safari
+      justify-content: center;
+      -webkit-align-items: center; //Old Safari
+      align-items: center;
 
       @include media-query(THREE) {
         width: auto;
@@ -202,15 +210,6 @@
       margin-bottom: 10px;
       border-bottom: 3px solid $text-color;
     }
-
-    display: -webkit-flex; //Old Safari
-    display: flex;
-    -webkit-flex-direction: column; //Old Safari
-    flex-direction: column;
-    -webkit-justify-content: center; //Old Safari
-    justify-content: center;
-    -webkit-align-items: center; //Old Safari
-    align-items: center;
   }
 
   section.links {

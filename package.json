@@ -39,7 +39,7 @@
   "devDependencies": {
     "gulp-clean-css": "^2.0.6",
     "pug-lint": "^2.2.2",
-    "sass-lint": "^1.8.2",
+    "sass-lint": "^1.10.2",
     "valimate": "^2.3.0",
     "valimate-notifier": "^1.0.2",
     "w3c-css": "^2.0.0"
