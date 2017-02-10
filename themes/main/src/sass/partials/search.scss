@@ -14,7 +14,7 @@ $lateral-margin: 10px;
   margin-right: $lateral-margin;
   cursor: pointer;
 
-  @include media-query(FOUR){
+  @include media-query(FOUR) {
     position: initial;
   }
 }
@@ -29,7 +29,7 @@ $lateral-margin: 10px;
   background-color: $background;
   @include get-font(SEARCH);
 
-  @include media-query(FOUR){
+  @include media-query(FOUR) {
     position: absolute;
     width: 180px;
     right: -28px;
@@ -42,7 +42,7 @@ $lateral-margin: 10px;
     margin-bottom: 10px;
     cursor: pointer;
 
-    @include media-query(FOUR){
+    @include media-query(FOUR) {
       height: 13px;
     }
   }
@@ -59,7 +59,8 @@ $lateral-margin: 10px;
   @include get-font(SEARCH);
 }
 
-#search-tool, #search-tool-404 {
+#search-tool,
+#search-tool-404 {
   &.open {
     display: -webkit-flex; //Old Safari
     display: flex;
@@ -67,81 +68,81 @@ $lateral-margin: 10px;
     align-items: center;
   }
 
-// SEARCH BOX
+  // SEARCH BOX
   // Sets search box size
   #___gcse_0 {
     width: 100%;
     margin-bottom: 10px;
     padding-right: 10px;
-    @include media-query(FOUR){
+    @include media-query(FOUR) {
       width: 160px;
     }
   }
 
   // Hides search button from search box
   .gsc-search-button {
-      display: none;
+    display: none;
   }
 
   // Sets to zero search box padding
   .gsc-search-box {
-      padding: 0;
-      margin: 0;
+    padding: 0;
+    margin: 0;
   }
 
   // Hides search box border created by Google
-   .gsc-control-cse-pt_PT {
-     padding: 0;
-     width: 100%;
-     border: 0;
-     background-color: transparent;
-   }
+  .gsc-control-cse-pt_PT {
+    padding: 0;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+  }
 
-   // Sets config from search box white space
-   .gsc-input {
-     height: 27px;
-     padding: 0;
-     width: 100%;
-     border-radius: 13px;
-     border-color: $content-divisor;
+  // Sets config from search box white space
+  .gsc-input {
+    height: 27px;
+    padding: 0;
+    width: 100%;
+    border-radius: 13px;
+    border-color: $content-divisor;
 
-     @include media-query(FOUR){
-       border-color: white;
-     }
-   }
+    @include media-query(FOUR) {
+      border-color: $inverted-base;
+    }
+  }
 
-   // Sets space to fill search box
-   #gsc-i-id1 {
-     padding: 0 10px;
-   }
+  // Sets space to fill search box
+  #gsc-i-id1 {
+    padding: 0 10px;
+  }
 
-   // Hides clear button
-   .gsc-clear-button {
-     display: none;
-   }
+  // Hides clear button
+  .gsc-clear-button {
+    display: none;
+  }
 
-// SEARCH RESULTS
-   // Adjusts results search to be responsive
-   .gsc-results-wrapper-overlay {
+  // SEARCH RESULTS
+  // Adjusts results search to be responsive
+  .gsc-results-wrapper-overlay {
     width: 96%;
     height: 96%;
     top: 2%;
     left: 2%;
     padding: 25px 10px;
 
-    @include media-query(FOUR){
-       width: 76%;
-       height: 86%;
-       top: 7%;
-       left: 12%;
-       padding: 30px;
+    @include media-query(FOUR) {
+      width: 76%;
+      height: 86%;
+      top: 7%;
+      left: 12%;
+      padding: 30px;
     }
    }
 
   // Add a border between individual search results
   .gs-webResult {
-      border: 1px solid $box-border-neutral;
-      padding: 1em;
+    border: 1px solid $box-border-neutral;
+    padding: 1em;
   }
 
   // Hide URL of search results
@@ -157,14 +158,14 @@ $lateral-margin: 10px;
 
   // Highlight the pagination buttons at the bottom of search results
   .gsc-cursor-page {
-      margin-top: 10px;
-      padding: 4px 8px;
-      border: 2px solid #ccc;
-      text-decoration: none;
+    margin-top: 10px;
+    padding: 4px 8px;
+    border: 2px solid $box-border-neutral;
+    text-decoration: none;
 
-      &:hover {
-        background-color: $link-inverted-color-hover;
-      }
+    &:hover {
+      background-color: $link-inverted-color-hover;
+    }
   }
 
   // Sets background color of current page cursor
@@ -191,7 +192,7 @@ $lateral-margin: 10px;
   .gsc-thumbnail {
     display: none;
 
-    @include media-query(TWO){
+    @include media-query(TWO) {
       display: block;
     }
   }
