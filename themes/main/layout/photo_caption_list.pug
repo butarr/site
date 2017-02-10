@@ -2,13 +2,13 @@ extends base
 
 block title
   title= `${titlecase(page.area)} ${config.separator} ${config.title}`
-  
+
 block description
   meta(name="description" content="Charges e ilustrações com a análise política dos acontecimentos")
-  
+
 block canonical
     link(href=`https://www.brasildefato.com.br/${page.area}/` rel="canonical")
-  
+
 block keywords
   meta(name="keywords" content="crítica, ironia, humor, sátira, caricatura, cartoon, ilustração, política, economia, direitos humanos, cotidiano")
 
@@ -34,10 +34,10 @@ append content
             - var imageDescription= item.cover.subtitle + " - Créditos: " + item.cover.credits
 
             a(itemprop="url" href=`${config.url}${item.url}`)
-              figure.charge_figure_mobile(itemscope itemtype="https://schema.org/ImageObject")
-                img.charge_image_mobile(src=item.cover.medium alt=imageDescription title=imageDescription itemprop="image")
+              figure.charge-figure-mobile(itemscope itemtype="https://schema.org/ImageObject")
+                img.charge-image-mobile(src=item.cover.medium alt=imageDescription title=imageDescription itemprop="image")
             a(itemprop="url" href=`${config.url}${item.url}`)
-              figure.charge_figure_desktop(style=`background-image: url(${item.cover.medium});` title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
+              figure.charge-figure-desktop(style=`background-image: url(${item.cover.medium});` title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
 
       include _partial/pagination
 
