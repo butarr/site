@@ -8,7 +8,7 @@
   @include columnist;
   width: 100%;
 
-  @include media-query (FIVE){
+  @include media-query(FIVE) {
     display: -webkit-flex; //Old Safari
     display: flex;
   }
@@ -23,7 +23,7 @@
   }
 
   .section-name {
-    @include section-name();
+    @include section-name;
     padding-top: $vertical-space;
     margin-bottom: 0;
   }
@@ -32,7 +32,9 @@
     border-top: 1px solid #ccc;
   }
 
-  .title, .description, .title-featured {
+  .title,
+  .description,
+  .title-featured {
     margin-bottom: $vertical-space;
   }
 
@@ -49,7 +51,7 @@
 #featured-audio-news {
   margin-bottom: $vertical-space;
 
-  @include media-query(THREE){
+  @include media-query(THREE) {
     display: -webkit-flex; //Old Safari
     display: flex;
   }
@@ -69,7 +71,7 @@
   @include image-rounded-responsive(300px);
   margin-bottom: $vertical-space;
 
-  @include media-query(THREE){
+  @include media-query(THREE) {
     @include image-rounded-responsive(250px);
   }
 
@@ -96,7 +98,7 @@
   width: 100%;
 
 
-  @include media-query(THREE){
+  @include media-query(THREE) {
     padding-left: 15px;
     max-width: 320px;
     padding-top: 0;
@@ -121,6 +123,7 @@
 
     .pause {
       display: none;
+
       img {
         height: 30px;
       }
@@ -176,7 +179,7 @@
 .services {
   display: none;
 
-  @include media-query(FIVE){
+  @include media-query(FIVE) {
     display: block;
   }
 }

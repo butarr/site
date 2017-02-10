@@ -16,18 +16,18 @@ mixin picture(section)
     a.link-text(itemprop="url" href=section.link target="_blank")= section.text
 
 mixin displayText(section)
-  section.text.verticalSpacing !{section.text}
+  section.text.vertical-spacing !{section.text}
 
 mixin displaySubtitle(section)
-  section.subtitle.verticalSpacing
+  section.subtitle.vertical-spacing
     h2.text= section.text
 
 mixin displayImage(section)
   if section.centralized
-    section.image-centralized.verticalSpacing
+    section.image-centralized.vertical-spacing
       +picture(section)
   else
-    section.image.verticalSpacing
+    section.image.vertical-spacing
       +picture(section)
 
 mixin displayLinksPicture(item)
@@ -37,7 +37,7 @@ mixin displayLinksPicture(item)
   h3.link-figure-title(itemprop="name")= item.title
 
 mixin displayLinks(section)
-  section.links.verticalSpacing
+  section.links.vertical-spacing
     h2.links-headline= section.title
     ul.links-container(itemscope itemtype="https://schema.org/ItemList")
       each item, category in section.links
@@ -50,7 +50,7 @@ mixin displayLinks(section)
             +displayLinksPicture(item)
 
 mixin displayNavigation(section)
-  section.links.verticalSpacing
+  section.links.vertical-spacing
     h2.links-headline= section.title
     ul.links-container.links-container-navigation(itemscope itemtype="https://schema.org/ItemList")
         +displayNavigationLink(section.previous, "< Anterior")
@@ -68,12 +68,12 @@ mixin displayNavigationLink(item, title)
       +displayLinksPicture(item)
 
 mixin displayMultimedia(section)
-  section.multimedia.verticalSpacing
+  section.multimedia.vertical-spacing
     .container
       .video-wrapper.content-wrapper(style=`padding-bottom: ${section.ratio};`) !{section.embed}
 
 mixin displayCode(section)
-  section.multimedia.verticalSpacing
+  section.multimedia.vertical-spacing
     .container !{section.embed}
 
 mixin displayQuote(section)

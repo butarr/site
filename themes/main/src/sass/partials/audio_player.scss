@@ -59,7 +59,8 @@
   align-items: center;
   padding-left: $lateral-column-space;
 
-  .timeProgress, .duration {
+  .timeProgress,
+  .duration {
     width: 33px;
     text-align: center;
   }
