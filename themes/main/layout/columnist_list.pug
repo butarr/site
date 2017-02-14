@@ -48,7 +48,7 @@ append content
 
     section#news-list(class= "list" itemscope itemtype="http://schema.org/ItemList")
       - var position= 0
-      - var list = page.columns || page.list
+      - var list = page.news || page.list
       each post in list
         - var published_at = utc_to_brt(post.date)
 
