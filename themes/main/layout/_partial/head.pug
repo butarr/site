@@ -1,3 +1,5 @@
+- var cssVersion = css_version();
+
 block title
   title Brasil de Fato | Uma visão popular do Brasil e do Mundo
 block description
@@ -14,7 +16,12 @@ meta(name="theme-color" content="#8c191e")
 meta(name="google-site-verification" content="m_w0GavU2SJLaRtVeRyzEjJOyGeCC3_CXkMHTs_kz2Y")
 
 link(rel="alternate" type="application/atom+xml" title="RSS Feed do Brasil de Fato" href="/rss2.xml")
-link(rel='stylesheet', href="/css/main.css")
+
+if config.toggles._css_version
+  link(rel='stylesheet', href=cssVersion)
+else
+  link(rel='stylesheet', href="/css/main.css")
+
 link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
 link(href='//fonts.googleapis.com/css?family=Oswald:700%7CMerriweather:400,700%7CMerriweather+Sans:800,300,900', rel='stylesheet', type='text/css')
 
@@ -36,5 +43,5 @@ script(type="application/ld+json").
       "https://soundcloud.com/brasil-de-fato"
     ]
   }
-  
+
 include icons
