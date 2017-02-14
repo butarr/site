@@ -793,12 +793,6 @@ $number-size: 1.3rem;
 }
 
 @mixin tabloid {
-  .title {
-    font: bold #{$standalone-title-size} / #{$line-separation-small} $family-serif;
-    color: $title-color;
-    text-align: center;
-  }
-
   time {
     font: $text-size $family-serif;
     color: $details-color;
