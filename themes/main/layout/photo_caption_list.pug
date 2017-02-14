@@ -1,19 +1,19 @@
 extends base
 
 block title
-  title= `${titlecase(page.area)} ${config.separator} ${config.title}`
+  title= `Charges ${config.separator} ${config.title}`
 
 block description
   meta(name="description" content="Charges e ilustrações com a análise política dos acontecimentos")
 
 block canonical
-    link(href=`https://www.brasildefato.com.br/${page.area}/` rel="canonical")
+    link(href=`https://www.brasildefato.com.br/charges/` rel="canonical")
 
 block keywords
   meta(name="keywords" content="crítica, ironia, humor, sátira, caricatura, cartoon, ilustração, política, economia, direitos humanos, cotidiano")
 
 block open_graph
-  meta(property="og:title" content=`${titlecase(page.area)} | ${config.title}`)
+  meta(property="og:title" content=`Charges | ${config.title}`)
   meta(property="og:description" content=config.description)
   meta(property="og:image" content=`${config.url}/img/share-logo.png`)
 
@@ -21,7 +21,7 @@ append content
   main.grid-4-columns
 
     section#photo-caption-list(itemscope itemtype="http://schema.org/ImageGallery")
-      h1(class="page-name" itemprop="name")= page.area
+      h1(class="page-name" itemprop="name") Charges
 
       .image-list(itemscope itemtype="http://schema.org/ItemList")
         - var position= 0
