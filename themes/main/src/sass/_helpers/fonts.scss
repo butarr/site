@@ -73,8 +73,8 @@ $number-size: 1.3rem;
   }
 
   a {
-    text-decoration:  none;
     color: $link-neutral-color;
+    text-decoration: none;
     cursor: pointer;
 
     &:visited {
@@ -93,8 +93,8 @@ $number-size: 1.3rem;
 
     &::before,
     &::after {
-      color: $quote-color;
       font-size: 3.5em;
+      color: $quote-color;
       line-height: .1em;
     }
   }
@@ -160,14 +160,14 @@ $number-size: 1.3rem;
 @mixin national {
   .section-name {
     font: bold $section-name-size $family-sans;
-    text-transform: uppercase;
     color: $title-color;
+    text-transform: uppercase;
   }
 
   .hat {
     font: bold $section-name-size $family-sans;
-    text-transform: uppercase;
     color: $link-color;
+    text-transform: uppercase;
   }
 
   .title {
@@ -304,14 +304,14 @@ $number-size: 1.3rem;
 @mixin list {
   .page-name {
     font: bold $page-name-size $family-sans;
-    text-transform: uppercase;
     color: $page-title-color;
+    text-transform: uppercase;
   }
 
   .section-name {
     font: bold $section-name-size $family-sans;
-    text-transform: uppercase;
     color: $title-color;
+    text-transform: uppercase;
   }
 
   .title {
@@ -329,8 +329,8 @@ $number-size: 1.3rem;
 
   .pagination-title {
     font: bold $page-name-size $family-sans;
-    text-transform: uppercase;
     color: $page-title-color;
+    text-transform: uppercase;
   }
 
   .button {
@@ -363,8 +363,8 @@ $number-size: 1.3rem;
 @mixin photo-caption-list {
   .page-name {
     font: bold $page-name-size $family-sans;
-    text-transform: uppercase;
     color: $page-title-color;
+    text-transform: uppercase;
   }
 
   a {
@@ -392,8 +392,8 @@ $number-size: 1.3rem;
 
   .hat {
     font: bold $page-name-size $family-sans;
-    text-transform: uppercase;
     color: $page-title-color;
+    text-transform: uppercase;
   }
 
   .subtitle {
@@ -421,8 +421,8 @@ $number-size: 1.3rem;
 
   .section-name {
     font: bold $page-name-size $family-sans;
-    text-transform: uppercase;
     color: $page-title-color;
+    text-transform: uppercase;
   }
 
   .photo-caption-smaller {
@@ -439,8 +439,8 @@ $number-size: 1.3rem;
 @mixin columnists {
   .page-name {
     font: bold $page-name-size $family-sans;
-    text-transform: uppercase;
     color: $page-title-color;
+    text-transform: uppercase;
   }
 
   .title {
@@ -469,8 +469,8 @@ $number-size: 1.3rem;
 
   .pagination-title {
     font: bold $page-name-size $family-sans;
-    text-transform: uppercase;
     color: $page-title-color;
+    text-transform: uppercase;
   }
 
   .button {
@@ -503,8 +503,8 @@ $number-size: 1.3rem;
 @mixin post {
   .hat {
     font: bold $page-name-size $family-sans;
-    text-transform: uppercase;
     color: $page-title-color;
+    text-transform: uppercase;
   }
 
   .title {
@@ -597,9 +597,9 @@ $number-size: 1.3rem;
 
   .share-title {
     font: bold $page-name-size $family-sans;
-    text-transform: uppercase;
     color: $page-title-color;
     text-align: left;
+    text-transform: uppercase;
   }
 
   .details-bar .share-title {
@@ -655,8 +655,8 @@ $number-size: 1.3rem;
 @mixin column {
   .hat {
     font: bold $page-name-size $family-sans;
-    text-transform: uppercase;
     color: $page-title-color;
+    text-transform: uppercase;
   }
 
   .title {
@@ -722,14 +722,14 @@ $number-size: 1.3rem;
 @mixin institutional {
   .page-name {
     font: bold $page-name-size $family-sans;
-    text-transform: uppercase;
     color: $page-title-color;
+    text-transform: uppercase;
   }
 
   .title {
     font: bold $text-size $family-sans;
-    text-transform: uppercase;
     color: $text-color;
+    text-transform: uppercase;
   }
 
   .list {
@@ -770,8 +770,8 @@ $number-size: 1.3rem;
 @mixin search {
   // Sets search box font
   .gsc-input {
-    font-size: $text-size;
     font-family: $family-serif;
+    font-size: $text-size;
   }
 
   // Sets font snippet of search results
@@ -787,8 +787,8 @@ $number-size: 1.3rem;
 
   // Sets font from page cursor of search results
   .gsc-cursor-page {
-    font-size: 1.2rem;
     font-family: $family-serif;
+    font-size: 1.2rem;
   }
 }
 
@@ -816,8 +816,8 @@ $number-size: 1.3rem;
 @mixin other {
   .other-title {
     font: bold $page-name-size $family-sans;
-    text-transform: uppercase;
     color: $page-title-color;
+    text-transform: uppercase;
   }
 
   .other-decorator {
@@ -843,13 +843,13 @@ $number-size: 1.3rem;
 
 @mixin special {
   .title {
-    text-align: center;
     color: $link-inverted-color;
+    text-align: center;
 
     .page-title {
       font: normal 1.8rem / 1.2 $family-special-titles;
-      text-transform: uppercase;
       text-shadow: 2px 2px 3px $title-special-color;
+      text-transform: uppercase;
 
       @include media-query(THREE) {
         font-size: 3rem;
@@ -871,8 +871,8 @@ $number-size: 1.3rem;
 
     .text {
       font: normal 1.8rem / 1.2 $family-special-titles;
-      text-transform: uppercase;
       text-align: center;
+      text-transform: uppercase;
 
       @include media-query(THREE) {
         font-size: 3rem;
@@ -888,8 +888,8 @@ $number-size: 1.3rem;
     }
 
     a {
-      color: $link-special-color;
       font: bold 1.1rem / 1 $family-serif;
+      color: $link-special-color;
 
       &:visited {
         color: $link-special-visited-color;
@@ -909,8 +909,8 @@ $number-size: 1.3rem;
 
       &::before,
       &::after {
-        color: $quote-color;
         font-size: 2.5em;
+        color: $quote-color;
         line-height: .1em;
       }
 
@@ -948,8 +948,8 @@ $number-size: 1.3rem;
 
   .image-centralized {
     .title {
-      color: $text-color;
       font: bold 1.2rem / 1 $family-serif;
+      color: $text-color;
 
       @include media-query(THREE) {
         font: bold 1.5rem / 1 $family-serif;
@@ -968,8 +968,8 @@ $number-size: 1.3rem;
     text-align: center;
 
     .link-text {
-      color: $link-special-color;
       font: bold 1.1rem / 1 $family-sans;
+      color: $link-special-color;
 
       &:visited {
         color: $link-special-visited-color;
@@ -981,8 +981,8 @@ $number-size: 1.3rem;
     }
 
     .title {
-      color: $text-color;
       font: bold 1.2rem / 1 $family-serif;
+      color: $text-color;
 
       @include media-query(THREE) {
         font: bold 1.5rem / 1 $family-serif;
@@ -1000,8 +1000,8 @@ $number-size: 1.3rem;
   .links {
     .links-headline {
       font: bold 1.1rem / 1 $family-serif;
-      text-align: center;
       color: $text-color;
+      text-align: center;
     }
 
     .link-figure-title {
@@ -1089,8 +1089,8 @@ $number-size: 1.3rem;
 
   .page-name {
     font: bold $page-name-size $family-sans;
-    text-transform: uppercase;
     color: $page-title-color;
+    text-transform: uppercase;
   }
 
   .description {
