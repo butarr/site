@@ -21,7 +21,7 @@ mixin metadata(position, post)
 
 mixin services(initial_index)
   h3.section-name Serviços
-  each service_name,service_index in {service_01:'Hoje na História', service_02:'Alimento é saúde', service_03:'Nossos direitos', service_04:'Fatos Curiosos da História', service_05:'Mosaico Cultural'}
+  each service_name,service_index in {'service-01':'Hoje na História', 'service-02':'Alimento é saúde', 'service-03':'Nossos direitos', 'service-04':'Fatos Curiosos da História', 'service-05':'Mosaico Cultural'}
     .service
       - var service = page[service_index]
       - var published_at = utc_to_brt(service.date)

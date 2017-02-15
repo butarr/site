@@ -3,7 +3,7 @@ function setResetPlayerHandler(playerDiv) {
     playerDiv.find('.pause').hide();
     playerDiv.find('.play').show();
     playerDiv.find('progress')[0].value = 0;
-    playerDiv.find('.timeProgress').text('0:00');
+    playerDiv.find('.time-progress').text('0:00');
   }
 }
 
@@ -22,11 +22,11 @@ function setProgressBarHandler(audioElement, playerDiv) {
 
 function setUpdateProgressHandler(audioElement, playerDiv) {
   var progressBar = playerDiv.find('progress')[0];
-  var timeProgress = playerDiv.find('.timeProgress');
+  var time-progress = playerDiv.find('.time-progress');
 
   return function() {
     progressBar.value = (audioElement.currentTime / audioElement.duration) * 100;
-    timeProgress.text(toMinutesAndSeconds(audioElement.currentTime * 1000));
+    time-progress.text(toMinutesAndSeconds(audioElement.currentTime * 1000));
   };
 }
 

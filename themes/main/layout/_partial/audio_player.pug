@@ -10,7 +10,7 @@ mixin audio-player(position, audio)
           a.pause(onclick=`pause(${position});`)
             img.pause-button(src="/img/icons/pause.svg" alt="Pausar")
         .progress-bar
-          span.timeProgress 0:00
+          span.time-progress 0:00
           .progress-and-source
             progress(max='100', value='0')
             a(href=audio target="_blank")

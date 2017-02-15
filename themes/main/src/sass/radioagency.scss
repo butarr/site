@@ -29,7 +29,7 @@
   }
 
   .service + .service {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $box-border-neutral;
   }
 
   .title,
@@ -150,24 +150,24 @@
     margin-bottom: 5px;
   }
 
-  .service_01 {
-    color: #845c7d;
+  .service-01 {
+    color: $service-01-color;
   }
 
-  .service_02 {
-    color: #419b9b;
+  .service-02 {
+    color: $service-02-color;
   }
 
-  .service_03 {
-    color: #c33b53;
+  .service-03 {
+    color: $service-03-color;
   }
 
-  .service_04 {
-    color: #af61a4;
+  .service-04 {
+    color: $service-04-color;
   }
 
-  .service_05 {
-    color: #d2a64c;
+  .service-05 {
+    color: $service-05-color;
   }
 }
 
