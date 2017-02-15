@@ -18,8 +18,8 @@
 @mixin clearfix {
   &::before,
   &::after {
-    content: ' ';
     display: table;
+    content: ' ';
   }
 
   &::after {
@@ -55,32 +55,32 @@
   }
 
   figcaption {
-    width: 100%;
     position: absolute;
     bottom: 0;
-    text-shadow: 2px 2px 0 $text-shadow-color, 1px 1px 0 $text-shadow-color;
-    padding: 5px 20px 20px;
+    width: 100%;
     border-radius: 5px;
+    padding: 5px 20px 20px;
+    text-shadow: 2px 2px 0 $text-shadow-color, 1px 1px 0 $text-shadow-color;
     background: linear-gradient(to bottom, $gradient-initial-color 0%, $gradient-final-color 85%);
   }
 }
 
 @mixin image-rounded($width, $height) {
   figure {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    border-radius: 5px;
-    width: $width;
     height: $height;
+    width: $width;
+    border-radius: 5px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
 @mixin image-rounded-responsive($max-height) {
   figure {
     max-height: $max-height;
-    overflow: hidden;
     border-radius: 5px;
+    overflow: hidden;
 
     img {
       width: 100%;
@@ -109,8 +109,8 @@
   padding: 10px 0;
 
   .profile-image {
-    width: 70px;
     float: left;
+    width: 70px;
     border-radius: 50%;
 
     @include media-query(TWO) {
@@ -123,8 +123,8 @@
   blockquote {
     max-width: 2 * $column-width;
     width: 100%;
-    quotes: '\201C''\201D''\2018''\2019';
     padding: 20px 0;
+    quotes: '\201C''\201D''\2018''\2019';
   }
 
   blockquote::before {
@@ -163,19 +163,19 @@
 @mixin button {
   .pagination-button-container .button {
     width: auto;
-    padding: 8px 16px;
     margin: 5px 10px;
+    padding: 8px 16px;
   }
 
   .button {
     display: block;
+    width: 100%;
     border: 1px solid $button-border;
     border-radius: 3px;
-    box-shadow: 0 1px 1px $button-border;
+    margin: 5px auto;
     padding: 8px 0;
     text-align: center;
-    width: 100%;
-    margin: 5px auto;
+    box-shadow: 0 1px 1px $button-border;
     @include media-query (THREE) {
       width: 200px;
     }
@@ -190,9 +190,9 @@
   }
 
   .button-selected {
+    border: 2px solid $button-border-selected;
     cursor: default;
     pointer-events: none;
-    border: 2px solid $button-border-selected;
   }
 }
 
@@ -271,9 +271,9 @@
     margin-top: 20px;
 
     img {
-      border-radius: 50%;
       height: 80px;
       max-width: 80px;
+      border-radius: 50%;
 
       @include media-query(THREE) {
         height: 60px;
