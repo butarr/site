@@ -33,16 +33,16 @@
     }
 
     .person-container .profile-image {
-      border-radius: 50%;
       width: 70px;
+      border-radius: 50%;
     }
 
     .person-container .name {
       display: none;
 
       @include media-query(TWO) {
-        margin-top: 10px;
         display: inline-block;
+        margin-top: 10px;
       }
     }
   }
@@ -62,8 +62,8 @@
     }
 
     .name {
-      padding-bottom: 7px;
       display: block;
+      padding-bottom: 7px;
 
       @include media-query(TWO) {
         display: none;
