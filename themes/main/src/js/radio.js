@@ -22,11 +22,11 @@ function setProgressBarHandler(audioElement, playerDiv) {
 
 function setUpdateProgressHandler(audioElement, playerDiv) {
   var progressBar = playerDiv.find('progress')[0];
-  var time-progress = playerDiv.find('.time-progress');
+  var timeProgress = playerDiv.find('.time-progress');
 
   return function() {
     progressBar.value = (audioElement.currentTime / audioElement.duration) * 100;
-    time-progress.text(toMinutesAndSeconds(audioElement.currentTime * 1000));
+    timeProgress.text(toMinutesAndSeconds(audioElement.currentTime * 1000));
   };
 }
 
