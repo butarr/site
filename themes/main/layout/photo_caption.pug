@@ -44,9 +44,9 @@ append content
 
       section#other-photo-captions
         h3.section-name Outras charges
-        if page.related-photo-captions
+        if page.related_photo_captions
           .related-photo-captions
-            each related in page.related-photo-captions
+            each related in page.related_photo_captions
               .photo-caption-smaller
                 - var imageDescription=related.cover.subtitle + " - Créditos: " + related.cover.credits
                 a(itemprop="url", href=related.url)
