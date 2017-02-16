@@ -109,17 +109,18 @@ append content
           h3.section-name Coluna
           - var column = page.column_01
           - var columnist = site.data.columnists[column.columnist];
-          .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
-            .photo
-              a(href=column.path, title="link para a pagina do colunista")
-                img(alt=`Foto de ${columnist.name}` src=columnist.photo itemprop="image")
-            .column
-              a(href=column.path, title="link para a pagina do colunista")
-                span.name(itemprop="name")= columnist.name
-              a(href=column.path itemprop="url")
-                h4.title= column.title
-          if column.audio
-            +audio-player(555, column.audio)
+          if columnist
+            .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
+              .photo
+                a(href=`/colunistas/${columnist.path}`, title="link para a pagina do colunista")
+                  img(alt=`Foto de ${columnist.name}` src=columnist.photo itemprop="image")
+              .column
+                a(href=`/colunistas/${columnist.path}`, title="link para a pagina do colunista")
+                  span.name(itemprop="name")= columnist.name
+                a(href=column.path itemprop="url")
+                  h4.title= column.title
+            if column.audio
+              +audio-player(555, column.audio)
 
         .services
           +services(101)
