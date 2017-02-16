@@ -94,7 +94,7 @@ append content
 
         each post, index in page.latest_news
           - var published_at_post = utc_to_brt(post.date)
-          .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor" id=`news_${position}`)
+          .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor" id=`news_${index+1}`)
             +metadata(index+1, post)
             a(href=post.url itemprop="url" class="news-radio-link")
               h2.title(itemprop= "headline")= post.title
