@@ -1,4 +1,5 @@
 extends base
+include _partial/audio_player
 
 block title
   title= `${titlecase(page.area)} ${config.separator} ${config.title}`
@@ -26,28 +27,7 @@ block description
       meta(name="description" content=`As notícias do Brasil de Fato em áudio e texto para rádios do Brasil e da América Latina em nossa Radioagência BdF. Página ${page.current +1}`)
 
 block canonical
-  - var area_field= page.area
-  case area_field
-    when "opinião"
-      - var sitepath= "opiniao"
-    when "política"
-      - var sitepath= "politica"
-    when "direitos humanos"
-      - var sitepath= "direitos_humanos"
-    when "cultura"
-      - var sitepath= "cultura"
-    when "geral"
-      - var sitepath= "geral"
-    when "internacional"
-      - var sitepath= "internacional"
-    when "especiais"
-      - var sitepath= "especiais"
-    when "español"
-      - var sitepath= "espanol"
-    when "radio"
-      - var sitepath= "radio"
-
-  link(href=`https://www.brasildefato.com.br/${sitepath}/` rel="canonical")
+  link(href=`https://www.brasildefato.com.br/${page.path}` rel="canonical")
 
 block keywords
   meta(name="keywords" content=page.area)
@@ -73,20 +53,18 @@ append content
     section#news-list(class= "list" itemscope itemtype="http://schema.org/ItemList" lang= language)
       h1(class="page-name" itemprop="name")= page.area
 
-      - var position= 0
       - var list = page.news ? page.news : page.list
-      each post in list
+      each post, index in list
         - var published_at = utc_to_brt(post.date || post.published_at)
-
-        a.news-item-link(href=post.path)
-          .news-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
+        .news-item-link(class="divisor")
+          a.news-item(href=post.path itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement")
             meta(itemprop="url" content=`https://www.brasildefato.com.br/${post.path}`)
-            meta(itemprop="position" content= ++position)
+            meta(itemprop="position" content=index)
 
             div(itemscope itemtype="https://schema.org/NewsArticle")
               meta(itemprop="author" content= post.author)
               meta(itemprop="dateModified" content=published_at.toISOString())
-              meta(itemprop="mainEntityOfPage" content=`https://www.brasildefato.com.br/${sitepath}/`)
+              meta(itemprop="mainEntityOfPage" content=`https://www.brasildefato.com.br/${page.path}`)
 
               span(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
                 span(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
@@ -108,5 +86,7 @@ append content
                 h3.title(itemprop= "headline")= post.title
                 p.description(itemprop="description")= post.description
                 time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+          if post.audio && config.toggles._pio0zWc4_audio_on_lists
+            +audio-player(index, post.audio)
 
       include _partial/pagination

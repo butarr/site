@@ -1079,6 +1079,19 @@ $number-size: 1.3rem;
       font-size: .8rem;
     }
   }
+
+  .button {
+    font: bold $text-size $family-sans;
+    color: $link-color;
+
+    &:visited {
+      color: $link-visited-color;
+    }
+
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
 }
 
 @mixin columnist-list {

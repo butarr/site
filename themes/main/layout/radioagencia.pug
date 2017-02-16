@@ -21,16 +21,36 @@ mixin metadata(position, post)
 
 mixin services(initial_index)
   h3.section-name Serviços
-  each service_name, service_index in {'service_01':'Hoje na História', 'service_02':'Alimento é saúde', 'service_03':'Nossos direitos', 'service_04':'Fatos Curiosos da História', 'service_05':'Mosaico Cultural'}
+  -
+    var services = [
+      {
+        name: 'Hoje na História', path: 'hoje-na-historia'
+      },
+      {
+        name: 'Alimento é Saúde', path: 'alimento-e-saude'
+      },
+      {
+        name: 'Nossos Direitos', path: 'nossos-direitos'
+      },
+      {
+        name: 'Fatos Curiosos da História', path: 'fatos-curiosos'
+      },
+      {
+        name: 'Mosaico Cultural', path: 'mosaico-cultural'
+      }
+    ]
+  each service_data, index in services
     .service
-      - var service = page[service_index]
+      - var service = page[`service_0${index+1}`]
       - var published_at = utc_to_brt(service.date)
-      h3.service-name(class=service_index)=service_name
+      h3.service-name(class=`service-0${index+1}`)=service_data.name
       a(href=service.url, itemprop="url")
         h4.title=service.title
       time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
       if service.audio
         +audio-player(initial_index++, service.audio)
+      a(href=service_data.path class="button" title="link para mais notícias")
+        span= `Mais ${service_data.name}`
 
 block title
   title=`Radioagência ${config.separator} ${config.title}`
@@ -72,19 +92,16 @@ append content
             if featured.audio
               +audio-player(0, featured.audio)
 
-        - var position= 1
-        each post in page.latest_news
+        each post, index in page.latest_news
           - var published_at_post = utc_to_brt(post.date)
           .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor" id=`news_${position}`)
-            +metadata(position, post)
+            +metadata(index+1, post)
             a(href=post.url itemprop="url" class="news-radio-link")
               h2.title(itemprop= "headline")= post.title
               p.description(itemprop="description")= post.description
             time.date(datetime=published_at_post.toISOString(), itemprop="datePublished")= full_date(published_at_post)
             if post.audio
-              +audio-player(position, post.audio)
-            - position++
-
+              +audio-player(index+1, post.audio)
 
       aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
         if page.column_01

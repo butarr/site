@@ -6,6 +6,8 @@
 #radioagency {
   @include get-font(RADIOAGENCY);
   @include columnist;
+  @include button;
+
   width: 100%;
 
   @include media-query(FIVE) {

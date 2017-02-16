@@ -61,6 +61,7 @@ toggles:
   _D6fenTno_adsense: ${TOGGLE_D6fenTno_ADSENSE:-false}
   _test_environment: ${TOGGLE_TEST_ENVIROMENT:-false}
   _iftEQfOR_columnist_page: ${TOGGLE_iftEQfOR_COLUMNIST_PAGE:-false}
+  _pio0zWc4_audio_on_lists: ${TOGGLE_pio0zWc4_AUDIO_ON_LISTS:-false}
   _css_version: ${TOGGLE_css_version:-false}
   _js_version: ${TOGGLE_js_version:-false}
 feed:

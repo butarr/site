@@ -10,12 +10,12 @@
     @include image-rounded(150px, 150px);
   }
 
-  .news-item-link .news-item.divisor {
+  .news-item-link.divisor {
     padding: 20px 0;
     border-bottom: 1px solid $content-divisor;
   }
 
-  .news-item-link:last-child .news-item.divisor {
+  .news-item-link:last-child.divisor {
     border: 0;
   }
 }
@@ -31,12 +31,13 @@
 
     @include media-query(TWO) {
       width: 150px;
-      margin: 0 20px 0 0;
+      margin: 0 20px 10px 0;
     }
   }
 
   .content.no-image {
     width: 100%;
+    min-height: 150px;
   }
 
   .title {
