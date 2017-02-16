@@ -5,7 +5,7 @@ function assertVersion(assert){
       return "/css/" + cssVersion;
       break;
     case 'main.js':
-      jsVersion = extractVersion('../source/css/rev-manifest.json','main.css')
+      jsVersion = extractVersion('../source/js/rev-manifest.json','main.js')
       return "/js/" + jsVersion;
       break;
   }
