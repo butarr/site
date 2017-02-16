@@ -62,6 +62,7 @@ toggles:
   _test_environment: ${TOGGLE_TEST_ENVIROMENT:-false}
   _iftEQfOR_columnist_page: ${TOGGLE_iftEQfOR_COLUMNIST_PAGE:-false}
   _css_version: ${TOGGLE_css_version:-false}
+  _js_version: ${TOGGLE_js_version:-false}
 feed:
   type: rss2
   limit: 20

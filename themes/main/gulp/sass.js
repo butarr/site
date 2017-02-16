@@ -18,6 +18,6 @@ module.exports =  function (baseDir) {
       .pipe(rev())
       .pipe(gulp.dest(baseDir+'/css/'))
       .pipe(rev.manifest())
-      .pipe(gulp.dest(baseDir));
+      .pipe(gulp.dest(baseDir+'/css/'));
 	}
 };

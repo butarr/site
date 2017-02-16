@@ -1,4 +1,10 @@
+- var jsVersion = assert_version('main.js');
+
 script(defer type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
 script(defer type="text/javascript" src="//w.soundcloud.com/player/api.js")
 script(defer type="text/javascript" src="//connect.soundcloud.com/sdk/sdk-3.1.2.js")
-script(defer type="text/javascript" src="/js/main.js")
+
+if config.toggles._js_version
+  script(defer type="text/javascript" src=jsVersion)
+else
+  script(defer type="text/javascript" src="/js/main.js")
