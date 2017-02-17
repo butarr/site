@@ -233,11 +233,11 @@
     }
 
     .link {
+      @include image-rounded-responsive(300px);
+
       padding: 0 5px;
       max-width: (2 * $column-width);
       width: 100%;
-
-      @include image-rounded-responsive(300px);
     }
 
     .link-figure-title {

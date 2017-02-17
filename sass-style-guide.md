@@ -241,6 +241,22 @@ selector, other-selector {
   - Allowed: `.pseudo-element::before;` `.pseudo-class:hover;`
   - Not Allowed: `.pseudo-element:before;` `.pseudo-class::hover;`
 
+- mixins-before-declarations
+  - Allowed: 
+```
+.class {
+  @include font;
+  display: block;
+}
+```
+  - Not Allowed:
+```
+.class {
+  display: block;
+  @include font;
+}
+```
+
 - clean-import-paths
   - Allowed: `@import 'foo';`
   - Not Allowed: `@import 'foo.scss';`

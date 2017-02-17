@@ -243,8 +243,8 @@
   }
 
   .other-article {
-    width: 100%;
     @include image-rounded(110px, 100px);
+    width: 100%;
     border-bottom: 1px solid $box-border-neutral;
     padding-bottom: 10px;
 

@@ -29,8 +29,8 @@
   }
 
   .text-content {
-    width: 100%;
     @include column-lateral-spacing;
+    width: 100%;
   }
 
   .editor {
@@ -101,8 +101,8 @@
 #post .sidebar .share-bar {
   display: none;
   @include media-query(THREE) {
-    display: block;
     @include page-name;
+    display: block;
   }
 }
 

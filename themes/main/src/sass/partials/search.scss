@@ -20,6 +20,7 @@ $lateral-margin: 10px;
 }
 
 #search-tool {
+  @include get-font(SEARCH);
   display: none;
   width: 100%;
   position: fixed;
@@ -27,7 +28,6 @@ $lateral-margin: 10px;
   right: 0;
   padding: 0 $vertical-space;
   background-color: $background;
-  @include get-font(SEARCH);
 
   @include media-query(FOUR) {
     position: absolute;
@@ -49,6 +49,7 @@ $lateral-margin: 10px;
 }
 
 #search-tool-404 {
+  @include get-font(SEARCH);
   display: block;
   width: 100%;
   position: relative;
@@ -56,7 +57,6 @@ $lateral-margin: 10px;
   border: 1px solid $box-border-neutral;
   border-radius: 3px;
   box-shadow: 0 1px 1px $box-border-neutral;
-  @include get-font(SEARCH);
 }
 
 #search-tool,

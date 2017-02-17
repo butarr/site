@@ -4,12 +4,12 @@
 @import '_helpers/constants';
 
 #home {
+  @include get-font(NATIONAL);
+  @include button;
   display: -webkit-flex; //Old Safari
   display: flex;
   -webkit-flex-direction: column; //Old Safari
   flex-direction: column;
-  @include get-font(NATIONAL);
-  @include button;
 
   .container {
     display: -webkit-flex; //Old Safari
@@ -32,10 +32,9 @@
   }
 
   #featured-1 {
+    @include image-rounded(100%, 227px);
     -webkit-order: -14; //Old Safari
     order: -14;
-
-    @include image-rounded(100%, 227px);
 
     @include media-query(TWO) {
       @include image-rounded(100%, 300px);
@@ -184,11 +183,10 @@
   display: none;
 
   @include media-query(THREE) {
+    @include column-lateral-spacing;
     display: flex;
     display: -webkit-flex; //Old Safari
     justify-content: center;
-
-    @include column-lateral-spacing;
 
     img {
       width: 100%;
@@ -252,9 +250,9 @@
   order: -10;
 
   @include media-query(THREE) {
+    @include column-lateral-spacing;
     display: flex;
     justify-content: center;
-    @include column-lateral-spacing;
 
     img {
       width: 100%;
@@ -286,10 +284,10 @@
   order: -6;
 
   @include media-query(FIVE) {
+    @include column-lateral-spacing;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-    @include column-lateral-spacing;
   }
 }
 
@@ -320,31 +318,31 @@
 }
 
 #home .featured-big-picture {
-  width: 100%;
   @include picture-with-caption;
   @include image-rounded-responsive(300px);
+  width: 100%;
 
   @include media-query(THREE) {
-    width: 2 * $column-width;
     @include column-lateral-spacing;
+    width: 2 * $column-width;
   }
 }
 
 #home .featured-small-picture {
+  @include image-rounded(150px, 150px);
   display: -webkit-flex; //Old Safari
   display: flex;
   -webkit-flex-direction: row-reverse; //Old Safari
   flex-direction: row-reverse;
-  @include image-rounded(150px, 150px);
 
   @include media-query(THREE) {
+    @include image-rounded(220px, 150px);
+    @include column-lateral-spacing;
     width: $column-width;
     -webkit-flex-direction: column-reverse; //Old Safari
     flex-direction: column-reverse;
     -webkit-align-self: flex-start; //Old Safari
     align-self: flex-start;
-    @include image-rounded(220px, 150px);
-    @include column-lateral-spacing;
   }
 
   figure {
@@ -386,8 +384,8 @@
   padding-top: 10px;
 
   @include media-query(THREE) {
-    width: 2 * $column-width;
     @include column-lateral-spacing;
+    width: 2 * $column-width;
   }
 
   .title {
@@ -414,8 +412,8 @@
   }
 
   @include media-query(THREE) {
-    width: $column-width;
     @include column-lateral-spacing;
+    width: $column-width;
   }
 
   .featured-text-box {
@@ -426,12 +424,12 @@
 }
 
 #home .article-footer {
-  width: 50%;
   @include image-rounded(100%, 150px);
+  width: 50%;
 
   @include media-query (THREE) {
-    width: $column-width;
     @include column-lateral-spacing;
+    width: $column-width;
   }
 
   .title {
@@ -524,8 +522,8 @@
 
 #home .most-read,
 .last-news#last-news-mobile {
-  width: 100%;
   @include column-lateral-spacing;
+  width: 100%;
 
   .section-name {
     @include section-name;
@@ -559,12 +557,12 @@
 }
 
 #home .last-news#last-news-desktop {
-  width: 100%;
   @include image-rounded(110px, 100px);
+  width: 100%;
 
   .section-name {
-    width: 100%;
     @include section-name;
+    width: 100%;
   }
 
   ol {
@@ -605,11 +603,11 @@
   display: none;
 
   @include media-query(THREE) {
+    @include column-lateral-spacing;
     display: -webkit-flex; //Old Safari
     display: flex;
     width: 100%;
     padding: 5px 0;
-    @include column-lateral-spacing;
 
     .section-name {
       white-space: nowrap;
@@ -631,9 +629,9 @@
   display: none;
 
   @include media-query(THREE) {
+    @include column-lateral-spacing;
     display: inline-block;
     width: $column-width;
-    @include column-lateral-spacing;
   }
 
   section + section {
@@ -658,8 +656,8 @@
 }
 
 #home .newsletter {
-  width: 100%;
   @include get-font(NEWSLETTER);
+  width: 100%;
 
   .section-name {
     @include section-name;
@@ -707,8 +705,8 @@
 }
 
 #home .columnists {
-  width: 100%;
   @include columnist;
+  width: 100%;
 
   .section-name {
     @include section-name;
@@ -727,8 +725,8 @@
   display: none;
 
   @include media-query(THREE) {
-    display: block;
     @include image-rounded(100%, 227px);
+    display: block;
 
     figure {
       background-size: cover;
@@ -737,10 +735,9 @@
 }
 
 #home .radioagency-banner-mobile {
+  @include image-rounded(100%, 70px);
   width: 100%;
   margin-top: $vertical-space;
-
-  @include image-rounded(100%, 70px);
 
   @include media-query(TWO) {
     @include image-rounded(100%, 100px);

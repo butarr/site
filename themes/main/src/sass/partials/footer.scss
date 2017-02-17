@@ -8,6 +8,7 @@ $text-padding: 2px;
 $social-margin: 10px;
 
 #page-footer {
+  @include get-font(FOOTER);
   display: -webkit-flex; //Old Safari
   display: flex;
   -webkit-flex-direction: column; //Old Safari
@@ -17,7 +18,6 @@ $social-margin: 10px;
   width: 100%;
   padding: 25px 0;
   background-color: $background;
-  @include get-font(FOOTER);
 
   i {
     color: $social-media-icons-color;
@@ -77,9 +77,9 @@ $social-margin: 10px;
   padding: 0 20px;
 
   @include media-query(THREE) {
+    @include column-lateral-spacing($lateral-page-space-desktop);
     width: 100%;
     max-width: (3 * $column-width) + (2 * $lateral-page-space-desktop);
-    @include column-lateral-spacing($lateral-page-space-desktop);
   }
 }
 

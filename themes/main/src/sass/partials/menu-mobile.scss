@@ -4,16 +4,16 @@
 @import '../_helpers/fonts';
 
 #menu-mobile {
+  @include transition-left;
+  @include get-font(MENU_MOBILE);
   top: 5px;
   left: -270px;
   width: 260px;
   height: 100vh;
-  @include get-font(MENU_MOBILE);
   box-sizing: border-box;
   background-color: $menu-over;
   box-shadow: 0 0 19px 6px $menu-shadow-color;
   position: fixed;
-  @include transition-left;
   z-index: 101;
 
   &.open {

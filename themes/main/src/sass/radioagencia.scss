@@ -69,8 +69,8 @@
 }
 
 #radioagency .image {
-  width: 100%;
   @include image-rounded-responsive(300px);
+  width: 100%;
   margin-bottom: $vertical-space;
 
   @include media-query(THREE) {

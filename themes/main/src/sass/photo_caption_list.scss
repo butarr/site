@@ -5,8 +5,8 @@
 
 #photo-caption-list {
   @include get-font(PHOTO_CAPTION_LIST);
-  max-width: 2 * $column-width;
   @include site-lateral-spacing;
+  max-width: 2 * $column-width;
   padding-bottom: 20px;
 
   @include media-query(THREE) {

@@ -21,8 +21,8 @@
 }
 
 .list .news-item {
-  display: block;
   @include clearfix;
+  display: block;
 
   .image {
     margin: 0 10px 5px 0;
