@@ -49,8 +49,9 @@ mixin services(initial_index)
       time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
       if service.audio
         +audio-player(initial_index++, service.audio)
-      a(href=service_data.path class="button" title="link para mais notícias")
-        span= `Mais ${service_data.name}`
+      if config.toggles._pio0zWc4_audio_on_lists
+        a(href=service_data.path class="button" title="link para mais notícias")
+          span= `Mais ${service_data.name}`
 
 block title
   title=`Radioagência ${config.separator} ${config.title}`
