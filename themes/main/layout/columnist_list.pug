@@ -52,8 +52,8 @@ append content
       each post in list
         - var published_at = utc_to_brt(post.date)
 
-        a.news-item-link(href=post.path)
-          .news-item(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
+        .news-item-link(class= "divisor")
+          a.news-item(href=post.path itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement")
             meta(itemprop="url" content=`https://www.brasildefato.com.br/${post.path}`)
             meta(itemprop="position" content= ++position)
 
