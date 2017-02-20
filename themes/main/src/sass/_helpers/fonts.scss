@@ -880,6 +880,11 @@ $number-size: 1.3rem;
     }
   }
 
+  .cover-credits {
+    font: $text-size $family-serif;
+    color: $details-color;
+  }
+
   .text {
     color: $text-color;
 

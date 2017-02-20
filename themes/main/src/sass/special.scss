@@ -21,6 +21,13 @@
     display: none;
   }
 
+  .cover-credits {
+    background-color: $special-background;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 10px;
+  }
+
   #cover {
     background-repeat: no-repeat;
     background-position: center top;

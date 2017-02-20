@@ -135,6 +135,9 @@ append content
           h1.page-title(itemprop="headline")= page.title
           p.description(itemprop="description")= page.description
 
+      if page.cover.credits
+        div.cover-credits(itemprop="caption")= `Foto: ${page.cover.credits}`
+
       div.blocks(itemprop="articleBody")
         each section in page.sections
           case section.type
