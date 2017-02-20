@@ -19,8 +19,8 @@ cover:
   medium: //farm6.staticflickr.com/5582/30653716696_a26908ca95_z.jpg
   small: //farm6.staticflickr.com/5582/30653716696_a26908ca95_n.jpg
   title: Pórtico da entrada da cidade de Barra Longa em meio a lama
-  credits: Lucas Bois
-  subtitle: Bento Rodrigues
+  credits: Joka Madruga
+  subtitle: Barra Longa
 date: 2016-10-28T22:58:23.677Z
 published_at: 2016-10-28T22:58:23.677Z
 

@@ -19,8 +19,8 @@ cover:
   medium: //farm6.staticflickr.com/5672/30654955286_c1f88324e5_z.jpg
   small: //farm6.staticflickr.com/5672/30654955286_c1f88324e5_n.jpg
   title: Galones de agua siendo llenados con manguera
-  credits: Lucas Bois
-  subtitle: Bento Rodrigues
+  credits: null
+  subtitle: null
 date: 2016-10-28T22:58:23.677Z
 published_at: 2016-10-28T22:58:23.677Z
 

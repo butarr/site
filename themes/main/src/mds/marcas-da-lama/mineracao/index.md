@@ -19,8 +19,8 @@ cover:
   medium: //farm6.staticflickr.com/5757/30065321114_e26ce77ee2_z.jpg
   small: //farm6.staticflickr.com/5757/30065321114_e26ce77ee2_n.jpg
   title: Pórtico da entrada da cidade de Barra Longa em meio a lama
-  credits: Lucas Bois
-  subtitle: Trilhos de trem
+  credits: null
+  subtitle: null
 date: 2016-10-28T22:58:23.677Z
 published_at: 2016-10-28T22:58:23.677Z
 
