@@ -19,6 +19,21 @@ mixin metadata(position, post)
       meta(itemprop="name" content="Brasil de Fato")
       link(itemprop="sameAs" href="https://www.brasildefato.com.br")
 
+mixin weeklyShow(index)
+  if page.service_06
+    h3.section-name Programa Semanal
+    .service
+      - var service = page.service_06
+      - var published_at = utc_to_brt(service.date)
+      a(href=service.url, itemprop="url")
+        h4.title=service.title
+      time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
+      if service.audio
+        +audio-player(index, service.audio)
+      if config.toggles._pio0zWc4_audio_on_lists
+        a(href='programa-semanal' class="button" title="link para mais notícias")
+          span= `Mais Programas Semanais`
+
 mixin services(initial_index)
   h3.section-name Serviços
   -
@@ -121,15 +136,19 @@ append content
                   h4.title= column.title
             if column.audio
               +audio-player(555, column.audio)
+        if config.toggles._lWzSf1WX_weekly_radio_program
+          +weeklyShow(101)
 
         .services
-          +services(101)
+          +services(102)
 
         .facebook
           +facebook-widget(facebook_url_radioagency)
 
       #sidebar-mobile
-        +services(201)
+        if config.toggles._lWzSf1WX_weekly_radio_program
+          +weeklyShow(201)
+        +services(202)
         h3.section-name Mais Notícias
 block footer
   include _partial/home_footer
