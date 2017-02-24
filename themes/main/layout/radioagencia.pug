@@ -136,6 +136,10 @@ append content
                   h4.title= column.title
             if column.audio
               +audio-player(555, column.audio)
+            if config.toggles._pio0zWc4_audio_on_lists
+              a(href='/colunistas/' class="button" title="link para mais notícias")
+                span= `Mais Colunas`
+
         if config.toggles._lWzSf1WX_weekly_radio_program
           +weeklyShow(101)
 

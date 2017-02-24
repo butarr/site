@@ -1,4 +1,5 @@
 extends base
+include _partial/audio_player
 
 
 block title
@@ -49,7 +50,7 @@ append content
     section#news-list(class= "list" itemscope itemtype="http://schema.org/ItemList")
       - var position= 0
       - var list = page.news || page.list
-      each post in list
+      each post, index in list
         - var published_at = utc_to_brt(post.date)
 
         .news-item-link(class= "divisor")
@@ -82,5 +83,7 @@ append content
                 h3.title(itemprop= "headline")= post.title
                 p.description(itemprop="description")= post.description
                 time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+          if post.audio && config.toggles._pio0zWc4_audio_on_lists
+            +audio-player(index, post.audio)
 
       include _partial/pagination
