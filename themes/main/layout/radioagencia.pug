@@ -40,20 +40,21 @@ mixin columnist(index)
         a(href='/colunistas/' class="button" title="link para mais notícias")
           span= `Mais Colunas`
 
-mixin weeklyShow(index)
-  if page.service_06
+mixin weeklyShows(initial_index)
+  if page.radio_01 || page.radio_02
     h3.section-name Programa Semanal
-    .service
-      - var service = page.service_06
-      - var published_at = utc_to_brt(service.date)
-      a(href=service.url, itemprop="url")
-        h4.title=service.title
-      time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
-      if service.audio
-        +audio-player(index, service.audio)
-      if config.toggles._pio0zWc4_audio_on_lists
-        a(href='programa-semanal' class="button" title="link para mais notícias")
-          span= `Mais Programas Semanais`
+    - var radios = ['SP', 'PE']
+    each radio_data, index in radios
+      if page[`radio_0${index+1}`]
+        .service
+          - var radio = page[`radio_0${index+1}`]
+          a(href=radio.url, itemprop="url")
+            h4.title=radio.title
+          if radio.audio
+            +audio-player(initial_index++, radio.audio)
+    if config.toggles._pio0zWc4_audio_on_lists
+      a(href='programa-semanal' class="button" title="link para mais notícias")
+        span= `Mais Programas Semanais`
 
 mixin services(initial_index)
   h3.section-name Serviços
@@ -144,7 +145,7 @@ append content
         +columnist(555)
 
         if config.toggles._lWzSf1WX_weekly_radio_program
-          +weeklyShow(101)
+          +weeklyShows(101)
 
         .services
           +services(102)
@@ -155,7 +156,7 @@ append content
       #sidebar-mobile
         +columnist(556)
         if config.toggles._lWzSf1WX_weekly_radio_program
-          +weeklyShow(201)
+          +weeklyShows(201)
         +services(202)
         h3.section-name Mais Notícias
 block footer
