@@ -5,6 +5,7 @@ _config.yml
 *.log
 node_modules/
 public/
+html/
 .deploy*/db.json
 node_modules
 themes/**/source/
