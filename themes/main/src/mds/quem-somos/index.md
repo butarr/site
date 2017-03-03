@@ -26,10 +26,10 @@ content: |
   </div>
   <h3 class="title underline">Site Brasil de Fato</h3>
   <dl class="list">
-    <dt>Coordenação:</dt>
-    <dd>Beatriz Pasqualino</dd>
+    <dt>Coordenação de Jornalismo:</dt>
+    <dd>Vivian Fernandes</dd>
     <dt>Jornalismo:</dt>
-    <dd>Vivian Fernandes, Camila Rodrigues da Silva, Simone Freire, José Eduardo Bernardes, Rafael Tatemoto, Rute Pina, Lilian Campelo, Cristiane Sampaio, Mauro Ramos e Juliana Golçalves</dd>
+    <dd>Camila Rodrigues da Silva, Simone Freire, José Eduardo Bernardes, Rafael Tatemoto, Rute Pina, Lilian Campelo, Cristiane Sampaio, Mauro Ramos e Juliana Golçalves</dd>
     <dt>Audiovisual:</dt>
     <dd>Norma Odara e Marcelo Cruz</dd>
     <dt>Rede de Colaboração:</dt>
