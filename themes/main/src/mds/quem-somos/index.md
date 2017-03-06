@@ -29,21 +29,21 @@ content: |
     <dt>Coordenação de Jornalismo:</dt>
     <dd>Vivian Fernandes</dd>
     <dt>Jornalismo:</dt>
-    <dd>Camila Rodrigues da Silva, Simone Freire, José Eduardo Bernardes, Rafael Tatemoto, Rute Pina, Lilian Campelo, Cristiane Sampaio, Mauro Ramos e Juliana Golçalves</dd>
+    <dd>Camila Rodrigues da Silva, Simone Freire, José Eduardo Bernardes, Rafael Tatemoto, Rute Pina, Lilian Campelo, Cristiane Sampaio, Daniela Stefano, Mauro Ramos, Julia Dolce e Juliana Golçalves</dd>
     <dt>Audiovisual:</dt>
     <dd>Norma Odara e Marcelo Cruz</dd>
     <dt>Rede de Colaboração:</dt>
     <dd>Luiz Felipe Albuquerque</dd>
     <dt>Arte:</dt>
     <dd>Jose Bruno Lima e Wilcker Morais</dd>
-    <dt>Tradução:</dt>
-    <dd>Maria Julia Gimenez</dd>
     <dt>Operação de áudio:</dt>
     <dd>Jorge Mayer</dd>
     <dt>Comercial:</dt>
     <dd>Raíssa Lazarini</dd>
+    <dt>Tecnologia:</dt>
+    <dd>Nicholas Neto</dd>
     <dt>Estagiários:</dt>
-    <dd>Julia Dolce, Laura Viana, Nadine Nascimento, Nicholas Neto, Gabriela Lucena e Giuliana Marquesi</dd>
+    <dd>Mayara Paixão, Nadine Nascimento, Gabriela Lucena e Giuliana Marquesi</dd>
   </dl>
   <h3 class="title underline">Impresso Minas Gerais</h3>
   <dl class="list">
