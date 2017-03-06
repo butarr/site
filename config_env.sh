@@ -63,8 +63,6 @@ toggles:
   _iftEQfOR_columnist_page: ${TOGGLE_iftEQfOR_COLUMNIST_PAGE:-false}
   _pio0zWc4_audio_on_lists: ${TOGGLE_pio0zWc4_AUDIO_ON_LISTS:-false}
   _lWzSf1WX_weekly_radio_program: ${TOGGLE_lWzSf1WX_WEEKLY_RADIO_PROGRAM:-false}
-  _css_version: ${TOGGLE_css_version:-false}
-  _js_version: ${TOGGLE_js_version:-false}
 feed:
   type: rss2
   limit: 20
