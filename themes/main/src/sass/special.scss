@@ -114,6 +114,7 @@
     padding-left: 25px;
     padding-right: 25px;
     margin: 0 auto;
+    word-wrap: break-word;
 
     @include media-query(THREE) {
       padding-left: 0;
@@ -245,6 +246,14 @@
       padding: 0 5px;
       max-width: (2 * $column-width);
       width: 100%;
+    }
+
+    .link + .link {
+      padding-top: 25px;
+
+      @include media-query(FOUR) {
+        padding-top: 0px;
+      }
     }
 
     .link-figure-title {
