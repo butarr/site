@@ -271,10 +271,9 @@ append content
             - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
             +footer-article("featured-10", post, imageDescription)
 
-          if config.toggles.banner_radioagencia
-            div(class="radioagency-banner-mobile" class="spacing" id="radioagency-banner-mobile")
-              a(itemprop="url" target="_blank" href="http://brasildefato.com.br/radioagencia" title="Radioagência Brasil de Fato")
-                figure(style=`background-image: url("/img/banner-radioagencia-mobile.gif");` title="Radioagência Brasil de Fato" itemscope itemtype="https://schema.org/ImageObject")
+          div(class="radioagency-banner-mobile" class="spacing" id="radioagency-banner-mobile")
+            a(itemprop="url" target="_blank" href="http://brasildefato.com.br/radioagencia" title="Radioagência Brasil de Fato")
+              figure(style=`background-image: url("/img/banner-radioagencia-mobile.gif");` title="Radioagência Brasil de Fato" itemscope itemtype="https://schema.org/ImageObject")
 
           section.printed-news(class="spacing")
             +printed-news-listings(page)
@@ -356,10 +355,9 @@ append content
                       h3.title(id="most_read_"+cont++)= post.title
 
         aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
-          if config.toggles.banner_radioagencia
-            div(class="radioagency-banner-desktop" class="spacing")
-              a(itemprop="url" target="_blank" href="http://brasildefato.com.br/radioagencia" title="Radioagência Brasil de Fato")
-                figure(style=`background-image: url("/img/banner-radioagencia-desktop.gif");` title="Radioagência Brasil de Fato" itemscope itemtype="https://schema.org/ImageObject")
+          div(class="radioagency-banner-desktop" class="spacing")
+            a(itemprop="url" target="_blank" href="http://brasildefato.com.br/radioagencia" title="Radioagência Brasil de Fato")
+              figure(style=`background-image: url("/img/banner-radioagencia-desktop.gif");` title="Radioagência Brasil de Fato" itemscope itemtype="https://schema.org/ImageObject")
 
           if page.spotlight_03
             +spotlight_03_desktop(page.spotlight_03)
