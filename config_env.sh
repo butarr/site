@@ -60,7 +60,6 @@ toggles:
   last_news: ${TOGGLE_LAST_NEWS:-false}
   _D6fenTno_adsense: ${TOGGLE_D6fenTno_ADSENSE:-false}
   _test_environment: ${TOGGLE_TEST_ENVIROMENT:-false}
-  _pio0zWc4_audio_on_lists: ${TOGGLE_pio0zWc4_AUDIO_ON_LISTS:-false}
   _lWzSf1WX_weekly_radio_program: ${TOGGLE_lWzSf1WX_WEEKLY_RADIO_PROGRAM:-false}
 feed:
   type: rss2

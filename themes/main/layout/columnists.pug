@@ -54,7 +54,7 @@ append content
                 h3.title(itemprop="headline")= post.title
                 p.description(itemprop="description")= post.description
                 time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
-          if post.audio && config.toggles._pio0zWc4_audio_on_lists
+          if post.audio
             +audio-player(index, post.audio)
 
       include _partial/pagination

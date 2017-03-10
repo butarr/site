@@ -36,9 +36,8 @@ mixin columnist(index)
             h4.title= column.title
       if column.audio
         +audio-player(index, column.audio)
-      if config.toggles._pio0zWc4_audio_on_lists
-        a(href='/colunistas/' class="button" title="link para mais notícias")
-          span= `Mais Colunas`
+      a(href='/colunistas/' class="button" title="link para mais notícias")
+        span= `Mais Colunas`
 
 mixin weeklyShows(initial_index)
   if page.radio_01 || page.radio_02
@@ -52,9 +51,8 @@ mixin weeklyShows(initial_index)
             h4.title=radio.title
           if radio.audio
             +audio-player(initial_index++, radio.audio)
-    if config.toggles._pio0zWc4_audio_on_lists
-      a(href='programa-semanal' class="button" title="link para mais notícias")
-        span= `Mais Programas Semanais`
+    a(href='programa-semanal' class="button" title="link para mais notícias")
+      span= `Mais Programas Semanais`
 
 mixin services(initial_index)
   h3.section-name Serviços
@@ -86,9 +84,8 @@ mixin services(initial_index)
       time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
       if service.audio
         +audio-player(initial_index++, service.audio)
-      if config.toggles._pio0zWc4_audio_on_lists
-        a(href=service_data.path class="button" title="link para mais notícias")
-          span= `Mais ${service_data.name}`
+      a(href=service_data.path class="button" title="link para mais notícias")
+        span= `Mais ${service_data.name}`
 
 block title
   title=`Radioagência ${config.separator} ${config.title}`
