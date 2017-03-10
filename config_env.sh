@@ -56,10 +56,8 @@ theme: main
 
 #Toggles
 toggles:
-  last_news: ${TOGGLE_LAST_NEWS:-false}
   _D6fenTno_adsense: ${TOGGLE_D6fenTno_ADSENSE:-false}
   _test_environment: ${TOGGLE_TEST_ENVIROMENT:-false}
-  _lWzSf1WX_weekly_radio_program: ${TOGGLE_lWzSf1WX_WEEKLY_RADIO_PROGRAM:-false}
 feed:
   type: rss2
   limit: 20
