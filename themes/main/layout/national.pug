@@ -323,10 +323,11 @@ append content
                 ol
                   - var index = 0;
                   each post in page.last_news
-                    - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
                     li(itemprop="itemListElement")
-                      a(itemprop="url" href=post.path)
-                        figure(style=`background-image: url(${post.cover.small});` title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
+                      if (post.cover)
+                        - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
+                        a(itemprop="url" href=post.path)
+                          figure(style=`background-image: url(${post.cover.small});` title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
                       a(itemprop="url" href=post.path)
                         h3.title= post.title
                 a(href="/ultimas_noticias/" class="button" title="link para mais notícias")
