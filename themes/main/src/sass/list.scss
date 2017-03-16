@@ -25,9 +25,9 @@
   display: block;
 
   .image {
-    margin: 0 10px 5px 0;
-    width: 110px;
     float: left;
+    width: 110px;
+    margin: 0 10px 5px 0;
 
     @include media-query(TWO) {
       width: 150px;
@@ -36,8 +36,8 @@
   }
 
   .content.no-image {
-    width: 100%;
     min-height: 150px;
+    width: 100%;
   }
 
   .title {
