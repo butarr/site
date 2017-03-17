@@ -4,10 +4,9 @@
 @import '_helpers/mixins';
 
 #radioagency {
-  @include get-font(RADIOAGENCY);
-  @include columnist;
   @include button;
-
+  @include columnist;
+  @include get-font(RADIOAGENCY);
   width: 100%;
 
   @include media-query(FIVE) {
@@ -16,8 +15,8 @@
   }
 
   .divisor {
-    padding: 20px 0;
     border-bottom: 1px solid $content-divisor;
+    padding: 20px 0;
 
     &:last-child {
       border: 0;
@@ -26,8 +25,8 @@
 
   .section-name {
     @include section-name;
-    padding-top: $vertical-space;
     margin-bottom: 0;
+    padding-top: $vertical-space;
   }
 
   .service + .service {
@@ -99,21 +98,20 @@
 #radioagency .info-news {
   width: 100%;
 
-
   @include media-query(THREE) {
-    padding-left: 15px;
     max-width: 320px;
+    padding-left: 15px;
     padding-top: 0;
   }
 }
 
 #radioagency .sidebar {
-  width: 100%;
   display: inline-block;
+  width: 100%;
 
   @include media-query(FIVE) {
-    padding-top: $vertical-space;
     max-width: 380px;
+    padding-top: $vertical-space;
 
     .progress-and-source {
       height: 38px;
