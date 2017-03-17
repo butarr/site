@@ -3,8 +3,8 @@
 @import '_helpers/constants';
 
 #tabloid {
-  @include get-font(TABLOID);
   @include button;
+  @include get-font(TABLOID);
 
   p {
     margin-bottom: $paragraph-space;
@@ -15,11 +15,11 @@
   }
 
   .issuu {
-    margin-bottom: 37px;
     display: -webkit-flex; //Old Safari
     display: flex;
     -webkit-flex-direction: column;  //Old Safari
     flex-direction: column;
+    margin-bottom: 37px;
   }
 
   img {
