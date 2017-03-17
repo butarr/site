@@ -15,12 +15,10 @@
   }
 
   img {
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
 }
-
-
 
 #old_post header {
   .hat {
@@ -39,8 +37,8 @@
     margin-bottom: 20px;
 
     figcaption {
-      text-align: right;
       margin-top: 10px;
+      text-align: right;
     }
   }
 
@@ -68,9 +66,9 @@
     padding-bottom: 65px;
 
     footer .share-bar {
-      width: 100%;
       position: absolute;
       bottom: 0;
+      width: 100%;
       padding-bottom: 10px;
     }
   }
@@ -91,9 +89,9 @@
   }
 
   .share-icon {
+    width: 2.2rem;
     margin: .4rem;
     margin-left: 0;
-    width: 2.2rem;
   }
 
   .share-mobile {
@@ -106,8 +104,8 @@
 
 #old_post header .place-and-time,
 time {
-  padding-bottom: 10px;
   display: block;
+  padding-bottom: 10px;
 
   time {
     display: inline-block;
