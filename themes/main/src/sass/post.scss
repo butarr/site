@@ -3,10 +3,10 @@
 @import '_helpers/constants';
 
 #post {
-  @include get-font(POST);
-  @include page-blockquotes;
-  @include other-news;
   @include button;
+  @include get-font(POST);
+  @include other-news;
+  @include page-blockquotes;
 
   iframe {
     width: 100%;
@@ -38,8 +38,8 @@
   }
 
   img {
-    width: 100%;
     height: inherit;
+    width: 100%;
   }
 
   .ckeditor-img-caption,
@@ -74,8 +74,8 @@
     }
 
     img {
-      width: 100%;
       height: inherit;
+      width: 100%;
     }
 
     .img-container {
@@ -84,8 +84,8 @@
     }
 
     figcaption {
-      text-align: right;
       margin-top: 10px;
+      text-align: right;
     }
   }
 
@@ -100,6 +100,7 @@
 
 #post .sidebar .share-bar {
   display: none;
+
   @include media-query(THREE) {
     @include page-name;
     display: block;
@@ -109,6 +110,7 @@
 #post .advertising-07 {
   display: none;
   height: 150px;
+
   @include media-query(THREE) {
     display: block;
   }
@@ -116,6 +118,7 @@
 
 #post .adsense-04-desktop {
   display: none;
+
   @include media-query(THREE) {
     display: block;
   }
@@ -148,35 +151,34 @@
 
 #post .details-bar .share-bar {
   .share-icons-container {
-    display: flex;
     display: -webkit-flex; //Old Safari
-    justify-content: flex-end;
+    display: flex;
     -webkit-justify-content: flex-end; //Old Safari
+    justify-content: flex-end;
   }
 }
 
 #post .tabloid-link-section {
-  display: flex;
   display: -webkit-flex; //Old Safari
-  flex-direction: column;
-  -webkit-flex-direction: column; //Old Safari
-  align-items: center;
+  display: flex;
   -webkit-align-items: center; //Old Safari
+  align-items: center;
+  -webkit-flex-direction: column; //Old Safari
+  flex-direction: column;
+  border-top: 3px solid $title-underline;
+  margin: 32px auto 20px;
+  padding-top: 10px;
 
   @include media-query (THREE) {
-    flex-direction: row;
-    -webkit-flex-direction: row; //Old Safari
-    align-items: flex-start;
     -webkit-align-items: flex-start; //Old Safari
+    align-items: flex-start;
+    -webkit-flex-direction: row; //Old Safari
+    flex-direction: row;
   }
 
-  border-top: 3px solid $title-underline;
-  padding-top: 10px;
-  margin: 32px auto 20px;
-
   .tabloid-link-img {
-    flex-shrink: 0;
     -webkit-flex-shrink: 0; //Old Safari
+    flex-shrink: 0;
     width: 220px;
 
     @include media-query (THREE) {
@@ -189,18 +191,18 @@
   }
 
   .tabloid-link-text-container {
-    display: flex;
     display: -webkit-flex; //Old Safari
-    flex-direction: column;
-    -webkit-flex-direction: column; //Old Safari
-    justify-content: center;
-    -webkit-justify-content: center; //Old Safari
-    align-self: center;
+    display: flex;
     -webkit-align-self: center; //Old Safari
-
-    padding: 0 30px;
+    align-self: center;
+    -webkit-flex-direction: column; //Old Safari
+    flex-direction: column;
+    -webkit-justify-content: center; //Old Safari
+    justify-content: center;
     max-width: $two-columns;
     margin-top: 5px;
+    padding: 0 30px;
+
     @include media-query (THREE) {
       margin-top: 0;
     }
@@ -208,6 +210,7 @@
 
   .tabloid-link-text {
     text-align: center;
+
     @include media-query (THREE) {
       text-align: left;
     }
@@ -229,17 +232,18 @@
 
 #post .sidebar {
   padding-left: 15px;
+
   @include media-query(THREE) {
-    min-width: $column-width + $column-width / 2;
-    max-width: $column-width + $column-width / 2;
     min-height: $column-width + $column-width / 2;
+    max-width: $column-width + $column-width / 2;
+    min-width: $column-width + $column-width / 2;
   }
 }
 
 #post header .place-and-time,
 time {
-  padding-bottom: 10px;
   display: block;
+  padding-bottom: 10px;
 
   time {
     display: inline-block;
@@ -247,8 +251,8 @@ time {
 }
 
 #post .audio-item {
-  margin-top: 5px;
   margin-bottom: $paragraph-space;
+  margin-top: 5px;
 
   p {
     margin: 0;
