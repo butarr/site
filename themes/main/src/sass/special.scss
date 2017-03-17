@@ -22,20 +22,20 @@
   }
 
   .cover-credits {
-    background-color: $special-background;
-    text-align: right;
-    padding-top: 5px;
     padding-right: 10px;
+    padding-top: 5px;
+    text-align: right;
+    background-color: $special-background;
   }
 
   #cover {
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    height: 370px;
-    width: 100%;
     position: fixed;
     z-index: -1;
+    height: 370px;
+    width: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @include media-query(THREE) {
       height: 450px;
@@ -88,6 +88,7 @@
 
   .subtitle + .text {
     padding-top: 10px;
+
     @include media-query(THREE) {
       padding-top: 15px;
     }
@@ -111,9 +112,9 @@
 
   .text,
   .subtitle {
+    margin: 0 auto;
     padding-left: 25px;
     padding-right: 25px;
-    margin: 0 auto;
     word-wrap: break-word;
 
     @include media-query(THREE) {
@@ -124,6 +125,7 @@
 
     p + p {
       padding-top: 20px;
+
       @include media-query(THREE) {
         padding-top: 30px;
       }
@@ -140,9 +142,9 @@
 
     .title p {
       display: inline-block;
-      padding-bottom: 3px;
-      margin-bottom: 10px;
       border-bottom: 3px solid $text-color;
+      margin-bottom: 10px;
+      padding-bottom: 3px;
     }
   }
 
@@ -153,18 +155,18 @@
     }
 
     .content-wrapper {
-      padding-bottom: ratio(16, 9);
       position: relative;
-      margin: 0 auto;
       height: 0;
+      margin: 0 auto;
+      padding-bottom: ratio(16, 9);
       overflow: hidden;
 
       iframe {
         position: absolute;
-        top: 0;
         left: 0;
-        width: 100%;
+        top: 0;
         height: 100%;
+        width: 100%;
       }
     }
   }
@@ -175,10 +177,9 @@
     display: flex;
     -webkit-flex-direction: column; //Old Safari
     flex-direction: column;
-
-    background-color: $box-background;
-    padding: 50px 25px;
     margin-top: 50px;
+    padding: 50px 25px;
+    background-color: $box-background;
 
     @include media-query(THREE) {
       padding: 80px 10% 0;
@@ -198,12 +199,12 @@
   .image-centralized {
     display: -webkit-flex; //Old Safari
     display: flex;
+    -webkit-align-items: center; //Old Safari
+    align-items: center;
     -webkit-flex-direction: column; //Old Safari
     flex-direction: column;
     -webkit-justify-content: center; //Old Safari
     justify-content: center;
-    -webkit-align-items: center; //Old Safari
-    align-items: center;
 
     img {
       width: 100%;
@@ -215,37 +216,36 @@
 
     .title p {
       display: inline-block;
-      padding-bottom: 3px;
-      margin-bottom: 10px;
       border-bottom: 3px solid $text-color;
+      margin-bottom: 10px;
+      padding-bottom: 3px;
     }
   }
 
   .links {
     @include column-lateral-spacing;
-    margin: 0 auto;
     position: relative;
-    background-color: $special-background;
     max-width: ((4 * $column-width) + (4 * $lateral-page-space-desktop));
+    margin: 0 auto;
+    background-color: $special-background;
 
     .links-container {
       display: -webkit-flex; //Old Safari
       display: flex;
       -webkit-flex-direction: row; //Old Safari
       flex-direction: row;
-      -webkit-justify-content: space-around; //Old Safari
-      justify-content: space-around;
       -webkit-flex-wrap: wrap; //Old Safari
       flex-wrap: wrap;
+      -webkit-justify-content: space-around; //Old Safari
+      justify-content: space-around;
       padding: 25px 0 0;
     }
 
     .link {
       @include image-rounded-responsive(300px);
-
-      padding: 0 5px;
       max-width: (2 * $column-width);
       width: 100%;
+      padding: 0 5px;
     }
 
     .link + .link {
@@ -279,8 +279,8 @@
     }
 
     .special-link-mobile {
-      width: 100%;
       max-width: 2 * $column-width;
+      width: 100%;
 
       @include media-query(FOUR) {
         display: none;
@@ -292,13 +292,13 @@
 
       @include media-query(FOUR) {
         display: block;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
-        border: 2px solid $special-background;
-        border-radius: 5px;
         height: 300px;
         width: 100%;
+        border: 2px solid $special-background;
+        border-radius: 5px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
       }
     }
   }
@@ -306,23 +306,26 @@
   .share-special-top {
     position: fixed;
     bottom: -60px;
+
     @include media-query(THREE) {
-      top: -100px;
       bottom: auto;
+      top: -100px;
     }
   }
 
   .share-special-middle {
     position: fixed;
     bottom: 0;
+
     @include media-query(THREE) {
-      top: 130px;
       bottom: auto;
+      top: 130px;
     }
   }
 
   .share-special-bottom {
     position: relative;
+
     @include media-query(THREE) {
       position: fixed;
     }
@@ -338,11 +341,10 @@
     justify-content: center;
     -webkit-justify-content: center; //Old Safari
 
+    z-index: 4;
     width: 100%;
     padding: 10px 0;
     background-color: $special-background;
-    z-index: 4;
-
     -webkit-transition: bottom 1s; //Old Safari
     transition: bottom 1s;
 
@@ -357,11 +359,10 @@
       -webkit-flex-wrap: wrap; //Old Safari
       flex-wrap: wrap;
 
+      z-index: 2;
       width: 45px;
       margin-left: 2%;
       background-color: $special-share-background;
-      z-index: 2;
-
       -webkit-transition: top 1s; //Old Safari
       transition: top 1s;
 
