@@ -79,7 +79,7 @@ mixin services(initial_index)
         if service.audio
           +audio-player(initial_index++, service.audio)
         a(href=service_data.path class="button" title="link para mais notícias")
-          span= `Mais ${service_data.name}`
+          span= `Mais "${service_data.name}"`
 
 block title
   title=`Radioagência ${config.separator} ${config.title}`
