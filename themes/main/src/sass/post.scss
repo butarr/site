@@ -109,7 +109,6 @@
 
 #post .advertising-07 {
   display: none;
-  height: 150px;
 
   @include media-query(THREE) {
     display: block;
