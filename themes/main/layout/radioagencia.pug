@@ -75,17 +75,18 @@ mixin services(initial_index)
       }
     ]
   each service_data, index in services
-    .service
-      - var service = page[`service_0${index+1}`]
-      - var published_at = utc_to_brt(service.date)
-      h3.service-name(class=`service-0${index+1}`)=service_data.name
-      a(href=service.url, itemprop="url")
-        h4.title=service.title
-      time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
-      if service.audio
-        +audio-player(initial_index++, service.audio)
-      a(href=service_data.path class="button" title="link para mais notícias")
-        span= `Mais ${service_data.name}`
+    - var service = page[`service_0${index+1}`]
+    if service
+      .service
+        - var published_at = utc_to_brt(service.date)
+        h3.service-name(class=`service-0${index+1}`)=service_data.name
+        a(href=service.url, itemprop="url")
+          h4.title=service.title
+        time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
+        if service.audio
+          +audio-player(initial_index++, service.audio)
+        a(href=service_data.path class="button" title="link para mais notícias")
+          span= `Mais ${service_data.name}`
 
 block title
   title=`Radioagência ${config.separator} ${config.title}`
