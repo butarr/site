@@ -11,17 +11,17 @@ $social-margin: 10px;
   @include get-font(FOOTER);
   display: -webkit-flex; //Old Safari
   display: flex;
-  -webkit-flex-direction: column; //Old Safari
-  flex-direction: column;
   -webkit-align-items: center; //Old Safari
   align-items: center;
+  -webkit-flex-direction: column; //Old Safari
+  flex-direction: column;
   width: 100%;
   padding: 25px 0;
   background-color: $background;
 
   i {
-    color: $social-media-icons-color;
     padding: 4px;
+    color: $social-media-icons-color;
   }
 }
 
@@ -63,8 +63,8 @@ $social-margin: 10px;
 
   @include media-query(THREE) {
     width: 3 * $column-width;
-    padding: 20px 0;
     margin: 0 auto;
+    padding: 20px 0;
   }
 
   @include media-query(FOUR) {
@@ -78,15 +78,15 @@ $social-margin: 10px;
 
   @include media-query(THREE) {
     @include column-lateral-spacing($lateral-page-space-desktop);
-    width: 100%;
     max-width: (3 * $column-width) + (2 * $lateral-page-space-desktop);
+    width: 100%;
   }
 }
 
 #page-footer .footer-header {
   margin-bottom: 10px;
-
   text-align: center;
+
   @include media-query(THREE) {
     text-align: inherit;
   }
@@ -155,16 +155,17 @@ $social-margin: 10px;
 }
 
 #page-footer .footer-cc-block {
-  text-align: center;
   margin-top: 25px;
+  text-align: center;
 
   @include media-query(THREE) {
+    max-width: (2 * $column-width) + (2 * $lateral-page-space-desktop);
     width: 50%;
-    text-align: left;
     margin-left: 80px;
     margin-top: 0;
-    max-width: (2 * $column-width) + (2 * $lateral-page-space-desktop);
+    text-align: left;
   }
+
   @include media-query(THREE) {
     margin-left: 100px;
   }
@@ -188,13 +189,13 @@ $social-margin: 10px;
 
 .div-env-test {
   position: fixed;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 7%;
-  background-color: $test-background;
   z-index: 999;
+  height: 7%;
+  width: 100%;
+  background-color: $test-background;
   opacity: 1;
 }
 
