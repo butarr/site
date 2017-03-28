@@ -168,8 +168,8 @@ append content
           if page.related_news && page.related_news.length
             +news_list('Relacionadas', page.related_news)
 
-          if site.data.advertisings.advertising-07
-            - var post=site.data.advertisings.advertising-07
+          if site.data.advertisings.advertising_07
+            - var post=site.data.advertisings.advertising_07
             .advertising-07(itemscope itemtype="http://schema.org/WPAdBlock")
               a(itemprop="url" href=post.link target="_blank")
                 img(src=post.image alt=post.title title=post.title itemprop="image")
