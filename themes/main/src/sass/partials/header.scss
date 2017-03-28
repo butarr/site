@@ -3,8 +3,8 @@
 @import '../_helpers/constants';
 @import '../_helpers/mixins';
 
-$lateral-margin: 10px;
 $image-height: 1.6rem;
+$lateral-margin: 10px;
 $logo-small-height: 2.5rem;
 $logo-big-height: 5.2rem;
 
@@ -19,10 +19,10 @@ $logo-big-height: 5.2rem;
 #page-header .banner-header {
   display: -webkit-flex; //Old Safari
   display: flex;
-  -webkit-justify-content: center; //Old Safari
-  justify-content: center;
   -webkit-align-items: center; //Old Safari
   align-items: center;
+  -webkit-justify-content: center; //Old Safari
+  justify-content: center;
   height: $header-height-contracted;
 
   @include media-query(FOUR) {
@@ -34,10 +34,10 @@ $logo-big-height: 5.2rem;
 #page-header .banner-special {
   display: -webkit-flex; //Old Safari
   display: flex;
-  -webkit-justify-content: center; //Old Safari
-  justify-content: center;
   -webkit-align-items: center; //Old Safari
   align-items: center;
+  -webkit-justify-content: center; //Old Safari
+  justify-content: center;
   height: $header-height-contracted;
 }
 
@@ -79,8 +79,8 @@ $logo-big-height: 5.2rem;
   left: 3px;
   top: 15px;
   height: $image-height;
-  margin-top: 5px;
   margin-left: $lateral-margin;
+  margin-top: 5px;
 
   @include media-query(FOUR) {
     display: none;
@@ -114,15 +114,14 @@ $logo-big-height: 5.2rem;
   display: flex;
   -webkit-align-items: center; //Old Safari
   align-items: center;
-
   position: absolute;
-  top: 24%;
   right: 10%;
+  top: 24%;
 
   @include media-query(FOUR) {
-    width: 230px;
     -webkit-justify-content: flex-end; //Old Safari
     justify-content: flex-end;
+    width: 230px;
   }
 
   @include media-query (FIVE) {
@@ -133,8 +132,8 @@ $logo-big-height: 5.2rem;
     display: none;
 
     i {
-      color: $social-media-icons-color;
       padding: 4px;
+      color: $social-media-icons-color;
     }
 
 
