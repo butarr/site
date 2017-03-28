@@ -58,21 +58,14 @@ mixin services(initial_index)
   h3.section-name Serviços
   -
     var services = [
-      {
-        name: 'Hoje na História', path: 'hoje-na-historia'
-      },
-      {
-        name: 'Alimento é Saúde', path: 'alimento-e-saude'
-      },
-      {
-        name: 'Nossos Direitos', path: 'nossos-direitos'
-      },
-      {
-        name: 'Fatos Curiosos da História', path: 'fatos-curiosos'
-      },
-      {
-        name: 'Mosaico Cultural', path: 'mosaico-cultural'
-      }
+      { name: 'Hoje na História', path: 'hoje-na-historia' },
+      { name: 'Alimento é Saúde', path: 'alimento-e-saude' },
+      { name: 'Nossos Direitos', path: 'nossos-direitos' },
+      { name: 'Fatos Curiosos da História', path: 'fatos-curiosos' },
+      { name: 'Mosaico Cultural', path: 'mosaico-cultural' },
+      { name: 'Conectados', path: 'conectados' },
+      { name: 'Momento Agroecológico', path: 'momento-agroecologico' },
+      { name: 'Fala Aí', path: 'fala-ai' }
     ]
   each service_data, index in services
     - var service = page[`service_0${index+1}`]
