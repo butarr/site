@@ -176,6 +176,7 @@
     padding: 8px 0;
     text-align: center;
     box-shadow: 0 1px 1px $button-border;
+    
     @include media-query (THREE) {
       width: 200px;
     }
@@ -207,10 +208,10 @@
     .pagination-button-container {
       display: -webkit-flex; //Old Safari
       display: flex;
-      -webkit-justify-content: center; //Old Safari
-      justify-content: center;
       -webkit-align-items: center; //Old Safari
       align-items: center;
+      -webkit-justify-content: center; //Old Safari
+      justify-content: center;
     }
   }
 }
@@ -258,8 +259,8 @@
     }
 
     .other-article-image {
-      background-size: cover;
       margin-right: .25em;
+      background-size: cover;
     }
   }
 }
