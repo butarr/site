@@ -19,13 +19,13 @@ $item-padding: 5px 18px;
   display: none;
 
   @include media-query(FOUR) {
-    height: 80px;
     display: -webkit-flex; //Old Safari
     display: flex;
     -webkit-flex-direction: column; //Old Safari
     flex-direction: column;
     -webkit-justify-content: center; //Old Safari
     justify-content: center;
+    height: 80px;
   }
 
   @include media-query(FIVE) {
@@ -35,18 +35,18 @@ $item-padding: 5px 18px;
 
 .full-menu-list {
   @include get-font(MENU_DESKTOP);
-  width: 3 * $column-width;
   height: 80px;
+  width: 3 * $column-width;
   display: -webkit-flex; //Old Safari
   display: flex;
-  -webkit-justify-content: center; //Old Safari
-  justify-content: center;
   -webkit-align-items: center; //Old Safari
   align-items: center;
+  -webkit-justify-content: center; //Old Safari
+  justify-content: center;
 
   @include media-query(FOUR) {
-    width: 100%;
     height: 40px;
+    width: 100%;
   }
 
   li {
@@ -59,8 +59,8 @@ $item-padding: 5px 18px;
   }
 
   li:hover {
-    background-color: $menu-over;
     padding: $item-padding;
+    background-color: $menu-over;
   }
 
   li + li {
