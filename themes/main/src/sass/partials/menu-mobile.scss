@@ -6,34 +6,34 @@
 #menu-mobile {
   @include transition-left;
   @include get-font(MENU_MOBILE);
-  top: 5px;
-  left: -270px;
-  width: 260px;
-  height: 100vh;
-  box-sizing: border-box;
-  background-color: $menu-over;
-  box-shadow: 0 0 19px 6px $menu-shadow-color;
   position: fixed;
+  left: -270px;
+  top: 5px;
   z-index: 101;
+  height: 100vh;
+  width: 260px;
+  background-color: $menu-over;
+  box-sizing: border-box;
+  box-shadow: 0 0 19px 6px $menu-shadow-color;
 
   &.open {
     left: 0;
   }
 
   i {
-    color: $social-media-icons-color;
     padding: 4px;
     font-size: 1.5rem;
+    color: $social-media-icons-color;
   }
 }
 
 #menu-mobile .menu-header {
   display: -webkit-flex; //Old Safari
   display: flex;
-  -webkit-justify-content: space-between; //Old Safari
-  justify-content: space-between;
   -webkit-align-items: center; //Old Safari
   align-items: center;
+  -webkit-justify-content: space-between; //Old Safari
+  justify-content: space-between;
   height: 60px;
   padding: 10px 20px 0;
 
@@ -47,19 +47,19 @@
 }
 
 #menu-mobile .menu-scrollable {
-  overflow-y: auto;
   height: 80%;
   padding: 10px;
+  overflow-y: auto;
 }
 
 #menu-mobile .social-media-icons {
   height: 55px;
   display: -webkit-flex; //Old Safari
   display: flex;
-  -webkit-justify-content: center; //Old Safari
-  justify-content: center;
   -webkit-align-items: center; //Old Safari
   align-items: center;
+  -webkit-justify-content: center; //Old Safari
+  justify-content: center;
 
   img {
     height: 1.6em;
@@ -76,10 +76,10 @@
   }
 
   a {
-    padding: 10px 8px;
     display: -webkit-flex; //Old Safari
     display: flex;
     -webkit-justify-content: center; //Old Safari
     justify-content: center;
+    padding: 10px 8px;
   }
 }
