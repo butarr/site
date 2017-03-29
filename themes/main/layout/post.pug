@@ -121,7 +121,7 @@ append content
           .author-time
             address.author(rel="author" itemprop="author")= page.author
             .place-and-time
-              span.place(itemprop="contentLocation")= page.place + ', '
+              span.place(itemprop="contentLocation")!= page.place + ', '
               time(itemprop="datePublished" datetime=published_at.toISOString())= full_date(published_at)
               meta(itemprop="dateModified" content=published_at.toISOString())
           .share-mobile
