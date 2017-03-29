@@ -22,18 +22,18 @@ $lateral-margin: 10px;
 #search-tool {
   @include get-font(SEARCH);
   display: none;
-  width: 100%;
   position: fixed;
-  top: $header-height-contracted;
   right: 0;
+  top: $header-height-contracted;
+  width: 100%;
   padding: 0 $vertical-space;
   background-color: $background;
 
   @include media-query(FOUR) {
     position: absolute;
-    width: 180px;
     right: -28px;
     top: 33px;
+    width: 180px;
     padding: 0;
   }
 
@@ -51,9 +51,9 @@ $lateral-margin: 10px;
 #search-tool-404 {
   @include get-font(SEARCH);
   display: block;
-  width: 100%;
   position: relative;
   right: 0;
+  width: 100%;
   border: 1px solid $box-border-neutral;
   border-radius: 3px;
   box-shadow: 0 1px 1px $box-border-neutral;
@@ -86,25 +86,25 @@ $lateral-margin: 10px;
 
   // Sets to zero search box padding
   .gsc-search-box {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   // Hides search box border created by Google
   .gsc-control-cse-pt_PT {
-    padding: 0;
     width: 100%;
     border: 0;
+    padding: 0;
     background-color: transparent;
   }
 
   // Sets config from search box white space
   .gsc-input {
     height: 27px;
-    padding: 0;
     width: 100%;
-    border-radius: 13px;
+    padding: 0;
     border-color: $content-divisor;
+    border-radius: 13px;
 
     @include media-query(FOUR) {
       border-color: $inverted-base;
@@ -124,17 +124,17 @@ $lateral-margin: 10px;
   // SEARCH RESULTS
   // Adjusts results search to be responsive
   .gsc-results-wrapper-overlay {
-    width: 96%;
-    height: 96%;
     top: 2%;
     left: 2%;
+    height: 96%;
+    width: 96%;
     padding: 25px 10px;
 
     @include media-query(FOUR) {
-      width: 76%;
-      height: 86%;
-      top: 7%;
       left: 12%;
+      top: 7%;
+      height: 86%;
+      width: 76%;
       padding: 30px;
     }
    }
@@ -158,9 +158,9 @@ $lateral-margin: 10px;
 
   // Highlight the pagination buttons at the bottom of search results
   .gsc-cursor-page {
+    border: 2px solid $box-border-neutral;
     margin-top: 10px;
     padding: 4px 8px;
-    border: 2px solid $box-border-neutral;
     text-decoration: none;
 
     &:hover {
