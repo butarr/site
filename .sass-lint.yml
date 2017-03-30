@@ -32,6 +32,48 @@ rules:
   -
     exclude: ['media-query']
   force-pseudo-nesting: 0
+  property-sort-order:
+    - 1
+    -
+      order:
+        - @include
+        - display
+        - -webkit-align-items
+        - align-items
+        - -webkit-flex-wrap
+        - flex-wrap
+        - -webkit-flex-shrink
+        - flex-shrink
+        - -webkit-justify-content
+        - justify-content
+        - position
+        - bottom
+        - left
+        - right
+        - top
+        - float
+        - z-index
+        - height
+        - max-height
+        - min-height
+        - max-width
+        - min-width
+        - width
+        - border
+        - border-color
+        - border-top
+        - border-radius
+        - margin
+        - padding
+        - padding-right
+        - font
+        - font-family
+        - font-size
+        - color
+        - text-align
+        - text-decoration
+        - text-shadow
+        - text-transform
   force-element-nesting: 0
   no-ids: 0
   property-sort-order: 0
