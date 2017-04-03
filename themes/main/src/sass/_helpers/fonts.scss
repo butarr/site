@@ -952,7 +952,9 @@ $number-size: 1.3rem;
   }
 
   .image-centralized {
-    .title {
+    text-align: center;
+
+    .image-title {
       font: bold 1.2rem / 1 $family-serif;
       color: $text-color;
 
