@@ -33,6 +33,10 @@
     border-top: 1px solid $box-border-neutral;
   }
 
+  .columnist-radio + .columnist-radio {
+    border-top: 1px solid $box-border-neutral;
+  }
+
   .title,
   .description,
   .title-featured {
@@ -46,6 +50,10 @@
 
   .facebook {
     padding-top: $vertical-space;
+  }
+
+  .columnist-radio {
+    padding-bottom: $vertical-space;
   }
 }
 
