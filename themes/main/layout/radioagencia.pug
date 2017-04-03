@@ -19,25 +19,36 @@ mixin metadata(position, post)
       meta(itemprop="name" content="Brasil de Fato")
       link(itemprop="sameAs" href="https://www.brasildefato.com.br")
 
-mixin columnist(index)
+mixin columnist(columnist, column)
+  .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
+    .photo
+      a(href=`/colunistas/${columnist.path}`, title="link para a pagina do colunista")
+        img(alt=`Foto de ${columnist.name}` src=columnist.photo itemprop="image")
+    .column
+      a(href=`/colunistas/${columnist.path}`, title="link para a pagina do colunista")
+        span.name(itemprop="name")= columnist.name
+      a(href=column.path itemprop="url")
+        h4.title= column.title
+  if column.audio
+    +audio-player(index, column.audio)
+
+mixin columnists(index)
+  h3.section-name Colunistas
   if page.column_01
-    h3.section-name Coluna
     - var column = page.column_01
     - var columnist = site.data.columnists[column.columnist];
     if columnist
-      .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
-        .photo
-          a(href=`/colunistas/${columnist.path}`, title="link para a pagina do colunista")
-            img(alt=`Foto de ${columnist.name}` src=columnist.photo itemprop="image")
-        .column
-          a(href=`/colunistas/${columnist.path}`, title="link para a pagina do colunista")
-            span.name(itemprop="name")= columnist.name
-          a(href=column.path itemprop="url")
-            h4.title= column.title
-      if column.audio
-        +audio-player(index, column.audio)
-      a(href='/colunistas/' class="button" title="link para mais notícias")
-        span= `Mais Colunas`
+      .columnist-radio
+        +columnist(columnist, column)
+      
+  if page.column_02
+    - var column = page.column_02
+    - var columnist = site.data.columnists[column.columnist];
+    if columnist
+      .columnist-radio
+        +columnist(columnist, column)
+  a(href='/colunistas/' class="button" title="link para mais notícias")
+    span= `Mais Colunas`
 
 mixin weeklyShows(initial_index)
   if page.radio_01 || page.radio_02
@@ -133,7 +144,7 @@ append content
               +audio-player(index+1, post.audio)
 
       aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
-        +columnist(555)
+        +columnists(555)
 
         +weeklyShows(101)
 
@@ -144,7 +155,7 @@ append content
           +facebook-widget(facebook_url_radioagency)
 
       #sidebar-mobile
-        +columnist(556)
+        +columnists(556)
         +weeklyShows(501)
         +services(602)
         h3.section-name Mais Notícias
