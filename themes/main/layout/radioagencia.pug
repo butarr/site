@@ -19,19 +19,6 @@ mixin metadata(position, post)
       meta(itemprop="name" content="Brasil de Fato")
       link(itemprop="sameAs" href="https://www.brasildefato.com.br")
 
-mixin columnist(columnist, column)
-  .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
-    .photo
-      a(href=`/colunistas/${columnist.path}`, title="link para a pagina do colunista")
-        img(alt=`Foto de ${columnist.name}` src=columnist.photo itemprop="image")
-    .column
-      a(href=`/colunistas/${columnist.path}`, title="link para a pagina do colunista")
-        span.name(itemprop="name")= columnist.name
-      a(href=column.path itemprop="url")
-        h4.title= column.title
-  if column.audio
-    +audio-player(index, column.audio)
-
 mixin columnists(index)
   h3.section-name Colunistas
   if page.column_01
@@ -39,14 +26,34 @@ mixin columnists(index)
     - var columnist = site.data.columnists[column.columnist];
     if columnist
       .columnist-radio
-        +columnist(columnist, column)
+        .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
+          .photo
+            a(href=`/colunistas/${columnist.path}`, title="link para a pagina do colunista")
+              img(alt=`Foto de ${columnist.name}` src=columnist.photo itemprop="image")
+          .column
+            a(href=`/colunistas/${columnist.path}`, title="link para a pagina do colunista")
+              span.name(itemprop="name")= columnist.name
+            a(href=column.path itemprop="url")
+              h4.title= column.title
+        if column.audio
+          +audio-player(index, column.audio)
       
   if page.column_02
     - var column = page.column_02
     - var columnist = site.data.columnists[column.columnist];
     if columnist
       .columnist-radio
-        +columnist(columnist, column)
+        .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
+          .photo
+            a(href=`/colunistas/${columnist.path}`, title="link para a pagina do colunista")
+              img(alt=`Foto de ${columnist.name}` src=columnist.photo itemprop="image")
+          .column
+            a(href=`/colunistas/${columnist.path}`, title="link para a pagina do colunista")
+              span.name(itemprop="name")= columnist.name
+            a(href=column.path itemprop="url")
+              h4.title= column.title
+        if column.audio
+          +audio-player(index+1, column.audio)
   a(href='/colunistas/' class="button" title="link para mais notícias")
     span= `Mais Colunas`
 
@@ -155,7 +162,7 @@ append content
           +facebook-widget(facebook_url_radioagency)
 
       #sidebar-mobile
-        +columnists(556)
+        +columnists(557)
         +weeklyShows(501)
         +services(602)
         h3.section-name Mais Notícias
