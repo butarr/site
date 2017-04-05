@@ -50,6 +50,20 @@ mixin columnists(index)
   a(href='/colunistas/' class="button" title="link para mais notícias")
     span= `Mais Colunas`
 
+mixin article(index)
+  h3.section-name Artigo
+  if page.article
+    - var article = page.article
+    - var published_at = utc_to_brt(article.date)
+    .article
+      a(href=article.url title="link para a pagina do artigo")
+        span.name(itemprop="name")= article.author
+      a(href=article.url itemprop="url")
+        h4.title= article.title
+      time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
+      if article.audio
+        +audio-player(index, article.audio)
+
 mixin weeklyShows(initial_index)
   if page.radio_01 || page.radio_02
     h3.section-name Programa Semanal
@@ -143,6 +157,8 @@ append content
       aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
         +columnists(555)
 
+        +article(600)
+
         +weeklyShows(101)
 
         .services
@@ -153,6 +169,7 @@ append content
 
       #sidebar-mobile
         +columnists(557)
+        +article(601)
         +weeklyShows(501)
         +services(602)
         h3.section-name Mais Notícias
