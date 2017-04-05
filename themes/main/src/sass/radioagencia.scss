@@ -12,6 +12,8 @@
   @include media-query(FIVE) {
     display: -webkit-flex; //Old Safari
     display: flex;
+    -webkit-justify-content: space-between; //Old Safari
+    justify-content: space-between;
   }
 
   .divisor {
@@ -118,7 +120,7 @@
   width: 100%;
 
   @include media-query(FIVE) {
-    max-width: 380px;
+    max-width: 360px;
     padding-top: $vertical-space;
 
     .progress-and-source {
