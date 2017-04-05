@@ -1059,6 +1059,13 @@ $number-size: 1.3rem;
     }
   }
 
+  .article {
+    .name {
+      font: bold #{$details-size} / #{$line-separation-small} $family-sans;
+      color: $columnist-name-color;
+    }
+  }
+
   .service-name,
   .section-name {
     font: bold $section-name-size $family-sans;
