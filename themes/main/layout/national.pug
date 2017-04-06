@@ -354,10 +354,10 @@ append content
                       h3.title(id="most_read_"+cont++)= post.title
 
         aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
-          div(class="radioagency-banner-desktop" class="spacing")
-            a(itemprop="url" target="_blank" href="http://brasildefato.com.br/radioagencia" title="Radioagência Brasil de Fato")
-              figure(style=`background-image: url("/img/banner-radioagencia-desktop.gif");` title="Radioagência Brasil de Fato" itemscope itemtype="https://schema.org/ImageObject")
-
+          div(class="spotlight-banner-desktop" class="spacing" itemscope itemtype="http://schema.org/WPAdBlock")
+            a(itemprop="url" target="_blank" href="http://www.cnte.org.br/" title="Publicidade - Greve Geral")
+              figure(style=`background-image: url("img/CNTE.png");` title="Publicidade - Greve Geral" itemscope itemtype="https://schema.org/ImageObject")
+          
           if page.spotlight_03
             +spotlight_03_desktop(page.spotlight_03)
           else if page.advertising_06
