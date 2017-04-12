@@ -32,6 +32,16 @@ deployment:
       - ./config_env.sh:
           environment:
             SITE_URL: "https://cpmidias-teste.brasildefato.com.br"
+            TOGGLE_yhCw8OOd_LAST_NEWS_ANIMATION: "true"
+            TOGGLE_js_version: "true"
+            TOGGLE_D6fenTno_ADSENSE: "true"
+            TOGGLE_css_version: "true"
+            TOGGLE_TEST_ENVIROMENT: "true"
+            BANNER_RADIOAGENCIA: "true"
+            TOGGLE_iftEQfOR_COLUMNIST_PAGE: "true"
+            TOGGLE_LAST_NEWS: "true"
+            TOGGLE_lWzSf1WX_WEEKLY_RADIO_PROGRAM: "true"
+            TOGGLE_pio0zWc4_AUDIO_ON_LISTS: "true"
       - scp -i frida-plain _config.yml frida@cpmidias-teste.brasildefato.com.br:/home/frida/components/site
       - ssh -i frida-plain frida@cpmidias-teste.brasildefato.com.br -C "/home/frida/components/frida-scripts/deploy-site.sh $CIRCLE_SHA1"
       - ssh -i frida-plain frida@cpmidias-teste.brasildefato.com.br -C "PATH=$PATH:/usr/local/node/node-default/bin /home/frida/components/site/hexo-deployer.sh /home/frida/components/site /www/site"
