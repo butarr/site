@@ -1,0 +1,38 @@
+machine:
+  environment:
+  node:
+    version: 4.4.4
+
+dependencies:
+  pre:
+    - openssl aes-256-cbc -d -in frida-cipher -out frida-plain -k $KEY
+    - chmod 400 frida-plain
+  override:
+    - npm cache clean
+    - npm install
+
+test:
+  override:
+    - npm run sass-lint:
+        environment:
+          SITE_URL: "https://cpmidias-teste.brasildefato.com.br"
+
+deployment:
+  production:
+    tag: /prod-.*/
+    commands:
+      - scp -i frida-plain .env frida@teste-brasildefato.com.br:/home/frida/components/frida-backend/
+      - ssh -i frida-plain frida@teste-brasildefato.com.br -C "/home/frida/components/frida-scripts/deploy-frida-backend.sh $CIRCLE_SHA1"
+  staging:
+    branch: master
+    tag:
+      ignore:
+        - /prod-.*/
+    commands:
+      - ./config_env.sh:
+          environment:
+            SITE_URL: "https://cpmidias-teste.brasildefato.com.br"
+      - scp -i frida-plain _config.yml frida@cpmidias-teste.brasildefato.com.br:/home/frida/components/site
+      - ssh -i frida-plain frida@cpmidias-teste.brasildefato.com.br -C "/home/frida/components/frida-scripts/deploy-site.sh $CIRCLE_SHA1"
+      - ssh -i frida-plain frida@cpmidias-teste.brasildefato.com.br -C "PATH=$PATH:/usr/local/node/node-default/bin /home/frida/components/site/hexo-deployer.sh /home/frida/components/site /www/site"
+      - npm run validation-test
