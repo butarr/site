@@ -65,6 +65,9 @@ mixin article(index)
       if article.audio
         +audio-player(index, article.audio)
 
+    a(href='/radioagencia/artigos/' class="button" title="link para mais artigos")
+      span= `Mais Artigos`
+
 mixin weeklyShows(initial_index)
   if page.radio_01 || page.radio_02
     h3.section-name Programa Semanal
