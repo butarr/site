@@ -35,7 +35,7 @@ deployment:
           BANNER_RADIOAGENCIA: "true"
           TOGGLE_pio0zWc4_AUDIO_ON_LISTS: "true"
       - ssh -i frida-prod-plain frida@brasildefato.com.br -C "/home/frida/components/frida-scripts/deploy-site.sh $CIRCLE_SHA1"
-      - scp -i frida-prod-plain _config.yml frida@brasildefato.com.br:/home/frida/components/site"
+      - scp -i frida-prod-plain _config.yml frida@brasildefato.com.br:/home/frida/components/site
   staging:
     branch: master
     tag:
