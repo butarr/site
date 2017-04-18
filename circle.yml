@@ -24,16 +24,16 @@ deployment:
     tag: /prod-.*/
     commands:
       - ./config_env.sh:
-        environment:
-          SITE_URL: "https://www.brasildefato.com.br"
-          TOGGLE_lWzSf1WX_WEEKLY_RADIO_PROGRAM: "true"
-          TOGGLE_LAST_NEWS: "true"
-          TOGGLE_js_version: "true"
-          TOGGLE_D6fenTno_ADSENSE: "false"
-          TOGGLE_iftEQfOR_COLUMNIST_PAGE: "true"
-          TOGGLE_css_version: "true"
-          BANNER_RADIOAGENCIA: "true"
-          TOGGLE_pio0zWc4_AUDIO_ON_LISTS: "true"
+          environment:
+            SITE_URL: "https://www.brasildefato.com.br"
+            TOGGLE_lWzSf1WX_WEEKLY_RADIO_PROGRAM: "true"
+            TOGGLE_LAST_NEWS: "true"
+            TOGGLE_js_version: "true"
+            TOGGLE_D6fenTno_ADSENSE: "false"
+            TOGGLE_iftEQfOR_COLUMNIST_PAGE: "true"
+            TOGGLE_css_version: "true"
+            BANNER_RADIOAGENCIA: "true"
+            TOGGLE_pio0zWc4_AUDIO_ON_LISTS: "true"
       - ssh -i frida-prod-plain frida@brasildefato.com.br -C "/home/frida/components/frida-scripts/deploy-site.sh $CIRCLE_SHA1"
       - scp -i frida-prod-plain _config.yml frida@brasildefato.com.br:/home/frida/components/site
   staging:
