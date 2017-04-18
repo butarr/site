@@ -86,11 +86,6 @@
     order: -7;
   }
 
-  #radioagency-banner-mobile {
-    -webkit-order: -6; //Old Safari
-    order: -6;
-  }
-
   #videos {
     -webkit-order: -6; //Old Safari
     order: -6;
@@ -207,6 +202,40 @@
       width: 220px;
       height: 100%;
     }
+  }
+}
+
+#home .spotlight-04-desktop {
+  display: none;
+
+  @include media-query(THREE) {
+    display: block;
+    max-height: 100%;
+
+    img {
+      width: 220px;
+      height: 100%;
+    }
+  }
+}
+
+#home .spotlight-04-mobile {
+  display: -webkit-flex; //Old Safari
+  display: flex;
+  -webkit-justify-content: center; //Old Safari
+  justify-content: center;
+  width: 100%;
+  -webkit-order: -6; //Old Safari
+  order: -6;
+
+  img {
+    height: 100%;
+    width: 100%;
+    max-width: 440px;
+  }
+
+  @include media-query(THREE) {
+    display: none;
   }
 }
 
@@ -729,33 +758,5 @@
 
   .button {
     margin: 20px auto;
-  }
-}
-
-#home .spotlight-banner-desktop {
-  display: none;
-
-  @include media-query(THREE) {
-    @include image-rounded(100%, 227px);
-    display: block;
-
-    figure {
-      background-size: cover;
-    }
-  }
-}
-
-#home .radioagency-banner-mobile {
-  @include image-rounded(100%, 70px);
-  width: 100%;
-  margin-top: $vertical-space;
-
-  @include media-query(TWO) {
-    @include image-rounded(100%, 100px);
-  }
-
-  @include media-query(THREE) {
-    display: none;
-    margin-top: 0;
   }
 }

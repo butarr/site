@@ -47,7 +47,7 @@ deployment:
             SITE_URL: "https://cpmidias-teste.brasildefato.com.br"
             TOGGLE_yhCw8OOd_LAST_NEWS_ANIMATION: "true"
             TOGGLE_js_version: "true"
-            TOGGLE_D6fenTno_ADSENSE: "true"
+            TOGGLE_D6fenTno_ADSENSE: "false"
             TOGGLE_css_version: "true"
             TOGGLE_TEST_ENVIROMENT: "true"
             BANNER_RADIOAGENCIA: "true"

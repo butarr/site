@@ -34,21 +34,22 @@ mixin columnist(column, columnist, index)
       +audio-player(index, column.audio)
 
 mixin columnists(index)
-  h3.section-name Colunistas
-  if page.column_01
-    - var column = page.column_01
-    - var columnist = site.data.columnists[column.columnist];
-    if columnist
-      +columnist(column, columnist, index)
+  if page.column_01 || page.column_02
+    h3.section-name Colunistas
+    if page.column_01
+      - var column = page.column_01
+      - var columnist = site.data.columnists[column.columnist];
+      if columnist
+        +columnist(column, columnist, index)
 
-  if page.column_02
-    - var column = page.column_02
-    - var columnist = site.data.columnists[column.columnist];
-    if columnist
-      +columnist(column, columnist, index+1)
+    if page.column_02
+      - var column = page.column_02
+      - var columnist = site.data.columnists[column.columnist];
+      if columnist
+        +columnist(column, columnist, index+1)
 
-  a(href='/colunistas/' class="button" title="link para mais notícias")
-    span= `Mais Colunas`
+    a(href='/colunistas/' class="button" title="link para mais notícias")
+      span= `Mais Colunas`
 
 mixin article(index)
   if page.article
@@ -63,6 +64,9 @@ mixin article(index)
       time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
       if article.audio
         +audio-player(index, article.audio)
+
+    a(href='/radioagencia/artigos/' class="button" title="link para mais artigos")
+      span= `Mais Artigos`
 
 mixin weeklyShows(initial_index)
   if page.radio_01 || page.radio_02

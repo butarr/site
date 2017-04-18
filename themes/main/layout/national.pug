@@ -97,13 +97,23 @@ mixin spotlight_03_desktop(post, type)
     a(itemprop="url" href=post.link target="_blank")
       img(src=post.image alt=post.title title=post.title itemprop="image")
 
+mixin spotlight_04_mobile(post, type)
+  div.spotlight-04-mobile(class="spacing" itemscope itemtype=type)
+    a#spotlight_04_mobile(itemprop="url" href=post.link target="_blank")
+      img(src=post.image alt=post.title title=post.title itemprop="image")
+
+mixin spotlight_04_desktop(post, type)
+  div.spotlight-04-desktop(class="spacing" itemscope itemtype=type)
+    a(itemprop="url" href=post.link target="_blank")
+      img(src=post.image alt=post.title title=post.title itemprop="image")
+
 mixin adsense_01_mobile()
   if config.toggles._D6fenTno_adsense
-    div.adsense-01-mobile(align="center")
+    div.adsense-01-mobile
       != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
       != '<!-- mobile_01 -->'
       != '<ins class="adsbygoogle"'
-      !=      'style="display:inline-block;width:320px;height:100px"'
+      !=      'style="display:inline-block; width:320px; height:100px"'
       !=      'data-ad-client="ca-pub-9026445537434187"'
       !=      'data-ad-slot="1176081356"></ins>'
       != '<script>'
@@ -112,11 +122,11 @@ mixin adsense_01_mobile()
 
 mixin adsense_01_desktop()
   if config.toggles._D6fenTno_adsense
-    div.adsense-01-desktop(align="center")
+    div.adsense-01-desktop
       != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
       != '<!-- desktop_01 -->'
       != '<ins class="adsbygoogle"'
-      !=    'style="display:inline-block;width:728px;height:90px"'
+      !=    'style="display:inline-block; width:728px; height:90px"'
       !=    'data-ad-client="ca-pub-9026445537434187"'
       !=    'data-ad-slot="4687950959"></ins>'
       != '<script>'
@@ -125,11 +135,11 @@ mixin adsense_01_desktop()
 
 mixin adsense_02_mobile()
   if config.toggles._D6fenTno_adsense
-    div.adsense-02-mobile(align="cen")
+    div.adsense-02-mobile
       !=  '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
       !=  '<!-- mobile_02 -->'
       !=  '<ins class="adsbygoogle"'
-      !=     'style="display:inline-block;width:320px;height:100px"'
+      !=     'style="display:inline-block; width:320px; height:100px"'
       !=     'data-ad-client="ca-pub-9026445537434187"'
       !=     'data-ad-slot="5979554159"></ins>'
       !=  '<script>'
@@ -138,11 +148,11 @@ mixin adsense_02_mobile()
 
 mixin adsense_02_desktop()
   if config.toggles._D6fenTno_adsense
-    div.adsense-02-desktop(align="center")
+    div.adsense-02-desktop
       !=  '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
       !=  '<!-- desktop_02 -->'
       !=  '<ins class="adsbygoogle"'
-      !=       'style="display:inline-block;width:728px;height:90px"'
+      !=       'style="display:inline-block; width:728px; height:90px"'
       !=       'data-ad-client="ca-pub-9026445537434187"'
       !=       'data-ad-slot="3444890153"></ins>'
       !=  '<script>'
@@ -151,11 +161,11 @@ mixin adsense_02_desktop()
 
 mixin adsense_03_desktop()
   if config.toggles._D6fenTno_adsense
-    div.adsense-03-desktop(align="center")
+    div.adsense-03-desktop
       != '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
       != '<!-- desktop-03 -->'
       != '<ins class="adsbygoogle"'
-      !=     'style="display:inline-block;width:200px;height:200px"'
+      !=     'style="display:inline-block; width:200px; height:200px"'
       !=     'data-ad-client="ca-pub-9026445537434187"'
       !=     'data-ad-slot="8771570159"></ins>'
       != '<script>'
@@ -271,9 +281,10 @@ append content
             - var imageDescription=post.cover.subtitle + " - Créditos: " + post.cover.credits
             +footer-article("featured-10", post, imageDescription)
 
-          div(class="radioagency-banner-mobile" class="spacing" id="radioagency-banner-mobile")
-            a(itemprop="url" target="_blank" href="http://brasildefato.com.br/radioagencia" title="Radioagência Brasil de Fato")
-              figure(style=`background-image: url("/img/banner-radioagencia-mobile.gif");` title="Radioagência Brasil de Fato" itemscope itemtype="https://schema.org/ImageObject")
+          if page.spotlight_04
+            +spotlight_04_mobile(page.spotlight_04)
+          else if page.advertising_08
+            +spotlight_04_mobile(page.advertising_08, "http://schema.org/WPAdBlock")
 
           section.printed-news(class="spacing")
             +printed-news-listings(page)
@@ -354,16 +365,17 @@ append content
                       h3.title(id="most_read_"+cont++)= post.title
 
         aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
-          div(class="spotlight-banner-desktop" class="spacing" itemscope itemtype="http://schema.org/WPAdBlock")
-            a(itemprop="url" target="_blank" href="http://www.cnte.org.br/" title="Publicidade - Greve Geral")
-              figure(style=`background-image: url("img/CNTE.png");` title="Publicidade - Greve Geral" itemscope itemtype="https://schema.org/ImageObject")
-          
           if page.spotlight_03
             +spotlight_03_desktop(page.spotlight_03)
           else if page.advertising_06
             +spotlight_03_desktop(page.advertising_06, "http://schema.org/WPAdBlock")
           else
             +adsense_03_desktop()
+
+          if page.spotlight_04
+            +spotlight_04_desktop(page.spotlight_04)
+          else if page.advertising_09
+            +spotlight_04_desktop(page.advertising_09, "http://schema.org/WPAdBlock")
 
           section.printed-news(class="spacing")
             +printed-news-listings(page)
