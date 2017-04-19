@@ -6,7 +6,7 @@ machine:
 dependencies:
   pre:
     - openssl aes-256-cbc -d -in bdf-cipher -out bdf-plain -k $KEY
-    - chmod 400 frida-plain
+    - chmod 400 bdf-plain
     - openssl aes-256-cbc -d -in frida-prod-cipher -out frida-prod-plain -k $KEY
     - chmod 400 frida-prod-plain
   override:
