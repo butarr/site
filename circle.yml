@@ -5,7 +5,7 @@ machine:
 
 dependencies:
   pre:
-    - openssl aes-256-cbc -d -in frida-cipher -out frida-plain -k $KEY
+    - openssl aes-256-cbc -d -in bdf-cipher -out bdf-plain -k $KEY
     - chmod 400 frida-plain
     - openssl aes-256-cbc -d -in frida-prod-cipher -out frida-prod-plain -k $KEY
     - chmod 400 frida-prod-plain
@@ -55,7 +55,7 @@ deployment:
             TOGGLE_LAST_NEWS: "true"
             TOGGLE_lWzSf1WX_WEEKLY_RADIO_PROGRAM: "true"
             TOGGLE_pio0zWc4_AUDIO_ON_LISTS: "true"
-      - scp -i frida-plain _config.yml frida@cpmidias-teste.brasildefato.com.br:/home/frida/components/site
-      - ssh -i frida-plain frida@cpmidias-teste.brasildefato.com.br -C "/home/frida/components/frida-scripts/deploy-site.sh $CIRCLE_SHA1"
-      - ssh -i frida-plain frida@cpmidias-teste.brasildefato.com.br -C "PATH=$PATH:/usr/local/node/node-default/bin /home/frida/components/site/hexo-deployer.sh /home/frida/components/site /www/site"
+      - scp -i bdf-plain _config.yml frida@cpmidias-teste.brasildefato.com.br:/home/frida/components/site
+      - ssh -i bdf-plain frida@cpmidias-teste.brasildefato.com.br -C "/home/frida/components/frida-scripts/deploy-site.sh $CIRCLE_SHA1"
+      - ssh -i bdf-plain frida@cpmidias-teste.brasildefato.com.br -C "PATH=$PATH:/usr/local/node/node-default/bin /home/frida/components/site/hexo-deployer.sh /home/frida/components/site /www/site"
       - npm run validation-test
