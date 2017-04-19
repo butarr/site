@@ -7,8 +7,8 @@ dependencies:
   pre:
     - openssl aes-256-cbc -d -in bdf-cipher -out bdf-plain -k $KEY
     - chmod 400 bdf-plain
-    - openssl aes-256-cbc -d -in frida-prod-cipher -out frida-prod-plain -k $KEY
-    - chmod 400 frida-prod-plain
+    - openssl aes-256-cbc -d -in bdf-prod-cipher -out bdf-prod-plain -k $KEYPROD
+    - chmod 400 bdf-prod-plain
   override:
     - npm cache clean
     - npm install
@@ -34,8 +34,8 @@ deployment:
             TOGGLE_css_version: "true"
             BANNER_RADIOAGENCIA: "true"
             TOGGLE_pio0zWc4_AUDIO_ON_LISTS: "true"
-      - ssh -i frida-prod-plain frida@brasildefato.com.br -C "/home/frida/components/frida-scripts/deploy-site.sh $CIRCLE_SHA1"
-      - scp -i frida-prod-plain _config.yml frida@brasildefato.com.br:/home/frida/components/site
+      - ssh -i bdf-prod-plain frida@brasildefato.com.br -C "/home/frida/components/frida-scripts/deploy-site.sh $CIRCLE_SHA1"
+      - scp -i bdf-prod-plain _config.yml frida@brasildefato.com.br:/home/frida/components/site
   staging:
     branch: master
     tag:
