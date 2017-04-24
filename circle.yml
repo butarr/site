@@ -57,5 +57,5 @@ deployment:
             TOGGLE_pio0zWc4_AUDIO_ON_LISTS: "true"
       - scp -i bdf-plain _config.yml frida@cpmidias-teste.brasildefato.com.br:/home/frida/components/site
       - ssh -i bdf-plain frida@cpmidias-teste.brasildefato.com.br -C "/home/frida/components/frida-scripts/deploy-site.sh $CIRCLE_SHA1"
-      - ssh -i bdf-plain frida@cpmidias-teste.brasildefato.com.br -C "PATH=$PATH:/usr/local/node/node-default/bin /home/frida/components/site/hexo-deployer.sh /home/frida/components/site /www/site"
+      - ssh -i bdf-plain frida@cpmidias-teste.brasildefato.com.br -C "PATH=$PATH:/usr/local/node/node-default/bin /home/frida/components/site/hexo-generate.sh /home/frida/components/site /www/site"
       - npm run validation-test
