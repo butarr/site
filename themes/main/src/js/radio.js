@@ -1,7 +1,5 @@
 function setResetPlayerHandler(playerDiv) {
   return function() {
-    playerDiv.find('.pause').hide();
-    playerDiv.find('.play').show();
     playerDiv.find('progress')[0].value = 0;
     playerDiv.find('.time-progress').text('0:00');
   }
@@ -46,15 +44,11 @@ function play(id) {
   }
 
   $('#audio_' + id)[0].play();
-  $('#item_' + id + ' .play').hide();
-  $('#item_' + id + ' .pause').show();
   currentPlayingId = id;
 }
 
 function pause(id) {
   $('#audio_' + id)[0].pause();
-  $('#item_' + id + ' .pause').hide();
-  $('#item_' + id + ' .play').show();
 }
 
 function showPlayer(playerDiv){
@@ -75,6 +69,24 @@ function showServicesOnMobile() {
   if ($('#sidebar-mobile').css('display') == 'block'){
     $('#news_2').css('border-bottom','0');
   }
+}
+
+function showPlay(playerDiv) {
+  playerDiv.find('.controls .play').show();
+  playerDiv.find('.controls .pause').hide();
+  playerDiv.find('.controls .loader').hide();
+}
+
+function showPause(playerDiv) {
+  playerDiv.find('.controls .pause').show();
+  playerDiv.find('.controls .loader').hide();
+  playerDiv.find('.controls .play').hide();
+}
+
+function showTrackLoader(playerDiv) {
+  playerDiv.find('.controls .loader').show();
+  playerDiv.find('.controls .pause').hide();
+  playerDiv.find('.controls .play').hide();
 }
 
 function setup(){
@@ -104,6 +116,9 @@ function setup(){
 
     audioElement.ontimeupdate = setUpdateProgressHandler(audioElement, playerDiv);
     audioElement.onended = setResetPlayerHandler(playerDiv);
+    audioElement.onpause = function() { showPlay(playerDiv); };
+    audioElement.onplaying = function() { showPause(playerDiv); };
+    audioElement.onwaiting = function() { showTrackLoader(playerDiv) };
     setProgressBarHandler(audioElement, playerDiv);
   });
 }

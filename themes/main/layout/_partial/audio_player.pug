@@ -5,6 +5,7 @@ mixin audio-player(position, audio)
       audio.audio(preload="none" data-soundcloud-link=audio id=`audio_${position}`)
       .controls
         .buttons
+          .loader
           a.play(onclick=`play(${position});`)
             img.play-button(src="/img/icons/play.svg" alt="Play")
           a.pause(onclick=`pause(${position});`)
