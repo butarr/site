@@ -1,8 +1,12 @@
-mixin audio-player(position, audio)
+mixin audio-player(position, audio, preload)
   .audio-item(id=`item_${position}`)
     .loader
     .player
-      audio.audio(preload="none" data-soundcloud-link=audio id=`audio_${position}`)
+      if(preload)
+        - preload = "auto"
+      else
+        - preload = "none"
+      audio.audio(preload=preload data-soundcloud-link=audio id=`audio_${position}`)
       .controls
         .buttons
           .loader
