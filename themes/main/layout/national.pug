@@ -88,12 +88,12 @@ mixin spotlight_02_desktop(post, type)
       img(src=post.image alt=post.title title=post.title itemprop="image")
 
 mixin spotlight_03_mobile(post, type)
-  div.spotlight-03-mobile(class="spacing" itemscope itemtype=type)
+  div.spotlight-03-mobile.spotlight-03-analytics(class="spacing" itemscope itemtype=type)
     a#spotlight_03_mobile(itemprop="url" href=post.link target="_blank")
       img(src=post.image alt=post.title title=post.title itemprop="image")
 
 mixin spotlight_03_desktop(post, type)
-  div.spotlight-03-desktop(class="spacing" itemscope itemtype=type)
+  div.spotlight-03-desktop.spotlight-03-analytics(class="spacing" itemscope itemtype=type)
     a(itemprop="url" href=post.link target="_blank")
       img(src=post.image alt=post.title title=post.title itemprop="image")
 
