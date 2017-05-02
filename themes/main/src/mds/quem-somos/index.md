@@ -27,23 +27,27 @@ content: |
   <h3 class="title underline">Site Brasil de Fato</h3>
   <dl class="list">
     <dt>Coordenação de Jornalismo:</dt>
-    <dd>Vivian Fernandes</dd>
+    <dd>Vivian Fernandes e Luiz Felipe Albuquerque</dd>
     <dt>Jornalismo:</dt>
-    <dd>Camila Rodrigues da Silva, Simone Freire, José Eduardo Bernardes, Rafael Tatemoto, Rute Pina, Lilian Campelo, Cristiane Sampaio, Daniela Stefano, Mauro Ramos, Julia Dolce e Juliana Golçalves</dd>
+    <dd>Vanessa Martina da Silva, Camila Rodrigues da Silva, Simone Freire, José Eduardo Bernardes, Rafael Tatemoto, Rute Pina, Norma Odara, Lilian Campelo, Cristiane Sampaio, Daniela Stefano, Mauro Ramos, Julia Dolce e Juliana Gonçalves</dd>
     <dt>Audiovisual:</dt>
-    <dd>Norma Odara e Marcelo Cruz</dd>
+    <dd>Marcelo Cruz e Juliano Vieira</dd>
     <dt>Rede de Colaboração:</dt>
     <dd>Luiz Felipe Albuquerque</dd>
+    <dt>Núcleo Internacional:</dt>
+    <dd>Nathan Singham</dd>
     <dt>Arte:</dt>
     <dd>Jose Bruno Lima e Wilcker Morais</dd>
     <dt>Operação de áudio:</dt>
-    <dd>Jorge Mayer</dd>
+    <dd>Jorge Mayer e André Paroche</dd>
     <dt>Comercial:</dt>
     <dd>Raíssa Lazarini</dd>
     <dt>Tecnologia:</dt>
     <dd>Nicholas Neto</dd>
     <dt>Estagiários:</dt>
-    <dd>Mayara Paixão, Nadine Nascimento, Gabriela Lucena e Giuliana Marquesi</dd>
+    <dd>Mayara Paixão, Marianna Rosalles, Gabriela Lucena, Karina Ramos e Giuliana Marquesi</dd>
+    <dt>Recursos Humanos:</dt>
+    <dd>Camilla Veras</dd>
   </dl>
   <h3 class="title underline">Impresso Minas Gerais</h3>
   <dl class="list">
@@ -75,9 +79,9 @@ content: |
     <dt>Reportagem:</dt>
     <dd>Laís Melo, Carolina Goetten e Franciele Petry Schramm</dd>
     <dt>Articulistas:</dt>
-    <dd>Júlio Carignano, Gibran Mendes</dd> 
+    <dd>Júlio Carignano, Gibran Mendes</dd>
     <dt>Revisão:</dt>
-    <dd>Paula Zarth Padilha e Maurini Souza<dd> 
+    <dd>Paula Zarth Padilha e Maurini Souza<dd>
     <dt>Fotógrafos:</dt>
     <dd>Joka Madruga e Leandro Taques</dd>
     <dt>Diagramação:</dt>
@@ -92,34 +96,28 @@ content: |
     <dt>Edição:</dt>
     <dd>Monyse Ravenna</dd>
     <dt>Redação:</dt>
-    <dd>Catarina de Angola, Elen Carvalho e Vinícius Sobreira</dd>
+    <dd>Catarina de Angola, Daniel Lamir, Marcos Barbosa e Vinícius Sobreira</dd>
     <dt>Colaboração:</dt>
-    <dd>André Barreto, Daniel Lamir, Filipe Spencer, Francisco Marcelo, Malu Xavier, Roberto Efrem Filho</dd>
-    <dt>Revisão:</dt>
-    <dd>Mariana Reis</dd>
+    <dd> André Barreto, Filipe Spencer, Francisco Marcelo, Stella Nascimento, Roberto Efrem Filho</dd>
     <dt>Distribuição:</dt>
     <dd>Iyalê Tahyrine</dd>
-    <dt>Diagramação:</dt>
-    <dd>Diva Braga</dd>
     <dt>Administração:</dt>
-    <dd>Halina Gouveia</dd>
+    <dd>Iyalê Tahyrine</dd>
+    <dt>Estagiários:</dt>
+    <dd>Vanessa Gonzaga</dd>
   </dl>
   <h3 class="title underline">Impresso Rio de Janeiro</h3>
   <dl class="list">
     <dt>Conselho Editorial:</dt>
-    <dd>Alexania Rossato, Antonio Neiva (in memoriam), Joaquín Piñero, Kleybson Andrade, Mário Augusto Jakobskind, Nicolle Berti, Rodrigo Marcelino, Vito Giannotti (in memoriam)</dd>
+    <dd>Alexania Rossato, Antonio Neiva (in memoriam), Joaquín Piñero, Kleybson Andrade, Mário Augusto Jakobskind, Rodrigo Marcelino, Vito Giannotti (in memoriam)</dd>
     <dt>Edição:</dt>
     <dd>Vivian Virissimo</dd>
     <dt>Co-edição:</dt>
     <dd>Fania Rodrigues</dd>
     <dt>Reportagem:</dt>
-    <dd>Bruno Porpetta, Mariana Pitasse e Pedro Rafael Vilela</dd>
-    <dt>Revisão:</dt>
-    <dd>Sheila Jacob</dd>
+    <dd>Mariana Pitasse (Colaboração: Alan Tygel, Sheila Jacob e Mc Leonardo.)</dd>
     <dt>Distribuição:</dt>
     <dd>Kleybson Andrade</dd>
-    <dt>Diagramação:</dt>
-    <dd>Juliana Braga</dd>
     <dt>Administração:</dt>
     <dd>Angela Bernardino e Marcos Araújo</dd>
   </dl>
