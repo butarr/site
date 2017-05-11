@@ -1,0 +1,38 @@
+extends base
+include _partial/audio_player
+
+block title
+  title= `Arquivo ${config.separator} ${config.title}`
+
+block description
+      meta(name="description" content=`A se pensar`)
+
+block canonical
+  link(href=`https://www.brasildefato.com.br/${page.path}` rel="canonical")
+
+block keywords
+  meta(name="keywords" content=Arquivo)
+
+block open_graph
+  meta(property="og:title" content=`Arquivo | ${config.title}`)
+  meta(property="og:description" content=config.description)
+  meta(property="og:image" content=`${config.url}/img/share-logo.png`)
+
+append content
+  main.grid-3-columns
+
+    section#news-list(class= "archive" itemscope itemtype="http://schema.org/ItemList")
+      h1(class="page-name" itemprop="name")= 'Arquivo'
+
+      - var list = page.news ? page.news : page.list
+      each post, index in list
+        - var published_at = utc_to_brt(post.date || post.published_at)
+        .news-item-link(class="divisor")
+          a.news-item(href=post.path itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement")
+            meta(itemprop="url" content=`https://www.brasildefato.com.br/${post.path}`)
+
+            .content(class="no-image" class= "divisor")
+              h3.title(itemprop= "headline")= post.title
+              time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
+
+      include _partial/pagination
