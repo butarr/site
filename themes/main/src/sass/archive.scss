@@ -4,34 +4,20 @@
 
 .archive {
   @include image-rounded(110px, 110px);
-  @include get-font(LIST);
+  @include get-font(ARCHIVE);
 
   @include media-query(TWO) {
     @include image-rounded(150px, 150px);
   }
-
-  
-
-  .news-item-link:last-child.divisor {
-    border: 0;
-  }
 }
 
-.archive .news-item {
+.archive .list-item {
   @include clearfix;
   display: block;
+  padding-bottom: 10px;
 
-
-  .content.no-image {
-
-    width: 100%;
-  }
-
-  .title {
-    padding-bottom: 15px;
-  }
-
-  .description {
-    padding-bottom: 15px;
+  .date {
+      display: inline;
+      padding: 0 10px 0 0;
   }
 }

@@ -1,5 +1,4 @@
 extends base
-include _partial/audio_player
 
 block title
   title= `Arquivo ${config.separator} ${config.title}`
@@ -21,18 +20,14 @@ block open_graph
 append content
   main.grid-3-columns
 
-    section#news-list(class= "archive" itemscope itemtype="http://schema.org/ItemList")
-      h1(class="page-name" itemprop="name")= 'Arquivo'
+    section#news-list(class= "archive" )
+      h1(class="page-name")= 'Arquivo'
 
-      - var list = page.news ? page.news : page.list
-      each post, index in list
-        - var published_at = utc_to_brt(post.date || post.published_at)
-        .news-item-link(class="divisor")
-          a.news-item(href=post.path itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement")
-            meta(itemprop="url" content=`https://www.brasildefato.com.br/${post.path}`)
-
-            .content(class="no-image" class= "divisor")
-              h3.title(itemprop= "headline")= post.title
-              time.date(datetime=published_at.toISOString(), itemprop="datePublished")= 'Publicado em ' + full_date(published_at)
-
-      include _partial/pagination
+      ol(itemscope itemtype="http://schema.org/ItemList")
+        - var list = page.list
+        each post in list
+          - var published_at = utc_to_brt(post.published_at)
+          li(itemprop="itemListElement")
+            a.list-item(href=post.url  itemprop="url")
+              time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at, 'DD')
+              span.title(itemprop= "name")= post.title

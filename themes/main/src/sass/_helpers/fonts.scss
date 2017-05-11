@@ -360,6 +360,23 @@ $number-size: 1.3rem;
   }
 }
 
+@mixin archive {
+  .page-name {
+    font: bold $page-name-size $family-sans;
+    color: $page-title-color;
+    text-transform: uppercase;
+  }
+
+  .title, .date {
+    font: #{$details-size-sidebar} / #{$line-separation-small} $family-sans;
+  }
+
+  // .date {
+  //   font: $details-size $family-sans;
+  //   color: $details-color;
+  // }
+}
+
 @mixin photo-caption-list {
   .page-name {
     font: bold $page-name-size $family-sans;
@@ -1187,4 +1204,8 @@ $number-size: 1.3rem;
   @else if($type == COLUMNIST_LIST) {
     @include columnist-list;
   }
+  @else if($type == ARCHIVE) {
+    @include archive;
+  }
+
 }
