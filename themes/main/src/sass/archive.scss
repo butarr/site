@@ -3,21 +3,25 @@
 @import '_helpers/constants';
 
 .archive {
-  @include image-rounded(110px, 110px);
   @include get-font(ARCHIVE);
 
-  @include media-query(TWO) {
-    @include image-rounded(150px, 150px);
+  .page-name {
+    margin-bottom: 10px;
   }
 }
 
 .archive .list-item {
   @include clearfix;
   display: block;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 
   .date {
       display: inline;
       padding: 0 10px 0 0;
   }
+}
+
+#news-list.archive #breadcrumb{
+  margin-bottom: 20px;
+  padding: 0 10px;
 }

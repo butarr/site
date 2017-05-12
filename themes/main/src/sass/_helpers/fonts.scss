@@ -368,13 +368,11 @@ $number-size: 1.3rem;
   }
 
   .title, .date {
-    font: #{$details-size-sidebar} / #{$line-separation-small} $family-sans;
+    font: #{$details-size} / #{$line-separation-big} $family-sans;
+
   }
 
-  // .date {
-  //   font: $details-size $family-sans;
-  //   color: $details-color;
-  // }
+
 }
 
 @mixin photo-caption-list {
