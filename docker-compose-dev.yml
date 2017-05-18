@@ -5,4 +5,8 @@ services:
     container_name: site-dev
     ports:
       - "4000:4000"
+    volumes:
+      - "./themes:/opt/site/themes"
+      - "./source:/opt/site/source"
+      - "./_config.yml:/opt/site/_config.yml"
     restart: on-failure
