@@ -15,37 +15,26 @@
 - `npm start`
 The site will be running on http://localhost:4000
 
-## Running with Docker (User docker-compose or Docker for Mac)
+## Running with Docker
 ### With docker-compose : You need docker and docker-compose installed
 
-- Rename `Dockerfile.docker_compose` to `Dockerfile`
+- duplicate the file `_config.yml.example` and rename the copy to `_config.yml`
 
-- `docker-compose -f docker-compose-dev.yml -up -d`
+- `docker-compose -f docker-compose-dev.yml up -d --build`
 
-The site will be running on http://dockerip:4000
+### To check the logs
 
-### With Docker for Mac : [https://docs.docker.com/docker-for-mac/]
+- `docker-compose -f docker-compose-dev.yml logs -f`
 
-- Rename `Dockerfile.docker_for_mac` to `Dockerfile`
+### Running test with docker
 
-- `docker build -t brasil-de-fato/site .`
+- `docker-compose -f docker-compose-dev.yml exec site npm test`
 
-This will build the docker image with minimal install of node
+### Running test environment with docker
 
-- `docker run -p 4000:4000 --name bdf_site -d -v [PROJECT_DIRECTORY]:/opt/site -t brasil-de-fato/site`
-
-This will start a container with the project directory from your host machine shared with the container
-
-- `npm install`
-- `npm start`
+- `docker-compose -f docker-compose-dev.yml exec site npm run validation-test`
 
 The site will be running on localhost:4000
-
-## Running HTML CSS tests
-### For the first time
-
-- Run `node lib/cli/frida.js seeds` in folder Frida-backend (Is necessary one post fixed).
-- `npm install`
 
 ### Running local test
 - `npm test`
@@ -53,4 +42,3 @@ The site will be running on localhost:4000
 ### Running test environment
 
 - `npm run validation-test	`
-
