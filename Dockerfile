@@ -1,6 +1,20 @@
-FROM giuliana/node:4.4.4
-COPY package.json package.json
+FROM node:6.10.3
+
+WORKDIR /opt/site
+
+COPY package.json /opt/site/
 RUN npm install
-COPY _config.yml.example _config.yml
-COPY . .
+RUN npm install -g gulp
+COPY _config.yml /opt/site/
+
+COPY gulpfile.js /opt/site/
+COPY themes /opt/site/themes
+COPY source /opt/site/source
+
+WORKDIR themes/main
+
+RUN gulp build
+
+WORKDIR /opt/site
+
 CMD npm start
