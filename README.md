@@ -28,11 +28,11 @@ The site will be running on http://localhost:4000
 
 ### Running test with docker
 
-- `docker-compose -f docker-compose-dev.yml exec site npm test`
+- `docker-compose -f docker-compose-dev.yml run site npm test`
 
 ### Running test environment with docker
 
-- `docker-compose -f docker-compose-dev.yml exec site npm run validation-test`
+- `docker-compose -f docker-compose-dev.yml run site npm run validation-test`
 
 The site will be running on localhost:4000
 
