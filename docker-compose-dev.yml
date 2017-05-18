@@ -9,4 +9,8 @@ services:
       - "./themes:/opt/site/themes"
       - "./source:/opt/site/source"
       - "./_config.yml:/opt/site/_config.yml"
+      - "./valimate.json:/opt/site/valimate.json"
+      - "./valimate-config.js:/opt/site/valimate-config.js"
+      - "./valimate-config-local.js:/opt/site/valimate-config-local.js"
+      - "./valimate-test.json:/opt/site/valimate-test.json"
     restart: on-failure
