@@ -5,4 +5,4 @@ services:
     container_name: site-dev
     ports:
       - "4000:4000"
-    command: npm start
+    restart: on-failure

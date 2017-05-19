@@ -19,7 +19,7 @@ mixin metadata(position, post)
       meta(itemprop="name" content="Brasil de Fato")
       link(itemprop="sameAs" href="https://www.brasildefato.com.br")
 
-mixin columnist(column, columnist, index)
+mixin columnist(column, columnist)
   .columnist-radio
     .columnist(itemprop="itemListElement" itemscope itemtype="https://schema.org/Person")
       .photo
@@ -31,27 +31,27 @@ mixin columnist(column, columnist, index)
         a(href=column.path itemprop="url")
           h4.title= column.title
     if column.audio
-      +audio-player(index, column.audio)
+      +audio-player(initial_index++, column.audio)
 
-mixin columnists(index)
+mixin columnists()
   if page.column_01 || page.column_02
     h3.section-name Colunistas
     if page.column_01
       - var column = page.column_01
       - var columnist = site.data.columnists[column.columnist];
       if columnist
-        +columnist(column, columnist, index)
+        +columnist(column, columnist)
 
     if page.column_02
       - var column = page.column_02
       - var columnist = site.data.columnists[column.columnist];
       if columnist
-        +columnist(column, columnist, index+1)
+        +columnist(column, columnist)
 
     a(href='/colunistas/' class="button" title="link para mais notícias")
       span= `Mais Colunas`
 
-mixin article(index)
+mixin article()
   if page.article
     h3.section-name Artigo
     - var article = page.article
@@ -63,49 +63,53 @@ mixin article(index)
         h4.title= article.title
       time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
       if article.audio
-        +audio-player(index, article.audio)
+        +audio-player(initial_index++, article.audio)
 
     a(href='/radioagencia/artigos/' class="button" title="link para mais artigos")
       span= `Mais Artigos`
 
-mixin weeklyShows(initial_index)
-  if page.radio_01 || page.radio_02
-    h3.section-name Programa Semanal
-    - var radios = ['SP', 'PE']
-    each radio_data, index in radios
-      if page[`radio_0${index+1}`]
-        .service
-          - var radio = page[`radio_0${index+1}`]
-          a(href=radio.url, itemprop="url")
-            h4.title=radio.title
-          if radio.audio
-            +audio-player(initial_index++, radio.audio)
-    a(href='programa-semanal' class="button" title="link para mais notícias")
-      span= `Mais "Programas Semanais"`
+mixin service(service, service_data, index)
+  .service
+    - var published_at = utc_to_brt(service.date)
+    h3.service-name(class=`service-0${index+1}`)=service_data.name
+    a(href=service.url, itemprop="url")
+      h4.title=service.title
+    time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
+    if service.audio
+      +audio-player(initial_index++, service.audio)
+    if service_data.path
+      a(href=service_data.path class="button" title="link para mais notícias")
+        span= `Mais "${service_data.name}"`
 
-mixin services(initial_index)
+mixin weeklyShows()
+  h3.section-name Programas Semanais
+  -
+    var radios_data = [
+      { name: 'São Paulo' },
+      { name: 'Pernambuco' },
+      { name: 'Minas Gerais' }
+    ]
+  each radio_data, index in radios_data
+    - var radio = page[`radio_0${index+1}`]
+    if radio
+      +service(radio, radio_data, index)
+  a(href='programa-semanal' class="button" title="link para mais notícias")
+    span= `Mais "Programas Semanais"`
+
+mixin services()
   h3.section-name Serviços
   -
-    var services = [
+    var services_data = [
       { name: 'Alimento é Saúde', path: 'alimento-e-saude' },
       { name: 'Mosaico Cultural', path: 'mosaico-cultural' },
       { name: 'Conectados', path: 'conectados' },
       { name: 'Momento Agroecológico', path: 'momento-agroecologico' },
       { name: 'Fala Aí', path: 'fala-ai' }
     ]
-  each service_data, index in services
+  each service_data, index in services_data
     - var service = page[`service_0${index+1}`]
     if service
-      .service
-        - var published_at = utc_to_brt(service.date)
-        h3.service-name(class=`service-0${index+1}`)=service_data.name
-        a(href=service.url, itemprop="url")
-          h4.title=service.title
-        time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
-        if service.audio
-          +audio-player(initial_index++, service.audio)
-        a(href=service_data.path class="button" title="link para mais notícias")
-          span= `Mais "${service_data.name}"`
+      +service(service, service_data, index)
 
 block title
   title=`Radioagência ${config.separator} ${config.title}`
@@ -125,6 +129,8 @@ block open_graph
   meta(property="og:image" content=`${config.url}/img/share-logo.png`)
 
 append content
+  - initial_index = 0
+
   h1.offscreen Radioagência Brasil de Fato
   main.grid-5-columns
     #radioagency
@@ -145,7 +151,7 @@ append content
                   p.description(itemprop="description")= featured.description
                 time.date(datetime=published_at_featured.toISOString(), itemprop="datePublished")= full_date(published_at_featured)
             if featured.audio
-              +audio-player(0, featured.audio)
+              +audio-player(initial_index++, featured.audio)
 
         each post, index in page.latest_news
           - var published_at_post = utc_to_brt(post.date)
@@ -156,26 +162,27 @@ append content
               p.description(itemprop="description")= post.description
             time.date(datetime=published_at_post.toISOString(), itemprop="datePublished")= full_date(published_at_post)
             if post.audio
-              +audio-player(index+1, post.audio)
+              +audio-player(initial_index++, post.audio)
 
       aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
-        +columnists(555)
+        +columnists()
 
-        +article(600)
+        +article()
 
-        +weeklyShows(101)
+        .weekly-shows
+          +weeklyShows()
 
         .services
-          +services(202)
+          +services()
 
         .facebook
           +facebook-widget(facebook_url_radioagency)
 
       #sidebar-mobile
-        +columnists(557)
-        +article(601)
-        +weeklyShows(501)
-        +services(602)
+        +columnists()
+        +article()
+        +weeklyShows()
+        +services()
         h3.section-name Mais Notícias
 block footer
   include _partial/home_footer

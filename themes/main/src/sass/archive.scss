@@ -10,18 +10,19 @@
   }
 }
 
+.archive .header_day {
+  margin-right: 150px
+}
+
 .archive .list-item {
-  @include clearfix;
-  display: block;
-  padding-bottom: 8px;
 
   .date {
-      display: inline;
-      padding: 0 10px 0 0;
+    display: inline;
+    margin: 0 50px 0 10px;
   }
 }
 
-#news-list.archive #breadcrumb{
+#news-list.archive #breadcrumb {
   margin-bottom: 20px;
   padding: 0 10px;
 }

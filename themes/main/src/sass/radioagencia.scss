@@ -159,7 +159,15 @@
   .service-name {
     margin-bottom: 5px;
   }
+}
 
+#radioagency .weekly-shows .service {
+  .service-name {
+    color: $weekly-shows-service-color;
+  }
+}
+
+#radioagency .services .service {
   .service-01 {
     color: $service-01-color;
   }

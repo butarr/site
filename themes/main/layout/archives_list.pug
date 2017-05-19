@@ -20,28 +20,32 @@ block open_graph
 append content
   main.grid-3-columns
 
-  div#news-list(class= "archive")
-    div#breadcrumb
-      ol(itemscope itemtype="http://schema.org/BreadcrumbList")
-        li(itemprop="itemListElement" )
-          a( href="/")
-            p Início
-        li
-          i(class="fa fa-chevron-right fa-lg")
-        li(itemprop="itemListElement" )
-          a( href="/arquivo/")
-            p.breadcrumb-last Arquivo
-        li
-          i(class="fa fa-chevron-right fa-lg")
-        li(itemprop="itemListElement" )
-          a( href="/arquivo/")
-            p.breadcrumb-last= `${page.month_name} de ${page.year}`
+
+    div#news-list(class= "archive")
+      div#breadcrumb
+        ol(itemscope itemtype="http://schema.org/BreadcrumbList")
+          li(itemprop="itemListElement" )
+            a( href="/")
+              p Início
+          li
+            i(class="fa fa-chevron-right fa-lg")
+          li(itemprop="itemListElement" )
+            a( href="/arquivo/")
+              p.breadcrumb-last Arquivo
+          li
+            i(class="fa fa-chevron-right fa-lg")
+          li(itemprop="itemListElement" )
+            a( href="/arquivo/")
+              p.breadcrumb-last= `${page.month_name} de ${page.year}`
 
     section#news-list(class= "archive")
       h1(class="page-name")= 'Arquivo'
 
       ol(itemscope itemtype="http://schema.org/ItemList")
         - var list = page.list
+
+        span.header_day Dia
+        span.header_title Titulo
         each post in list
           - var published_at = utc_to_brt(post.published_at)
           li(itemprop="itemListElement")
