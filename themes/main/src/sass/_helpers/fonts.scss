@@ -361,23 +361,23 @@ $number-size: 1.3rem;
 }
 
 @mixin archive {
-  .page-name {
-    font: bold $page-name-size $family-sans;
-    color: $page-title-color;
-    text-transform: uppercase;
-  }
+  // .page-name {
+  //   font: bold $page-name-size $family-sans;
+  //   color: $page-title-color;
+  //   text-transform: uppercase;
+  // }
 
-  .title, .date {
-    font: #{$details-size} / #{$line-separation-small} $family-serif;
-  }
-  .header_day {
-    font: bold $section-name-size $family-sans;
-    text-transform: uppercase;
-  }
-  .header_title {
-    font: bold $section-name-size $family-sans;
-    text-transform: uppercase;
-  }
+  // .title, .date {
+  //   font: #{details-size} / #{$line-separation-big} $family-serif;
+  // }
+  // .header_day {
+  //   font: bold $section-name-size $family-sans;
+  //   text-transform: uppercase;
+  // }
+  // .header_title {
+  //   font: bold $section-name-size $family-sans;
+  //   text-transform: uppercase;
+  // }
 }
 
 @mixin photo-caption-list {

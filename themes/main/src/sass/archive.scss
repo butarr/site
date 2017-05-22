@@ -5,20 +5,12 @@
 .archive {
   @include get-font(ARCHIVE);
 
-  .page-name {
-    margin-bottom: 10px;
+  li {
+    display: flex;
   }
-}
 
-.archive .header_day {
-  margin-right: 150px
-}
-
-.archive .list-item {
-
-  .date {
-    display: inline;
-    margin: 0 50px 0 10px;
+  .day {
+    margin-right: 20px;
   }
 }
 
