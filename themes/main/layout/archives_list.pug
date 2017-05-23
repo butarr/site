@@ -30,16 +30,11 @@ append content
           li
             i(class="fa fa-chevron-right fa-lg")
           li(itemprop="itemListElement" )
-            a( href="/arquivo/")
-              p.breadcrumb-last Arquivo
-          li
-            i(class="fa fa-chevron-right fa-lg")
-          li(itemprop="itemListElement" )
-            a( href="/arquivo/")
-              p.breadcrumb-last= `${page.month_name} de ${page.year}`
+            a( href="/arquivos/")
+              p.breadcrumb-last Arquivos
 
     section#news-list(class= "archive")
-      h1(class="page-name")= 'Arquivo'
+      h1(class="page-name")= `${page.month_name} de ${page.year}`
 
       ol(itemscope itemtype="http://schema.org/ItemList")
         - var list = page.list
