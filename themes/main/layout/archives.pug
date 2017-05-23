@@ -1,0 +1,29 @@
+extends base
+
+block title
+  title= `${titlecase(page.title)} ${config.separator} ${config.title}`
+
+block description
+      meta(name="description" content=`Notícias por ano/mês`)
+
+block canonical
+  link(href=`https://www.brasildefato.com.br/${page.path}` rel="canonical")
+
+block keywords
+  meta(name="keywords" content=Arquivo)
+
+block open_graph
+  meta(property="og:title" content=`Arquivo | ${config.title}`)
+  meta(property="og:description" content=config.description)
+  meta(property="og:image" content=`${config.url}/img/share-logo.png`)
+
+append content
+  main.grid-3-columns
+    section#archives
+      h1.page-name
+        != `${titlecase(page.title)}`
+
+      ol(itemscope itemtype="http://schema.org/ItemList")
+        p 2017
+        li(itemprop="itemListElement")
+          p Junho
