@@ -43,11 +43,12 @@ append content
 
       ol(itemscope itemtype="http://schema.org/ItemList")
         - var list = page.list
-        span.day Dia
-        span Titulo
+        li.list-header(itemprop="itemListElement")
+          p.day Dia
+          p Titulo
         each post in list
           - var published_at = utc_to_brt(post.published_at)
           li(itemprop="itemListElement")
             time.day(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at, 'DD')
             a.list-item(href=post.url  itemprop="url")
-              span(itemprop= "name")= post.title
+              p(itemprop= "name")= post.title
