@@ -15,6 +15,7 @@
   p {
     margin-bottom: $paragraph-space;
   }
+
 }
 
 #post .content {
@@ -22,6 +23,11 @@
   display: flex;
   -webkit-flex-direction: column; //Old Safari
   flex-direction: column;
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
 
   @include media-query(THREE) {
     -webkit-flex-direction: row; //Old Safari
