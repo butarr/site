@@ -657,6 +657,11 @@ $number-size: 1.3rem;
       color: $link-hover-color;
     }
   }
+
+  ul li {
+    font: #{$standalone-text-size} $family-serif;
+    color: $text-color;
+  }
 }
 
 @mixin audio-player  {
