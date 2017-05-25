@@ -19,9 +19,7 @@ block open_graph
 
 append content
   main.grid-3-columns
-
-
-    div#news-list(class= "archive")
+    section#news-list(class= "archive")
       div#breadcrumb
         ol(itemscope itemtype="http://schema.org/BreadcrumbList")
           li(itemprop="itemListElement" )
@@ -32,10 +30,7 @@ append content
           li(itemprop="itemListElement" )
             a( href="/arquivos/")
               p.breadcrumb-last Arquivos
-
-    section#news-list(class= "archive")
       h1.archive-page-name(class="page-name")= `${page.month_name} de ${page.year}`
-
       ol(itemscope itemtype="http://schema.org/ItemList")
         - var list = page.list
         li.list-header(itemprop="itemListElement")

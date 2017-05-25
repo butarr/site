@@ -2,11 +2,6 @@
 @import '_helpers/mixins';
 @import '_helpers/constants';
 
-#archives {
-  
-}
-
-
 .archive {
   @include get-font(ARCHIVE);
 
@@ -22,7 +17,6 @@
 
 #news-list.archive #breadcrumb {
   margin-bottom: 20px;
-  padding: 0 10px;
 }
 
 .archive-page-name {
