@@ -20,19 +20,19 @@ The site will be running on http://localhost:4000
 
 - duplicate the file `_config.yml.example` and rename the copy to `_config.yml`
 
-- `docker-compose -f docker-compose-dev.yml up -d --build`
+- `docker-compose up -d --build`
 
 ### To check the logs
 
-- `docker-compose -f docker-compose-dev.yml logs -f`
+- `docker-compose logs -f`
 
 ### Running test with docker
 
-- `docker-compose -f docker-compose-dev.yml run site npm test`
+- `docker-compose run site npm test`
 
 ### Running test environment with docker
 
-- `docker-compose -f docker-compose-dev.yml run site npm run validation-test`
+- `docker-compose run site npm run validation-test`
 
 The site will be running on localhost:4000
 
