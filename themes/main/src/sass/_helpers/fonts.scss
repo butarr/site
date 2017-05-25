@@ -375,6 +375,10 @@ $number-size: 1.3rem;
     }
   }
 
+  i.fa {
+    font-size: $details-size;
+  }
+
   .list-header p {
     font: bold $title-size $family-serif;
   }
