@@ -162,6 +162,12 @@ append content
             if featured.audio
               +audio-player(initial_index++, featured.audio)
 
+        if page.service_weather
+          .services-within-list(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
+            - var service_weather = page.service_weather
+            .weather-forecast
+              +weather-forecast(service_weather)
+
         each post, index in page.latest_news
           - var published_at_post = utc_to_brt(post.date)
           .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor" id=`news_${index+1}`)
