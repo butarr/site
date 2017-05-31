@@ -7,19 +7,24 @@
 
   li {
     display: flex;
+    padding-bottom: 10px;
   }
 
   .day {
-    width: 50px;
+    margin-right: 50px;
     padding-bottom: 0;
   }
 }
 
-#breadcrumb {
+.archive#breadcrumb {
   margin-bottom: 20px;
   padding: 0 10px;
 }
 
 .archive-page-name {
   margin-bottom: 15px;
+}
+
+.list-header .day {
+  margin-right: 40px;
 }
