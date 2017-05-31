@@ -96,6 +96,15 @@ mixin weeklyShows()
   a(href='programa-semanal' class="button" title="link para mais notícias")
     span= `Mais "Programas Semanais"`
 
+mixin weather-forecast(service_weather)
+  .weather-header
+    figure(style=`background-image: url('/img/icons/tempo.svg');` title="Serviço de Previsão do Tempo" itemscope itemtype="https://schema.org/ImageObject")
+    .time-local
+      h3.service-name Tempo
+      h4.title Brasil
+  p.description(itemprop="description")= service_weather.description
+  +audio-player(initial_index++, service_weather.audio)
+
 mixin services()
   h3.section-name Serviços
   -
