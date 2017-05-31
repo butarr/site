@@ -20,7 +20,7 @@ The site will be running on http://localhost:4000
 
 - duplicate the file `_config.yml.example` and rename the copy to `_config.yml`
 
-- `docker-compose up -d --build`
+- `docker-compose up --build`
 
 ### To check the logs
 
