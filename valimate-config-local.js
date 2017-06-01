@@ -11,4 +11,7 @@ hexo.init().then(function(){
        notifyValimate(true);
     });
   });
-}).catch(e => notifyValimate(false));
+}).catch(e => {
+  console.log(e);
+  notifyValimate(false);
+});
