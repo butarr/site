@@ -9,7 +9,6 @@ COPY _config.yml /opt/site/
 
 COPY gulpfile.js /opt/site/
 COPY themes /opt/site/themes
-COPY source /opt/site/source
 COPY valimate.json /opt/site/valimate.json
 COPY valimate-config.js /opt/site/valimate-config.js
 COPY valimate-config-local.js /opt/site/valimate-config-local.js
