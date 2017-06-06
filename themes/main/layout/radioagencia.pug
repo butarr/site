@@ -96,14 +96,15 @@ mixin weeklyShows()
   a(href='programa-semanal' class="button" title="link para mais notícias")
     span= `Mais "Programas Semanais"`
 
-mixin weather-forecast(service_weather)
-  .weather-header
-    figure(style=`background-image: url('/img/icons/tempo.svg');` title="Serviço de Previsão do Tempo" itemscope itemtype="https://schema.org/ImageObject")
-    .time-local
-      h3.service-name Tempo
-      h4.title Brasil
-  p.description(itemprop="description")= service_weather.description
-  +audio-player(initial_index++, service_weather.audio)
+mixin featured-service(featured_service)
+  .weather-forecast
+    .weather-header
+      figure(style=`background-image: url('/img/icons/tempo.svg');` title="Serviço de Previsão do Tempo" itemscope itemtype="https://schema.org/ImageObject")
+      .time-local
+        h3.service-name Tempo
+        h4.title Brasil
+    p.description(itemprop="description")= featured_service.description
+    +audio-player(initial_index++, featured_service.audio)
 
 mixin services()
   h3.section-name Serviços
@@ -162,11 +163,18 @@ append content
             if featured.audio
               +audio-player(initial_index++, featured.audio)
 
-        if page.service_weather
+        if page.service_weather || page.service_interview
           .services-within-list(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
-            - var service_weather = page.service_weather
-            .weather-forecast
-              +weather-forecast(service_weather)
+            if page.service_weather
+              - var featured_service = page.service_weather
+              .featured-service
+                .featured-service-header
+                  figure(style=`background-image: url('/img/icons/tempo.svg');` title="Serviço de Previsão do Tempo" itemscope itemtype="https://schema.org/ImageObject")
+                  .time-local
+                    h3.service-name Tempo
+                    h4.title Brasil
+                p.description(itemprop="description")= featured_service.description
+                +audio-player(initial_index++, featured_service.audio)
 
         each post, index in page.latest_news
           - var published_at_post = utc_to_brt(post.date)
