@@ -46,6 +46,11 @@
       <priority>.6</priority>
   </url>
   <url>
+      <loc>https://www.brasildefato.com.br/english/</loc>
+      <changefreq>daily</changefreq>
+      <priority>.6</priority>
+  </url>
+  <url>
       <loc>https://www.brasildefato.com.br/radioagencia/</loc>
       <changefreq>daily</changefreq>
       <priority>.6</priority>
