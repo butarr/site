@@ -9,6 +9,8 @@ $logo-small-height: 2.5rem;
 $logo-big-height: 5.2rem;
 
 #page-header {
+  @include get-font(HEADER);
+
   position: fixed;
   top: 0;
   z-index: 100;
@@ -103,7 +105,7 @@ $logo-big-height: 5.2rem;
       width: 210px;
     }
 
-    #header-icons {
+    #header-elements {
       display: none;
     }
   }
@@ -114,15 +116,18 @@ $logo-big-height: 5.2rem;
   display: flex;
   -webkit-align-items: center; //Old Safari
   align-items: center;
-  position: absolute;
-  right: 10%;
-  top: 24%;
 
   @include media-query(FOUR) {
     -webkit-justify-content: flex-end; //Old Safari
     justify-content: flex-end;
     width: 230px;
   }
+}
+
+#page-header #header-elements {
+  position: absolute;
+  right: 10%;
+  top: 24%;
 
   @include media-query (FIVE) {
     top: 30%;
@@ -152,5 +157,13 @@ $logo-big-height: 5.2rem;
 
   .social-media-icons.contracted {
     display: none;
+  }
+}
+
+#page-header #language-header {
+  display: none;
+
+  @include media-query(FOUR){
+    display: block;
   }
 }

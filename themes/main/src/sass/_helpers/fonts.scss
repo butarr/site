@@ -24,6 +24,7 @@ $details-size: .9rem;
 $details-size-sidebar: .8rem;
 $title-size: 1.1rem;
 $section-name-size: 1rem;
+$language-header-size: .8rem;
 $audio-info-size: .8rem;
 
 $number-size: 1.3rem;
@@ -357,6 +358,18 @@ $number-size: 1.3rem;
     &:hover {
       color: $link-color;
     }
+  }
+}
+
+@mixin header {
+  #language-header {
+    text-align: end;
+  }
+
+  #language-header a {
+    font: bold $language-header-size $family-sans;
+    text-transform: uppercase;
+    color: $link-inverted-color;
   }
 }
 
@@ -1219,5 +1232,7 @@ $number-size: 1.3rem;
   @else if($type == ARCHIVE) {
     @include archive;
   }
-
+  @else if($type == HEADER) {
+    @include header;
+  }
 }

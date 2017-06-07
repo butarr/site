@@ -5,11 +5,15 @@ header#page-header(itemscope itemtype="http://schema.org/WPHeader")
     a(itemprop="url" href="/" title="Link para a página principal")
       block bannerLogo
         .banner-logo.banner-logo-default
-    #header-icons
-      include social-media-icons
-      img#search-icon(src="/img/search-icon.svg", alt="imagem lupa")
-      #search-tool
-        .gcse-search
-        img#close-search-button(src="/img/close-bttn.svg" alt="imagem botao fechar")
-        
+    #header-elements  
+      #header-icons
+        include social-media-icons
+        img#search-icon(src="/img/search-icon.svg", alt="imagem lupa")
+        #search-tool
+          .gcse-search
+          img#close-search-button(src="/img/close-bttn.svg" alt="imagem botao fechar")
+      if config.toggles.language_header
+        span#language-header    
+          a(itemprop="url" href="/espanol/" title="Link to english area") Español |     
+          a(itemprop="url" href="/english/" title="Link to english area") English
   include menu_desktop
