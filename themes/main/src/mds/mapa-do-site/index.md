@@ -17,6 +17,7 @@ content: |
         <li><a itemprop="url" href="/internacional">Internacional</a></li>
         <li><a itemprop="url" href="/especiais">Especiais</a></li>
         <li><a itemprop="url" href="/espanol">Español</a></li>
+        <li><a itemprop="url" href="/english">English</a></li>
         <li><a itemprop="url" href="/radioagencia">Radioagência</a></li>
       </ul>
     </section>
