@@ -52,6 +52,20 @@
   overflow-y: auto;
 }
 
+#menu-mobile #language-nav {
+  @include get-font(LANGUAGE_NAV);
+
+  display: -webkit-flex; //Old Safari
+  display: flex;
+  -webkit-justify-content: center; //Old Safari
+  justify-content: center;
+
+  #divisor {
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+}
+
 #menu-mobile .social-media-icons {
   height: 55px;
   display: -webkit-flex; //Old Safari

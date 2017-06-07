@@ -16,6 +16,7 @@ $lateral-margin: 10px;
 
   @include media-query(FOUR) {
     position: initial;
+    margin-right: 0;
   }
 }
 
@@ -32,7 +33,7 @@ $lateral-margin: 10px;
   @include media-query(FOUR) {
     position: absolute;
     right: -28px;
-    top: 33px;
+    top: 28px;
     width: 180px;
     padding: 0;
   }

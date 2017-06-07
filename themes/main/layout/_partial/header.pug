@@ -12,8 +12,5 @@ header#page-header(itemscope itemtype="http://schema.org/WPHeader")
         #search-tool
           .gcse-search
           img#close-search-button(src="/img/close-bttn.svg" alt="imagem botao fechar")
-      if config.toggles.language_header
-        span#language-header    
-          a(itemprop="url" href="/espanol/" title="Link to english area") Español |     
-          a(itemprop="url" href="/english/" title="Link to english area") English
+      include language_nav
   include menu_desktop

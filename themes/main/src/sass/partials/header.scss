@@ -9,8 +9,6 @@ $logo-small-height: 2.5rem;
 $logo-big-height: 5.2rem;
 
 #page-header {
-  @include get-font(HEADER);
-
   position: fixed;
   top: 0;
   z-index: 100;
@@ -111,27 +109,23 @@ $logo-big-height: 5.2rem;
   }
 }
 
-#page-header #header-icons {
-  display: -webkit-flex; //Old Safari
-  display: flex;
-  -webkit-align-items: center; //Old Safari
-  align-items: center;
-
-  @include media-query(FOUR) {
-    -webkit-justify-content: flex-end; //Old Safari
-    justify-content: flex-end;
-    width: 230px;
-  }
-}
-
 #page-header #header-elements {
   position: absolute;
   right: 10%;
   top: 24%;
+  display: -webkit-flex; //Old Safari
+  display: flex;
+  -webkit-flex-direction: column;  //Old Safari
+  flex-direction: column;
 
   @include media-query (FIVE) {
     top: 30%;
   }
+}
+
+#page-header #header-icons {
+  display: -webkit-flex; //Old Safari
+  display: flex;
 
   .social-media-icons {
     display: none;
@@ -141,16 +135,12 @@ $logo-big-height: 5.2rem;
       color: $social-media-icons-color;
     }
 
-
     @include media-query(FOUR) {
       display: -webkit-flex; //Old Safari
       display: flex;
-      -webkit-align-items: center; //Old Safari
-      align-items: center;
 
       img {
         height: $image-height;
-        margin-right: $lateral-margin;
       }
     }
   }
@@ -160,7 +150,8 @@ $logo-big-height: 5.2rem;
   }
 }
 
-#page-header #language-header {
+#page-header #language-nav {
+  @include get-font(LANGUAGE_NAV);
   display: none;
 
   @include media-query(FOUR){
