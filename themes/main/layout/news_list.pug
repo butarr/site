@@ -49,10 +49,12 @@ append content
   main.grid-3-columns
     if page.area=="español"
       - var language= "es"
+    else if page.area=="english"
+      - var language= "en"
     else
-      - var language= null
+      - var language= "pt-BR"
 
-    section#news-list(class= "list" itemscope itemtype="http://schema.org/ItemList" lang= language)
+    section#news-list(class= "list" itemscope itemtype="http://schema.org/ItemList" lang=language)
       h1(class="page-name" itemprop="name")= page.area
 
       - var list = page.news ? page.news : page.list

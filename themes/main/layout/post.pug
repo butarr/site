@@ -50,10 +50,12 @@ block open_graph
 
 append content
   main(class='grid-4-columns')
-    if page.area=="espanol"
+    if page.area=="español"
       - var language= "es"
+    else if page.area=="english"
+      - var language= "en"
     else
-      - var language= null
+      - var language= "pt-BR"
 
     article#post(itemscope itemtype="http://schema.org/NewsArticle" lang= language)
 
