@@ -12,7 +12,7 @@ nav#menu-mobile(itemscope itemtype="http://schema.org/SiteNavigationElement")
       li
         a(itemprop="url" href="/")= 'Início'
         meta(itemprop="name" content="Início")
-      if config.toggles.language_header
+      if config.toggles.language_nav
         - var list = {opiniao:'Opinião', politica:'Política', direitos_humanos:'Direitos Humanos', cultura:'Cultura', geral:'Geral', internacional:'Internacional', especiais:'Especiais', radioagencia: 'Radioagência'}
       else
         - var list = {opiniao:'Opinião', politica:'Política', direitos_humanos:'Direitos Humanos', cultura:'Cultura', geral:'Geral', internacional:'Internacional', especiais:'Especiais', espanol:'Español', radioagencia: 'Radioagência'}
