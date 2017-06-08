@@ -1,12 +1,4 @@
-.DS_Store
-Thumbs.db
-db.json
-*.log
+.git/
 node_modules/
 public/
-html/
-.deploy*/db.json
-node_modules
-.deploy_git/
-.idea/
-*swp
+source/
