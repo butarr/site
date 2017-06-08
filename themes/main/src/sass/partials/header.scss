@@ -153,8 +153,11 @@ $logo-big-height: 5.2rem;
 #page-header .language-nav {
   @include get-font(LANGUAGE_NAV);
   display: none;
+  -webkit-justify-content: space-around; //Old Safari
+  justify-content: space-around;
 
   @include media-query(FOUR){
-    display: block;
+    display: -webkit-flex; //Old Safari
+    display: flex;
   }
 }
