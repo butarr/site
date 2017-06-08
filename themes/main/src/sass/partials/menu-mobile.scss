@@ -52,7 +52,7 @@
   overflow-y: auto;
 }
 
-#menu-mobile #language-nav {
+#menu-mobile .language-nav {
   @include get-font(LANGUAGE_NAV);
 
   display: -webkit-flex; //Old Safari
@@ -60,7 +60,7 @@
   -webkit-justify-content: center; //Old Safari
   justify-content: center;
 
-  #divisor {
+  .language-nav-divisor {
     margin-right: 3px;
     margin-left: 3px;
   }

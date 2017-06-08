@@ -362,13 +362,13 @@ $number-size: 1.3rem;
 }
 
 @mixin language-nav {
-  a, #divisor {
+  a, .language-nav-divisor {
     font: bold $language-nav-size $family-sans;
     text-transform: uppercase;
     color: $link-inverted-color;
   }
 
-  #divisor {
+  .language-nav-divisor {
     color: $menu-divisor-desktop;
   }
 }

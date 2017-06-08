@@ -150,7 +150,7 @@ $logo-big-height: 5.2rem;
   }
 }
 
-#page-header #language-nav {
+#page-header .language-nav {
   @include get-font(LANGUAGE_NAV);
   display: none;
 
