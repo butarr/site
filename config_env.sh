@@ -57,6 +57,7 @@ theme: main
 #Toggles
 toggles:
   _D6fenTno_adsense: ${TOGGLE_D6fenTno_ADSENSE:-false}
+  language_nav: ${TOGGLE_LANGUAGE_NAV:-false}
   _test_environment: ${TOGGLE_TEST_ENVIROMENT:-false}
 feed:
   type: rss2
