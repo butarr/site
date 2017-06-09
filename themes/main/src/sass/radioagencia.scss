@@ -232,14 +232,31 @@
   }
 }
 
+#radioagency .services-within-list {
+  display: flex;
+
+  .featured-service + .featured-service {
+    margin-left: 10px;
+  }
+}
+
 #radioagency .featured-service {
-  width: 100%;
-  padding: 20px;
+  width: 360px;
+  padding: 15px;
   background-color: $service-weather-color;
 
-  figure {
-    height: 52px;
-    width: 63px;
+  .service-name {
+    color: $featured-service-name;
+  }
+
+  .weather-icon {
+    height: 50px;
+    width: 75px;
+  }
+
+  .interview-icon {
+    height: 50px;
+    width: 60px;
   }
 
   .featured-service-header {
@@ -247,6 +264,15 @@
   }
 
   .time-local {
-    padding-left: 15px;
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .audio-item {
+    width: 100%;
+  }
+
+  .featured-service-info {
+    min-height: 120px;
   }
 }

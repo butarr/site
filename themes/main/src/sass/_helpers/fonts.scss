@@ -28,6 +28,7 @@ $language-nav-size: .75rem;
 $audio-info-size: .8rem;
 
 $number-size: 1.3rem;
+$service-title-size: 1.2rem;
 
 //Mixins matching each scss file
 
@@ -1146,6 +1147,12 @@ $number-size: 1.3rem;
 
     &:hover {
       color: $link-hover-color;
+    }
+  }
+
+  .featured-service {
+    .title {
+      font: bold #{$service-title-size} / #{$line-separation-small} $family-serif;
     }
   }
 }
