@@ -162,36 +162,37 @@ append content
                 time.date(datetime=published_at_featured.toISOString(), itemprop="datePublished")= full_date(published_at_featured)
             if featured.audio
               +audio-player(initial_index++, featured.audio)
-
+        
         if page.service_weather || page.service_interview
           .services-within-list(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
             if page.service_weather
               - var featured_service = page.service_weather
               .featured-service
-                .featured-service-info
-                  .featured-service-header
-                    figure.weather-icon(style=`background-image: url('/img/icons/tempo.svg');` itemscope itemtype="https://schema.org/ImageObject")
-                    .time-local
-                      h3.service-name Tempo
-                      a(href=featured_service.url itemprop="url")
-                        h4.title= featured_service.title
-                  a(href=featured_service.url itemprop="url")
-                    p.description(itemprop="description")= featured_service.description
-                +audio-player(initial_index++, featured_service.audio)
+                .featured-service-header
+                  figure.weather-icon(style=`background-image: url('/img/icons/tempo.svg');` itemscope itemtype="https://schema.org/ImageObject")
+                  .time-local
+                    h3.service-name Tempo
+                    a(href=featured_service.url itemprop="url")
+                      h4.title= featured_service.title
+                a(href=featured_service.url itemprop="url")
+                  p.description(itemprop="description")= featured_service.description
+                .featured-service-audio
+                  +audio-player(initial_index++, featured_service.audio)
             if page.service_interview
               - var featured_service = page.service_interview
               .featured-service
-                .featured-service-info
-                  .featured-service-header
-                    figure.interview-icon(style=`background-image: url('/img/icons/entrevistas.svg');` itemscope itemtype="https://schema.org/ImageObject")
-                    .time-local
-                      h3.service-name Entrevistas
-                      a(href=featured_service.url itemprop="url")
-                        h4.title= featured_service.title
-                  a(href=featured_service.url itemprop="url")
-                    p.description(itemprop="description")= featured_service.description
-                +audio-player(initial_index++, featured_service.audio)
-
+                .featured-service-header
+                  figure.interview-icon(style=`background-image: url('/img/icons/entrevistas.svg');` itemscope itemtype="https://schema.org/ImageObject")
+                  .time-local
+                    h3.service-name Entrevistas
+                    a(href=featured_service.url itemprop="url")
+                      h4.title= featured_service.title
+                a(href=featured_service.url itemprop="url")
+                  p.description(itemprop="description")= featured_service.description
+                .featured-service-audio
+                  +audio-player(initial_index++, featured_service.audio)
+      
+        
         each post, index in page.latest_news
           - var published_at_post = utc_to_brt(post.date)
           .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor" id=`news_${index+1}`)

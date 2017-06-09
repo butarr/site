@@ -241,25 +241,16 @@
 }
 
 #radioagency .featured-service {
-  width: 360px;
+  display: -webkit-flex; //Old Safari
+  display: flex;
+  -webkit-flex-direction: column; //Old Safari
+  flex-direction: column;
+  width: 100%;
   padding: 15px;
   background-color: $service-weather-color;
 
-  .service-name {
-    color: $featured-service-name;
-  }
-
-  .weather-icon {
-    height: 50px;
-    width: 75px;
-  }
-
-  .interview-icon {
-    height: 50px;
-    width: 60px;
-  }
-
   .featured-service-header {
+    display: -webkit-flex; //Old Safari
     display: flex;
   }
 
@@ -268,11 +259,30 @@
     padding-left: 10px;
   }
 
+  .service-name {
+    color: $featured-service-name;
+  }
+
   .audio-item {
+    -webkit-align-self: flex-end; //Old Safari
+    align-self: flex-end;
     width: 100%;
   }
 
-  .featured-service-info {
-    min-height: 120px;
+  .featured-service-audio {
+    display: -webkit-flex; //Old Safari
+    display: flex;
+    -webkit-flex-grow: 1; //Old Safari
+    flex-grow: 1;
+  }
+
+  .weather-icon {
+    height: 50px;
+    width: 65px;
+  }
+
+  .interview-icon {
+    height: 50px;
+    width: 60px;
   }
 }
