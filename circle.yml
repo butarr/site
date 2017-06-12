@@ -26,7 +26,7 @@ deployment:
       - ./config_env.sh:
           environment:
             SITE_URL: "https://www.brasildefato.com.br"
-            TOGGLE_LANGUAGE_NAV: false
+            TOGGLE_LANGUAGE_NAV: true
       - ssh -i bdf-prod-plain frida@brasildefato.com.br -C "/home/frida/components/frida-scripts/deploy-site.sh $CIRCLE_SHA1"
       - scp -i bdf-prod-plain _config.yml frida@brasildefato.com.br:/home/frida/components/site
   staging:
