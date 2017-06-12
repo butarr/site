@@ -96,15 +96,18 @@ mixin weeklyShows()
   a(href='programa-semanal' class="button" title="link para mais notícias")
     span= `Mais "Programas Semanais"`
 
-mixin featured-service(featured_service)
-  .weather-forecast
-    .weather-header
-      figure(style=`background-image: url('/img/icons/tempo.svg');` title="Serviço de Previsão do Tempo" itemscope itemtype="https://schema.org/ImageObject")
+mixin featured-service(featured_service, service_name)
+  .featured-service
+    .featured-service-header
+      figure.weather-icon(style=`background-image: url('/img/icons/${service_name}.svg');` itemscope itemtype="https://schema.org/ImageObject")
       .time-local
-        h3.service-name Tempo
-        h4.title Brasil
-    p.description(itemprop="description")= featured_service.description
-    +audio-player(initial_index++, featured_service.audio)
+        h3.service-name= service_name
+        a(href=featured_service.url itemprop="url")
+          h4.title= featured_service.title
+    a(href=featured_service.url itemprop="url")
+      p.description(itemprop="description")= featured_service.description
+    .featured-service-audio
+      +audio-player(initial_index++, featured_service.audio)
 
 mixin services()
   h3.section-name Serviços
@@ -177,31 +180,9 @@ append content
         if page.service_weather || page.service_interview
           .services-within-list(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
             if page.service_weather
-              - var featured_service = page.service_weather
-              .featured-service
-                .featured-service-header
-                  figure.weather-icon(style=`background-image: url('/img/icons/tempo.svg');` itemscope itemtype="https://schema.org/ImageObject")
-                  .time-local
-                    h3.service-name Tempo
-                    a(href=featured_service.url itemprop="url")
-                      h4.title= featured_service.title
-                a(href=featured_service.url itemprop="url")
-                  p.description(itemprop="description")= featured_service.description
-                .featured-service-audio
-                  +audio-player(initial_index++, featured_service.audio)
+              +featured-service(page.service_weather, "tempo")
             if page.service_interview
-              - var featured_service = page.service_interview
-              .featured-service
-                .featured-service-header
-                  figure.interview-icon(style=`background-image: url('/img/icons/entrevistas.svg');` itemscope itemtype="https://schema.org/ImageObject")
-                  .time-local
-                    h3.service-name Entrevistas
-                    a(href=featured_service.url itemprop="url")
-                      h4.title= featured_service.title
-                a(href=featured_service.url itemprop="url")
-                  p.description(itemprop="description")= featured_service.description
-                .featured-service-audio
-                  +audio-player(initial_index++, featured_service.audio)
+              +featured-service(page.service_interview, "entrevista")
 
         - var index_list = 1
         while index_list < 20
