@@ -162,7 +162,18 @@ append content
                 time.date(datetime=published_at_featured.toISOString(), itemprop="datePublished")= full_date(published_at_featured)
             if featured.audio
               +audio-player(initial_index++, featured.audio)
-        
+
+        - var post = page.latest_news[0]
+        - var published_at_post = utc_to_brt(post.date)
+        .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor" id=`news_1`)
+          +metadata(1, post)
+          a(href=post.url itemprop="url" class="news-radio-link")
+            h2.title(itemprop= "headline")= post.title
+            p.description(itemprop="description")= post.description
+          time.date(datetime=published_at_post.toISOString(), itemprop="datePublished")= full_date(published_at_post)
+          if post.audio
+            +audio-player(initial_index++, post.audio)
+
         if page.service_weather || page.service_interview
           .services-within-list(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
             if page.service_weather
@@ -191,12 +202,13 @@ append content
                   p.description(itemprop="description")= featured_service.description
                 .featured-service-audio
                   +audio-player(initial_index++, featured_service.audio)
-      
-        
-        each post, index in page.latest_news
+
+        - var index_list = 1
+        while index_list < 20
+          - var post = page.latest_news[index_list++]
           - var published_at_post = utc_to_brt(post.date)
-          .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor" id=`news_${index+1}`)
-            +metadata(index+1, post)
+          .news-radio(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor" id=`news_${index_list}`)
+            +metadata(index_list, post)
             a(href=post.url itemprop="url" class="news-radio-link")
               h2.title(itemprop= "headline")= post.title
               p.description(itemprop="description")= post.description
