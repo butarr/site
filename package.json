@@ -32,7 +32,7 @@
   "scripts": {
     "start": "gulp",
     "test": "npm run sass-lint; valimate",
-    "validation-test": "./node_modules/.bin/w3c-css https://cpmidias-teste.brasildefato.com.br/; valimate valimate-test.json",
+    "validation-test": "./node_modules/.bin/w3c-css https://www.cpmidias-teste.brasildefato.com.br/; valimate valimate-test.json",
     "sass-lint": "./node_modules/sass-lint/bin/sass-lint.js 'themes/**/*.scss' -v -q",
     "pug-lint": "./node_modules/pug-lint/bin/pug-lint themes/main/layout/**/*"
   },
