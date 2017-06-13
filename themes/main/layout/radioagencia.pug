@@ -96,10 +96,10 @@ mixin weeklyShows()
   a(href='programa-semanal' class="button" title="link para mais notícias")
     span= `Mais "Programas Semanais"`
 
-mixin featured-service(featured_service, service_name)
+mixin featured-service(featured_service)
   .featured-service
     .featured-service-header
-      figure.weather-icon(style=`background-image: url('/img/icons/${service_name}.svg');` itemscope itemtype="https://schema.org/ImageObject")
+      figure.service-icon(style=`background-image: url('/img/icons/tempo.svg');` itemscope itemtype="https://schema.org/ImageObject")
       .time-local
         h3.service-name= service_name
         a(href=featured_service.url itemprop="url")
@@ -180,9 +180,7 @@ append content
         if page.service_weather || page.service_interview
           .services-within-list(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
             if page.service_weather
-              +featured-service(page.service_weather, "tempo")
-            if page.service_interview
-              +featured-service(page.service_interview, "entrevista")
+              +featured-service(page.service_weather)
 
         - var index_list = 1
         while index_list < 20
