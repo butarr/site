@@ -96,7 +96,7 @@ mixin weeklyShows()
   a(href='programa-semanal' class="button" title="link para mais notícias")
     span= `Mais "Programas Semanais"`
 
-mixin featured-service(featured_service)
+mixin featured-service(featured_service, service_name)
   .featured-service
     .featured-service-header
       figure.service-icon(style=`background-image: url('/img/icons/tempo.svg');` itemscope itemtype="https://schema.org/ImageObject")
@@ -180,7 +180,7 @@ append content
         if page.service_weather || page.service_interview
           .services-within-list(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
             if page.service_weather
-              +featured-service(page.service_weather)
+              +featured-service(page.service_weather, "tempo")
 
         - var index_list = 1
         while index_list < 20
