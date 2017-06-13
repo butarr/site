@@ -279,9 +279,10 @@
 
 #radioagency .service-icon {
   height: 46px;
-  width: 66px;
+  width: 50px;
 
   @include media-query(THREE){
     height: 50px;
+    width: 60px;
   }
 }
