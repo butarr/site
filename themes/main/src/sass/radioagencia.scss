@@ -275,19 +275,14 @@
     -webkit-flex-grow: 1; //Old Safari
     flex-grow: 1;
   }
+}
 
-  .weather-icon {
-    height: 43px;
-    width: 60px;
+#radioagency .weather-icon {
+  height: 43px;
+  width: 60px;
 
-    @include media-query(THREE){
-      height: 49px;
-      width: 65px;
-    }
-  }
-
-  .interview-icon {
-    height: 50px;
-    width: 60px;
+  @include media-query(THREE){
+    height: 49px;
+    width: 65px;
   }
 }
