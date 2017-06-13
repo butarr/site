@@ -50,7 +50,7 @@ append content
               .photo-caption-smaller
                 - var imageDescription=related.cover.subtitle + " - Créditos: " + related.cover.credits
                 a(itemprop="url", href=related.url)
-                  figure.other-charge-figure(style=`background-image: url(${related.cover.small});` alt=imageDescription title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
+                  figure.other-charge-figure(style=`background-image: url(${related.cover.small});` title=imageDescription itemscope itemtype="https://schema.org/ImageObject")
 
 block footer
   include _partial/footer_photo_caption_list
