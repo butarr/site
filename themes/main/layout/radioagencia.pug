@@ -99,7 +99,7 @@ mixin weeklyShows()
 mixin featured-service(featured_service, service_name)
   .featured-service
     .featured-service-header
-      figure.service-icon(style=`background-image: url('/img/icons/tempo.svg');` itemscope itemtype="https://schema.org/ImageObject")
+      img.service-icon(src="/img/icons/weather.svg" alt="Ícone da Previsão do Tempo")
       .time-local
         h3.service-name= service_name
         a(href=featured_service.url itemprop="url")
