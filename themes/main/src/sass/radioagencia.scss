@@ -277,8 +277,13 @@
   }
 
   .weather-icon {
-    height: 50px;
-    width: 65px;
+    height: 40px;
+    width: 60px;
+
+    @include media-query(THREE){
+      height: 49px;
+      width: 65px;
+    }
   }
 
   .interview-icon {
