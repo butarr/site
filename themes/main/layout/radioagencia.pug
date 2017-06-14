@@ -99,7 +99,10 @@ mixin weeklyShows()
 mixin featured-service(featured_service, service_name)
   .featured-service
     .featured-service-header
-      img.service-icon(src="/img/icons/weather.svg" alt="Ícone da Previsão do Tempo")
+      - if(service_name=='tempo')
+        img.service-icon(src="/img/icons/weather.svg" alt="ícone da previsão do tempo")
+      - else
+        img.service-icon(src="/img/icons/interview.svg" alt="ícone de entrevistas")
       .time-local
         h3.service-name= service_name
         a(href=featured_service.url itemprop="url")
@@ -181,6 +184,8 @@ append content
           .services-within-list(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
             if page.service_weather
               +featured-service(page.service_weather, "tempo")
+            if page.service_interview
+              +featured-service(page.service_interview, "entrevista")
 
         - var index_list = 1
         while index_list < 20

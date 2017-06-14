@@ -233,10 +233,18 @@
 }
 
 #radioagency .services-within-list {
-  display: flex;
+  @include media-query(THREE){
+    display: -webkit-flex; //Old Safari
+    display: flex;
+  }
 
   .featured-service + .featured-service {
-    margin-left: 10px;
+    margin-top: 10px;
+
+    @include media-query(THREE){
+      margin-left: 10px;
+      margin-top: 0;
+    }
   }
 }
 
