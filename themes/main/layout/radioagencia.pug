@@ -183,10 +183,10 @@ append content
 
         if page.service_weather || page.service_interview
           .services-within-list(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
-            if page.featured_service_01
-              +featured-service(page.featured_service_01, "tempo")
-            if page.featured_service_02
-              +featured-service(page.featured_service_02, "entrevista")
+            if page.service_weather
+              +featured-service(page.service_weather, "tempo")
+            if page.service_interview
+              +featured-service(page.service_interview, "entrevista")
 
         - var index_list = 1
         while index_list < 20
