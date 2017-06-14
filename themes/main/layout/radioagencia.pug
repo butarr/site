@@ -109,8 +109,9 @@ mixin featured-service(featured_service, service_name)
           h4.title= featured_service.title
     a(href=featured_service.url itemprop="url")
       p.description(itemprop="description")= featured_service.description
-    .featured-service-audio
-      +audio-player(initial_index++, featured_service.audio)
+    if featured_service.audio
+      .featured-service-audio
+        +audio-player(initial_index++, featured_service.audio)
 
 mixin services()
   h3.section-name Serviços
