@@ -184,8 +184,8 @@ append content
           .services-within-list(itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class= "divisor")
             if page.featured_service_01
               +featured-service(page.featured_service_01, "tempo")
-            if page.service_interview
-              +featured-service(page.service_interview, "entrevista")
+            if page.featured_service_02
+              +featured-service(page.featured_service_02, "entrevista")
 
         - var index_list = 1
         while index_list < 20
