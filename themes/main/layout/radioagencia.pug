@@ -55,13 +55,11 @@ mixin article()
   if page.article
     h3.section-name Artigo
     - var article = page.article
-    - var published_at = utc_to_brt(article.date)
     .article
       a(href=article.url title="link para a pagina do artigo")
         span.name(itemprop="name")= article.author
       a(href=article.url itemprop="url")
         h4.title= article.title
-      time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
       if article.audio
         +audio-player(initial_index++, article.audio)
 
@@ -70,11 +68,9 @@ mixin article()
 
 mixin service(service, service_data, index)
   .service
-    - var published_at = utc_to_brt(service.date)
     h3.service-name(class=`service-0${index+1}`)=service_data.name
     a(href=service.url, itemprop="url")
       h4.title=service.title
-    time.date(datetime=published_at.toISOString(), itemprop="datePublished")= full_date(published_at)
     if service.audio
       +audio-player(initial_index++, service.audio)
     if service_data.path

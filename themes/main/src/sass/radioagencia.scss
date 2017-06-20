@@ -146,10 +146,6 @@
         height: 28px;
       }
     }
-
-    .title {
-      margin-bottom: 0;
-    }
   }
 }
 
@@ -235,7 +231,7 @@
 #radioagency .services-within-list {
   display: block;
 
-  @include media-query(THREE){
+  @include media-query(THREE) {
     display: -webkit-flex; //Old Safari
     display: flex;
   }
