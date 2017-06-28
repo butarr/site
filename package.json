@@ -27,7 +27,9 @@
     "js-yaml": "3.8.4",
     "moment-timezone": "0.5.13",
     "node-reset-scss": "1.0.1",
-    "underscore": "1.8.3"
+    "underscore": "1.8.3",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
   },
   "scripts": {
     "start": "gulp",
@@ -38,8 +40,6 @@
     "pug-lint": "./node_modules/pug-lint/bin/pug-lint themes/main/layout/**/*"
   },
   "devDependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.3",
     "gulp-clean-css": "^3.2.0",
     "gulp-rev": "^7.1.2",
     "pug-lint": "^2.4.0",
