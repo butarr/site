@@ -32,11 +32,14 @@
   "scripts": {
     "start": "gulp",
     "test": "npm run sass-lint; valimate",
+    "server": "node ./index.js",
     "validation-test": "./node_modules/.bin/w3c-css https://www.cpmidias-teste.brasildefato.com.br/; valimate valimate-test.json",
     "sass-lint": "./node_modules/sass-lint/bin/sass-lint.js 'themes/**/*.scss' -v -q",
     "pug-lint": "./node_modules/pug-lint/bin/pug-lint themes/main/layout/**/*"
   },
   "devDependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
     "gulp-clean-css": "^3.2.0",
     "gulp-rev": "^7.1.2",
     "pug-lint": "^2.4.0",
