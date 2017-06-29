@@ -17,6 +17,8 @@ test:
   override:
     - npm run sass-lint:
         environment:
+          CERT_FILE_PATH: "test/ssl/ssl.crt"
+          KEY_FILE_PATH: "test/ssl/ssl.key"
           SITE_URL: "https://cpmidias-teste.brasildefato.com.br"
 
 deployment:
@@ -26,6 +28,8 @@ deployment:
       - ./config_env.sh:
           environment:
             SITE_URL: "https://www.brasildefato.com.br"
+            CERT_FILE_PATH: "/etc/letsencrypt/live/brasildefato.com.br/fullchain.pem"
+            KEY_FILE_PATH: "/etc/letsencrypt/live/brasildefato.com.br/privkey.pem"
             TOGGLE_LANGUAGE_NAV: true
       - ssh -i bdf-prod-plain frida@brasildefato.com.br -C "/home/frida/components/frida-scripts/deploy-site.sh $CIRCLE_SHA1"
       - scp -i bdf-prod-plain _config.yml frida@brasildefato.com.br:/home/frida/components/site
@@ -38,6 +42,8 @@ deployment:
       - ./config_env.sh:
           environment:
             SITE_URL: "https://cpmidias-teste.brasildefato.com.br"
+            CERT_FILE_PATH: "/etc/letsencrypt/live/cpmidias-teste.brasildefato.com.br/fullchain.pem"
+            KEY_FILE_PATH: "/etc/letsencrypt/live/cpmidias-teste.brasildefato.com.br/privkey.pem"
             TOGGLE_TEST_ENVIROMENT: "true"
             TOGGLE_LANGUAGE_NAV: true
       - scp -i bdf-plain _config.yml frida@cpmidias-teste.brasildefato.com.br:/home/frida/components/site
