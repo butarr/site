@@ -13,3 +13,4 @@ themes/**/source/
 .idea/
 *swp
 source/*
+.env
