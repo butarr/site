@@ -28,9 +28,9 @@ content: |
       </ul>
     </section>
     <section>
-      <h3 class="title">Charges</h3>
+      <h3 class="title">Artes</h3>
       <ul class="list">
-        <li><a itemprop="url" href="/charges">Charges</a></li>
+        <li><a itemprop="url" href="/artes">Artes</a></li>
       </ul>
     </section>
     <section>
