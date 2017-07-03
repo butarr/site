@@ -27,9 +27,9 @@ append content
             i(class="fa fa-chevron-right fa-lg")
           li(itemprop="itemListElement")
             a(href="/charges/")
-              p.breadcrumb-last Charges
+              p.breadcrumb-last Artes
 
-      h1.hat(itemprop="about") Charge
+      h1.hat(itemprop="about") Arte
       h2.title(itemprop="headline")= page.title
       p.credits(itemprop="author")= page.cover.credits
 
@@ -43,7 +43,7 @@ append content
       include _partial/social-media-share
 
       section#other-photo-captions
-        h3.section-name Outras charges
+        h3.section-name Outras artes
         if page.related_photo_captions
           .related-photo-captions
             each related in page.related_photo_captions
