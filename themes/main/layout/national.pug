@@ -377,14 +377,14 @@ append content
           else if page.advertising_09
             +spotlight_04_desktop(page.advertising_09, "http://schema.org/WPAdBlock")
 
+          section(class= "columnists" class="spacing" itemscope itemtype="http://schema.org/ItemList")
+            +columnists_list
+
           section.printed-news(class="spacing")
             +printed-news-listings(page)
 
           section.newsletter(class="spacing")
             +newsletter("emailInputMultipleColumnLayout")
-
-          section(class= "columnists" class="spacing" itemscope itemtype="http://schema.org/ItemList")
-            +columnists_list
 
           +facebook-widget(facebook_url)
 block footer
