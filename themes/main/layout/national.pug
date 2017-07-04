@@ -249,6 +249,9 @@ append content
               - var post=page.featured_06
               +featured-text-box(post)
 
+            section(class= "columnists" class="spacing" itemscope itemtype="https://schema.org/ItemList")
+              +columnists_list
+
             if page.spotlight_03
               +spotlight_03_mobile(page.spotlight_03)
             else if page.advertising_05
@@ -291,9 +294,6 @@ append content
 
           section.newsletter(class="spacing")
             +newsletter("emailInputSingleColumnLayout")
-
-          section(class= "columnists" class="spacing" itemscope itemtype="https://schema.org/ItemList")
-            +columnists_list
 
           section#videos(class="gallery-videos" class="spacing")
             h2.section-name TV Brasil de Fato
