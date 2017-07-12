@@ -81,16 +81,16 @@ mixin weeklyShows()
   h3.section-name Programas Semanais
   -
     var radios_data = [
-      { name: 'São Paulo' },
-      { name: 'Pernambuco' },
-      { name: 'Minas Gerais' }
+      { name: 'São Paulo', url: 'programa-semanal-sp' },
+      { name: 'Pernambuco', url: 'programa-semanal-pe' },
+      { name: 'Minas Gerais', url: 'programa-semanal-mg' }
     ]
   each radio_data, index in radios_data
     - var radio = page[`radio_0${index+1}`]
     if radio
       +service(radio, radio_data, index)
-  a(href='programa-semanal' class="button" title="link para mais notícias")
-    span= `Mais "Programas Semanais"`
+      a(href=`${radios_data[index].url}` class="button" title="link para mais notícias")
+        span= `Mais ${radios_data[index].name}`
 
 mixin featured-service(featured_service, service_name)
   .featured-service
