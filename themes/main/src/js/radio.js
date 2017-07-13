@@ -97,8 +97,13 @@ function showTrackLoader(playerDiv) {
   playerDiv.find('.controls .play').hide();
 }
 
-function showRadioweb(){
-  showPlayer($($('.radio-player')[0]));
+function setupRadioweb(){
+  var player = $($('.radio-player')[0]);
+  var audioElement = player.find('.audio')[0];
+  audioElement.onpause = function() { showPlay(player); };
+  audioElement.onplaying = function() { showPause(player); };
+  audioElement.onwaiting = function() { showTrackLoader(player) };
+  showPlayer(player);
 }
 
 function setup(){
@@ -134,7 +139,7 @@ function setup(){
     setProgressBarHandler(audioElement, playerDiv);
   });
 
-  showRadioweb();
+  setupRadioweb();
 }
 
 $(document).ready(setup);
