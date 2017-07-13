@@ -1,4 +1,5 @@
 extends base
+include _partial/audio_player
 include _partial/modules/module_facebook
 
 mixin columnist_item(column)
@@ -365,6 +366,8 @@ append content
                       h3.title(id="most_read_"+cont++)= post.title
 
         aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
+          if page.radioweb
+            +audio-player(99, page.radioweb.audio)
           if page.spotlight_03
             +spotlight_03_desktop(page.spotlight_03)
           else if page.advertising_06
