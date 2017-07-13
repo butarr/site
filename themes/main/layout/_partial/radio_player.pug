@@ -12,4 +12,6 @@ mixin radio-player(audio)
             img.pause-button(src="/img/icons/pause.svg" alt="Pausar")
         .progress-bar
           span.time-progress 0:00
+          .progress
+            progress(max='100', value='0')
           span.duration Infinito
