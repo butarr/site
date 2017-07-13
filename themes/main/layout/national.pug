@@ -1,5 +1,5 @@
 extends base
-include _partial/audio_player
+include _partial/radio_player
 include _partial/modules/module_facebook
 
 mixin columnist_item(column)
@@ -367,7 +367,7 @@ append content
 
         aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
           if page.radioweb
-            +audio-player(99, page.radioweb.audio)
+            +radio-player(page.radioweb.audio)
           if page.spotlight_03
             +spotlight_03_desktop(page.spotlight_03)
           else if page.advertising_06

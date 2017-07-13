@@ -51,6 +51,14 @@ function pause(id) {
   $('#audio_' + id)[0].pause();
 }
 
+function playRadio() {
+  $('#audio_radio')[0].play();
+}
+
+function pauseRadio() {
+  $('#audio_radio')[0].pause();
+}
+
 function showPlayer(playerDiv){
   playerDiv.find('.loader').hide();
   playerDiv.find('.player').show();
@@ -89,6 +97,10 @@ function showTrackLoader(playerDiv) {
   playerDiv.find('.controls .play').hide();
 }
 
+function showRadioweb(){
+  showPlayer($($('.radio-player')[0]));
+}
+
 function setup(){
   highlightsPageOnFocus();
   showServicesOnMobile();
@@ -121,6 +133,8 @@ function setup(){
     audioElement.onwaiting = function() { showTrackLoader(playerDiv) };
     setProgressBarHandler(audioElement, playerDiv);
   });
+
+  showRadioweb();
 }
 
 $(document).ready(setup);
