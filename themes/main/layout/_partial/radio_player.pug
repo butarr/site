@@ -6,9 +6,9 @@ mixin radio-player(audio)
       .controls
         .buttons
           .loader
-          a.play(onclick=`playRadio();`)
+          a.play(onclick=`play('radio');`)
             img.play-button(src="/img/icons/play.svg" alt="Play")
-          a.pause(onclick=`pauseRadio();`)
+          a.pause(onclick=`pause('radio');`)
             img.pause-button(src="/img/icons/pause.svg" alt="Pausar")
         .progress-bar
           span.time-progress 0:00

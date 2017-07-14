@@ -51,14 +51,6 @@ function pause(id) {
   $('#audio_' + id)[0].pause();
 }
 
-function playRadio() {
-  $('#audio_radio')[0].play();
-}
-
-function pauseRadio() {
-  $('#audio_radio')[0].pause();
-}
-
 function showPlayer(playerDiv){
   playerDiv.find('.loader').hide();
   playerDiv.find('.player').show();
@@ -97,15 +89,19 @@ function showTrackLoader(playerDiv) {
   playerDiv.find('.controls .play').hide();
 }
 
+function setButtonsVisibility(player) {
+  var audioElement = player.find('.audio')[0];
+  audioElement.onpause = function() { showPlay(player); };
+  audioElement.onplaying = function() { showPause(player); };
+  audioElement.onwaiting = function() { showTrackLoader(player) };
+}
+
 function setupRadioweb(){
   var player = $('.radio-player')[0];
   if (!player) { return; }
 
   player = $(player);
-  var audioElement = player.find('.audio')[0];
-  audioElement.onpause = function() { showPlay(player); };
-  audioElement.onplaying = function() { showPause(player); };
-  audioElement.onwaiting = function() { showTrackLoader(player) };
+  setButtonsVisibility(player);
   showPlayer(player);
 }
 
@@ -134,11 +130,10 @@ function setup(){
 
     SC.resolve(trackUrl).then(setupAudioTag);
 
+    setButtonsVisibility(playerDiv);
+
     audioElement.ontimeupdate = setUpdateProgressHandler(audioElement, playerDiv);
     audioElement.onended = setResetPlayerHandler(playerDiv);
-    audioElement.onpause = function() { showPlay(playerDiv); };
-    audioElement.onplaying = function() { showPause(playerDiv); };
-    audioElement.onwaiting = function() { showTrackLoader(playerDiv) };
     setProgressBarHandler(audioElement, playerDiv);
   });
 
