@@ -98,7 +98,10 @@ function showTrackLoader(playerDiv) {
 }
 
 function setupRadioweb(){
-  var player = $($('.radio-player')[0]);
+  var player = $('.radio-player')[0];
+  if (!player) { return; }
+
+  player = $(player);
   var audioElement = player.find('.audio')[0];
   audioElement.onpause = function() { showPlay(player); };
   audioElement.onplaying = function() { showPause(player); };

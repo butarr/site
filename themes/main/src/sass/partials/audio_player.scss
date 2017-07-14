@@ -3,7 +3,8 @@
 @import '../_helpers/colors';
 @import '../_helpers/fonts';
 
-.audio-item {
+.audio-item,
+.radio-player{
   @include get-font(AUDIO_PLAYER);
   display: -webkit-flex; //Old Safari
   display: flex;
@@ -21,57 +22,67 @@
   }
 }
 
-.audio-item .loader {
-  display: inline-block;
-  height: 37px;
-  width: 37px;
-  border: 5px solid $loader-background;
-  border-radius: 50%;
-  border-top: 6px solid $loader-color;
-  margin: auto;
-  animation: spin 1.5s linear infinite;
+.audio-item,
+.radio-player {
+  .loader {
+    display: inline-block;
+    height: 37px;
+    width: 37px;
+    border: 5px solid $loader-background;
+    border-radius: 50%;
+    border-top: 6px solid $loader-color;
+    margin: auto;
+    animation: spin 1.5s linear infinite;
+  }
 }
 
-.audio-item .controls {
-  display: -webkit-flex; //Old Safari
-  display: flex;
-  -webkit-align-items: center; //Old Safari
-  align-items: center;
-  width: 100%;
+.audio-item,
+.radio-player {
+  .controls {
+    display: -webkit-flex; //Old Safari
+    display: flex;
+    -webkit-align-items: center; //Old Safari
+    align-items: center;
+    width: 100%;
 
-  .play img {
-    height: 40px;
-  }
-
-  .pause {
-    display: none;
-
-    img {
+    .play img {
       height: 40px;
     }
-  }
 
-  .loader {
-    display: none;
-  }
-}
+    .pause {
+      display: none;
 
-.audio-item .progress-bar {
-  display: -webkit-flex; //Old Safari
-  display: flex;
-  -webkit-align-items: center; //Old Safari
-  align-items: center;
-  width: 100%;
-  padding-left: $lateral-column-space;
+      img {
+        height: 40px;
+      }
+    }
 
-  .time-progress,
-  .duration {
-    width: 33px;
-    text-align: center;
+    .loader {
+      display: none;
+    }
   }
 }
 
-.progress-and-source {
+.audio-item,
+.radio-player {
+  .progress-bar {
+    display: -webkit-flex; //Old Safari
+    display: flex;
+    -webkit-align-items: center; //Old Safari
+    align-items: center;
+    width: 100%;
+    padding-left: $lateral-column-space;
+
+    .time-progress,
+    .duration {
+      width: 33px;
+      text-align: center;
+    }
+  }
+}
+
+.progress-and-source,
+.progress {
   display: -webkit-flex; //Old Safari
   display: flex;
   -webkit-flex-direction: column; //Old Safari
