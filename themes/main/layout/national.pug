@@ -366,8 +366,8 @@ append content
                       h3.title(id="most_read_"+cont++)= post.title
 
         aside.sidebar(hidden itemscope itemtype="http://schema.org/WPSideBar")
-          if page.radioweb
-            +radio-player(page.radioweb.audio)
+          if config.toggles.radioweb
+            +radio-player("http://brasildefato.out.airtime.pro:8000/brasildefato_a")
           if page.spotlight_03
             +spotlight_03_desktop(page.spotlight_03)
           else if page.advertising_06

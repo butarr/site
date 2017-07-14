@@ -96,12 +96,18 @@ function setButtonsVisibility(player) {
   audioElement.onwaiting = function() { showTrackLoader(player) };
 }
 
+function setTimeUpdate(player) {
+  var audioElement = player.find('.audio')[0];
+  audioElement.ontimeupdate = setUpdateProgressHandler(audioElement, player);
+}
+
 function setupRadioweb(){
   var player = $('.radio-player')[0];
   if (!player) { return; }
 
   player = $(player);
   setButtonsVisibility(player);
+  setTimeUpdate(player);
   showPlayer(player);
 }
 
@@ -131,8 +137,8 @@ function setup(){
     SC.resolve(trackUrl).then(setupAudioTag);
 
     setButtonsVisibility(playerDiv);
+    setTimeUpdate(playerDiv);
 
-    audioElement.ontimeupdate = setUpdateProgressHandler(audioElement, playerDiv);
     audioElement.onended = setResetPlayerHandler(playerDiv);
     setProgressBarHandler(audioElement, playerDiv);
   });
